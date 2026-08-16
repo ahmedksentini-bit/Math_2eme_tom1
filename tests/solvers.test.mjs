@@ -267,6 +267,23 @@ for (const paper of annales.papers) {
   assert.ok(paper.title && paper.statement && paper.statement.length > 80, `énoncé vide : ${paper.id}`);
   assert.ok(Array.isArray(paper.exercises) && paper.exercises.length >= 1, `sans exercice : ${paper.id}`);
 }
+assert.ok(annales.papers.every(p => p.interactive && p.exercises.length >= 3 && p.exercises.length <= 5), "annale non interactive");
+for (const paper of annales.papers) {
+  assert.ok(paper.duration === 3600 || paper.duration === 7200, `durée : ${paper.id}`);
+  for (const ex of paper.exercises) {
+    assert.ok(solvers[ex.solver], `solveur annale : ${ex.solver} (${ex.id})`);
+    assert.ok(Array.isArray(ex.questions) && ex.questions.length >= 1, `sans question : ${ex.id}`);
+    const vars = ex.variables || [];
+    const result = solve(ex, Object.fromEntries(vars.map(v => [v.key, v.value])));
+    const figure = drawFigure(ex.solver, Object.fromEntries(vars.map(v => [v.key, v.value])), ex);
+    assert.ok(figure.svg.includes("<svg"), `schéma annale : ${ex.id}`);
+    for (const q of ex.questions) {
+      const value = result.values[q.key];
+      if ((q.type || "number") === "number") assert.ok(Number.isFinite(value), `annale ${ex.id}.${q.key}`);
+      else assert.ok(value !== undefined && value !== "", `annale vide ${ex.id}.${q.key}`);
+    }
+  }
+}
 assert.ok(annales.papers.every(p => p.tome === 1 || p.tome === 2), "tome annale manquant");
 assert.ok(annales.papers.some(p => p.tome === 1), "aucune annale tome 1");
 assert.ok(annales.papers.some(p => p.tome === 2), "aucune annale tome 2");

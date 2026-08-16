@@ -66,4 +66,8 @@
 .moody-cursors output{font-variant-numeric:tabular-nums;color:#6d28d9}
 .moody-readout{margin:4px 0 0;padding:10px 12px;border-radius:10px;background:#fff7ed;color:#9a3412}
 @media(max-width:640px){.moody-cursors label{grid-template-columns:1fr;gap:4px}}
-@media(max-width:560px){.course-link{padding:8px 10px;font-size:12px}.brand small{display:none}}
+.exercise-card.static{cursor:default}
+.exercise-card.static:hover{transform:none;border-color:var(--line)}
+.correction-block{margin-top:14px;padding-top:12px;border-top:1px solid #ede9fe}
+.correction-block h3{margin:0 0 8px;font-size:16px;color:#5b21b6}
+.correction-block p{margin:0 0 8px;color:#334155}

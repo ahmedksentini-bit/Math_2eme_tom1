@@ -178,8 +178,8 @@ function home() {
   const nPar = state.catalog.exercises.filter(e => e.kind !== "activity").length;
   const nAnn = state.annales.papers.filter(p => (p.tome || 1) === state.tome).length;
   const tomeLabel = state.tome === 2 ? "tome 2 (suites, fonctions, trigo, géométrie, stats)" : "tome 1, dans l’ordre du livre";
-  app.innerHTML = `<section class="hero"><p class="eyebrow">Mathématiques · 2ème année secondaire · Tome ${state.tome}</p><h1>Comprendre, calculer, vérifier.</h1><p>Toutes les activités du manuel CNP (${tomeLabel}), plus les énoncés de devoirs publics. Les courbes et schémas s’affichent à gauche de chaque exercice.</p><div class="signature">Lycée Pilote Sakiet Ezzit<br><strong>Mariam Ksentini</strong></div></section>
-  <div class="exam-launch three"><button class="exam-launch-btn" id="makeControle"><strong>Devoirs surveillés</strong><span>Mi-trimestre · 1 h · sujets générés</span></button><button class="exam-launch-btn" id="makeSynthese"><strong>Devoirs de synthèse</strong><span>Fin de trimestre · 2 h · sujets générés</span></button><button class="exam-launch-btn" id="openAnnales"><strong>Annales</strong><span>${nAnn} énoncés extraits pour ce tome</span></button></div>
+  app.innerHTML = `<section class="hero"><p class="eyebrow">Mathématiques · 2ème année secondaire · Tome ${state.tome}</p><h1>Comprendre, calculer, vérifier.</h1><p>Toutes les activités du manuel CNP (${tomeLabel}), plus les annales en devoir chronométré : copie, correction et note sur 20. Les courbes s’affichent à gauche de chaque exercice.</p><div class="signature">Lycée Pilote Sakiet Ezzit<br><strong>Mariam Ksentini</strong></div></section>
+  <div class="exam-launch three"><button class="exam-launch-btn" id="makeControle"><strong>Devoirs surveillés</strong><span>Mi-trimestre · 1 h · sujets générés</span></button><button class="exam-launch-btn" id="makeSynthese"><strong>Devoirs de synthèse</strong><span>Fin de trimestre · 2 h · sujets générés</span></button><button class="exam-launch-btn" id="openAnnales"><strong>Annales</strong><span>${nAnn} devoirs chronométrés · correction et note</span></button></div>
   <div class="section-title"><div><h2>Choisir un chapitre</h2><p>${nAct} activités du livre, ${nPar} exercices paramétriques, plus 40 exercices générés par chapitre (faciles, moyens, difficiles, casse-tête).</p></div></div>
   <section class="chapter-grid">${state.catalog.chapters.map(ch => { const n = state.catalog.exercises.filter(e => e.chapter === ch.id && e.kind === "activity").length; return `<button class="chapter" data-chapter="${ch.id}"><span class="num">${ch.number}</span><h3>${esc(ch.title)}</h3><p>${esc(ch.description)}</p><span class="count">${n} activité${n > 1 ? "s" : ""} du livre →</span></button>`; }).join("")}</section>`;
   document.querySelectorAll("[data-chapter]").forEach(button => button.addEventListener("click", () => chapterPage(button.dataset.chapter)));
@@ -212,25 +212,43 @@ function annalesPage(filter = "all") {
   state.annaleFilter = filter;
   const papers = state.annales.papers.filter(p => (p.tome || 1) === state.tome).filter(p => matchAnnale(p, filter));
   app.innerHTML = `<button class="back" id="backHome">← Accueil</button>
-    <section class="chapter-banner"><span class="num">Σ</span><div><h1>Annales de devoirs</h1><p>Énoncés publics de 2ème Sciences (Sfax 1, Sfax 2, lycées pilotes et autres). Texte extrait des PDF : les figures du sujet original peuvent manquer.</p></div></section>
+    <section class="chapter-banner"><span class="num">Σ</span><div><h1>Annales de devoirs</h1><p>Sujets publics réécrits pour une copie chronométrée. À la fin : correction détaillée et note sur 20. Le PDF d’origine reste disponible.</p></div></section>
     <div class="annale-filters">${ANNALE_FILTERS.map(f => `<button class="ghost ${filter === f.id ? "active" : ""}" data-filter="${f.id}">${f.label}</button>`).join("")}</div>
-    <div class="section-title"><div><h2>${papers.length} sujet${papers.length > 1 ? "s" : ""}</h2><p>Cliquer un devoir pour lire l’énoncé complet, exercice par exercice.</p></div></div>
-    <section class="exercise-list">${papers.map(p => `<button class="exercise-card" data-annale="${p.id}"><span class="exercise-index">${p.kind === "synthese" ? "DS" : "DC"}</span><span><strong>${esc(p.title)}</strong><small>${esc([p.lycee || p.region, p.year, `${p.exercises.length} exercice${p.exercises.length > 1 ? "s" : ""}`].filter(Boolean).join(" · "))}</small></span><span class="arrow">→</span></button>`).join("") || `<p class="muted">Aucun sujet dans ce filtre pour l’instant.</p>`}</section>`;
+    <div class="section-title"><div><h2>${papers.length} devoir${papers.length > 1 ? "s" : ""}</h2><p>Choisir un sujet, puis commencer le devoir. Le rappel de cours est masqué pendant l’épreuve.</p></div></div>
+    <section class="exercise-list">${papers.map(p => `<button class="exercise-card" data-annale="${p.id}"><span class="exercise-index">${p.kind === "synthese" ? "DS" : "DC"}</span><span><strong>${esc(p.title)}</strong><small>${esc([p.lycee || p.region, p.year, p.kind === "synthese" ? "2 h" : "1 h", `${p.exercises.length} exercices`].filter(Boolean).join(" · "))}</small></span><span class="arrow">→</span></button>`).join("") || `<p class="muted">Aucun sujet dans ce filtre pour l’instant.</p>`}</section>`;
   document.querySelector("#backHome").addEventListener("click", home);
   document.querySelectorAll("[data-filter]").forEach(b => b.addEventListener("click", () => annalesPage(b.dataset.filter)));
   document.querySelectorAll("[data-annale]").forEach(b => b.addEventListener("click", () => openAnnale(b.dataset.annale)));
   history.replaceState({}, "", "#annales");
 }
 
+function paperFromAnnale(p) {
+  const duration = p.duration || (p.kind === "synthese" ? 7200 : 3600);
+  return {
+    id: p.id,
+    title: p.title,
+    kind: p.kind,
+    duration,
+    durationLabel: duration >= 5400 ? "2 h" : "1 h",
+    exercises: p.exercises.map(ex => ({ ...ex })),
+    source: p.source,
+    fromAnnale: true
+  };
+}
+
 function openAnnale(id) {
   const paper = state.annales.papers.find(p => p.id === id);
   if (!paper) { annalesPage(state.annaleFilter); return; }
-  const meta = [paper.lycee, paper.region, paper.year, paper.kind === "synthese" ? "2 h" : "1 h"].filter(Boolean).join(" · ");
+  const duration = paper.kind === "synthese" ? "2 h" : "1 h";
+  const meta = [paper.lycee, paper.region, paper.year, duration].filter(Boolean).join(" · ");
+  const lead = (paper.statement || "").split("Aperçu du sujet :")[0].trim();
   app.innerHTML = `<button class="back" id="backAnnales">← Toutes les annales</button>
     <section class="chapter-banner"><span class="num">${paper.kind === "synthese" ? "DS" : "DC"}</span><div><h1>${esc(paper.title)}</h1><p>${esc(meta)}</p></div></section>
-    <article class="card"><h2>Énoncé complet</h2><p class="muted">Texte du sujet, tel qu’extrait du PDF public. Relire éventuellement le fichier original s’il y a une figure.</p><pre class="statement">${esc(paper.statement)}</pre>${paper.source ? `<p class="source-link"><a href="${esc(paper.source)}" target="_blank" rel="noopener">Ouvrir le PDF d’origine</a></p>` : ""}</article>
-    ${paper.exercises.map(ex => `<article class="card"><h2>Exercice ${ex.n}${ex.points ? ` <small>(${esc(ex.points)})</small>` : ""}</h2><pre class="statement">${esc(ex.statement)}</pre></article>`).join("")}`;
+    <article class="card"><h2>Déroulement</h2><p>Le devoir dure <strong>${duration}</strong>. Le rappel de cours est masqué. Vous passez d’un exercice à l’autre, puis vous rendez la copie. La correction et la note sur 20 s’affichent à la fin.</p><p>${esc(lead)}</p>${paper.source ? `<p class="source-link"><a href="${esc(paper.source)}" target="_blank" rel="noopener">Ouvrir le PDF d’origine</a></p>` : ""}<div class="actions"><button class="primary" id="startAnnale">Commencer le devoir (${duration})</button></div></article>
+    <div class="section-title"><div><h2>${paper.exercises.length} exercices</h2><p>Énoncés réécrits à partir du sujet public, pour une copie que l’on peut noter.</p></div></div>
+    <section class="exercise-list">${paper.exercises.map(ex => `<div class="exercise-card static"><span class="exercise-index">${String(ex.n).padStart(2, "0")}</span><span><strong>${esc(ex.title)}</strong><small>${esc(ex.statement)}</small></span></div>`).join("")}</section>`;
   document.querySelector("#backAnnales").addEventListener("click", () => annalesPage(state.annaleFilter));
+  document.querySelector("#startAnnale").addEventListener("click", () => startPaper(paperFromAnnale(paper)));
   history.replaceState({}, "", `#${paper.id}`);
 }
 
@@ -335,7 +353,8 @@ function openExercise(exercise, mode = state.mode, options = {}) {
     startCountdown(state.paper.remaining ?? state.paper.duration);
     restorePaperAnswers();
   } else if (state.mode === "exam") startTimer();
-  if (exercise.generated) history.replaceState({}, "", location.pathname);
+  if (exercise.generated && !inPaper()) history.replaceState({}, "", location.pathname);
+  else if (inPaper()) history.replaceState({}, "", `#${state.paper.id}`);
   else history.replaceState({}, "", `#${exercise.id}`);
 }
 
@@ -358,13 +377,18 @@ function paperNavHtml() {
   const n = state.paper.exercises.length;
   const i = state.paper.exercises.findIndex(e => e.id === state.exercise.id);
   state.paper.index = i < 0 ? 0 : i;
-  return `<div class="paper-nav"><button class="secondary" id="prevEx" ${i <= 0 ? "disabled" : ""}>← Précédent</button><span>Exercice ${i + 1} / ${n} · ${esc(state.paper.title)}</span><button class="secondary" id="nextEx" ${i >= n - 1 ? "disabled" : ""}>Suivant →</button><button class="primary" id="renderPaper">Rendre le devoir</button></div>`;
+  const pdf = state.paper.source ? `<a class="ghost" href="${esc(state.paper.source)}" target="_blank" rel="noopener">PDF d’origine</a>` : "";
+  return `<div class="paper-nav"><button class="secondary" id="prevEx" ${i <= 0 ? "disabled" : ""}>← Précédent</button><span>Exercice ${i + 1} / ${n} · ${esc(state.paper.title)}</span><button class="secondary" id="nextEx" ${i >= n - 1 ? "disabled" : ""}>Suivant →</button>${pdf}<button class="primary" id="renderPaper">Rendre le devoir</button></div>`;
 }
 
 function renderExercise() {
-  const e = state.exercise, chapter = state.catalog.chapters.find(c => c.id === e.chapter);
+  const e = state.exercise;
+  const chapter = state.catalog.chapters.find(c => c.id === e.chapter)
+    || state.catalogs[1]?.chapters.find(c => c.id === e.chapter)
+    || state.catalogs[2]?.chapters.find(c => c.id === e.chapter)
+    || { number: "Σ", title: "Annale" };
   const vars = varsOf(e);
-  const backLabel = inPaper() ? "← Sujets" : state.returnTo === "propose" ? "← Exercices proposés" : "← Exercices du chapitre";
+  const backLabel = inPaper() ? (state.paper.fromAnnale ? "← Annales" : "← Sujets") : state.returnTo === "propose" ? "← Exercices proposés" : "← Exercices du chapitre";
   const modeSwitch = inPaper() ? "" : `<div class="mode-switch" aria-label="Mode de travail">${Object.entries(modes).map(([key, label]) => `<button data-mode="${key}" class="${state.mode === key ? "active" : ""}">${label}</button>`).join("")}</div>`;
   const clockText = inPaper() ? `Reste ${formatTime(state.seconds)}` : state.mode === "exam" ? "Temps 00:00" : "";
   const dataBlock = vars.length
@@ -373,7 +397,10 @@ function renderExercise() {
   const statement = e.kind === "activity"
     ? `<pre class="statement">${esc(e.statement)}</pre>`
     : `<p class="statement">${esc(e.statement)}</p>`;
-  app.innerHTML = `<section class="exercise-head"><div><button class="back" id="back">${backLabel}</button><h1>${esc(e.title)}</h1><p>Chapitre ${chapter.number} · ${e.kind === "activity" ? `Activité ${e.activity} du livre` : `Niveau ${e.difficulty}`}${e.band ? " · " + bandLabel(e.band) : ""}</p>${paperNavHtml()}</div><div>${modeSwitch}<div id="clock" class="exam-clock">${clockText}</div></div></section>
+  const sub = inPaper() && state.paper.fromAnnale
+    ? `Annale · Exercice ${state.paper.index + 1} / ${state.paper.exercises.length} · ${state.paper.durationLabel}`
+    : `Chapitre ${chapter.number} · ${e.kind === "activity" ? `Activité ${e.activity} du livre` : `Niveau ${e.difficulty}`}${e.band ? " · " + bandLabel(e.band) : ""}`;
+  app.innerHTML = `<section class="exercise-head"><div><button class="back" id="back">${backLabel}</button><h1>${esc(e.title)}</h1><p>${esc(sub)}</p>${paperNavHtml()}</div><div>${modeSwitch}<div id="clock" class="exam-clock">${clockText}</div></div></section>
     <section class="workspace"><div><article class="card"><h2>Schéma de l’exercice</h2><div class="diagram" id="diagram"></div><p class="diagram-note" id="diagramNote"></p></article>${recapHtml(e)}<article class="card"><h2>Énoncé</h2>${statement}${lectureHtml(e)}${dataBlock}</article></div>
     <div><article class="card"><h2>${state.mode === "exam" ? "Votre copie" : "Résolution guidée"}</h2><div id="questions">${e.questions.map((q, i) => question(q, i)).join("")}</div><div class="actions">${inPaper() ? "" : `<button class="primary" id="submitAll">${state.mode === "exam" ? "Rendre la copie" : "Tout vérifier"}</button>`}${state.mode !== "exam" ? `<button class="secondary" id="showCorrection">Voir la correction</button>` : ""}</div><div id="score"></div></article><article class="card correction" id="correction" hidden></article></div></section>`;
   const formulas = equationSheets[e.solver] || ["Consulter la synthèse du chapitre et écrire la relation littérale."];
@@ -445,9 +472,11 @@ function goBack() {
   if (inPaper()) {
     savePaperAnswers();
     stopTimer();
+    const fromAnnale = state.paper.fromAnnale;
     state.paper = null;
-    state.returnTo = "papers";
-    paperList();
+    state.returnTo = null;
+    if (fromAnnale) annalesPage(state.annaleFilter);
+    else paperList();
     return;
   }
   if (state.returnTo === "propose" && state.proposed) { proposePage(state.proposed.chapterId, false); return; }
@@ -488,17 +517,19 @@ function gradePaper(auto) {
     const solved = solve(ex, data);
     const saved = state.paper.answers[ex.id] || {};
     const checks = ex.questions.map(q => ({ q, ok: answersMatch(q, saved[q.key] ?? "", solved.values[q.key]), target: solved.values[q.key], given: saved[q.key] ?? "" }));
-    return { ex, checks, correct: checks.filter(c => c.ok).length, total: checks.length };
+    return { ex, checks, solved, correct: checks.filter(c => c.ok).length, total: checks.length };
   });
   const correct = results.reduce((s, r) => s + r.correct, 0);
   const total = results.reduce((s, r) => s + r.total, 0);
   const score = total ? 20 * correct / total : 0;
-  const chapter = id => state.catalog.chapters.find(c => c.id === id)?.number ?? "";
-  app.innerHTML = `<button class="back" id="backPapers">← Les 6 sujets</button>
-    <section class="chapter-banner"><span class="num">${auto ? "⏱" : "✓"}</span><div><h1>${esc(state.paper.title)}</h1><p>${auto ? "Temps écoulé — copie rendue automatiquement." : "Devoir rendu."} Score ${correct}/${total} soit ${score.toLocaleString("fr-FR", { maximumFractionDigits: 1 })}/20.</p></div></section>
-    <section class="paper-results">${results.map((r, i) => `<article class="card"><h2>Exercice ${i + 1}. ${esc(r.ex.title)}</h2><p>Chapitre ${chapter(r.ex.chapter)} · ${r.correct}/${r.total}</p>${r.checks.map(c => `<p class="feedback ${c.ok ? "good" : "bad"}">${esc(c.q.label)} : ${c.ok ? "correct" : `votre réponse « ${esc(c.given) || "—"} » — attendu ${esc(formatAnswer(c.q, c.target))}`}</p>`).join("")}</article>`).join("")}</section>
-    <div class="actions"><button class="primary" id="backPapers2">Retour aux sujets</button></div>`;
-  const back = () => { state.paper = null; state.returnTo = null; paperList(); };
+  const fromAnnale = state.paper.fromAnnale;
+  const pdf = state.paper.source ? `<p class="source-link"><a href="${esc(state.paper.source)}" target="_blank" rel="noopener">Ouvrir le PDF d’origine</a></p>` : "";
+  app.innerHTML = `<button class="back" id="backPapers">${fromAnnale ? "← Annales" : "← Les 6 sujets"}</button>
+    <section class="chapter-banner"><span class="num">${auto ? "⏱" : "✓"}</span><div><h1>${esc(state.paper.title)}</h1><p>${auto ? "Temps écoulé — copie rendue automatiquement." : "Devoir rendu."} Note : <strong>${score.toLocaleString("fr-FR", { maximumFractionDigits: 1 })}/20</strong> (${correct}/${total} questions).</p></div></section>
+    ${pdf}
+    <section class="paper-results">${results.map((r, i) => `<article class="card"><h2>Exercice ${i + 1}. ${esc(r.ex.title)}</h2><p>${r.correct}/${r.total} · ${esc(r.ex.statement)}</p>${r.checks.map(c => `<p class="feedback ${c.ok ? "good" : "bad"}">${esc(c.q.label)} : ${c.ok ? "correct" : `votre réponse « ${esc(c.given) || "—"} » — attendu ${esc(formatAnswer(c.q, c.target))}`}</p>`).join("")}<div class="correction-block"><h3>Correction</h3>${(r.solved.steps || []).map(s => `<p><strong>${esc(s[0])}.</strong> ${esc(s[1]).replace(/\n/g, "<br>")}</p>`).join("")}</div></article>`).join("")}</section>
+    <div class="actions"><button class="primary" id="backPapers2">${fromAnnale ? "Retour aux annales" : "Retour aux sujets"}</button></div>`;
+  const back = () => { state.paper = null; state.returnTo = null; if (fromAnnale) annalesPage(state.annaleFilter); else paperList(); };
   document.querySelector("#backPapers").addEventListener("click", back);
   document.querySelector("#backPapers2").addEventListener("click", back);
 }
@@ -555,7 +586,11 @@ window.addEventListener("hashchange", () => {
   if (!state.catalog) return;
   if (location.hash === "#annales") { annalesPage(state.annaleFilter); return; }
   const annale = state.annales.papers.find(p => `#${p.id}` === location.hash);
-  if (annale) { openAnnale(annale.id); return; }
+  if (annale) {
+    if (inPaper() && state.paper.id === annale.id) return;
+    openAnnale(annale.id);
+    return;
+  }
   for (const t of [1, 2]) {
     const requested = state.catalogs[t]?.exercises.find(e => `#${e.id}` === location.hash);
     if (requested) {
