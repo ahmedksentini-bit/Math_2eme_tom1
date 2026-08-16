@@ -1,0 +1,152 @@
+[
+  {
+    "id": "VECT_DET_01",
+    "chapter": "vecteurs",
+    "solver": "detColinear",
+    "title": "Déterminant et colinéarité",
+    "difficulty": 1,
+    "statement": "Dans une base du plan, u⃗ = (x ; y) et v⃗ = (x' ; y'). Calculer det(u⃗, v⃗). Les vecteurs sont colinéaires si et seulement si ce déterminant est nul. (Synthèse du chapitre 5.)",
+    "variables": [
+      {"key": "x", "label": "x", "unit": "—", "value": 2, "min": -4, "max": 6, "step": 1},
+      {"key": "y", "label": "y", "unit": "—", "value": 3, "min": -4, "max": 6, "step": 1},
+      {"key": "xp", "label": "x'", "unit": "—", "value": 4, "min": -8, "max": 8, "step": 1},
+      {"key": "yp", "label": "y'", "unit": "—", "value": 6, "min": -8, "max": 8, "step": 1}
+    ],
+    "questions": [
+      {"key": "det", "label": "Déterminant xy' − x'y", "unit": "—"}
+    ]
+  },
+  {
+    "id": "VECT_DOT_01",
+    "chapter": "vecteurs",
+    "solver": "dotOrtho",
+    "title": "Produit scalaire et orthogonalité",
+    "difficulty": 1,
+    "statement": "Dans une base orthonormée, u⃗ = (x ; y) et v⃗ = (x' ; y'). Calculer le produit scalaire. Les vecteurs sont orthogonaux s’il est nul. (Synthèse du chapitre 5.)",
+    "variables": [
+      {"key": "x", "label": "x", "unit": "—", "value": 3, "min": -5, "max": 6, "step": 1},
+      {"key": "y", "label": "y", "unit": "—", "value": 4, "min": -5, "max": 6, "step": 1},
+      {"key": "xp", "label": "x'", "unit": "—", "value": 4, "min": -6, "max": 6, "step": 1},
+      {"key": "yp", "label": "y'", "unit": "—", "value": -3, "min": -6, "max": 6, "step": 1}
+    ],
+    "questions": [
+      {"key": "dot", "label": "Produit scalaire xx' + yy'", "unit": "—"}
+    ]
+  },
+  {
+    "id": "VECT_PARA_01",
+    "chapter": "vecteurs",
+    "solver": "parallelogramD",
+    "title": "Quatrième sommet d’un parallélogramme",
+    "difficulty": 2,
+    "statement": "Le plan est muni d’un repère. A, B et C sont donnés. Déterminer D pour que ABCD soit un parallélogramme. (Exercice 9 du chapitre 5.)",
+    "variables": [
+      {"key": "xA", "label": "x_A", "unit": "—", "value": -2, "min": -4, "max": 1, "step": 1},
+      {"key": "yA", "label": "y_A", "unit": "—", "value": 0.75, "min": 0, "max": 2, "step": 0.25},
+      {"key": "xB", "label": "x_B", "unit": "—", "value": 0, "min": -1, "max": 2, "step": 1},
+      {"key": "yB", "label": "y_B", "unit": "—", "value": -1, "min": -2, "max": 1, "step": 1},
+      {"key": "xC", "label": "x_C", "unit": "—", "value": 3, "min": 1, "max": 5, "step": 1},
+      {"key": "yC", "label": "y_C", "unit": "—", "value": 4, "min": 2, "max": 6, "step": 1}
+    ],
+    "questions": [
+      {"key": "xD", "label": "x_D", "unit": "—"},
+      {"key": "yD", "label": "y_D", "unit": "—"}
+    ]
+  },
+  {
+    "id": "BARY_2D_01",
+    "chapter": "barycentre",
+    "solver": "bary2d",
+    "title": "Barycentre de trois points",
+    "difficulty": 2,
+    "statement": "Dans un repère, A, B et C sont donnés. G est le barycentre de (A, α), (B, β) et (C, γ). Déterminer les coordonnées de G. (Synthèse du chapitre 6.)",
+    "variables": [
+      {"key": "xA", "label": "x_A", "unit": "—", "value": 0, "min": 0, "max": 2, "step": 1},
+      {"key": "yA", "label": "y_A", "unit": "—", "value": 0, "min": 0, "max": 2, "step": 1},
+      {"key": "xB", "label": "x_B", "unit": "—", "value": 6, "min": 2, "max": 8, "step": 1},
+      {"key": "yB", "label": "y_B", "unit": "—", "value": 0, "min": 0, "max": 2, "step": 1},
+      {"key": "xC", "label": "x_C", "unit": "—", "value": 0, "min": 0, "max": 2, "step": 1},
+      {"key": "yC", "label": "y_C", "unit": "—", "value": 6, "min": 2, "max": 8, "step": 1},
+      {"key": "alpha", "label": "Masse α", "unit": "—", "value": 1, "min": 1, "max": 3, "step": 1},
+      {"key": "beta", "label": "Masse β", "unit": "—", "value": 1, "min": 1, "max": 3, "step": 1},
+      {"key": "gamma", "label": "Masse γ", "unit": "—", "value": 1, "min": 1, "max": 3, "step": 1}
+    ],
+    "questions": [
+      {"key": "xG", "label": "x_G", "unit": "—"},
+      {"key": "yG", "label": "y_G", "unit": "—"}
+    ]
+  },
+  {
+    "id": "TRANS_01",
+    "chapter": "translations",
+    "solver": "translation",
+    "title": "Image d’un point par une translation",
+    "difficulty": 1,
+    "statement": "t est la translation de vecteur v⃗ = (v_x ; v_y). Déterminer l’image M' du point M(x ; y). (Synthèse du chapitre 7 : M'N'⃗ = MN⃗.)",
+    "variables": [
+      {"key": "x", "label": "x_M", "unit": "—", "value": 1, "min": -3, "max": 4, "step": 1},
+      {"key": "y", "label": "y_M", "unit": "—", "value": 2, "min": -3, "max": 4, "step": 1},
+      {"key": "vx", "label": "v_x", "unit": "—", "value": 3, "min": -4, "max": 5, "step": 1},
+      {"key": "vy", "label": "v_y", "unit": "—", "value": -1, "min": -4, "max": 4, "step": 1}
+    ],
+    "questions": [
+      {"key": "xM", "label": "x_{M'}", "unit": "—"},
+      {"key": "yM", "label": "y_{M'}", "unit": "—"}
+    ]
+  },
+  {
+    "id": "HOM_SCALE_01",
+    "chapter": "homotheties",
+    "solver": "homothetyScale",
+    "title": "Périmètre et aire après homothétie",
+    "difficulty": 2,
+    "statement": "Une homothétie de rapport k transforme un triangle de périmètre p et d’aire A. Déterminer le périmètre et l’aire de l’image. (Exercice 9 du chapitre 8 : aire au quart ⇔ |k| = 1/2.)",
+    "variables": [
+      {"key": "k", "label": "Rapport k", "unit": "—", "value": 0.5, "min": 0.25, "max": 2, "step": 0.25},
+      {"key": "p", "label": "Périmètre p", "unit": "—", "value": 12, "min": 6, "max": 24, "step": 3},
+      {"key": "a", "label": "Aire A", "unit": "—", "value": 6, "min": 2, "max": 12, "step": 2}
+    ],
+    "questions": [
+      {"key": "perim", "label": "Périmètre image p'", "unit": "—"},
+      {"key": "area", "label": "Aire image A'", "unit": "—"}
+    ]
+  },
+  {
+    "id": "ROT_90_01",
+    "chapter": "rotations",
+    "solver": "rotation90",
+    "title": "Quart de tour direct",
+    "difficulty": 2,
+    "statement": "Le plan est muni d’un repère orthonormé direct. r est le quart de tour direct de centre O. Déterminer l’image M' de M. (Exercice 2 du chapitre 9 : construction d’un carré.)",
+    "variables": [
+      {"key": "xO", "label": "x_O", "unit": "—", "value": 0, "min": -2, "max": 2, "step": 1},
+      {"key": "yO", "label": "y_O", "unit": "—", "value": 0, "min": -2, "max": 2, "step": 1},
+      {"key": "x", "label": "x_M", "unit": "—", "value": 1, "min": -3, "max": 4, "step": 1},
+      {"key": "y", "label": "y_M", "unit": "—", "value": 0, "min": -3, "max": 4, "step": 1}
+    ],
+    "questions": [
+      {"key": "xM", "label": "x_{M'}", "unit": "—"},
+      {"key": "yM", "label": "y_{M'}", "unit": "—"}
+    ]
+  },
+  {
+    "id": "ROT_ANG_01",
+    "chapter": "rotations",
+    "solver": "rotationAngle",
+    "title": "Rotation d’angle donné",
+    "difficulty": 2,
+    "statement": "r est la rotation directe de centre O et d’angle α (en degrés). Déterminer l’image M' de M et vérifier que OM' = OM. (Synthèse du chapitre 9.)",
+    "variables": [
+      {"key": "xO", "label": "x_O", "unit": "—", "value": 0, "min": 0, "max": 0, "step": 1},
+      {"key": "yO", "label": "y_O", "unit": "—", "value": 0, "min": 0, "max": 0, "step": 1},
+      {"key": "x", "label": "x_M", "unit": "—", "value": 2, "min": 1, "max": 4, "step": 1},
+      {"key": "y", "label": "y_M", "unit": "—", "value": 0, "min": 0, "max": 3, "step": 1},
+      {"key": "angle", "label": "Angle α", "unit": "°", "value": 90, "min": 90, "max": 180, "step": 90}
+    ],
+    "questions": [
+      {"key": "xM", "label": "x_{M'}", "unit": "—"},
+      {"key": "yM", "label": "y_{M'}", "unit": "—"},
+      {"key": "om", "label": "Distance OM = OM'", "unit": "—"}
+    ]
+  }
+]

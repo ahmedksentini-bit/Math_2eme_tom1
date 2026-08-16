@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "chapters": [
+    {"id": "reels", "number": 1, "title": "Calcul dans IR", "description": "Pourcentages, radicaux, valeur absolue et ordres de grandeur."},
+    {"id": "degres", "number": 2, "title": "Premier et second degré", "description": "Équations, discriminant, somme et produit des racines."},
+    {"id": "polynomes", "number": 3, "title": "Notion de polynômes", "description": "Évaluation, racines et factorisation."},
+    {"id": "arithmetique", "number": 4, "title": "Arithmétique", "description": "Division euclidienne, critères et PGCD."},
+    {"id": "vecteurs", "number": 5, "title": "Calcul vectoriel", "description": "Composantes, colinéarité et orthogonalité."},
+    {"id": "barycentre", "number": 6, "title": "Barycentre", "description": "Deux ou trois points pondérés."},
+    {"id": "translations", "number": 7, "title": "Translations", "description": "Vecteur de translation et conservation des figures."},
+    {"id": "homotheties", "number": 8, "title": "Homothéties", "description": "Centre, rapport, longueurs et aires."},
+    {"id": "rotations", "number": 9, "title": "Rotations", "description": "Quart de tour et rotation d’angle donné."}
+  ],
+  "exercises": [
+    {
+      "id": "REEL_TVA_01",
+      "chapter": "reels",
+      "solver": "tvaTtc",
+      "title": "Prix T.T.C. d’un article",
+      "difficulty": 1,
+      "statement": "Le prix hors taxes d’un article est HT. Le taux de T.V.A. est t. Déterminer le prix toutes taxes comprises. (Activité 10 du chapitre 1.)",
+      "variables": [
+        {"key": "ht", "label": "Prix H.T.", "unit": "D", "value": 58, "min": 20, "max": 120, "step": 2},
+        {"key": "tva", "label": "Taux de T.V.A.", "unit": "%", "value": 17, "min": 7, "max": 20, "step": 1}
+      ],
+      "questions": [
+        {"key": "ttc", "label": "Prix T.T.C.", "unit": "D"}
+      ]
+    },
+    {
+      "id": "REEL_TVA_02",
+      "chapter": "reels",
+      "solver": "tvaHt",
+      "title": "Retour au prix H.T.",
+      "difficulty": 1,
+      "statement": "Un article est vendu TTC dinars toutes taxes comprises, au taux de T.V.A. t. Déterminer son prix hors taxes. (Activité 10 du chapitre 1.)",
+      "variables": [
+        {"key": "ttc", "label": "Prix T.T.C.", "unit": "D", "value": 35.1, "min": 23.4, "max": 117, "step": 1.17},
+        {"key": "tva", "label": "Taux de T.V.A.", "unit": "%", "value": 17, "min": 17, "max": 17, "step": 1}
+      ],
+      "questions": [
+        {"key": "ht", "label": "Prix H.T.", "unit": "D"}
+      ]
+    },
+    {
+      "id": "DEG_QUAD_01",
+      "chapter": "degres",
+      "solver": "quadraticSolve",
+      "title": "Équation du second degré",
+      "difficulty": 2,
+      "statement": "Résoudre dans IR l’équation ax² + bx + c = 0. Calculer le discriminant, les racines, leur somme et leur produit. (Exercice 3.a du chapitre 2 : 4x² + 3x − 1 = 0.)",
+      "variables": [
+        {"key": "a", "label": "Coefficient a", "unit": "—", "value": 4, "min": 2, "max": 6, "step": 1},
+        {"key": "b", "label": "Coefficient b", "unit": "—", "value": 3, "min": 1, "max": 5, "step": 1},
+        {"key": "c", "label": "Coefficient c", "unit": "—", "value": -1, "min": -3, "max": -1, "step": 1}
+      ],
+      "questions": [
+        {"key": "disc", "label": "Discriminant Δ", "unit": "—"},
+        {"key": "x1", "label": "Racine x₁ (la plus petite)", "unit": "—"},
+        {"key": "x2", "label": "Racine x₂ (la plus grande)", "unit": "—"},
+        {"key": "sum", "label": "Somme x₁ + x₂", "unit": "—"},
+        {"key": "prod", "label": "Produit x₁ x₂", "unit": "—"}
+      ]
+    },
+    {
+      "id": "POLY_ROOT_01",
+      "chapter": "polynomes",
+      "solver": "polyIntegerRoot",
+      "title": "Racine entière d’un cubique",
+      "difficulty": 2,
+      "statement": "Soit P(x) = x³ + a x² + b x + c. Chercher une racine entière, puis factoriser P(x) = (x − r)(x² + q_B x + q_C). (Exercice 11 du chapitre 3 : x³ + 6x² + 12x − 56.)",
+      "variables": [
+        {"key": "a", "label": "Coefficient de x²", "unit": "—", "value": 6, "min": 6, "max": 6, "step": 1},
+        {"key": "b", "label": "Coefficient de x", "unit": "—", "value": 12, "min": 12, "max": 12, "step": 1},
+        {"key": "c", "label": "Terme constant", "unit": "—", "value": -56, "min": -56, "max": -56, "step": 1}
+      ],
+      "questions": [
+        {"key": "root", "label": "Racine entière r", "unit": "—"},
+        {"key": "qB", "label": "Coefficient q_B du quotient", "unit": "—"},
+        {"key": "qC", "label": "Coefficient q_C du quotient", "unit": "—"}
+      ]
+    },
+    {
+      "id": "ARITH_EUCLID_01",
+      "chapter": "arithmetique",
+      "solver": "euclidDiv",
+      "title": "Division euclidienne",
+      "difficulty": 1,
+      "statement": "Effectuer la division euclidienne de a par b : trouver le quotient q et le reste r tels que a = bq + r et 0 ≤ r < b.",
+      "variables": [
+        {"key": "a", "label": "Dividende a", "unit": "—", "value": 2613, "min": 100, "max": 9000, "step": 1},
+        {"key": "b", "label": "Diviseur b", "unit": "—", "value": 8, "min": 5, "max": 25, "step": 1}
+      ],
+      "questions": [
+        {"key": "q", "label": "Quotient q", "unit": "—"},
+        {"key": "r", "label": "Reste r", "unit": "—"}
+      ]
+    },
+    {
+      "id": "VECT_AB_01",
+      "chapter": "vecteurs",
+      "solver": "vectorAB",
+      "title": "Composantes et norme de AB⃗",
+      "difficulty": 1,
+      "statement": "Le plan est muni d’un repère orthonormé. Les points A et B sont donnés. Déterminer les composantes de AB⃗ puis sa norme.",
+      "variables": [
+        {"key": "xA", "label": "x_A", "unit": "—", "value": -2, "min": -5, "max": 2, "step": 0.5},
+        {"key": "yA", "label": "y_A", "unit": "—", "value": 0.75, "min": -2, "max": 4, "step": 0.25},
+        {"key": "xB", "label": "x_B", "unit": "—", "value": 0, "min": -2, "max": 5, "step": 0.5},
+        {"key": "yB", "label": "y_B", "unit": "—", "value": -1, "min": -4, "max": 4, "step": 0.5}
+      ],
+      "questions": [
+        {"key": "x", "label": "Composante x de AB⃗", "unit": "—"},
+        {"key": "y", "label": "Composante y de AB⃗", "unit": "—"},
+        {"key": "nrm", "label": "Norme |AB⃗|", "unit": "—"}
+      ]
+    },
+    {
+      "id": "BARY_1D_01",
+      "chapter": "barycentre",
+      "solver": "bary1d",
+      "title": "Barycentre de deux points",
+      "difficulty": 2,
+      "statement": "A et B ont pour abscisses x_A et x_B sur une droite. G est le barycentre de (A, α) et (B, β). Déterminer l’abscisse de G et le coefficient k tel que AG⃗ = k AB⃗. (Exercice 1.a du chapitre 6, masses 3 et −4.)",
+      "variables": [
+        {"key": "xA", "label": "Abscisse de A", "unit": "—", "value": 0, "min": 0, "max": 4, "step": 1},
+        {"key": "xB", "label": "Abscisse de B", "unit": "—", "value": 10, "min": 6, "max": 14, "step": 1},
+        {"key": "alpha", "label": "Masse α", "unit": "—", "value": 3, "min": 2, "max": 5, "step": 1},
+        {"key": "beta", "label": "Masse β", "unit": "—", "value": -4, "min": -6, "max": -2, "step": 1}
+      ],
+      "questions": [
+        {"key": "g", "label": "Abscisse de G", "unit": "—"},
+        {"key": "k", "label": "Coefficient k = β/(α+β)", "unit": "—"}
+      ]
+    },
+    {
+      "id": "HOM_IMAGE_01",
+      "chapter": "homotheties",
+      "solver": "homothety",
+      "title": "Image par une homothétie",
+      "difficulty": 2,
+      "statement": "h est l’homothétie de centre O et de rapport k. M a pour coordonnées (x ; y). Déterminer l’image M' et la distance MM'. (Synthèse du chapitre 8.)",
+      "variables": [
+        {"key": "xO", "label": "x_O", "unit": "—", "value": 0, "min": -2, "max": 2, "step": 1},
+        {"key": "yO", "label": "y_O", "unit": "—", "value": 0, "min": -2, "max": 2, "step": 1},
+        {"key": "k", "label": "Rapport k", "unit": "—", "value": 3, "min": 2, "max": 5, "step": 1},
+        {"key": "x", "label": "x_M", "unit": "—", "value": 2, "min": 1, "max": 4, "step": 0.5},
+        {"key": "y", "label": "y_M", "unit": "—", "value": 1, "min": 0, "max": 3, "step": 0.5}
+      ],
+      "questions": [
+        {"key": "xM", "label": "x_{M'}", "unit": "—"},
+        {"key": "yM", "label": "y_{M'}", "unit": "—"},
+        {"key": "mm", "label": "Distance MM'", "unit": "—"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+[
+  {
+    "id": "REEL_PCT_01",
+    "chapter": "reels",
+    "solver": "successivePercent",
+    "title": "Deux hausses successives",
+    "difficulty": 1,
+    "statement": "Un article subit deux augmentations successives de p₁ % puis de p₂ %. Quel est le pourcentage global d’augmentation ? (Activité 9.3 du chapitre 1.)",
+    "variables": [
+      {"key": "p1", "label": "Première hausse p₁", "unit": "%", "value": 10, "min": 5, "max": 20, "step": 5},
+      {"key": "p2", "label": "Seconde hausse p₂", "unit": "%", "value": 20, "min": 5, "max": 25, "step": 5}
+    ],
+    "questions": [
+      {"key": "factor", "label": "Coefficient composé", "unit": "—"},
+      {"key": "global", "label": "Pourcentage global", "unit": "%"}
+    ]
+  },
+  {
+    "id": "REEL_HERON_01",
+    "chapter": "reels",
+    "solver": "heronArea",
+    "title": "Aire par la formule de Héron",
+    "difficulty": 2,
+    "statement": "Calculer l’aire d’un triangle dont les côtés mesurent a, b et c. (Activité 34 du chapitre 1 : 18 cm, 24 cm et 30 cm.)",
+    "variables": [
+      {"key": "a", "label": "Côté a", "unit": "cm", "value": 18, "min": 6, "max": 24, "step": 6},
+      {"key": "b", "label": "Côté b", "unit": "cm", "value": 24, "min": 8, "max": 32, "step": 8},
+      {"key": "c", "label": "Côté c", "unit": "cm", "value": 30, "min": 10, "max": 40, "step": 10}
+    ],
+    "questions": [
+      {"key": "p", "label": "Demi-périmètre p", "unit": "cm"},
+      {"key": "area", "label": "Aire A", "unit": "cm²"}
+    ]
+  },
+  {
+    "id": "REEL_ABS_01",
+    "chapter": "reels",
+    "solver": "absEquation",
+    "title": "Équation |x + a| = b",
+    "difficulty": 1,
+    "statement": "Déterminer les réels x tels que |x + a| = b. (Activité 41.2.a du chapitre 1 : |x + 2| = 3.)",
+    "variables": [
+      {"key": "a", "label": "Constante a", "unit": "—", "value": 2, "min": 1, "max": 5, "step": 1},
+      {"key": "b", "label": "Constante b", "unit": "—", "value": 3, "min": 1, "max": 6, "step": 1}
+    ],
+    "questions": [
+      {"key": "x1", "label": "Solution x₁ (la plus petite)", "unit": "—"},
+      {"key": "x2", "label": "Solution x₂ (la plus grande)", "unit": "—"}
+    ]
+  },
+  {
+    "id": "REEL_ENC_01",
+    "chapter": "reels",
+    "solver": "affineBounds",
+    "title": "Encadrement de −3a + 5",
+    "difficulty": 2,
+    "statement": "Soit a un réel de l’intervalle [a_min ; a_max]. Déterminer un encadrement de m a + p. (Activité 19 du chapitre 1 : −2 ≤ a ≤ 3 et −3a + 5.)",
+    "variables": [
+      {"key": "amin", "label": "Borne inf. de a", "unit": "—", "value": -2, "min": -4, "max": -1, "step": 1},
+      {"key": "amax", "label": "Borne sup. de a", "unit": "—", "value": 3, "min": 2, "max": 5, "step": 1},
+      {"key": "m", "label": "Coefficient m", "unit": "—", "value": -3, "min": -3, "max": -1, "step": 1},
+      {"key": "p", "label": "Constante p", "unit": "—", "value": 5, "min": 2, "max": 8, "step": 1}
+    ],
+    "questions": [
+      {"key": "ymin", "label": "Minimum de ma + p", "unit": "—"},
+      {"key": "ymax", "label": "Maximum de ma + p", "unit": "—"}
+    ]
+  },
+  {
+    "id": "REEL_LIGHT_01",
+    "chapter": "reels",
+    "solver": "lightTime",
+    "title": "Temps de parcours de la lumière",
+    "difficulty": 1,
+    "statement": "La distance Terre–Soleil est d millions de km. La vitesse de la lumière est v km/s. Combien de temps faut-il à un rayon solaire pour arriver au sol ? (Activité 50 du chapitre 1.)",
+    "variables": [
+      {"key": "distMkm", "label": "Distance", "unit": "10⁶ km", "value": 150, "min": 140, "max": 160, "step": 5},
+      {"key": "v", "label": "Vitesse de la lumière", "unit": "km/s", "value": 300000, "min": 300000, "max": 300000, "step": 1000}
+    ],
+    "questions": [
+      {"key": "t", "label": "Temps t", "unit": "s"},
+      {"key": "minutes", "label": "Temps en minutes", "unit": "min"}
+    ]
+  },
+  {
+    "id": "REEL_SCI_01",
+    "chapter": "reels",
+    "solver": "scientificOrder",
+    "title": "Écriture scientifique et ordre de grandeur",
+    "difficulty": 1,
+    "statement": "Écrire N sous la forme a × 10ⁿ (1 ≤ |a| < 10), puis donner son ordre de grandeur. (Activité 47 du chapitre 1.)",
+    "variables": [
+      {"key": "N", "label": "Nombre N", "unit": "—", "value": 35215000, "min": 1000000, "max": 90000000, "step": 100000}
+    ],
+    "questions": [
+      {"key": "a", "label": "Mantisse a", "unit": "—"},
+      {"key": "nExp", "label": "Exposant n", "unit": "—"},
+      {"key": "order", "label": "Ordre de grandeur", "unit": "—"}
+    ]
+  },
+  {
+    "id": "DEG_RES_01",
+    "chapter": "degres",
+    "solver": "resistors",
+    "title": "Deux résistances série et parallèle",
+    "difficulty": 2,
+    "statement": "Déterminer R₁ et R₂ sachant que l’association série vaut R et l’association parallèle vaut r. (Compétences du chapitre 2 : R = 2,5 Ω et r = 0,4 Ω.)",
+    "variables": [
+      {"key": "R", "label": "Résistance série R", "unit": "Ω", "value": 2.5, "min": 2, "max": 6, "step": 0.5},
+      {"key": "r", "label": "Résistance parallèle r", "unit": "Ω", "value": 0.4, "min": 0.4, "max": 1.2, "step": 0.2}
+    ],
+    "questions": [
+      {"key": "prod", "label": "Produit R₁ R₂", "unit": "Ω²"},
+      {"key": "R1", "label": "R₁ (la plus grande)", "unit": "Ω"},
+      {"key": "R2", "label": "R₂ (la plus petite)", "unit": "Ω"}
+    ]
+  },
+  {
+    "id": "DEG_CYC_01",
+    "chapter": "degres",
+    "solver": "cyclists",
+    "title": "Deux cyclistes à la rencontre",
+    "difficulty": 3,
+    "statement": "Deux cyclistes partent de deux villes distantes de D km. S’ils partent ensemble, ils se rencontrent après T heures. Si A part hMin minutes avant B, la rencontre a lieu à mi-chemin. Calculer V_A et V_B. (Compétences du chapitre 2.)",
+    "variables": [
+      {"key": "D", "label": "Distance D", "unit": "km", "value": 132, "min": 132, "max": 132, "step": 1},
+      {"key": "T", "label": "Durée ensemble T", "unit": "h", "value": 3, "min": 3, "max": 3, "step": 0.5},
+      {"key": "hMin", "label": "Avance de A", "unit": "min", "value": 33, "min": 33, "max": 33, "step": 1}
+    ],
+    "questions": [
+      {"key": "closing", "label": "V_A + V_B", "unit": "km/h"},
+      {"key": "VA", "label": "Vitesse de A", "unit": "km/h"},
+      {"key": "VB", "label": "Vitesse de B", "unit": "km/h"}
+    ]
+  },
+  {
+    "id": "DEG_SQ_01",
+    "chapter": "degres",
+    "solver": "squareDecrease",
+    "title": "Carré dont on diminue le côté",
+    "difficulty": 2,
+    "statement": "Existe-t-il un carré tel que si l’on diminue de h cm la longueur de ses côtés, on diminue alors de ΔA cm² l’aire de ce carré ? (Exercice 5 du chapitre 2.)",
+    "variables": [
+      {"key": "cut", "label": "Diminution du côté h", "unit": "cm", "value": 3, "min": 2, "max": 5, "step": 1},
+      {"key": "dA", "label": "Diminution d’aire ΔA", "unit": "cm²", "value": 12, "min": 8, "max": 24, "step": 4}
+    ],
+    "questions": [
+      {"key": "x", "label": "Côté initial x", "unit": "cm"},
+      {"key": "area", "label": "Aire initiale", "unit": "cm²"}
+    ]
+  },
+  {
+    "id": "DEG_PHI_01",
+    "chapter": "degres",
+    "solver": "goldenRatio",
+    "title": "Nombre d’or",
+    "difficulty": 2,
+    "statement": "Le nombre d’or φ est la racine positive de φ² = φ + 1. Calculer φ et φ². (Compétences du chapitre 2.)",
+    "variables": [
+      {"key": "shift", "label": "Constante de l’identité", "unit": "—", "value": 1, "min": 1, "max": 1, "step": 1}
+    ],
+    "questions": [
+      {"key": "phi", "label": "Nombre d’or φ", "unit": "—"},
+      {"key": "phi2", "label": "φ²", "unit": "—"}
+    ]
+  },
+  {
+    "id": "POLY_EVAL_01",
+    "chapter": "polynomes",
+    "solver": "polyEval",
+    "title": "Valeur d’un polynôme cubique",
+    "difficulty": 1,
+    "statement": "Soit P(x) = a₃ x³ + a₂ x² + a₁ x + a₀. Calculer P(x₀).",
+    "variables": [
+      {"key": "a3", "label": "a₃", "unit": "—", "value": 1, "min": 1, "max": 2, "step": 1},
+      {"key": "a2", "label": "a₂", "unit": "—", "value": 6, "min": 0, "max": 8, "step": 1},
+      {"key": "a1", "label": "a₁", "unit": "—", "value": 12, "min": -8, "max": 12, "step": 2},
+      {"key": "a0", "label": "a₀", "unit": "—", "value": -56, "min": -56, "max": 8, "step": 8},
+      {"key": "x", "label": "x₀", "unit": "—", "value": 2, "min": -2, "max": 3, "step": 1}
+    ],
+    "questions": [
+      {"key": "value", "label": "P(x₀)", "unit": "—"}
+    ]
+  },
+  {
+    "id": "POLY_FACT_01",
+    "chapter": "polynomes",
+    "solver": "polyKnownRoot",
+    "title": "Factoriser connaissant une racine",
+    "difficulty": 2,
+    "statement": "Soit A(x) = x³ + a x² + b x + c. Vérifier que r est une racine, puis factoriser A(x) = (x − r)(x² + q_B x + q_C). (Exercice 5 du chapitre 3 : x³ − 4x² − 2x + 8, racine 4.)",
+    "variables": [
+      {"key": "a", "label": "Coefficient de x²", "unit": "—", "value": -4, "min": -4, "max": -4, "step": 1},
+      {"key": "b", "label": "Coefficient de x", "unit": "—", "value": -2, "min": -2, "max": -2, "step": 1},
+      {"key": "c", "label": "Terme constant", "unit": "—", "value": 8, "min": 8, "max": 8, "step": 1},
+      {"key": "r", "label": "Racine proposée r", "unit": "—", "value": 4, "min": 4, "max": 4, "step": 1}
+    ],
+    "questions": [
+      {"key": "PofR", "label": "A(r)", "unit": "—"},
+      {"key": "qB", "label": "Coefficient q_B", "unit": "—"},
+      {"key": "qC", "label": "Coefficient q_C", "unit": "—"}
+    ]
+  },
+  {
+    "id": "POLY_SUM_01",
+    "chapter": "polynomes",
+    "solver": "sumIntegers",
+    "title": "Sommes S₁ et S₂",
+    "difficulty": 2,
+    "statement": "Calculer S₁ = 1 + 2 + … + n et S₂ = 1² + 2² + … + n². (Compétences du chapitre 3.)",
+    "variables": [
+      {"key": "n", "label": "Entier n", "unit": "—", "value": 10, "min": 4, "max": 20, "step": 1}
+    ],
+    "questions": [
+      {"key": "s1", "label": "S₁", "unit": "—"},
+      {"key": "s2", "label": "S₂", "unit": "—"}
+    ]
+  },
+  {
+    "id": "ARITH_MOD8_01",
+    "chapter": "arithmetique",
+    "solver": "remainderLast3",
+    "title": "Reste modulo 8 par les derniers chiffres",
+    "difficulty": 1,
+    "statement": "Déterminer le reste de la division euclidienne de n par 8, en n’utilisant que les derniers chiffres. (Exercice 1 du chapitre 4.)",
+    "variables": [
+      {"key": "n", "label": "Entier n", "unit": "—", "value": 127645264, "min": 104, "max": 127645264, "step": 1},
+      {"key": "div", "label": "Diviseur", "unit": "—", "value": 8, "min": 8, "max": 8, "step": 1}
+    ],
+    "questions": [
+      {"key": "last", "label": "Trois derniers chiffres", "unit": "—"},
+      {"key": "r", "label": "Reste modulo 8", "unit": "—"}
+    ]
+  },
+  {
+    "id": "ARITH_MOD9_01",
+    "chapter": "arithmetique",
+    "solver": "remainderDigits",
+    "title": "Reste modulo 9 par la somme des chiffres",
+    "difficulty": 1,
+    "statement": "Déterminer le reste de la division euclidienne de n par 9 à l’aide de la somme de ses chiffres. (Critère du chapitre 4.)",
+    "variables": [
+      {"key": "n", "label": "Entier n", "unit": "—", "value": 1963, "min": 100, "max": 9999, "step": 1},
+      {"key": "div", "label": "Diviseur", "unit": "—", "value": 9, "min": 9, "max": 9, "step": 1}
+    ],
+    "questions": [
+      {"key": "sum", "label": "Somme des chiffres", "unit": "—"},
+      {"key": "r", "label": "Reste modulo 9", "unit": "—"}
+    ]
+  },
+  {
+    "id": "ARITH_EAN_01",
+    "chapter": "arithmetique",
+    "solver": "barcodeCheck",
+    "title": "Clé du code-barres du manuel",
+    "difficulty": 2,
+    "statement": "Les douze premiers chiffres d’un code-barres EAN-13 sont donnés. Déterminer la clé de contrôle. (Culture du chapitre 4 : 619220260141.)",
+    "variables": [
+      {"key": "prefix", "label": "Douze premiers chiffres", "unit": "—", "value": 619220260141, "min": 619220260141, "max": 619220260141, "step": 1}
+    ],
+    "questions": [
+      {"key": "odd", "label": "Somme des rangs impairs", "unit": "—"},
+      {"key": "even", "label": "Somme des rangs pairs", "unit": "—"},
+      {"key": "check", "label": "Clé de contrôle", "unit": "—"}
+    ]
+  },
+  {
+    "id": "ARITH_GCD_01",
+    "chapter": "arithmetique",
+    "solver": "gcd3",
+    "title": "Cubes dans une caisse",
+    "difficulty": 2,
+    "statement": "Les dimensions d’une caisse sont L, ℓ et h (en cm). On veut des cubes d’arête entière maximale qui remplissent la caisse. Quelle est cette arête, et combien de cubes faut-il ? (Exercice 30 du chapitre 4.)",
+    "variables": [
+      {"key": "a", "label": "Longueur L", "unit": "cm", "value": 120, "min": 60, "max": 180, "step": 20},
+      {"key": "b", "label": "Largeur ℓ", "unit": "cm", "value": 200, "min": 100, "max": 240, "step": 20},
+      {"key": "c", "label": "Hauteur h", "unit": "cm", "value": 180, "min": 60, "max": 180, "step": 20}
+    ],
+    "questions": [
+      {"key": "g", "label": "Arête a = PGCD", "unit": "cm"},
+      {"key": "nBoxes", "label": "Nombre de cubes", "unit": "—"}
+    ]
+  }
+]

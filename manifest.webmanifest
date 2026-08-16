@@ -1,0 +1,12 @@
+{
+  "name": "Maths 2ème — Tome 1",
+  "short_name": "Maths 2ème",
+  "description": "Exercices paramétriques du manuel de 2ème année sciences et TI, tome 1",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f3ff",
+  "theme_color": "#5b21b6",
+  "icons": [{"src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}]
+}
