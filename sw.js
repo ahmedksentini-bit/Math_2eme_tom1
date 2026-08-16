@@ -1,4 +1,4 @@
-const CACHE = "math2-v1-0";
+const CACHE = "math2-v1-1";
 const ASSETS = ["./","./index.html","./styles.css","./enhancements.css","./src/app.js","./src/solvers.js","./src/diagrams.js","./src/recaps.js","./data/exercises.json","./data/exercises-ch1-ch4.json","./data/exercises-ch5-ch9.json","./manifest.webmanifest","./assets/icon.svg"];
 self.addEventListener("install", event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting())));
 self.addEventListener("activate", event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim())));
