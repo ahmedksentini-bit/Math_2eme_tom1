@@ -328,9 +328,57 @@ const recaps = {
     ],
     watch: "Le centre O est le seul point invariant (si α n’est pas un multiple de 360°)."
   },
+  arithSeq: {
+    title: "Suites arithmétiques",
+    lead: "Chaque terme s’obtient en ajoutant la raison r. Les points (n ; uₙ) sont alignés.",
+    points: ["uₙ = u₁ + (n−1)r", "Sₙ = n(u₁ + uₙ)/2", "uₙ − uₙ₋₁ = r"],
+    watch: "n−1 et pas n : u₁ est déjà le premier terme."
+  },
+  geoSeq: {
+    title: "Suites géométriques",
+    lead: "Chaque terme s’obtient en multipliant par la raison q.",
+    points: ["uₙ = u₁ q^{n−1}", "Sₙ = u₁(1 − qⁿ)/(1 − q) si q ≠ 1", "uₙ / uₙ₋₁ = q"],
+    watch: "Si q = 1, Sₙ = n u₁. On ne divise pas par 1 − q."
+  },
+  affineFn: {
+    title: "Fonction affine",
+    lead: "f(x) = ax + b. La courbe est une droite de pente a.",
+    points: ["f(x₀) = a x₀ + b", "a > 0 : croissante", "On lit l’image sur la courbe"],
+    watch: "f(0) = b, pas a."
+  },
+  quadFn: {
+    title: "Fonction trinôme",
+    lead: "f(x) = ax² + bx + c. La courbe est une parabole.",
+    points: ["a > 0 : tournée vers le haut", "Sommet d’abscisse −b/(2a)", "f(x₀) par substitution"],
+    watch: "Ne pas confondre f(x₀) et une racine de f(x) = 0."
+  },
+  trigExact: {
+    title: "Cercle trigonométrique",
+    lead: "M a pour coordonnées (cos α ; sin α) sur le cercle unité.",
+    points: ["cos 60° = 1/2, sin 60° = √3/2", "cos²α + sin²α = 1", "Abscisse = cosinus"],
+    watch: "Vérifier le mode degrés de la calculatrice."
+  },
+  distance2d: {
+    title: "Distance et milieu",
+    lead: "En repère orthonormé, AB est la norme de AB⃗.",
+    points: ["AB = √[(Δx)²+(Δy)²]", "I = moyennes des coordonnées", "AI = IB"],
+    watch: "La formule exige un repère orthonormé."
+  },
+  lineSlope: {
+    title: "Équation de droite",
+    lead: "y = mx + p. Les parallèles ont la même pente m.",
+    points: ["m = (y_B−y_A)/(x_B−x_A)", "p = y_A − m x_A", "Vérifier les deux points"],
+    watch: "Si x_A = x_B, la droite est verticale."
+  },
+  statsMean: {
+    title: "Statistique descriptive",
+    lead: "La moyenne est le barycentre des valeurs. L’étendue mesure la dispersion.",
+    points: ["x̄ = (Σxᵢ)/n", "Étendue = max − min", "min ≤ x̄ ≤ max"],
+    watch: "La moyenne n’est pas forcément une valeur observée."
+  },
   fixed: {
     title: "Activité du manuel",
-    lead: "Cette activité est celle du polycopié CNP (tome 1). On répond avec le cours du chapitre, sans notion hors programme.",
+    lead: "Cette activité est celle du polycopié CNP. On répond avec le cours du chapitre, sans notion hors programme.",
     points: [
       "Lire tout l’énoncé avant de calculer.",
       "Écrire la relation du cours, puis substituer.",

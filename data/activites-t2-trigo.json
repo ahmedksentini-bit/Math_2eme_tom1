@@ -1,0 +1,938 @@
+[
+  {
+    "id": "T2_TRIGO_A01",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 1,
+    "solver": "fixed",
+    "title": "Activité 1",
+    "difficulty": 1,
+    "statement": "Activité 1\nSoit un repère orthonormé du plan et soit A’le symétrique de A par rapport à O.\nOn désigne par C le demi-cercle de diamètre [AA’] et contenant le point B.\nCe demi-cecle est appelé demi-cercle trigonométrique.\n1) Faire une figure et préciser les coordonnées des points A, B et A’.\n2) Soit I le point de C tel que\nConstruire le point I et préciser ses coordonnées.\n3) Soit I’ le symétrique de I par rapport à (OB). Construire le point I’ et déterminer ses\ncoordonnées.\n4) On désigne par J et K les points de C tels que\na) Construire J et K et préciser leurs coordonnées.\nb) Construire les points J’ et K’ symétriques respectifs de J et K par rapport à (OB) et\ndéterminer leurs coordonnées.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 1 (« Activité 1 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 1 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A02",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 2,
+    "solver": "fixed",
+    "title": "Activité 2",
+    "difficulty": 1,
+    "statement": "Activité 2\nSoit un repère orthonormé du plan et soit A’le symétrique de A par rapport à O.\nOn désigne par C le demi-cercle trigonométrique. soit α un réel de [0, π].\n1) a) Combien y a-t -il de points M du plan tels que\nb) Combien y a-t-il de point M sur le demi-cercle C tel que\n2) a) Combien y a-t-il de point M sur le demi-cercle C d’abscisse 0,8 ?\nb) Combien y a-t-il de point M sur le demi-cercle C d’ordonnée 0,5 ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 2 (« Activité 2 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 2 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A03",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 3,
+    "solver": "fixed",
+    "title": "Activité 3",
+    "difficulty": 1,
+    "statement": "Activité 3\nSoit OPM un triangle rectangle en P et A un point du segment [OP],\ndistinct de O et de P, (voir figure).\nSoit un repère orthonormé du plan.\nSoit α un réel appartenant à [ 0 , π ] et soit M l’unique point\ndu demi-cercle trigonométrique C tel que\n• On appelle cosinus du réel α , l’abscisse du point M et on\nle note cos α .\n• On appelle sinus du réel α , l’ordonnée du point M et on le\nnote sin α .\nDéfinition cosinus et sinus\n’ A\nnis\nsoc\n,,OO AO B_i\n,,OO AO B_i\n,,OO AO B_i\n.πIOA 6=%\nππJOA et KOA4 3==%%\n?AOM = a%\n?AOM = a%\n?AOM = a%\nO A P\nM\nOn muni le plan du repère orthonormé tel que B soit du même côté que M par\nrapport à la droite (OP).\nSoit A’ le symétrique de A par rapport à O et C le demi-cercle trigonométrique de diamètre\n[AA’] et contenant B.\nLe demi-cercle C coupe la droite (OM) en un point N.\na) Recopier et compléter la figure.\nb) Vérifier que l’abscisse du point N est égale à et que l’ordonnée du point N est\négale à",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 3 (« Activité 3 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 3 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A04",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 4,
+    "solver": "fixed",
+    "title": "Activité 4",
+    "difficulty": 1,
+    "statement": "Activité 4\nSoit un repère orthonormé du plan.\n1) a) Placer le point M du demi-cercle trigonométrique C tels que cos\nb) Placer les points P du demi-cercle trigonométrique C tels que sin\n2) a) Quelles sont les coordonnées du point B ?\nb) Déduire cos et sin\n3) Déterminer cos 0 et sin 0 ; cos π et sin π.\n4) Soit α un réel de l’intervalle [0 , π ] .\nVérifier que –1 ≤ cos α ≤ 1 et que 0 ≤ sin α ≤1 .",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 4 (« Activité 4 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 4 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A05",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 5,
+    "solver": "fixed",
+    "title": "Activité 5",
+    "difficulty": 1,
+    "statement": "Activité 5\nDans la figure ci-contre\nABC est un triangle isocèle rectangle en A ,\nBCD est un triangle équilatéral ,\nBDE est un triangle rectangle en B ,\nDE = 4 et = 30°\nCalculer le périmètre du polygone ABEDC.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 5 (« Activité 5 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 5 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A06",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 6,
+    "solver": "fixed",
+    "title": "Activité 6",
+    "difficulty": 1,
+    "statement": "Activité 6\nDans la figure ci contre CE =12 et = 30°\nCalculer BD.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 6 (« Activité 6 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 6 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A07",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 7,
+    "solver": "fixed",
+    "title": "Activité 7 Angles supplémentaires",
+    "difficulty": 1,
+    "statement": "Activité 7 Angles supplémentaires\nSoit α un réel appartenant à l’intervalle [0 , π] et soit M le point du demi-cercle\ntrigonométrique tel que . On désigne par M’ le symétrique de M par rapport à (OB).\n,,OO AO B_i\n,,OO AO B_i\nOM\nOP\n.OM\nMP\n,.AOM 0 5=%\n.AOP 2\n2=%\nπ\n2c m .π\n2c m\nEV\nCAB%\n?AOM = a%\n1) a) Exprimer en fonction de α .\nb) Quelles sont les coordonnées des points M et M’ ?\nc) Comparer cos(π – α ) et cos α ; sin(π – α ) et sin α .\n2) a) Représenter sur le demi-cercle trigonométrique les points P et Q tels que\npuis donner les valeurs exactes de cos et sin\nb) Donner les valeurs exactes de cos",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 7 (« Activité 7 Angles supplémentaires ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 7 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A08",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 8,
+    "solver": "fixed",
+    "title": "Activité 8",
+    "difficulty": 1,
+    "statement": "Activité 8\nCalculer sans utiliser la calculatrice",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 8 (« Activité 8 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 8 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A09",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 9,
+    "solver": "fixed",
+    "title": "Activité 9 Angles complémentaires",
+    "difficulty": 1,
+    "statement": "Activité 9 Angles complémentaires\nSoient α un réel appartenant à l’intervalle et M et N les points de l’arc du\ndemi-cercle trigonométrique tels que\n1) Exprimer en fonction de α .\n2) Soient M’ le projeté orthogonal de M sur (OA) et N’ le projeté orthogonal de N sur (OB).\na) Comparer les triangles OMM’ et ONN’.\nb) En déduire que cos = sin α et sin = cos α .\n3) Sans utiliser la calculatrice calculer",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 9 (« Activité 9 Angles complémentaires ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 9 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A10",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 10,
+    "solver": "fixed",
+    "title": "Activité 10 Distance entre les planètes : Terre, Soleil, Venus et Mercure",
+    "difficulty": 1,
+    "statement": "Activité 10 Distance entre les planètes : Terre, Soleil, Venus et Mercure\nDepuis la terre T on peut observer le soleil S, venus V et Mercure M.\nD’après les astronomes la mesure de l’angle est égale à 48° lorsque la droite (TV) est\ntangente à la trajectoire de Venus, trajectoire qu’on suppose circulaire (figA)\n1) Calculer les distances terre-venus TV et soleil-venus SV sachant que la distance\nterre-soleil TS est estimée à 15\nX 107 km\n'AOM%\nππAOP et AOQ66\n5==%% π\n5 .π\n,, .πππ πsin cos sin et3\n).\n).\nππππ\nππ π π\ncos cos cos cos\nsin sin sin sin\na\nb\n10 5\n+++\n+--\n, π0 2; E AB7 @%\nAON%\nπ\n2 - ac m π\n2 - ac m\n).\n).\nππ π π\nππ π π\ncos cos sin sin\nsin sin cos cos\na\nb\n10 5\n10 5\n+- -\n+--\nSTV%\nAOM et BON== aa\\ \\\n2) Observer la figure (Fig B) et calculer les distances Terre-Mercure TM et Mercure-Soleil MS.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 10 (« Activité 10 Distance entre les planètes : Terre, Soleil, Venus et Mercure ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 10 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A11",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 11,
+    "solver": "fixed",
+    "title": "Activité 11",
+    "difficulty": 2,
+    "statement": "Activité 11\nSoit ABC un triangle tel que AB = 5 , AC =13 et BC =12\n1) Quelle est la nature de ce triangle ?\n2) Déterminer\n3) Utiliser votre calculatrice pour donner une valeur approchée à 1° prés des angles",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 11 (« Activité 11 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 11 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A12",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 12,
+    "solver": "fixed",
+    "title": "Activité 12",
+    "difficulty": 2,
+    "statement": "Activité 12\nSoit un repère orthonormé du plan.\nOn désigne par C le demi-cercle trigonométrique et par D et D’ les tangentes respectives à\nC , en A et en B, et par I leur point d’intersection.\nOn considère le repère de la droite D et le repère de la droite D’.\nSoit α un réel appartenant à l’intervalle ]0 , π[ tel que\n1) Soient M le point de C tel que et P et Q les projetés orthogonaux respectifs du\npoint M sur (OA) et sur (OB).\nExprimer cos α , sin α , tan α et cot α en fonction de\n2) Soit T le point d’intersection des droites D et (OM).\nEn appliquant le théorème de Thalès au triangle OAT, Montrer que tan\n3) Soit T’ le point d’intersection des droites D’ et (OM). Montrer que cot\n• Soit α un réel appartenant à l’intervalle [0 , π] et tel que\nOn appelle tangente du réel α le réel noté tan α et défini par tan\n• Soit α un réel appartenant à l’intervalle ]0 , π[\nOn appelle cotangente du réel α le réel noté cot α et défini par cot\nDéfinition Tangente et cotangente\nπ≠.2a\nπ≠.2a\n.cos\nsin=a a\na\n,, .tan tan cot cotAA C Ce t^ ^ ^ ^h h h hW W W W\n.Ae tCW W\n,,OO AO B_i\n,AA I_i ,BB I_i\n?AOM = a%\n.OP et OQ\n.AT=a\n.sin\ncos=a a\na\n'BT=a",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 12 (« Activité 12 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 12 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A13",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 13,
+    "solver": "fixed",
+    "title": "Activité 13 Relations fondamentales",
+    "difficulty": 2,
+    "statement": "Activité 13 Relations fondamentales\nSoit x un réel appartenant à [0 , π]\n1) Montrer que (cos x) 2 + (sin x) 2 =1\nPar convention on écrit\ncos\n2x, sin2x , tan 2x et cot 2x au lieu de (cos x) 2, (sin x) 2, (tan x) 2 et (cot x) 2.\n2) Montrer que pour on a 1 + tan 2 x =\n3) Montrer que pour x ≠ 0 et x ≠ π on a 1 + cot 2x =",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 13 (« Activité 13 Relations fondamentales ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 13 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A14",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 14,
+    "solver": "fixed",
+    "title": "Activité 14",
+    "difficulty": 2,
+    "statement": "Activité 14\n1) Soit x un réel appartenant à [ , π] tel que sin\nCalculer cos x , tan x et cot x.\n2) Calculer sin a et cos a sachant que cot a = –2.\n3) Calculer cos α et sin α sachant que tan α = 10.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 14 (« Activité 14 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 14 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A15",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 15,
+    "solver": "fixed",
+    "title": "Activité 15",
+    "difficulty": 2,
+    "statement": "Activité 15\n1) Soit α un réel appartenant à ]0 , [.\nProuver que tan = cot α et cot = tan α .\n2) Soit α un réel appartenant à l’intervalle [ 0 , π ].\nProuver que pour α ≠ , tan( π – α ) = – tan α ;\net que pour α appartenant à ] 0 , π [ , cot( π – α ) = – cot α\n3) a) Donner les valeurs exactes de tan\nb) Calculer sans utiliser la calculatrice",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 15 (« Activité 15 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 15 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A16",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 16,
+    "solver": "fixed",
+    "title": "Activité 16",
+    "difficulty": 2,
+    "statement": "Activité 16\n1) Construire un triangle ABC rectangle en A et tel que BC = 8 et\n2) Soit H le pied de la hauteur issue de A et soit O le milieu de [BC].\na) Calculer les mesures des angles du triangle AOH.\nb) Calculer OH puis AH et AB.\nc) Déterminer les valeurs exactes de cos , sin et tan .\n3) En déduire les valeurs de\na) cos , sin et tan . b) cos , sin et tan .\ncos x\n.sin x\n.x 5\n3=π\nπ\nπ\nπ\n2 - ac m π\n2 - ac m\n,.ππ πtan tan et3\n.ππππππtan tan tan tan tan tan77\n6+++++\nπ\nπ\n3 π\n.πB 8=V\nπ\nπ\nπ\n3π\n3 π\n7π",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 16 (« Activité 16 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 16 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A17",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 17,
+    "solver": "fixed",
+    "title": "Activité 17",
+    "difficulty": 2,
+    "statement": "Activité 17\nSoit ABC un triangle rectangle en A et soit H le pied de la hauteur issue de A.\n1) Montrer que\n2) a) En considérant le triangle AHB exprimer tan en fonction de AH.\nb) En considérant le triangle AHC exprimer tan en fonction de AH.\n3) a) En déduire que AH\n2 = HB × HC.\nb) Calculer AH sachant que HB = 3 et HC = 12.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 17 (« Activité 17 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 17 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A18",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 18,
+    "solver": "fixed",
+    "title": "Activité 18",
+    "difficulty": 2,
+    "statement": "Activité 18\nA partir de 1000 m d’altitude un avion vole à 900 km/h, en faisant un angle de 10° avec\nl’horizontale. A quelle altitude sera t-il au bout de 5 minutes d’ascension ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 18 (« Activité 18 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 18 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A19",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 19,
+    "solver": "fixed",
+    "title": "Activité 19 Construction d’un angle connaissant l’un de ses rapports",
+    "difficulty": 2,
+    "statement": "Activité 19 Construction d’un angle connaissant l’un de ses rapports\ntrigonométriques\n1) a) Construire un triangle rectangle en A et tel AB = 6 et BC =10.\nb) Calculer cos , sin et tan .\n2) a) Construire un angle sachant que cos\nb) Construire un angle obtus tel que sin = 0,35\n3) Construire un angle α dans chacun des cas suivants\na) tan ; b) cos α = 0,25 ; c) α est aigu et sin α = 0,6 ; d) cos α = -0,8.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 19 (« Activité 19 Construction d’un angle connaissant l’un de ses rapports ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 19 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A20",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 20,
+    "solver": "fixed",
+    "title": "Activité 20 La loi du sinus",
+    "difficulty": 2,
+    "statement": "Activité 20 La loi du sinus\n1) Soit ABC un triangle et soit H le pied de la hauteur issue de C .\nOn pose BC = a, AC = b et AB = c.\na) Exprimer CH en fonction de b et de sin\nb) Exprimer CH en fonction de a et de sin\nc) En déduire que .\n2) Prouver que",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 20 (« Activité 20 La loi du sinus ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 20 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A21",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 21,
+    "solver": "fixed",
+    "title": "Activité 21",
+    "difficulty": 2,
+    "statement": "Activité 21\n1) Soit ABC un triangle rectangle en A.\nMontrer que sin 2 = sin2 + sin2\nBC A H=V %\nBV\nCAH_i%\nBV BV BV\nxOy% .xOy 5\n4=`j%\nMON% MON_i%\n4=a\n.AW\n.BV\n.\nsin sin sinA\na\nB\nb\nC\nc==W V W\nsin sinA\na\nB\nb=W V\nA^hW B^hV .C^hW\n2) Soit ABC un triangle tel que sin 2 = sin2 + sin2\nMontrer que ce triangle est rectangle.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 21 (« Activité 21 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 21 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A22",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 22,
+    "solver": "fixed",
+    "title": "Activité 22",
+    "difficulty": 2,
+    "statement": "Activité 22\n1) Soit MNP un triangle tel que MN = 8, NP = 6 et MP = 10.\nMontrer que sin , sin et sin sont en progression arithmétique.\n2) Soit ABC un triangle tel que BC, AC et AB sont en progression arithmétique.\nMontrer que sin , sin et sin sont en progression arithmétique.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 22 (« Activité 22 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 22 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A23",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 23,
+    "solver": "fixed",
+    "title": "Activité 23 Théorème des bissectrices",
+    "difficulty": 3,
+    "statement": "Activité 23 Théorème des bissectrices\nSoit ABC un triangle et soit I le point d’intersection de la bissectrice intérieure de l’angle\n1) En appliquant la loi du sinus aux triangles AIB et AIC, montrer que\n2) On suppose que le triangle ABC n’est pas isocèle et on désigne par J le point d’intersection\nde la bissectrice extérieure de l’angle et (BC). Montrer que",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 23 (« Activité 23 Théorème des bissectrices ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 23 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A24",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 24,
+    "solver": "fixed",
+    "title": "Activité 24",
+    "difficulty": 3,
+    "statement": "Activité 24\nSoit ABC un triangle.\nΓ est le cercle circonscrit à ABC et O est son centre.\nB’ est le point diamétralement opposé à B.\nOn désigne par R le rayon du cercle Γ et on pose BC = a, AC = b et AB = c.\n1) Pour chaque cas de figure répondre aux questions ci-dessous\na) Comparer\nb) Montrer que\n3) Déterminer en fonction de R lorsque le triangle ABC est rectangle en A.\n4) Montrer que\n’ B\n’ B\nA^hW B^hV .C^hW\nMX PV NW\nAW BV CW\n.IC\nIB\nAC\nAB=\n.JC\nJB\nAC\nAB=\n'.sin sinBAC et BB C__ ii%%\n.\nsin A\na R2=W\nsin A\na\nW\n.\nsin sin sinA\na R\nB\nb\nC\nc 2===W V W\n.Ae t B C5 ?W\nAW",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 24 (« Activité 24 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 24 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A25",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 25,
+    "solver": "fixed",
+    "title": "Activité 25",
+    "difficulty": 3,
+    "statement": "Activité 25\nSoit ABC un triangle et Γ son cercle circonscrit. Les bissectrices intérieures de se\ncoupent en I et coupent Γ respectivement en A’, B’ et C’\n1) Montrer que sont supplémentaires.\n2) On désigne par Γ’ le cercle circonscrit à IA’B’.\nEn appliquant la loi du sinus dans le triangle A’B’C’ puis dans le triangle IA’B’, montrer que\nles cercles Γ et Γ’ sont isométriques.\n3) Montrer que les cercles circonscrits respectivement aux triangles ABC, IA’B’, IB’C’ et\nIA’C’ sont tous isométriques.\nMesure de grandeurs",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 25 (« Activité 25 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 25 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A26",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 26,
+    "solver": "fixed",
+    "title": "Activité 26 Aire d’un triangle",
+    "difficulty": 3,
+    "statement": "Activité 26 Aire d’un triangle\n1) Construire un triangle MNP tel que MN = 10, MP = 7 et =100°\nDonner une valeur arrondie à 10-2 prés de l’aire de ce triangle.\n2) Soit ABC un triangle et H le pied de la hauteur issue de C .\nOn pose BC = a AC = b et AB = c et on désigne par S l’aire de ce triangle\na) Montrer que b c sin\nb) Donner les expressions de S en fonction de a, b et sin puis en fonction de a, c et sin\nc) Soit R le rayon du cercle circonscrit au triangle ABC.\nMontrer que",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 26 (« Activité 26 Aire d’un triangle ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 26 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A27",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 27,
+    "solver": "fixed",
+    "title": "Activité 27",
+    "difficulty": 3,
+    "statement": "Activité 27\n1) Soit ABC un triangle ayant pour aire 6 et tel que AB = 6 et BC = 4.\nCalculer\n2) Soit IJKL un parallélogramme tel que LK = 5 , LI = 8 et\nDéterminer une valeur approchée à 10\n-2 près de l’aire de IJKL.\n3) Soit ABCD un rectangle de centre O tel que AC = 12 et = 150°.\nCalculer la longueur et la largeur de ce rectangle.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 27 (« Activité 27 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 27 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A28",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 28,
+    "solver": "fixed",
+    "title": "Activité 28 Théorème d’El-Kashi",
+    "difficulty": 3,
+    "statement": "Activité 28 Théorème d’El-Kashi\nSoit ABC un triangle et H le pied de la hauteur issue de C.\nOn pose BC = a , AC = b et AB = c\n1) On suppose que l’angle est aigu.\na) Faire une figure.\nb) Exprimer AH et CH en fonction de b et\nc) Exprimer BH en fonction de b, c et\n,ABe tC\nW V W\n'' ' ' 'AI B e t ACB%%\nMX\nS 2\n1= .AW\nCW .BV\n.BV\n.S R\nabc\n4=\n.πJ 8=S\nAOB%\nAW\n.AW\n.AW\nd) En appliquant le théorème de Pythagore au triangle BHC montrer que\na2 = b2 + c2 – 2bc cos\n2) On suppose que l’angle est obtus.\na) Faire une figure.\nb) Exprimer AH, CH et BH en fonction de b, c et\nc) Montrer que a\n2 = b 2 + c2 – 2bc cos\n4) Exprimer de même\nb2 en fonction de a, c et cos\nc2 en fonction de a, b et cos",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 28 (« Activité 28 Théorème d’El-Kashi ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 28 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A29",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 29,
+    "solver": "fixed",
+    "title": "Activité 29 Un problème Babylonien",
+    "difficulty": 3,
+    "statement": "Activité 29 Un problème Babylonien\nTrouver le rayon du cercle circonscrit à un triangle dont les côtés mesurent 50 ; 50 et 60.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 29 (« Activité 29 Un problème Babylonien ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 29 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A30",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 30,
+    "solver": "fixed",
+    "title": "Activité 30",
+    "difficulty": 3,
+    "statement": "Activité 30\nDans la figure ci-contre, ABCDEFGH est un cube d’arête a et\nO est le point d’intersection des diagonales [AG] et [EC].\nMontrer que l’angle est indépendant de a et donner une\nvaleur approchée à 1° prés de cet angle.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 30 (« Activité 30 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 30 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A31",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 31,
+    "solver": "fixed",
+    "title": "Activité 31",
+    "difficulty": 3,
+    "statement": "Activité 31\nDans la figure ci-contre, ABCD est un quadrilatère et I\nle point d’intersection des diagonales.\nOn pose\nMontrer que l’aire du quadrilatère ABCD est égale à",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 31 (« Activité 31 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 31 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A32",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 32,
+    "solver": "fixed",
+    "title": "Activité 32",
+    "difficulty": 3,
+    "statement": "Activité 32\nDans la figure ci-contre, ABCD est un carré de côté a\net EBC est un triangle équilatéral.\n1) Calculer\n2) a)Montrer que\nEn déduire cos\nb) Calculer sin\n.AW\n.AW\n.AW\n.BV\n.CW\nAOC%\n.AID=a %\n.AC BD sin2\n1 # a\n.ABE puis BAE%%\n.AE a 2 32=-2 ^h\n.BAE%\n.BAE%\nAW",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 32 (« Activité 32 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 32 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A33",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 33,
+    "solver": "fixed",
+    "title": "Activité 33 Triangles isométriques",
+    "difficulty": 3,
+    "statement": "Activité 33 Triangles isométriques\nDéfinition :\nSoient ABC et A’B’C’ deux triangles,\nen utilisant la loi du sinus et le théorème d’El- Kashi, démontrer les deux énoncés suivants.\nEnoncé 1 (1er cas d’isométrie des triangles)\nsi alors( les triangles ABC et A’B’C’ sont isométriques).\nEnoncé 2 (2ème cas d’isométrie des triangles)\nsi alors (les triangles ABC et A’B’C’ sont isométriques).",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 33 (« Activité 33 Triangles isométriques ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 33 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A34",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 34,
+    "solver": "fixed",
+    "title": "Activité 34",
+    "difficulty": 3,
+    "statement": "Activité 34\nSoit ABC un triangle isocèle en A . La médiatrice de [AC] coupe (BC) en D. On note E le point\nde la droite (AD) tel que EA = BD avec E et D de part et d’autre de A.\n1) Montrer que le triangle CAD est isocèle.\n2) Montrer que les triangles ABD et CAE sont isométriques.\n3) Quelle est la nature du triangle CDE ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 34 (« Activité 34 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 34 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A35",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 35,
+    "solver": "fixed",
+    "title": "Activité 35 Triangles semblables",
+    "difficulty": 3,
+    "statement": "Activité 35 Triangles semblables\nSoient ABC et A’B’C’ deux triangles on pose BC = a, AC = b, AB = c, B’C’ = a’, A’C’ = b’, A’B’ = c’.\nOn dit qu’ils sont semblables si et seulement si\n1) Montrer que si ABC et A’B’C’ sont semblables alors (ce rapport est appelé\nrapport de similitude des deux triangles).\n2) Montrer que si alors ABC et A’B’C’sont semblables.\n3) Montrer que si alors ABC et A’B’C’sont semblables.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 35 (« Activité 35 Triangles semblables ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 35 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_TRIGO_A36",
+    "chapter": "trigo",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 36,
+    "solver": "fixed",
+    "title": "Activité 36 Relations métriques dans un triangle rectangle",
+    "difficulty": 3,
+    "statement": "Activité 36 Relations métriques dans un triangle rectangle\nSoit ABC un triangle rectangle en A et [AH] la hauteur issue de A.\n1) Exprimer de deux façons différentes l’aire du triangle ABC.\nEn déduire que AB × AC = AH × BC.\n2) a) Montrer que les triangles ABH et ACH sont semblables.\nb) En déduire que AH 2 = HB × HC.\n3) a) Montrer que les triangles ABC et ABH sont semblables.\nb) En déduire que AB 2 = BH × BC.\n4) a) Montrer que AC 2 = CH × CB.\nb) Utiliser les égalités établies en 3)b) et 4)a) pour retrouver le théorème de Pythagore.\nOn dit que deux triangles sont isométriques si leurs côtés sont deux à deux égaux.\n', ' ' 'BB CC e t B CB C== =_iV X W X\n'' , '' 'AB A B AC A C et A A== =_ iW Y\n', ' '.AA BB e t CC== =W Y V X W X\n'''a\na\nb\nb\nc\nc==\n'''a\na\nb\nb\nc\nc==\n' ''AA e t c\nc\nb\nb==W Y\nSoit x un réel de l’intervalle [ 0 ; π ] déterminer x dans chacun des cas ci-dessous\na) cos x = ; b) sin x = ; c) cos 2 x =\nCalculer sans utiliser la calculatrice.\na) cos + cos + cos + cos\nb) sin + sin - sin - sin\nSans utiliser la calculatrice calculer.\ncos + cos - sin - sin .\nRésoudre dans [ 0 ; π ] les équations ci-dessous.\na) tan x +1 = 0 ; b) 1 - cot\nx = 0.\nMontrer les égalités suivantes\na) (cos x + sin x)2 = 1 + 2 cos x . sin x. ; b) (cos x + sin x) 2 + (cos x - sin x)2 = 2.\nSans utiliser la calculatrice calculer\na) tan + tan + tan + tan\nb) tan × tan\na) Soit x un réel appartenant à tel que sin x = Calculer cos x , tan x et cot x.\nb) Calculer cos a et sin a sachant que tan a =\nc) Calculer sin α et cos α sachant que cot α =\n1) Construire un triangle ABC rectangle en A et tel que BC = 8 et\n2) Soit H le pied de la hauteur issue de A et soit O le milieu de [BC].\na) Calculer les mesures des angles du triangle AOH.\nb) Calculer OH, puis AH et AB.\nDéterminer les valeurs exactes de cos , de sin et de tan .\n3) En déduire les valeurs exactes de\na) cos , sin et tan .\nb) cos , sin et tan\nConstruire un angle A dans chacun des cas suivants\na) sin = ; b) tan = -5 ; c) cos =\nAW AW\nW\nAW\n1- 2\n3 .4\n.4\nπ\nπ\nπ\nπ\nπ\nπ\nπ\nπ\nπ\nπ\nπ\nπ\n5 π\n5 π\nπ\nπ\nπ\nπ\nπ\n.π\n.π\n.π\nπ\n11 π\n11 .π\nπ\n10 .π\n, π0 2; E\n.5-\n.13\n.πB 12=V\n.3\nSoit ABC un triangle tel que AB = 7 , AC = 9 et = 60°.\nCalculer l’aire de ce triangle.\nSoit ABC un triangle tel que AB = 8 , AC = 7 et = 120°\na) Calculer BC.\nb) Calculer l’aire de ce triangle.\nABC est un triangle tel que AB = 5 , AC = 6 et BC = 9.\nDonner une valeur approchée de à 1° degré près.\nDans un triangle rectangle en A, on a AB = 3 et AC = 4.\nCalculer BC, AH, BH et CH où H est le pied de la hauteur issue de A.\nDans un triangle ABC rectangle en A, on trace la hauteur [AH].\nSachant que AH = 2 et BH = 2,5. Calculer les côtés du triangle.\nAW\nAW\nAW\nLignes trigonométriques des angles remarquables\nRelations fondamentales\nPour tout réel x appartenant à on a cos 2x + sin 2x = 1\nPour tout réel x appartenant à tel que x ≠ on a 1 + tan 2x =\nPour tout réel x appartenant à on a 1 + cot 2x =\nAngles complémentaires\nPour tout x appartenant à on a cos = sin x et sin = cos x\nPour tout x appartenant à on a tan = cot x\nPour tout x appartenant à on a cot = tan x .\nAngles supplémentaires\nPour tout réel x appartenant à on a cos (π – x) = – cos x et sin(π – x) = sinx.\nPour tout réel x appartenant à tel que x ≠ on a tan(π – x)= – tanx.\nPour tout réel x appartenant à on a cot (π – x) = –cot x.\nLoi du sinus - Aire d’un triangle\n♦ Loi du sinus\nSoit ABC un triangle on pose a = BC, b = AC et c = AB\nOn a\nα 0 π\nsin α 0 1 0\ncos α 1 0 -1\ntan α 0 1 0\ncot α 1 0\n3 3\nsin x\ncos x\n, π0 2; E\n, π0 2EE\n, π0 2;;\nπ x2 -c m π x2 -c m\nπ x2 -c m\nπ x2 -c m\n, π06 @\n, π06 @\n, π0 6@\nπ\nsin sin sinA\na\nB\nb\nC\nc==W V W\nπ\nπ\nπ\nπ\n, π06 @\n, π06 @\n, π0 6@\nπ\nSoit ABC un triangle on pose a = BC, b = AC et c = AB\nS désigne l’aire de ABC et R désigne le rayon du cercle circonscrit à ABC.\nOn a\n♦\nRelations métriques dans le triangle rectangle\nSoit ABC un triangle rectangle en A et soit H le pied de la hauteur issue de A.\nOn a BC 2 = AB2 + AC2\nAH . BC = AB . AC\nAH\n2 = HB . HC\nAB2 = BH . BC\nAC2 = CH . CB\nThéorème D’El- Kashi\nAire d’un triangle\nSoit ABC un triangle on pose a = BC, ,b = AC et c = AB; on a\na2 = b2 + c2 – 2 bc cos\nb2 = a2 + c2 – 2 ac cos\nc2 = b2 + a2 – 2 ba cos\nTriangles isométriques\n♦ 1ercas d’isométrie\nSi deux triangles ont un côté égal compris entre deux angles respectivement égaux alors ils\nsont isométriques.\n♦ 2ème cas d’isométrie\nSi deux triangles ont un angle égal compris entre deux côtes respectivement égaux alors ils\nsont isométriques.\n♦ 3ème cas d’isométrie\nSi deux triangles ont trois côtes respectivement égaux alors ils sont isométriques.\n.sin sin sinSa b Cb c Aa c B2\n1== = W W V\nsin sin sinA\na\nB\nb\nC\nc R abc\nS2 2=== =W V W\nAW\nBV\nCW\nDévelopper ses compéDévelopper ses compétences\n1) Soit ABC un triangle tel que AB = 3, BC = 4 et AC = 5.\nQuelle est la nature de ce triangle ?\n2) a) Construire à l’extérieur de ce triangle les carrés ACPN, BCQR et ABSM.\nb) Calculer le périmètre de l’hexagone MNPQRS.\nc) Calculer l’aire de l’hexagone MNPQRS.\nIndication\nUtiliser le théorème d’El Kashi.\nDans la figure ci-contre, ABC est un triangle équilatéral et M\nun point intérieur à ce triangle tel que\nMA = 3, MB = 4 et MC = 5.\nOn se propose de calculer le côté du triangle ABC.\n1) Reproduire la figure et construire le point N image du point\nM par la rotation directe r de centre A et d’angle .\n2) Quelle est la nature du triangle MNC ?\n3) Déduire de ce qui précède le côté du triangle équilatéral\nABC.\nIndication\n• Déterminer l’image du segment [BM] par la rotation r ?\n• Déterminer la mesure de l’angle et conclure.\nFormule de Héron d’Alexandrie\nSoit ABC un triangle. On pose BC = a ; AC = b et AB = c et on désigne p le demi-périmétre\nde ce triangle (2p = a + b + c) et par S son aire.\n1) En utilisant le théorème d’El-Kashi, montrer que\n(a + b + c)(a + b – c)(b + c – a)(c + a – b) = (4a\n2 b2) sin2 .\n2) a) Exprimer chacun des nombres p – a , p – b et p – c en fonction de a,b et c\nb) Prouver que a 2 b2 sin2 = 4p(p – a)(p – b)(p – c).\n3) Montrer que l’aire du triangle ABC est S =\n4) Calculer l’aire d’un triangle dont les côtes mesurent 5, 7 et 8.\nIndication\nPenser aux identités remarquables et utiliser la formule S = ab sin .\nπ\npp a p b p c---^^^ hhh\nC^hW\nC^hW\n1 CW\nANC\\\nUtiliser les TICUtiliser les TIC\nDéterminer le sinus, le cosinus et la tangente de\nA l’aide d’un logiciel de géométrie\n- Construire un pentagone régulier (polygone régulier).\n- Nommer A, B, C, D, E ses sommets et O son centre.\n- Construire les segments [OA] et [OE].\n- Mesurer l’angle .\n- Construire la diagonale [AD].\n- Nommer I le point d’intersection de [OE] et [AD].\n- Vérifier à l’aide des outils du logiciel que le triangle AIO est rectangle en I.\n- Déterminer les longueurs AI, IO et AO.\n- Utiliser la calculatrice du logiciel, pour déterminer sin72°, cos72° et tan72°.\nπ\nAOE\\\nAppliquer\nRésoudre dans l’intervalle [0 , π] les\néquations ci-dessous.\nRésoudre dans l’intervalle [0 , π] les\néquations ci-dessous.\nMontrer les égalités suivantes.\nSoit ABC un triangle rectangle en A telque\nAC = 6 et BC = 9.\na) Calculer AB, puis\nb) Donner une valeur approchée des\nangles en radians, à 0,01 près.\nABC est un triangle tel que = 60° ,\n= 45° et la hauteur AH est égale à 3.\na) Calculer AB et AC puis BH et CH. En\ndéduire BC.\nb) Calculer les hauteurs BP et CQ du triangle.\nSoit ABC un triangle tel que AB = 6,\n105°.\n1) Exprimer, en radians, les angles\n2) Soit H le projeté orthogonal de A sur [BC]\na) Faire une figure\nb) Calculer AH, AC et BC\n3) Soit K le projeté orthogonal de B sur [AC].\nCalculer BK.\nLa figure ci-contre modélise une échelle\n[AB] de 6m de long appuyée\ncontre un mur vertical [CD] de\n7m de haut. L’angle que fait\nl’échelle avec le sol est 65°.\n1) Calculer, à un centimètre\nprès, la distance BC entre le\npied de l’échelle et le mur.\n2) A quelle distance du sommet\nD du mur se trouve le haut de\nl’échelle ?\nSoit MNP un triangle et soit H le projeté\northogonal de M sur [NP].\nOn suppose que\na) Calculer\nb) Calculer\nc) Quelle est la nature du triangle MNP ?\nUn triangle ABC est tel que et\n1) Calculer .\nIndiquer la nature du triangle ABC.\n2) Exprimer AB et AC en fonction de BC et\ncalculer l’aire de ABC.\n3) Soit O le centre du cercle circonscrit à\nABC. Montrer que O et B sont symétriques\npar rapport à (AC).\nLes angles d’un triangle sont\nproportionnels aux nombres 2 , 3 et 4.\nCalculer ces angles en radians puis en degrés.\n6 10\n)( + )( - )= .\n)- ( - ) - = .\n)- + = .\ncos sin\ncos cos\nsin sin\nax x\nbx x\ncx x\n14 1 0\n42 1 0\n23 1 0\n)( + )( - )= .\n)- ( + ) + = .\ncot\ntan tan\nsinax x\nbx x\n45 3 0\n10 33\n.coset C W\nBe tCV W\nBV\nCW\nπBe t A4==V W\n.Ae tCW W\n.HP 3=\n,MN MH et12 3==\n.,sin cos tan etNN NWW W\n.,cos sin tan etPP PVV V\nπA 6=W\nCW\n.πBC 2=+V W\n)+ .+ = .\n)+= ( - ) ( + ) .\n)+ = + .\n)= - .\n)+ = .\ncos sin cos sin\nsin cos cos cos\ncos sin cos\ncos sin\ncos sin cos sin\ncos tan cos tan\nax x x x\nbx x x x\ncx x x\nd xx\nxx xx\ne x x x x\n43 2 2\n43 3\n11 1\n+\n-\n-\n22 2\nbb ll\n,,sin cos sinBB CVV W\nExercices et problèmesExercices et problèmes\nExercices et problèmesExercices et problèmes\nMaîtriser\nSoit ABC un triangle.\nOn pose BC = a, AC = b et AB = c.\n1) Montrer que\n2) Soit H le pied de la hauteur issue de A.\na) Exprimer BC en fonction de BH et de HC\nb) Montrer que\nc) En déduire que\nOn considère un triangle IJK rectangle en\nI et tel que IJ, IK et JK sont dans cet ordre\ntrois termes consécutifs d’une suite\narithmétique de raison r où r est un réel\npositif.\n1) Calculer IK puis IJ et JK en fonction de r.\n2) Montrer que\nsont dans cet ordre trois termes consécutifs\nd’une suite arithmétique de raison a où a est\nun réel positif qu’on précisera.\n3) Déterminer les valeurs approchées à 10\n-1\nprès des mesures en degrés des angles\nSoit ABC un triangle rectangle en A, ayant\npour aire 15,36 et tel que\nCalculer BC.\nSoit ABCD un trapèze rectangle en A et D\ntel que AB =15, CD = 9 et BC = 10.\na) Calculer\nb) Calculer à un degré près\npuis à l’unité près AC et BD.\nSoit ABC un triangle isocèle en A. [BH] et\n[CK] désignent respectivement les hauteurs\nissues de B et C.\na) Montrer que BH = CK.\nb) Enoncer la propriété ainsi montrée.\nc) Montrer de deux façons que CH = BK.\nDistance Terre –lune\n1) Ci-dessous une photo d’une éclipse de la\nlune.\nExploiter cette photo pour déterminer une\nvaleur approchée du rayon de la lune sachant\nque celui de la terre est 6366 km.\n2) La lune est vue de la terre sous un angle de\n31,5° environ (voir figure )\nDéterminer la distance Terre-Lune.\nSoit ABC un triangle équilatéral. On\nconsidère les points M, N et P appartenant\nrespectivement aux segments [AB] , [BC] et\n[AC] et tels que AM = BN = CP.\nMontrer que le triangle MNP est équilatéral.\nSoit a un réel tel que a > 1 et ABC un\ntriangle tel que BC = a\n2 + a + 1,\nAC = 2a + 1 et AB = a 2 –1.\nMontrer que\nSoit MNP un triangle.\n1)a) Construire le cercle C passant par M et\ntangent en P à la droite (NP). Soit r son rayon\nb) Construire le cercle C’ passant par M et\ntangent en N à la droite (NP) . Soit r’ son\nrayon.\n2) On désigne par R le rayon du cercle\ncirconscrit au triangle MNP.\na) Montrer que MN = 2r sin = MP.\nb) Montrer que MP = 2r’sin = MN.\nc) En déduire que r . r’ = R\n1914\nsin\nsin\nsin sin sin\nsin\naB\ncA\nCb C A\nB0+\n-+ -\n-=\n^ ^\n^\nh h\nh\nV WW W\nW V\n=+ cos cosab c CBW V\n(+) = +sin sin cos sin cosBC B C C BV W V WW V\n,sin sin sin etKJ IW S S\n.etJKS W\n+= , .sin sinBC 1 4V W\n.etBCV W\nDAC et ADB\\ \\\n.πA 3\n2=W\nNW\nR\nr\n'\nR\nrPV\nMath et cultureMath et culture\nLe nombre π\nDepuis l’antiquité, les mathématiciens ont remarqués que tous les cercles avaient quelque\nchose en commun : le rapport entre périmètre et diamètre est fixe. Ce rapport est donné par le\nréel π.\nπ n’est pas un rationnel. La recherche de ses décimales a toujours été un enjeu pour la science:\n- Une décimale exacte pour les Babyloniens et les Egyptiens (2000 ans avant J-C).\n- 3 décimales exactes pour Archimède (250 ans avant J-C).\n- 16 décimales exactes pour AL Kashi (mort vers 1430).\n- 100 décimales pour Machin en 1706.\n- 1000 décimales en 1949.\n- Un million de décimales en 1973.\nAujourd’hui à l’aide des ordinateurs, de plus en plus puissants, on peut déterminer des\nUtiliser un logiciel de calcul formel, taper p (ou Pi) et sélectionner Simplifier / Approximation\net préciser le nombre de chiffres (ici 101) pour afficher les 100 premieres décimales de π.\n3.1415926535897932384626433832795028841971693993751058209749445923078164062\n862089986280348253421170679.\nAu palais de la découverte, à Paris, les 627 premières décimales de π ont été inscrites autour\nd'une coupole.\nAl Kashi Jamsheddine (mort vers 1430 à Samarcande)\nL’un des grands savants arabes, astronome et mathématicien. Il a dirigé pendant de longues\nannées l’observatoire de Samarcande et il a établit des tables astronomiques d’une extra-\nordinaire précision. Son ouvrage le plus célèbre est Mifteh El hissab (La clef de\nl’arithmétique).\nPour démarrerPour démarrerPour démarrerPour démarrer\nLa géométrie analytique est l’art de résoudre les problémes de géométrie\npar le calcul. René Descartes (1596-1650)",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 36 (« Activité 36 Relations métriques dans un triangle rectangle ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 36 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  }
+]

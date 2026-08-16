@@ -1,0 +1,678 @@
+[
+  {
+    "id": "T2_ESPACE_DROITES_A01",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 1,
+    "solver": "fixed",
+    "title": "Activité 1 Mesure de grandeurs",
+    "difficulty": 1,
+    "statement": "Activité 1 Mesure de grandeurs\n1) On considère un cube d’arête a, où a est un réel strictement positif. Calculer en fonction de a\na) la longueur d’une petite diagonale.\nb) la longueur d’une grande diagonale.\nc) l’aire latérale de ce cube.\nd) le volume de ce cube\n2) On Considère un parallélépipède rectangle de dimensions a,b et c.\nCalculer en fonction de a, b et c\na) l’aire latérale.\nb) le volume .\nc) la longueur d’une diagonale.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 1 (« Activité 1 Mesure de grandeurs ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 1 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A02",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 2,
+    "solver": "fixed",
+    "title": "Activité 2",
+    "difficulty": 1,
+    "statement": "Activité 2\nLa somme des aires des faces d’un parallélépipède rectangle est 22 cm 2.La somme des lon-\ngueurs des arêtes est 24 cm. Quelle est la longueur d’une diagonale ?\nLes axiomes de base\nEn géométrie dans l’espace on admet les 4 axiomes suivants\nAxiome 1 :Par trois points non alignés passe un plan et un seul .\nAxiome 2 : Si un plan contient deux points distincts alors\nil contient toute la droite passant par ces deux points .\nAxiome 3 :Si deux plans distincts ont un point commun alors\nils sont sécants suivant une droite passant par ce point .\nAxiome 4 :Tous les résultats de la géométrie plane sont applicables\ndans chaque plan de l’espace .",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 2 (« Activité 2 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 2 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A03",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 3,
+    "solver": "fixed",
+    "title": "Activité 3",
+    "difficulty": 1,
+    "statement": "Activité 3\nSoit ABCD un tétraèdre et soit I,J et K trois points appartenant respectivement à [DA] ,[DB]\net [DC] tels que :\nLes droites (JK) et (BC) se coupent en un point L.\nLes droites (KI) et (CA) se coupent en un point M.\nLes droites (IJ) et (AB) se coupent en un point N.\n1) a) Faire une figure .\nb) Justifier que les points L,M et N appartiennent aux plans (ABC) et (IJK).\n2) a) Justifier que les points L,M et N sont alignés.\nb) En déduire que les droites (BC) ,(KJ) et (MN) sont concourantes.\nDétermination d’un plan",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 3 (« Activité 3 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 3 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A04",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 4,
+    "solver": "fixed",
+    "title": "Activité 4",
+    "difficulty": 1,
+    "statement": "Activité 4\nSoit Δ une droite et A un point n’appartenant pas à cette droite .\nMontrer qu’il existe un plan et un seul contenant la droite Δ et le point A.\nPoints coplanaires- Droites coplanaires",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 4 (« Activité 4 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 4 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A05",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 5,
+    "solver": "fixed",
+    "title": "Activité 5",
+    "difficulty": 1,
+    "statement": "Activité 5\nDans la pyramide SABCD de la figure ci-contre,\n1) a) les pointe A ,O ,C et S sont –ils dans un même plan ?\nb) les pointe A ,O ,D et S sont –ils dans un même plan ?\nc) le point A appartient-il au plan (SBO) ? au plan (SOC) ?\n2) a) les droites (OB) et (AD) sont-elles contenues dans un\nmême plan ?\nb) les droites (CS) et (AD) sont-elles contenues dans un même plan ?\nc) les droites (AB) et (SD) sont-elles contenues dans un même plan ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 5 (« Activité 5 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 5 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A06",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 6,
+    "solver": "fixed",
+    "title": "Activité 6",
+    "difficulty": 1,
+    "statement": "Activité 6\nSoient ABCD un tétraèdre, I un point de l’arête [AB] distinct de A et de B,\nJ un point de l’arête [CD] distinct de C et de D et K un point du plan\n(BCD).\na) Les droites (IJ) et (BC) sont elles coplanaires ?\nMême question pour les droites(IJ) et (CD) ?\nb) Les poins I, J, A et C sont ils coplanaires ? Même question pour\nles points I, A, B et D ?\n•On dit que des points de l’espace sont coplanaires lorsqu’ils sont contenus dans un même plan.\n•On dit que des droites de l’espace sont coplanaires lorsqu’elles sont contenues dans un même\nplan .\nDéfinition\nPositions relatives de droites et de plans",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 6 (« Activité 6 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 6 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A07",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 7,
+    "solver": "fixed",
+    "title": "Activité 7 Positions relatives de deux droites dans l’espace",
+    "difficulty": 1,
+    "statement": "Activité 7 Positions relatives de deux droites dans l’espace\nPour chacune des figures I, II et III dire si les droites D et D’ sont coplanaires ou non ?\nDéterminer, dans chaque cas,",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 7 (« Activité 7 Positions relatives de deux droites dans l’espace ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 7 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A08",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 8,
+    "solver": "fixed",
+    "title": "Activité 8",
+    "difficulty": 1,
+    "statement": "Activité 8\n1) Soient D et D’ deux droites sécantes .\nMontrer qu’il existe un plan et un seul contenant les droites D et D’.\n2) Chacune des 3 figures suivantes illustre une façon de déterminer un plan .\nEnoncer ces 3 façons.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 8 (« Activité 8 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 8 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A09",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 9,
+    "solver": "fixed",
+    "title": "Activité 9",
+    "difficulty": 1,
+    "statement": "Activité 9\nDans la figure ci-contre, SABCD est une pyramide dont la base ABCD est un carré de centre O .\n1) Déterminer le plan de la face ABCD\na) à l’aide de trois points non alignés.\nb) à l’aide d’une droite et d’un point n’appartenant pas à cette\ndroite .\nc) a l’aide de deux droites sécantes .\nOn dit que deux droites coplanaires D et D’ sont sécantes lorsque leur intersection est un\npoint.\nDéfinition\nFIG I FIG II FIG III\nFIG I FIG II FIG III\nD + D'.\n2) Déterminer le plan (SAD) de la face SAD\na) Par une droite et un point n’appartenant pas à cette droite .\nb) Par deux droites sécantes.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 9 (« Activité 9 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 9 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A10",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 10,
+    "solver": "fixed",
+    "title": "Activité 10",
+    "difficulty": 1,
+    "statement": "Activité 10\nDans la figure ci-contre ABCDA’B’C’D’ est un cube\n1) Déterminer les positions relatives des droites\na) (AB) et (A’B’)\nb) (CD) et (CD’)\n2) Citer deux droites non coplanaires.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 10 (« Activité 10 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 10 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A11",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 11,
+    "solver": "fixed",
+    "title": "Activité 11",
+    "difficulty": 2,
+    "statement": "Activité 11\nSoient SABC un tétraèdre, I un point de [SB]\ndistinct de S et de B et J un point de [BC] distinct de B et de C\n1) Les droites (SA) et (BC) sont elles sécantes ?\n2) Les droites (IJ) et (SB) sont elles sécantes ?\n3) Soit K un point de [AC] distinct de A et de C\na) Les droites (IK) et (SC) sont elles sécantes ?\nb) Les droites (JK) et (AB) sont elles sécantes ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 11 (« Activité 11 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 11 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A12",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 12,
+    "solver": "fixed",
+    "title": "Activité 12 - Positions relatives d’une droite et d’un plan",
+    "difficulty": 2,
+    "statement": "Activité 12- Positions relatives d’une droite et d’un plan\nPour chacune des figures I, II et III déterminer\nVocabulaire\nLorsqu’une droite et un plan sont sécants on dit que la droite perce le plan ou que le plan coupe\nla droite.\nD\nP P\nD\nOn dit qu’une droite et un plan sont sécants si leur intersection est un point.\nDéfinition\nFIG I FIG II FIG III\nD + P",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 12 (« Activité 12 - Positions relatives d’une droite et d’un plan ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 12 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A13",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 13,
+    "solver": "fixed",
+    "title": "Activité 13",
+    "difficulty": 2,
+    "statement": "Activité 13\nSoient ABCD un tétraèdre , I le milieu de [AB] , J le milieu de [CD] et G le centre de gravité du\ntriangle ACD.\n1) Faire une figure .\n2) a) Montrer que les droites (IG) et(BJ) sont sécantes.\nb) En déduire que la droite (IG) perce le plan (BCD) en un point E que l’on construira.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 13 (« Activité 13 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 13 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A14",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 14,
+    "solver": "fixed",
+    "title": "Activité 14 : Positions relatives de deux plans",
+    "difficulty": 2,
+    "statement": "Activité 14 : Positions relatives de deux plans\nPour chacune des figures I, II et III déterminer l’intersection des plans P et Q.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 14 (« Activité 14 : Positions relatives de deux plans ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 14 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A15",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 15,
+    "solver": "fixed",
+    "title": "Activité 15",
+    "difficulty": 2,
+    "statement": "Activité 15\nSoit ABCD un tétraèdre I, J et K des points sur les arêtes\n[BC] ,[AC] et [AD] comme il est indiqué sur la figure\na)Déterminer l’intersection des plans(ACI) et (BDJ).\nb)Déterminer l’intersection des plans(ABK) et (CDJ).\nc)Déterminer l’intersection des plans(BCK) et (ADI).",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 15 (« Activité 15 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 15 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A16",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 16,
+    "solver": "fixed",
+    "title": "Activité 16",
+    "difficulty": 2,
+    "statement": "Activité 16\nSoient ABCD un tétraèdre et I et J deux points appartenant respectivement aux arêtes [AD] et\n[BD] tels que les droites (IJ) et (AB) ne soient pas parallèles.\n1) Construire le point K intersection des droites (IJ) et (AB).\n2) Déterminer et construire la droite d’intersection des plans (ABC) et (CIJ).",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 16 (« Activité 16 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 16 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A17",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 17,
+    "solver": "fixed",
+    "title": "Activité 17 : D’après olympiades académiques 2001 APMEP.",
+    "difficulty": 2,
+    "statement": "Activité 17 : D’après olympiades académiques 2001 APMEP.\nLes faces d’un tétraèdre régulier sont numérotées de 1 à 4. Le tétraèdre est posé sur la table,\nla face « 1 » contre cette table. Une étape consiste à faire basculer le tétraèdre autour de l’une\nP\nQ\nOn dit que deux plans sont sécants lorsque leur intersection est une droite.\nDéfinition\nFIG I FIG II FIG III\nquelconque des arêtes de sa base .A l’issue de chaque étape ,on note le numéro de la face contre\nla table. On fait la somme S de tous ces nombres après 2006 étapes, en comptant le « 1 » initial.\nDonner la valeur maximale et la valeur minimale que l’on peut ainsi obtenir pour la somme S.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 17 (« Activité 17 : D’après olympiades académiques 2001 APMEP. ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 17 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A18",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 18,
+    "solver": "fixed",
+    "title": "Activité 18",
+    "difficulty": 2,
+    "statement": "Activité 18\nSoit ABCD un tétraèdre, I un point de l’arête [BC] et J un point\nde l’arête [CD].On désigne par M le point d’intersection\ndes droites (BJ) et ( DI ).\nDéterminer l’intersection des plans(AID) et (JAB).",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 18 (« Activité 18 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 18 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A19",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 19,
+    "solver": "fixed",
+    "title": "Activité 19",
+    "difficulty": 2,
+    "statement": "Activité 19\nDans le tétraèdre ABCD, les points E, F et G appartiennent\nrespectivement aux arêtes [AB],[AC], et [AD].\nDéterminer et représenter l’intersection des plans (BCD) et (EFG).",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 19 (« Activité 19 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 19 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A20",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 20,
+    "solver": "fixed",
+    "title": "Activité 20",
+    "difficulty": 2,
+    "statement": "Activité 20\nDans la figure ci-contre ABCD est un tétraèdre et le point K\nest le centre de gravité du triangle BCD.\n1) Reproduire la figure\n2) En quel point la droite (CK) perce-t-elle le plan (ABD) ?\n3) En quel point la droite (BD) perce-t-elle le plan (ACK) ?\n4) Déterminer et représenter l’intersection des plans\n(ABK) et (ACD).\n5) Déterminer et représenter l’intersection des plans (AKD) et (BCD) .",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 20 (« Activité 20 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 20 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A21",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 21,
+    "solver": "fixed",
+    "title": "Activité 21",
+    "difficulty": 2,
+    "statement": "Activité 21\nDans le tétraèdre ABCD, le point E appartient à l’arête [DC]\net le point F appartient au plan (ABE) .\nOn se propose de construire le point d’intersection de la droite\n(CF) et du plan (ABD).\n1) Reproduire la figure.\n2) Dans le plan(ABE), représenter le point d’intersection\ndes droites(BF) et (AE).On notera M ce point.\n3) Dans le plan(ACD), représenter le point d’intersection des droites (CM) et (AD).\nOn notera N ce point.\n4) Justifier que la droite (CF) perce le plan (ABD) en un point de la droite (BN) .",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 21 (« Activité 21 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 21 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A22",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 22,
+    "solver": "fixed",
+    "title": "Activité 22",
+    "difficulty": 2,
+    "statement": "Activité 22\n2050 mouches sont enfermées dans une boite cubique d’arête 8.\nMontrer qu’à tout moment il y a un cube d’arête 1 où se trouvent au moins 5 mouches .",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 22 (« Activité 22 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 22 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A23",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 23,
+    "solver": "fixed",
+    "title": "Activité 23",
+    "difficulty": 3,
+    "statement": "Activité 23\nOn peint les faces d’un cube en bois ,puis on découpe ce cube en 1000 cubes identiques\nà l’aide de traits de scie parallèles aux faces.\nCombien y a-t-il de petits cubes qui ont au moins une face peinte ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 23 (« Activité 23 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 23 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A24",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 24,
+    "solver": "fixed",
+    "title": "Activité 24",
+    "difficulty": 3,
+    "statement": "Activité 24\n1) Trouver deux entiers naturels a et b tels que a 2 – b2 = 53\n2) Ecrire 8 3 comme différence de carrés de deux entiers naturels.\n3) Dans la figure ci-contre on considère un cube\nd’arête 13 et deux parallélépipèdes rectangles\nde dimensions respectives (a, a,1) et (b , b,1)\noù a et b sont deux entiers naturels .\nDéterminer a et b pour que le volume du cube soit égal\nà la différence des volumes des deux parallélépipèdes.\n4) Peut-on dire que le cube de deux entiers est toujours\négal à la différence de deux carrés.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 24 (« Activité 24 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 24 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A25",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 25,
+    "solver": "fixed",
+    "title": "Activité 25",
+    "difficulty": 3,
+    "statement": "Activité 25\nDonner la vue de face , la vue de droite et la vue de gauche des solides A, B et C.\na\na 1\nAB C",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 25 (« Activité 25 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 25 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ESPACE_DROITES_A26",
+    "chapter": "espace-droites",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 26,
+    "solver": "fixed",
+    "title": "Activité 26",
+    "difficulty": 3,
+    "statement": "Activité 26\nLes faces cachées du cube A sont entièrement blanches.\nEn positionnant ce cube d’autres façons peut-on obtenir\nles représentations 1, 2, 3 ou 4?\n12 3 4\nA\n« Vous êtes libres, choisissez c’est à dire inventez »\nJ.P Sartre",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 26 (« Activité 26 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 26 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  }
+]

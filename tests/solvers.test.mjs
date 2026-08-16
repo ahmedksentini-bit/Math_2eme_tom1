@@ -138,6 +138,21 @@ assert.ok(isClose(rot.xM, 0, 1e-10));
 assert.ok(isClose(rot.yM, 2, 1e-10));
 assert.equal(rot.om, 2);
 
+const seq = solvers.arithSeq({ u1: 3, r: 4, n: 10 }).values;
+assert.equal(seq.un, 39);
+assert.equal(seq.sn, 210);
+const gseq = solvers.geoSeq({ u1: 2, q: 3, n: 5 }).values;
+assert.equal(gseq.un, 162);
+assert.equal(gseq.sn, 242);
+const aff = solvers.affineFn({ a: -2, b: 3, x: 4 }).values;
+assert.equal(aff.y, -5);
+const tri = solvers.trigExact({ angle: 60 }).values;
+assert.ok(isClose(tri.cos, 0.5, 1e-10));
+assert.ok(isClose(tri.sin, Math.sqrt(3) / 2, 1e-10));
+const mean = solvers.statsMean({ n: 8, sum: 96, xmin: 7, xmax: 18 }).values;
+assert.equal(mean.mean, 12);
+assert.equal(mean.range, 11);
+
 const catalog = JSON.parse(readFileSync(new URL("../data/exercises.json", import.meta.url)));
 const batch14 = JSON.parse(readFileSync(new URL("../data/exercises-ch1-ch4.json", import.meta.url)));
 const batch59 = JSON.parse(readFileSync(new URL("../data/exercises-ch5-ch9.json", import.meta.url)));
@@ -149,7 +164,7 @@ for (const item of all) {
   assert.ok(solvers[item.solver], `solveur manquant : ${item.solver} (${item.id})`);
   assert.notEqual(courseRecap(item.solver).title, "Rappel de cours", `rappel fallback : ${item.id}`);
   const vars = item.variables || [];
-  const figure = drawFigure(item.solver, Object.fromEntries(vars.map(v => [v.key, v.value])));
+  const figure = drawFigure(item.solver, Object.fromEntries(vars.map(v => [v.key, v.value])), item);
   assert.ok(figure.svg.includes("<svg") && !figure.svg.includes("non disponible"), `schéma manquant : ${item.id}`);
   assert.ok(!ids.has(item.id), `id dupliqué : ${item.id}`);
   ids.add(item.id);
@@ -210,6 +225,39 @@ for (const paper of synthese) {
   assert.ok(paper.exercises.length >= 4 && paper.exercises.length <= 5);
 }
 
+const catalog2 = JSON.parse(readFileSync(new URL("../data/exercises-t2.json", import.meta.url)));
+const act2Index = JSON.parse(readFileSync(new URL("../data/activites-t2-index.json", import.meta.url)));
+const activities2 = act2Index.flatMap(item => JSON.parse(readFileSync(new URL(`../data/${item.file}`, import.meta.url))));
+assert.equal(catalog2.chapters.length, 10);
+const all2 = [...catalog2.exercises, ...activities2];
+for (const item of all2) {
+  assert.ok(solvers[item.solver], `solveur manquant T2 : ${item.solver} (${item.id})`);
+  assert.notEqual(courseRecap(item.solver).title, "Rappel de cours", `rappel fallback T2 : ${item.id}`);
+  const vars = item.variables || [];
+  const figure = drawFigure(item.solver, Object.fromEntries(vars.map(v => [v.key, v.value])), item);
+  assert.ok(figure.svg.includes("<svg") && !figure.svg.includes("non disponible"), `schéma T2 : ${item.id}`);
+  const result = solve(item, Object.fromEntries(vars.map(v => [v.key, v.value])));
+  for (const q of item.questions) {
+    const value = result.values[q.key];
+    if ((q.type || "number") === "number") assert.ok(Number.isFinite(value), `T2 ${item.id}.${q.key}`);
+    else assert.ok(value !== undefined && value !== "", `T2 vide ${item.id}.${q.key}`);
+  }
+  assert.ok(!ids.has(item.id), `id dupliqué T2 : ${item.id}`);
+  ids.add(item.id);
+}
+const EXPECTED_T2 = { "suites-arith": 16, "suites-geo": 11, fonctions: 16, ref: 30, trigo: 36, analytique: 39, "espace-droites": 26, parallelisme: 23, orthogonalite: 18, stats: 27 };
+for (const [id, n] of Object.entries(EXPECTED_T2)) {
+  const acts = activities2.filter(e => e.chapter === id);
+  assert.equal(acts.length, n, `activités T2 : ${id}`);
+}
+for (const chapter of catalog2.chapters) {
+  assert.ok(chapterCourse(chapter.id).sections.length >= 6, `cours T2 trop court : ${chapter.id}`);
+  const set = generateChapterSet(chapter.id, 42);
+  for (const band of ["easy", "medium", "hard", "puzzle"]) {
+    assert.equal(set[band].length, 10, `T2 ${chapter.id} ${band}`);
+  }
+}
+
 const annales = JSON.parse(readFileSync(new URL("../data/annales.json", import.meta.url)));
 assert.ok(annales.papers.length >= 50, "annales trop peu nombreuses");
 const annaleIds = new Set();
@@ -219,5 +267,8 @@ for (const paper of annales.papers) {
   assert.ok(paper.title && paper.statement && paper.statement.length > 80, `énoncé vide : ${paper.id}`);
   assert.ok(Array.isArray(paper.exercises) && paper.exercises.length >= 1, `sans exercice : ${paper.id}`);
 }
+assert.ok(annales.papers.every(p => p.tome === 1 || p.tome === 2), "tome annale manquant");
+assert.ok(annales.papers.some(p => p.tome === 1), "aucune annale tome 1");
+assert.ok(annales.papers.some(p => p.tome === 2), "aucune annale tome 2");
 assert.ok(annales.papers.some(p => /Sfax/i.test(`${p.region || ""} ${p.lycee || ""}`)), "aucun sujet Sfax");
 assert.ok(annales.papers.some(p => p.pilote), "aucun sujet pilote");

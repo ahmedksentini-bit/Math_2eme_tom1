@@ -1,0 +1,782 @@
+[
+  {
+    "id": "T2_REF_A01",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 1,
+    "solver": "fixed",
+    "title": "Activité 1",
+    "difficulty": 1,
+    "statement": "Activité 1\nSoit f la fonction de IR vers IR définie par f(x) = x 2. On\nadmet que la représentation graphique de f dans un repère\northogonal du plan, est la courbe ci-contre.\n1) A l’aide du graphique\na) Emettre une conjecture sur la parité de f.\nb) Décrire les variations de f sur IR.\n2) a) Montrer que la fonction f est paire.\nb) Montrer que f est croissante sur [0, + ∞ [.\n3) a) Copier et compléter le tableau suivant :\nb) Comment peut-on choisir x positif, pour que f(x) soit strictement supérieur à 10\n30 ?\nc) Soit A un réel strictement positif.\nComment peut-on choisir x positif, pour que f(x) soit strictement supérieur à A ?\nVocabulaire\nLe plan est muni d’un repère orthogonal .\n•La courbe P de la fonction f définie sur IR par f(x) = x2, est appelée parabole. Le point O est\nappelé le sommet de la parabole P et la droite d’équation x = 0 est appelée l’axe de la parabole P.\n•L’équation y = x2, est appelée l’équation de la parabole P.\nRemarques\n•Pour tout réel A strictement positif, on peut trouver des valeurs positives de x tels que f(x)\nsoit supérieur à A.\nAutrement dit, f(x) est supérieur à n’importe quel réel A positif aussi grand que l’on veut, en\nchoisissant des valeurs positives de x.\nOn dit que f(x) tend vers + ∞ quand x tend vers + ∞ .\n•On a aussi, f(x) tend vers + ∞ quand x tend vers –∞ .\nO 1\ni\nj\nx 103 104 107 1010 1015\nf(x)\n,,Oij_i\n,,Oij_i\nFonctions du type f(x) = a x 2 ; a ≠ 0",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 1 (« Activité 1 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 1 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A02",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 2,
+    "solver": "fixed",
+    "title": "Activité 2",
+    "difficulty": 1,
+    "statement": "Activité 2\nLe plan est rapporté à un repère orthonormé .\n1) Construire la parabole P d’équation y = x2.\n2) Soit h l’homothétie de centre O et de rapport et M(x , y) un point de la parabole P. On\ndésigne par M’(x’ , y’) l’image du point M par l’homothétie h.\nExprimer x’ et y’ en fonction de x et y.\n3) a) Montrer que le point M’ est sur la courbe représentative C de la fonction .\nb) Montrer que tout point N de C est l’image par l’homothétie h d’un point M de P.\nQuelle est alors l’image de la parabole P par h ?\nc) Construire la courbe C à partir de la parabole P.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 2 (« Activité 2 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 2 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A03",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 3,
+    "solver": "fixed",
+    "title": "Activité 3",
+    "difficulty": 1,
+    "statement": "Activité 3\nChaque parabole du graphique ci-contre, représente une\nfonction du type f(x) = m x\n2, où m est une constante réelle.\nDéterminer pour chaque parabole, la valeur de m\ncorrespondante.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 3 (« Activité 3 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 3 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A04",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 4,
+    "solver": "fixed",
+    "title": "Activité 4",
+    "difficulty": 1,
+    "statement": "Activité 4\nLe plan est rapporté à un repère orthonormé .\nTracer les paraboles d’équations respectives.\n,,Oij_i\n,.yx y x e t y x3 2\n122== - = 2\n,,Oij_i\ng: x 7 2x2",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 4 (« Activité 4 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 4 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A05",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 5,
+    "solver": "fixed",
+    "title": "Activité 5",
+    "difficulty": 1,
+    "statement": "Activité 5\nLe plan est rapporté à un repère orthonormé .\nOn considère la fonction f définie sur IR par f(x) = –3 x 2. On désigne par P la représentation\ngraphique de f.\na) Construire P.\nb) Etudier les variations de f sur IR.\nc) Soit A un réel strictement positif.\nMontrer que si x > alors f(x) < – A.\nQue peut-on dire de f(x) quand x tend vers + ∞ ?\nFonctions du type f(x) = a ( x– α )2 ; a ≠ 0",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 5 (« Activité 5 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 5 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A06",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 6,
+    "solver": "fixed",
+    "title": "Activité 6",
+    "difficulty": 1,
+    "statement": "Activité 6\nLe plan est rapporté à un repère orthogonal .\n1) On considère la fonction f définie sur IR par f(x) = (x – 2) 2. On désigne par C la courbe\nreprésentative de f et par P la parabole d’équation y = x 2.\na) Soit M(x , y) un point du plan.\nMontrer que M(x , y) appartient à C équivaut à N(x – 2 , y) appartient à P.\nb) En déduire que C est l’image de P par une translation dont on précisera le vecteur.\nc) Tracer P puis C.\n2) Soit g la fonction définie sur IR par g(x) = (x – α )\n2, où α est un réel donné.\nOn note P’ la courbe représentative de g.\na) Montrer que P’ est l’image de la parabole P par la translation de vecteur α i .\nb) On admet que P’ est une parabole. Déterminer son sommet et son axe.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 6 (« Activité 6 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 6 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A07",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 7,
+    "solver": "fixed",
+    "title": "Activité 7",
+    "difficulty": 1,
+    "statement": "Activité 7\nLe plan est rapporté à un repère orthonormé .\n1) On considère la parabole P\n1 : y = (x – 1)2.\nDéterminer le sommet et l’axe de P1, puis construire P1.\n2) Dans le même repère, construire les paraboles :\nP\n2 : y = 3 (x – 1)2 ; P 3 : y = – 2 (x – 1)2 ; P 4 : y = (x – 1) 2.\nA\n,,Oij_i\n,,Oij_i\n,,Oij_i\n→\nFonctions du type f(x) = x 2 + β",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 7 (« Activité 7 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 7 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A08",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 8,
+    "solver": "fixed",
+    "title": "Activité 8",
+    "difficulty": 1,
+    "statement": "Activité 8\nLe plan est rapporté à un repère orthogonal .\n1) On considère la fonction f définie sur IR par f(x) = x 2 + .\nOn désigne par C la courbe représentative de f et par P la parabole d’équation y = x 2.\na) Soit M(x , y) un point du plan.\nMontrer que M(x , y) appartient à C équivaut à appartient à P.\nb) En déduire que C est l’image de P par une translation dont on précisera le vecteur.\nc) Tracer P puis C.\n2) Soit g la fonction définie sur IR par g(x) = x 2 + β, où β est un réel donné.\nOn note P’ la courbe représentative de g.\na) Montrer que P’ est l’image de la parabole P par la translation de vecteur\nb) On admet que P’ est une parabole. Déterminer son sommet et son axe.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 8 (« Activité 8 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 8 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A09",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 9,
+    "solver": "fixed",
+    "title": "Activité 9",
+    "difficulty": 1,
+    "statement": "Activité 9\nLe plan est rapporté à un repère orthogonal .\nDans chacun des cas suivants, déterminer le sommet et l’axe de la parabole P, puis la construire.\na) P : y = x 2 + 3 ; b) P : y = x 2 – 2 ; c) P : y = x 2 .\nFonctions du type f(x) = ax 2 + bx + c ; a ≠ 0",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 9 (« Activité 9 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 9 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A10",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 10,
+    "solver": "fixed",
+    "title": "Activité 10",
+    "difficulty": 1,
+    "statement": "Activité 10\nLe plan est rapporté à un repère orthogonal .\n1) On considère la fonction g définie sur IR par g(x) = 2 x 2 + 4 x – 1. On désigne par C sa\ncourbe représentative.\na) Vérifier que, pour tout réel x, 2 x 2 + 4 x – 1 = 2 (x +1)2 – 3.\nb) Construire la parabole P d’équation y = 2 (x +1) 2 , puis la courbe C.\n2) Soit f la fonction définie sur IR par f(x) = a x 2 + b x + c, où a, b et c des réels avec a ≠ 0.\na) Ecrire f(x) sous la forme, f(x) = a (x – p) 2 + q, où p et q sont deux réels que l’on\ndéterminera en fonction de a, b et c.\nb) On admet que la courbe représentative de f est une parabole. Déterminer son sommet et\nson axe.\n,,Oij_i\n,Nx y 2\n3-c m\n,,Oij_i\n,,Oij_i\n9-\nb j .\nc) Construire la parabole d’équation y = x 2 + x + 2.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 10 (« Activité 10 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 10 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A11",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 11,
+    "solver": "fixed",
+    "title": "Activité 11",
+    "difficulty": 2,
+    "statement": "Activité 11\nDans le graphique ci-contre, trois paraboles, courbes représentatives de trois fonctions\ntrinômes f, g et h telles que f(x) = (x – 1) 2 + 2 ;\ng(x) = x 2 + 2 et h(x) = – x 2 + 2 x + 3.\nAssocier chaque fonction à sa courbe représentative.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 11 (« Activité 11 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 11 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A12",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 12,
+    "solver": "fixed",
+    "title": "Activité 12",
+    "difficulty": 2,
+    "statement": "Activité 12\nDans le graphique ci-dessous, P 1, P2, P3 et P4\nsont quatre paraboles.\nPour chacune d’elles, préciser le sommet, l’axe et l’équation.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 12 (« Activité 12 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 12 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A13",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 13,
+    "solver": "fixed",
+    "title": "Activité 13",
+    "difficulty": 2,
+    "statement": "Activité 13\nLe plan est muni d’un repère orthogonal .\nSoit P la parabole de sommet S, d’axe D et passant par le point A.\nDans chacun des cas suivants, déterminer l’équation de la parabole P et tracer P.\na) S(0 , 2) ; D : x = 0 et A(1 , 3).\nb) S(3 , 0) ; D : x = 3 et A(4 , 1).\nc) S(–1 , 1) ; D : x = –1 et A(–3 , 9).\nd) S(2 , –3) ; D : x = 2 et A(0 , –1).\nO 1\ni\nj P3\nP2\nP1\nP4\nC2C3\nC1\ni\nj\n1-\n,,Oij_i",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 13 (« Activité 13 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 13 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A14",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 14,
+    "solver": "fixed",
+    "title": "Activité 14",
+    "difficulty": 2,
+    "statement": "Activité 14\nUne balle est propulsée verticalement du sol. Elle est alors animée d’un mouvement rectiligne\ndont la loi horaire est donnée approximativement par d (t) = - 4,9 t 2 + 14,7 t ; jusqu’à ce\nqu’elle touche à nouveau le sol en retombant.\na) Montrer qu’au bout de 1,5 secondes après son lancement, la balle atteint une hauteur\nmaximale. Quelle est cette hauteur ?\nb) Combien de temps dure la descente ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 14 (« Activité 14 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 14 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A15",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 15,
+    "solver": "fixed",
+    "title": "Activité 15",
+    "difficulty": 2,
+    "statement": "Activité 15\nDeux mobiles A et B se déplacent durant trois heures sur un axe d’origine O (unité 1 Km).\nLes positions des deux mobiles sont données par les abscisses xA et xB des points MA et MB.\nLes lois horaires des mouvements de A et de B sont donnés respectivement par :\nx\nA(t) = 8 t 2 – 12 t – 3,5 et xB(t) = 4 t 2 – 4 t – 6,5 ; où t est exprimé en heures et t ∈ [0 , 3].\n1) a) Où se trouve le mobile A à l’instant t = 0 ?\nb) Pour quelles valeurs de t le mobile A se trouve t-il en O ? A gauche du point O ?\nA droite du point O ?\n2) a) A quel instant les mobiles A et B sont-ils au même endroit ?\nb) A quel instant le mobile B se trouve t-il en O ? Où se trouve alors le mobile A ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 15 (« Activité 15 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 15 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A16",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 16,
+    "solver": "fixed",
+    "title": "Activité 16",
+    "difficulty": 2,
+    "statement": "Activité 16\nDans le graphique ci-contre, les paraboles\nP\n1 et P2 sont les courbes représentatives de\ndeux fonctions trinômes f et g.\n1) A l’aide du graphique, donner\nl’expression de f et de g en fonction de x.\n2) Calculer les coordonnées des points\nd’intersection des deux paraboles.\n3) Résoudre l’inéquation f(x) < g(x).\nO\nx(t)i\nM\nO 1\ni\nj\nP1\nP2",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 16 (« Activité 16 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 16 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A17",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 17,
+    "solver": "fixed",
+    "title": "Activité 17",
+    "difficulty": 2,
+    "statement": "Activité 17\nLes paraboles ci-dessous sont les courbes représentatives de fonctions trinômes définies par\nf(x) = a x 2 + b x + c.\nDans chacun des cas, indiquer le signe de a, le nombre de racines du trinôme, le signe de b et\nle signe de c.\nFonctions du type f(x) =",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 17 (« Activité 17 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 17 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A18",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 18,
+    "solver": "fixed",
+    "title": "Activité 18",
+    "difficulty": 2,
+    "statement": "Activité 18\nSoit f la fonction définie sur [0 , + ∞ [ par f(x) = .\n1) Montrer que f est croissante sur [0 , + ∞ [.\ni\nj\nP1\nO 1\ni\nj\nP3\ni\nj\nP2\nO\ni\nj\nP4\nO 1\ni\nj\nP5\nx\nxb+\n2) a) Recopier et compléter le tableau suivant :\nb) Soit A un réel strictement positif.\nComment choisir x de [0 , + ∞ [, pour que f(x) > A ?\nQue peut-on dire de f(x) quand x tend vers + ∞ ?\n3) Le plan est rapporté à un repère orthonormé.\nLa courbe C de la fonction f est donnée par la figure ci-dessous.\nA l’aide du graphique déterminer un encadrement d’amplitude 0,25 de f(2,5) ; f(4,5) ;\nf(6) et f(7).\n4) Soit D la droite d’équation\na) Reproduire la courbe C et tracer la droite D dans le même repère que C.\nb) Résoudre graphiquement\n•L’équation ; • L’inéquation\nc) Retrouver, par le calcul, les résultats de la question précédente.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 18 (« Activité 18 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 18 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A19",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 19,
+    "solver": "fixed",
+    "title": "Activité 19",
+    "difficulty": 2,
+    "statement": "Activité 19\nLe plan est muni d’un repère .\nSoient f et g les fonctions de IR vers IR telles que\n1) a) Déterminer l’ensemble de définition D de la fonction g.\nb) Etudier les variations de g sur D.\n2) On désigne par C et C’ les courbes représentatives de f et g.\nOn considère la translation T de vecteur – . Soit M(x , y) un point du plan et M’(x’ , y’)\nson image par T.\nx 104 106 1010 1016\nf(x)\nO 1\ni\nj\n.yx 4\n1 1=+\nxx 4\n1 1=+ .xx 4\n1 11 +\n,,Oij_i\n.xfx e t gx x 2== +]] gg\ni2\na) Montrer que\nM(x , y) appartient à C équivaut à M’(x’ , y’) appartient à C’.\nb) Tracer la courbe C puis la courbe C’ dans le même repère.\nFonctions du type f(x)= ; c ≠ 0",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 19 (« Activité 19 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 19 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A20",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 20,
+    "solver": "fixed",
+    "title": "Activité 20",
+    "difficulty": 2,
+    "statement": "Activité 20\nSoit f la fonction définie sur IR* par f(x) = .\nOn admet que la représentation graphique de f dans un repère orthogonal du plan, est\nla courbe ci-dessous.\n1) A l’aide du graphique\na) Emettre une conjecture sur la parité de f.\nb) Décrire les variations de f.\n2) a) Copier et compléter le tableau suivant :\nb) On suppose que x > 10\n15. Que peut-on dire de f(x) ?\nc) Comment peut-on choisir x positif, pour que f(x) soit strictement inférieur à 10 –25 ?\nd) Soit a un réel strictement positif.\nComment peut-on choisir x positif, pour que 0 < f(x) < a ?\nax + b\ncx + d\nO 1\ni\nj\nx\n,,Oij_i\nx 103 104 107 1010 1015\nf(x)\nQue peut-on dire de f(x) quand x tend vers + ∞ ?\n3) a) Copier et compléter le tableau suivant :\nb) On suppose que 0 < x < 10 –17. Que peut-on dire de f(x) ?\nc) Comment peut-on choisir x positif, pour que f(x) soit strictement supérieur à 10 40 ?\nd) Soit A un réel strictement positif.\nComment peut-on choisir x positif, pour que f(x) soit strictement supérieur à A ?\nQue peut-on dire de f(x) quand x tend vers 0 et x plus grand que 0 ?\nVocabulaire\nLe plan est muni d’un repère orthogonal .\n•La courbe H de la fonction f définie sur IR* par f(x) = , est appelée hyperbole. Le point O\nest appelé le centre de l’hyperbole et les droites d’équations x = 0 et y = 0 sont appelées les\nasymptotes de l’hyperbole.\n•L’équation y = est une équation de l’hyperbole H.\nRemarque\nUne hyperbole est formée de deux branches, appelées branches de l’hyperbole.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 20 (« Activité 20 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 20 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A21",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 21,
+    "solver": "fixed",
+    "title": "Activité 21",
+    "difficulty": 2,
+    "statement": "Activité 21\nDans le graphique ci-contre, sont\nreprésentées la parabole P d’équation\ny = x\n2, l’hyperbole H\nd’équation y = , la courbe C d’équation\ny = et la droite D d’équation y = x.\nPar une lecture graphique:\na) Ranger dans l’ordre croissant\nx , x\n2 , pour x > 0.\nb) Comparer x et , pour x < 0.\nx 10-2 10-5 10-8 10-12 10-17\nf(x)\n,,Oij_i\nx\nx\nO 1\ni\nj\nP\nC\nH\nD\nx\nx\nx et x1\nx\nFonctions du type f(x) = ; a ≠ 0",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 21 (« Activité 21 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 21 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A22",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 22,
+    "solver": "fixed",
+    "title": "Activité 22",
+    "difficulty": 2,
+    "statement": "Activité 22\nLe plan est muni d’un repère orthogonal .\nOn considère la fonction f définie sur IR* par f(x) = . On désigne par C la courbe de f et\npar H l’hyperbole d’équation y = .\n1) a) Montrer que M(x , y) appartient à C équivaut à M’(x , - y) appartient à H.\nb) En déduire que C et H sont symétriques par rapport à l’axe des abscisses.\n2) Tracer H puis C.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 22 (« Activité 22 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 22 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A23",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 23,
+    "solver": "fixed",
+    "title": "Activité 23",
+    "difficulty": 3,
+    "statement": "Activité 23\nLe plan est muni d’un repère orthogonal .\nSoit g la fonction définie sur IR* par g(x) = . On désigne par C sa courbe représentative.\na) Que peut-on dire de f(x) quand x tend vers – ∞ ?\nQue peut-on dire de f(x) quand x tend vers + ∞ ?\nb) On admet que la courbe C est une hyperbole.\nDéterminer son centre et ses asymptotes.\nc) Tracer C.\nFonctions du type f(x) = + β",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 23 (« Activité 23 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 23 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A24",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 24,
+    "solver": "fixed",
+    "title": "Activité 24",
+    "difficulty": 3,
+    "statement": "Activité 24\nLe plan est muni d’un repère orthogonal .\nOn désigne par H l’hyperbole d’équation\n1) On considère la fonction f définie sur IR* par f(x) = et on note C sa courbe\nreprésentative.\na) Montrer que C est l’image de H par la translation de vecteur .\nb) On admet que la courbe C est une hyperbole.\nPréciser le centre et les asymptotes de C.\nc) Tracer H et C dans le même repère.\na\nx\nx\n,,Oij_i\nx\n1-\nx\n,,Oij_i\nx\n,,Oij_i\n.y x\n1=\nx\n1 2-\nj2-",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 24 (« Activité 24 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 24 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A25",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 25,
+    "solver": "fixed",
+    "title": "Activité 25",
+    "difficulty": 3,
+    "statement": "Activité 25\nLe plan est muni d’un repère orthogonal .\nOn désigne par H l’hyperbole d’équation y = + 1.\n1) a) Préciser le centre et les asymptotes de l’hyperbole H.\nb) Tracer H.\n2) Soit D la droite d’équation y = x.\na) Tracer D dans le même repère que H.\nb) Déterminer les points d’intersection de l’hyperbole H et la droite D.\nFonctions du type f(x) = ; a ≠ 0",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 25 (« Activité 25 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 25 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A26",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 26,
+    "solver": "fixed",
+    "title": "Activité 26",
+    "difficulty": 3,
+    "statement": "Activité 26\nLe plan est muni d’un repère orthogonal .\nOn considère la fonction f définie par f(x) = . On désigne par C sa courbe\nreprésentative et par H l’hyperbole d’équation y = .\n1) Déterminer l’ensemble de définition de f.\n2) Soit T la translation de vecteur\na) Soit M(x , y) un point du plan et M’(x’ , y’) son image par T.\nExprimer x’ et y’ en fonction de x et y.\nb) Montrer que\nM(x , y) ∈ H équivaut à M’(x’ , y’) ∈ C.\nc) Tracer H puis C.\nOn précisera les asymptotes de C.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 26 (« Activité 26 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 26 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A27",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 27,
+    "solver": "fixed",
+    "title": "Activité 27",
+    "difficulty": 3,
+    "statement": "Activité 27\nLe plan est muni d’un repère orthogonal.\nSoit H l’hyperbole d’équation y = .\n1) a) Déterminer le centre et les asymptotes de H.\nb) Tracer H.\n2) On considère la fonction f définie par f(x) = .\nD’après le graphique,\na\nx + α\n,,Oij_i\nx\n,,Oij_i\nx3\n-\nx\n3i .\nx1\n-\nx1\n-\na) Que peut-on dire de f(x) quand x tend vers + ∞ ?\nQue peut-on dire de f(x) quand x tend vers - ∞ ?\nb) Que peut-on dire de f(x) quand x tend vers 1 et x est supérieur à 1 ?\nQue peut-on dire de f(x) quand x tend vers 1 et x est inférieur à 1 ?\nFonctions du type f(x) = ; c ≠ 0",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 27 (« Activité 27 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 27 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A28",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 28,
+    "solver": "fixed",
+    "title": "Activité 28",
+    "difficulty": 3,
+    "statement": "Activité 28\nLe plan est muni d’un repère orthonormé .\nSoit f la fonction définie par f(x) = On note C sa courbe représentative.\n1) a) Déterminer l’ensemble de définition D de f.\nb) Vérifier que f(x) = , pour tout x ∈ D.\nc) Que peut-on dire de f(x) quand x tend vers + ∞ ?\nQue peut-on dire de f(x) quand x tend vers - ∞ ?\n2) Soit Ω (–2 , 1). On considère le repère .\nSoit M un point du plan. On note (x , y) les coordonnées du point M dans le repère\net (X , Y) les coordonnées du point M dans le repère .\na) Exprimer x et y en fonction de X et Y .\nb) Montrer que M(x , y) ∈ C si et seulement si\nc) En déduire la nature de la courbe C.\n3) a) Tracer la courbe C.\nb) Donner le centre et les asymptotes de C, dans le repère .",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 28 (« Activité 28 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 28 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A29",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 29,
+    "solver": "fixed",
+    "title": "Activité 29",
+    "difficulty": 3,
+    "statement": "Activité 29\nLe plan est muni d’un repère orthogonal .\nSoit g la fonction définie par g(x) = . On note C sa courbe représentative.\n1) a) Déterminer l’ensemble de définition D de g.\nb) Vérifier que g(x) = 2 + , pour tout x ∈ D.\nc) Que peut-on dire de g(x) quand x tend vers + ∞ ?\nax + b\ncx + d\n,,Oij_i\n.x\nx\n+\n+\nx1 2\n1+ +\n,,Oij_i\n,,Oij_i\n,,Oij_i\nx25\n-\nx\nx\n5-\n-\nX,i ,j_i\nX,i ,j_i\nY= X\n2) a) Etudier le sens de variation de g sur chacun des intervalles où elle est définie.\nb) On admet que C est une hyperbole.\nDéterminer son centre et ses asymptotes. Tracer C.\n2) a) Résoudre graphiquement les équations g(x) = 3 puis g(x) = 2.\nb) Retrouver les résultats précédents par le calcul.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 29 (« Activité 29 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 29 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_REF_A30",
+    "chapter": "ref",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 30,
+    "solver": "fixed",
+    "title": "Activité 30",
+    "difficulty": 3,
+    "statement": "Activité 30\nDans le graphique ci-contre, sont représentées la parabole\nP : y = x\n2 – 4, l’hyperbole H :\ny = , courbes représentatives, respectivement, des\nfonctions f et g.\n1) Résoudre graphiquement :\na) f(x) = g(x).\nb) x\n3 – 4 x = 2 – x.\nc) f(x) ≥ g(x).\n2) a) Factoriser x 3 – 4 x.\nb) Retrouver les résultats de la première question par le calcul.\nO 1\ni\nj\nHP\nx\nx2-+\nLe plan est rapporté à un repère orthogonal .\nDans chacun des cas suivants, déterminer le sommet et l’axe de la parabole, puis la construire.\nP1 : y = (x + 2) 2 ; P 2 : y = ;\nP3 : y = (x – 3)2 ; P 4 : y = x2 + 6 x + 9.\nDans chacun des cas suivants, déterminer le sommet et l’axe de symétrie de la parabole P, puis\nla construire.\na) P : y = x\n2 – 4 ; b) P : y = (x – 3) 2 +1 ; c) P : y = –x 2 + 4 x – 2 ;\nd) P : y = –3 x2 + 5 x +2 e) P : y = x 2 + x.\nSoit f la fonction définie sur IR par f(x) = x 2 – 2 x – 1. On désigne par C sa courbe\nreprésentative.\na) Montrer que f est décroissante sur ]–∞ , 1] et croissante sur [1 ,+ ∞ [.\nb) Déterminer le sommet et l’axe de C, puis la tracer.\nSoit f la fonction définie par f(x) = .\na) Déterminer l’ensemble de définition de f.\nb) Montrer que f est croissante sur son ensemble de définition.\nc) Tracer la courbe de f.\nConstruire les hyperboles:\nH\n1 : y = ; H 2 : y = et H 3 : y = .\nDans chacun des cas suivants, déterminer le centre et les asymptotes de l’hyperbole H puis\nla construire.\na) H : y = –1 + ; b) H : y = 3 + ; c) H : y = + 2 .\nDans chacun des cas suivants, déterminer le centre et les asymptotes de l’hyperbole H puis\nla construire.\na) H : y = ; b) H : y = ; c) H : y = .\nDans chacun des cas suivants, déterminer le centre et les asymptotes de l’hyperbole H puis\nla construire.\na) H : y = ; b) H : y = ; c) H : y =\n,,Oij_i\nx\nx\n2-\nx2\nx\nx\nx\nx2\n+ x3\n+\n-\nx1\n-\nx\nx\n+\n-\nx\nx\n-\n-+ .x\nx\n-\n+\nx+4\nx- 5\n2cm\nFonctions du type f(x) = a x 2 ; a ≠ 0\nLe plan est muni d’un repère orthogonal .\nSoit a un réel non nul.\nLa courbe représentative de la fonction f définie sur IR par f(x) = a x 2, est une parabole de\nsommet O et d’axe de symétrie la droite d’équation x = 0.\nFonctions du type f(x) = a ( x– α )2 ; a ≠ 0\nLe plan est muni d’un repère orthogonal .\nSoit a un réel non nul et α un réel.\nLa courbe représentative de la fonction f définie sur IR par f(x) = a (x – α )\n2, est une parabole\nde sommet S(α , 0) et d’axe de symétrie la droite d’équation x = α .\nFonctions du type f(x) = x 2 + β\nLe plan est muni d’un repère orthogonal .\nSoit β un réel.\nLa courbe représentative de la fonction f définie sur IR par f(x) = x 2 + β, est une parabole de\nsommet S(0 , β) et d’axe de symétrie la droite d’équation x = 0.\nFonctions du type f(x) = ax 2 + bx + c ; a ≠ 0\nSoit a, b et c trois réels, avec a ≠ 0.\n♦ Soit f la fonction définie sur IR par f(x) = a x 2 + b x + c.\nFonctions du type f(x) = a x 2 + b x + c ; a ≠ 0\nO 1\na > 0\ni\nj\nO\na < 0\nij\n,,Oij_i\n,,Oij_i\n,,Oij_i\nf(x) peut s’écrire sous la forme f(x) = a (x – α )2 + β, où α et β sont deux réels.\n♦ Le plan est muni d’un repère orthogonal .\nLa courbe représentative de la fonction f définie sur IR par f(x) = a ( x – α )2 + β, est une\nparabole de sommet S(α , β) et d’axe de symétrie la droite d’équation x = α .\n♦ Le plan est muni d’un repère orthogonal .\nCi-contre, la courbe représentative de la fonction g définie sur\n[0 , +∞ [ par g(x) = .\n♦ La courbe représentative de la fonction f définie par\nf(x) = est l’image par la translation de vecteur\nde la courbe de la fonction g définie sur [0 , + ∞ [ par g(x) = .\nFonctions du type f(x) = ; a ≠ 0\nLe plan est muni d’un repère orthogonal .\nSoit a un réel non nul.\nLa courbe représentative de la fonction f définie sur IR* par f(x) = est une\nhyperbole de centre O et d’asymptotes les droites d’équations x = 0 et y = 0.\nFonctions du type f(x) = +\nβ\nLe plan est muni d’un repère orthogonal .\nSoit β un réel non nul.\nLa courbe représentative de la fonction f définie sur IR* par f(x) = + β , est une\nhyperbole de centre I(0 , β) et d’asymptotes les droites d’équations x = 0 et y = β.\nFonctions du type f(x) =\nFonctions du type f(x) = ; c ≠ 0\ni\nj\nax + b\ncx + d\nO 1\na > 0\ni\nj\nO 1\na < 0\ni\nj\nx\n,,Oij_i\n,,Oij_i\nx\nx\n,,Oij_i\nx\na\nxb+\nx\n,,Oij_i\nxb+ -bi\nx\na\nFonctions du type f(x) = ; a ≠ 0\nLe plan est muni d’un repère orthogonal .\nSoit a un réel non nul et α un réel.\nLa courbe représentative de la fonction f définie sur IR privé de – α par f(x) =\nest une hyperbole de centre I(- α , 0) et d’asymptotes les droites d’équations x = - α et y = 0.\nFonctions du type f(x) = ; c ≠ 0\nLe plan est muni d’un repère orthogonal .\nSoit a, b, c et d quatre réels, avec c non nul.\nLa courbe représentative de la fonction f définie sur IR privéde – par f(x) = est\nune hyperbole de centre I et d’asymptotes les droites d’équations x = et y = .\na\nx + α\nax + b\ncx + d\n,,Oij_i\n,,Oij_i\nx\na\n+ a\n,c\nd\nc\na-bl c\nd- c\na\ncx d\nax b\n+\n+d\nc\nDévelopper ses compéDévelopper ses compétences\nDans le graphique ci-contre, P est une\nparabole et D est une droite.\nDéterminer les coordonnées des points A et B,\nintersection de P et D.\nIndications\n• Utiliser des points de coordonnées entières,\npour déterminer une équation de P et de D.\n• Calculer les coordonnées des points A et B.\nCordes parallèles d’une hyperbole\nLe plan est muni d’un repère orthogonal .\nOn désigne par H l’hyperbole d’équation y = .\nSoit A, B, C et D quatre points distincts de H, d’abscisses respectives a, b, c et d.\n1) Montrer les droites (AB) et (CD) sont parallèles si et seulement si ab = cd.\n2) On prend a = 1 et b = 2.\nSoit M un point de H d’abscisse x. La parallèle à (AB) passant par M recoupe l’hyperbole H\nen un point N. On note I le milieu du segment [MN].\nMontrer que le point I varie sur une droite, lorsque le point M varie sur l’hyperbole H.\nIndications\n1) Calculer le coefficient directeur de chacune des deux droites.\n2) Déterminer les coordonnées de N, puis celles de I et conclure.\nO 1\ni\nj\nP\nD\nA\nB\n,,Oij_i\nx\nO 1\ni\nj\nA\nB\nM\nN\nI\nUtiliser les TICUtiliser les TIC\nProblème de lieu\nLe plan est muni d’un repère orthonormé .\nSoit D la droite d’équation y = – 2 et M un point variable de D.\nLa perpendiculaire à D en M et la perpendiculaire à la droite (OM) en O, se coupent en un\npoint N.\nOn se propose de déterminer, à l’aide d’un logiciel de géométrie, le lieu du point N lorsque le\npoint M varie sur la droite D.\nA l’aide d’un logiciel de géométrie.\n- Tracer les axes du repère.\n- Tracer la droite d’équation y = – 2.\n- Marquer un point M sur la droite D (point sur objet).\n- Tracer la perpendiculaire à D en M et la perpendiculaire à (OM) en O.\n- Marquer le point d’intersection N.\n- Utiliser (lieu) pour déterminer le lieu du point N, lorsque M varie sur la droite D.\nJustifier le résultat obtenu à l’aide du logiciel.\nO 1\nD\nM\nN\n,,Oij_i\nExercices et problèmesExercices et problèmes\nAppliquer\nSoit P la parabole d’équation y = x2.\n1) Tracer P.\n2) Résoudre graphiquement les inéquations:\na) x\n2 < 4 ; b) x 2 ≥ 1 ; c) x 2 ≤– 1\nd) 1 ≤ x 2 ≤4 .\nDans chacun des cas suivants, déterminer\nle sommet et l’axe de symétrie de la parabole\nP puis la construire.\na) P : y = x\n2 – 2 x ; b) P : y = x 2 + 3 x\nc) P : y = – x2 + x + 1.\nSoit f et g les fonctions définies par\nf(x) = et g(x) = .\na) Tracer la courbe de f\nb) Montrer que f et g ont la même courbe\nreprésentative sur [0,+ ∞ [.\nc) Montrer que g est une fonction paire.\nd) Tracer alors la courbe de g.\nSoit H l’hyperbole d’équation y = .\n1) Tracer H.\n2) Résoudre graphiquement les inéquations\na) > 2 ; b) ≤ –3 ; c) < 1\nd) 1 ≤ ≤ 2 ; e) – 1 ≤ ≤ 2.\nDans chacun des cas suivants, déterminer\nle centre et les asymptotes de l’hyperbole H\npuis la construire.\na) H : y = ; b) H : y = ;\nb) H : y = ; d) H : y = .\nMaîtriser\nDans la figure ci-dessous, ABC est un tri-\nangle équilatéral de côté 6, M et N deux\npoints de [AB] avec AM = NB = x, P un point\nde [BC] et Q un point de [AC] tels que\nMNPQ soit un rectangle.\n1) Calculer MN et MQ en fonction de x.\n2) On désigne par g la fonction qui, à toute\nvaleur de x, associe l’aire g(x) du rectangle\nMNPQ.\na) Montrer que g(x) =\nb) Construire dans un repère orthonormé\ndu plan la courbe C de la fonction g.\n3) a) Pour quelle valeur de x, l’aire du\nrectangle MNPQ est-elle maximale ?\nb) Pour quelle valeur de x, MNPQ est-il\nun carré ? Calculer dans ce cas, son aire.\nOn considère la parabole P : y = –x\n2 + 2 x +1\net la droite D : y = – x + 3.\na) Tracer P et D.\nb) Par une lecture graphique, déterminer les\ncoordonnées de leurs points d’intersection.\nc) Retrouver par le calcul, les résultats de la\nquestion précédente.\n1 6\nBA\nC\nM N\nQ P\nLe plan est rapporté à un repère orthogonal .,,Oij_i\nx1+ x1+\nx\nx\nx\nx\nx\nx\nx\nx4+\nx\nx\n1-\nx\nx\n+\n-\nx\nx\n-\n-\n.xx23 63 2-+\nExercices et problèmesExercices et problèmes\non suppose que est orthonomé.\nSoit f la fonction définie par f(x) =\n1) Tracer la courbe C de f.\n2) Soit D la droite d’équation y = x.\na) Tracer D dans le même repère que C.\nb) Calculer les coordonnés du point\nd’intersection de D et C.\nc) Déterminer graphiquement les solutions\nde l’inéquation x < .\n3) Soit a un réel de l’intervalle [0,2].\nLa droite d’équation y = a, coupe C en M\net coupe D en N.\na) Montrer que l’abscisse de M est a\n2 – 2.\nb) Déterminer a pour que MN = 1.\nOn suppose que est orthonomé.\nOn considère les points A(1 , 2) et\nM(x , 0) ; où x est un réel distinct de 1.\nLa droite (AM) coupe l’axe des ordonnées en\nun point N.\nSoit f la fonction qui à l’abscisse x de M\nassocie l’ordonnée y de N.\n1) Montrer que f(x) = .\n2)a) Tracer la courbe C de f.\nb) Déterminer graphiquement les valeurs\nde x telles que ON < 4.\nOn se propose de résoudre graphiquement\nl’équation (E) x\n3 = (x + 1) 2.\n1) a) Montrer que si x est une solution de (E)\nalors x est strictement positif.\nb) Montrer que (E) est équivalente à\nl’équation\n2) a) Tracer les courbes représentatives des\nfonctions, f et g définies respectivement sur\n[0,+∞ [ et ] 0,+∞ [ par\nf(x) = et g(x) =\nb) Par une lecture graphique\n- Vérifier que l’équation (E) admet une\nunique solution.\n- Donner un encadrement d’amplitude 0,25\nde cette solution.\nSoit f la fonction définie par f(x) = .\na) Déterminer l’ensemble de définition de f.\nb) Soit H la courbe de f. Déterminer le centre\nde H et ses asymptotes. Tracer H\nc) Déterminer l’intersection de H et la droite\nD d’équation y = – x.\nx2+\nx2+\nx1\n2 2- +\n.x x1 1=+\nx .x1 1+\nx\nx\n-\n-+\nO, i ,j_i\nO, i ,j_i\nMath et cultureMath et culture\nParabole – paraboloïde et applications\nLa trajectoire d’un projectile, tel qu’une balle ou un ballon, est une parabole si l’on néglige la\nrésistance de l’air. Les miroirs paraboliques sont des réflecteurs dont la forme (paraboloïde de\nrévolution) est engendrée par la rotation d’une parabole autour de son axe de symétrie. Ces\nmiroirs réfléchissent, sous la forme de rayons parallèles, les rayons émis par une source\nlumineuse située au foyer de la parabole. On utilise ce genre de réflecteurs pour les phares\nautomobiles et pour les autres types de projecteurs. Les miroirs paraboliques présentent aussi\nla propriété de concentrer des rayons lumineux parallèles jusqu’au foyer, sans aucune\naberration sphérique. Ils sont par conséquent très utiles dans la fabrication de télescopes\nastronomiques.\nSi on fait tomber sur un miroir parabolique un faisceau de rayons parallèles à son axe de symé-\ntrie, ils vont tous, en se reflétant, converger en un même point, le foyer de la parabole. C’est le\nprincipe des antennes satellites : tous les rayonne-\nments captés sur toute la surface de la parabole sont\nconcentrés au foyer, on y place le récepteur (tête).\nLes réflecteurs paraboliques servent également d’an-\ntennes pour les radars.\nUne autre application : le principe du four solaire. Des\nmiroirs renvoient la lumière sur un miroir parabo-\nlique, qui concentre toute l’énergie, permettant d’at-\nteindre des températures d’ordre de 3500°C, sans\ndégager aucune impureté, comme ce serait le cas avec\nd’autres formes d’énergie. Le procédé a été utilisé par\nArchimède qui a enflammé les voiles de la flotte\nromaine au siège de Syracuse grâce à de tels miroirs.\nPhoto d’une antenne parabolique\nPour démarrerPour démarrerPour démarrerPour démarrer\nLe désordre est bien puissant quand il s’organise.\nAndré SUARES",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 30 (« Activité 30 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 30 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  }
+]

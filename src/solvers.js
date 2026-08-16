@@ -336,6 +336,68 @@ export const solvers = {
           ];
     return steps({ xM, yM, om }, stepsText);
   },
+  arithSeq(d) {
+    const un = d.u1 + (d.n - 1) * d.r;
+    const sn = d.n * (d.u1 + un) / 2;
+    return steps({ un, sn }, [
+      ["Terme général", `uₙ = u₁ + (n−1)r = ${n(d.u1)} + (${n(d.n)}−1)×${n(d.r)} = ${n(un)}`],
+      ["Somme", `Sₙ = n(u₁ + uₙ)/2 = ${n(d.n)}(${n(d.u1)} + ${n(un)})/2 = ${n(sn)}`]
+    ]);
+  },
+  geoSeq(d) {
+    const un = d.u1 * d.q ** (d.n - 1);
+    const sn = d.q === 1 ? d.n * d.u1 : d.u1 * (1 - d.q ** d.n) / (1 - d.q);
+    return steps({ un, sn }, [
+      ["Terme général", `uₙ = u₁ q^{n−1} = ${n(d.u1)} × ${n(d.q)}^${n(d.n - 1)} = ${n(un)}`],
+      ["Somme", d.q === 1 ? `q = 1 : Sₙ = n u₁ = ${n(sn)}` : `Sₙ = u₁ (1 − qⁿ)/(1 − q) = ${n(sn)}`]
+    ]);
+  },
+  affineFn(d) {
+    const y = d.a * d.x + d.b;
+    return steps({ y }, [
+      ["Image", `f(x) = ${n(d.a)} x + ${n(d.b)}. f(${n(d.x)}) = ${n(y)}`]
+    ]);
+  },
+  quadFn(d) {
+    const y = d.a * d.x * d.x + d.b * d.x + d.c;
+    return steps({ y }, [
+      ["Image", `f(x) = ${n(d.a)}x² + ${n(d.b)}x + ${n(d.c)}. f(${n(d.x)}) = ${n(y)}`]
+    ]);
+  },
+  trigExact(d) {
+    const rad = d.angle * Math.PI / 180;
+    const cos = Math.cos(rad);
+    const sin = Math.sin(rad);
+    return steps({ cos, sin }, [
+      ["Cercle", `Le point M du cercle trigo d’angle ${n(d.angle)}° a pour coordonnées (cos α ; sin α).`],
+      ["Valeurs", `cos ${n(d.angle)}° = ${n(cos)} et sin ${n(d.angle)}° = ${n(sin)}`]
+    ]);
+  },
+  distance2d(d) {
+    const dist = Math.hypot(d.xB - d.xA, d.yB - d.yA);
+    const xI = (d.xA + d.xB) / 2;
+    const yI = (d.yA + d.yB) / 2;
+    return steps({ dist, xI, yI }, [
+      ["Distance", `AB = √[(x_B−x_A)² + (y_B−y_A)²] = ${n(dist)}`],
+      ["Milieu", `I = ((x_A+x_B)/2 ; (y_A+y_B)/2) = (${n(xI)} ; ${n(yI)})`]
+    ]);
+  },
+  lineSlope(d) {
+    const m = (d.yB - d.yA) / (d.xB - d.xA);
+    const p = d.yA - m * d.xA;
+    return steps({ m, p }, [
+      ["Pente", `m = (y_B − y_A)/(x_B − x_A) = ${n(m)}`],
+      ["Équation", `y = ${n(m)} x + ${n(p)}`]
+    ]);
+  },
+  statsMean(d) {
+    const mean = d.sum / d.n;
+    const range = d.xmax - d.xmin;
+    return steps({ mean, range }, [
+      ["Moyenne", `x̄ = (Σxᵢ)/n = ${n(d.sum)}/${n(d.n)} = ${n(mean)}`],
+      ["Étendue", `étendue = max − min = ${n(d.xmax)} − ${n(d.xmin)} = ${n(range)}`]
+    ]);
+  },
   fixed(exercise) {
     const values = {};
     for (const q of exercise.questions || []) values[q.key] = q.answer;

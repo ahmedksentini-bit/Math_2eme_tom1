@@ -1,0 +1,184 @@
+{
+  "version": 1,
+  "tome": 2,
+  "chapters": [
+    {"id": "suites-arith", "number": 1, "title": "Suites arithmétiques", "description": "Raison, terme général et somme des n premiers termes."},
+    {"id": "suites-geo", "number": 2, "title": "Suites géométriques", "description": "Raison, terme général et somme (q ≠ 1)."},
+    {"id": "fonctions", "number": 3, "title": "Généralités sur les fonctions", "description": "Image, antécédents, courbe et variations."},
+    {"id": "ref", "number": 4, "title": "Fonctions de référence", "description": "Affine, trinôme, inverse, racine, valeur absolue."},
+    {"id": "trigo", "number": 5, "title": "Trigonométrie", "description": "Cercle trigonométrique, cosinus et sinus d’angles remarquables."},
+    {"id": "analytique", "number": 6, "title": "Géométrie analytique", "description": "Distance, milieu, pente et équation de droite."},
+    {"id": "espace-droites", "number": 7, "title": "Droites et plans de l’espace", "description": "Positions relatives, représentations de l’espace."},
+    {"id": "parallelisme", "number": 8, "title": "Parallélisme dans l’espace", "description": "Droites et plans parallèles."},
+    {"id": "orthogonalite", "number": 9, "title": "Orthogonalité dans l’espace", "description": "Droites et plans perpendiculaires."},
+    {"id": "stats", "number": 10, "title": "Statistiques", "description": "Effectifs, moyenne et étendue d’une série."}
+  ],
+  "exercises": [
+    {
+      "id": "T2_ARITH_01",
+      "chapter": "suites-arith",
+      "solver": "arithSeq",
+      "title": "Terme et somme d’une suite arithmétique",
+      "difficulty": 1,
+      "statement": "Une suite arithmétique a pour premier terme u₁ et pour raison r. Calculer uₙ puis la somme Sₙ = u₁ + … + uₙ. Formules du cours : uₙ = u₁ + (n−1)r et Sₙ = n(u₁ + uₙ)/2.",
+      "variables": [
+        {"key": "u1", "label": "Premier terme u₁", "unit": "—", "value": 3, "min": -5, "max": 12, "step": 1},
+        {"key": "r", "label": "Raison r", "unit": "—", "value": 4, "min": -6, "max": 8, "step": 1},
+        {"key": "n", "label": "Rang n", "unit": "—", "value": 10, "min": 4, "max": 20, "step": 1}
+      ],
+      "questions": [
+        {"key": "un", "label": "uₙ", "unit": "—"},
+        {"key": "sn", "label": "Sₙ", "unit": "—"}
+      ]
+    },
+    {
+      "id": "T2_GEO_01",
+      "chapter": "suites-geo",
+      "solver": "geoSeq",
+      "title": "Terme et somme d’une suite géométrique",
+      "difficulty": 1,
+      "statement": "Une suite géométrique a pour premier terme u₁ et pour raison q (q ≠ 1). Calculer uₙ = u₁ q^{n−1} puis Sₙ = u₁ (1 − qⁿ)/(1 − q).",
+      "variables": [
+        {"key": "u1", "label": "Premier terme u₁", "unit": "—", "value": 2, "min": 1, "max": 5, "step": 1},
+        {"key": "q", "label": "Raison q", "unit": "—", "value": 3, "min": 2, "max": 4, "step": 1},
+        {"key": "n", "label": "Rang n", "unit": "—", "value": 5, "min": 3, "max": 8, "step": 1}
+      ],
+      "questions": [
+        {"key": "un", "label": "uₙ", "unit": "—"},
+        {"key": "sn", "label": "Sₙ", "unit": "—"}
+      ]
+    },
+    {
+      "id": "T2_AFF_01",
+      "chapter": "fonctions",
+      "solver": "affineFn",
+      "title": "Image par une fonction affine",
+      "difficulty": 1,
+      "statement": "Soit f définie sur IR par f(x) = ax + b. Calculer f(x₀). La courbe est une droite de pente a.",
+      "variables": [
+        {"key": "a", "label": "Coefficient a", "unit": "—", "value": -2, "min": -5, "max": 5, "step": 1},
+        {"key": "b", "label": "Ordonnée à l’origine b", "unit": "—", "value": 3, "min": -6, "max": 8, "step": 1},
+        {"key": "x", "label": "x₀", "unit": "—", "value": 4, "min": -4, "max": 6, "step": 1}
+      ],
+      "questions": [{"key": "y", "label": "f(x₀)", "unit": "—"}]
+    },
+    {
+      "id": "T2_QUAD_01",
+      "chapter": "ref",
+      "solver": "quadFn",
+      "title": "Image par un trinôme",
+      "difficulty": 1,
+      "statement": "Soit f(x) = ax² + bx + c. Calculer f(x₀). La courbe est une parabole tournée vers le haut si a > 0.",
+      "variables": [
+        {"key": "a", "label": "a", "unit": "—", "value": 1, "min": -2, "max": 2, "step": 1},
+        {"key": "b", "label": "b", "unit": "—", "value": -3, "min": -5, "max": 5, "step": 1},
+        {"key": "c", "label": "c", "unit": "—", "value": -4, "min": -8, "max": 8, "step": 1},
+        {"key": "x", "label": "x₀", "unit": "—", "value": 2, "min": -3, "max": 4, "step": 1}
+      ],
+      "questions": [{"key": "y", "label": "f(x₀)", "unit": "—"}]
+    },
+    {
+      "id": "T2_TRIG_01",
+      "chapter": "trigo",
+      "solver": "trigExact",
+      "title": "Cosinus et sinus d’un angle remarquable",
+      "difficulty": 1,
+      "statement": "Sur le cercle trigonométrique, lire cos α et sin α pour un angle remarquable du cours (0°, 30°, 45°, 60°, 90°).",
+      "variables": [
+        {"key": "angle", "label": "Angle α", "unit": "°", "value": 60, "min": 0, "max": 90, "step": 15}
+      ],
+      "questions": [
+        {"key": "cos", "label": "cos α", "unit": "—"},
+        {"key": "sin", "label": "sin α", "unit": "—"}
+      ]
+    },
+    {
+      "id": "T2_DIST_01",
+      "chapter": "analytique",
+      "solver": "distance2d",
+      "title": "Distance et milieu",
+      "difficulty": 1,
+      "statement": "Le plan est muni d’un repère orthonormé. Calculer AB et les coordonnées du milieu I de [AB].",
+      "variables": [
+        {"key": "xA", "label": "x_A", "unit": "—", "value": -2, "min": -5, "max": 4, "step": 1},
+        {"key": "yA", "label": "y_A", "unit": "—", "value": 1, "min": -4, "max": 5, "step": 1},
+        {"key": "xB", "label": "x_B", "unit": "—", "value": 4, "min": -4, "max": 6, "step": 1},
+        {"key": "yB", "label": "y_B", "unit": "—", "value": 5, "min": -4, "max": 6, "step": 1}
+      ],
+      "questions": [
+        {"key": "dist", "label": "AB", "unit": "—"},
+        {"key": "xI", "label": "x_I", "unit": "—"},
+        {"key": "yI", "label": "y_I", "unit": "—"}
+      ]
+    },
+    {
+      "id": "T2_LINE_01",
+      "chapter": "espace-droites",
+      "solver": "lineSlope",
+      "title": "Pente d’une droite du plan",
+      "difficulty": 1,
+      "statement": "Deux points A et B définissent une droite non verticale. Calculer la pente m = (y_B − y_A)/(x_B − x_A) et l’ordonnée à l’origine p telle que y = mx + p.",
+      "variables": [
+        {"key": "xA", "label": "x_A", "unit": "—", "value": 0, "min": -3, "max": 2, "step": 1},
+        {"key": "yA", "label": "y_A", "unit": "—", "value": 1, "min": -4, "max": 4, "step": 1},
+        {"key": "xB", "label": "x_B", "unit": "—", "value": 4, "min": 1, "max": 6, "step": 1},
+        {"key": "yB", "label": "y_B", "unit": "—", "value": 3, "min": -4, "max": 6, "step": 1}
+      ],
+      "questions": [
+        {"key": "m", "label": "Pente m", "unit": "—"},
+        {"key": "p", "label": "p dans y = mx + p", "unit": "—"}
+      ]
+    },
+    {
+      "id": "T2_PARA_01",
+      "chapter": "parallelisme",
+      "solver": "lineSlope",
+      "title": "Droites de même pente",
+      "difficulty": 1,
+      "statement": "Deux droites du plan sont parallèles si elles ont la même pente. Calculer la pente de (AB) : c’est celle de toute parallèle à (AB).",
+      "variables": [
+        {"key": "xA", "label": "x_A", "unit": "—", "value": -1, "min": -4, "max": 2, "step": 1},
+        {"key": "yA", "label": "y_A", "unit": "—", "value": 0, "min": -3, "max": 3, "step": 1},
+        {"key": "xB", "label": "x_B", "unit": "—", "value": 5, "min": 2, "max": 7, "step": 1},
+        {"key": "yB", "label": "y_B", "unit": "—", "value": 3, "min": -2, "max": 6, "step": 1}
+      ],
+      "questions": [
+        {"key": "m", "label": "Pente commune", "unit": "—"},
+        {"key": "p", "label": "p de (AB)", "unit": "—"}
+      ]
+    },
+    {
+      "id": "T2_ORTH_01",
+      "chapter": "orthogonalite",
+      "solver": "dotOrtho",
+      "title": "Vecteurs orthogonaux du plan",
+      "difficulty": 1,
+      "statement": "En base orthonormée, u⃗ ⊥ v⃗ ⇔ xx' + yy' = 0. Calculer le produit scalaire (le même critère sert, dans le cours, à l’orthogonalité dans l’espace via les vecteurs directeurs).",
+      "variables": [
+        {"key": "x", "label": "x de u⃗", "unit": "—", "value": 3, "min": -5, "max": 5, "step": 1},
+        {"key": "y", "label": "y de u⃗", "unit": "—", "value": 4, "min": -5, "max": 5, "step": 1},
+        {"key": "xp", "label": "x de v⃗", "unit": "—", "value": 4, "min": -5, "max": 5, "step": 1},
+        {"key": "yp", "label": "y de v⃗", "unit": "—", "value": -3, "min": -5, "max": 5, "step": 1}
+      ],
+      "questions": [{"key": "dot", "label": "u⃗ · v⃗", "unit": "—"}]
+    },
+    {
+      "id": "T2_STAT_01",
+      "chapter": "stats",
+      "solver": "statsMean",
+      "title": "Moyenne et étendue",
+      "difficulty": 1,
+      "statement": "Une série de n valeurs a pour somme Σxᵢ. Calculer la moyenne x̄ = (Σxᵢ)/n et l’étendue max − min.",
+      "variables": [
+        {"key": "n", "label": "Effectif n", "unit": "—", "value": 8, "min": 4, "max": 20, "step": 1},
+        {"key": "sum", "label": "Somme Σxᵢ", "unit": "—", "value": 96, "min": 20, "max": 200, "step": 4},
+        {"key": "xmin", "label": "Minimum", "unit": "—", "value": 7, "min": 1, "max": 15, "step": 1},
+        {"key": "xmax", "label": "Maximum", "unit": "—", "value": 18, "min": 10, "max": 30, "step": 1}
+      ],
+      "questions": [
+        {"key": "mean", "label": "Moyenne x̄", "unit": "—"},
+        {"key": "range", "label": "Étendue", "unit": "—"}
+      ]
+    }
+  ]
+}

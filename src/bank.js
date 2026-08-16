@@ -371,6 +371,66 @@ const makers = {
       return item("rotations", "hard", 3, "rotation90", `Centre hors origine n°${i + 1}`, "Quart de tour autour de O ≠ origine. (x−x_O ; y−y_O) ↦ (−(y−y_O) ; x−x_O).", [v("xO", "x_O", "—", xO, -1, 3, 1), v("yO", "y_O", "—", yO, -1, 3, 1), v("x", "x_M", "—", x, -2, 6, 1), v("y", "y_M", "—", y, -2, 6, 1)], Q.rot, i);
     },
     puzzle: (rng, i) => item("rotations", "puzzle", 4, "rotationAngle", `Demi-tour n°${i + 1}`, "180° = symétrie centrale : M' = 2O − M. Ici O est l’origine.", [v("xO", "x_O", "—", 0, 0, 0, 1), v("yO", "y_O", "—", 0, 0, 0, 1), v("x", "x_M", "—", 2, 1, 4, 1), v("y", "y_M", "—", 1, 0, 3, 1), v("angle", "α", "°", 180, 180, 180, 90)], Q.rota, i)
+  },
+  "suites-arith": {
+    easy: (rng, i) => item("suites-arith", "easy", 1, "arithSeq", `Suite arithmétique n°${i + 1}`, ST.arithSeq || "", [v("u1", "u₁", "—", between(rng, 1, 8, 1), -5, 12, 1), v("r", "r", "—", pick(rng, [2, 3, 4, 5]), -6, 8, 1), v("n", "n", "—", between(rng, 5, 12, 1), 4, 20, 1)], [{ key: "un", label: "uₙ", unit: "—" }, { key: "sn", label: "Sₙ", unit: "—" }], i),
+    medium: (rng, i) => item("suites-arith", "medium", 2, "arithSeq", `Somme arithmétique n°${i + 1}`, "", [v("u1", "u₁", "—", between(rng, -3, 6, 1), -5, 12, 1), v("r", "r", "—", pick(rng, [-3, -2, 2, 5]), -6, 8, 1), v("n", "n", "—", between(rng, 8, 16, 1), 4, 20, 1)], [{ key: "un", label: "uₙ", unit: "—" }, { key: "sn", label: "Sₙ", unit: "—" }], i),
+    hard: (rng, i) => item("suites-arith", "hard", 3, "arithSeq", `Raison négative n°${i + 1}`, "", [v("u1", "u₁", "—", between(rng, 10, 20, 1), -5, 25, 1), v("r", "r", "—", pick(rng, [-5, -4, -2]), -6, 8, 1), v("n", "n", "—", between(rng, 10, 18, 1), 4, 20, 1)], [{ key: "un", label: "uₙ", unit: "—" }, { key: "sn", label: "Sₙ", unit: "—" }], i),
+    puzzle: (rng, i) => item("suites-arith", "puzzle", 4, "arithSeq", `Longue somme n°${i + 1}`, "", [v("u1", "u₁", "—", 1, -5, 12, 1), v("r", "r", "—", 1, -6, 8, 1), v("n", "n", "—", 20, 4, 20, 1)], [{ key: "un", label: "uₙ", unit: "—" }, { key: "sn", label: "Sₙ", unit: "—" }], i)
+  },
+  "suites-geo": {
+    easy: (rng, i) => item("suites-geo", "easy", 1, "geoSeq", `Suite géométrique n°${i + 1}`, "", [v("u1", "u₁", "—", pick(rng, [1, 2, 3]), 1, 5, 1), v("q", "q", "—", pick(rng, [2, 3]), 2, 4, 1), v("n", "n", "—", between(rng, 4, 6, 1), 3, 8, 1)], [{ key: "un", label: "uₙ", unit: "—" }, { key: "sn", label: "Sₙ", unit: "—" }], i),
+    medium: (rng, i) => item("suites-geo", "medium", 2, "geoSeq", `Raison 2 n°${i + 1}`, "", [v("u1", "u₁", "—", 2, 1, 5, 1), v("q", "q", "—", 2, 2, 4, 1), v("n", "n", "—", 6, 3, 8, 1)], [{ key: "un", label: "uₙ", unit: "—" }, { key: "sn", label: "Sₙ", unit: "—" }], i),
+    hard: (rng, i) => item("suites-geo", "hard", 3, "geoSeq", `Raison 3 n°${i + 1}`, "", [v("u1", "u₁", "—", 1, 1, 5, 1), v("q", "q", "—", 3, 2, 4, 1), v("n", "n", "—", 5, 3, 8, 1)], [{ key: "un", label: "uₙ", unit: "—" }, { key: "sn", label: "Sₙ", unit: "—" }], i),
+    puzzle: (rng, i) => item("suites-geo", "puzzle", 4, "geoSeq", `q = 4 n°${i + 1}`, "", [v("u1", "u₁", "—", 1, 1, 5, 1), v("q", "q", "—", 4, 2, 4, 1), v("n", "n", "—", 4, 3, 8, 1)], [{ key: "un", label: "uₙ", unit: "—" }, { key: "sn", label: "Sₙ", unit: "—" }], i)
+  },
+  fonctions: {
+    easy: (rng, i) => item("fonctions", "easy", 1, "affineFn", `Affine n°${i + 1}`, "", [v("a", "a", "—", pick(rng, [-3, -2, 1, 2, 4]), -5, 5, 1), v("b", "b", "—", between(rng, -4, 6, 1), -6, 8, 1), v("x", "x₀", "—", between(rng, -2, 5, 1), -4, 6, 1)], [{ key: "y", label: "f(x₀)", unit: "—" }], i),
+    medium: (rng, i) => item("fonctions", "medium", 2, "affineFn", `Pente négative n°${i + 1}`, "", [v("a", "a", "—", -2, -5, 5, 1), v("b", "b", "—", 5, -6, 8, 1), v("x", "x₀", "—", 3, -4, 6, 1)], [{ key: "y", label: "f(x₀)", unit: "—" }], i),
+    hard: (rng, i) => item("fonctions", "hard", 3, "quadFn", `Trinôme n°${i + 1}`, "", [v("a", "a", "—", 1, -2, 2, 1), v("b", "b", "—", -4, -5, 5, 1), v("c", "c", "—", 3, -8, 8, 1), v("x", "x₀", "—", 2, -3, 4, 1)], [{ key: "y", label: "f(x₀)", unit: "—" }], i),
+    puzzle: (rng, i) => item("fonctions", "puzzle", 4, "quadFn", `Parabole n°${i + 1}`, "", [v("a", "a", "—", -1, -2, 2, 1), v("b", "b", "—", 2, -5, 5, 1), v("c", "c", "—", 5, -8, 8, 1), v("x", "x₀", "—", -1, -3, 4, 1)], [{ key: "y", label: "f(x₀)", unit: "—" }], i)
+  },
+  ref: {
+    easy: (rng, i) => item("ref", "easy", 1, "quadFn", `Référence n°${i + 1}`, "", [v("a", "a", "—", 1, -2, 2, 1), v("b", "b", "—", 0, -5, 5, 1), v("c", "c", "—", -4, -8, 8, 1), v("x", "x₀", "—", 3, -3, 4, 1)], [{ key: "y", label: "f(x₀)", unit: "—" }], i),
+    medium: (rng, i) => item("ref", "medium", 2, "affineFn", `Droite n°${i + 1}`, "", [v("a", "a", "—", 3, -5, 5, 1), v("b", "b", "—", -1, -6, 8, 1), v("x", "x₀", "—", -2, -4, 6, 1)], [{ key: "y", label: "f(x₀)", unit: "—" }], i),
+    hard: (rng, i) => item("ref", "hard", 3, "quadFn", `a = −1 n°${i + 1}`, "", [v("a", "a", "—", -1, -2, 2, 1), v("b", "b", "—", 4, -5, 5, 1), v("c", "c", "—", 0, -8, 8, 1), v("x", "x₀", "—", 1, -3, 4, 1)], [{ key: "y", label: "f(x₀)", unit: "—" }], i),
+    puzzle: (rng, i) => item("ref", "puzzle", 4, "quadFn", `Sommet n°${i + 1}`, "", [v("a", "a", "—", 2, -2, 2, 1), v("b", "b", "—", -8, -5, 5, 1), v("c", "c", "—", 3, -8, 8, 1), v("x", "x₀", "—", 2, -3, 4, 1)], [{ key: "y", label: "f(x₀)", unit: "—" }], i)
+  },
+  trigo: {
+    easy: (rng, i) => item("trigo", "easy", 1, "trigExact", `Angle remarquable n°${i + 1}`, "", [v("angle", "α", "°", pick(rng, [0, 30, 45, 60, 90]), 0, 90, 15)], [{ key: "cos", label: "cos α", unit: "—" }, { key: "sin", label: "sin α", unit: "—" }], i),
+    medium: (rng, i) => item("trigo", "medium", 2, "trigExact", `60° n°${i + 1}`, "", [v("angle", "α", "°", 60, 0, 90, 15)], [{ key: "cos", label: "cos α", unit: "—" }, { key: "sin", label: "sin α", unit: "—" }], i),
+    hard: (rng, i) => item("trigo", "hard", 3, "trigExact", `30° n°${i + 1}`, "", [v("angle", "α", "°", 30, 0, 90, 15)], [{ key: "cos", label: "cos α", unit: "—" }, { key: "sin", label: "sin α", unit: "—" }], i),
+    puzzle: (rng, i) => item("trigo", "puzzle", 4, "trigExact", `45° n°${i + 1}`, "", [v("angle", "α", "°", 45, 0, 90, 15)], [{ key: "cos", label: "cos α", unit: "—" }, { key: "sin", label: "sin α", unit: "—" }], i)
+  },
+  analytique: {
+    easy: (rng, i) => item("analytique", "easy", 1, "distance2d", `Distance n°${i + 1}`, "", [v("xA", "x_A", "—", between(rng, -3, 2, 1), -5, 4, 1), v("yA", "y_A", "—", between(rng, -2, 3, 1), -4, 5, 1), v("xB", "x_B", "—", between(rng, 2, 6, 1), -4, 6, 1), v("yB", "y_B", "—", between(rng, 1, 5, 1), -4, 6, 1)], [{ key: "dist", label: "AB", unit: "—" }, { key: "xI", label: "x_I", unit: "—" }, { key: "yI", label: "y_I", unit: "—" }], i),
+    medium: (rng, i) => item("analytique", "medium", 2, "lineSlope", `Pente n°${i + 1}`, "", [v("xA", "x_A", "—", 0, -3, 2, 1), v("yA", "y_A", "—", 1, -4, 4, 1), v("xB", "x_B", "—", 4, 1, 6, 1), v("yB", "y_B", "—", between(rng, 2, 6, 1), -4, 6, 1)], [{ key: "m", label: "m", unit: "—" }, { key: "p", label: "p", unit: "—" }], i),
+    hard: (rng, i) => item("analytique", "hard", 3, "distance2d", `Milieu n°${i + 1}`, "", [v("xA", "x_A", "—", -4, -5, 4, 1), v("yA", "y_A", "—", 5, -4, 5, 1), v("xB", "x_B", "—", 2, -4, 6, 1), v("yB", "y_B", "—", -1, -4, 6, 1)], [{ key: "dist", label: "AB", unit: "—" }, { key: "xI", label: "x_I", unit: "—" }, { key: "yI", label: "y_I", unit: "—" }], i),
+    puzzle: (rng, i) => item("analytique", "puzzle", 4, "lineSlope", `Droite n°${i + 1}`, "", [v("xA", "x_A", "—", -2, -3, 2, 1), v("yA", "y_A", "—", 0, -4, 4, 1), v("xB", "x_B", "—", 6, 1, 6, 1), v("yB", "y_B", "—", 4, -4, 6, 1)], [{ key: "m", label: "m", unit: "—" }, { key: "p", label: "p", unit: "—" }], i)
+  },
+  "espace-droites": {
+    easy: (rng, i) => item("espace-droites", "easy", 1, "lineSlope", `Direction n°${i + 1}`, "", [v("xA", "x_A", "—", 0, -3, 2, 1), v("yA", "y_A", "—", 0, -4, 4, 1), v("xB", "x_B", "—", 3, 1, 6, 1), v("yB", "y_B", "—", 3, -4, 6, 1)], [{ key: "m", label: "m", unit: "—" }, { key: "p", label: "p", unit: "—" }], i),
+    medium: (rng, i) => item("espace-droites", "medium", 2, "distance2d", `Repère n°${i + 1}`, "", [v("xA", "x_A", "—", 1, -5, 4, 1), v("yA", "y_A", "—", 1, -4, 5, 1), v("xB", "x_B", "—", 4, -4, 6, 1), v("yB", "y_B", "—", 5, -4, 6, 1)], [{ key: "dist", label: "AB", unit: "—" }, { key: "xI", label: "x_I", unit: "—" }, { key: "yI", label: "y_I", unit: "—" }], i),
+    hard: (rng, i) => item("espace-droites", "hard", 3, "lineSlope", `Pente n°${i + 1}`, "", [v("xA", "x_A", "—", -1, -3, 2, 1), v("yA", "y_A", "—", 2, -4, 4, 1), v("xB", "x_B", "—", 5, 1, 6, 1), v("yB", "y_B", "—", -1, -4, 6, 1)], [{ key: "m", label: "m", unit: "—" }, { key: "p", label: "p", unit: "—" }], i),
+    puzzle: (rng, i) => item("espace-droites", "puzzle", 4, "distance2d", `Cube face n°${i + 1}`, "", [v("xA", "x_A", "—", 0, -5, 4, 1), v("yA", "y_A", "—", 0, -4, 5, 1), v("xB", "x_B", "—", 6, -4, 6, 1), v("yB", "y_B", "—", 8, -4, 6, 1)], [{ key: "dist", label: "AB", unit: "—" }, { key: "xI", label: "x_I", unit: "—" }, { key: "yI", label: "y_I", unit: "—" }], i)
+  },
+  parallelisme: {
+    easy: (rng, i) => item("parallelisme", "easy", 1, "lineSlope", `Parallèles n°${i + 1}`, "", [v("xA", "x_A", "—", 0, -3, 2, 1), v("yA", "y_A", "—", 1, -4, 4, 1), v("xB", "x_B", "—", 4, 1, 6, 1), v("yB", "y_B", "—", 3, -4, 6, 1)], [{ key: "m", label: "m", unit: "—" }, { key: "p", label: "p", unit: "—" }], i),
+    medium: (rng, i) => item("parallelisme", "medium", 2, "lineSlope", `Même pente n°${i + 1}`, "", [v("xA", "x_A", "—", -2, -3, 2, 1), v("yA", "y_A", "—", 0, -4, 4, 1), v("xB", "x_B", "—", 2, 1, 6, 1), v("yB", "y_B", "—", 6, -4, 6, 1)], [{ key: "m", label: "m", unit: "—" }, { key: "p", label: "p", unit: "—" }], i),
+    hard: (rng, i) => item("parallelisme", "hard", 3, "lineSlope", `m = 1/2 n°${i + 1}`, "", [v("xA", "x_A", "—", 0, -3, 2, 1), v("yA", "y_A", "—", 0, -4, 4, 1), v("xB", "x_B", "—", 6, 1, 6, 1), v("yB", "y_B", "—", 3, -4, 6, 1)], [{ key: "m", label: "m", unit: "—" }, { key: "p", label: "p", unit: "—" }], i),
+    puzzle: (rng, i) => item("parallelisme", "puzzle", 4, "lineSlope", `pente 2 n°${i + 1}`, "", [v("xA", "x_A", "—", 1, -3, 2, 1), v("yA", "y_A", "—", -2, -4, 4, 1), v("xB", "x_B", "—", 4, 1, 6, 1), v("yB", "y_B", "—", 4, -4, 6, 1)], [{ key: "m", label: "m", unit: "—" }, { key: "p", label: "p", unit: "—" }], i)
+  },
+  orthogonalite: {
+    easy: (rng, i) => item("orthogonalite", "easy", 1, "dotOrtho", `Orthogonal n°${i + 1}`, "", [v("x", "x", "—", 3, -5, 5, 1), v("y", "y", "—", 4, -5, 5, 1), v("xp", "x'", "—", 4, -5, 5, 1), v("yp", "y'", "—", -3, -5, 5, 1)], [{ key: "dot", label: "produit scalaire", unit: "—" }], i),
+    medium: (rng, i) => item("orthogonalite", "medium", 2, "dotOrtho", `Produit n°${i + 1}`, "", [v("x", "x", "—", 1, -5, 5, 1), v("y", "y", "—", 2, -5, 5, 1), v("xp", "x'", "—", -2, -5, 5, 1), v("yp", "y'", "—", 1, -5, 5, 1)], [{ key: "dot", label: "produit scalaire", unit: "—" }], i),
+    hard: (rng, i) => item("orthogonalite", "hard", 3, "dotOrtho", `Base n°${i + 1}`, "", [v("x", "x", "—", 5, -5, 5, 1), v("y", "y", "—", 12, -5, 5, 1), v("xp", "x'", "—", 12, -5, 5, 1), v("yp", "y'", "—", -5, -5, 5, 1)], [{ key: "dot", label: "produit scalaire", unit: "—" }], i),
+    puzzle: (rng, i) => item("orthogonalite", "puzzle", 4, "dotOrtho", `Contrôle n°${i + 1}`, "", [v("x", "x", "—", 2, -5, 5, 1), v("y", "y", "—", -1, -5, 5, 1), v("xp", "x'", "—", 3, -5, 5, 1), v("yp", "y'", "—", 6, -5, 5, 1)], [{ key: "dot", label: "produit scalaire", unit: "—" }], i)
+  },
+  stats: {
+    easy: (rng, i) => item("stats", "easy", 1, "statsMean", `Moyenne n°${i + 1}`, "", [v("n", "n", "—", 10, 4, 20, 1), v("sum", "Σ", "—", 120, 20, 200, 4), v("xmin", "min", "—", 5, 1, 15, 1), v("xmax", "max", "—", 20, 10, 30, 1)], [{ key: "mean", label: "x̄", unit: "—" }, { key: "range", label: "étendue", unit: "—" }], i),
+    medium: (rng, i) => item("stats", "medium", 2, "statsMean", `Série n°${i + 1}`, "", [v("n", "n", "—", 8, 4, 20, 1), v("sum", "Σ", "—", 96, 20, 200, 4), v("xmin", "min", "—", 7, 1, 15, 1), v("xmax", "max", "—", 18, 10, 30, 1)], [{ key: "mean", label: "x̄", unit: "—" }, { key: "range", label: "étendue", unit: "—" }], i),
+    hard: (rng, i) => item("stats", "hard", 3, "statsMean", `Étendue n°${i + 1}`, "", [v("n", "n", "—", 15, 4, 20, 1), v("sum", "Σ", "—", 180, 20, 200, 4), v("xmin", "min", "—", 4, 1, 15, 1), v("xmax", "max", "—", 22, 10, 30, 1)], [{ key: "mean", label: "x̄", unit: "—" }, { key: "range", label: "étendue", unit: "—" }], i),
+    puzzle: (rng, i) => item("stats", "puzzle", 4, "statsMean", `n grand n°${i + 1}`, "", [v("n", "n", "—", 20, 4, 20, 1), v("sum", "Σ", "—", 200, 20, 200, 4), v("xmin", "min", "—", 2, 1, 15, 1), v("xmax", "max", "—", 19, 10, 30, 1)], [{ key: "mean", label: "x̄", unit: "—" }, { key: "range", label: "étendue", unit: "—" }], i)
   }
 };
 

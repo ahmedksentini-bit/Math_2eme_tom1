@@ -1,7 +1,7 @@
 {
-  "name": "Maths 2ème — Tome 1",
+  "name": "Maths 2ème — Tomes 1 et 2",
   "short_name": "Maths 2ème",
-  "description": "Exercices paramétriques du manuel de 2ème année sciences et TI, tome 1",
+  "description": "Exercices du manuel de 2ème année sciences et TI, tomes 1 et 2",
   "lang": "fr",
   "start_url": "./",
   "scope": "./",

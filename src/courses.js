@@ -131,6 +131,126 @@ export const chapterCourses = {
       { title: "Méthode type", text: "Identifier le centre et l’angle. Si O n’est pas l’origine, se ramener au vecteur OM⃗. Appliquer le quart de tour ou le demi-tour du cours. Contrôler OM' = OM et, pour 90°, OM⃗ · OM'⃗ = 0." },
       { title: "Erreurs fréquentes", text: "Tourner autour de l’origine alors que le centre est ailleurs. Confondre direct et horaire : (−y ; x) n’est pas (y ; −x). Oublier que 180° est M' = 2O − M. Utiliser un repère non orthonormé pour le quart de tour." }
     ]
+  },
+  "suites-arith": {
+    title: "Suites arithmétiques — cours détaillé",
+    lead: "Une suite est arithmétique lorsque l’on passe d’un terme au suivant en ajoutant toujours le même réel r, appelé raison. Les points (n ; uₙ) sont alignés.",
+    sections: [
+      { title: "Définition", text: "(uₙ) est arithmétique de raison r si, pour tout n, u_{n+1} = uₙ + r. r peut être positive (suite croissante) ou négative (décroissante)." },
+      { title: "Terme général", text: "uₙ = u₁ + (n−1)r. On compte le nombre de pas depuis u₁, pas depuis 0. On peut aussi écrire uₙ = u_p + (n−p)r." },
+      { title: "Somme", text: "Sₙ = u₁ + u₂ + … + uₙ = n(u₁ + uₙ)/2 = n(2u₁ + (n−1)r)/2. On moyenne les extrêmes, on multiplie par le nombre de termes." },
+      { title: "Représentation", text: "Dans un repère, on place les points (1 ; u₁), (2 ; u₂), … Ils sont alignés, de pente r. Ce n’est pas une courbe continue : une suite est discrète." },
+      { title: "Méthode type", text: "Identifier u₁ et r. Écrire uₙ, puis Sₙ si on demande une somme. Contrôler uₙ − uₙ₋₁ = r." },
+      { title: "Erreurs fréquentes", text: "Écrire uₙ = u₁ + n r (un cran de trop). Sommer n termes avec n+1. Confondre suite arithmétique et fonction affine continue." }
+    ]
+  },
+  "suites-geo": {
+    title: "Suites géométriques — cours détaillé",
+    lead: "Une suite est géométrique lorsque l’on multiplie toujours par le même réel q ≠ 0. Les points s’éloignent de 0 si |q| > 1.",
+    sections: [
+      { title: "Définition", text: "u_{n+1} = q uₙ. q est la raison. Si q > 1 et u₁ > 0, la suite est croissante. Si 0 < q < 1, elle tend vers 0." },
+      { title: "Terme général", text: "uₙ = u₁ q^{n−1}. Exposant n−1 : le premier terme n’est pas encore multiplié." },
+      { title: "Somme", text: "Si q ≠ 1, Sₙ = u₁ (1 − qⁿ)/(1 − q). Si q = 1, Sₙ = n u₁. On ne divise jamais par 0." },
+      { title: "Représentation", text: "Les points (n ; uₙ) ne sont pas alignés (sauf cas triviaux). Pour q = 2, on voit une croissance « en escalier exponentiel »." },
+      { title: "Méthode type", text: "Lire u₁ et q. Écrire uₙ. Pour une somme, choisir la formule selon q = 1 ou non." },
+      { title: "Erreurs fréquentes", text: "Utiliser 1 − qⁿ avec q = 1. Confondre n et n−1. Additionner au lieu de multiplier par q." }
+    ]
+  },
+  fonctions: {
+    title: "Généralités sur les fonctions — cours détaillé",
+    lead: "Une fonction associe à chaque x de l’ensemble de définition au plus une image f(x). La courbe C_f est l’ensemble des points (x ; f(x)).",
+    sections: [
+      { title: "Vocabulaire", text: "Image de x : f(x). Antécédents de y : les x tels que f(x) = y. Ensemble de définition D_f : les x pour lesquels f(x) existe." },
+      { title: "Courbe", text: "Dans un repère, on place les points (x ; f(x)). Une verticale coupe la courbe en au plus un point (c’est une fonction)." },
+      { title: "Variations", text: "f est croissante sur I si x₁ < x₂ ⇒ f(x₁) ≤ f(x₂). Décroissante : le sens s’inverse. Tableau de variations, extremums." },
+      { title: "Équations et inéquations", text: "f(x) = k se lit comme les abscisses des points d’ordonnée k. f(x) > k : au-dessus de la droite y = k." },
+      { title: "Méthode type", text: "Déterminer D_f. Calculer quelques images. Tracer ou exploiter la courbe. Lire antécédents graphiquement, puis justifier par le calcul." },
+      { title: "Erreurs fréquentes", text: "Confondre image et antécédent. Tracer une courbe qui n’est pas un graphe de fonction (deux y pour un x). Lire un extremum hors de l’intervalle." }
+    ]
+  },
+  ref: {
+    title: "Fonctions de référence — cours détaillé",
+    lead: "On connaît le graphe de quelques fonctions : affine, trinôme, inverse, racine, valeur absolue. Les autres s’en déduisent par translations.",
+    sections: [
+      { title: "Affine", text: "x ↦ ax + b : droite de pente a. a > 0 croissante." },
+      { title: "Trinôme", text: "x ↦ ax² + bx + c : parabole, sommet d’abscisse −b/(2a). Signe de a : concavité." },
+      { title: "Inverse et racine", text: "x ↦ 1/x (x ≠ 0) : hyperbole. x ↦ √x (x ≥ 0) : demi-parabole « couchée »." },
+      { title: "Valeur absolue", text: "x ↦ |x| : V, minimum 0 en 0. |x − ω| translate le V." },
+      { title: "Méthode type", text: "Reconnaître le modèle. Placer le sommet ou l’asymptote. Tracer quelques points, puis la courbe." },
+      { title: "Erreurs fréquentes", text: "Tracer √x pour x < 0. Oublier que 1/x n’est pas définie en 0. Confondre a et le sommet." }
+    ]
+  },
+  trigo: {
+    title: "Trigonométrie — cours détaillé",
+    lead: "Le cercle trigonométrique de centre O et de rayon 1 permet de définir cos α et sin α comme coordonnées d’un point M.",
+    sections: [
+      { title: "Cercle", text: "Repère orthonormé. M a pour coordonnées (cos α ; sin α). α se lit sur l’arc, en degrés dans ce tome (et parfois en radians plus tard)." },
+      { title: "Angles remarquables", text: "0° : (1 ; 0). 30° : (√3/2 ; 1/2). 45° : (√2/2 ; √2/2). 60° : (1/2 ; √3/2). 90° : (0 ; 1)." },
+      { title: "Relation", text: "cos²α + sin²α = 1. C’est Pythagore sur le cercle unité." },
+      { title: "Mesure des grandeurs", text: "Dans un triangle rectangle, cos = adjacent/hypoténuse, sin = opposé/hypoténuse. On s’en sert pour calculer des longueurs." },
+      { title: "Méthode type", text: "Placer M. Lire ou retrouver cos et sin. Contrôler par cos²+sin² = 1." },
+      { title: "Erreurs fréquentes", text: "Inverser cos et sin. Utiliser la calculatrice en radians alors que l’énoncé est en degrés. Oublier le cercle de rayon 1." }
+    ]
+  },
+  analytique: {
+    title: "Géométrie analytique — cours détaillé",
+    lead: "Le repère orthonormé traduit distances, milieux et droites en coordonnées.",
+    sections: [
+      { title: "Distance", text: "AB = √[(x_B−x_A)² + (y_B−y_A)²] en repère orthonormé." },
+      { title: "Milieu", text: "I milieu de [AB] : x_I = (x_A+x_B)/2, y_I = (y_A+y_B)/2." },
+      { title: "Pente", text: "m = (y_B−y_A)/(x_B−x_A) si x_A ≠ x_B. y = mx + p." },
+      { title: "Parallélisme", text: "Deux droites non verticales sont parallèles ⇔ mêmes pentes." },
+      { title: "Méthode type", text: "Placer les points. Calculer AB, I, m. Écrire l’équation, vérifier sur un point." },
+      { title: "Erreurs fréquentes", text: "Oublier le carré sous la racine. Inverser Δx et Δy. Appliquer la distance dans un repère non orthonormé." }
+    ]
+  },
+  "espace-droites": {
+    title: "Droites et plans de l’espace — cours détaillé",
+    lead: "Dans l’espace, deux droites peuvent être sécantes, parallèles ou non coplanaires. Un plan est déterminé par trois points non alignés.",
+    sections: [
+      { title: "Positions de deux droites", text: "Sécantes (un point commun), parallèles (même direction, pas de point commun), non coplanaires (ni parallèles ni sécantes)." },
+      { title: "Droite et plan", text: "La droite est incluse dans le plan, sécante au plan, ou parallèle au plan." },
+      { title: "Deux plans", text: "Confondus, sécants (droite commune) ou parallèles." },
+      { title: "Représentation", text: "On dessine un pavé ou un cube pour voir les arêtes (droites) et les faces (plans)." },
+      { title: "Méthode type", text: "Nommer les objets. Se ramener à un cube de référence. Conclure sur l’intersection." },
+      { title: "Erreurs fréquentes", text: "Croire que deux droites non parallèles se coupent toujours (faux dans l’espace). Confondre face et arête." }
+    ]
+  },
+  parallelisme: {
+    title: "Parallélisme dans l’espace — cours détaillé",
+    lead: "Le parallélisme se transmet : si une droite est parallèle à un plan, certaines droites du plan le sont aussi.",
+    sections: [
+      { title: "Droites parallèles", text: "Même direction. Par un point hors d’une droite, une unique parallèle." },
+      { title: "Droite parallèle à un plan", text: "La droite ne rencontre pas le plan. Elle est parallèle à une droite du plan." },
+      { title: "Plans parallèles", text: "Aucun point commun. Les droites d’intersection avec un troisième plan sécant sont parallèles." },
+      { title: "Théorèmes du cours", text: "Si deux plans sont parallèles, toute droite de l’un parallèle à l’autre l’est au second. On utilise le pavé comme modèle." },
+      { title: "Méthode type", text: "Identifier les directions. Chercher une droite ou un plan intermédiaire. Conclure par un théorème nommé." },
+      { title: "Erreurs fréquentes", text: "Utiliser un théorème du plan dans l’espace sans précaution. Oublier le cas des droites non coplanaires." }
+    ]
+  },
+  orthogonalite: {
+    title: "Orthogonalité dans l’espace — cours détaillé",
+    lead: "Deux droites de l’espace sont orthogonales si leurs directions le sont, même si elles ne se coupent pas. Un plan et une droite sont perpendiculaires si la droite est orthogonale à deux droites sécantes du plan.",
+    sections: [
+      { title: "Droites orthogonales", text: "u⃗ · v⃗ = 0 pour des vecteurs directeurs. Elles peuvent être non coplanaires." },
+      { title: "Droite perpendiculaire à un plan", text: "Orthogonale à deux droites sécantes du plan. Elle est alors orthogonale à toute droite du plan." },
+      { title: "Plans perpendiculaires", text: "Une droite de l’un est perpendiculaire à l’autre." },
+      { title: "Lien avec le produit scalaire", text: "En base orthonormée, xx' + yy' + zz' = 0. Dans le plan, on retrouve xx' + yy' = 0." },
+      { title: "Méthode type", text: "Choisir des vecteurs directeurs. Calculer un produit scalaire. Interpréter géométriquement." },
+      { title: "Erreurs fréquentes", text: "Exiger que les droites se coupent pour parler d’orthogonalité. Confondre orthogonal et perpendiculaire à un plan." }
+    ]
+  },
+  stats: {
+    title: "Statistiques — cours détaillé",
+    lead: "On résume une série par des indicateurs de position (moyenne) et de dispersion (étendue). Un graphique (bâtons, histogramme) visualise la série.",
+    sections: [
+      { title: "Effectifs", text: "n = effectif total. nᵢ = effectif de la valeur ou de la classe. Fréquence fᵢ = nᵢ/n." },
+      { title: "Moyenne", text: "x̄ = (Σ nᵢ xᵢ)/n = (Σ xᵢ)/n pour une série brute. C’est le barycentre des valeurs." },
+      { title: "Étendue", text: "max − min. Indicateur simple de dispersion." },
+      { title: "Graphiques", text: "Diagramme en bâtons pour une variable discrète. Histogramme pour des classes. On place min, x̄, max sur une droite." },
+      { title: "Méthode type", text: "Organiser le tableau. Calculer n, Σ, x̄, étendue. Contrôler x̄ ∈ [min ; max]." },
+      { title: "Erreurs fréquentes", text: "Diviser par le nombre de classes au lieu de n. Confondre moyenne et médiane (hors programme détaillé ici). Oublier les effectifs dans une moyenne pondérée." }
+    ]
   }
 };
 

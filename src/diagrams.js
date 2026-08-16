@@ -18,6 +18,39 @@ function axes(x0 = 70, y0 = 200, x1 = 520, y1 = 40) {
   return `${line(x0, y0, x1, y0, "#334155", 1.4, 'marker-end="url(#ar)"')}${line(x0, y0, x0, y1, "#334155", 1.4, 'marker-end="url(#ar)"')}${t(x1 - 8, y0 + 16, "x")}${t(x0 - 14, y1 + 8, "y")}`;
 }
 
+function mapX(x, xmin, xmax, x0 = 70, w = 450) { return x0 + (x - xmin) / (xmax - xmin) * w; }
+function mapY(y, ymin, ymax, y0 = 200, h = 160) { return y0 - (y - ymin) / (ymax - ymin) * h; }
+
+function plotCurve(fn, opts = {}) {
+  const xmin = opts.xmin ?? -6, xmax = opts.xmax ?? 6;
+  const ymin = opts.ymin ?? -6, ymax = opts.ymax ?? 6;
+  const x0 = opts.x0 ?? 70, y0 = opts.y0 ?? 200, w = opts.w ?? 450, h = opts.h ?? 160;
+  const color = opts.color ?? "#6d28d9";
+  const parts = [];
+  let pen = false;
+  for (let i = 0; i <= 140; i++) {
+    const x = xmin + (xmax - xmin) * i / 140;
+    const y = fn(x);
+    if (!Number.isFinite(y) || y < ymin - 8 || y > ymax + 8) { pen = false; continue; }
+    const sx = mapX(x, xmin, xmax, x0, w);
+    const sy = mapY(y, ymin, ymax, y0, h);
+    if (sy < 18 || sy > y0 + 12) { pen = false; continue; }
+    parts.push(pen ? `L${sx.toFixed(1)} ${sy.toFixed(1)}` : `M${sx.toFixed(1)} ${sy.toFixed(1)}`);
+    pen = true;
+  }
+  return `<path d="${parts.join(" ")}" fill="none" stroke="${color}" stroke-width="2.3"/>`;
+}
+
+function plotSeq(values, opts = {}) {
+  const ymax = Math.max(4, ...values.map(Math.abs), 1);
+  const n = Math.max(values.length - 1, 1);
+  return values.map((u, i) => {
+    const sx = mapX(i, 0, n, 80, 420);
+    const sy = mapY(u, -ymax, ymax, 200, 150);
+    return `<circle cx="${sx}" cy="${sy}" r="5" fill="#6d28d9"/>${t(sx - 6, sy - 10, `u${i === 0 ? "₁" : i + 1}`)}`;
+  }).join("");
+}
+
 const figures = {
   tvaTtc(d) {
     return {
@@ -51,9 +84,10 @@ const figures = {
     };
   },
   affineBounds(d) {
+    const f = x => d.m * x + d.p;
     return {
       caption: "L’image d’un segment par une fonction affine est un segment. Si m < 0, l’ordre s’inverse.",
-      svg: svg("Encadrement", `${axes()}${line(120, 80, 420, 170, "#6d28d9", 2.5)}${t(430, 175, `f(a) = ${num(d.m)}a + ${num(d.p)}`)}${t(90, 230, `a ∈ [${num(d.amin)} ; ${num(d.amax)}]`)}`)
+      svg: svg("Encadrement", `${axes()}${plotCurve(f, { xmin: -6, xmax: 6, ymin: -12, ymax: 12 })}${t(300, 40, `f(a) = ${num(d.m)}a + ${num(d.p)}`)}`)
     };
   },
   lightTime(d) {
@@ -69,9 +103,10 @@ const figures = {
     };
   },
   quadraticSolve(d) {
+    const f = x => d.a * x * x + d.b * x + d.c;
     return {
       caption: "Parabole y = ax² + bx + c. Les racines sont les abscisses des points d’intersection avec l’axe des x.",
-      svg: svg("Trinôme", `${axes()}${line(90, 80, 200, 200, "#7c3aed", 2.4)}${line(200, 200, 430, 70, "#7c3aed", 2.4)}<circle cx="160" cy="200" r="5" fill="#b91c1c"/><circle cx="280" cy="200" r="5" fill="#b91c1c"/>${t(200, 40, `Δ = b² − 4ac`)}${t(300, 230, `a = ${num(d.a)}  b = ${num(d.b)}  c = ${num(d.c)}`)}`)
+      svg: svg("Trinôme", `${axes()}${plotCurve(f, { xmin: -6, xmax: 6, ymin: -10, ymax: 10 })}${t(200, 40, `Δ = b² − 4ac`)}${t(70, 230, `a = ${num(d.a)}  b = ${num(d.b)}  c = ${num(d.c)}`)}`)
     };
   },
   resistors(d) {
@@ -218,21 +253,104 @@ const figures = {
       svg: svg("Rotation", `${axes()}<circle cx="240" cy="160" r="6" fill="#5b21b6"/>${t(220, 150, "O")}${line(240, 160, 380, 160, "#6d28d9", 2.2, 'marker-end="url(#arb)"')}${line(240, 160, 330, 70, "#b91c1c", 2.2, 'marker-end="url(#arr)"')}${t(390, 165, "M")}${t(340, 65, "M'")}${t(300, 230, `α = ${num(d.angle)}°`)}`)
     };
   },
-  fixed() {
+  arithSeq(d) {
+    const vals = Array.from({ length: Math.min(8, Math.max(3, d.n)) }, (_, i) => d.u1 + i * d.r);
     return {
-      caption: "Activité du polycopié CNP, tome 1. Lire l’énoncé, répondre, puis vérifier.",
-      svg: svg("Activité du manuel", `${t(48, 70, "Polycopié CNP · Tome 1")}${t(48, 115, "Activité du chapitre")}${t(48, 160, "Même énoncé que le livre.")}${t(48, 205, "Répondre, puis afficher la correction.")}`)
+      caption: "Suite arithmétique : points régulièrement espacés. uₙ = u₁ + (n−1)r.",
+      svg: svg("Suite arithmétique", `${axes()}${plotSeq(vals)}${t(70, 230, `r = ${num(d.r)}`)}`)
+    };
+  },
+  geoSeq(d) {
+    const vals = Array.from({ length: Math.min(7, Math.max(3, d.n)) }, (_, i) => d.u1 * d.q ** i);
+    return {
+      caption: "Suite géométrique : chaque terme est multiplié par q. uₙ = u₁ q^{n−1}.",
+      svg: svg("Suite géométrique", `${axes()}${plotSeq(vals)}${t(70, 230, `q = ${num(d.q)}`)}`)
+    };
+  },
+  affineFn(d) {
+    const f = x => d.a * x + d.b;
+    const y = f(d.x);
+    return {
+      caption: "La courbe d’une fonction affine est une droite. On lit f(x₀) sur la courbe.",
+      svg: svg("Fonction affine", `${axes()}${plotCurve(f)}${t(300, 50, `f(x)=${num(d.a)}x+${num(d.b)}`)}${t(70, 230, `f(${num(d.x)}) = ${num(y)}`)}`)
+    };
+  },
+  quadFn(d) {
+    const f = x => d.a * x * x + d.b * x + d.c;
+    return {
+      caption: "Parabole y = ax² + bx + c. a > 0 : tournée vers le haut.",
+      svg: svg("Trinôme", `${axes()}${plotCurve(f, { ymin: -12, ymax: 12 })}${t(70, 230, `f(${num(d.x)})`)}`)
+    };
+  },
+  trigExact(d) {
+    const rad = (d.angle || 0) * Math.PI / 180;
+    const cx = 260, cy = 130, r = 90;
+    const mx = cx + r * Math.cos(rad), my = cy - r * Math.sin(rad);
+    return {
+      caption: "Cercle trigonométrique : M(cos α ; sin α).",
+      svg: svg("Cercle trigo", `<circle cx="${cx}" cy="${cy}" r="${r}" fill="#f5f3ff" stroke="#5b21b6" stroke-width="2"/>${line(cx - 120, cy, cx + 130, cy)}${line(cx, cy + 110, cx, cy - 110)}${line(cx, cy, mx, my, "#b91c1c", 2.2, 'marker-end="url(#arr)"')}<circle cx="${mx}" cy="${my}" r="6" fill="#b91c1c"/>${t(mx + 8, my - 6, "M")}${t(200, 240, `α = ${num(d.angle)}°`)}`)
+    };
+  },
+  distance2d(d) {
+    return {
+      caption: "AB et le milieu I se lisent dans le repère orthonormé.",
+      svg: svg("Distance", `${axes()}<circle cx="160" cy="150" r="6" fill="#5b21b6"/><circle cx="400" cy="80" r="6" fill="#b91c1c"/>${line(160, 150, 400, 80, "#6d28d9", 2.2)}${t(140, 140, "A")}${t(410, 75, "B")}${t(70, 230, `A(${num(d.xA)};${num(d.yA)})  B(${num(d.xB)};${num(d.yB)})`)}`)
+    };
+  },
+  lineSlope(d) {
+    const m = (d.xB === d.xA) ? 0 : (d.yB - d.yA) / (d.xB - d.xA);
+    const p = d.yA - m * d.xA;
+    const f = x => m * x + p;
+    return {
+      caption: "La droite (AB) a pour équation y = mx + p. Les parallèles ont la même pente.",
+      svg: svg("Droite", `${axes()}${plotCurve(f)}${t(70, 230, `m = ${num(m)}`)}`)
+    };
+  },
+  espaceCube() {
+    return {
+      caption: "Pavé de référence : arêtes = droites, faces = plans. On lit les positions dans l’espace.",
+      svg: svg("Espace", `<path d="M120 90 L300 90 L300 210 L120 210 Z" fill="#f5f3ff" stroke="#5b21b6" stroke-width="2"/>
+        <path d="M120 90 L190 40 L370 40 L300 90 Z" fill="#ede9fe" stroke="#5b21b6" stroke-width="2"/>
+        <path d="M300 90 L370 40 L370 160 L300 210 Z" fill="#ddd6fe" stroke="#5b21b6" stroke-width="2"/>
+        ${t(200, 160, "face")}${t(230, 70, "dessus")}${t(325, 140, "côté")}${t(70, 240, "droites = arêtes · plans = faces")}`)
+    };
+  },
+  statsMean(d) {
+    const mean = d.sum / d.n;
+    const x1 = mapX(d.xmin, d.xmin - 2, d.xmax + 2, 80, 400);
+    const x2 = mapX(d.xmax, d.xmin - 2, d.xmax + 2, 80, 400);
+    const xm = mapX(mean, d.xmin - 2, d.xmax + 2, 80, 400);
+    return {
+      caption: "Sur la droite, min, moyenne et max. L’étendue est max − min.",
+      svg: svg("Série statistique", `${line(60, 140, 520, 140, "#334155", 1.6, 'marker-end="url(#ar)"')}<circle cx="${x1}" cy="140" r="7" fill="#b91c1c"/><circle cx="${xm}" cy="140" r="7" fill="#5b21b6"/><circle cx="${x2}" cy="140" r="7" fill="#b91c1c"/>${t(x1 - 10, 175, "min")}${t(xm - 8, 120, "x̄")}${t(x2 - 10, 175, "max")}${t(70, 220, `n = ${num(d.n)}`)}`)
+    };
+  },
+  fixed(_d, exercise) {
+    const ch = exercise?.chapter || "";
+    if (ch === "suites-arith") return figures.arithSeq({ u1: 2, r: 3, n: 6 });
+    if (ch === "suites-geo") return figures.geoSeq({ u1: 2, q: 2, n: 5 });
+    if (ch === "fonctions" || ch === "ref") return figures.quadFn({ a: 1, b: -2, c: -3, x: 1 });
+    if (ch === "trigo") return figures.trigExact({ angle: 45 });
+    if (ch === "analytique") return figures.lineSlope({ xA: 0, yA: 1, xB: 4, yB: 3 });
+    if (ch === "espace-droites" || ch === "parallelisme" || ch === "orthogonalite") return figures.espaceCube();
+    if (ch === "stats") return figures.statsMean({ n: 8, sum: 96, xmin: 7, xmax: 18 });
+    if (["reels", "degres", "polynomes"].includes(ch)) return figures.quadraticSolve({ a: 1, b: -3, c: -4 });
+    if (ch === "arithmetique") return figures.euclidDiv({ a: 47, b: 8 });
+    if (["vecteurs", "barycentre", "translations", "homotheties", "rotations"].includes(ch)) return figures.vectorAB({ xA: 0, yA: 0, xB: 3, yB: 2 });
+    return {
+      caption: "Activité du polycopié CNP. Lire l’énoncé, répondre, puis vérifier.",
+      svg: svg("Activité du manuel", `${axes()}${plotCurve(x => 0.15 * x * x - 2, { xmin: -6, xmax: 6, ymin: -6, ymax: 6 })}${t(70, 230, "Courbe de travail")}`)
     };
   }
 };
 
-export function drawFigure(type, data) {
+export function drawFigure(type, data, exercise) {
   const figure = figures[type];
   if (!figure) {
     return {
       caption: "Repérer les données et écrire la relation du cours avant de calculer.",
-      svg: svg("Schéma", `${t(40, 120, "Schéma non disponible pour ce type.")}`)
+      svg: svg("Schéma", `${axes()}${plotCurve(x => 0.2 * x, { xmin: -6, xmax: 6, ymin: -6, ymax: 6 })}${t(40, 230, "Repère de travail")}`)
     };
   }
-  return figure(data);
+  return figure(data, exercise);
 }

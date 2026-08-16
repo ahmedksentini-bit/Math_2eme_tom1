@@ -1,0 +1,1016 @@
+[
+  {
+    "id": "T2_ANALYTIQUE_A01",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 1,
+    "solver": "fixed",
+    "title": "Activité 1",
+    "difficulty": 1,
+    "statement": "Activité 1\nDans la figure ci-contre, ABC est un triangle, I est le milieu du côté [BC] et M est le point\ndéfini par\nLa parallèle à (AB) passant par M coupe (BC) en P et la parallèle à (AC) passant par M coupe\n(BC) en Q.\nOn se propose de montrer que I est le milieu de [PQ].\nOn choisit comme repère du plan.\n1) a) Quelles sont les coordonnées des points A, B, C et I dans ce repère ?\nb) Calculer les coordonnées du point M.\n2) a) Vérifier que l’ordonnée du point P est égale à\nb) Soit x l’abscisse du point P.\nDéterminer, en fonction de x, les composantes du vecteur\nCalculer x.\n3) Déterminer les coordonnées du point Q.\n4) Montrer que I est le milieu de [PQ].",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 1 (« Activité 1 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 1 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A02",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 2,
+    "solver": "fixed",
+    "title": "Activité 2 Coordonnées du barycentre",
+    "difficulty": 1,
+    "statement": "Activité 2 Coordonnées du barycentre\nLe plan est muni d’un repère cartésien .\n1) Soient les points P(2 , –4) , Q(1 , 5) et I le barycentre des points (P , –1) et (Q , 3).\nDéterminer les coordonnées du point I.\n2) Soient A(x\nA , yA), B(xB , yB) deux points du plan et α, β deux réels tels que α + β ≠0 .\nOn désigne par G le barycentre des points (A , α ) et (B , β).\nDéterminer les coordonnées du point G.\nEquation cartésienne d’une droite",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 2 (« Activité 2 Coordonnées du barycentre ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 2 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A03",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 3,
+    "solver": "fixed",
+    "title": "Activité 3",
+    "difficulty": 1,
+    "statement": "Activité 3\nLe plan est muni d’un repère cartésien .\n1) a) Placer les points A(2 , 1) et B(–2 , 3), puis tracer la droite (AB).\nb) Les points C (4 , 0) et D (–1 , 2) sont-ils sur la droite (AB) ?\n2) Soit M(x , y) un point du plan. Montrer que\nAM = 5\n2 AI .\nA, AB,A C_i\nBP .\n1 .\nO, i ,j_i\nO, i ,j_i\n(Le point M appartient à la droite (AB)) si et seulement si (les coordonnées x et y du point M\nvérifient l’équation x + 2 y – 4 = 0).",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 3 (« Activité 3 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 3 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A04",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 4,
+    "solver": "fixed",
+    "title": "Activité 4",
+    "difficulty": 1,
+    "statement": "Activité 4\nLe plan est muni d’un repère cartésien .\nOn considère deux points distincts A(x\nA , y A) et B(x B , y B) du plan.\nSoit M(x , y) un point quelconque du plan.\na) Calculer les composantes des vecteurs\nb) Traduire l’appartenance du point M à la droite (AB) par une relation entre x et y.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 4 (« Activité 4 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 4 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A05",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 5,
+    "solver": "fixed",
+    "title": "Activité 5",
+    "difficulty": 1,
+    "statement": "Activité 5\nLe plan est muni d’un repère cartésien\n1) Soit E l’ensemble des points M(x , y) du plan tels que 3 x – 2 y + 1 = 0.\na) Vérifier si les points A , B ( –1 , –1) et C (4 , 2) appartiennent à E.\nb) Soit M un point de E.\nMontrer que les vecteurs sont colinéaires.\nEn déduire que E = (AB).\n2) Soient a, b et c trois réels tels que (a , b) ≠ (0 , 0).\nOn désigne par D l’ensemble des points M(x , y) du plan tels que a x + b y + c = 0.\na) On suppose que b ≠ 0.\nVérifier que les points appartiennent à l’ensemble D.\nMontrer que D = (IJ).\nb) On suppose que b = 0.\nVérifier que les points appartiennent à l’ensemble D.\nMontrer que D = (KL).\nVocabulaire\nL’équation a x + b y + c = 0, avec (a , b) ≠ (0 , 0) est appelée équation cartésienne de la\ndroite D. On écrit D : a x + by + c = 0.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 5 (« Activité 5 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 5 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A06",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 6,
+    "solver": "fixed",
+    "title": "Activité 6",
+    "difficulty": 1,
+    "statement": "Activité 6\nLe plan est muni d’un repère cartésien .\n1) Soit D la droite d’équation 2 x + y – 3 = 0.\na) Vérifier que les points A (0 , 3) et B (1 , 1) appartiennent à la droite D.\nb) Le point C (–1 , 4) appartient-il à la droite D ?\nO, i ,j_i\nO, i ,j_i\nO, i ,j_i\nAB et AM .\nAB et AM\n0, 2\n1cm\nI0 , - b\nccm et J 1, - b\na - b\nccm\nK- a\nc ,0bl et L - a\nc ,1bl\nc) Tracer la droite D.\n2) Tracer dans le même repère les droites\nD\n1 : x – y + 1 = 0 , D 2 : 3 x + 4 y = 0 et D 3 : y – 3 = 0.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 6 (« Activité 6 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 6 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A07",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 7,
+    "solver": "fixed",
+    "title": "Activité 7",
+    "difficulty": 1,
+    "statement": "Activité 7\nLe plan est muni d’un repère cartésien .\nAssocier chaque droite de la figure ci-contre, à son\néquation cartésienne\n2 x + y – 2 = 0 ; x – y = 0 ; x – 2 = 0 ;\n– 3 x + y – 6 = 0.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 7 (« Activité 7 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 7 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A08",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 8,
+    "solver": "fixed",
+    "title": "Activité 8",
+    "difficulty": 1,
+    "statement": "Activité 8\nDans la figure ci-contre, ABCD est un\nparallélogramme et E le point tel que\nOn se propose de montrer que la droite (DE) passe\npar le milieu du segment [AB].\n1) Méthode analytique\nOn considère le repère\na) Déterminer les coordonnées des points A, B, C, D et E dans ce repère.\nb) Ecrire une équation cartésienne de la droite (DE).\nc) Conclure.\n2) Retrouver le résultat géométriquement.\nVecteur directeur - Droites parallèles",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 8 (« Activité 8 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 8 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A09",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 9,
+    "solver": "fixed",
+    "title": "Activité 9 Vecteur directeur",
+    "difficulty": 1,
+    "statement": "Activité 9 Vecteur directeur\nSoit A un point du plan, un vecteur non nul et B le point tel que\nOn désigne par E l’ensemble des points M du plan, tels que les vecteurs\nsoient colinéaires.\n4 D 3 D\n2 D\n1 D\nO, i ,j_i\nAE = 3\n1 AC .\nA, AB,A D_i .\nu AB =u\nAM et u\n1) Déterminer l’ensemble E.\n2) Soit un vecteur non nul colinéaire à\nQuel est l’ensemble des points M du plan tels que les vecteurs soient colinéaires\nRemarque\nSoit D une droite de vecteur directeur\nTout vecteur non nul colinéaire à est aussi un vecteur directeur de D.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 9 (« Activité 9 Vecteur directeur ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 9 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A10",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 10,
+    "solver": "fixed",
+    "title": "Activité 10",
+    "difficulty": 1,
+    "statement": "Activité 10\nSoit D une droite et A, B deux points distincts de cette droite.\nMontrer que le vecteur est un vecteur directeur de la droite D.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 10 (« Activité 10 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 10 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A11",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 11,
+    "solver": "fixed",
+    "title": "Activité 11",
+    "difficulty": 2,
+    "statement": "Activité 11\nLe plan est muni d’un repère cartésien\n1) On considère la droite D d’équation x + 3 y + 2 = 0.\na) Déterminer un vecteur directeur de D.\nb) Vérifier que est un vecteur directeur de D.\n2) Soit Δ la droite d’équation a x + b y + c = 0.\nMontrer que le vecteur est un vecteur directeur de Δ.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 11 (« Activité 11 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 11 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A12",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 12,
+    "solver": "fixed",
+    "title": "Activité 12",
+    "difficulty": 2,
+    "statement": "Activité 12\nSoient D et D’ deux droites de vecteurs directeurs respectifs\nMontrer que (D et D’ sont parallèles) si et seulement si ( sont colinéaires).\nSoit A un point du plan et un vecteur non nul.\nL’ensemble des points M du plan tels que les vecteurs soient colinéaires est une\ndroite appelée la droite passant par A et de vecteur directeur\nDéfinition\nv u .\nu .\nu\nu\nu .\nAM et v\nAB\nAM et u\nO, i ,j_i\nu -3\neo\nu et u' .\nu et u'\nU -b\na\neo",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 12 (« Activité 12 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 12 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A13",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 13,
+    "solver": "fixed",
+    "title": "Activité 13 Condition analytique de parallélisme de deux droites",
+    "difficulty": 2,
+    "statement": "Activité 13 Condition analytique de parallélisme de deux droites\nLe plan est muni d’un repère cartésien .\n1) a) Tracer les droites\nD\n1 : 2 x – y + 5 = 0 ; D 2 : 6 x – 3 y + 2 = 0 et D 3 : – x + y – 1 = 0.\nb) Déterminer un vecteur directeur de chacune des trois droites.\nc) Montrer que les droites D\n1 et D2 sont parallèles.\nd) Les droites D 1 et D3 sont-elles parallèles ?\n2) Soient D et D’ deux droites d’équations respectives a x + by + c = 0 et a’ x + b’ y + c’ = 0.\nMontrer que (D et D’ sont parallèles) si et seulement si ( a b’ – a’b = 0).",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 13 (« Activité 13 Condition analytique de parallélisme de deux droites ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 13 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A14",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 14,
+    "solver": "fixed",
+    "title": "Activité 14",
+    "difficulty": 2,
+    "statement": "Activité 14\nLe plan est muni d’un repère cartésien .\nOn considère les droites D et D’ d’équations respectives 3 x – y + 5 = 0 et 2 x + 2 y – 1 = 0.\na) Montrer que les droites D et D’ sont sécantes.\nb) Déterminer leur point d’intersection.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 14 (« Activité 14 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 14 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A15",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 15,
+    "solver": "fixed",
+    "title": "Activité 15",
+    "difficulty": 2,
+    "statement": "Activité 15\nUne entreprise fabrique des objets A et B. le coût de fabrication d’un objet A est de 3 dinars de\nmatière première et 12,500 dinars de main d’œuvre et d’un objet B est de 7 dinars de matière\npremière et 7,500 dinars de main d’œuvre.\nOn désigne par x le nombre d’objets A et par y le nombre d’objets B, fabriqués en une journée.\n1) On suppose que les dépenses journalières en matière première et en main d’œuvre sont\nrespectivement 56 dinars et 125 dinars.\na) Déterminer graphiquement l’ensemble des points M(x , y) du plan dont les coordonnées\nsatisfont aux données.\nb) Retrouver cet ensemble par le calcul.\n2) Pour une bonne gestion de l’entreprise, les dépenses journalières en matière première et en\nmain d’œuvre ne doivent pas dépasser respectivement 56 dinars et 125 dinars.\nDéterminer graphiquement l’ensemble des points M(x , y) dont les coordonnées satisfont aux\ncontraintes de l’entreprise.\nO, i ,j_i\nO, i ,j_i",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 15 (« Activité 15 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 15 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A16",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 16,
+    "solver": "fixed",
+    "title": "Activité 16",
+    "difficulty": 2,
+    "statement": "Activité 16\nDans la figure ci-contre, ABCD est un\nparallélogramme, les points E et F sont tels que\n, le point R est l’intersection des\ndroites (AC) et (DE) et le point S est l’intersection des\ndroites (BC) et (DF).\nOn considère le repère\n1) a) Déterminer une équation cartésienne de chacune des droites (AC) et (DE).\nb) Préciser les coordonnées du point R.\n2) a) Quelle est l’abscisse du point S ?\nb) Calculer l’ordonnée de S.\n3) Montrer que les droites (RS) et (AB) sont parallèles.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 16 (« Activité 16 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 16 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A17",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 17,
+    "solver": "fixed",
+    "title": "Activité 17",
+    "difficulty": 2,
+    "statement": "Activité 17\nLe plan est muni d’un repère cartésien .\n1) a) Placer les points A (1 , 0) , B (5 , 0) , C (4 , 3) et D (2 , 3).\nb) Montrer que ABCD est un trapèze.\n2) a) Déterminer les coordonnées du point E intersection des droites (AD) et (BC).\nb) Soient I et J les milieux respectifs des segments [AB] et [CD].\nMontrer que les points E, I et J sont alignés.\n3) Soit h l’homothétie qui envoie A en C et B en D.\na) Déterminer le rapport k et les coordonnées du centre Ω de l’homothétie h.\nb) Soit M(x , y) un point du plan et M’(x’ , y’) son image par h.\nCalculer x’ et y’ en fonction de x et y.\nVecteur normal à une droite – Droites perpendiculaires",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 17 (« Activité 17 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 17 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A18",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 18,
+    "solver": "fixed",
+    "title": "Activité 18 Vecteur normal",
+    "difficulty": 2,
+    "statement": "Activité 18 Vecteur normal\nSoit A un point du plan, un vecteur non nul et C le point tel que\nOn désigne par E l’ensemble des points M du plan tels que les vecteurs soient\northogonaux.\n1) Déterminer l’ensemble E.\n2) Soit un vecteur non nul colinéaire au vecteur .\nQuel est l’ensemble des points M du plan tels que les vecteurs soient orthogonaux ?\nA, AB,A D_i .\nO, i ,j_i\nAC =n .\nAM et n\nn\nnN\nAM et N\nAE =B F = 3\n1 AB",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 18 (« Activité 18 Vecteur normal ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 18 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A19",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 19,
+    "solver": "fixed",
+    "title": "Activité 19",
+    "difficulty": 2,
+    "statement": "Activité 19\nLe plan est muni d’un repère orthonormé .\n1) Soit Δ la droite d’équation 3 x – 2 y + 5 = 0.\nMontrer que le vecteur est un vecteur normal à la droite D.\n2) Soit D la droite d’équation a x + by + c = 0.\nMontrer que le vecteur est un vecteur normal à la droite Δ.\n3) Déterminer une équation cartésienne de la droite D’ passant par A (2 , 3) et de vecteur\nnormal",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 19 (« Activité 19 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 19 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A20",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 20,
+    "solver": "fixed",
+    "title": "Activité 20",
+    "difficulty": 2,
+    "statement": "Activité 20\nDans la figure ci-contre, OBC est un triangle rectangle isocèle en O\net tel que OB = OC = 1, A un point de [OB) et D un point de [OC)\ntels que OA = OD, et I est le milieu du segment [AC].\nA l’aide d’un repère orthonormé bien choisi, Montrer que les\ndroites (OI) et (BD) sont perpendiculaires.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 20 (« Activité 20 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 20 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A21",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 21,
+    "solver": "fixed",
+    "title": "Activité 21 Condition analytique d’orthogonalité de deux droites",
+    "difficulty": 2,
+    "statement": "Activité 21 Condition analytique d’orthogonalité de deux droites\nLe plan est muni d’un repère orthonormé .\n1) On considère les points A(2 , –1) , B(–1 , 1) , C(0 , –1) et E(2 , 2).\na) Tracer les droites (AB) et (CE).\nb) Montrer que les droites (AB) et (CE) sont perpendiculaires.\n2) Soit Δ et Δ’ deux droites du plan.\na) On désigne par deux vecteurs directeurs respectifs de Δ et Δ'.\nMontrer que Δ⊥Δ ’ si et seulement si\nb) On considère les équations a x + by + c = 0 et a’ x + b’ y + c’ = 0 respectivement de Δ et Δ’.\nMontrer que Δ⊥Δ ’ si et seulement si a a’ + b b’ = 0.\nOn appelle vecteur normal à une droite tout vecteur non nul orthogonal à un vecteur\ndirecteur de cette droite.\nDéfinition\nO, i ,j_i\nO, i ,j_i\nn 3\n-2\neo\nN a\nb\neo\nn\nfp .\nu et u'\nu = u' .",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 21 (« Activité 21 Condition analytique d’orthogonalité de deux droites ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 21 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A22",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 22,
+    "solver": "fixed",
+    "title": "Activité 22 Droite d’Euler",
+    "difficulty": 2,
+    "statement": "Activité 22 Droite d’Euler\nLe plan est muni d’un repère orthonormé .\nOn considère les points A (0 , 5) , B (3 , 4) et C (4 , -3).\nOn désigne respectivement par H, I et G, l’orthocentre, le centre du cercle circonscrit et le\ncentre de gravité du triangle ABC.\na) Faire une figure.\nb) Déterminer les coordonnées des points H, I et G.\nc) Montrer que\nd) Déterminer une équation cartésienne de la droite (IG).\nLa droite contenant les points H, I et G est appelée la droite d’Euler du triangle ABC.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 22 (« Activité 22 Droite d’Euler ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 22 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A23",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 23,
+    "solver": "fixed",
+    "title": "Activité 23 Equation réduite – Coefficient directeur",
+    "difficulty": 3,
+    "statement": "Activité 23 Equation réduite – Coefficient directeur\nLe plan est muni d’un repère cartésien .\n1) On considère la droite D d’équation 3 x + 4 y – 2 = 0.\na) Soit M(x , y) un point de la droite D. Exprimer y en fonction de x.\nb) Déterminer deux points distincts A et B de la droite D et calculer\n2) Soit Δ une droite d’équation a x + b y + c = 0. On suppose que b ≠ 0.\na) Vérifier que l’équation a x + b y + c = 0 est équivalente à l’équation\nb) Soient M et N deux points distincts de la droite Δ. Calculer\nRemarque\nSoit D une droite d’équation a x + b y + c = 0 telle que b ≠ 0. L’équation de cette droite est\néquivalente à une équation de la forme y = m x + p.\nVocabulaire\n• L’équation y = m x + p est appelée l’équation réduite de la droite D.\n• m est appelé le coefficient directeur de la droite D ou la pente de la droite D.\n• p est l’ordonnée à l’origine.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 23 (« Activité 23 Equation réduite – Coefficient directeur ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 23 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A24",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 24,
+    "solver": "fixed",
+    "title": "Activité 24",
+    "difficulty": 3,
+    "statement": "Activité 24\nLe plan est muni d’un repère cartésien .\nDans chacun des cas suivants, déterminer l’équation réduite et le coefficient directeur de la\ndroite donnée.\na) La droite D d’équation 5 x + 4 y – 12 = 0.\nO, i ,j_i\nO, i ,j_i\nO, i ,j_i\nIH =3I G .\nxB -x A\nyB -y A\n.\ny= - b\na x- b\nc .\nxM -x N\nyM -y N\n.\nb) La droite (AB), où A (2 , –3) et B (0 , 5).\nc) La droite D passant par C (–1 , 2) et dont un vecteur directeur est\nRemarque\nSoit D la droite d’équation réduite y = mx + p. Le vecteur est un v ecteur directeur de D.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 24 (« Activité 24 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 24 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A25",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 25,
+    "solver": "fixed",
+    "title": "Activité 25",
+    "difficulty": 3,
+    "statement": "Activité 25\nLe plan est muni d’un repère cartésien .\na) Soit D une droite. Montrer que\n(D est parallèle à l’axe des ordonnées) si et seulement si (D a une équation cartésienne de\nla forme x = k, où k est un réel).\nb) Soient D et D’ deux droites d’équations réduites respectives y = m x + p et y = m’ x + p’.\nMontrer que D // D’ si et seulement si m = m’.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 25 (« Activité 25 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 25 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A26",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 26,
+    "solver": "fixed",
+    "title": "Activité 26",
+    "difficulty": 3,
+    "statement": "Activité 26\nLe plan est muni d’un repère orthonormé .\nSoit D la droite d’équation y = 3x + 2.\n1) Tracer D et déterminer les coordonnées du point I intersection de la droite D avec l’axe des\nabscisses.\n2) Soit M un point de D distinct de I, d’abscisse x.\na) Déterminer les coordonnées du point H, projeté orthogonal de M sur l’axe des abscisses.\nb) Calculer tan\n3) Soit Δ la droite d’équation y = m x + p (m ≠ 0) et I le point d’intersection de Δ avec l’axe\ndes abscisses.\nSoit M un point de Δ et H son projeté orthogonal sur l’axe des abscisses.\nMontrer que tan = ⎜m ⎜.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 26 (« Activité 26 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 26 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A27",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 27,
+    "solver": "fixed",
+    "title": "Activité 27",
+    "difficulty": 3,
+    "statement": "Activité 27\nLe plan est muni d’un repère orthonormé .\nSoient D et D’ deux droites d’équations réduites respectives y = m x + p et y = m’ x + p’.\nMontrer que D ⊥ D’ équivaut à mm’ = – 1.\nu 1\nm\neo\nO, i ,j_i\nO, i ,j_i\nO, i ,j_i\nMIH%_i .\nMIH%_i\n- 4\n3fp .u\nFonction",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 27 (« Activité 27 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 27 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A28",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 28,
+    "solver": "fixed",
+    "title": "Activité 28",
+    "difficulty": 3,
+    "statement": "Activité 28\nLe plan est muni d’un repère orthonormé\nLa courbe C ci-contre, est formée de deux\ndemi-droites [OA) et [OB), c’est la courbe\nreprésentative d’une fonction g.\na) g est elle une fonction affine ?\nb) Soit M un point de C, d’abscisse x.\nDéterminer l’ordonnée de M dans chacun des cas :\n• M ∈ [OA) ; • M ∈ [OB).\nc) Déterminer g(x) en fonction de x.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 28 (« Activité 28 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 28 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A29",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 29,
+    "solver": "fixed",
+    "title": "Activité 29",
+    "difficulty": 3,
+    "statement": "Activité 29\nLe plan est muni d’un repère orthonormé .\n1) On considère la fonction f définie sur IR par f(x) = 2 x + 3.\na) Construire la droite D représentation graphique de f.\nb) Résoudre l’inéquation f(x) ≥ 0 et en déduire l’ensemble de solutions de l’inéquation\nf(x) < 0.\nColorer l’ensemble des points de D dont l’ordonnée est positive.\n2) a) Construire la droite D’ représentation graphique de la fonction g définie sur IR par\ng(x) = – 2 x – 3.\nb) Montrer que D et D’ sont symétriques par rapport à l’axe des abscisses.\nc) Colorer l’ensemble des points de D’ dont l’ordonnée est positive.\n3) Soit h la fonction qui à tout réel x associe f(x) si x ≥ et g(x) si x <\nDéterminer l’expression de h à l’aide d’une valeur absolue.\n4) Représenter la fonction h.\nDistance d’un point à une droite",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 29 (« Activité 29 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 29 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A30",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 30,
+    "solver": "fixed",
+    "title": "Activité 30",
+    "difficulty": 3,
+    "statement": "Activité 30\nLe plan est muni d’un repère orthonormé .\nOn considère, la droite D d’équation y = –2 x + 1 et le point A(2 , 1).\nSoit M un point de la droite D, d’abscisse x.\n1) a) Exprimer AM\n2 en fonction de x.\nb) Déterminer x pour que la distance AM soit minimale.\nO, i ,j_i\nO, i ,j_i\nO, i ,j_i\n- 2\n3 - 2\n3 .\nx 7 ax + b\n2) Soit M 0 le point de D pour lequel la distance est minimale.\nMontrer que la droite (AM 0) est perpendiculaire à la droite D.\nQue représente le point M 0 pour le point A ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 30 (« Activité 30 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 30 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A31",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 31,
+    "solver": "fixed",
+    "title": "Activité 31",
+    "difficulty": 3,
+    "statement": "Activité 31\nLe plan est muni d’un repère orthonormé .\nSoit D la droite d’équation a x + b y + c = 0 et\nSoit A(xA , yA) un point du plan et H(x H , yH) son projeté orthogonal sur la droite D.\n1) a) Justifier l’existence d’un réel k tel que\nb) Vérifier que\n2) a) Prouver que a (x H – xA) + b (y H – yA) = – (a xA + b y A + c).\nb) En déduire que ⎜k ⎜(a2 + b 2) = ⎜a xA + b yA + c ⎜.\nc) Déterminer alors, la distance AH.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 31 (« Activité 31 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 31 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A32",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 32,
+    "solver": "fixed",
+    "title": "Activité 32",
+    "difficulty": 3,
+    "statement": "Activité 32\nLe plan est muni d’un repère orthonormé .\nSoit C le cercle de centre I (3 , –2) et de rayon 5.\na) Montrer que la droite D d’équation 4 x – 3 y + 7 = 0, est tangente au cercle C.\nb) Soit Δ une droite qui passe par le point O.\nMontrer que Δ coupe C en deux points.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 32 (« Activité 32 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 32 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A33",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 33,
+    "solver": "fixed",
+    "title": "Activité 33",
+    "difficulty": 3,
+    "statement": "Activité 33\nLe plan est muni d’un repère orthonormé .\nOn considère le triangle ABC de sommets A(–2 , –1) ; B(2 , 2) et C(–1 , 4).\n1) Déterminer une équation cartésienne de la droite (AB).\nSoit D une droite et A un point du plan.\nOn appelle distance du point A à la droite D, et on\nnote d(A , D), la distance du point A au point H,\nprojeté orthogonal de A sur la droite D.\nDéfinition\nn a\nb\neo .\nAH =kn .\nAH = k a2 +b 2 .\nO, i ,j_i\nO, i ,j_i\nO, i ,j_i\nO, i ,j_i\n2) a) Calculer la distance du point C à la droite (AB).\nb) En déduire l’aire du triangle ABC.\nEquation d’un cercle",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 33 (« Activité 33 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 33 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A34",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 34,
+    "solver": "fixed",
+    "title": "Activité 34",
+    "difficulty": 3,
+    "statement": "Activité 34\nLe plan est muni d’un repère orthonormé .\n1) On considère le cercle Γ de centre I(3 , –1) et de rayon 2.\na) Parmi les points suivants, déterminer ceux qui sont sur le cercle Γ.\nA( 1 , 2) ; B(1 , –1) ; D(0 , 4) et E(3 , 1).\nb) Soit M(x , y) un point du plan.\nMontrer que M appartient au cercle Γ si et seulement si (x – 3)\n2 + (y + 1) 2 = 4.\nc) Déterminer tous les points du cercle Γ d'abcisse 3.\nExiste t-il des points du cercle Γ d'abcisse0 ?\n2) Soit Ω (a , b) un point du plan et R un réel strictement positif.\nOn considère le cercle C de centre Ω et de rayon R. Soit M (x , y) un point du plan.\nMontrer que M (x , y) appartient au cercle C si et seulement si (x – a) 2 + (y – b)2 = R2",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 34 (« Activité 34 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 34 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A35",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 35,
+    "solver": "fixed",
+    "title": "Activité 35",
+    "difficulty": 3,
+    "statement": "Activité 35\nLe plan est muni d’un repère orthonormé .\n1) On désigne par C1 l’ensemble des points M (x , y) vérifiant l’équation x2 + y2 – 2x – 4y +1 = 0\net par C2 l’ensemble des points M (x , y) vérifiant l’équation x2 + y2 – 6x + 8y + 34 = 0.\na) Ecrire chacune des équations sous la forme (x – x0)2 + (y – y0)2 = k.\nb) Déterminer alors chacun des ensembles C 1 et C2.\n2) Soient a, b et c trois réels et E l’ensemble de points M(x , y) vérifiant l’équation\nx2 + y2 + a x + b y + c = 0.\na) Transformer l’équation en utilisant la forme canonique d’un trinôme.\nb) Discuter et déterminer l’ensemble E.\nSoit Ω (a , b) un point du plan et R un réel strictement positif.\nL’équation (x – a)2 + (y – b)2 = R 2 est appelée équation cartésienne du cercle C de centre Ω\net de rayon R.\nDéfinition\nO, i ,j_i",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 35 (« Activité 35 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 35 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A36",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 36,
+    "solver": "fixed",
+    "title": "Activité 36",
+    "difficulty": 3,
+    "statement": "Activité 36\nLe plan est muni d’un repère orthonormé .\nOn considère l’ensemble C des points M(x , y) du plan vérifiant x 2 + y2 – 2 x + 4 y = 3.\na) Montrer que C est un cercle dont on précisera le centre et le rayon.\nb) Déterminer les coordonnées des points d’intersection A et B du cercle C avec l’axe des\nabscisses.\nc) Déterminer une équation de la tangente à C en chacun des points A et B.\nd) Construire le cercle C et les tangentes à C en A et B.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 36 (« Activité 36 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 36 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A37",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 37,
+    "solver": "fixed",
+    "title": "Activité 37",
+    "difficulty": 3,
+    "statement": "Activité 37\nLe plan est muni d’un repère orthonormé .\nOn considère la droite D d’équation y = 2 x –1 et l’ensemble C d’équation\nx\n2 + y2 – x + 2 y = 0.\n1) Montrer que C est un cercle dont on précisera le centre I et le rayon R.\n2) a) Calculer la distance du point I à la droite D.\nb) En déduire que la droite D, coupe le cercle C en deux points A et B.\nc) Déterminer les coordonnées des points A et B.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 37 (« Activité 37 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 37 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A38",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 38,
+    "solver": "fixed",
+    "title": "Activité 38",
+    "difficulty": 3,
+    "statement": "Activité 38\nLe plan est muni d’un repère orthonormé .\nMontrer que les points A(0 , 4) , B(–1 , 1) , C(–1 , 2) et D(–3 , 5) sont sur un même cercle.\nVocabulaire\nDes points du plan sont dits cocycliques lorsqu’ils sont sur un même cercle.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 38 (« Activité 38 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 38 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  },
+  {
+    "id": "T2_ANALYTIQUE_A39",
+    "chapter": "analytique",
+    "tome": 2,
+    "kind": "activity",
+    "activity": 39,
+    "solver": "fixed",
+    "title": "Activité 39",
+    "difficulty": 3,
+    "statement": "Activité 39\nLe plan est muni d’un repère orthonormé .\nSoit C le cercle de centre I(–1 , 3) et de rayon 2.\n1) a) Déterminer une équation cartésienne du cercle C.\nb) Tracer C.\n2) a) Placer les points A(2 , 4) , B(–2 , 3) et C(–1 , 1).\nb) Calculer les distances IA, IB et IC.\n3) Soit M(x , y) un point du plan.\na) Calculer IM\n2.\nb) Montrer que\nM est à l’extérieur du cercle C équivaut à (x + 1)\n2 + (y – 3)2 > 4.\nc) Déterminer l’ensemble des points M (x , y) du plan tels que (x + 1) 2 + (y – 3)2 < 4.\nO, i ,j_i\nO, i ,j_i\nO, i ,j_i\nO, i ,j_i\nCoordonnées du milieu – coordonnées du barycentre\nLe plan est muni d’un repère cartésien .\nDans chacun des cas ci-dessous, déterminer les coordonnées du milieu I du segment [AB].\nOn donne les points A(2 , 3) et B(1 , – 6). Soit G le barycentre des points (A , α )\net (B , β), où α et β sont deux réels tels que α + β≠ 0.\nCalculer les coordonnées du point G, dans chacun des cas ci-dessous.\nOn donne les points A , B (0 , 5) et C (6 , 2).\nCalculer les coordonnées du barycentre G des points (A , 3) , (B , –2) et (C , 1).\nCalculer les coordonnées du centre de gravité G du triangle ABC, où A(2 , 3) , B(-1 , 4) et\nC(– 3 , – 1).\nEquation cartésienne d’une droite\nLe plan est muni d’un repère cartésien .\nOn considère le triangle ABC, où A(– 2 , 1) ; B(0 , 3) et C(4 , 2).\nOn désigne par I et J les milieux respectifs des côtés [BC] et [AC].\nDonner une équation cartésienne de chacune des droites (AB) , (AC), (BC) , (AI) et (BJ).\nTracer chacune des droites suivantes.\nD\n1 : 2 x + y + 3 = 0 ; D 2 : x + y – 1 = 0 et D 3 : 3 x + 6 = 0.\nVecteur directeur - Droites parallèles\nLe plan est muni d’un repère cartésien .\nDans chacun des cas suivants, donner un vecteur directeur de la droite D.\nDans chacun des cas suivants, déterminer une équation cartésienne de la droite D passant\npar A et de vecteur directeur\nDéterminer dans chacun des cas suivants, la position relative des droites D et D’.\nDans le cas où les droites sont sécantes déterminer les coordonnées de leur point d’intersection.\na) D : 6 x – 2 y + 4 = 0 ; D’ : – 9 x + 3 y – 2 = 0.\nO, i ,j_i\n-7,- 4\n1cm\nO, i ,j_i\na) D : 3x - y = 0 ; b) D : 1 + 2^h x-2 y+1=0 ; c )D: 2\n5 x+4 y-3=0.\nO, i ,j_i\nu.\na) a =-1 et b =4 ; b ) a =3 e t b =-2 ; c) a =2 e t b =3 .\na) A 4 , - 2^h ,B - 3 , 3\n2cm ;b ) A - 2 , 9^h ,B 2,0^h ;c ) A - 3 2 ,2_i ,B 2 ,-1_i .\na) A 1 , 0^h et u 1\neo ;b ) A 4 , - 5^h et u 2\neo ;c ) A 0 , 0^h et u -1\neo .\nDans chacun des cas suivants, déterminer une équation de la droite D’ passant par le point\nA et parallèle à la droite D.\nVecteur normal à une droite - Droites perpendiculaires\nLe plan est muni d’un repère orthonormé .\nDans chacun des cas suivants, déterminer un vecteur normal à la droite D.\nDans chacun des cas suivants, déterminer une équation cartésienne de la droite D passant\npar A et de vecteur normal\nDans chacun des cas suivants, les droites D et D’ sont elles perpendiculaires ?\nDans chacun des cas suivants, déterminer une équation cartésienne de la droite D’ passant\npar le point A et perpendiculaire à la droite D.\nEquation réduite – Coefficient directeur\nLe plan est muni d’un repère orthonormé\nDans chacun des cas suivants, déterminer l’équation réduite de la droite D passant par A et\nde coefficient directeur m.\nDans chacun des cas suivants, les droites D et D’ sont elles perpendiculaires ?\na) A(0 , 2) et D/nobreakspace: y = 4 x + 3.\nb) A( 1 , -2) et D/nobreakspace: 3 x + y – 5 = 0.\nc) A(- 1 , 5) et D/nobreakspace: y = 2.\na) A 5 , - 3^h ;D : 2 x - 4 y = 0 .\nb) A 1, 0^h ;D : 3 y - 1 = 0 .\nc) A 3\n2 ,-1cm ;D : y = 4 x + 2 .\nd) A 0 , - 1^h ;D : x + 3 = 0 .\nO, i ,j_i\na )D:5 x+4 y=0 ; b )D:-x+ 4\n3 y-2=0 ; c )x=0 .\nd) D : 2 y+1=0 ; e )D:y=x-1 ; f )y=5 .\na) A 3 , - 2^h ,n 1\neo ;b ) A - 1 , 1^h ,n 5\n-3\neo ;c ) A 7 , 0^h ,n 1\neo .\na) D : 6x - 5y + 3 2 =0 ; D ' : 5 x+6 y-2=0 .\nb) D : x - 2y + 4\n5 =0 ; D ':-8 x+4 y-1=0.\nO, i ,j_i\nn.\na) A 0 , 0^h et m = 3 ;b ) A - 5 , - 7\n4cm et m = 2 ; c) A 1 , - 3^h et m =-6.\nb) D : y = 2 x+1 ; D ':y= - 5 x+6 .\nc )D: x-y+1=0 ; D ':y=2 x-5 .\nd )D:y=3 x+2 ; D ' :y=3 x .\nFonction\nLe plan est muni d’un repère orthonormé .\nConstruire la courbe de chacune des fonctions suivantes.\nDistance d’un point à une droite\nLe plan est muni d’un repère orthonormé .\nDans chacun des cas suivants, calculer la distance du point A à la droite D.\nEquation d’un cercle\nLe plan est muni d’un repère orthonormé .\nDans chacun des cas suivants, déterminer une équation cartésienne du cercle C de centre I\net de rayon R.\nDans chacun des cas suivants, déterminer le centre et le rayon du cercle C.\nDans chacun des cas suivants, déterminer l’ensemble E des points M(x , y) vérifiant\nl’équation donnée.\nO, i ,j_i\nO, i ,j_i\nO, i ,j_i\na) f x]g =x + 2 ;b ) f x]g =4 x + 2 ;c ) f x]g =- 3 x + 1 .\na) A 6 , - 2^h e t D:3 x+y-1=0.\nb) A 1, - 4^h et D : - x + 3 y+2=0.\nc) A 0 , 1^h et D : y =-x + 5.\na) I 0 , 6^h et R = 2\n1 ;b ) I 3 , - 5_i et R = 2 ; c) I 0 , 0^h et R = 1 .\na) C : x2 +y 2 =1 2 ; b )C: x-7]g 2 +y - 8^h\n2 = 4\n3 ;c ) C :x + 4]g 2 +y - 2\n3cm\n=5 .\na) D : y = 4x + 2 ;D ' : y = - 4\n1 x+1 .\nb )D:y=7 x-2 ; D ' :y= - 3 x.\nc) D : y = x ; D': y =-x - 5.\nx 7 ax + b\na) x2 +y 2 -8 x+4 y+5=0 .\nb) x2 +y 2 +3 y-4 x=0 .\nc) x2 +y 2 +x+y=0 .\nd) x2 +y 2 - 3\n4 x+y+2=0 .\nLe plan est muni d’un repère cartésien .\n♦ Soient A(xA , yA), B(xB , yB) deux points du plan et I le milieu du segment [AB].\nOn a\n♦ Soient A(xA , yA), B(xB , yB) deux points du plan et α et β deux réels tels que α + β≠ 0.\nLe barycentre G des points (A , α ) et (B , β) a pour coordonnées\nG\n♦ Soient A(xA , yA), B(xB , yB), C(xC , yC) trois points du plan et α , β, γ trois réels tels que\nα + β + γ≠ 0. Le barycentre G des points (A , α ) ; (B , β) et (C , γ) a pour coordonnées\nLe plan est muni d’un repère cartésien .\n♦ Toute droite admet une équation cartésienne de la forme a x + by + c = 0, où a, b et c trois\nréels avec (a , b) ≠ (0 , 0).\n♦ Soient a, b et c trois réels tels que (a , b) ≠ (0 , 0).\nL’équation a x + by + c = 0 est celle d’une droite.\nLe plan est muni d’un repère cartésien .\n♦ Soit A un point du plan et un vecteur non nul.\nL’ensemble des points M du plan tels que les vecteurs\nsoient colinéaires est une droite passant par A.\nest appelé vecteur directeur de cette droite.\n♦ Soit D une droite et A, B deux points distincts de\ncette droite.\nLe vecteur est un vecteur directeur de la droite D.\n♦ Soit D la droite d’équation a x + b y + c = 0.\nLe vecteur est un vecteur directeur de D.\n♦ Soient D et D’ deux droites de vecteurs directeurs respectifs\n(D et D’ sont parallèles) si et seulement si ( et sont colinéaires).\n♦ Soient D et D’ deux droites d’équations respectives a x + by + c = 0 et a’ x + b’ y + c’ = 0.\nD // D’ si et seulement si a b’ – a’b = 0.\nCoordonnées du barycentre\nEquation cartésienne d’une droite\nVecteur directeur - Droites parallèles\nO, i ,j_i\nI 2\nx A +x B\n, 2\ny A +y B\ndn .\na + b\naxA + bxB\n, a + b\nayA + byB\nfp\nO, i ,j_i\nu\nO, i ,j_i\nAM et u\nu\nAB\nu -b\na\neo\nu et u' .\nu n.\nG a + b + a\naxA + bxB + cxC\n, a + b + c\nayA + byB + cyC\nfp\nLe plan est muni d’un repère orthonormé\n♦ Soit A un point du plan et un vecteur non nul.\nL’ensemble des points M du plan tels que les vecteurs soient orthogonaux est\nune droite passant par A.\nest appelé vecteur normal à cette droite.\n♦ Soit D une droite d’équation a x + by + c = 0.\nLe vecteur est un vecteur normal à D.\n♦ Soient D et D’ deux droites de vecteurs\ndirecteurs respectifs\nD ⊥ D’ si et seulement si\n♦ Soient D et D’ deux droites d’équations respectives, a x + by + c = 0 et a’ x + b’ y + c’ = 0.\nD ⊥ D’ si et seulement si a a’ + bb’ = 0.\nLe plan est muni d’un repère orthonormé\n♦ Toute droite D non parallèle à l’axe\nadmet une équation du type y = m x + p,\nappelée l’équation réduite de la droite D.\nm est appelé le coefficient directeur de la droite D,\np est l’ordonnée à l’origine.\nOn a tan(α ) = ⎜m ⎜.\n♦ Soit D la droite d’équation réduite y = m x + p.\nLe vecteur est un vecteur directeur de D.\nLe vecteur est un vecteur normal à D.\n♦ Soient D et D’ deux droites d’équations réduites respectives y = m x + p et y = m’ x + p’.\nD // D’ si et seulement si m = m’.\nD ⊥ D’ si et seulement si m m’ = – 1.\nVecteur normal à une droite - Droites perpendiculaires\nEquation réduite – Coefficient directeur\nn\nO, i ,j_i\nAM et n\nn a\nb\neo\nu et u'\nO, i ,j_i\nO, j_i\nu 1\nm\neo\nn m\n-1\neo\nn\nu = u'\nLe plan est muni d’un repère orthonormé\nSoit D la droite d’équation a x + b y + c = 0.\nLa distance d’un point A(x\nA , yA) à la droite D est\n♦ Le plan est muni d’un repère orthonormé .\nSoit I(a , b) un point du plan et R un réel strictement positif.\nUne équation cartésienne du cercle C de centre I et de rayon\nR est (x – a)\n2 + (y – b)2 = R 2.\n♦ Soit C un cercle de centre I et de rayon R et D une droite. On a :\nd(I , D) < R si et seulement si D et C sont sécants.\nd(I , D) = R si et seulement si D est tangente à C.\nd(I , D) > R si et seulement si D et C sont extérieurs.\n♦ Soit C un cercle d’équation (x – a)2 + (y – b)2 = R 2 et M(x , y) un point du plan.\n(x – a)2 + (y – b)2 = R 2 si et seulement si M est sur le cercle C.\n(x – a)2 + (y – b)2 < R 2 si et seulement si M est à l’intérieur du cercle C.\n(x – a)2 + (y – b)2 > R 2 si et seulement si M est à l’extérieur du cercle C.\nDistance d’un point à une droite\nEquation d’un cercle\nxay b\n) A y , A x ( A\nO, i ,j_i\nO, i ,j_i\ndA , D^h =\na2 +b 2\naxA +b yA +c\n.\nLa chasse aux entiers\nLe plan est muni d’un repère orthonormé\nCombien y a-t-il de points à coordonnées entières dans le rectangle OABC\n(bords compris), avec A(100 , 0) ; B(100 , 30) et C(0 , 30) ?\nDans la figure ci-contre, OABC et ADEF sont deux carrés tels que\nOA = 3 et AD = 1.\nMontrer que les droites (OF), (BD) et (CE) sont concourantes.\nIndications\n• Considérer le repère cartésien\n• Déterminer une équation cartésienne pour chacune des\ntrois droites.\n• Déterminer le point d’intersection de deux de ces droites\net vérifier qu’il appartient à la troisième.\nLe plan est muni d’un repère orthonormé\nSoit D et D’ les droites d’équations respectives y = x + 1 et y = 3 x – 1.\nOn considère le point A(2 , 1).\nMontrer qu’il existe un point M de D et un point M’ de D’ tels que le milieu du segment [MM’]\nsoit A.\nIndications\n1ère méthode : analytique\nMontrer l’existence des deux points M et M’ en calculant leurs coordonnées.\nème méthode : géométrique\nConsidérer l’image de la droite D par la symétrie de centre A.\nEnsemble de points\nSoit ABC un triangle rectangle en A et tel que AB = 4 et AC = 3.\nDéterminer l’ensemble E des points M du plan tels que MA\n2 + MB2 + 2 MC 2 = 66.\nIndications\n• Considérer le repère\n• Déterminer une équation de l’ensemble E.\nO, i ,j_i\nO, OA,O C_i .\nO, i ,j_i\nA, 4\n1 AB , 3\n1 ACcm .\nDévelopper ses compéDévelopper ses compétences\nA la recherche d’un repère disparu\nLe quadrilatère ABCD ci-contre a été dessiné dans un\nrepère orthonormé qui a disparu.\nRetrouver ce repère sachant que les coordonnées des\npoints A, B, C et D sont :\nA(– 4 , 2) , B(2 , –6) , C(3 , 6) et D(1 , 2).\nIndication\n• Remarquer que la droite (AD) est parallèle à l’axe des abscisses.\nLe plan est muni d’un repère orthonormé Soit m un réel.\nOn désigne par C\nm l’ensemble des points M(x , y) du plan, vérifiant :\nx2 + y 2 + 2m x + 2 (1– m) y – 4 = 0.\na) Montrer que, pour tout réel m, C m est un cercle.\nb) Déterminer les points d’intersection des cercles C0 et C1.\nc) Montrer que tous les cercles passent par deux points fixes A et B.\nd) En déduire que les centres de tous ces cercles sont alignés.\nIndication\nd) Remarquer que si A et B sont deux points distincts d’un cercle C, alors la médiatrice du seg-\nment [AB] passe par le centre du cercle.\nSoient a et b deux réels. Montrer que\nIndications\n• Considérer dans un repère orthonormé les points A(–1 ,–1) ; B(–1 , 1) ;\nC(1 , 1) ; D(1 , –1) et M(a , b).\n• Calculer MA + MB + MC + MD.\n• Utiliser l’inégalité triangulaire.\nO, i ,j_i\nDévelopper ses compéDévelopper ses compétences\nLa droite d’Euler d’un triangle\nA l’aide d’un logiciel de géométrie\n• Construire un triangle quelconque ABC.\n• Construire le centre de gravité G de ce triangle.\n• Construire le cercle circonscrit au triangle ABC et nommer I son centre.\n• Construire l’orthocentre H du triangle ABC.\n• Déplacer l’un des sommets du triangle ABC.\nDans quel cas les points H, G et I sont-ils alignés avec l’un des sommets du triangle ?\nDans quel cas les points H, G et I sont-ils confondus ?\n•Tracer la droite (IG).\n• Quelle remarque peut-on faire ?\nUtiliser les TICUtiliser les TIC\nExercices et problèmesExercices et problèmes\nAppliquer\nLe plan est muni d’un repère cartésien\nSoit les points A(–1 , 3) ; B(1 , 0) ;\nC(4 , 1) et D(2 , 4).\n1) Montrer que ABCD est un parallélogramme.\n2) Soient E et F les points définis par\n.\na) Calculer les coordonnées des points E et F,\npuis les coordonnées du milieu de [EF].\nb) Vérifier que [EF] et [AC] ont le même\nSoient A(–1 , 3) ; B(2 , 1) et C(–2 , –2). On\ndésigne par G le centre de gravité du triangle\nABC.\na) Déterminer les coordonnées du point G.\nb) Déterminer une équation cartésienne de\nchacune des médianes du triangle ABC.\nSoient A(3 , 5) et B(–2 , 1).\nDéterminer une équation cartésienne de la\nmédiatrice du segment [AB].\nOn considère les points A(3 , 0) , B(–4 , 5)\net C(–2 , –1).\na) Calculer le coefficient directeur de chacune\ndes droites (AB), (AC) et (BC).\nb) Donner l’équation réduite de chacune des\ndroites (AB), (AC) et (BC).\nc) Déterminer une équation de chacune des\nhauteurs du triangle ABC.\nOn considère les droites D\n1, D2 et D3\nd’équations respectives x + y –1 = 0,\ny = 2 x – 3 et y = 4.\na) Tracer dans un même repère les droites\nD\n1, D2 et D 3.\nb) Déterminer les points d’intersection de\nD\n1 et D2 ; D 1 et D 3 ; D 2 et D 3.\nOn considère les points A(1 , 2) , B(-2 , 3)\net C(–4 , –2).\n1) Déterminer une équation cartésienne du\ncercle de diamètre [AB].\n2) Déterminer une équation cartésienne du\ncercle circonscrit au triangle ABC.\nMaîtriser\nLes droites d’équations y = a x et\ny = –x + b se coupent en un unique point\ndont les coordonnées sont strictement\nnégatives. On en conclut que :\n• a > 0 et b > 0 ; • a > 0 et b < 0 ;\n• a < 0 et b < 0 ; • a < –1 et b < 0 ;\n• a < –1 et b > 0.\nConcours Kangourou\nDéterminer et représenter l’ensemble des\npoints M(x , y) du plan tels que\n4 x\n2 – 9 y2 = 0.\nLes équations 3 x + b y + c = 0 et\nc x – 2 y +12 = 0, conduisent à la même\nreprésentation graphique.\nCombien y a-t-il de couple (b , c) satisfaisant\nà cette condition :\n• 0 ; • 1 ; • 2 ;\n•un nombre supérieur à 2 ; •une infinité ?\nConcours Kangourou\nO, i ,j_i\nCE = 3\n1 CD et AF = 3\n1 AB\nLe plan est muni d’un repère orthonormé\n.\nSoit D et D’ les droites d’équations\nrespectives x + y – 1 = 0 et 2x + y – 4 = 0.\nD coupe (xx’) en A et (yy’) en B, D’ coupe\n(xx’) en D et (yy’) en C.\nCalculer l’aire du quadrilatère ABCD.\nLe plan est muni d’un repère orthonormé\n.\nSoit D la droite d’équation 2 x +3 y –1 = 0 et\nA(–1 , 2).\nDéterminer une équation cartésienne du cercle\nde centre A et tangent à D.\nLe plan est muni d’un repère orthonormé\nOn considère la droite D d’équation\ny = x + 3 et le cercle C d’équation\n(x – 3)\n2 + (y – 4)2 = 25.\na) Représenter D et C.\nb) Déterminer les équations des droites D\n1 et\nD2 parallèles à D et tangentes à C.\nc) Tracer, dans le même repère, les droites\nD\n1 et D 2.\nLe plan est muni d’un repère orthonormé\n.\nOn considère les deux ensembles C et C’\nd’équations respectives\nx\n2 + y2 – 6 x – 4 = 0\net x 2 + y 2 – 4 x – 8 y + 4 = 0.\na) Montrer que C et C’ sont deux cercles dont\non précisera leurs centres et leurs rayons.\nb) Calculer les coordonnées des points\nd’intersection de C et C’.\nLe plan est muni d’un repère orthonormé\nDéterminer une équation cartésienne du\ncercle C qui passe par les points A(3 , 2) et\nB(–1 , 4) et dont le centre est sur la droite\nd’équation y = – x.\nLe plan est muni d’un repère orthonormé\nOn considère la droite D d’équation\net le cercle C d’équation\nx\n2 + y2 – 2 x + 6 y + 6 = 0. Déterminer une\néquation des tangentes à C qui sont perpen-\ndiculaires à la droite D.\nLe plan est muni d’un repère orthonormé\nOn considère le cercle C de centre\nI(2 , 1) et de rayon et le point A( – 2 , 3).\na) Montrer que le point A est extérieur à C.\nb) Déterminer les équations des tangentes à\nC issues de A.\nO, i ,j_i\nO, i ,j_i\nO, i ,j_i\nO, i ,j_i\nO, i ,j_i\ny = 3\n1 x+2\nExercices et problèmesExercices et problèmes\nMath et cultureMath et culture\nAutres types de repérage\nDès l’antiquité, les problèmes de repérage se sont posés dans les domaines de l’astronomie\net de la navigation. Eratosthène (-276, -195) a confectionné une carte du monde qui contenait\ndéjà un réseau de coordonnées géographiques.\n1 Les coordonnées polaires – Le radar\n•Une demi droite [Ox) étant fixée dans le plan, un point M peut\nêtre repéré par un couple de deux nombres :\n- la distance OM\n- l’angle ( en radians ou en degrés)\n(avec la convention d’effectuer les mesures en tournant toujours dans le sens direct). Ce\ncouple est appelé, couple de coordonnées polaires du point M.\nA(4 , 65°) signifie que OA = 4 et = 65°.\n• Le radar est un instrument de détection et de repérage, qui utili-\nse les coordonnées polaires. Le ra dar tourne autour de lui-même\n(balayage radar) et il envoie un ra yon d’ondes, si ce rayon rencontre\nun obstacle, il est réfléchi vers sa source et signale ainsi l’existence\nd’un objet et donne sa position exacte. Le temps mis par le rayon pour\nfaire l’aller - retour renseigne sur la distance du radar à l’objet. Le radar peut donner d’autres\ninformations sur l’objet (la vitesse…).\n2 Le plan de\nla ville de Tunis\nMOx%\nAOx%\nA\nB",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 39 (« Activité 39 ») est bien celle du polycopié, tome 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 39 dans le tome 2 et la synthèse du chapitre."
+      ]
+    ]
+  }
+]

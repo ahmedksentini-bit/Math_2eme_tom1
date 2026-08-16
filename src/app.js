@@ -6,7 +6,7 @@ import { BANDS, generateChapterSet, generatePapers } from "./bank.js";
 
 const app = document.querySelector("#app");
 const state = {
-  catalog: null, annales: { papers: [] }, exercise: null, mode: "learn", data: {}, attempts: {}, timer: null, seconds: 0, installPrompt: null,
+  catalog: null, catalogs: { 1: null, 2: null }, tome: 1, annales: { papers: [] }, exercise: null, mode: "learn", data: {}, attempts: {}, timer: null, seconds: 0, installPrompt: null,
   returnTo: null, proposed: null, paper: null, papers: null, examKind: "controle", examChapters: [], countdown: false, annaleFilter: "all"
 };
 const modes = { learn: "Apprentissage", train: "Entraînement", exam: "Examen" };
@@ -44,6 +44,14 @@ const pedagogy = {
   homothetyScale: { hypotheses: "L’homothétie multiplie les longueurs par |k| et les aires par k².", why: ["Le périmètre est une somme de longueurs, donc il est multiplié par |k|.", "L’aire est multipliée par k² (le cours du chapitre 8)."], check: "k = 1/2  ⇔  aire divisée par 4, périmètre par 2." },
   rotation90: { hypotheses: "Repère orthonormé direct. Quart de tour de centre O.", why: ["Le vecteur OM⃗ tourne de +90°.", " (x, y) ↦ (−y, x) dans le repère d’origine O."], check: "OM' = OM et OM⃗ · OM'⃗ = 0." },
   rotationAngle: { hypotheses: "Rotation directe de centre O et d’angle α. Définition du cours : OM' = OM et l’angle MOM' vaut α.", why: ["La distance au centre est conservée.", "Pour 90°, on utilise le quart de tour : (x ; y) ↦ (−y ; x) autour de l’origine.", "Pour 180°, M' = 2O − M (symétrie centrale)."], check: "OM' = OM. Pour 90°, OM⃗ · OM'⃗ = 0." },
+  arithSeq: { hypotheses: "Suite arithmétique de premier terme u₁ et de raison r.", why: ["uₙ = u₁ + (n−1)r.", "Sₙ = n(u₁ + uₙ)/2."], check: "La différence uₙ − uₙ₋₁ doit retrouver r." },
+  geoSeq: { hypotheses: "Suite géométrique de premier terme u₁ et de raison q ≠ 0.", why: ["uₙ = u₁ q^{n−1}.", "Si q ≠ 1, Sₙ = u₁(1 − qⁿ)/(1 − q)."], check: "Le rapport uₙ / uₙ₋₁ doit retrouver q." },
+  affineFn: { hypotheses: "f est affine : f(x) = ax + b. La courbe est une droite.", why: ["On substitue x₀ dans ax + b."], check: "f(0) = b. La pente est a." },
+  quadFn: { hypotheses: "f(x) = ax² + bx + c, a ≠ 0. La courbe est une parabole.", why: ["On calcule a x₀² + b x₀ + c."], check: "Si a > 0, la parabole est tournée vers le haut." },
+  trigExact: { hypotheses: "Cercle trigonométrique, angles remarquables du cours.", why: ["M a pour coordonnées (cos α ; sin α)."], check: "cos²α + sin²α = 1." },
+  distance2d: { hypotheses: "Repère orthonormé. Distance et milieu.", why: ["AB = √[(Δx)²+(Δy)²].", "I est la moyenne des coordonnées."], check: "AI = IB = AB/2." },
+  lineSlope: { hypotheses: "Droite non verticale. y = mx + p.", why: ["m = (y_B−y_A)/(x_B−x_A).", "p = y_A − m x_A."], check: "Les deux points doivent vérifier l’équation." },
+  statsMean: { hypotheses: "Série quantitative d’effectif n.", why: ["x̄ = (Σxᵢ)/n.", "Étendue = max − min."], check: "La moyenne est entre min et max." },
   fixed: { hypotheses: "On travaille avec le cours du chapitre, tel qu’il est dans le manuel.", why: ["On relit la question.", "On applique le résultat de la synthèse."], check: "La réponse doit coller à l’énoncé du polycopié." }
 };
 
@@ -81,6 +89,14 @@ const equationSheets = {
   homothetyScale: ["p' = |k| p", "A' = k² A"],
   rotation90: ["(x, y) ↦ (−y, x) autour de O"],
   rotationAngle: ["OM' = OM", "angle MOM' = α"],
+  arithSeq: ["uₙ = u₁ + (n−1)r", "Sₙ = n(u₁+uₙ)/2"],
+  geoSeq: ["uₙ = u₁ q^{n−1}", "Sₙ = u₁(1−qⁿ)/(1−q)  (q ≠ 1)"],
+  affineFn: ["f(x) = ax + b"],
+  quadFn: ["f(x) = ax² + bx + c"],
+  trigExact: ["M(cos α ; sin α)", "cos²α + sin²α = 1"],
+  distance2d: ["AB = √[(x_B−x_A)²+(y_B−y_A)²]", "I milieu"],
+  lineSlope: ["m = (y_B−y_A)/(x_B−x_A)", "y = mx + p"],
+  statsMean: ["x̄ = (Σxᵢ)/n", "étendue = max − min"],
   fixed: ["Relire la synthèse du chapitre dans le polycopié."]
 };
 
@@ -124,6 +140,33 @@ const formatTime = seconds => {
 const toast = text => { const el = document.querySelector("#toast"); el.textContent = text; el.classList.add("show"); setTimeout(() => el.classList.remove("show"), 1800); };
 const bandLabel = id => BANDS.find(b => b.id === id)?.label || id;
 
+function applyTomeChrome() {
+  const small = document.querySelector(".brand small");
+  if (small) small.textContent = `Sciences · TI · Tome ${state.tome}`;
+  const link = document.querySelector("#polyLink") || document.querySelector(".course-link");
+  if (link) {
+    link.href = state.tome === 2 ? "docs/Livre_2_Sc_T2.pdf" : "docs/Livre_2_Sc_T1.pdf";
+    link.textContent = `Polycopié tome ${state.tome}`;
+  }
+  document.querySelectorAll("[data-tome]").forEach(b => b.classList.toggle("active", Number(b.dataset.tome) === state.tome));
+  document.title = `Maths 2ème · Tome ${state.tome}`;
+}
+
+function setTome(n) {
+  const tome = n === 2 ? 2 : 1;
+  if (!state.catalogs[tome]) return;
+  state.tome = tome;
+  state.catalog = state.catalogs[tome];
+  state.proposed = null;
+  state.paper = null;
+  state.papers = null;
+  state.examChapters = [];
+  state.exercise = null;
+  try { localStorage.setItem("math2-tome", String(tome)); } catch { /* ignore */ }
+  applyTomeChrome();
+  home();
+}
+
 function inPaper() { return state.returnTo === "paper" && state.paper; }
 
 function home() {
@@ -133,9 +176,10 @@ function home() {
   state.paper = null;
   const nAct = state.catalog.exercises.filter(e => e.kind === "activity").length;
   const nPar = state.catalog.exercises.filter(e => e.kind !== "activity").length;
-  const nAnn = state.annales.papers.length;
-  app.innerHTML = `<section class="hero"><p class="eyebrow">Mathématiques · 2ème année secondaire</p><h1>Comprendre, calculer, vérifier.</h1><p>Toutes les activités du manuel CNP (tome 1), dans l’ordre du livre, plus les énoncés de devoirs publics (Sfax, pilotes et autres lycées).</p><div class="signature">Lycée Pilote Sakiet Ezzit<br><strong>Mariam Ksentini</strong></div></section>
-  <div class="exam-launch three"><button class="exam-launch-btn" id="makeControle"><strong>Devoirs surveillés</strong><span>Mi-trimestre · 1 h · sujets générés</span></button><button class="exam-launch-btn" id="makeSynthese"><strong>Devoirs de synthèse</strong><span>Fin de trimestre · 2 h · sujets générés</span></button><button class="exam-launch-btn" id="openAnnales"><strong>Annales</strong><span>${nAnn} énoncés extraits · Sfax 1, Sfax 2, pilotes</span></button></div>
+  const nAnn = state.annales.papers.filter(p => (p.tome || 1) === state.tome).length;
+  const tomeLabel = state.tome === 2 ? "tome 2 (suites, fonctions, trigo, géométrie, stats)" : "tome 1, dans l’ordre du livre";
+  app.innerHTML = `<section class="hero"><p class="eyebrow">Mathématiques · 2ème année secondaire · Tome ${state.tome}</p><h1>Comprendre, calculer, vérifier.</h1><p>Toutes les activités du manuel CNP (${tomeLabel}), plus les énoncés de devoirs publics. Les courbes et schémas s’affichent à gauche de chaque exercice.</p><div class="signature">Lycée Pilote Sakiet Ezzit<br><strong>Mariam Ksentini</strong></div></section>
+  <div class="exam-launch three"><button class="exam-launch-btn" id="makeControle"><strong>Devoirs surveillés</strong><span>Mi-trimestre · 1 h · sujets générés</span></button><button class="exam-launch-btn" id="makeSynthese"><strong>Devoirs de synthèse</strong><span>Fin de trimestre · 2 h · sujets générés</span></button><button class="exam-launch-btn" id="openAnnales"><strong>Annales</strong><span>${nAnn} énoncés extraits pour ce tome</span></button></div>
   <div class="section-title"><div><h2>Choisir un chapitre</h2><p>${nAct} activités du livre, ${nPar} exercices paramétriques, plus 40 exercices générés par chapitre (faciles, moyens, difficiles, casse-tête).</p></div></div>
   <section class="chapter-grid">${state.catalog.chapters.map(ch => { const n = state.catalog.exercises.filter(e => e.chapter === ch.id && e.kind === "activity").length; return `<button class="chapter" data-chapter="${ch.id}"><span class="num">${ch.number}</span><h3>${esc(ch.title)}</h3><p>${esc(ch.description)}</p><span class="count">${n} activité${n > 1 ? "s" : ""} du livre →</span></button>`; }).join("")}</section>`;
   document.querySelectorAll("[data-chapter]").forEach(button => button.addEventListener("click", () => chapterPage(button.dataset.chapter)));
@@ -166,7 +210,7 @@ function matchAnnale(p, filter) {
 
 function annalesPage(filter = "all") {
   state.annaleFilter = filter;
-  const papers = state.annales.papers.filter(p => matchAnnale(p, filter));
+  const papers = state.annales.papers.filter(p => (p.tome || 1) === state.tome).filter(p => matchAnnale(p, filter));
   app.innerHTML = `<button class="back" id="backHome">← Accueil</button>
     <section class="chapter-banner"><span class="num">Σ</span><div><h1>Annales de devoirs</h1><p>Énoncés publics de 2ème Sciences (Sfax 1, Sfax 2, lycées pilotes et autres). Texte extrait des PDF : les figures du sujet original peuvent manquer.</p></div></section>
     <div class="annale-filters">${ANNALE_FILTERS.map(f => `<button class="ghost ${filter === f.id ? "active" : ""}" data-filter="${f.id}">${f.label}</button>`).join("")}</div>
@@ -206,7 +250,7 @@ function chapterPage(chapterId) {
     ${courseHtml(chapterId)}
     <div class="propose-cta"><button class="primary" id="propose">Proposer des exercices</button><p>10 faciles, 10 moyens, 10 difficiles et 10 casse-tête, générés en plus des activités du polycopié.</p></div>
     <div class="section-title"><div><h2>Activités du polycopié</h2><p>${activities.length} activité${activities.length > 1 ? "s" : ""} du manuel, dans l’ordre du livre.</p></div></div>
-    <section class="exercise-list">${activities.map(e => card(e, 0, "Activité du tome 1")).join("")}</section>
+    <section class="exercise-list">${activities.map(e => card(e, 0, `Activité du tome ${state.tome}`)).join("")}</section>
     <div class="section-title"><div><h2>Exercices paramétriques</h2><p>Mêmes types de calculs, données que l’on peut modifier.</p></div></div>
     <section class="exercise-list">${parametric.map((e, i) => card(e, i, `Niveau ${e.difficulty} · données paramétriques`)).join("")}</section>`;
   document.querySelector("#backHome").addEventListener("click", home);
@@ -461,7 +505,7 @@ function gradePaper(auto) {
 
 function refreshDiagram() {
   if (!state.exercise) return;
-  const figure = drawFigure(state.exercise.solver, state.data);
+  const figure = drawFigure(state.exercise.solver, state.data, state.exercise);
   const box = document.querySelector("#diagram");
   const note = document.querySelector("#diagramNote");
   if (box) box.innerHTML = figure.svg;
@@ -506,39 +550,65 @@ function startCountdown(limit) {
 function stopTimer() { clearInterval(state.timer); state.timer = null; }
 
 document.querySelector("#homeButton").addEventListener("click", home);
+document.querySelectorAll("[data-tome]").forEach(b => b.addEventListener("click", () => setTome(Number(b.dataset.tome))));
 window.addEventListener("hashchange", () => {
   if (!state.catalog) return;
   if (location.hash === "#annales") { annalesPage(state.annaleFilter); return; }
   const annale = state.annales.papers.find(p => `#${p.id}` === location.hash);
   if (annale) { openAnnale(annale.id); return; }
-  const requested = state.catalog.exercises.find(e => `#${e.id}` === location.hash);
-  if (requested) { state.returnTo = "chapter"; openExercise(requested); }
-  else if (!location.hash) home();
+  for (const t of [1, 2]) {
+    const requested = state.catalogs[t]?.exercises.find(e => `#${e.id}` === location.hash);
+    if (requested) {
+      if (state.tome !== t) {
+        state.tome = t;
+        state.catalog = state.catalogs[t];
+        applyTomeChrome();
+      }
+      state.returnTo = "chapter";
+      openExercise(requested);
+      return;
+    }
+  }
+  if (!location.hash) home();
 });
 window.addEventListener("beforeinstallprompt", event => { event.preventDefault(); state.installPrompt = event; const b = document.querySelector("#installButton"); b.hidden = false; b.onclick = async () => { await state.installPrompt.prompt(); b.hidden = true; }; });
 if ("serviceWorker" in navigator) window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => {}));
 
 const loadJson = url => fetch(url).then(r => r.ok ? r.json() : []);
 try {
-  const [catalog, batch14, batch59, actIndex, annales] = await Promise.all([
+  const [catalog, batch14, batch59, actIndex, annales, catalog2, actIndex2] = await Promise.all([
     fetch("./data/exercises.json").then(r => r.json()),
     loadJson("./data/exercises-ch1-ch4.json"),
     loadJson("./data/exercises-ch5-ch9.json"),
     loadJson("./data/activites-index.json"),
-    fetch("./data/annales.json").then(r => r.ok ? r.json() : { papers: [] }).catch(() => ({ papers: [] }))
+    fetch("./data/annales.json").then(r => r.ok ? r.json() : { papers: [] }).catch(() => ({ papers: [] })),
+    fetch("./data/exercises-t2.json").then(r => r.json()),
+    loadJson("./data/activites-t2-index.json")
   ]);
   const actFiles = Array.isArray(actIndex) ? actIndex.map(item => loadJson(`./data/${item.file}`)) : [];
-  const actPacks = await Promise.all(actFiles);
-  const activities = actPacks.flat();
-  state.catalog = { ...catalog, exercises: [...catalog.exercises, ...batch14, ...batch59, ...activities] };
+  const act2Files = Array.isArray(actIndex2) ? actIndex2.map(item => loadJson(`./data/${item.file}`)) : [];
+  const [actPacks, act2Packs] = await Promise.all([Promise.all(actFiles), Promise.all(act2Files)]);
+  state.catalogs[1] = { ...catalog, exercises: [...catalog.exercises, ...batch14, ...batch59, ...actPacks.flat()] };
+  state.catalogs[2] = { ...catalog2, exercises: [...(catalog2.exercises || []), ...act2Packs.flat()] };
+  let tome = 1;
+  try { tome = Number(localStorage.getItem("math2-tome")) === 2 ? 2 : 1; } catch { tome = 1; }
+  state.tome = tome;
+  state.catalog = state.catalogs[tome];
   state.annales = { papers: Array.isArray(annales?.papers) ? annales.papers : [] };
+  applyTomeChrome();
   if (location.hash === "#annales") annalesPage();
   else {
     const annale = state.annales.papers.find(p => `#${p.id}` === location.hash);
-    const requested = state.catalog.exercises.find(e => `#${e.id}` === location.hash);
+    let requested = null, requestedTome = tome;
+    for (const t of [1, 2]) {
+      const found = state.catalogs[t].exercises.find(e => `#${e.id}` === location.hash);
+      if (found) { requested = found; requestedTome = t; break; }
+    }
     if (annale) openAnnale(annale.id);
-    else if (requested) openExercise(requested);
-    else home();
+    else if (requested) {
+      if (state.tome !== requestedTome) { state.tome = requestedTome; state.catalog = state.catalogs[requestedTome]; applyTomeChrome(); }
+      openExercise(requested);
+    } else home();
   }
 } catch {
   app.innerHTML = `<section class="card"><h1>Chargement impossible</h1><p>Lancez l’application depuis un serveur web local ou depuis Cloudflare Pages.</p></section>`;

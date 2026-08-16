@@ -31,7 +31,8 @@
           "points": "8 points",
           "statement": "Soit ABC un triangle et E et F les milieux respectifs de [ AB] et [ AC].\nOn d´ esigne parD le barycentre des points pond´ er´ ees (A, 3) et ( B,−2).\n1 Construire le point D\n2 Soit G le point d´ eﬁni par 3−→GA− 2− − →GB + 5−→GC =− →0 .\na Montrer que G est le barycentre des points ( D, 1) et ( C, 5) .\nb Montrer que F est le barycentre des points ( G, 3) et ( E, 2)\nc En d´ eduire une construction simple du pointG . (intersection de deux droites )\n3 a Soit M un point du plan ,\nV´ eriﬁer que 3−−→M A− 2−−→M B + 5−−→M C = 6−−→M G et que : −−→M A+−−→M B = 2−−→M E\nb D´ eterminer l’ensemble suivante :\n{\nM∈ P ;∥3−−→M A− 2−−→M B + 5−−→M C∥ = 3∥−−→M A+−−→M B∥\n}"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_002",
@@ -51,7 +52,8 @@
           "points": "",
           "statement": "Lycée secondaire Bir Ali-2 Devoir de synthèse N◦2 Classes : 2ème Sciences (2&3)\nDate : 12 / 03 / 2024 Mathématiques Coefﬁcient : 4 Durée : 2 h\nNoter bien :• Il sera tenu compte de la rigueur et de la clarté des réponses.\n• Aucun document n’est autorisé, sauf, une calculatrice non programmable.\nExercice N◦1: (5 points).\nOn considère la suite (an) déﬁnie sur N par : a0 = 1 et an+1 = an\n1 + 2an\npour tout n≥ 0\n1 a Calculer les termes a1 et a2\nb Justiﬁer que la suite (an) n’est ni arithmétique ni géométrique.\n2 On admet que tous les termes de la suite (an) sont non nuls, et on pose bn = 1\nan\noù n≥ 0\na Prouver que la suite (bn) est arithmétique de raison r = 2 et donner son premier terme.\nb Exprimer le terme général bn en fonction de n\n3 Pour tout n∈ N , on pose : cn = (−2)bn\na Montrer que (cn) est une suite géométrique de raison q = 4\nb Exprimer le terme général cn en fonction de n\n4 Pour tout entier naturel n non nul, on pose : Sn = (−2)b1× (−2)b2× ...× (−2)bn\nExprimer Sn en fonction de n\nExercice N◦2: (4 points).\n▶ Dans l’annexe ci-jointe (ﬁg-1), on donne un triangleABC direct isocèle et rectangle en A et on\nnote O le milieu du côté [BC]\n1 Construire le point B′ image de B par la rotation directe r de centre A et d’angle π\n4\n2 Soit h l’homothétie de centre A qui transforme O en B′\na Déterminer le rapport k de l’homothétie h\nb Construire le point C′ image de C par h\nc Préciser la nature du triangle AB′C′\n3 Soit O′ le projeté orthogonal de B′ sur (AC)\na Montrer que r(O) = O′\nb Préciser alors l’image de la droite (BC) par r\nProfesseurs : Hfaïdh Ridha & Lahmar Adel. page 1/3\nExercice N◦3: (5 points).\n▶ (I) Soit g une fonction impaire déﬁnie surR par le tracé de la partie de sa courbe sur R+\n1 Compléter le traçage de cette courbe sur\nR− à l’annexe ci-jointe (ﬁg-2) à la page 3/3\n2 Déterminer les images de 0 , 1 et−1 par g\n3 Donner le nombre d’antécédents de 1 par g\n▶ (II) Soient a et b deux réels.\n1 a Montrer que si 0≤ a≤ 1 et 0≤ b≤ 1 alors 1− ab≥ 0\nb Prouver que si a > 1 et b > 1 alors 1− ab < 0\n2 Soit f la fonction déﬁnie sur R par : f (x) = 4x\n1 + x2\na Montrer que f (a)− f (b) = ( a− b)(1− ab) 4\n(1 + a2) (1 + b2)\nb En déduire le sens de variation de f sur chacun des intervalles [0; 1] et ]1, +∞[\nc Calculer f (1) et montrer que f (x)− 2≤ 0. Que peut-on en conclure ?\nd Etudier la parité de f puis dresser son tableau de variations sur R\nExercice N◦4: (6 points).\nPour tout réel x∈ [0, π], on pose : f (x) = 2 cos2 x + sin x cos x− 3\n2\n1 Calculer f (0) , f\n(π\n4\n)\net f\n(2π\n3\n)\n2 a Montrer que pour tout réel x∈\n[\n0, π\n2\n]\n, on a : f\n(π\n2− x\n)\n+ f (π− x) =−1\nb En déduire f\n(3π\n4\n)\n3 Résoudre dans [0, π] l’équation : f (x) = sin x cos x\n4 a Montrer que pour tout réel x∈ [0, π]\\\n{ π\n2\n}\non a : f (x) =−3 tan2 x + 2 tan x + 1\n2\n(\n1 + tan2 x\n)\nb Calculer f (α) sachant que tan α =−1\n3 et α∈\n] π\n2 , π\n[\nc Résoudre dans [0, π] l’équation : f (x) = 0\nProfesseurs : Hfaïdh Ridha & Lahmar Adel. page 2/3\nDevoir de synthèse N◦2 en mathématiques pour 2ème Sciences (2&3) 2023/2024\nAnnexe à rendre avec la copie\nNom et prénom : .............................................................................................. Classe : 2Sc..... N ◦ : ........\n▶ ﬁg-1 :\n▶ ﬁg-2 :\nProfesseurs : Hfaïdh Ridha & Lahmar Adel. page 3/3"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_003",
@@ -86,7 +88,8 @@
           "points": "4pts",
           "statement": "Soit 𝑀 un point du demi-cercle trigonométrique (de centre O, de rayon 1 et de diamètre\n[𝐴𝐴′] ) telque  𝐴𝑂𝑀̂ =\n3𝜋\n4 . 𝐻 le projeté orthogonal de 𝑀 sur l’axe (𝐴𝐴’)\n1) a- Montrer que 𝑀𝐻 =  √2\n2  et 𝐴′𝐻 =\n2−√2\n2\n     b- Justifier que : 𝐴𝐴′𝑀̂  =\n3𝜋\n8  et montrer que 𝑡𝑎𝑛\n3𝜋\n8 = 1 + √2\n     c- En déduire que 𝑐𝑜𝑠\n3𝜋\n8 =\n√2−√2\n2   puis  𝑠𝑖𝑛\n3𝜋\n8 =\n√2+√2\n2\n2) Calculer, alors, 𝑐𝑜𝑠\n5𝜋\n8    et 𝑠𝑖𝑛\n5𝜋\n8\n\n3𝜋\n4\n𝐴\n𝑂\n𝐵\n𝐴’\n𝑀\n1\n𝐻\n                                                Page 2\n          Devoir de synthèse n°2/2ème Sc5 et6"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_004",
@@ -126,7 +129,8 @@
           "points": "",
           "statement": "H\nP\n                                           Page 3\nDevoir de synthèse n°3/2ème Sc 5et6- Lycée Mohamed Ali Sfax"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_005",
@@ -161,7 +165,8 @@
           "points": "5pts",
           "statement": "Soit 𝐴𝐵𝐶 un triangle équilatéral de l’espace situé dans un plan 𝑃 et on  donne  le point 𝐸 tel\nque (𝐴𝐸) ⊥ 𝑃.\n1°/ a-Montrer que le triangle 𝐴𝐵𝐸est rectangle en 𝐴\n      b- Montrer que les deux plans 𝑃 et (𝐴𝐵𝐸) sont\nperpendiculaires\n2°/ Soit 𝐼 le milieu de [𝐴𝐵] , 𝐽 le milieu de [𝐸𝐵] et la\ndroite ∆ parallèle à (𝐶𝐼) passant par 𝐽.\n      a- Montrer que (𝐶𝐼) ⊥ (𝐴𝐵𝐸).\n      b- En déduire que ∆ est l’axe du cercle circonscrit au triangle 𝐴𝐵𝐸.\n3°/a- Montrer que (𝐼𝐽𝐶) est plan médiateur de [𝐴𝐵]\n     b- En déduire que (𝐼𝐽𝐶) ⊥ (𝐴𝐵𝐶).\n     c- Justifier que (𝐼𝐽𝐶)∩ (𝐴𝐵𝐸) = (𝐼𝐽).\n     d- En déduire que (𝐼𝐽) ⊥ 𝑃.\n\n𝐸\n𝐴\n𝐵\n𝐶\n 𝑃\n                                                Page 2\n          Devoir de synthèse n°3/2ème Sc5 et6\n\nhttp://mathematiques.kooli.me/\n\n4°/On considère un point 𝑆 de l’espace vérifiant 𝑆𝐴 = 𝑆𝐵 = 𝑆𝐶 et 𝐺 le centre de gravité du\ntriangle 𝐴𝐵𝐶 .\na- Montrer que la droite (𝑆𝐺) est l’axe du cercle circonscrit au triangle 𝐴𝐵𝐶.\nb- En déduire que les droite (𝑆𝐺);(𝐼𝐽) et (𝐴𝐸) sont parallèles.\n5°/On pose 𝐴𝐵 = 𝑎 et 𝐴𝐸 = 2𝑎 tel que  𝑎 un réel strictement positif.\n    Exprimer la distance 𝐽𝐶 en fonction de 𝑎.\n\nhttp://mathematiques.kooli.me/"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_006",
@@ -191,7 +196,8 @@
           "points": "8 points",
           "statement": "Le plan est muni d’un rep` ere orthonorm´ e\n(\nO,− →i ,− →j\n)\n.\nSoient les deux points A(10, 0) et B(0, 5)\n1 Montrer que le triangle AOB est rectangle en O.\n2 Pour tout r´ eela , on pose H(2a, 5− a). Montrer que le point H∈ (AB) .\n3 Dans la suite de l’exercice , on pose H(2, 4) .\nSoient I et J les milieux respectives de [ AH] et [ OH]\na D´ eterminer les composantes de deux vecteurs− →OI et−→BJ\nb Montrer que (OI)⊥ (BJ )\n4 a V´ eriﬁer que (−→HI,−−→HO) est une base .\nb Cette base est elle orthonorm´ e ?\nhttp://mathematiques.kooli.me/"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_007",
@@ -236,7 +242,8 @@
           "points": "",
           "statement": "1°/a) On a :  𝐼 le barycentre de  (𝐴 ,1) et (𝐵 ,3)\n𝑠𝑖𝑔 𝐴𝐼⃗⃗⃗⃗ =\n3\n4𝐴𝐵⃗⃗⃗⃗⃗  donc 𝐴𝐼 =\n3\n4𝐴𝐵 =\n3\n4.4 = 3\nb)𝐼 ∈ [𝐴𝐵] 𝑒𝑡 𝐴𝐼 = 3 = 𝐷𝐶 comme (𝐴𝐵)//(𝐷𝐶)\nalors 𝐴𝐼𝐶𝐷 est un parallélogramme.\n²°/a) 𝐺 le barycentre de (𝐴 ,1);(𝐵,3) et (𝐶 ,−2)\n𝑠𝑖𝑔 𝐺𝐴⃗⃗⃗⃗⃗ + 3𝐺𝐵⃗⃗⃗⃗⃗ − 2𝐺𝐶⃗⃗⃗⃗⃗ = 0⃗  or 𝐺𝐴⃗⃗⃗⃗⃗ + 3𝐺𝐵⃗⃗⃗⃗⃗ = 4𝐺𝐼⃗⃗⃗⃗\ncar 𝐼 le barycentre de  (𝐴 ,1) et (𝐵 ,3)\nD’où  4𝐺𝐼⃗⃗⃗⃗ − 2𝐺𝐶⃗⃗⃗⃗⃗ = 0⃗   𝑠𝑖𝑔 𝐺 le barycentre de\n(𝐼 ,4) et (𝐶 ,−2) 𝑠𝑖𝑔 𝐶𝐺⃗⃗⃗⃗⃗ =\n4\n−2+4𝐶𝐼⃗⃗⃗⃗ = 2𝐶𝐼⃗⃗⃗⃗\n𝑠𝑖𝑔 𝐼 = 𝐶 ∗ 𝐺 𝑒𝑡 𝑆𝐼(𝐶) = 𝐺\nb) On a : 𝐺𝐴⃗⃗⃗⃗⃗ + 3𝐺𝐵⃗⃗⃗⃗⃗ − 2𝐺𝐶⃗⃗⃗⃗⃗ = 0⃗\net 𝐺𝐴⃗⃗⃗⃗⃗ − 2𝐺𝐶⃗⃗⃗⃗⃗ = −𝐺𝐽⃗⃗⃗⃗  car 𝐽 le barycentre de  (𝐴 ,1)\net (𝐶,−2) d’où  −𝐺𝐽⃗⃗⃗⃗ + 3𝐺𝐵⃗⃗⃗⃗⃗ = 0⃗\n𝑠𝑖𝑔 𝐺 est le barycentre de (𝐽 ,−1) et (B ,3).\nc) On a 𝐽 le barycentre de  (𝐴 ,1) et (𝐶,−2)\ndonc 𝐽 ∈ (𝐴𝐶)\net 𝐺 est le barycentre de (𝐽 ,−1) et (B ,3)\ndonc 𝐽 ∈ (𝐵𝐺)\nConclusion : (𝐴𝐶)∩ (𝐺𝐵) = {𝐽}\n3°/a) pour tout M ∈ P   on a : MA ⃗⃗⃗⃗⃗⃗⃗ +3MB ⃗⃗⃗⃗⃗⃗⃗ = 4𝑀𝐼⃗⃗⃗⃗⃗\ncar 𝐼 le barycentre de  (𝐴 ,1) et (𝐵 ,3) ,par suite\n MA ⃗⃗⃗⃗⃗⃗⃗ +3MB ⃗⃗⃗⃗⃗⃗⃗ − 4MC ⃗⃗⃗⃗⃗⃗⃗ = 4𝑀𝐼⃗⃗⃗⃗⃗ − 4MC ⃗⃗⃗⃗⃗⃗⃗\n                                  = 4𝑀𝐼⃗⃗⃗⃗⃗ + 4CM⃗⃗⃗⃗⃗⃗\n                                  = 4(𝐶𝑀⃗⃗⃗⃗⃗⃗ + MI⃗⃗⃗⃗ )\n                                  = 4𝐶𝐼⃗⃗⃗⃗\nb) pour tout M ∈ P   on a :\n MA ⃗⃗⃗⃗⃗⃗⃗ +3MB ⃗⃗⃗⃗⃗⃗⃗ − 2𝑀𝐶⃗⃗⃗⃗⃗⃗ = 2𝑀𝐺⃗⃗⃗⃗⃗⃗  car 𝐺 le barycentre\nde (𝐴 ,1);(𝐵,3) et (𝐶 ,−2)  donc\nC = {M ∈ P   /‖ 2MG ⃗⃗⃗⃗⃗⃗⃗ ‖=‖4CI ⃗⃗⃗⃗ ‖ }\n    = {M ∈ P   /𝑀𝐺=2CI=CG } car 𝐼 = 𝐶 ∗ 𝐺\nDonc C  est le cercle de centre 𝐺 et de rayon 𝐺𝐶."
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_008",
@@ -266,7 +273,8 @@
           "points": "8 points",
           "statement": "Dans la ﬁgure ci-dessous :\nABC est un triangle rectangle isoc` ele enA , le point I est le milieu de segment [BC]. La droite (∆)\npasse C et perpendiculaire ` a (BC) . Le point K est l’intersection de (∆) et ( AB) , J le milieu de\nsegment [CK ] et (C) le cercle circonscrit au triangle ABC.\nSoit r la rotation directe de centre A et d’angle π\n2 .\n1 a D´ eterminer l’image deB par la rotation r .\nb D´ eterminer les images des droites (AC) et (BC) par r.\nc En d´ eduire l’image du pointC par r\n2 a Montrer que J est l’image de I par r\nb D´ eterminer et construire (C ′) image de (C) par r.\n3 La droite (AI) recoupe le cercle (C) en E et la droite (AJ) recoupe (C ′) en F .\nMontrer que r(E) =F"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_009",
@@ -296,7 +304,8 @@
           "points": "8pts",
           "statement": "Soit (𝑂; 𝑖 ⃗⃗⃗ ; 𝑗 ⃗⃗⃗ )  un repère orthonormé, on donne les points 𝐴(2 ;2) ; 𝐵(3 ;4)et 𝐶(1 ;−1).\n1°/   Déterminer une équation cartésienne de la droite (𝐴𝐵).\n2°/   Déterminer une équation cartésienne de la droite ∆ passant par 𝐶 perpendiculaire à  (𝐴𝐵).\n3°/   Soit  la droite 𝐷:𝑥 + 3𝑦 − 1 = 0.\n        La droite 𝐷 coupe l’axe des abscisses en un point 𝐸 déterminer ces coordonnées\n4°/  a-  Montrer que 𝐷 et ∆ sont sécantes en un point 𝐹.  (On donne ∆:𝑥 + 2𝑦 + 1 = 0)\n      b- Calculer les  coordonnées du point  𝐹.\n5°/  a-  Calculer la distance du point 𝐴 à la droite 𝐷.\n      b- Déduire l’aire du triangle 𝐴𝐸𝐹.\nLycée : Mohamed Ali.Sfax\nProfesseur : M Fourati Devoir de contrôle n°5   Date: 18/04/2026\n 2ème Sc6 ; Durée : 1 h\n𝐴\n𝐵"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_010",
@@ -316,7 +325,8 @@
           "points": "6 points",
           "statement": "P a g e  2 | 2\n\nOn donne dans la figure ci-dessous un triangle  ABC  rectangle  en  A  tel que\nAB = 2 AC .  Soit J le milieu du segment  [ AC ]  .\n  Soit  I  et  L  les points définis  par       3 A I+  B I=0   et   -     1AL= AB+  AC4 .\n1) a) Vérifier que       1AI = AB4   et que  J  est le milieu du segment  [ I L ] .\n    b) En déduire la nature du quadrilatère   I ALC .\n    c) Placer sur la figure ci-dessous  les  points   I  et  L .\n  2) a) Montrer que R    = ( A , AI , AJ ) est un repère orthonormé du plan .\n    b) Déterminer les coordonnées des points B , C  et  L  .\n3) Soit  x  un réel. On donne le point - 1M( x , x+2 )2   et on note C    le cercle de\n      diamètre [ AB ].\n    a) Montrer que pour tout réel  x , les points  M , B et C sont alignés.\n    b) Montrer que M appartient au cercle C    si et seulement si 25x +24x+16 = 0.\n    c) En déduire que M appartient au cercle C   si et seulement si   4 8M=B  ou  M=K( , )5 5 .\n    d) Construire alors sur la figure ci-dessous  le  point K.\n\n4) Déterminer les coordonnées du point  L  selon le repère 'R  = ( I , BA , BC ).\n\nFigure"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_011",
@@ -346,7 +356,8 @@
           "points": "6 points",
           "statement": "Dans la figure ci-jointe que l’on complétera au fur et à mesure des questions\nABC est un triangle isocèle en B.\nOn désigne par I et J les milieux respectifs des segments\nSoit G le barycentre des points pondérés\n1)  Montrer que G est barycentre des points ( I, 3) et (J,\n2)  Soit K le milieu du segment f \u0012g\na/ Exprimer G comme barycentre des points B et K.\nb/ Placer alors le point G.\n3)  Montrer que le quadrilatère ABIG est un parallélogramme.\n4)  a/ Déterminer l’ensemble ∆ des points  M du plan tels que\n3k\u0012 llllllm − 2kn llllllm + ko llllllm est colinéaire à\n      b/ Déterminer et  l’ensemble  C\n3k\u0012 llllllm − 2kn llllllm + ko llllllm est orthogonale  à\nc/ Montrer que \u0012 ∈ ∆ ∩ C\n\nhttp://mathematiques.kooli.me/\nque l’on complétera au fur et à mesure des questions\nun triangle isocèle en B.\nOn désigne par I et J les milieux respectifs des segments  f\u0012or et  fno\nle barycentre des points pondérés  ( \u0012, 3 ) , (n, !2 ) et (o, 1 ).\nMontrer que G est barycentre des points ( I, 3) et (J, -2 ).\n\u0012g r.\nExprimer G comme barycentre des points B et K.\nMontrer que le quadrilatère ABIG est un parallélogr amme.\ndes points  M du plan tels que  :\nest colinéaire à   k\u0012 llllllm ! 2kn llllllm \u0017 ko llllllm .\nC  des points  M du plan tels que :\nest orthogonale  à  k\u0012 llllllm \u0017 ko llllllm .\n\nhttp://mathematiques.kooli.me/\nque l’on complétera au fur et à mesure des questions ,\nno r."
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_012",
@@ -376,7 +387,8 @@
           "points": "8 points",
           "statement": "Soit ABC un triangle .\n\n1)  Soient I barycentre des points pondérés \u0002#, 2\nD\n      et J barycentre des points pondérés \u0002#, D\u0007\navec m un paramètre réel.\nDéterminer la valeur de m pour que I soit le milieu de [AB] et\n J soit le milieu de [AC].\n\n2)  On fixe dans la suite I=A*B et J=A*C\na/ Construire sur la figure ci-contre\n le point D barycentre des points (A,3) et (B,-2).\n\n  b/Montrer que A est le barycentre des points B et D affectés de\ncoefficients à déterminer.\n  c/ Montrer que 2E@\n<<<<= \b 3E> <<<<= \b E7 <<<<= \u0005 0<=.\n  d/Déterminer l’ensemble des points M du plan tels que\n\n                        92:@\t<<<<<<<<= \b 3:> <<<<<<= \b :7 <<<<<<=9 \u0005 39:# <<<<<<= \b :@ <<<<<<=9\n\n3)  Soit G le point du plan tel que 3B# <<<<<= \r 2B@ <<<<<= \b 5B> <<<<<\na/Montrer que B ∈ !7>\u001e .\nb/ Montrer que G est le barycentre des points  (J,5) et (I,\nc/Construire alors le point G.\n\n4) Les droites (AG) et (BC) se coupent en E.\na/Montrer que G est le milieu de [AE].\nb/En déduire que E est le barycentre des points B et C affectés de\ncoefficients à déterminer .\nc/Construire sur la figure ci-contre\nà l’aide d’une couleur de\nchoix l’ensemble des points M du plan tels que :\n\nhttp://mathematiques.kooli.me/\n\r :# <<<<<<= \r :E <<<<<=9\nD\u0007 \r 5\u0004&'\t\u0002@, 3D\u0004.\n\u0004\t&'\t\u0002>, \r3D\u0007 \b 4\u0004.\nDéterminer la valeur de m pour que I soit le milieu de [AB] et\n\nle barycentre des points B et D affectés de\nd/Déterminer l’ensemble des points M du plan tels que\n9\nB> <= \u0005 0<=.\ndes points  (J,5) et (I, -2).\nb/En déduire que E est le barycentre des points B et C affectés de\nà l’aide d’une couleur de votre\n:\n\nBon\ntravail"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_013",
@@ -416,7 +428,8 @@
           "points": "3.5 points",
           "statement": "Soit OAB un triangle équilatéral de côté 3. On désigne par ( C ) le cercle de centre O passant par A .\nSoit C le point diamétralement opposé à B sur le cercle (C )\n1) a) Construire les points D =\nOAt (A)\n et E =\nOAt (B)\n\n    b) Montrer que OBED est un trapèze isocèle\n2) Soit l’application f : P →P ;\nM M' telque:MM' 2MA MC MB  \n\n     Montrer que f est la translation de vecteur\nOD\n\n3) Construire C ' =\nODt\n  C  et montrer que E C '\n4) La droite (BE) recoupe le cercle ( C ') en F. Montrer que\nODt (B)\n = F.\n5) La droite (FD) recoupe le cercle (C ’) en G.\n    a) Déterminer\nODt (OB)\n .\n    b) En déduire que\nODt (C)\n = G"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_014",
@@ -446,7 +459,8 @@
           "points": "9 points",
           "statement": "Soit (*-) la suite telle que :\n\nA/Dans cette partie on fixe : \u0013 = −\n\u0011\n;\n , \u0014 = \u0017 <= \u0016 = >.\n1/a) Calculer *\u0002.\n    b) La suite U est-elle arithmétique ? géométrique ?\n2/ On définit la suite (0-) telle que  0- = * - − 2.\na)  Montrer que (0-) est une suite géométrique de raison −\n1\n\u0002\n .\nb)  Exprimer 0- ?,@) *- en fonction de n.\nc)  Calculer  la somme S = *: + * 1 + * \u0002+ ⋯ + * A.\n\nB/Dans cette partie on fixe : \u0013 = ; , \u0014 = −\u0011 <= \u0016 = \u0017.\n      Soit  B- = * -\u00101 − *-.\n1/a)Calculer    B\u001c − B\u001c−1 ?C,& \u001c ∈ \u001e\u001f ∗\n    b) Déduire que (B\u001c) est une suite constante et calculer  B:.\n2/a)Déduire que ( *-) est arithmétique de raison - 3.\nb) Déterminer trois termes d’indices pairs consécutifs de la\nsuite (*\n-) dont la somme est  − 96.\nc) Calculer  S= *:\n\u0002 − *1\n\u0002 + *\u0002\n\u0002 − *D\n\u0002 + ⋯ + *1:\n\u0002 − *11\n\u0002.\n Bon\ntravail  :)"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_015",
@@ -476,7 +490,8 @@
           "points": "9 points",
           "statement": "Soit 0 la fonction définie par 1\u0006&\nH désigne sa courbe représentative dans un repère orthonormé\n1)  a/ Préciser l’ensemble de définition de\nb/ Tracer l’hyperbole H .\n\n2)  Soit la droite 2:(\u0015\n&34\n'\na/ Montrer que \u000b coupe H en un seul point E que l’on précisera.\nb/ Tracer la droite \u000b.\n\n3)  Soit la fonction 5 définie par 6\u0006\n           Soit  P sa courbe représentative dans le même repère.\na/ Montrer que P et HH HH se coupent en trois points A, B et C\nb/ Tracer P dans le même repère.\nc/ Résoudre graphiquement l’inéquation\n\n4)  Soit ∆7:(\u00157&\u0012*   où \u000e∈ \u001a-\na/ Déterminer m pour que ∆\f soit perpendiculaire à\nb/ Pour la valeur de m trouvée\n\n5)  On considère la fonction 8 définie par\nSoit C  sa courbe représentative.\n      a/ Ecrire 8\u0006\u000f\t sans le symbole de la valeur absolue.\nb/ Tracer la courbe C à l’aide de\nPréciser les asymptotes à la courbe\nc/ Décrire les variations de la fonction\nd/ Discuter selon le paramètre réel\n\n   /http://mathematiques.kooli.me\n\n\u0015 '&\u00109\n&\u00104\ndésigne sa courbe représentative dans un repère orthonormé \u0006\",#$,%$\na/ Préciser l’ensemble de définition de  0, le centre de l’hyperbole H et les équations des asymptotes.\nen un seul point E que l’on précisera.\n\u0006&\t\u0015\u0010& '\u00129 .\nsa courbe représentative dans le même repère.\nse coupent en trois points A, B et C  dont on précisera les coordonnées.\ndans le même repère.\nc/ Résoudre graphiquement l’inéquation\n'&39\n&34 \u0012&':9\n\u001a- .\nsoit perpendiculaire à \u000b.\n ; montrer que ∆\f coupe P en un seul point F que l’on précisera.\ndéfinie par ;\u0006&\t\u0015 9\u0010'&\n|&\u00104|  .\nsans le symbole de la valeur absolue.\nà l’aide de HH HH dans le même repère.\nPréciser les asymptotes à la courbe C .\nc/ Décrire les variations de la fonction 8 à l’aide du graphique.\nd/ Discuter selon le paramètre réel  < le nombre de solutions de l’équation 8\nbon travail bon travail bon travail bon travail Et surtout Et surtout Et surtout Et surtout\n                                   Page 2\net les équations des asymptotes.\ndont on précisera les coordonnées.\nen un seul point F que l’on précisera.\n8\u0006\u000f\t\u0015<\n♥ bon travail bon travail bon travail bon travail"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_016",
@@ -516,7 +531,8 @@
           "points": "5points",
           "statement": "Le plan est rapporté à un repère orthonormé\n1) On considère les points 7(3,1) ;\na/ Montrer que pour tout réel  , le poin\nb/ Déterminer le réel D pour que la droite\n2) On pose E(2,\u001d1).\n       a/ La base de vecteurs (E7 FFFFFFG ,EH FFFFFFG\nb/ Déterminer les composantes du vecteur\n              http://www.mathematiques.tk/\nLycée pilote 15 octobre 1963\n\nProf: Mme  Bayoudh\nWxäÉ|Ü  wx WxäÉ|Ü  wx WxäÉ|Ü  wx WxäÉ|Ü  wx vÉÇàÜ¨Äx vÉÇàÜ¨Äx vÉÇàÜ¨Äx vÉÇàÜ¨Äx     Ç¥ Ç¥ Ç¥ Ç¥\nPour chacune des questions suivantes, répondre par vrai ou faux  en justifiant la réponse.\n admet deux racines ayant pour somme 3.\nL’ensemble de solutions de l’inéquation  √$\u001d2 \u001f3   est  JKL (:2,11 :.\n(.  \u001d7)$%. ( 0  (où  $ désigne l’inconnue).\n pour que 1 soit une racine de (2)\nb/ Pour chacune des valeurs trouvées de .,  résoudre dans IR l’équation (\npour que l’équation (2) admette  deux racines inverses.\n(P8\u001d2 √15 \u001dP8%2 √15      et   9 (P7%\n. En déduire une expression plus simple de 7.\nest un entier .\n: 2R.\nEcrire sans le symbole de la valeur absolue l’expression  : 2 ($|$\u001d1 |%\n|$\u001d2 |S2    pour tout $ ∈:1,2R.\nest un parallèlogramme  de centre I.\n9@2   ont le même centre de gravité .\nrapporté à un repère orthonormé (H,V G ,W G ).\n; 9(0,\u001d5) et E(D ,2D\u001d5).\na/ Montrer que pour tout réel  , le poin t H appartient à la droite (79).\npour que la droite (HE) soit perpendiculaire à (79\nEH G)est-elle orthonormée ? Justifier.\nb/ Déterminer les composantes du vecteur H9 FFFFFG  dans cette basse.\nhttp://www.mathematiques.tk/                                                        Bon travail et bonne chance Bon travail et bonne chance Bon travail et bonne chance Bon travail et bonne chance\npilote 15 octobre 1963  - Bizerte\n\nClasse Classe Classe Classe\nDate Date Date Date\nÇ¥ Ç¥ Ç¥ Ç¥ DD DD    xÇ Åtà{°Åtà|Öâxá xÇ Åtà{°Åtà|Öâxá xÇ Åtà{°Åtà|Öâxá xÇ Åtà{°Åtà|Öâxá\nen justifiant la réponse.\n\ndésigne l’inconnue).\n(2).\nadmette  deux racines inverses.\nP %4√3\n%3|$\u001d2 |\n79 )\nBon travail et bonne chance Bon travail et bonne chance Bon travail et bonne chance Bon travail et bonne chance\nClasse Classe Classe Classe     :: ::    22 22ème ème ème ème     Sciences Sciences Sciences Sciences 66 66\nDate Date Date Date     : : : : 23 23 23 23 // //10 10 10 10 /201 /201 /201 /201 33 33\nDurée Durée Durée Durée     :: ::    1 heure 1 heure 1 heure 1 heure\nhttp://mathematiques.kooli.me/"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_017",
@@ -536,7 +552,8 @@
           "points": "6 points",
           "statement": "P a g e  2 | 2\n\n    On donne ci - dessous un trapèze  ABCD tel que     2 AB=  DC3 .\nSoit I le milieu du segment [AB] et G le point défini par       3 GI=  AB2 .\n1)  a) Montrer que G  est le barycentre des points pondérés ( I , 2 ) et ( A , - 3 )  .\n     b) Montrer que le quadrilatère GICD est un parallélogramme. Construire le point G.\n\n     c) Montrer que G  est le barycentre des points pondérés ( A ,  3 ) ; ( C , - 2 ) et ( D , 2 )\n\n2) La droite passante par I et parallèle à ( AD ) coupe ( DC) en K .\n\n     a) Montrer que  DKIA est un parallélogramme.\n\n     b) Montrer que  K  est le barycentre des points pondérés ( A , -1 ) ; ( B , 1 ) et ( D , 2 ).\n\n3) Soit le point  H  défini  par :        2AH+BH 2 CH+4 DH= 0.\n    a) Montrer que H  est le barycentre des points pondérés ( G , 3 ) et ( K , 2 ) .\n       Construire le point H .\n              b) Déterminer et construire l’ensemble :\n\n                         -          = M Plan  / 2AM+BM 2 CM+4 DM = 5 MB 5 MC\n\nFigure"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_018",
@@ -566,7 +583,8 @@
           "points": "8points",
           "statement": "Soit ABC un triangle inscrit dans un cercle C  de centre I.\n1)  a/ Construire le cercle C ' image du cercle  C  par la translation de\nvecteur \u0015\u0016 \u0017\u0017\u0017\u0017\u0017\u0017\u0018 . Soit I’ son centre.\n  b/ La droite (AB) recoupe  C ' en D . Montrer que  \u0019\u0015\u0016 \u0017\u0017\u0017\u0017\u0017\u0017\u0018\r\u0016\u000e=\u001a .\n2)  a/ Construire \u001b\u001c=\u0019\u0015\u001b \u0017\u0017\u0017\u0017\u0017\u0018\r\u001b\u000e\nb/ La droite (DC’) recoupe C ' en E . Montrer que  \u0019\u0015\u0016 \u0017\u0017\u0017\u0017\u0017\u0017\u0018\r\u001b\u000e=\u0010 .\nc/ On suppose que les points A et C sont fixes et B est variable sur\nle cercle C  distinct de A et C.\nDéterminer le lieu du point E lorsque B varie.\n3)  Soit F le deuxième point d’intersection de C et C ’.\na/ Montrer que les points F , I et A sont alignés.\nb/ Soit F’ le point diamètralement opposé à B sur\nC ’.\nMontrer que  \u0019\u0015\u0016 \u0017\u0017\u0017\u0017\u0017\u0017\u0018\r\u001d\u000e=\u001d′ .\n4)  Une droite ∆ passant par F recoupe C  en M et C ’  en N.\nMontrer que \u0019\u000f\u0003\u0003\u001c\u0017\u0017\u0017\u0017\u0017\u0018\r\r\u0015 \u000e\u000e=\r\u001a\u0004\u000e\n\n                ⁄ _:tÑÑÜÉv{x xáà àÉâ}ÉâÜá ÑÄâá uxÄÄx Öâx Ä:tÜÜ|ä°xA  ⁄ TÄt|Ç @YÉâÜÇ|xÜ\n                                                                                                             UÉÇ àÜtät|Ä\n\n                        http://mathematiques.kooli.me/\nLycée Pilote 15 octobre 1963 - Bizerte\nProf: Mme  Bayoudh\nWxäÉ|Ü  wx vÉÇàÜ¨Äx  Ç¥ F\nxÇ Åtà{°Åtà|Öâxá\nClasse  :2ème  Sciences 6\n\njanvier 2014  Durée  : 1 heure"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_019",
@@ -596,7 +614,8 @@
           "points": "7 points",
           "statement": "Soit V  un cercle de centre . et / un point de V , on note \r le milieu du segment 0./ 1.\nSoit ∆ la médiatrice du segment 0./ 1, ∆ coupe le cercle  V   en 3 et  4 .\n1)   a/ Construire en justifiant  ∆′ l’image de la droite ∆ par la translation de vecteur  .\r 666667.\nb/ Construire VË  l’image du cercle V   par la translation  de vecteur 2./ 666667 , on note .′ son centre.\nc/ Montrer que la droite ∆′ est une tangente commune aux cercles V et VËA\n2)   Soit 8 le symétrique du point 4 par rapport au point ..\na/ Construire le point 3’ = :\n;< 6666667\u001f3!\n      b/ Montrer que les points 8, 3 et 3’ sont alignés.\n     c/ La droite \u001f33’! recoupe le cercle  VË   en 8’. Montrer que :\n;< 6666667\u001f8! = 8′\n3)   Soient  = = : <> 666667\u001f8! et  ? = : @< 666667\u001f=!.\nMontrer que  4 = : A@ 666667\u001f?!.                                                                          http://mathematiques.kooli.me/\n                                                                                UÉÇ àÜtät|Ä  xà uÉÇÇx v{tÇvx\nLycée pilote 15 octobre 1963 - Bizerte\n\nProf: Mme  Bayoudh\nClasse  : 2ème  Sciences 4\nDate  : 29 /01/201 5\nWxäÉ|Ü  wx vÉÇàÜ¨Äx  Ç¥ F  xÇ Åtà{°Åtà|Öâxá  Durée  : 1 heure"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_020",
@@ -626,7 +645,8 @@
           "points": "8points",
           "statement": "Soit  CC CC  un cercle de centre   et de rayon\nOn désigne par \u0007 l’homothétie de centre\n1)  Construire le cercle C ’ C ’ C ’ C ’ \u0014\u0007 (\n2)  Les cercles  CC CC  et C ' C ' C ' C '  se coupent en\nLa droite \f\u0002\u001d\u000f recoupe C  C  C  C  en\na/ Déterminer  \u0007\f\u0002) et \u0007\f!\u000f\nb/ Montrer que \f\"\u001e \u000f∥\f\u0002\u0003\n3\u000f  Soit % le projeté orthogonale de\nMontrer que \u001d ,% et  %’ sont alignés.\n4)  On suppose dans cette question que l\nQuel est le lieu des points\nhttp://mathematiques.kooli.me/\nLycée Pilote 15 octobre 1963\n\nProf: Mme  Bayoudh\nWxäÉ|Ü  wx WxäÉ|Ü  wx WxäÉ|Ü  wx WxäÉ|Ü  wx vÉÇàÜ¨Äx vÉÇàÜ¨Äx vÉÇàÜ¨Äx vÉÇàÜ¨Äx     Ç¥ Ç¥ Ç¥ Ç¥ DD DD\n\u0006\u0002\u0003 ' et \u0006\u0004\u0005 ' tel que  \u0002\u0003(\u0004\u0005 .\n\b qui transforme \u0006\u0002\u0003 ' en \u0006\u0004\u0005 '.\nRépondre par vrai ou faux en justifiant  :\n\u0007  est la droite passant par C et parallèle à (AD).\nétant une suite arithmétique.\nRépondre par vrai ou faux en justifiant  :\nalors le reste de la division euclidienne de \r\u000e par 3 est 2.\nindépendantes.\n) une suite arithmétique de raison )\u0014\u001c\u0012  et telle que  \u0017\u0012\u0014\u001c\u000b .\n\u0017\u000e en fonction de n.\n .  \u0019\u0017\u000e\nen fonction de n .\nsachant que  \u0018\u000e\u0014\u001c\u0013\u000b\n.  \u0019\u0017\u000b\t     et    \u0018′\u0014\u0017 \u0015\u0019\u0017\u0016\u0019 .  .  .  \u0019\u0017\u000b\u000b\n\u000b\t\t   et que  \u0018′\u001c\u0018\u0014\u001c\u000b\net \u0018’\npar  :+\n\r\t\u0014\u000b\n\r\u000e\u0011\u000b\u0014,\u0015\u0019\r \u000e\u0012\n-\n\r\u000e) est- elle arithmétique ? Justifier.\n\u001d\u001e  par  \u001f\u000e\u0014\r \u000e\u0012\n) est une suite arithmétique. Préciser sa raison.\n\u001f\u000e en fonction de \u000e.\n\u000e.\net de rayon ., \u001d est un point tel que   \u001d\u0014\n.\n\u0015 .\nl’homothétie de centre \u001d et de rapport  \b\u0014\u001c\n\u0015\n\u0012\n .\n( C C C C ) . Soit  ’ son centre .\nse coupent en \u0002 et  \u0003.\nen ! et     C ’ C ’ C ’ C ’ en \"  et la droite \f\u0003\u001d\u000f recoupe C C C C en /\n\n\u0002\u0003 \u000f et que  \"\u001e 0000001\u0014\n2\n\u0010\n!/ 00000001.\nle projeté orthogonale de   sur \f\u0002/\u000f et %’ le projeté orthogonale de\nsont alignés.\nOn suppose dans cette question que l e point \u001d est variable sur le cercle Γ de centre\n’ lorsque   varie ?\nhttp://mathematiques.kooli.me/                                                                                                                     Bon travail Bon travail Bon travail Bon travail\nPilote 15 octobre 1963  - Bizerte Classe Classe Classe Classe\nDate Date Date Date\nDD DD    xÇ Åtà{°Åtà|Öâxá xÇ Åtà{°Åtà|Öâxá xÇ Åtà{°Åtà|Öâxá xÇ Åtà{°Åtà|Öâxá                                                         Durée Durée Durée Durée\nest la droite passant par C et parallèle à (AD).\npar 3 est 2.\n/ et     C ’ C ’ C ’ C ’   en  \u001e.\nle projeté orthogonale de  ’ sur \f\u0003\"\u000f .\nde centre   et de rayon\n.\n\u0015.\nBon travail Bon travail Bon travail Bon travail\nClasse Classe Classe Classe     :: ::22 22ème ème ème ème     Sciences Sciences Sciences Sciences     66 66\n    : Le : Le : Le : Le 19/0 19/0 19/0 19/0 2/ 2/ 2/ 2/ 201 201 201 201 44 44\nDurée Durée Durée Durée     :: ::    11 11    heure heure heure heure"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_021",
@@ -656,7 +676,8 @@
           "points": "9points",
           "statement": "La courbe (C)  ci-dessous est la représentation graphique d’une fonction\n1)  Utiliser le graphique pour répondre aux questions suivantes\na/ Déterminer \u0001\u001e\u0010#.\nb/ Décrire les variations de \u0001\nc/ \u0001 admet-elle un maximum sur\n    \u0001 admet-elle un minimum sur\nd/ Résoudre dans IR l’équation\ne/ Résoudre dans IR l’inéquation\nf/ Soient\n et , deux réels de\n\n2)  On admet que la fonction \u0001 vérifie  pour tout\nOn pose -\u001e\u0005#\f −\u0006\u0005%')\u0005\na/ Etudier la parité de la fonction\nb/ Déduire que \u0001 est une fonction impaire.\nc/ Déterminer alors l’expression de\n\n3)  Soit h la fonction définie sur IR par\na/ Montrer que . est une fonction\nb/ Tracer alors la courbe de\n\n                                       http://mathematiques.kooli.me/\ndessous est la représentation graphique d’une fonction\n\nUtiliser le graphique pour répondre aux questions suivantes  :\n\u0001 sur IR.\nelle un maximum sur /–\u0010,\u00060 ? Si oui le préciser.\nelle un minimum sur /–\u0010,\u00060 ? Si oui le préciser.\nd/ Résoudre dans IR l’équation |\u0001\u001e\u0005#|\f\u0006 .\ne/ Résoudre dans IR l’inéquation \u0001\u001e\u0005# ≤ −\u0006.\ndeux réels de \u001a\u001b,\u0010\u001d  tels que\n1, . Comparer \u001e\u0001\u001e\n##\u0006\nvérifie  pour tout   x ∈+2 ,  %\u0001 \u001e−\u0005#'\u0001\u001e\u0005#\na/ Etudier la parité de la fonction -\nest une fonction impaire.\nc/ Déterminer alors l’expression de \u0001\u001e\u0005#.\nSoit h la fonction définie sur IR par .\u001e\u0005#\f\u0001 \u001e|\u0005|#\nest une fonction   paire et que pour tout \u0005 ∈+2 3 , .\n . à partir de (C) dans le même repère.\n\n                                                                                  Page 2\nhttp://mathematiques.kooli.me/\ndessous est la représentation graphique d’une fonction \u0001 définie sur IR.\n#\u0006  et  \u001e\u0001\u001e,##\u0006.\n\u001e #\f −\u0006\u0005%')\u0005 .\n.\u001e\u0005#\f\u0001\u001e\u0005# .\n\n        UÉÇ àÜtät|Ä UÉÇ àÜtät|Ä UÉÇ àÜtät|Ä UÉÇ àÜtät|Ä"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_022",
@@ -686,7 +707,8 @@
           "points": "9 points",
           "statement": "Dans le graphique ci-dessous , on a\nreprésentation graphique d’une fonction\n1)   Déterminer les réels \", 7 et \u0018  .\n2)  Dans la suite on admet que pour tout\nSoit  8 la fonction définie sur 9:\nOn désigne par PP PP’’ ’’ la courbe représentative de\na/ Préciser le sommet et l’axe de la parabole\n           b/ Montrer que les paraboles     PP PP et\n           c/ Tracer la parabole PP PP’ ’ ’ ’ dans le\n           d/ Résoudre graphiquement l’inéquation\n3)  Soit  ; la fonction définie sur 9:\na/ Tracer la courbe de  ; à partir de celle de\nb/ Discuter selon le paramètre 6\n4)  Soit F(3,-1) et \u0016 : & \u0012 \f2\n          Choisir un point N de la parabole\nF à la droit D\n\n, on a  tracé dans un repère orthonormé \u0002\u0003, \u0005 \u0006, \u0007 \u0006\b, la parabole\nreprésentation graphique d’une fonction < définie sur 9:  par <\u0002'\b \u0012 \"' \u001c \u0010 7'\n\nDans la suite on admet que pour tout ∈ 9:  , <\u0002'\b \u0012 \f' \u001c \u0010 3' \u0010 3\n9:  par \u0002'\b \u0012\n>\n\u001c\n'\u001c \f 3' \u0010 3  .\nla courbe représentative de 8 dans le même repère \u0002\u0003, \u0005 \u0006, \u0007\u0006\b\nPréciser le sommet et l’axe de la parabole  PP PP’. ’. ’. ’.\net     PP PP’’ ’’ ont deux points d’intersection dont on\n même repère \u0002\u0003, \u0005 \u0006, \u0007 \u0006\b.\nd/ Résoudre graphiquement l’inéquation 8\u0002'\b ? <\u0002'\b\n9:  par ;\u0002'\b \u0012 @\n>\n\u001c\n'\u001c \f 3' \u0010 3@  .\nà partir de celle de 8\n6 le nombre de solutions de l’équation ;\u0002'\b\nChoisir un point N de la parabole P’ P’ P’ P’ et montrer que  la distance  FN est égale à la distance du point\n\n                                         Page 2\nla parabole PP PP\n7' \u0010 \u0018 .\n\u0006\b.\ndont on  précisera les coordonnées.\n\b \u0012 6\nFN est égale à la distance du point\n                                                                                                                                                                    UÉÇ àÜtät|Ä UÉÇ àÜtät|Ä UÉÇ àÜtät|Ä UÉÇ àÜtät|Ä"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_023",
@@ -721,7 +743,8 @@
           "points": "4 points",
           "statement": "Dans le plan muni d’un repère orthonormé (O, )j,i  on donne les points A (a, 0) et B (1, a) ou a est un paramètre\nréel et le vecteur \n\n\n\n\n\n2\n1u .\n1) Déterminer a pour que :\na) ABetu  soient  colinéaires.\nb) ABu \nc) uAB \n2) Dans cette question on prend a = 1.\nMontrer que le triangle OAB est isocèle et rectangle en A.\n\nProf : Boufares Amor\nL.S.A.B.K.K\nDevoir de synthèse N°1\nDate : Décembre 2011\n2ème Sciences\nDurée : 2 h"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_024",
@@ -756,7 +779,8 @@
           "points": "6 points",
           "statement": "On considère un losange direct EFGH, le milieu K de [FG] et l’application f qui à\ntout point M du plan associe le point M’ tel que    ⃗⃗⃗⃗⃗⃗⃗ =   ⃗⃗⃗⃗⃗⃗ +  ⃗⃗⃗⃗⃗⃗ .\n1) Montrer que f est la translation de vecteur   ⃗⃗⃗⃗⃗ .\n2) a) Construire A=f(G) et, le milieu L de [AH] et le projeté orthogonal O’ de A\nsur (FH).\nb) Montrer que H est le milieu de [AE] et que f(K)=L.\n3) a) Déterminer f((FH)) et f((EG)) puis déduire que f(O)=O’.\nb) Déterminer et construire      image par f du cercle     de centre O passant\npar G puis justifier que A       .\nc) La droite (AO’) recoupe      en B. Montrer que f(E)=B.\n4) M est un point variable tel que EGM soit un triangle rectangle en M. N est le\npoint tel que HFMN soit un parallélogramme.\nDéterminer l’ensemble des points N lorsque M varie.\n\n                                                                 H\n\n                                            E                  O                       G\n                                                                  F          K"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_025",
@@ -791,7 +815,8 @@
           "points": "6\n\npoints",
           "statement": "O\nn\ndonne\n\nci\n-\ndessous,\n ABCD\n\nun carré\nin\ndirect\nde centre O et\nE le symétrique de C par\n\nrapport à B\n.\n\nOn désigne par I et\nJ les milieux respectifs\n\ndes\nsegment\ns\n\nde\n\n[AB] et [AD]\n.\n\n𝐈\n)\nSoit\n\n𝐡\n\n𝐥\n’\n𝐡𝐨𝐦𝐨𝐭𝐡\né\n𝐭𝐢𝐞\n\n𝐝𝐞\n\n𝐜𝐞𝐧𝐭𝐫𝐞\n\n𝐀\n\n𝐞𝐬𝐭\n\n𝐝𝐞\n\n𝐫𝐚\n𝐩𝐩𝐨𝐫𝐭\n\n𝟏\n𝟐\n.\n\n1)\nJustifier que h(B)=I , h(C)=O et h(D)=J\n\n2)\nEn déduire que le quadrilatère A\nI\nO\nJ\n\nest\nun carré.\n\n𝐈𝐈\n)\nSoit\n\n𝐑\n\n𝐥𝐚\n\n𝐫𝐨𝐭𝐚𝐭𝐢𝐨𝐧\n\n𝐢𝐧𝐝𝐢𝐫𝐞𝐜𝐭\n\n𝐝𝐞\n\n𝐜𝐞𝐧𝐭𝐫𝐞\n\n𝐀\n\net\n\nd\n’\nangle\n\n𝝅\n𝟐\n.\n\n1)a)\n\nJustifier\nque R\n(B)=D\n.\n\nb)\n\nMontrer que AE=\n√\n2\n𝐴𝐵\n. En déduire que AE=AC.\n\nc\n)\nMontrer alors que\nR\n(E)=C.\n\nd\n)\n\nDéterminer alors l’image de la droite (BE) par R\n.\n\n2)\na)\n\nMontrer\n\nque R(I)=J\n.\n\nb)\n\nDéduire que les droites (I\nD\n) et (CJ) sont\np\nerpendiculaires\n.\n\n3\n)\nSoit (\nC\n\n) le\n\ncercle de\ncentre\nB\n\net passant par C\net\n(\nC\n\n‘\n\n)\nson image par R\n.\n\nLa droite\n(CJ)\n\nre\ncoupe\nle cercle\n(\nC\n\n)\n\nen M et recoupe le cercle\n(\nC\n\n‘\n)\n\nen N .\n\nMontrer que le triangle AMN est rectangle et isocèle en A\n\n.\n\nPage 3 /3"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_026",
@@ -826,7 +851,8 @@
           "points": "5\n,5\n\npoints",
           "statement": "Dans\n\nla figure ci\n-\ndessous,\n\nACB\ndésigne un\n\ntriangle\nrectangle et\n\nisocèle en C de sens\nindirect,\n\nO\n\nest\n\nle milieu du segment [AB]\net I\n\nun point du segment [OC] distinct de O\net de C\n.\n\nSoit\n\n𝐑\n\nla\n\nrotation\n\n𝐢𝐧𝐝𝐢𝐫𝐞𝐜𝐭𝐞\n\nde\n\ncentre\n\n𝐎\n\net\n\n𝐝\n’\n𝐚𝐧𝐠𝐥𝐞\n\n𝛑\n𝟐\n\n1)\n\na)\n\nJustifier\n\nque R(A)=C et que R(C)=B.\n\nb)\n\nDéterminer alors l’image de la droite (AC) par R\n\nc)\n\nMontrer que R((OC)) =(AB).\n\n2)\nLa droite ∆ passant par C et perpendiculaire à (AI) coupe (AB) en J.\n\na)\n\nMontrer que R((AI)) =∆.\n\nb)\n\nDéduire qu\ne\n\nle triangle 0IJ est rectangle et isocèle en\nO.\n\n3\n)\n\nSoient\n\n(\nC\n)\n\net\n\n(\nC\n\n’)\n\nles\n\ncercles de diamètres respectifs [AC] et [BC]\n\nMontrer que\n(\nC\n\n’\n\n)\n\nest l’image de\n(\nC\n)\n\npar\nR.\n\n4\n)\n\nOn désigne par E le point d’intersection de ∆ et (AI)\n,\n\net par F le deuxième point\n\nd’intersection\n\nde ∆ et de\n(\nC\n’\n\n)\n\n.\n\na)\n\nJustifier\n\nque\n\nE appartient au cercle\n(\nC\n).\n\nb)\n\nDéduire que\nR(E)=F\n.\n\nc\n)\n\nDéterminer l’\ni\nmage du cercle circonscrit au triangle OIJ par la rotation R\n.\n\nPage 3 / 4\n\nAnnexe à rendre\n\nNom……………………………………………………Prénom\n……………\n……………………………\n……\n\nPage 4 / 4"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_027",
@@ -866,7 +892,8 @@
           "points": "",
           "statement": "1) c)                                                                  d)"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_028",
@@ -886,7 +913,8 @@
           "points": "",
           "statement": "L.P.A  (2023/2024)                             Synthèse :2                           Durée : 2h   (2ème)\n𝑬𝒙𝒆𝒓𝒄𝒊𝒄𝒆: 𝟏                                                                                                           (5pts)\nDans un repère orthonormé, on a tracé 𝐶𝑓 et 𝐶𝑔les courbes respectives des deux fonctions 𝑓\net 𝑔 qui sont définies sur ℝ  telles que :\n∗ 𝐶𝑓 coupe l’axe des abscisses en trois\npoints :  A(−\n3\n2 , 0) ; B(−\n1\n3,0) et C(\n17\n9 ,0)\n∗∗ 𝐶𝑓 et 𝐶𝑔se coupent en trois points :\nA’(−√2,\n1\n2) ; B(−\n1\n3,0) et  C’(2,1) .\nEn utilisant ces deux courbes répondre\naux questions suivantes (sans justification):\n1°⟧ 𝑓(−2) = ⋯     ; 𝑔(−√2) = ⋯\nLes antécédents de 0 par 𝑓\nsont    :………………………………..\n2°⟧ Donner la parité de 𝑔 puis de 𝑓 :       𝑔  est ……………… ;  𝑓 est………………….…\n3°⟧ Donner le tableau de signes de 𝑓     ……………………………………………………………\n………………………………………………………………………………………………………………………….\n………………………………………………………………………………………………………………………….\n4°⟧ Donner (dans un tableau) les variations de 𝑓 ………………………………………………\n………………………………………………………………………………………………………………………….\n………………………………………………………………………………………………………………………….\n5°⟧ Donner le domaine de définition de la fonction ℎ où ℎ(𝑥) = √𝑓(𝑥) − 1\n……………………………………………………………\n6°⟧ L’ensemble des solutions de l’inéquation : 𝑓(𝑥) ≤ 𝑔(𝑥) est………………………..\n7°⟧ Si  𝑥 𝜖[0, 𝜋]    Alors      … ≤ 𝑓(sin 𝑥) ≤ ⋯\n                                                                                                                             Page :1/4\nCf\nCg\n2-1-2\n2\n3\n-1\n-2\n-3\n0 1\n1\nx\ny\n𝑬𝒙𝒆𝒓𝒄𝒊𝒄𝒆: 𝟐                                                                                                            (5pts)\n\nSoit la suite (𝑢𝑛) définie sur ℕ par :  𝑢0 = 100   et  𝑢𝑛+1 = 0,8𝑢𝑛 + 400.\n1°⟧ a) Calculer 𝑢1 et 𝑢2.\n       b) Montrer que pour tout 𝑛ϵℕ on a :\n                     Si  𝑢𝑛ϵ[0; 2000]    Alors  𝑢𝑛+1ϵ[0; 2000].\n2°⟧ Soit la suite (𝑣𝑛) définie sur ℕ  par :  𝑣𝑛 = 𝑢𝑛 − 2000.\na) Montrer que (𝑣𝑛) est une suite géométrique dont-on précisera la raison et\nson premier terme.\nb) Exprimer 𝑣𝑛en fonction de 𝑛 puis montrer que pour tout 𝑛ϵℕ on a :\n                             𝑢𝑛 = −1900 × (0,8)𝑛 + 2000.\n3°⟧ a) Comparer 𝑢𝑛 et 𝑢𝑛+1 où 𝑛ϵℕ.\n       b) Calculer la somme : ∑ 𝑢𝑘\n𝑘=14\n𝑘=5 .\n4°⟧ En 2023, ZEINEB compte 100 abonnés à son profil ( instagram ).\nSachant que chaque année, elle perd 20% de ses abonnés auxquels s’ajoutent\n400 nouveaux abonnés, la mère de ZEINEB souhaite que le nombre d’abonnés\nn’atteigne pas 2000.\n          a) Calculer le nombre d’abonnés en 2024 puis en 2025.\n          b) Déterminer en quelle année le nombre d’abonnés dépassera 1800 .\n          c) Le souhait de la mère de ZEINEB est-il possible ? Justifier.\n\n                                                                                                                             Page :2/4\n𝑬𝒙𝒆𝒓𝒄𝒊𝒄𝒆: 𝟑                                                                                                            (5pts)\n1°⟧ Soit 𝑡 un réel strictement positif.\n         a) Montrer que :  𝑡5 − 𝑡4 − 1 = (𝑡2 − 𝑡 + 1)(𝑡3 − 𝑡 − 1).\n         b) En déduire que : 𝑡5 − 𝑡4 − 1 = 0 ⟺ 𝑡3 = 𝑡 + 1\n2°⟧ Dans la figure ci-contre, la droite (AB) est\ntangente au cercle 𝐶 en B et P un point du\ncercle 𝐶 (comme indique la figure).\nOn donne :     AP= 𝑥 > 0 ,   BC = 1  ,\n AB = 𝑥2, AC = √𝑥5 et  𝐴𝑃𝐶̂ = 𝑚\na) Montrer que : 𝑥5 = 𝑥4 + 1.\nb) Exprimer AC en fonction de :   AP  , PC  et\ncos 𝑚\n c) Déduire que :  𝑚 =\n2𝜋\n3\n d) Calculer alors l’aire du triangle APC en fonction de 𝑥 ainsi que le rayon de\nson cercle circonscrit.\n3°⟧ Le point P peut-il être le centre de gravité du triangle ABC ? Justifier.\n4°⟧ On a représenté sur la figure ci-contre :\n la droite D : 𝑦 = 𝑥 + 1 et 𝜑𝑓 la représentation\ngraphique d’une fonction  𝑓 où 𝑓(𝑥) = 𝑥3.\nD et 𝜑𝑓 se coupe au point M d’abscisse 𝒃.\na) Montrer que : 𝑏5 − 1 = 𝑏4.\nb) Montrer que :\n  Si   𝑏 = 𝑡𝑎𝑛2 𝑎   Alors   𝑠𝑖𝑛2(\n𝜋\n2 − 𝑎) = 𝑠𝑖𝑛3𝑎.\n\n                                                                                                                             Page :3/4\nm\nBA\nC\nP\nD\nb 2-1-2\n2\n3\n-1\n-2\n0 1\n1\nx\ny\nM\n𝑬𝒙𝒆𝒓𝒄𝒊𝒄𝒆: 𝟒                                                                                                            (5pts)\nSoit 𝑓(𝑥) =\n10𝑥\n1+𝑥2   et 𝜑𝑓 sa représentation graphique dans un repère\northonormé.\n1°⟧ Donner le domaine de définition de 𝑓puis étudier sa parité.\n2°⟧ a) Montrer que pour tout 𝑥𝜖[0, +∞[ on a :    0 ≤ 𝑓(𝑥) ≤ 5\n       b) En déduire que le maximum et le minimum de 𝑓 sur ℝ.\n3°⟧ a) Vérifier que pour tous réels positifs 𝑎 et𝑏 tels que 𝑎 ≠ 𝑏 on a :\n𝑓(𝑏) − 𝑓(𝑎)\n𝑏 − 𝑎 = 10(1 − 𝑎𝑏)\n(𝑎2 + 1)(𝑏2 + 1)\n       b) Déterminer alors les variations de f sur [0,1] puis sur [1, +∞[.\n4°⟧ Soit   P(𝑥) = 2𝑥3 − 3𝑥2 − 8𝑥 − 3.\n       a) Sachant que (−1) est une racine  de P, factoriser P(𝑥).\n       b) En déduire les coordonnées des points d’intersections de la courbe 𝜑𝑓 et\nla droite D : 𝑦 = 2𝑥 − 3.\n5°⟧ Dans la figure ci-contre on a représenté 𝜑𝑓 et D.\na) Résoudre graphiquement :  𝑓(𝑥) < 2𝑥 − 3\nb) Soit  g(𝑥) =\n−10|𝑥|\n1+𝑥2\n Etudier la parité de g.\nc) Construire la courbe 𝜑𝑔 à partir de celle de 𝑓.\n\n                                                                                                                             Page :4/4\nD\n0 1\n1\nx\ny"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_029",
@@ -921,7 +949,8 @@
           "points": "4,5 points",
           "statement": "➢ Dans le plan (Q): ABE est un triangle équilatéral .\nOn désigne par I milieu de [AB], J milieu de [AE] et\nK milieu de [EB].(Voir figure)\n 1) Montrer que (OI) est perpendiculaire à (Q)\n 2) Déterminer le plan médiateur de [AB]\n 3) a. Montrer que : IJ=IK=KJ=\n1\n2 AB\n     b. En déduire que I est le centre du cercle\n      C  passant A,B,K et J.\n     c. Déterminer l’axe du cercle C  ? Justifier.\n 4) Exprimer la distance OE en fonction de a .\n\n3 / 5\nSoient (P) et (Q) deux plans perpendiculaires suivant la droite (AB).\n➢ Dans le plan (P) : ABCD est un carré de côté a > 0 et de centre O  .\n\nAnnexe (à rendre avec la copie)\nFigure 1\nNom et prénom :       ......................................................      Classe: 2 ème S c  ......\n𝚤⃗\n𝚥⃗\n4 / 5\nNom et prénom :       ......................................................     Classe: 2ème Sc ......\nFigure 3\nAnnexe (à rendre avec la copie)\n  / 5   5"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_030",
@@ -956,7 +985,8 @@
           "points": "3 points",
           "statement": "Dans la figure ci-dessous SABCD est une pyramide dont la base ABCD est un carré de centre O\net les faces sont des triangles équilatéraux.\nI et J sont les milieux respectifs des segments [SA] et [SC].\n\n1)Répondre sans justification par vraie ou fausse à chacune des affirmations suivantes.\n    a) Les droites (OD) et (IJ) sont sécantes\n    b) La droite (OI) et le plan (SDC) sont Parallèles.\n    c) Les plans (SIJ) et (ABC) sont sécants suivant la droite (AC).\n2) a) Montrer que les droites (DJ) et (SC) sont perpendiculaires\n     b) Montrer que la droite (SC) est le plan (JBD) sont perpendiculaires.\n     c) Montrer alors que les droites (OJ) et (SC) sont perpendiculaires.\n\nAnnexe à rendre\n\nNom ……………………………………………………Prénom…………………………………………………."
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_031",
@@ -991,7 +1021,8 @@
           "points": "4 points",
           "statement": "On considère, dans l’espace, un cube ABCDEFGH\nd’arrête 4, on désigne par O, O’,   et   les milieux\nrespectifs des segments [AC], [FH], [AB] et [BC].\n1) Compléter par parallèles, non coplanaires ou\nsécantes :\na) Les droites (AD) et (OB) sont ……………………………….\nb) Les droites (CH) et (AF) sont  ……………………………….\nc) Les droites (AD) et (FG) sont  ……………………………….\n 2)  Compléter par perpendiculaires ou non perpendiculaires :\na) Les droites (CF) et (BG) sont ……………………………….\nb) Les droites (AB) et (GF) sont  ……………………………….\n3) a) Déterminer le plan médiateur du segment [  ].\nb) En déduire que (  ) et (OF) sont orthogonales.\n4) a) Montrer que (OO’) est l’axe du cercle       circonscrit au triangle ABC.\nb) En déduire que (OO’) et (BF) sont parallèles.\nc) Montrer alors que les droites (OO’) et (GH) sont orthogonales.\n\nhttp://mathematiques.kooli.me/"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_032",
@@ -1021,7 +1052,8 @@
           "points": "7points",
           "statement": "Soit     ⃗    ⃗) Un repère orthonormé du plan.\n1) On donne l’ensemble   ) des points M(x ; y) tel que x2 + 2x +y2 – 4y – 6 = 0\n     a -  Montrer que   ) est un cercle dont on précisera le centre I et le rayon R.\n     b – Déterminer les coordonnées des points d’intersection de   ) avec l’axe des ordonnées.\n2)  soit   : 3x + y – 9 = 0\n   a – Calculer d ( I ;  ), la distance entre I et   . En déduire la position relative de    et  .\n   b – Trouver les coordonnées du point d’intersection de    et  .\n3)  Soit B le point de   d’abscisse 3 , donner une équation cartésienne de la droite D\nmédiatrice de [ I  B] .  Déduire sa forme reduite\n4)  soit D’ : y = -\n\n    a – Montrer que  D est perpendiculaire à  D’.\n    b – Montrer que D’ et ( ) sont sécantes et calculer les coordonnées des points\n       d’intersection.\n\nhttp://mathematiques.kooli.me/\n\n3 Hédi Smida                                                                                                                 2èmme sciences\n\n « Copie à rendre avec le devoir »\n         Nom et Prénom : …………………………………………………..Classe :…………..\n\n                  (Annexe)\nhttp://mathematiques.kooli.me/"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_033",
@@ -1071,7 +1103,8 @@
           "points": "",
           "statement": "1)  Résoudre dans IR les équations suivantes : 0 3x 83x -et    09x 6x 3 22 =+−=−+\n2)  Simplifier alors l’expression 9x6x3\n3x 8x 3A 2\n2\n−+\n+−−=  après avoir déterminer l’ensemble des réels pour\nlesquels A a un sens\n\nhttp://mathematiques.tk/\nProblèmes du 1 ier  et 2 eme  degré    2 eme  Sciences et Informatique"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_034",
@@ -1136,7 +1169,8 @@
           "points": "",
           "statement": "Soit  A , B et 𝐶 trois points non alignés tel que 𝐴𝐵 = 𝐴𝐶 = 5 et = 4 .  𝐼 le milieu de [𝐵𝐶] et le point 𝐽 défini\npar : 𝐵𝐽⃗⃗⃗⃗ = −2𝐵𝐶⃗⃗⃗⃗⃗  .  𝐺 le barycentre des points pondérés (𝐴 ,1) , (𝐵 ,3) et  (𝐶 ,−2)\n1)  Exprimer le point  𝐽 comme barycentre des points 𝐵 et 𝐶\n2)  a) Montrer que 𝐺 est le barycentre des points 𝐴 et 𝐽\n     b) En déduire la position du point 𝐺 sur le segment [𝐴𝐽]\n3)  a) Exprimer, pour tout point 𝑀 du plan, le vecteur 𝑀𝐴⃗⃗⃗⃗⃗⃗ + 3𝑀𝐵⃗⃗⃗⃗⃗⃗ − 2𝑀𝐶⃗⃗⃗⃗⃗⃗  en fonction de 𝑀𝐶⃗⃗⃗⃗⃗⃗\n     b) Exprimer alors en fonction d’une seule distance la norme ‖𝑀𝐴⃗⃗⃗⃗⃗⃗ + 3𝑀𝐵⃗⃗⃗⃗⃗⃗ − 2𝑀𝐶⃗⃗⃗⃗⃗⃗ ‖\n     c) Déterminer l’ensemble 𝐸 des points 𝑀 tel que ‖𝑀𝐴⃗⃗⃗⃗⃗⃗ + 3𝑀𝐵⃗⃗⃗⃗⃗⃗ − 2𝑀𝐶⃗⃗⃗⃗⃗⃗ ‖ = ‖𝑀𝐵⃗⃗⃗⃗⃗⃗ + 𝑀𝐶⃗⃗⃗⃗⃗⃗ ‖\n     d) Tracer l’ensemble 𝐸\n4)  a) Déterminer l’ensemble ∆ des points 𝑀 tel que (3𝑀𝐵⃗⃗⃗⃗⃗⃗ − 2𝑀𝐶⃗⃗⃗⃗⃗⃗ ) ⊥ 𝑀𝐴⃗⃗⃗⃗⃗⃗\n     b) Justifier que le point 𝐼 ∈ ∆ puis tracer l’ensemble ∆.\n\nhttp://mathematiques.kooli.me/     58  300  174"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_035",
@@ -1211,7 +1245,8 @@
           "points": "",
           "statement": "On donne ci-contre la courbe représentative d’une fonction 𝒇\nRépondre graphiquement aux questions suivantes\n1)  Donner le domaine de définition de la fonction 𝒇\n 2)  a) Déterminer les images de −𝟐 et 𝟏 par 𝒇\n      b) Déterminer les antécédents de 𝟎 par 𝒇\n3)  Résoudre dans [−𝟐 , 𝟒]   𝒇(𝒙) = −𝟏  et  𝒇(𝒙) > −𝟏\n4)  a) Dresser le tableau de variation de 𝒇\n     b) Déterminer le signe de 𝒇(𝒙) sur [−𝟐 , 𝟒]\n\nhttp://mathematiques.kooli.me/     58  300  174"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_036",
@@ -1301,7 +1336,8 @@
           "points": "",
           "statement": "Soit la suite réelle (𝑼𝒏) définie sur ℕ par : 𝑼𝟎 = 𝟐  et   𝑼𝒏+𝟏 =\n𝟐𝑼𝒏−𝟏\n𝑼𝒏\n   pour tout 𝒏 ∈ ℕ\n1)  a) Calculer 𝑼𝟏 et  𝑼𝟐\n     b) En déduire que la suite (𝑼𝒏) n’est pas arithmétique.\n4)  Soit la suite réelle (𝑽𝒏) définie sur ℕ par : 𝑽𝒏 =\n𝟑𝑼𝒏−𝟐\n𝑼𝒏−𝟏\n     a) Montrer que (𝑽𝒏) est une suite arithmétique préciser son premier terme et sa raison.\n     b) Exprimer 𝑽𝒏 en fonction de 𝒏 et en déduire que pour tout 𝒏 ∈ ℕ on a : 𝑼𝒏 =\n𝒏+𝟐\n𝒏+𝟏\n5)  Soit 𝑺 = 𝑽𝟎 + 𝑽𝟏 + 𝑽𝟐 + ⋯ + 𝑽𝒏\n     a) Montrer que    𝑺 =\n𝒏𝟐+𝟗𝒏+𝟖\n𝟐\n     b) Déterminer l’entier naturel 𝒏 pour que  𝑺 = 𝟔𝟐\n6)  Soit la suite (𝑾𝒏) définie sur ℕ par :  𝑾𝒏 =\n𝟏\n𝑼𝒏−𝟏\n      a) Montrer que pour tout 𝒏 ∈ ℕ on a : 𝑾𝒏 + 𝟑 = 𝑽𝒏\n      b) Calculer   𝑺′ =\n𝟏\n𝑼𝟎−𝟏 +\n𝟏\n𝑼𝟏−𝟏 +\n𝟏\n𝑼𝟐−𝟏 + ⋯\n𝟏\n𝑼𝒏−𝟏\n\nhttp://mathematiques.kooli.me/     58  300  174"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_037",
@@ -1376,7 +1412,8 @@
           "points": "",
           "statement": "On considère la suite (𝑼𝒏) définie sur ℕ par : {\n𝑼𝟎 =\n𝟏\n𝟑\n𝑼𝒏+𝟏 =\n𝟑𝑼𝒏\n𝟏+𝟐𝑼𝒏\n\nOn suppose que pour tout entier naturel 𝒏, on a :  𝟎 < 𝑼𝒏 < 𝟏\n1)  a) Vérifier que pour tout 𝒏 ∈ ℕ, on a : 𝑼𝒏+𝟏 − 𝑼𝒏 =\n𝟐𝑼𝒏(𝟏−𝑼𝒏)\n𝟏+𝟐𝑼𝒏\n\n     b) En déduire que pour tout 𝒏 ∈ ℕ, on a : 𝑼𝒏+𝟏 > 𝑼𝒏\n2)  soit la suite (𝑽𝒏) définie sur ℕ par :  𝑽𝒏 =\n𝟏−𝑼𝒏\n𝟐𝑼𝒏\n\n     a) Montrer que (𝑽𝒏) est une suite géométrique de raison 𝒒 =\n𝟏\n𝟑\n     b) Calculer 𝑽𝟎 puis exprimer 𝑽𝒏 en fonction de 𝒏\n     c) En déduire que pour tout 𝒏 ∈ ℕ, on a : 𝑼𝒏 =\n𝟑𝒏\n𝟐+𝟑𝒏\n3)  a) Montrer que pour tout 𝒏 ∈ ℕ, on a : 𝟏 + 𝟐𝑼𝒏 =\n𝑼𝒏−𝟏\n𝑼𝒏+𝟏−𝟏\n     b) En déduire que (𝟏 + 𝟐𝑼𝟎) × (𝟏 + 𝟐𝑼𝟏) × (𝟏 + 𝟐𝑼𝟐) × … × (𝟏 + 𝟐𝑼𝒏) =\n𝟐\n𝟑 + 𝟑𝒏\nhttp://mathematiques.kooli.me/     58  300  174"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_038",
@@ -1436,7 +1473,8 @@
           "points": "",
           "statement": "Soit 𝐀𝐁𝐂 est un triangle isocèle en 𝐀 et 𝑯 le projeté orthogonal de 𝐀 sur (𝐁𝐂)\nOn pose 𝑩𝑨𝑯̂ = 𝜶 ; 𝑨𝑯 = 𝒉 ; 𝑩𝑪 = 𝒃 et 𝑨𝑩 = 𝒂\n1)  a) Exprimer 𝐜𝐨𝐬 𝜶 et 𝐬𝐢𝐧 𝜶 en fonction de 𝒂 ; 𝒃 et 𝒉\n     b) Montrer que 𝐬𝐢𝐧(𝟐𝜶) =\n𝒃𝒉\n𝒂𝟐\n     c) En déduire que  𝐬𝐢𝐧(𝟐𝜶) = 𝟐 𝐬𝐢𝐧 𝜶 𝐜𝐨𝐬 𝜶\n2)  En utilisant le théorème d’EL Kashi montrer que 𝐜𝐨𝐬(𝟐𝜶) = 𝟏 −\n𝒃𝟐\n𝟐𝒂𝟐\n      a) En déduire que  𝐜𝐨𝐬(𝟐𝜶) = 𝟐𝒄𝒐𝒔𝟐𝜶 − 𝟏\n      b) Calculer alors  𝐜𝐨𝐬 (\n𝛑\n𝟏𝟐  )\n http://mathematiques.kooli.me/     58  300  174"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_039",
@@ -1471,7 +1509,8 @@
           "points": "",
           "statement": "Bon travail\n\n                                        2/2                              Devoir de contrôle N°1"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_040",
@@ -1501,7 +1540,8 @@
           "points": "8 points",
           "statement": "Le plan est muni d’un repère orthonormé\n( ),,O i j\n  .Soient les points A(1, 2) ; B(4, -1) ; C( 4, 5) et D(3,3).\n1) a/ Calculer les composantes de chacun des vecteurs\nAB\n  et\nAC\n  .\nb/ Montrer que le triangle ABC est rectangle et isocèle en A.\n2) a/ Montrer que\n( AO , AC)\n est une base de l’ensemble des vecteurs du plan.\nb/ Montrer  que OACD est  un parallélogramme.\nc/ Soit E  le symétrique de A par rapport à D.\nDéterminer les composantes du vecteur\nAE\n dans la base\n( AO , AC)\n .\n3) Soit K le point tel que\n1AK AB6=\n  .\na/ Vérifier que\n33K , 22\n\n  .\nb/ Montrer que [AK] est la hauteur issue de A dans le triangle AOD .\nc/ Calculer alors l’aire du parallélogramme OACD.\nLycée : Rue Tayeb Mhiri M.T\n\nDate : 23/10/2024\n\nClasse: 2ème  Sc 1\n\n   Epreuve : Mathématiques              Durée : 1h\n  \nDevoir de contrôle N° 1\n   \nProf:    Mme.Hmem Basma"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_041",
@@ -1531,7 +1571,8 @@
           "points": "8,5 pts",
           "statement": "Le plan est rapporté à un repère orthonormé (𝑶 , 𝒊⃗ , 𝒋⃗).\n1)  Marquer les points 𝑨(𝟏 , 𝟏) ,  𝑩(𝟑 , 𝟐) , 𝑪(𝟎 , 𝟑) et 𝑬(𝟐 , −𝟐).\n2)  a) Trouver les composantes des vecteurs 𝑨𝑩⃗⃗⃗⃗⃗⃗⃗ et  𝑨𝑪⃗⃗⃗⃗⃗⃗\n     b) Calculer les distances 𝑨𝑩 et 𝑨𝑪\n     c) En déduire que 𝑨𝑩𝑪 est un triangle rectangle isocèle.\n3)  Soient les points 𝑺 et 𝑫 tels que : 𝑺 = 𝑨 ∗ 𝑪 = 𝑩 ∗ 𝑫\n     a) Trouver les coordonnées des points 𝑺 et 𝑫\n     b) Donner la nature du quadrilatère 𝑨𝑩𝑪𝑫 (justifier)\n4)  Soit 𝑴 le point de coordonnées (−𝟐 , −𝟒) dans le repère (𝑶 , 𝒊⃗ , 𝒋⃗)\n     a) Montrer que 𝟐𝑴𝑨⃗⃗⃗⃗⃗⃗⃗⃗ − 𝟐𝑴𝑩⃗⃗⃗⃗⃗⃗⃗⃗ + 𝑴𝑬⃗⃗⃗⃗⃗⃗⃗⃗ = 𝟎⃗⃗⃗\n     b) Donner alors les coordonnées du point 𝑴 dans le repère (𝑨 , 𝑨𝑩⃗⃗⃗⃗⃗⃗⃗ , 𝑨𝑬⃗⃗⃗⃗⃗⃗)"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_042",
@@ -1561,7 +1602,8 @@
           "points": "08 pts",
           "statement": "On considère les points 𝑨(−𝟏 ,𝟐) , 𝑩(−𝟑 ,−𝟐) , 𝑪(𝟓 ,−𝟏) et 𝑫(𝟓,−𝟑).\n1)  Montrer que (𝑨𝑩⃗⃗⃗⃗⃗⃗  ,𝑨𝑪⃗⃗⃗⃗⃗ ) est une base de l’ensemble des vecteurs du plan.\n2)  a) Montrer que 𝑨𝑩⃗⃗⃗⃗⃗⃗  et 𝑨𝑪⃗⃗⃗⃗⃗  sont orthogonaux.\n     b) Déduire la nature du triangle 𝑨𝑩𝑪.\n3)  Les points  𝑨 , 𝑪 et 𝑫  sont-ils alignés ?\n4)  a) Calculer 𝑩𝑪 et 𝑩𝑫.\n     c) Déduire que le point 𝑩 appartient à la médiatrice de [𝑪𝑫]."
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_043",
@@ -1591,7 +1633,8 @@
           "points": "08 pts",
           "statement": "Le  plan est muni d’un repère orthonormé (O ;𝑖  ; 𝑗⃗⃗  )\nOn considère les points A (1 ;1) ; B(3 ;2) C(0 ;3) et  𝐸 (2 ;-2)\n1) a) faire une figure\nb) déterminer les coordonnées du point D pour que ABDC soit\nun parallélogramme.\nc) montrer que les vecteurs 𝐴𝐵⃗⃗⃗⃗⃗  et 𝐴𝐶⃗⃗⃗⃗⃗  sont orthogonaux\nd) montrer que le triangle ABC est isocèle   et rectangle en A\ne) en déduire la nature du quadrilatère ABDC\n        2) montrer que le couple (𝐴𝐵⃗⃗⃗⃗⃗  ; 𝐴𝐸⃗⃗⃗⃗⃗  ) forme une base  de\n           L’ensemble des vecteurs du plan.\n           3)On considère le point M vérifiant 2𝑀𝐴⃗⃗⃗⃗⃗⃗   - 2𝑀𝐵⃗⃗⃗⃗⃗⃗   + 𝑀𝐸⃗⃗⃗⃗⃗⃗  = 0⃗\na) Montrer que 𝐴𝑀⃗⃗⃗⃗⃗⃗ =-2𝐴𝐵⃗⃗⃗⃗⃗  + 𝐴𝐸⃗⃗⃗⃗⃗\nb)  En déduire les composants du vecteur 𝐴𝑀⃗⃗⃗⃗⃗⃗  dans la base\n(𝐴𝐵⃗⃗⃗⃗⃗  , 𝐴𝐸⃗⃗⃗⃗⃗⃗  )\n4)on considère le point 𝐼définie par 3𝐼𝐴⃗⃗⃗⃗  -𝐼𝐵⃗⃗⃗⃗ =0⃗   et le point J\nmilieu du segment [AC]\na) montrer que 𝐴𝐼⃗⃗⃗⃗  =-\n1\n2𝐴𝐵⃗⃗⃗⃗⃗\nb) déterminer et construire l’ensemble suivant\n𝐸  = {M∈P / ∥3𝑀𝐴⃗⃗⃗⃗⃗⃗    -  𝑀𝐵⃗⃗⃗⃗⃗⃗  ∥ = ∥ 𝑀𝐴⃗⃗⃗⃗⃗⃗  + 𝑀𝐶⃗⃗⃗⃗⃗⃗  ∥ }"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_044",
@@ -1621,7 +1664,8 @@
           "points": "9pts",
           "statement": "Dans le plan muni d’un repère orthonormé  (𝑂,𝑖 ⃗  ,𝑗 ⃗⃗ ) on considère les deux\npoints 𝐴(6;3) et 𝐵(4;7) et le vecteur  𝑢 ⃗⃗⃗⃗ ( 3\n−6)\n    1°/ a- Montrer que les vecteurs 𝐴𝐵⃗⃗⃗⃗⃗  et  𝑢 ⃗⃗⃗⃗  sont colinéaires\n         b- Soit le point  𝐶  tel que 𝐵𝐶⃗⃗⃗⃗⃗ =  𝑢 ⃗⃗⃗⃗ . Justifier que 𝐶 ∈ (𝐴𝐵)\n         c- Déterminer les coordonnées de 𝐶.\n   2°/ a- Montrer que les vecteurs 𝑂𝐴⃗⃗⃗⃗⃗  et  𝑢 ⃗⃗⃗⃗  sont orthogonaux\n        b- En déduire que le triangle 𝑂𝐴𝐵 est rectangle en 𝐴.\n   3°/ a-Justifier que (𝑂𝐴⃗⃗⃗⃗⃗ ;𝑂𝐵⃗⃗⃗⃗⃗ ) est une base de l’ensemble des vecteurs du plan\n        b- Vérifier que 3(𝑂𝐴⃗⃗⃗⃗⃗ − 𝑂𝐵⃗⃗⃗⃗⃗ ) = 2 𝑢 ⃗⃗⃗⃗\n        c- En déduire les composantes du vecteur  𝑢 ⃗⃗⃗⃗  dans la base (𝑂𝐴⃗⃗⃗⃗⃗ ;𝑂𝐵⃗⃗⃗⃗⃗ )\nProfesseur : Fourati Devoir de contrôle n°1   Date : 26/10/2024\nClasse:  2Sc ;  Durée : 1 h"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_045",
@@ -1666,7 +1710,8 @@
           "points": "",
           "statement": "1°/a) 𝑢⃗ (\n1\n3\n2√2\n3\n)et 𝑣 (\n2√2\n3\n−1\n3\n)on a :\n1\n3.\n2√2\n3 +\n2√2\n3 .(\n−1\n3 )= 0\nDonc  𝑢 ⃗⃗⃗⃗ ⊥  𝑣 ⃗⃗⃗⃗\nb ) On a :‖ 𝑢 ⃗⃗⃗⃗ ‖ = √(\n1\n3)\n2\n+ (\n2√2\n3 )\n2\n= √\n1\n9 +\n8\n9 = 1\net  ‖ 𝑣 ⃗⃗⃗⃗ ‖ = √(\n2√2\n3 )\n2\n(−\n1\n3)\n2\n= √\n8\n9 +\n1\n9 = 1\npuis que  𝑢 ⃗⃗⃗⃗ ⊥  𝑣 ⃗⃗⃗⃗  et ‖ 𝑢 ⃗⃗⃗⃗ ‖ = ‖ 𝑣 ⃗⃗⃗⃗ ‖ alors ( 𝑢 ⃗⃗⃗⃗ ; 𝑣 ⃗⃗⃗⃗ )\nest une base orthonormée\n2°/a) On a : det(𝑂𝐴⃗⃗⃗⃗⃗  ;𝑢⃗ )= |\n√2\n1\n3\n4\n2√2\n3\n|\n               = √2× (\n2√2\n3 )− 4 ×\n1\n3 =\n4\n5 −\n4\n5 = 0\nDonc  𝑂𝐴 ⃗⃗⃗⃗⃗⃗⃗⃗ et  𝑢 ⃗⃗⃗⃗  sont colinéaires.\nb)  𝐴𝐵⃗⃗⃗⃗⃗⃗ ((√2−1)−√2\n(4−2√2)−4)= ( −1\n−2√2)= −3(\n1\n3\n2√2\n3\n) = −3𝑢 ⃗⃗\nc)  𝐴𝐵⃗⃗⃗⃗⃗⃗ = −3𝑢 ⃗⃗  donc sont  colinéaires et on a 𝑂𝐴 ⃗⃗⃗⃗⃗⃗⃗⃗ et  𝑢 ⃗⃗⃗⃗\nsont colinéaires donc  𝑂𝐴 ⃗⃗⃗⃗⃗⃗⃗⃗ et 𝐴𝐵 ⃗⃗⃗⃗⃗⃗  sont colinéaires\npar suite 𝑂;𝐴 et 𝐵 sont alignés\nd)  𝐴𝐵⃗⃗⃗⃗⃗⃗ = −3𝑢 ⃗⃗  donc 𝐴𝐵 = |−3|.‖𝑢 ⃗⃗⃗ ‖ = 3× 1 = 3\n3°/a) 𝑤 ⃗⃗⃗⃗⃗ = 2√2(\n1\n3\n2√2\n3\n) − (\n2√2\n3\n−1\n3\n) = (\n2√2−2√2\n3\n8+1\n3\n)\nD’où  𝑤 ⃗⃗⃗⃗⃗ (0\n3)\nb) 𝑤⃗⃗ = 2√2 𝑢⃗ − 𝑣 = 3 𝑗 ⃗⃗⃗   𝑠𝑖𝑔  𝑗 ⃗⃗⃗ =\n2√2\n3 𝑢⃗ −\n1\n3𝑣\nd’ou  𝑗 ⃗⃗⃗  (\n2√2\n3\n−1\n3\n)\n( 𝑢 ⃗⃗⃗⃗⃗ ; 𝑣 ⃗⃗⃗⃗ )\n\n𝑥  − ∞\n +∞\n2\n3\n   2\n−3𝑥+ 2\n𝑥 − 2\n3𝑥−2\n𝑥−1\n𝟎\n𝟎\n𝟎\n+\n −\n −\n+\n−\n −\n−\n −\n+"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_046",
@@ -1701,7 +1746,8 @@
           "points": "7 points",
           "statement": "Le plan est muni d’un repère orthonormé , ,O i j  .\n1) Placer les points 1,2A  ; 3,1B  3,6C  ;6,2D  et 3,4E  .\n2) a) Montrer que / /BD CE .\nb) Montrer que le triangle ABC est rectangle en A.\n3) Soit ,M x y ;xety  .\na) Montrer que M AC  si et seulement si 2y x .\nb) Pour M AC , calculer DM en fonction de x.\nc) Donner la forme canonique de 25 20 40x x   et en déduire la valeur de x qui donne la valeur\nminimale de DM. Placer M dans ce cas.\nd) Déterminer alors la distance du point D à la droite AC."
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_047",
@@ -1736,7 +1782,8 @@
           "points": "6 points",
           "statement": "1) Placer les points\n( )2,1A −  ;\n( )2,3B  ;\n( )1, 1C −−  et\n( )5, 3D −− .\n2) Montrer que ABCD est un parallélogramme.\n3)  a) Montrer que\n( ) ( )AB AC⊥ .\nb) En déduire que l’aire de ABCD est égale à 10 unités d’aire.\n4) a) Déterminer, en justifiant, les coordonnées du vecteur\nAD\n  dans la base\n( ),AB AC=\n\nB .\nb) Vérifier que\n1\n102\n5\nj\n\n\n−\n\nB .\nc) Déterminer alors les composantes de\ni\n  dans la base\n( ),AB AC=\n\nB .\n5) Déterminer un vecteur\nu\n  unitaire et colinéaire à\nAC\n ( On le donnera par ses composantes\ndans la base\n( ),ij\n ).\nAnnée Scolaire 2025/2026\nLycée Imam Moslim Menzah\n# Devoir De  Contrôle N°1#\n~Durée 60 minutes~\nM. KHEMIRI  Fawzi\nClasse 2ième Sc 4"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_048",
@@ -1771,7 +1818,8 @@
           "points": "4 points",
           "statement": "1) Trouver une écriture simple de : =\n− − √\n√ +√ + √ − √\net = √ √\n√ √\nLycée secondaire : ALI BOURGUIBA KALAA KBIRA Année scolaire : 2011 - 2012\nProf : MAATALLAH Devoir de contrôle  n ° 1 Classes : 2\nEpreuve : Mathématiques Date : 19 – 10 - 2011 Durée : 1 heure\nS éries 1\nf(x)=2x+4\nf(x)=-0.5x+4\nf(x)=0\nx=0; 0<y<1\ny=0; 0<x<1\nS éries 4\nS éries 2\nf(x)=(1/3)*x+2/3\n-4 -3 -2 -1 1 2 3 4 5 6 7 8 9 10\n-2\n-1\n1\n2\n3\n4\n5\n6\n7\nx\ny\nAB\nC\nI\nO\n\n\ni\nj\n\n\nIl sera tenu compte de la rédaction et la bonne présentation de la copie ."
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_049",
@@ -1791,7 +1839,8 @@
           "points": "",
           "statement": "Lycée Tahar Sfar Mahdia Devoir de contrôle n° 1\nMathématiques\nNiveau : 2 ème Sc3 et 5\n\nDate : 25 / 10 / 2011 Prof : MEDDEB Tarak Durée : 1 heure\nNB : il sera tenu compte du soin apporté à la rédaction et à la présentation.\n  (10 pts )\n1)  Résoudre dans IR les équations suivantes :\n                 𝑎/    𝑥2 − 2𝑥 − 15 = 0.\n                𝑏/    𝑥2 − 9 = 2𝑥 + 6.\n2) Soit 𝑚 un réel. On considère l’équation  𝐸 : 𝑥2 +  2𝑚 + 1 𝑥 + 𝑚2 = 0.\n𝑎/ Déterminer l’ensemble des valeurs de 𝑚 pour lesquelles l’équation (𝐸) admet\ndeux solutions distinctes 𝑥1 et 𝑥2 .\n𝑏/ Déterminer 𝑚 pour que le réel (−4) soit solution de l’équation (𝐸).\n𝑐/ Résoudre l’équation (𝐸) lorsque 𝑚 = 6.\n (10 pts )\n      Le plan est rapporté à un repère orthonormé\n ,,O i j\n   .\nOn considère les points 𝐴(10 ;  0) et 𝐵 0 ; 5 .\n1) Montrer que le triangle 𝑂𝐴𝐵 est rectangle.\n2) Pour tout réel 𝑎, soit 𝐻(2𝑎 ; −𝑎 + 5).\n𝑎/ Montrer que 𝐻 appartient à la droite (𝐴𝐵).\n𝑏/ Déterminer 𝑎 pour que la droite (𝑂𝐻) soit perpendiculaire à (𝐴𝐵).\n3) Dans la suite de l’exercice, on pose 𝐻(2 ; 4).\n     On désigne par 𝐼 et 𝐽 les milieux respectifs de  𝐴𝐻  et  𝑂𝐻 .\nMontrer que les droites (𝑂𝐼) et (𝐵𝐽) sont perpendiculaires.\n4) 𝑎/ Vérifier que\n ,HI HO\n      est une base de l’ensemble de vecteurs du plan.\n𝑏/ Cette base est-elle orthonormée ? Justifier.\n𝑐/ Déterminer les composantes du vecteur 𝑂𝐴       dans cette base.\nBonne chance"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_050",
@@ -1821,7 +1870,8 @@
           "points": "9 points",
           "statement": "Soient  un triangle     et les points  ,   et   tels que :\n      ;\n\n          et\n\n         .\n1/ Faire une figure.\n2/ Montrer que :\n\n         .\n3/ Montrer que les points   ,   et   sont alignés.\n4/ On considère le repère                       .\na) Déterminer les coordonnées des points  ,  ,  ,  ,   et  .\nb) Montrer que le point   centre de gravité du triangle     a pour\ncoordonnées\n\n  .\n\n Bon courage"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_051",
@@ -1851,7 +1901,8 @@
           "points": "7,5 points",
           "statement": "Soit      un parallélogramme de centre  .On donne les points  ,   et   définis par :\n\n          ;\n\n          et\n\n         .\n1/ Faire une figure.\n2/ a) Montrer que\n\n          et\n\n                  .\n     b) En déduire que les points  ,   et   sont alignés.\n3/ a) Déterminer les coordonnées des vecteurs           et         dans la base                    .\n     b) En déduire que les droites      et      sont parallèles.\n\nBon courage\n\nLYCEE DE SOUSSE\n\nANNEE SCOLAIRE : 011/012\n\nDUREE : 1 HEURE\nDate : 26/10/2011\n\n Devoir de contrôle\nn°1\nPROF : Mer Zaghouani Riadh\n\nDISCIPLINE :MATHEMATIQUES\n\n NIVEAU : 2ème Sciences\n\nM e r  Z a g h o u a n i  R i a d h"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_052",
@@ -1926,7 +1977,8 @@
           "points": "",
           "statement": "Soit 𝐴𝐵𝐶 un triangle rectangle en 𝐴 et on désigne par 𝑂 le milieu de [𝐵𝐶]. Soient : 𝐼 le barycentre des points\npondérés (𝐴,4) et (𝐵,1) ; 𝐽 le barycentre des points pondérés (𝐴,4) et (𝐶,−1) et 𝐺 le barycentre des points\npondérés (𝐴,4) ; (𝐵,1) et (𝐶,−1)\n1)  Construire 𝐼 et 𝐽.\n2)  Montrer que les droites (𝐶 𝐼) et (𝐵 𝐽) se coupent en 𝐺.\n3)  Montrer que les droites (𝐴𝐺) et (𝐵𝐶) sont parallèles.\n4)  Soit l’application  𝑡 ∶ 𝑃 → 𝑃 ; 𝑀 ↦ 𝑀′ tel que   4𝑀𝐴⃗⃗⃗⃗⃗⃗ = 4𝑀′𝐴⃗⃗⃗⃗⃗⃗⃗⃗ + 𝑀′𝐵⃗⃗⃗⃗⃗⃗⃗⃗ − 𝑀′𝐶⃗⃗⃗⃗⃗⃗⃗\n     a) Montrer t est une translation de vecteur\n1\n4𝐶𝐵⃗⃗⃗⃗⃗\n     b) Soit  C={𝑀 ∈ 𝑃 \\ ‖𝑀𝐵⃗⃗⃗⃗⃗⃗ + 𝑀𝐶⃗⃗⃗⃗⃗⃗ ‖ = ‖𝑀𝐶⃗⃗⃗⃗⃗⃗ − 𝑀𝐵⃗⃗⃗⃗⃗⃗ ‖}\nMontrer que C  est le cercle de diamètre [𝐵𝐶].\n     c) Construire sont image C’ par 𝑡.\n     d) Montrer que G appartenant à C’.\n5)  Le cercle C’ coupe la droite (𝐵𝐶) en 𝐸 et 𝐹 (avec ∈ [𝐵𝐶] ), ∆1 la parallèle  à (𝐶𝐼) issue de 𝐹\net ∆2 la parallèle  à  (𝐵𝐽) issue de 𝐸 se coupent en 𝐾.\n     a) Déterminer les images des droites (𝐶𝐼) et (𝐵𝐽)  par 𝑡.\n     b) Montrer que 𝐺 est le milieu de [𝐴𝐾]\n     c) On suppose que 𝐵 et 𝐶 sont fixes et que 𝐴 varie sur quelle ligne se déplace le point 𝐾.\n\nhttp://mathematiques.kooli.me/     58  300  174"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_053",
@@ -1956,7 +2008,8 @@
           "points": "8 pts",
           "statement": ":\nSoit      un parallélogramme. Soit   le barycentre des points pondérés        et\net   le barycentre des points pondérés       et      .\n1. a.   Exprimer           en fonction de         .\nb. Exprimer           en fonction de         .\n2. Construire les points   et\n3. Soit le point   définie par :                                           .\na. Montrer que   est le milieu des points   et K.\nb. Montrer que      est un parallélogramme.\n4. Déterminer et représenter les ensembles suivants :\n\n                                                                                       .\n\nLYCEE ZAOUIA-KSIBET-THRAYET\n\nDEVOIR DE MATHEMATIQUES\nCONTROLE N°2\nCLASSES : 2ème Sciences\nDate : 20/11/2010\nANNÉE SCOLAIRE : 2010-2011 PROF : Mr SALAH ZAOUI DURÉE : 1 HEURES\n\nwww.tunisiamaths.com\n\nNom:…………………………………………………… Prénom :………………………………………………..\nClasse :  2 Sciences 1 Rang :……………………………"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_054",
@@ -1986,7 +2039,8 @@
           "points": "8.5 pts",
           "statement": "Soit ABC un triangle etܫetܬles milieux respectifs de [ܤܣ] et [ܥܣ]\n1) Construire le point G barycentre des points pondérés (A,3) et (B,2)\n2) Soit H le point défini par : 3ܣܪሬሬሬሬሬሬ⃗ + 2ܤܪሬሬሬሬሬሬ⃗ +ܥܪሬሬሬሬሬ⃗ = 0ሬ⃗\na) Montrer que H est le barycentre des points pondérés (G,5) et (C,1)\nb) Montrer que H est le barycentre des points pondérés (ܫ2) et (ܬ1)\nc) En déduire une construction simple de H\n3) La droite (AH) coupe la droite (BC) au point K\nMontrer que K est le barycentre des points pondérés (A,1) et (H, -2)\n4) a) Montrer que pour tout point M du plan on a :\n3ܣܯ ሬሬሬሬሬሬ⃗ + 2ܤܯ ሬሬሬሬሬሬ⃗ +ܥܯ ሬሬሬሬሬሬ⃗ = 6ܪܯ ሬሬሬሬሬሬሬ⃗\nb) déterminer les ensembles suivants :\nܧଵ = ൛ܯ∈ܲ/ ฮ3ܣܯ ሬሬሬሬሬሬ⃗ + 2ܤܯ ሬሬሬሬሬሬ⃗ +ܥܯ ሬሬሬሬሬሬ⃗ฮ = 6ฮܣܯ ሬሬሬሬሬሬ⃗ − 2ܪܯ ሬሬሬሬሬሬሬ⃗ฮ ൟ\nܧଶ = ൛ܯ∈ܲ/ ฮ3ܣܯ ሬሬሬሬሬሬ⃗ + 2ܤܯ ሬሬሬሬሬሬ⃗ ฮ= ฮܫܯ ሬሬሬሬሬ⃗ −ܬܯ ሬሬሬሬሬ⃗ฮ ൟ"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_055",
@@ -2011,7 +2065,8 @@
           "points": "10 pts",
           "statement": "1-Construire un triangle ABC tel que AB=4√2 , AC=2   , BC=6 .\n2-Construire :le point  E  sachant que A est barycentre de (E,3) et (B,-1),\n                         et placer le point A’ : milieu de [BC].\n3-Exprimer E comme barycentre des points A et B affectés des coefficients qu’on précisera.\n4- On donne le point I du plan tel que 2IA⃗⃗⃗ + IB⃗⃗⃗ + IC⃗⃗⃗ = 0⃗\n   a-Montrer que I est le milieu de [AA’]\n   b- Montrer que les points I, E et C sont alignés.\n   c-Déduire une Construction de I.\n5- Déterminer dans chacun des cas suivants l’ensemble des points M du plan tels que :\n   a- ‖3ME⃗⃗⃗⃗⃗⃗ − MB⃗⃗⃗⃗⃗⃗ ‖ = ‖MB⃗⃗⃗⃗⃗⃗ + MC⃗⃗⃗⃗⃗⃗ ‖\n   b- ‖2MA⃗⃗⃗⃗⃗⃗ + MB⃗⃗⃗⃗⃗⃗ + MC⃗⃗⃗⃗⃗⃗ ‖ = ‖4MA⃗⃗⃗⃗⃗⃗ − 4MB⃗⃗⃗⃗⃗⃗ ‖\n   c- Les vecteurs 2MA⃗⃗⃗⃗⃗⃗ + MB⃗⃗⃗⃗⃗⃗  et MA⃗⃗⃗⃗⃗⃗ + MA′⃗⃗⃗⃗⃗⃗⃗  sont colinéaires.\n\n6-Soit f l’application du plan P dans P qui à tout point M associe le point M’\n                                     tel que 𝐴𝑀′⃗⃗⃗⃗⃗⃗⃗ = 2𝐴𝑀⃗⃗⃗⃗⃗⃗ + 𝑀𝐵⃗⃗⃗⃗⃗⃗\n    a-Déterminer l’image de A par F.\nb-Montrer que f est une translation de vecteur 𝐴𝐵⃗⃗⃗⃗⃗ .\n    c-Construire le point 𝐷 = 𝑡𝐴𝐵⃗⃗⃗⃗⃗ ( 𝐴′ ) .\nd-Soit le cercle 𝜑 de centre A’ et passant par C. Construire  𝜑′ = 𝑡𝐴𝐵⃗⃗⃗⃗⃗ (𝜑).\ne- La droite (AB) recoupe le cercle 𝜑′ au point K.\n    Montrer que 𝑡𝐴𝐵⃗⃗⃗⃗⃗ (𝐵) = 𝐾 .\n\n  Le   11/ 03/ 2021\nProf :Garrab wissem\n  Durée : 45 minutes\nDevoir de contrôle N°2\nwww.devoirat.net © 2021"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_056",
@@ -2051,7 +2106,8 @@
           "points": "6 points",
           "statement": "Dans le plan muni d’un repère orthonormé on considère les droites\n1  ,\n2  et\n3\nd’équations cartésienne respectives :\n1\n : 2x – y +1 = 0 ;\n2  : -6x + 3y -5 = 0   et\n3  : x + y – 1 = 0.\na) Montrer que\n1  //\n2 .\nb) Vérifier que\n1  et\n3 sont sécants en un point K puis déterminer\n( , )KKxy le\ncouple de coordonnées de K.\nc) On considère la droite\n4  passant par le point A(1 ; 1) et parallèle a\n3 .\nDéterminer l’équation cartésienne de la droite\n4 .\n\n                                                                                                                                                                         F  I  N\nLycée El farabi « El fahs »\n*******\nProf: Mr. BEN HAJ YAHIA slim\n\nDevoir de contrôle\nN° 2\nEpreuve : Mathématique\nClasse : 2 éme science\nDate : 18/11 / 2011"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_057",
@@ -2086,7 +2142,8 @@
           "points": "",
           "statement": "QCM : (5pts)\n Pour chacune des questions suivants on donne trois propositions une seule est\ncorrecte laquelle ?\n1) Si (A, –2) et (B, –5) sont deux points pondérés du plan alors leurs barycentre G\nvérifie :\na]\n2AG AB7\n\n  ; b]\n2AG 5GB\n   ; c]\n2BG AB7\n\n\n2) Si I est le milieu d’un segment [EF] alors :\n a]  I est barycentre de (E,–1) et (F,1)\n b]\nIE et EF\n sont de même sens\n c]\nEF 2IE\n\n3) Dans un plan muni d’un repère O.N.D\n O,i, j\n on donne les points A(–3,4) ; B(3,2)\net C(6,1) donc:\n a]\n BS A C \n b]  A=bary\n  2B,1  et C,- 3\n  \n c]  (AB) et (AC) sont sécants\n4) Soit ABC un triangle et E un point du plan distants de A, B et de C, donc :\n a]  Pour tout point M du plan :\nMA MB MC 0  \n\n b]  Si\n2EA 2EB 5EC 0  \n alors E est le milieu de [AB]\n c]  Si O=A*B alors :\n4EO 5EC 0\n\n5)  On donne le trinôme\n   \n22E : 1 x 2x 5    où       \n , on a donc :\na]  Pour tout\n\n , E = 0 admet toujours une racine double\nb] Pour tout\n\n , E > 2x+5\nc]  Lorsque\n2      on a (–1) est une solution de l’équation E = 0.\n\nNom : ……………………………....….. Prénom : ……………………………..….. N° : …….."
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_058",
@@ -2116,7 +2173,8 @@
           "points": "8 points",
           "statement": "Soit ABC un triangle rectangle en A tel que AB = 5 et AC = 3 et on munit le plan du repère cartésien\n\n\n\n\n AC3\n1,AB5\n1,A\n1) Montrer que \n\n\n\n AC3\n1,AB5\n1,A  est un repère orthonormé du plan\n2) Déterminer les coordonnées des points A, B et C.\n3) On désigne par Cet  B,A   les milieux respectifs des segments [BC], [AC] et [AB] et par G le centre de\ngravité du triangle ABC.\na) Déterminer les coordonnées des points C, B,A   et G\nb) Montrer que G est le centre de gravité du triangle CBA \n\nProf : Boufares Amor\nL.S.A.B.K.K\nDevoir de contrôle N°2\nDate : Novembre 2011\n2ème Sciences\nDurée : 1 h\nProf : Boufares Amor\nL.S.A.B.K.K\nDevoir de contrôle N°2\nDate : Novembre 2011\n2ème Sciences\nDurée : 1 h"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_059",
@@ -2141,7 +2199,8 @@
           "points": "4points",
           "statement": "1- Résoudre dans IR\n1) 5x²+4x-1 =0           2 )  x²-2x+1 < 0         3)\n𝟓𝟓𝟓𝟓²+𝟒𝟒 𝟓𝟓−𝟏𝟏\n𝟓𝟓²−𝟐𝟐\n𝟓𝟓+𝟏𝟏  ≥ 𝟎𝟎\n2- Résoudre dans IR²\n⎩\n⎨\n⎧𝒙𝒙+ 𝒚𝒚= − 𝟒𝟒\n𝟓𝟓\n𝟏𝟏\n𝒙𝒙+ 𝟏𝟏\n𝒚𝒚\n= 𝟒𝟒\n\nExercice (4 points)\nSoit  l’équation ( E ) :  2x² +( 3-2√𝟐𝟐)𝒙𝒙 − 𝟑𝟑√𝟐𝟐= 𝟎𝟎\n1- Sans calcule discriminant de ( E ) montrer que admet deux racine x’ et x \"\n2- Calculer  A = ( 2x’ +3 ) ( 2x\" +3)   et B = x’² +x’’²\nExercice (9points)\nSoit ABC un triangle. on désigne par A’, B’ et  C’ les milieux respectivement de [BC ] , [CA] et [AB].\n1- Soit D tel que 𝑨𝑨𝑨𝑨������⃗ =\n𝟏𝟏\n𝟑𝟑 𝑨𝑨𝑨𝑨������⃗\na- Construire D\nb- Montrer que D est le barycentre de (A, 2) et (B, 1)\n2- Soit E le point définie par 𝟐𝟐𝑬𝑬 𝑨𝑨�����⃗ +  𝑬𝑬 𝑨𝑨������⃗ +  𝑬𝑬𝑬𝑬�����⃗ = 𝟎𝟎\n�\n�⃗\na- Montre E est le barycentre de (D, 3) et (C, 1)\nb- Montrer que E appartient à (A’A)\nc- Déduire une construction de E\nd- Montrer que les droites (A’A), (B’B) et (CD) sont concourantes\n3- Déterminer l’ensemble des point M suivants\nE={ M ∈ 𝑷𝑷 𝒕𝒕𝒕𝒕𝒕𝒕 𝒒𝒒𝒒𝒒 𝒕𝒕  �𝟐𝟐𝑴𝑴 𝑨𝑨�������⃗ + 𝑴𝑴 𝑨𝑨�������⃗ +  𝑴𝑴 𝑬𝑬������⃗� = 𝟑𝟑� 𝑴𝑴 𝑨𝑨�������⃗ +  𝑴𝑴 𝑬𝑬������⃗�\nF={ M ∈ 𝑷𝑷 𝒕𝒕𝒕𝒕𝒕𝒕 𝒒𝒒𝒒𝒒 𝒕𝒕  �  𝑴𝑴 𝑨𝑨�������⃗ +  𝑴𝑴 𝑬𝑬������⃗� = 𝟑𝟑� 𝑴𝑴 𝑨𝑨�������⃗ −  𝑴𝑴 𝑬𝑬������⃗�\n\nL.Elafarabi – Manouba\n\nChaabane Mounir\nEpreuve : MATHEMATIQUE\nSection :2 science\nDurée : 1 heur Coefficient : 1\n2018/2019 Devoir contrôle n : 2"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_060",
@@ -2161,7 +2220,8 @@
           "points": "",
           "statement": "1)  Résoudre dans IR les équations suivantes  :\n2 3 0 5 6 0\n− − = − + − =\nx x   ;  x x\n2) on donne   2                              2\n( ) 2 3 5 6\n= − − − + −\nB x x x x x\n   a)  Montrer que\n2          2\n( ) ( 3) 2\n= − − + +\nB x x x x\n     b)  Résoudre dans IR  l’inéquation\n( ) 0\n≥\nB x\n3) Soit l’expression :\n2\n2\n2 3( )\n5 6\n− −=\n− + −\nx xA x\nx x\n      a) Déterminer les réels x pour les quels A(x) existe.\n Résoudre dans IR  l’inéquation\n( ) 0\n≥\nA x\n4)   a) Montrer que pour tout\n{ }\n/ 2,3\nx IR\n∈\n1( ) 2\n+= −\nxA x x\n      b) Résoudre dans IR  l’inéquation\n( ) 1\n≥\nA x\n1)\n2)\n3)\n4)\n\n5)\n      a)\n      b)\n      c)\n      b)\n,\n:\n\n  2                                         2\n(                  ) (                    )\n(                   )\n\nRépondre pa\nr\nR\né\np\no\nn\nd\nr\ne\n\np\na\nr\n : VRAI ou FAUX  (Aucune\nj\nustification n’\ne\ns\nt\n\nd\ne\nm\na\nn\nd\né\ne\nj\nu\ns\nt\ni\nf\ni\nc\na\nt\ni\no\nn\n\nn\n’\ne\nst demandée)\n\n1.\nOn donne les points A( -3 , - 5 ) ; B(\n1\n\n,\n\n)\n    G est le barycentre des points pond\né\nr\né\ns\n\n(\n\nA\n\n,\n\n1\n\n)\n\ne\nt\n\n(\n\nB\n,\n\n3\n\n)\n.\n;\n\nB\n(\n\n1 , 6 ) et G( 0 , 4 ) alors\nG\n\ne\ns\nt\n\nl\ne\n\nb\na\nr\ny\nc\ne\nn\nt\nr\ne\n\nd\ne\ns\n\np\no\ni\nn\nt\ns\n\np\no\nn\nd\né\nrés ( A , 1 ) et ( B, 3 ).\n\nPour tout\n∈ ℝx ,\n\nle barycentre des points  pondéré\ns\nl\ne\n\nb\na\nr\ny\nc\ne\nn\nt\nr\ne\n\nd\ne\ns\n\np\no\ni\nn\nt\ns\n\np\no\nn\nd\né\nr\né\ns\n (A , x² + 1) et (B , x² - 2x +2) appartient au\ns\ne\ng\nm\ne\nn\nt\n\n[\nA\nB\n]\n.\n2\nx\n\n+\n2\n)\n\na\np\np\na\nr\nt\ni\ne\nn\nt\n\na\nu\n\ns\negment [AB].\n\n2.\n3.\nIl existe deux réels a et b vérifiant :\n = 4\n5\na\nab\n \n \n\nb"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_061",
@@ -2191,7 +2251,8 @@
           "points": "8 points",
           "statement": "Soit ABC un triangle et I est le milieu du segment [AB]\n  1) Construire J le barycentre de points pondérés  (A, 4) et (B, 3)\n               2) Soit F le point du plan tel que C bary {(F, 6) ; (B,-1)}\n                  Montrer que F est le barycentre de points pondérés (C, 5) et (B, 1)\n                      3) Soit H le point définie par\n   a) Montrer que H est le barycentre de (J, 7) et (C,-5)\n   b) Montrer que H est le barycentre de (I, 4) et (F,-3)\n   c) En déduire une construction de H\n 4) Soit T= {M    tel que                                                             }\n     Déterminer et construire T\n                                 BON TRAVAIL"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_062",
@@ -2216,7 +2277,8 @@
           "points": "5 pts",
           "statement": ": Dans la figure ci-contre :  ABOH et ODEF\nsont deux carrés dont la somme  des aires est  𝟏𝟏𝟕 𝒄𝒎𝟐 et BCDO\nest un rectangle d’aire 𝟓𝟒𝒄𝒎𝟐 .On note    x = AH  et  y = EF\n                                                                                                                      x\n1 . Vérifier que  𝒙 +  𝒚 =   𝟏𝟓 𝒄𝒎\n2 .Déterminer alors les dimensions de chacun des carrés ABOH et\nODEF\n\nEXERCICE N ° 4 (7 pts )    :                                                                         G\nOn considère un rectangle ABCD et on désigne par les points I et J respectivement les milieux de  𝑨𝑩  et  𝑪𝑫\n1 . a . Construire le point F barycentre des points pondérées  𝑨,𝟏  et 𝑪,𝟑\n     b . Déterminer et construire l’ensemble ∁ des points M du plan tel que  𝑴𝑨        + 𝟑𝑴𝑪             =  𝑨𝑪\n2 . Soit G le point défini par 𝑮𝑨      + 𝑮𝑩       + 𝟑 𝑮𝑪      +  𝟑𝑮𝑫       = 𝟎    et soit E le barycentre des points pondérées\n 𝐁,𝟏  𝐞𝐭  𝐃,𝟑\n     a . Montrer que G est le milieu de  𝑬𝑭\n     b . Construire les points E et G\n3 . Montrer que les points I , J  et G sont alignés\n\nA B\n\n C\nH\n\nO                 D\n54 𝑐𝑚2\n2010/2011                                 Devoir de contrôle n °2                                    El ouerfelli   Anoir\nL –H –Bengardane                                2 sc exp                                                      Durée : une heure"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_063",
@@ -2246,7 +2308,8 @@
           "points": "8 points",
           "statement": "Soit ABC un triangle équilatéral . On désigne par I le barycentre des points pondérés (A , -1 ) et (B, 2) , par J\nle milieu du segment [BC] et par K le barycentre des points pondérés (C,2) et (A,1).\n1/ faire une figure et construire les points I et K\n2/a)  Montrer que les points I , J et K sont alignés .\nb)  En déduire que J est le barycentre des points pondérés (I, 1 ) et (K , 3) .\n3/ Déterminer l’ensemble des points M du plan tels que : 3 2 ⃗ − ⃗ = 2 ⃗ + ⃗\n1)\nLycée secondaire : ALI BOURGUIBA KALAA KBIRA Année scolaire : 2011 - 2012\nProf : MAATALLAH Devoir de contrôle  n ° 2 Classes : 2 Sc 2\nEpreuve : Mathématiques Date : 21 – 11 - 2011 Durée : 1 heure\nIl sera tenu compte de la rédaction et la bonne présentation de la copie ."
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_064",
@@ -2271,7 +2334,8 @@
           "points": "10 pts",
           "statement": "Soit ABC un triangle, I est le symétrique de A par rapport à B. J est le barycentre des points\npondérés\n ,2B  et\n ,3C .\n1) 𝑎/ Construire le point J.\n     𝑏/ Ecrire I comme barycentre des points A et B.\n2) Soit G le barycentre des points pondérés\n ,1A  ,\n ,2B  et\n ,3C .\n     𝑎/  Montrer que G est le barycentre des points pondérés\n ,1I  et\n ,3C .\n     𝑏/  Montrer que les points A, J et G sont alignés.\n     𝑐/  Construire alors le point G.\n3) Déterminer et construire l’ensemble\n  des points M du plan vérifiant :\n‖−𝑀𝐴⃗⃗⃗⃗⃗⃗ + 2𝑀𝐵⃗⃗⃗⃗⃗⃗ + 3𝑀𝐶⃗⃗⃗⃗⃗⃗ ‖ = ‖4𝑀𝐴⃗⃗⃗⃗⃗⃗ − 8𝑀𝐵⃗⃗⃗⃗⃗⃗ ‖."
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_065",
@@ -2306,7 +2370,8 @@
           "points": "6\npoints",
           "statement": "Soit 𝐴𝐴 𝐵𝐵 𝐴𝐴 un triangle. On désigne par 𝐼𝐼, 𝐽𝐽 𝑒𝑒𝑒𝑒 𝐾𝐾 les milieux respectifs des cotés [𝐴𝐴 𝐵𝐵], [𝐵𝐵 𝐴𝐴]𝑒𝑒𝑒𝑒 [𝐴𝐴𝐴𝐴].\n1) a)  Montrer que pour tout point 𝑀𝑀 du plan on a : 𝑀𝑀 𝐴𝐴������⃗ + 𝑀𝑀 𝐵𝐵������⃗ + 𝑀𝑀 𝐴𝐴������⃗ = 𝑀𝑀 𝐼𝐼�����⃗ + 𝑀𝑀 𝐽𝐽�����⃗ + 𝑀𝑀 𝐾𝐾�������⃗.\nb) On déduire que les triangles 𝐴𝐴 𝐵𝐵 𝐴𝐴 𝑒𝑒𝑒𝑒 𝐼𝐼 𝐽𝐽𝐾𝐾 o nt le même centre de gravité.\n2) Soient 𝐷𝐷 le point tel que 𝐴𝐴 𝐷𝐷�����⃗ =\n1\n3 𝐴𝐴𝐵𝐵�����⃗ et 𝐸𝐸 le barycentre des points (𝐴𝐴, 2), (𝐵𝐵, 1)𝑒𝑒𝑒𝑒 (𝐴𝐴, 1)\na) Montrer que 𝐸𝐸 est le milieu du segment [𝐴𝐴 𝐽𝐽]\nb) M\nontrer que 𝐸𝐸 appartient au segment  [𝐴𝐴𝐷𝐷]\n3) M\nontrer que les droites (𝐴𝐴\n𝐽𝐽), (𝐾𝐾\n𝐼𝐼)𝑒𝑒𝑒𝑒 (𝐴𝐴𝐷𝐷) so\nnt concourantes.\n\nBon travail"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_066",
@@ -2341,7 +2406,8 @@
           "points": "6points",
           "statement": ":\nSoient  A ; B et C trois points distincts du plan .On désigne par G le barycentre des points pondérés (A ,1)\net (B,3) et par G’ le barycentre des points pondérés (A ,3) et (C,1).\n    1/a)Exprimer le vecteur AG en fonction de AB\n        b) Exprimer le vecteur AG’ en fonction de AC\n    2/ Construire les points G et G’\n     3/On désigne par K le milieu du segment *GG’+.Montrer que pour tout point M du plan on a :\n       MA + 3MB + 3MA + MC = 8 MK\n\nBon travail"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_067",
@@ -2376,7 +2442,8 @@
           "points": "9 points",
           "statement": "Soit un triangle     et G le barycentre des points pondérés       ,        et        et   le point\ndéfini par :\n\n         .\n1/  Ecrire          a l’aide de          et          puis faire la figure.\n2/  a) Montrer  que   est le barycentre des points pondérés        et       .\n      b) En déduire que les points  ,   et   sont alignés.\n3/ Soit I le barycentre des points pondérés       et       .\n     Montrer que   est le milieu du segment     ."
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_068",
@@ -2406,7 +2473,8 @@
           "points": "9pts",
           "statement": "Soit ABC un triangle tel que O est le milieu du segment [AB]\n1) Construire le point I le barycentre des points pondérés (B,1) et (C,3)\n2) Montrer que  B est le barycentre des points pondérés (I,4) et (C, -3)\n3) Soit le point G définie par :\n30GA GB GC  \n\n a) Montrer que G est le barycentre des points pondérés (O,2) et (C,3)\n b) Montrer que G, A et I sont alignés.\n  c) Construire alors le point G.\n4) Déterminer les ensembles suivants\n\n5;3 2M P MA MB MC MA MB      \n\n ; 3 8M P MB MC    \n\nMinistère de l’éducation\n\nLycée El-Gantra\nMathématiques  Durée :1h novembre  2022  2eme sciences  Mr : Zitouni Mohamed\nDevoir de contrôle  n°2\nMatheMM"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_069",
@@ -2436,7 +2504,8 @@
           "points": "8 points",
           "statement": "Soit un triangle .\n1/ Construire le barycentre des points ( ,4) et ( ,3) .\n2/ Soit est le barycentre des points ( , 4) et ( , 7) .\na) Montrer que 4 ⃗ + 4 ⃗ + 3 ⃗ = 0⃗ .\nb) Soit le milieu de [ ] . Montrer que  , et sont alignés .\n3/ Déterminer l’ensemble des points M du plan tels que : 7 ⃗ + 4 ⃗ = 33\n1)\nLycée secondaire : ALI BOURGUIBA KALAA KBIRA Année scolaire : 2011 - 2012\nProf : MAATALLAH Devoir de contrôle  n ° 2 Classes : 2 Sc 1\nEpreuve : Mathématiques Date : 23 – 11 - 2011 Durée : 1 heure\nIl sera tenu compte de la rédaction et la bonne présentation de la copie ."
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_070",
@@ -2476,7 +2545,8 @@
           "points": "",
           "statement": "2/2                                                          devoir de contrôle n°4"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_071",
@@ -2506,7 +2576,8 @@
           "points": "7pts",
           "statement": "Pour tout  𝑥 ∈ [0 ; 𝜋]  on donne   𝑓(𝑥) = 2 𝑠𝑖𝑛2𝑥 − 3 𝑐𝑜𝑠 𝑥 − 3\n1°/ Calculer   𝑓(0)  ;   𝑓 (\n𝜋\n6)   et   𝑓 (\n2𝜋\n3 ).\n2°/ Soit 𝛼 ∈ [0; 𝜋]   tel que   𝑐𝑜𝑠 𝛼 =\n4\n5 .\n       a- Vérifier que   𝑠𝑖𝑛𝛼 =\n3\n5 et calculer 𝑓(𝛼)\n       b-  Déterminer    𝑐𝑜𝑠(𝜋 − 𝛼) ;  𝑠𝑖𝑛(𝜋 − 𝛼)    puis calculer   𝑓(𝜋 − 𝛼).\n       c-  Déterminer    𝑐𝑜𝑠 (\n𝜋\n2 − 𝛼) ;  𝑠𝑖𝑛(\n𝜋\n2 − 𝛼)    puis calculer   𝑓 (\n𝜋\n2 − 𝛼).\n3°/  a- Montrer que pour tout 𝑥 ∈ [0 ; 𝜋] on a :  𝑓(𝑥) = −(2 𝑐𝑜𝑠² 𝑥 + 3 𝑐𝑜𝑠 𝑥 + 1).\n       b- Résoudre dans  [0 ; 𝜋] l’équation :  𝑓(𝑥) = 0\nProfesseur : Fourati Devoir de  contrôle  n°4   Date : 22/02/2025\nClasse:  2Sc6 ; Durée : 1 h\nC𝒇 C𝑔"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_072",
@@ -2536,7 +2607,8 @@
           "points": "",
           "statement": "A rendre avec la copie\n\nNom et Prénom :…………………………………………..                              classe :\n\n                                                2/2                      Devoir de contrôle N°5\n\nhttp://mathematiques.kooli.me/"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_073",
@@ -2566,7 +2638,8 @@
           "points": "7pts",
           "statement": "Soit  𝑓 et 𝑔 les deux fonctions définies sur   ℝ par :  𝑓(𝑥) = (𝑥 − 2)2  et   𝑔(𝑥) = 𝑥2 − 4𝑥\nOn désigne par 𝜁𝑓 et 𝜁𝑔 leurs courbes représentatives dans un repère orthogonal\n1) a) Déterminer le sens de variation de 𝑓 sur ]−∞, 2] puis sur [2, +∞[\nb) Préciser la nature et les éléments caractéristiques de 𝜁𝑓 et la tracer dans le repère ci-\ndessous.\n2) a) Montrer que 𝑔(𝑥) = 𝑓(𝑥) − 4\nb) En déduire comment tracer 𝜁𝑔 à partir de 𝜁𝑓\nc) Tracer alors 𝜁𝑔 avec une autre couleur dans le même repère.\n3) Soit ℎ la fonction définie sur ℝ par :  ℎ(𝑥) = 𝑥(|𝑥| − 4) et 𝜁ℎ sa courbe représentative\na) Montrer que ℎ est une fonction impaire.\nb) Montrer que ℎ(𝑥) = 𝑔(𝑥) pour tout 𝑥 ∈ [0, +∞[\nc) Tracer alors 𝜁ℎ avec une troisième couleur dans le même repère.\nd) Donner les variations de ℎ.\ne) Résoudre graphiquement l’équation : ℎ(𝑥) = 0.\n\nTrès bon travail..\nhttp://mathematiques.kooli.me/"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_074",
@@ -2596,7 +2669,8 @@
           "points": "10 pts",
           "statement": ":\nSoit\n  un cercle de diamètre\n AB et de rayon\n1 . Soit\nM  un point de\n   et\nC  le\nprojeté orthogonal de\nM  sur\n AB .\nOn pose\n aMAB et\nO A B .\n1/ Montrer que\n cos AC AM\nAM AB  .                                                               ( 2,5 pts )\n2/ a) Montre que si\n0, 4\n   alors\n 1 cos 2AC  .                                   ( 2,5 pts )\n    b)Exprimer\n \n2cos  en fonction de\n cos 2  .                                              ( 2,5 pts )\n3/ En déduire la valeur exacte de\ncos 12\n .                                                       ( 2,5 pts )\n\n                                                                                   Bon Travail … \nb-mehdi.jimdo.com"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_075",
@@ -2626,7 +2700,8 @@
           "points": "8pts",
           "statement": "On donne dans un repère orthonormé  (𝑂, 𝑖 ⃗⃗⃗  ; 𝑗 ⃗⃗⃗  ) les points 𝐴(1 ;1),𝐵(3;0)\n1°/ a- Déterminer une équation cartésienne de la droite (𝐴𝐵)\n     b- Déterminer une équation cartésienne de ∆ la droite perpendiculaire à (𝐴𝐵) passant par 𝑂\n 2°/ Soit l’ensemble C   :𝑥2 + 𝑦2 − 4𝑥 + 4𝑦 + 3 = 0\na- Montrer que C    est le cercle de centre 𝐼(2;−2) de rayon 𝑅 = √5.\nb- Calculer la distance du point I à la droite (𝐴𝐵). on donne (𝐴𝐵):𝑥 + 2𝑦 − 3 = 0.\nc- En déduire la position relative du cercle C    et la  droite (𝐴𝐵)\n3°/ On donne  ∆:2𝑥 − 𝑦 = 0. Montrer que : C   ∩ ∆= ∅\nProfesseur : Fourati Devoir de  contrôle  n°5   Date : 26/04/2025\nClasse:  2Sc ; Durée : 1 h\nC\n\n𝐴\n𝐵\n𝐸\n𝐹\nhttp://mathematiques.kooli.me/"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_076",
@@ -2651,7 +2726,8 @@
           "points": "",
           "statement": "Le plan est muni d un RON (O, I, J)\n        On donne : A (-1,2) ; B (0,-2), U  𝟒\n−𝟏  et la droite D : x – y – 2 = 0\n1) Vérifié que point B ∈ 𝑫\n2) a-Déterminer l équation de la droite ∆ passant par A et de vecteur directeur U\nb- calculer la distance entre le point B et la droite ∆\nc- montrer que les droites D et ∆ sont sécantes en un point que l on précisera\n3) soit Dm = {M(x ; y) / (m+2) x + (1-m) y + 2 – 2m = 0}\na- montrer que Dm est une droite pour tout réel m\nb- déterminer m pour que Dm passe par le point A\nc- déterminer m pour que Dm soit perpendiculaire a la droite ∆\nd- montrer que toutes les droites Dm  sont concourants en B\n\n                                                                      BON TRAVAIL\n\nLycée route chuigui\ntebourba\nDevoir de contrôle de\nmathématique(5)\nPROF:H-JAMEL\nClasses :2\neme\nsc"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_077",
@@ -2671,7 +2747,8 @@
           "points": "",
           "statement": ": 4pts\nChoisir la réponse correcte.\n 1- Soit ABC un triangle de cotés 2cm ; 3cm et 4cm.tel que le rayon de son cercle circonscrit est R=3cm\n    alors sa surface S est :\n      a)  2                             b)       𝟐                              c)    3\n 2- Soit ABC un triangle tel que : AB=c   AC=b et BC=a  alors :\na)    a2=b2+c2-2bc cos𝑨                  b) a2=b2+c2+2bc cos𝑨        c) a2=b2+c2-2bc sin𝑨\n 3-  Soit:  f(x)= 𝒙    ∀  x ∈  −𝟏;𝟐     alors:\na)  f est paire                            b) f est impaire                              c) f n’est ni paire ni impaire.\n 4- Soit f une fonction impaire sur IR  et qui est croissante sur 𝟎; +∞   alors :\n                        a)f est croissante sur IR.                       b)f est décroissante sur  −∞;𝟎 .\nΓ1\n : 10pts\n      On donne deux fonctions f(x)= -x2+1    et     g(x)=(x+2)2-3\n      et deux courbes Γ1 et Γ2  comme l’indique la figure\n      si jointe :\n 1/   pour chacune de ces fonctions donner la courbe\n    correspondante.\n 2/ Décrire le sens de variation de chacune.\n 3/ a-Résoudre graphiquement f(x)=g(x).\n\nb-Retrouver le résultat par le calcul.                                                                                                          Γ2\n 4/Résoudre graphiquement l’Inéquation :\n     (x+2)2+ x2≥4\n\n :  6pts C\n          On donne la figure suivante   AH=x\n 1/  En utilisant la loi de sinus dans le triangle BCH                                                                         BH=3x\nMontrer que  BC=  2 x 𝟑                                                                                                                        x  𝟑                                      HC= x 𝟑\n 2/ En utilisant le théorème d’El-Kashi dans le triangle ABC                                                                         B=\n𝝅\n𝟔\n                Calculer AC en fonction de x.                                                                                     A                H                          π/6   B\n 3/ Montrer alors que ABC est rectangle en C.                                             x                    3x\n\n          Lycee      de      Kasserine\n             * * * * *\n                    Devoir de contrôle 5\n                            * * * * *\n                       Elaboré par : Mr Jemli.\n\n              CLASSE :     2éme        Sciences 2\n                 Epreuve : Mathématique\n    Durée : 1 heure\n\n   Le :28/04/2010\n\nhttp://b-mehdi.jimdo.com"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_078",
@@ -2701,7 +2778,8 @@
           "points": "",
           "statement": "7 points\nOn donne la courbe repr´ esentative d’une fonction f .\n1\n2\n3\n-1\n-2\n-3\n1 2 3 4 5 6 7 8 9-1-2-3-4-5-6 0 x\ny\nCf\n/Bullet\nA\n/Bullet\nB\n/Bullet\nC\n1. Donner l’ensemble de d´ eﬁnition de f .\n2. D´ eterminerf (−6).\n3. D´ eterminer les ant´ ec´ edents de 0 parf .\n4. R´ esoudre l’in´ equationf (x) > 0.\n5. D´ eterminer le signe de f (x) pour tout x ∈ [−6; 8].\n6. f est-elle paire ?\n7. A quelles fonctions sont associ´ ees les courbes C1 et C2 repr´ esent´ ees ci-dessous ?\n1\n2\n3\n-1\n-2\n-3\n1 2 3 4 5 6 7 8 9-1-2-3-4-5-6 0 x\ny\nC1\n/Bullet /Bullet /Bullet\n1\n2\n3\n-1\n-2\n-3\n1 2 3 4 5 6 7 8 9-1-2-3-4-5-6 0 x\ny\nC2\n/Bullet /Bullet /Bullet\n- 2/2 - Prof: Lahbib Ghaleb"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_079",
@@ -2741,7 +2819,8 @@
           "points": "3 points",
           "statement": "a) Déterminer une équation cartésienne de la droite (AB) passant par les deux points\nA (2 ; – 3) et  B (1 ; – 1)\nb) Déterminer une équation de la droite passant par E (1;1) et de vecteur directeur  𝑢   −1\n2\n\n       Bonne Chance\nhttp://b-mehdi.jimdo.com"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_080",
@@ -2761,7 +2840,8 @@
           "points": "",
           "statement": "Lycée Tahar Sfar Mahdia Devoir de contrôle n° 5\nMathématiques\nNiveau : 2 ème Sc1\n\nDate : 26 / 04 / 2011 Prof : MEDDEB Tarak Durée : 1 heure\nNB : il sera tenu compte du soin apporté à la rédaction et à la présentation.\n  (10 pts )\n        Soit 𝐴𝐵𝐶 un triangle tel que 𝐴𝐵𝐶 =\n𝜋\n3  et  𝐴𝐶𝐵 =\n𝜋\n4 . On pose : 𝐴𝐵 = 𝑎,    𝑎 > 0.\n1) Faire une figure.\n2) Calculer 𝐴𝐶 en fonction de 𝑎.\n3) Soit 𝐻 le pied de la hauteur issue de 𝐴.\n𝑎/ Calculer 𝐵𝐻 et 𝐶𝐻 en fonction de a. En déduire que :\n13\n2BC a    .\n𝑐/ Montrer que :\n5 2 6sin 12 4\n  .\n4) Déterminer :\n5cos 12\n  ,\n7cos 12\n   et\ncos 12\n  .\n(10 pts )\n   Soient 𝑓 et 𝑔 les fonctions définies sur\n𝐼𝑅 par :\n21( ) 2 42f x x x     et\n\n2()g x ax b .  𝑎 ∈ 𝐼𝑅∗,𝑏 ∈ 𝐼𝑅.\nOn donne sur le graphique ci-contre les\ncourbes 𝐶𝑓 et 𝐶𝑔 des fonctions 𝑓 et 𝑔\ndans un repère orthonormé  𝑂,𝑖 ,𝑗   .\n1) Résoudre graphiquement dans\nl’intervalle  −2 , 2 :\n𝑓 𝑥 = −4 , 𝑓 𝑥 = 𝑔(𝑥)  et\n 𝑓 𝑥 ≤ 𝑔 𝑥 .\n2) 𝑎/ Montrer que, pour tout 𝑥 ∈ 𝐼𝑅,\non a :\n \n21( ) (2) 2 2f x f x   .\n𝑏/ En déduire que 𝑓 admet un minimum que l’on précisera.\n𝑐/ Dresser le tableau de variations de 𝑓 sur l’intervalle  −2 , 6 .\n3) Utiliser la courbe 𝐶𝑔 pour déterminer les réels 𝑎 et 𝑏.\nBonne chance\n𝐶𝑓\n𝐶𝑔\n𝑖\n𝑗\no"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_081",
@@ -2781,7 +2861,8 @@
           "points": "",
           "statement": "Lycée Tahar Sfar Mahdia Devoir de contrôle n° 5\nMathématiques\nNiveau : 2 ème Sc3+5\n\nDate : 24 / 04 / 2012 Prof : MEDDEB Tarak Durée : 1 heure\nNB : il sera tenu compte du soin apporté à la rédaction et à la présentation.\n  (10 pts )\n        Soient 𝑓 et 𝑔 deux fonctions définies sur 𝐼𝑅,\non donne sur le graphique ci-contre les courbes\nreprésentatives 𝐶𝑓 et ∆ des fonctions 𝑓 et 𝑔 dans un\nrepère orthonormé  𝑂 ,𝑖   , 𝑗   .\n1) Résoudre graphiquement dans  −2 ; 5 :\n𝑎/ 𝑓(𝑥) = 𝑔(𝑥)           𝑏/ 𝑓(𝑥) ≤ 𝑔(𝑥)\n𝑐/ 𝑓(𝑥) > 𝑔(𝑥).\n2) Sachant que, pour tout 𝑥 ∈ 𝐼𝑅,\n21( ) 2 12f x x x  \n.\n      𝑎/ Montrer que, pour tous réels 𝑎 et 𝑏 on a :\n\n1( ) ( ) ( )( 4) 2f b f a b a b a     .\n   𝑏/ Etudier le sens de variation de 𝑓 sur\nchacun des intervalles  −∞ ; 2  et  2 ; +∞  .\n 𝑐/ Dresser le tableau de variations de 𝑓 sur l’intervalle  −2 ; 5 .\n3) Ranger dans l’ordre croissant les réels 𝑓 4,01 , 𝑔(4,01) et 𝑓(4,02).\n(10 pts )\n        Le plan est rapporté à un repère orthonormé  𝑂,𝑖  ,𝑗   .\nOn considère les points 𝐴 4 , 2 , 𝐵(3 , 5),  𝐶 −2 , 0  et la droite ∆: 3𝑥 + 𝑦 + 6 = 0.\n1) Faire une figure que l’on complétera au fur et à mesure.\n2) Vérifier que 𝐶 ∈ ∆ et que les droites (𝐴𝐵) et ∆ sont parallèles.\n3) 𝑎/ Ecrire une équation cartésienne de la droite ∆′ passant par 𝐴 et parallèle à (𝐵𝐶).\n𝑏/ Les droites ∆ et ∆′ se coupent en en point 𝐷, déterminer les coordonnées de 𝐷.\n4) 𝑎/ Montrer que le triangle 𝐴𝐵𝐶 est rectangle en 𝐴.\n𝑏/ Calculer l’aire du quadrilatère 𝐴𝐵𝐶𝐷.                                                Bonne chance"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_082",
@@ -2801,7 +2882,8 @@
           "points": "",
           "statement": "EXERCICEN°1 : (11pts)\nOn donne ci-contre les courbes représentativesࣀ et\net\tࣀ′ respectivement de deux fonctions f et g\nPar lecture graphique répondre :\n1).a).Déterminer les images de (-1) et de (0)par g.\n      b).Déterminer les antécédents de (4) par f.\n2).Résoudre dans IR :\n      a).g(x) >\t3\n      b).f(x)≤ 4\n      c).f(x)-g(x)=0\n      d).f(x) ≤ g(x).\n3).Déterminer le minimum et le maximum de f sur [-2 ;2]\n4).Décrire les variations de chacune des fonctions f et g sur IR.\nEXERCICEN°2 : (3pts)\n1).Soit A=cos(\nଶగ\nହ)+sin(\nଶగ\nହ)+cos(\nଷగ\nହ) - sin(\nଷగ\nହ) et B=cos²(\nగ\n଼)+cos² (\nଷగ\n଼)\nCalculer A et B sans utiliser la calculatrice.\n2).Montre que pour tout réel x de [0 ;π ]\\{\nగ\nଶ }on a :\n(1-sin(x))(1+sin(x))(1+tan²(x))=1.\nEXERCICEN°3 :(6pts)\nSoit ABC  un triangle rectangle en A tel que AB=3 et AC=4\nOn désigne par H le projeté orthogonal de A sur (BC)\n1). Calculer BC et AH\n2). a).Calculer CH et BH\nb).Retrouver AH.                                                                                                                                               .\nBON TRAVAIL\n\n         DEVOIR DE CONTROLE N°5\nLycée Thelepte\nAvril 2012\nDurée : 1heures\n\n  Niveau :2 éme  Sciences\n  Epreuve : Mathématiques\n  Prof : Mhamdi Abderrazek +Rhimi Asma"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_083",
@@ -2821,7 +2903,8 @@
           "points": "",
           "statement": "Généralités sur les fonctions                                                                                                      Rotation\n\n1er Exercice :\n  Soit  la fonction 𝑓 déffinie sur  𝐼𝑅 par :    𝑓 𝑥 = −1  𝑥 + 1  .\n    𝐶𝑓  courbe représentative de 𝑓\n1) Etudier la fonction  𝑓.\n2) Soit la fonction 𝑔 définie sur par : 𝑔 𝑥 =  3𝑥 + 2\n 𝑥 + 1  .\n   On désigne par  𝐶𝑔  courbe représentative de  𝑔\n  a)  Montrer que : 𝑔 𝑥 = 3 − 1  𝑥 + 1  .\n  b)  tracer  𝐶𝑔   à partir de   𝐶𝑓  , justifier.\n  c) Déduire le tableau de variation de 𝑔.\n\n2èmeExercice :\nSoit ABC un triangle isocèle non rectangle de sommet principal A .\nSoit r la rotation directe de centre A et d’angle 𝜋 3 .\n 1)   a) Construie les points E et F tels que :𝐸 = 𝑟(𝐵)  et 𝐹 = 𝑟(𝐶)\n         b) Montrer que 𝐵𝐶 = 𝐸𝐹\n2) Soit r’ la rotation indirecte de centre A et d’angle 2𝜋 3 .\n         a) Construire le point K  tel que : 𝐾 = 𝑟′(𝐵)\n         b) Montrer que A est le milieu de  𝐸𝐾 .\n3) Montrer que EFK est rectangle en F.\n\nLycée secondaire Djelma\n\nLe 16 avril 2010\n\nMathématiques\n\nDevoir de contrôle N°5\n\nNiveau :Deuxième années sciences\n\nDurée : 1heure\nBon travail\n\nhttp://b-mehdi.jimdo.com\nGénéralités sur les fonctions                                                                                                      Rotation\n\nhttp://b-mehdi.jimdo.com"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_084",
@@ -2856,7 +2939,8 @@
           "points": "3 points",
           "statement": "Un promeneur marche 5 Km en direction Est. Puis 2 Km en direction presque du Nord –est\n(voir figure). Surpris par le mauvais temps, il retourne directement a son point de départ en\ncourant la distance AC\n1) quelle est la valeur de la distance courue.\n2) Calculer l’aire du triangle ABC.\n\nE.P. Blidette. Kebili\nDate: 16/04/10 Durée : 1h\nDevoir de contrôle N*5\nEn mathématiques\nMr : Zitouni Mohamed\nNiveau : 2eme Sc"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_085",
@@ -2881,7 +2965,8 @@
           "points": "10 points",
           "statement": "Soit   R = (O, 𝑖  ,𝑗 ) un repère orthonormé du plan\nSoit les points  B ( 3, 0 )   et   C (3 , 5 )    et   la droite  ( D) :  4x + 3y  -2  =  0\n1)Tracer ( D)  et placer les points   B  et   C\n2)Montrer que le point   C  est équidistant de   B  et  (D)\n3)Soit   (D’)   la perpendiculaire à (D)    passant par  C\n4)Déterminer les coordonnées du point   A   intersection de   D   et   D’\n5)Soit    ∆ :  y  = 2x - 1 ,montrer que   ∆  est la médiatrice de   [AB]"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_086",
@@ -2911,7 +2996,8 @@
           "points": "9 points",
           "statement": "Dans le plan muni d’un repère orthonormé (O, )j,i on donne la famille des droites\nm  : (2m – 1) x – (5m + 3) y + 19m + 7 = 0 où m est un paramètre réel.\n1) Tracer les droites 310 et,   et vérifier qu’elles sont concourantes en un point A dont on donnera les\ncoordonnées.\n2) En déduire que toutes les droites de cette famille passent par A.\n3) Déterminer m pour que la droite m  :\na) Ait  pour coefficient directeur 2.\nb) Ait pour vecteur directeur ji3u  .\nc) Soit parallèle à la droite D : x + y – 3 = 0.\nd) Soit perpendiculaire à la droite D : x + y – 3 = 0.\ne) Ait pour vecteur normal \n\n\n\n\n \n2\n3v\n\nProf : Boufares Amor\nL.S.A.B.K.K\nDevoir de contrôle N°6\nDate : Mai 2012\n2ème Sciences\nDurée : 1 h"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_087",
@@ -2941,7 +3027,8 @@
           "points": "8 points",
           "statement": "Dans la figure ci-dessous, 𝑂𝐴𝐵𝐶 et 𝐴𝐷𝐸𝐹 sont deux carrés tels que  𝑶𝑫       =\n𝟒\n𝟑𝑶𝑨        .\nOn se propose de montrer que :  - la droite (𝐶𝐸) passe par le milieu du segment [𝐴𝐵] .\n                                                               - les droites (CE) , (BD) et (OF) sont concourantes.\nOn considère le repère  (𝑂,𝑂𝐴      ,𝑂𝐶      ) .\n1)a) Déterminer les coordonnées des points O , A , B , C et D.\n    b) Vérifier que 𝐸(\n4\n3 ;\n1\n3)  et  𝐹(1;\n1\n3) .\n2)a) Donner une équation cartésienne de la droite  (𝐶𝐸) .\n    b) En déduire que la droite (𝐶𝐸) passe par le milieu du segment  [𝐴𝐵] .\n3)a) Donner une équation cartésienne de la droite  (𝐵𝐷) .\n    b) Montrer que les droites (𝐵𝐷) et (𝐶𝐸) sont sécantes en un point 𝐼 que l’on déterminera.\n    c) En déduire que les droites (CE) , (BD) et (OF) sont concourantes.\n\n𝐶\n𝑂 𝐴\n𝐷\n𝐸 𝐹\n𝐵"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_088",
@@ -2961,7 +3048,8 @@
           "points": "",
           "statement": "Barème\n1point\n2 points\n1,5 points\n1,5 points\n3 points\n3 points\n3 points\n Le plan étant muni d’un repère orthonormé (O ; → i ; → j )\nI. Donnez une équation cartésienne du cercle de cent re I(-1;-2) et de rayon 2 3\nII. On donne les points A(2;1) et B(3;-2)\n1. Déterminez une équation du cercle C de diamètre [AB]\n2. Déterminez une équation de la tangente à C en A\nIII.Soit\n (5;1) et D: y = -x + 4\nDéterminez une équation du cercle de centre\n  et tangent à D\nIV.Déterminez l’ensemble E des points M(x;y) tel que: 36x² +36y² - 36x - 24y -131 = 0\nV. On donne les points M(-3;-2) et N(1;2)\n1. Donnez l’équation réduite de la droite (MN)\n2. Déterminez les coordonnées des points d’intersection de la droite (MN) et du cercle\n\u0003\nd’équation : x² + y² + 4x - 2y - 5 = 0\nVI.Soit la fonction définie sur IR par : f(x) = x² - 3x - 4\n1. Vérifiez que f(x) =  (x − 3\n2\n)2 − 25\n4\n2. On désigne par Cf la représentation de f ; donnez le centre et l’axe de Cf\n3. Soit P la parabole d’équation y = x². Expliquez comment obtenir Cf à partir de P\nVII.\nDans la figure ci-contre (C) est un cercle de\ncentre A; D est une droite de vecteur\ndirecteur → u\n1. Donnez le rayon de C\n2. Donnez les composantes de → u\n3. Déterminez les équations des tangentes à\nC perpendiculaires à D\nDate : le 14/05/10  /budleafboldne/budleafboldnw Durée : 1hClasse  : 2 ème Sc 1\nDEVOIR DE CONTROLE DE MATHEMATIQUES N° 6\nProfesseur:  M Bouslama.SLYCEE   JAMMEL\nNom : ........................................ Préno m : ........................................ N° : .. .....\n5 points VIII. On donne la parabole \u0003 représentant dans un repère orthonormé une fonction f\n1. Déterminez l’expression de f(x)\n2. On prend f(x) =  et on considère la fonction g ; g(x) = − 1\n2\nx2 + 2x + 3 − 1\n2\nx2 + 2 x + 3\na- Montrez que g est paire\nb- Montrez que pour tout x\n\r IR + ; f(x) = g(x)\nc- Déduire et tracer la courbe C’ de g\nd- Donnez le tableau de variation de g\nBon Travail"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_089",
@@ -2986,7 +3074,8 @@
           "points": "8 points",
           "statement": "Le plan est rapporté à un repère orthonormé (ܱ,ଓ⃗, ଔ⃗). On désigne par C l’ensemble des\npointsܯ( ݔ,ݕ )\ntels que :ݔ² +ݕ² − 2ݕ− 1 = 0 et parܦla droite d’équation :ݔ+ ݕ− 1 = 0 .\n1. a. Montrer que C est un cercle dont on précisera le centreܫet le rayonܴ.\nb. Vérifier queܫ∈ܦ.\n2. a. Vérifier que le pointܣ(−1,2) ∈ C .\nb. Tracer C etܦ\nc. Ecrire une équation de la tangenteܦ'au cercle C enܣ.\nd. Prouver que les droitesܦetܦ'sont perpendiculaires.\ne. Déterminer une équation de l’autre tangenteܦ''à C et perpendiculaire àܦ.\nwww.tunisiamaths.com/m2\nAnnexe à rendre avec la copie\nNom, prénom et classe :\n"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_090",
@@ -3011,7 +3100,8 @@
           "points": "8pts",
           "statement": "𝑆𝐴𝐵𝐶𝐷 est une  pyramide dont la base 𝐴𝐵𝐶𝐷 est un carré . Les deux points 𝐼 et 𝐽 sont\nrespectivement les milieux de [𝑆𝐴] et  [𝑆𝐵] , le point  𝐾 ∈ [𝑆𝐶] tel que 𝑆𝐾 =\n1\n3𝑆𝐶\n1°/a- Montrer que (𝐼𝐽)//(𝐴𝐵).\n     b- En déduire la position relative de la droite (𝐼𝐽) et le plan (𝐴𝐵𝐶).\n2°/La droite parallèle à  (𝐷𝐶) passant par 𝐾 coupe (𝑆𝐷) en 𝐿.\na- Montrer que (𝐾𝐿)//(𝐼𝐽).\nb- Montrer que les deux droites (𝐾𝐽) et (𝐴𝐵) sont non coplanaires.\n3°/La droite (𝐾𝐽)coupe (𝐵𝐶) en un point 𝑀. Montrer que (𝐾𝐽) ∩ (𝐴𝐵𝐶) = {𝑀}\n4°/La droite (𝐿𝐼) coupe le plan (𝐴𝐵𝐶) en un point 𝑁.\na- Construire, en justifiant, le point 𝑁.\nb- Déterminer et construire l’intersection des deux plans (𝐼𝐽𝐾) et (𝐴𝐵𝐶).\n5°/La droite (𝐼𝐾) coupe le plan (𝐴𝐵𝐶) en un point 𝐸\nMontrer que les droites (𝐼𝐾) ;(𝑀𝑁) et (𝐴𝐶) sont concourantes en 𝐸.\n\n𝐴\n𝐵\n𝐶\n𝐷\n𝑆\n𝐼\n 𝐽\n𝐾"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_091",
@@ -3046,7 +3136,8 @@
           "points": "6pts",
           "statement": "On donne ci-dessous la représentation graphique de deux paraboles P et P’\n1)\n à l’aide d’une lecture graphique déterminer le sommet et l’axe de chaque parabole\n2) Déterminer l’équation de chaque parabole\n3) Résoudre graphiquement puis par le calcul f(x)=g(x)\n4) Résoudre graphiquement puis par le calcul\n   f x g x"
         }
-      ]
+      ],
+      "tome": 1
     },
     {
       "id": "ANN_092",
@@ -3066,7 +3157,8 @@
           "points": "",
           "statement": "Lycée Tahar Sfar Mahdia Devoir de contrôle n° 6\nMathématiques\nNiveau : 2 ème Sc3+5\n\nDate : 15 / 05 / 2012 Prof : MEDDEB Tarak Durée : 1 heure\nNB : il sera tenu compte du soin apporté à la rédaction et à la présentation.\n  (10 pts )\n        Le plan est rapporté à un repère orthonormé\n ,,O i j\n    .\nOn considère l’ensembleC  des points 𝑀(𝑥 , 𝑦) vérifiant : 𝑥2 + 𝑦2 − 2𝑥 − 4𝑦 − 15 = 0.\n1) Montrer queC  est le cercle de centre 𝐼(1 , 2) et de rayon 𝑅 que l’on précisera.\n2) Soient les points 𝐴(5 , 0) et 𝐴′(−3 , 4).\n𝑎/ Vérifier que  𝐴𝐴′  est un diamètre deC   .\n𝑏/ Déterminer les coordonnées des points d’intersection deC  et l’axe des\nabscisses.\n3) Soit ∆ la droite d’équation : 2𝑥 − 𝑦 − 10 = 0.\n𝑎/ Vérifier que ∆ est tangente àC   en 𝐴.\n𝑏/ Ecrire une équation cartésienne de la deuxième tangente ∆′ àC  parallèle à ∆.\n4) Soit le point 𝐵(9 , 3), la droite  𝐴𝐵  recoupeC   en un point 𝐸.\n𝑎/ Vérifier que les droites (𝑂𝐴’) et (𝐴𝐵) sont perpendiculaires.\n𝑏/ En déduire que les points 𝑂,𝐴’ et 𝐸 sont alignés.\n(10 pts )\n     Dans la feuille annexe ci-jointe est représentée dans un repère orthonormé\n ,,O i j\n    la\nparabole P   représentation graphique d’une fonction 𝑓 définie sur 𝐼𝑅.\n1) En utilisant la courbe P  , montrer que : 𝑓 𝑥 = −𝑥2 − 4𝑥 + 1.\n2) Soit 𝑔 la fonction définie sur 𝐼𝑅 par : 𝑔 𝑥 = 𝑥2 − 4𝑥 + 1.\nOn désigne par P   ′  la représentation graphique de 𝑔 dans le repère\n ,,O i j\n    de la\nfeuille de l’annexe.\n𝑎/ Montrer que P   et P   ′ ont un seul point commun 𝐴 que l’on précisera.\n𝑏/ Vérifier que, pour tout 𝑥 ∈ 𝐼𝑅, 𝑔 𝑥 =  𝑥 − 2 2 − 3.\n𝑐/ Tracer P   ′ .\n3) Soit, pour 𝑥 ∈ 𝐼𝑅, 𝑕 𝑥 = 𝑥 𝑥 − 4𝑥 + 1.\n𝑎/  Utiliser P   et P   ′ pour  tracer 𝐶𝑕 la courbe représentative de 𝑕 dans le repère\n ,,O i j\n  \n de la feuille de l’annexe.\n𝑏/ Dresser le tableau de variations de 𝑕.                                            Bonne chance\n\nNom et prénom :…………………………………………………                                        Classe :……..\n\nFEUILLE ANNEXE A RENDRE AVEC LA COPIE"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_093",
@@ -3091,7 +3183,8 @@
           "points": "10 points",
           "statement": "Le plan est rapporté à un repère orthonormé (o ; i ; j  )\nOn désigne par   𝜑  l’ensemble des points M(x,y) tels que : x² + y² - 2y -1 = 0\net par D : x + y -1= 0 .\n1. Montrer que  𝜑 est un cercle dont on précisera le centre I et le rayon R.\n2. Vérifier que I  D  et  Vérifier que le point H(-1,2)   𝝋.\n3. Ecrire une équation de la tangente  ∆1 au cercle 𝜑 en H.\n4. Prouver que les droites D et  ∆1 sont perpendiculaires.\n5. Déterminer une équation de l’autre tangente ∆2  à 𝜑 et perpendiculaire à D .\n6. Déterminer les équations des droites D’ et D‘’ parallèles à D qui coupent le\ncercle 𝜑 en deux points A et B et tels que IAB soit un triangle équilatéral.\nb-mehdi.jimdo.com"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_094",
@@ -3121,7 +3214,8 @@
           "points": "7 points",
           "statement": "Le plan est munie d’un repère orthonormé (O,\nji, ).Soit les points A (4,2) et le point B (1,-1).\n\n1) Montrer que (AB) : x – y -2 =0\n2) On donne l’ensemble (C) : x2 +y2 -2x-4y-4=0\na) Montrer que (C) est un cercle de centre  I (1,2) et dont on précisera son rayon.\nb) Calculer d (I, (AB)) .Interpréter le résultat.\nc) Monter que A et B appartient à (C).\n2) Soit E le symétrique de B par rapport à I.\na) Déterminer les coordonnés de E :\nb) Donner une équation cartésienne de la droite T tangente à (C) en E.\nc) Déterminer les coordonnés du point F d’intersection de T et (AB). Déduire que A est le milieu de\n[BF]\n\nBon travail"
         }
-      ]
+      ],
+      "tome": 2
     },
     {
       "id": "ANN_095",
@@ -3216,7 +3310,8 @@
           "points": "",
           "statement": "Soit le polynôme 𝑃(𝑥) =\n1\n4 𝑥4 −\n1\n2 𝑥3 +\n1\n4 𝑥2.\n1)  Calculer 𝑃(−1) ; 𝑃(1) et  𝑃(2).\n2)  Montrer que pour tout réel 𝑥 ;on a 𝑃(𝑥 + 1) =\n𝑥2(𝑥+1)2\n4\n3)  En déduire que pour tout réel 𝑥 ;on a 𝑃(𝑥 + 1) − 𝑃(𝑥) = 𝑥3\n4)  En déduire que pour tout entier 𝑛 ≥ 2; on a :  13 + 23 + 23 + ⋯ + 𝑛3 =\n𝑛2(𝑛+1)2\n4\n\nhttp://mathematiques.kooli.me/     58  300  174"
         }
-      ]
+      ],
+      "tome": 1
     }
   ]
 }
