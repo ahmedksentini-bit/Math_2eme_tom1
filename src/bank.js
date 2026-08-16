@@ -40,6 +40,42 @@ function shuffle(rng, list) {
   return copy;
 }
 
+const ST = {
+  tvaTtc: "Un article est vendu au prix hors taxes indiqué ci-dessous. On lui applique un taux de T.V.A. t. D’après le cours du chapitre 1, le prix toutes taxes comprises s’obtient en multipliant le prix hors taxes par le coefficient 1 + t/100 (on ne rajoute pas t dinars). Écrire d’abord la relation littérale, puis calculer le prix T.T.C.",
+  tvaHt: "Un article est vendu au prix T.T.C. indiqué, au taux de T.V.A. donné. On cherche le prix hors taxes. D’après le cours, HT = TTC / (1 + t/100) : on divise par le coefficient, on ne retranche pas t %. Écrire la relation, puis calculer le H.T.",
+  successivePercent: "Un prix subit deux variations successives, de p₁ % puis de p₂ % (une hausse est positive, une baisse est négative). On demande le coefficient composé, puis le pourcentage global. On multiplie les coefficients 1 + p/100, on n’additionne jamais les taux.",
+  heronArea: "On considère un triangle dont les trois côtés a, b et c sont donnés. On demande le demi-périmètre p = (a+b+c)/2, puis l’aire A par la formule de Héron du chapitre 1 : A = √[p(p−a)(p−b)(p−c)]. Les côtés doivent vérifier l’inégalité triangulaire.",
+  absEquation: "On cherche les réels x tels que |x + a| = b. Si b < 0, il n’y a pas de solution. Sinon, d’après le cours, |X| = b signifie X = b ou X = −b. Ici X = x + a : donner les deux solutions, sans oublier le cas « moins ».",
+  affineBounds: "Un réel a parcourt l’intervalle [a_min ; a_max]. On demande un encadrement de l’expression affine m a + p. Si m ≥ 0, l’ordre se conserve ; si m < 0, l’ordre s’inverse. On calcule les images des deux bornes, puis on range du plus petit au plus grand.",
+  lightTime: "La distance Terre–Soleil est donnée en millions de km, la vitesse de la lumière en km/s (activité 50 du chapitre 1). Convertir la distance en km, puis calculer le temps de parcours t = d/v en secondes et en minutes. Seulement une division après mise en unités cohérentes.",
+  scientificOrder: "On donne un réel N. Écrire N sous la forme a × 10ⁿ avec 1 ≤ |a| < 10, puis donner son ordre de grandeur (activité 47). Méthode du cours : on déplace la virgule jusqu’à obtenir a entre 1 et 10 ; l’ordre de grandeur arrondit a à l’unité en gardant la même puissance de 10.",
+  quadraticSolve: "Résoudre dans IR l’équation ax² + bx + c = 0 (a ≠ 0). Calculer le discriminant Δ = b² − 4ac, les racines réelles s’il y en a, leur somme et leur produit. Somme = −b/a et produit = c/a se calculent même sans √Δ.",
+  resistors: "Deux résistances inconnues R₁ et R₂ ont pour association série R et pour association parallèle r. D’après le cours, R₁ et R₂ sont les racines de t² − R t + r R = 0. Calculer le produit R₁ R₂, puis R₁ et R₂ (on prendra R₁ ≥ R₂).",
+  cyclists: "Deux cyclistes partent de deux villes distantes de D km. S’ils partent ensemble, ils se rencontrent après T heures. Si A part quelques minutes trop tôt, la rencontre a lieu à mi-chemin. Convertir les minutes en heures, écrire (V_A + V_B) T = D, puis calculer V_A et V_B.",
+  squareDecrease: "Existe-t-il un carré de côté x tel que, si l’on diminue chaque côté de h cm, l’aire diminue de ΔA cm² ? Traduire par x² − (x − h)² = ΔA, développer (sans oublier −h²), puis isoler x. Il faut x > h.",
+  goldenRatio: "Le nombre d’or φ du chapitre 2 est la racine positive de φ² = φ + 1. Se ramener à l’équation du second degré φ² − φ − 1 = 0, calculer φ et φ², et vérifier l’identité φ² = φ + 1.",
+  polyEval: "Soit P le polynôme de degré 3 donné par ses coefficients. Calculer P(x₀) en substituant. On peut grouper les puissances : ((a₃ x₀ + a₂) x₀ + a₁) x₀ + a₀. Si le résultat est 0, x₀ est une racine.",
+  polyIntegerRoot: "Soit P(x) = x³ + a x² + b x + c. Chercher une racine entière (elle divise le terme constant), puis factoriser P(x) = (x − r)(x² + q_B x + q_C) par identification des coefficients.",
+  polyKnownRoot: "Soit A(x) = x³ + a x² + b x + c. Vérifier que r est une racine en calculant A(r), puis factoriser A(x) = (x − r)(x² + q_B x + q_C) par identification des coefficients.",
+  sumIntegers: "n est un entier naturel non nul. Calculer S₁ = 1 + 2 + … + n et S₂ = 1² + 2² + … + n² à l’aide des formules du chapitre 3 : S₁ = n(n+1)/2 et S₂ = n(n+1)(2n+1)/6. Attention : (S₁)² n’est pas S₂.",
+  euclidDiv: "Effectuer la division euclidienne de a par b (b > 0) : trouver l’unique couple d’entiers (q, r) tel que a = b q + r et 0 ≤ r < b. Contrôler ensuite que b q + r retrouve a.",
+  remainderLast3: "Déterminer le reste de la division euclidienne de n par 8, en n’utilisant que les trois derniers chiffres (car 1000 = 8 × 125). On ne divise pas tout n, seulement ce petit entier.",
+  remainderDigits: "Déterminer le reste de la division euclidienne de n par 9 à l’aide de la somme de ses chiffres (critère du chapitre 4). Un entier et la somme de ses chiffres ont le même reste modulo 9.",
+  barcodeCheck: "Les douze premiers chiffres d’un code-barres EAN-13 sont donnés (culture du chapitre 4). Rang depuis la gauche : somme des rangs impairs + triple des rangs pairs + clé ≡ 0 (mod 10). Déterminer la clé.",
+  gcd3: "Une caisse de dimensions L, ℓ, h (en cm) doit être remplie par des cubes d’arête entière maximale, sans vide ni débordement (exercice 30 du chapitre 4). L’arête est le PGCD des trois dimensions ; le nombre de cubes est (L/a)(ℓ/a)(h/a).",
+  vectorAB: "Le plan est muni d’un repère orthonormé. Les points A et B sont donnés. Déterminer les composantes de AB⃗ = (x_B − x_A ; y_B − y_A), puis sa norme |AB⃗| = √(x² + y²). Attention : BA⃗ = −AB⃗.",
+  detColinear: "Dans une base du plan, deux vecteurs sont donnés par leurs composantes. Calculer det = x y' − x' y. D’après le cours, les vecteurs sont colinéaires si et seulement si ce déterminant est nul. On n’utilise pas le déterminant pour un angle droit.",
+  dotOrtho: "Le plan est muni d’une base orthonormée. Deux vecteurs sont donnés. Calculer le produit scalaire x x' + y y'. Ils sont orthogonaux si et seulement si ce produit est nul. On n’utilise pas le déterminant pour la perpendicularité.",
+  parallelogramD: "Le plan est muni d’un repère. Trois points A, B, C sont donnés, dans cet ordre. Déterminer D pour que ABCD soit un parallélogramme : AB⃗ = DC⃗, donc D = A + C − B. Contrôler que les milieux de [AC] et [BD] coïncident.",
+  bary1d: "Sur une droite, A et B ont des abscisses données. G est le barycentre de (A, α) et (B, β), avec α + β ≠ 0. Déterminer l’abscisse de G : x_G = (α x_A + β x_B)/(α+β), et le coefficient k tel que AG⃗ = k AB⃗, avec k = β/(α+β). G est sur [AB] si α et β sont de même signe.",
+  bary2d: "Dans un repère, trois points A, B, C sont pondérés par des masses α, β, γ (somme non nulle). G est leur barycentre. Déterminer les coordonnées de G, moyennes pondérées des coordonnées. Si les masses sont égales, G est l’isobarycentre (centre de gravité du triangle).",
+  translation: "t est la translation de vecteur v⃗ donné. Un point M est donné. Déterminer l’image M' : par définition MM'⃗ = v⃗, donc on ajoute les composantes. Tous les points glissent du même vecteur : M'N'⃗ = MN⃗. Il n’y a pas de centre.",
+  homothety: "h est l’homothétie de centre O et de rapport k. Un point M est donné. Déterminer l’image M' définie par OM'⃗ = k OM⃗, puis la distance MM' = |k − 1| · OM. Si k < 0, M' est de l’autre côté de O.",
+  homothetyScale: "Une homothétie de rapport k transforme une figure de périmètre p et d’aire A. D’après le cours du chapitre 8, les longueurs sont multipliées par |k| et les aires par k². Calculer le périmètre p' et l’aire A' de l’image. Aire au quart ⇔ |k| = 1/2, pas k = 1/4.",
+  rotation90: "Le plan est muni d’un repère orthonormé direct. r est le quart de tour direct de centre O. Un point M est donné. Déterminer M' : OM' = OM et l’angle MOM' vaut 90°. Autour de l’origine, (x ; y) ↦ (−y ; x). Autour d’un centre O, on applique cette règle au vecteur OM⃗.",
+  rotationAngle: "r est la rotation directe de centre O et d’angle α (cas du cours : 90° ou 180°). Un point M est donné. Déterminer M' en utilisant la définition : OM' = OM et l’angle MOM' vaut α. Pour 90°, quart de tour ; pour 180°, M' = 2O − M."
+};
+
 function item(chapter, band, difficulty, solver, title, statement, variables, questions, index) {
   return {
     id: `${chapter}_${band}_${solver}_${index + 1}`,
@@ -49,7 +85,7 @@ function item(chapter, band, difficulty, solver, title, statement, variables, qu
     difficulty,
     band,
     generated: true,
-    statement,
+    statement: ST[solver] || statement,
     variables,
     questions
   };

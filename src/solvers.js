@@ -73,8 +73,9 @@ export const solvers = {
     const b = Math.round(a);
     const order = b * 10 ** nExp;
     return steps({ a, nExp, order }, [
+      ["Déplacer la virgule", `On écrit ${n(d.N)} sous la forme a × 10^n avec 1 ≤ |a| < 10, en déplaçant la virgule.`],
       ["Écriture scientifique", `${n(d.N)} = ${n(a)} × 10^${nExp}`],
-      ["Ordre de grandeur", `On arrondit ${n(a)} à l’unité : ${n(b)} × 10^${nExp} = ${n(order)}`]
+      ["Ordre de grandeur", `On arrondit a = ${n(a)} à l’unité : ${n(b)} × 10^${nExp} = ${n(order)}`]
     ]);
   },
   quadraticSolve(d) {
@@ -316,11 +317,24 @@ export const solvers = {
     const xM = d.xO + dx * Math.cos(th) - dy * Math.sin(th);
     const yM = d.yO + dx * Math.sin(th) + dy * Math.cos(th);
     const om = Math.hypot(dx, dy);
-    return steps({ xM, yM, om }, [
-      ["Conservation de la distance", `OM' = OM = ${n(om)}`],
-      ["Angle", `rotation directe d’angle ${n(d.angle)}°`],
-      ["Image", `M' (${n(xM)} ; ${n(yM)})`]
-    ]);
+    const stepsText = d.angle === 180
+      ? [
+          ["Demi-tour", `Rotation d’angle 180° = symétrie centrale de centre O : M' = 2O − M.`],
+          ["Image", `M' (${n(xM)} ; ${n(yM)})`],
+          ["Contrôle", `OM' = OM = ${n(om)}`]
+        ]
+      : d.angle === 90
+        ? [
+            ["Quart de tour direct", `Autour de O, (x − x_O ; y − y_O) ↦ (−(y − y_O) ; x − x_O).`],
+            ["Image", `M' (${n(xM)} ; ${n(yM)})`],
+            ["Contrôle", `OM' = OM = ${n(om)}`]
+          ]
+        : [
+            ["Définition du cours", `OM' = OM et l’angle MOM' vaut ${n(d.angle)}°.`],
+            ["Image", `M' (${n(xM)} ; ${n(yM)})`],
+            ["Contrôle", `OM' = OM = ${n(om)}`]
+          ];
+    return steps({ xM, yM, om }, stepsText);
   }
 };
 

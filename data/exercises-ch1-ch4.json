@@ -88,7 +88,7 @@
     "solver": "scientificOrder",
     "title": "Écriture scientifique et ordre de grandeur",
     "difficulty": 1,
-    "statement": "Écrire N sous la forme a × 10ⁿ (1 ≤ |a| < 10), puis donner son ordre de grandeur. (Activité 47 du chapitre 1.)",
+    "statement": "On donne un réel N. Écrire N sous la forme a × 10ⁿ avec 1 ≤ |a| < 10, puis donner son ordre de grandeur (activité 47 du chapitre 1). Méthode du cours : on déplace la virgule jusqu’à obtenir a entre 1 et 10 ; l’ordre de grandeur arrondit a à l’unité en gardant la même puissance de 10.",
     "variables": [
       {"key": "N", "label": "Nombre N", "unit": "—", "value": 35215000, "min": 1000000, "max": 90000000, "step": 100000}
     ],

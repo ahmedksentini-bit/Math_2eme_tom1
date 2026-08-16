@@ -73,9 +73,9 @@ const recaps = {
     title: "Écriture scientifique",
     lead: "Tout réel non nul s’écrit a × 10ⁿ avec 1 ≤ |a| < 10. L’ordre de grandeur arrondit a à l’unité.",
     points: [
-      "n = E(log₁₀ |N|), puis a = N / 10ⁿ.",
-      "Ordre de grandeur : b × 10ⁿ, b arrondi de a à l’unité.",
-      "C’est un outil d’estimation, pas un arrondi de calculatrice."
+      "On déplace la virgule de N jusqu’à obtenir un nombre a tel que 1 ≤ |a| < 10.",
+      "Le nombre de rangs déplacés vers la gauche est l’exposant n (vers la droite : n est négatif).",
+      "Ordre de grandeur : on arrondit a à l’unité, on garde la même puissance de 10."
     ],
     watch: "0,0007845 = 7,845 × 10⁻⁴, d’ordre 8 × 10⁻⁴, pas 7 × 10⁻⁴."
   },
@@ -134,7 +134,7 @@ const recaps = {
     lead: "Évaluer P(x₀), c’est substituer puis calculer. C’est aussi le premier test pour savoir si x₀ est une racine.",
     points: [
       "P(α) = 0  ⇔  α est racine  ⇔  (x − α) divise P.",
-      "On peut utiliser le schéma de Horner pour limiter les erreurs.",
+      "On calcule en substituant, ou en groupant les puissances : ((a₃x + a₂)x + a₁)x + a₀.",
       "Un polynôme de degré n a au plus n racines."
     ],
     watch: "P(1) = somme des coefficients. P(−1) = somme alternée."
@@ -144,7 +144,7 @@ const recaps = {
     lead: "Une racine entière divise le terme constant. Une fois trouvée, on factorise par x − r.",
     points: [
       "Tester les diviseurs de a₀.",
-      "La division selon les puissances décroissantes (ou Horner) donne le quotient.",
+      "La division selon les puissances décroissantes, ou l’identification des coefficients, donne le quotient.",
       "On poursuit sur le quotient si le degré le permet."
     ],
     watch: "Trouver une racine ne termine pas le problème : il reste à factoriser complètement."
@@ -154,7 +154,7 @@ const recaps = {
     lead: "Si P(α) = 0, alors P(x) = (x − α) Q(x) avec deg Q = deg P − 1.",
     points: [
       "Vérifier d’abord P(α) = 0.",
-      "Identifier Q par Horner ou par identification des coefficients.",
+      "Identifier Q par identification des coefficients (puissances décroissantes).",
       "Le quotient peut encore se factoriser."
     ],
     watch: "Le coefficient dominant de Q est le même que celui de P."
@@ -234,8 +234,7 @@ const recaps = {
     lead: "Deux vecteurs du plan sont colinéaires si et seulement si leur déterminant est nul.",
     points: [
       "det(u⃗, v⃗) = x y' − x' y.",
-      "det = 0  ⇔  u⃗ et v⃗ colinéaires  ⇔  droites (AB) et (CD) parallèles.",
-      "Le déterminant est aussi l’aire algébrique du parallélogramme."
+      "det = 0  ⇔  u⃗ et v⃗ colinéaires  ⇔  droites (AB) et (CD) parallèles."
     ],
     watch: "x/x' = y/y' exige de traiter à part le cas d’une composante nulle. Le déterminant évite cette trappe."
   },
@@ -339,21 +338,33 @@ const fallback = {
 };
 
 const details = {
-  tvaTtc: ["Le coefficient 1 + t/100 est le seul outil : 17 % ⇔ ×1,17. On peut contrôler avec un prix rond (100 D → 117 D).", "Dans un problème de facture, le H.T. est la base imposable ; les centimes viennent du produit, pas d’un arrondi prématuré."],
-  tvaHt: ["Inverser une hausse n’est pas retrancher le même pourcentage. 117 / 1,17 = 100, alors que 117 − 17 = 100 n’est qu’une coïncidence sur 100.", "Toujours diviser par 1 + t/100, jamais multiplier par 1 − t/100 (ce serait un rabais)."],
-  successivePercent: ["+10 % puis +20 % : ×1,1 × 1,2 = ×1,32, soit +32 %. +10 % puis −10 % : ×1,1 × 0,9 = ×0,99, soit −1 %, pas un retour au prix initial.", "On écrit les coefficients avant de parler de pourcentages globaux."],
-  heronArea: ["p doit être strictement plus grand que chaque côté (inégalité triangulaire). Sinon la quantité sous la racine est nulle ou négative.", "Sur un 3-4-5, A = 6 : Héron doit retrouver 6 (ou un multiple si on agrandit)."],
-  absEquation: ["|X| = b avec b ≥ 0 donne deux cas. Géométriquement, on trace le point −a puis on reporte ±b.", "Si l’équation est |x + a| = |x + c|, on obtient la médiatrice : x = −(a+c)/2, plus d’éventuels cas de signes."],
-  affineBounds: ["Une fonction affine est monotone. Le min et le max sur un segment sont atteints aux extrémités, jamais à l’intérieur.", "Le piège classique : m < 0. L’image de a_min est alors le maximum."],
-  lightTime: ["Cohérence des unités : millions de km → km, puis t = d/v en secondes. 500 s = 8 min 20 s.", "L’année-lumière est une distance (c × 1 an), pas un temps."],
-  scientificOrder: ["n = E(log₁₀|N|). Si N = 35215000, n = 7 et a = 3,5215. L’ordre de grandeur est 4×10⁷, pas 3×10⁷.", "Pour un nombre < 1, n est négatif : 0,0007845 = 7,845×10⁻⁴."],
-  quadraticSolve: ["Avant de lancer Δ, regarder a+b+c et a−b+c : une racine évidente économise le radical.", "Somme et produit se calculent sans √Δ et servent de contrôle : x₁ + x₂ et x₁x₂."],
+  tvaTtc: ["Lecture de l’énoncé. On donne un prix hors taxes et un taux de T.V.A. On demande le prix T.T.C. Le coefficient 1 + t/100 est le seul outil : 17 % ⇔ ×1,17. On ne rajoute pas t dinars.", "Contrôle : 100 D à 17 % donnent 117 D. Les centimes viennent du produit, pas d’un arrondi prématuré."],
+  tvaHt: ["Lecture de l’énoncé. Le prix affiché est T.T.C. ; on cherche le H.T. Inverser une hausse n’est pas retrancher le même pourcentage : on divise par 1 + t/100.", "117 / 1,17 = 100. On ne multiplie pas par 1 − t/100 (ce serait un rabais)."],
+  successivePercent: ["Lecture de l’énoncé. Un prix subit deux variations successives. On demande le coefficient composé, puis le pourcentage global. On multiplie les coefficients, on n’additionne jamais les taux.", "+10 % puis +20 % : ×1,1 × 1,2 = ×1,32, soit +32 %. +10 % puis −10 % : ×0,99, soit −1 %, pas un retour au prix initial."],
+  heronArea: ["Lecture de l’énoncé. Un triangle est donné par ses trois côtés. On demande p puis A par Héron. p doit être strictement plus grand que chaque côté (inégalité triangulaire).", "Sur un 3-4-5, A = 6 : Héron doit retrouver 6 (ou un multiple si on agrandit)."],
+  absEquation: ["Lecture de l’énoncé. On demande les réels x tels que |x + a| = b. Si b ≥ 0, deux cas : x + a = b ou x + a = −b. On n’oublie pas le cas « moins ».", "Géométriquement, on place le point −a puis on reporte ±b."],
+  affineBounds: ["Lecture de l’énoncé. a parcourt [a_min ; a_max]. On encadre m a + p. Si m ≥ 0 l’ordre se conserve ; si m < 0 il s’inverse. On évalue aux deux bornes.", "Piège : m < 0. L’image de a_min est alors le maximum. Exemple : −3a + 5 avec a ∈ [−2 ; 3]."],
+  lightTime: ["Lecture de l’énoncé. Distance en millions de km, vitesse en km/s. On convertit, puis t = d/v en secondes et en minutes (activité 50).", "150 millions de km à 300 000 km/s donnent 500 s, soit 8 min 20 s. L’année-lumière du manuel est une distance, pas un temps."],
+  quadraticSolve: ["Lecture de l’énoncé. On donne a, b, c. On demande Δ, les racines, la somme et le produit. Avant Δ, regarder a+b+c : s’il est nul, 1 est racine.", "Somme = −b/a et produit = c/a se calculent sans √Δ et servent de contrôle."],
+  scientificOrder: [
+    "Lecture de l’énoncé. On donne un réel N. On demande son écriture scientifique a × 10ⁿ avec 1 ≤ |a| < 10, puis son ordre de grandeur (activité 47).",
+    "Méthode du cours : on déplace la virgule jusqu’à obtenir a entre 1 et 10. Chaque rang vers la gauche augmente n de 1 ; vers la droite, n diminue de 1. Exemple : 35 215 000 = 3,5215 × 10⁷, d’ordre 4 × 10⁷."
+  ],
   resistors: ["1/r = 1/R₁ + 1/R₂ ⇔ r = R₁R₂/(R₁+R₂). D’où produit = rR et somme = R : trinôme t² − R t + rR.", "Le parallèle est plus petit que chaque branche. Si r ≥ R, les données sont incohérentes."],
   cyclists: ["Vitesse de rapprochement = somme des vitesses. Un quart d’heure d’avance est 0,25 h, pas 15 km.", "À mi-chemin, les distances sont égales mais les temps ne le sont pas si l’un est parti plus tôt."],
-  squareDecrease: ["x² − (x−h)² = 2hx − h². Oublier −h² revient à linéariser à tort une aire.", "x > h, sinon le carré réduit n’existe pas."],
+  squareDecrease: [
+    "Lecture de l’énoncé. Un carré de côté x. On diminue chaque côté de h cm, l’aire diminue de ΔA cm². On demande x.",
+    "On traduit : x² − (x − h)² = ΔA, soit 2hx − h² = ΔA. On n’oublie pas −h². Il faut x > h."
+  ],
   goldenRatio: ["φ = (1+√5)/2 ≈ 1,618. La racine négative est 1−φ = −1/φ. Identités : φ² = φ+1, 1/φ = φ−1.", "Le rectangle d’or vérifie L/ℓ = φ."],
-  polyEval: ["Horner réduit les puissances : P = ((a₃x+a₂)x+a₁)x+a₀. P(1) = somme des coeffs, P(0) = terme constant.", "Si P(α) = 0, on factorise tout de suite par x−α."],
-  polyIntegerRoot: ["Les racines entières divisent le terme constant. On teste ±1, ±2, ±4, ±7, ±8, ±14, ±28, ±56 pour −56.", "Horner donne le quotient en une ligne. On étudie ensuite le trinôme restant."],
+  polyEval: [
+    "Lecture de l’énoncé. Un polynôme est donné par ses coefficients. On demande P(x₀). On substitue, ou on groupe : ((a₃x₀ + a₂)x₀ + a₁)x₀ + a₀.",
+    "P(1) = somme des coefficients, P(0) = terme constant. Si P(α) = 0, α est racine et on factorise par x − α."
+  ],
+  polyIntegerRoot: [
+    "Lecture de l’énoncé. On cherche une racine entière d’un cubique, puis le trinôme quotient. Une racine entière divise le terme constant : on teste les diviseurs jusqu’à P(r) = 0.",
+    "On factorise ensuite par identification des coefficients : P(x) = (x − r)(x² + q_B x + q_C). Exemple du manuel : x³ + 6x² + 12x − 56, r = 2."
+  ],
   polyKnownRoot: ["La vérification P(α) = 0 est obligatoire avant de factoriser : une erreur d’énoncé se voit tout de suite.", "Le coefficient dominant se conserve."],
   sumIntegers: ["S₁ est un polynôme de degré 2, S₂ de degré 3. S₂ ≠ (S₁)² : (S₁)² est la somme des cubes.", "Pour n = 10 : 55 et 385. Un n pair rend S₁ entier, toujours en fait car n(n+1) est pair."],
   euclidDiv: ["Unicité : si on a deux écritures, les restes diffèrent d’un multiple de b et restent dans [0, b[, donc ils coïncident.", "Contrôle : bq + r = a et r < b. Si r = b, augmenter q de 1."],
@@ -369,9 +380,18 @@ const details = {
   bary2d: ["Coordonnées : moyenne pondérée. Isobarycentre = centre de gravité = intersection des médianes.", "Barycentre partiel : on regroupe B et C, G est sur la médiane issue de A si β = γ."],
   translation: ["Pas de point fixe si v⃗ ≠ 0. Toutes les figures glissent sans rotation ni retournement.", "Composer deux translations, c’est additionner les vecteurs."],
   homothety: ["k = −1 : symétrie centrale. Le centre est le seul invariant si k ≠ 1. Les droites passant par O sont globalement stables.", "M'N'⃗ = k MN⃗ explique à la fois le parallélisme et le rapport des longueurs."],
-  homothetyScale: ["Les longueurs sont de degré 1, les aires de degré 2. Un volume (hors programme ici) serait en |k|³.", "k = 1/2 : périmètre moitié, aire quart. k = 2 : périmètre double, aire quadruple."],
-  rotation90: ["Direct : sens trigonométrique. (x ; y) ↦ (−y ; x) autour de l’origine. Autour de O quelconque, on retranche O, on tourne, on rajoute O.", "Deux quarts de tour = demi-tour. Quatre = identité."],
-  rotationAngle: ["Matrice : x' = x_O + (x−x_O)cosα − (y−y_O)sinα, y' = y_O + (x−x_O)sinα + (y−y_O)cosα, α en radians dans le calcul, en degrés dans l’énoncé.", "180° : M' = 2O − M. 0° : identité."]
+  homothetyScale: [
+    "Lecture de l’énoncé. Une homothétie de rapport k transforme une figure de périmètre p et d’aire A. On demande p' et A'.",
+    "Le cours : p' = |k| p et A' = k² A. Aire au quart ⇔ |k| = 1/2, pas k = 1/4."
+  ],
+  rotation90: [
+    "Lecture de l’énoncé. Quart de tour direct de centre O dans un repère orthonormé direct. On donne M, on demande M'.",
+    "Autour de l’origine : (x ; y) ↦ (−y ; x). Autour d’un centre O : on forme OM⃗, on applique le quart de tour, on rajoute O. OM' = OM et OM⃗ · OM'⃗ = 0."
+  ],
+  rotationAngle: [
+    "Lecture de l’énoncé. Rotation directe de centre O et d’angle α. On demande M' et on vérifie OM' = OM. Définition du chapitre 9 : OM' = OM et l’angle MOM' vaut α.",
+    "Pas de formule autre que la définition du cours. 90° : quart de tour (x ; y) ↦ (−y ; x) autour de l’origine. 180° : M' = 2O − M. 0° : identité."
+  ],
 };
 
 export function courseRecap(solver) {

@@ -18,14 +18,14 @@ const pedagogy = {
   absEquation: { hypotheses: "b ≥ 0. |X| = b signifie X = b ou X = −b.", why: ["On isole l’expression à l’intérieur de la valeur absolue.", "Premier cas : signe plus.", "Second cas : signe moins."], check: "Les deux solutions sont symétriques par rapport à −a." },
   affineBounds: { hypotheses: "a parcourt un segment. f est affine, donc monotone.", why: ["On évalue f aux deux bornes.", "Si m < 0, le plus grand a donne la plus petite image."], check: "L’encadrement doit aller du plus petit au plus grand." },
   lightTime: { hypotheses: "Vitesse constante. Unités : km et km/s.", why: ["On convertit les millions de km en km.", "t = d/v, puis on passe en minutes si besoin."], check: "Terre–Soleil : un peu plus de 8 minutes." },
-  scientificOrder: { hypotheses: "N ≠ 0. On cherche 1 ≤ |a| < 10.", why: ["L’exposant est la partie entière de log₁₀ |N|.", "L’ordre de grandeur arrondit a à l’unité."], check: "a doit être entre 1 et 10." },
+  scientificOrder: { hypotheses: "N ≠ 0. On cherche 1 ≤ |a| < 10 en déplaçant seulement la virgule.", why: ["On compte les rangs de virgule pour trouver n.", "L’ordre de grandeur arrondit a à l’unité, en gardant 10ⁿ."], check: "a doit être entre 1 et 10." },
   quadraticSolve: { hypotheses: "a ≠ 0. On cherche les racines réelles de ax² + bx + c = 0.", why: ["Δ = b² − 4ac décide du nombre de racines.", "Les racines s’écrivent (−b ± √Δ)/(2a).", "Somme et produit se lisent sans calculer √Δ."], check: "x₁ + x₂ = −b/a et x₁ x₂ = c/a." },
   resistors: { hypotheses: "Deux résistances, association série (R) et parallèle (r).", why: ["La somme est R, le produit est r R.", "R₁ et R₂ sont les racines du trinôme t² − R t + r R."], check: "r < min(R₁, R₂) < max(R₁, R₂) < R." },
   cyclists: { hypotheses: "Mouvements rectilignes uniformes, l’un vers l’autre.", why: ["Départ simultané : la somme des vitesses vaut D/T.", "À mi-chemin, chacun a parcouru D/2, avec des durées différentes.", "On en déduit V_A et V_B."], check: "V_A + V_B doit retrouver D/T." },
   squareDecrease: { hypotheses: "Carré de côté x. On diminue chaque côté de h.", why: ["La perte d’aire est x² − (x − h)².", "On développe : 2hx − h².", "On isole x."], check: "x > h, sinon le carré réduit n’existe pas." },
   goldenRatio: { hypotheses: "φ > 0 et φ² = φ + 1.", why: ["On résout φ² − φ − 1 = 0.", "On garde la racine positive (1 + √5)/2.", "On vérifie φ² = φ + 1."], check: "φ ≈ 1,618 et φ² ≈ 2,618." },
   polyEval: { hypotheses: "P est un polynôme de degré 3. On substitue x.", why: ["On calcule chaque puissance, puis on combine les coefficients."], check: "P(1) doit égaler la somme des coefficients." },
-  polyIntegerRoot: { hypotheses: "On cherche une racine entière, qui divise le terme constant.", why: ["On teste les diviseurs de a₀ jusqu’à P(r) = 0.", "Horner donne le quotient de degré 2.", "On lit les coefficients du trinôme."], check: "Le produit (−r) × coefficient constant du quotient doit égaler a₀." },
+  polyIntegerRoot: { hypotheses: "On cherche une racine entière, qui divise le terme constant.", why: ["On teste les diviseurs de a₀ jusqu’à P(r) = 0.", "On factorise par x − r en identifiant les coefficients.", "On lit les coefficients du trinôme quotient."], check: "Le produit (−r) × coefficient constant du quotient doit égaler a₀." },
   polyKnownRoot: { hypotheses: "α est donnée comme racine : on doit d’abord vérifier P(α) = 0.", why: ["La substitution confirme la racine.", "La division par x − α fournit Q."], check: "P(α) doit être exactement 0." },
   sumIntegers: { hypotheses: "n est un entier naturel non nul.", why: ["S₁ vient de P(k) − P(k − 1) = k avec P de degré 2.", "S₂ s’obtient de même avec un polynôme de degré 3."], check: "Pour n = 10, S₁ = 55 et S₂ = 385." },
   euclidDiv: { hypotheses: "a ∈ ℕ, b > 0. Existence et unicité du couple (q, r).", why: ["On écrit a = bq + r avec 0 ≤ r < b.", "On identifie q et r, puis on contrôle le produit."], check: "bq + r doit retrouver a, et r < b." },
@@ -41,9 +41,9 @@ const pedagogy = {
   bary2d: { hypotheses: "α + β + γ ≠ 0. Les trois points ne sont pas nécessairement non alignés.", why: ["On somme les masses.", "G est la moyenne pondérée des coordonnées."], check: "Masses égales : G est le centre de gravité (médianes)." },
   translation: { hypotheses: "Le vecteur v⃗ est constant. t(M) = M + v⃗.", why: ["MM'⃗ = v⃗ par définition.", "On ajoute les composantes."], check: "Tous les segments [MM'] sont équipollents." },
   homothety: { hypotheses: "Centre O, rapport k ≠ 0. OM'⃗ = k OM⃗.", why: ["M' = O + k(M − O).", "On calcule les deux coordonnées.", "MM' = |k − 1| · OM."], check: "Si k = 1, M' = M. Si k = −1, O est le milieu de [MM']." },
-  homothetyScale: { hypotheses: "L’homothétie multiplie les longueurs par |k| et les aires par k².", why: ["Le périmètre est une somme de longueurs.", "L’aire est homogène de degré 2."], check: "k = 1/2  ⇔  aire divisée par 4, périmètre par 2." },
+  homothetyScale: { hypotheses: "L’homothétie multiplie les longueurs par |k| et les aires par k².", why: ["Le périmètre est une somme de longueurs, donc il est multiplié par |k|.", "L’aire est multipliée par k² (le cours du chapitre 8)."], check: "k = 1/2  ⇔  aire divisée par 4, périmètre par 2." },
   rotation90: { hypotheses: "Repère orthonormé direct. Quart de tour de centre O.", why: ["Le vecteur OM⃗ tourne de +90°.", " (x, y) ↦ (−y, x) dans le repère d’origine O."], check: "OM' = OM et OM⃗ · OM'⃗ = 0." },
-  rotationAngle: { hypotheses: "Rotation directe de centre O et d’angle α (en degrés).", why: ["La distance au centre est conservée.", "La matrice de rotation s’applique au vecteur OM⃗.", "On reconstitue M'."], check: "OM' = OM. Pour 180°, M' = 2O − M." }
+  rotationAngle: { hypotheses: "Rotation directe de centre O et d’angle α. Définition du cours : OM' = OM et l’angle MOM' vaut α.", why: ["La distance au centre est conservée.", "Pour 90°, on utilise le quart de tour : (x ; y) ↦ (−y ; x) autour de l’origine.", "Pour 180°, M' = 2O − M (symétrie centrale)."], check: "OM' = OM. Pour 90°, OM⃗ · OM'⃗ = 0." }
 };
 
 const equationSheets = {
@@ -217,6 +217,13 @@ function recapHtml(e) {
   return `<article class="card recap-card"><p class="recap-kicker">Rappel de cours</p><h2>${esc(recap.title)}</h2><p class="recap-lead">${esc(recap.lead)}</p><ul class="recap-points">${recap.points.map(p => `<li>${esc(p)}</li>`).join("")}</ul>${details}<p class="recap-watch"><strong>Piège fréquent.</strong> ${esc(recap.watch)}</p></article>`;
 }
 
+function lectureHtml(e) {
+  if (state.mode === "exam") return "";
+  const recap = courseRecap(e.solver);
+  if (!recap.details?.length) return "";
+  return `<div class="statement-help"><p class="recap-kicker">Lecture détaillée de l’énoncé</p>${recap.details.map(d => `<p>${esc(d)}</p>`).join("")}</div>`;
+}
+
 function paperNavHtml() {
   if (!inPaper()) return "";
   const n = state.paper.exercises.length;
@@ -231,7 +238,7 @@ function renderExercise() {
   const modeSwitch = inPaper() ? "" : `<div class="mode-switch" aria-label="Mode de travail">${Object.entries(modes).map(([key, label]) => `<button data-mode="${key}" class="${state.mode === key ? "active" : ""}">${label}</button>`).join("")}</div>`;
   const clockText = inPaper() ? `Reste ${formatTime(state.seconds)}` : state.mode === "exam" ? "Temps 00:00" : "";
   app.innerHTML = `<section class="exercise-head"><div><button class="back" id="back">${backLabel}</button><h1>${esc(e.title)}</h1><p>Chapitre ${chapter.number} · Niveau ${e.difficulty}${e.band ? " · " + bandLabel(e.band) : ""}</p>${paperNavHtml()}</div><div>${modeSwitch}<div id="clock" class="exam-clock">${clockText}</div></div></section>
-    <section class="workspace"><div><article class="card"><h2>Schéma de l’exercice</h2><div class="diagram" id="diagram"></div><p class="diagram-note" id="diagramNote"></p></article>${recapHtml(e)}<article class="card"><h2>Énoncé</h2><p class="statement">${esc(e.statement)}</p><div class="data-grid">${e.variables.map(v => `<div class="field"><label for="v_${v.key}">${esc(v.label)}</label><div class="input-wrap"><input id="v_${v.key}" data-variable="${v.key}" type="number" step="any" value="${state.data[v.key]}" ${state.mode === "exam" ? "readonly" : ""}><span class="unit">${v.unit}</span></div></div>`).join("")}</div><div class="actions">${state.mode !== "learn" && !inPaper() ? `<button class="secondary" id="randomize">↻ Nouvelles données</button>` : ""}</div></article></div>
+    <section class="workspace"><div><article class="card"><h2>Schéma de l’exercice</h2><div class="diagram" id="diagram"></div><p class="diagram-note" id="diagramNote"></p></article>${recapHtml(e)}<article class="card"><h2>Énoncé</h2><p class="statement">${esc(e.statement)}</p>${lectureHtml(e)}<div class="data-grid">${e.variables.map(v => `<div class="field"><label for="v_${v.key}">${esc(v.label)}</label><div class="input-wrap"><input id="v_${v.key}" data-variable="${v.key}" type="number" step="any" value="${state.data[v.key]}" ${state.mode === "exam" ? "readonly" : ""}><span class="unit">${v.unit}</span></div></div>`).join("")}</div><div class="actions">${state.mode !== "learn" && !inPaper() ? `<button class="secondary" id="randomize">↻ Nouvelles données</button>` : ""}</div></article></div>
     <div><article class="card"><h2>${state.mode === "exam" ? "Votre copie" : "Résolution guidée"}</h2><div id="questions">${e.questions.map((q, i) => question(q, i)).join("")}</div><div class="actions">${inPaper() ? "" : `<button class="primary" id="submitAll">${state.mode === "exam" ? "Rendre la copie" : "Tout vérifier"}</button>`}${state.mode !== "exam" ? `<button class="secondary" id="showCorrection">Voir la correction</button>` : ""}</div><div id="score"></div></article><article class="card correction" id="correction" hidden></article></div></section>`;
   const formulas = equationSheets[e.solver] || ["Consulter la synthèse du chapitre et écrire la relation littérale."];
   app.querySelector(".workspace > div:nth-child(2)").insertAdjacentHTML("afterbegin", `<article class="card equation-card"><h2>Équations utiles</h2><p class="equation-intro">Rappel littéral — identifiez chaque grandeur avant de remplacer les valeurs.</p>${formulas.map(f => `<div class="equation-line">${esc(f)}</div>`).join("")}</article>`);

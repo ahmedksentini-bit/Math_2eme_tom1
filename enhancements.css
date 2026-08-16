@@ -32,7 +32,9 @@
 .paper-nav{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
 .paper-nav span{font-size:13px;color:var(--muted);font-weight:600}
 .exam-clock.warn{color:#b91c1c;font-weight:800}
-.recap-details{margin:12px 0;padding:12px 14px;border-radius:12px;background:#f8fafc;border:1px solid #e2e8f0}
+.statement-help{margin:14px 0 4px;padding:12px 14px;border-radius:12px;background:#f5f3ff;border:1px solid #ddd6fe}
+.statement-help .recap-kicker{margin-bottom:8px}
+.statement-help p{margin:0 0 8px;color:#334155;font-size:14px}.statement-help p:last-child{margin:0}
 .recap-details p{margin:0 0 8px;color:#334155;font-size:14px}.recap-details p:last-child{margin:0}
 .paper-results{display:grid;gap:14px;margin-top:16px}
 @media(max-width:700px){.exam-launch{grid-template-columns:1fr}}

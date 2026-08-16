@@ -135,7 +135,7 @@
     "solver": "rotationAngle",
     "title": "Rotation d’angle donné",
     "difficulty": 2,
-    "statement": "r est la rotation directe de centre O et d’angle α (en degrés). Déterminer l’image M' de M et vérifier que OM' = OM. (Synthèse du chapitre 9.)",
+    "statement": "r est la rotation directe de centre O et d’angle α (cas du cours : 90° ou 180°). Déterminer l’image M' de M en utilisant la définition du chapitre 9 : OM' = OM et l’angle MOM' vaut α. Pour 90°, quart de tour (x ; y) ↦ (−y ; x) autour de l’origine ; pour 180°, M' = 2O − M. Vérifier que OM' = OM.",
     "variables": [
       {"key": "xO", "label": "x_O", "unit": "—", "value": 0, "min": 0, "max": 0, "step": 1},
       {"key": "yO", "label": "y_O", "unit": "—", "value": 0, "min": 0, "max": 0, "step": 1},

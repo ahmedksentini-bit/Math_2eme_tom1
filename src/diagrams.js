@@ -64,7 +64,7 @@ const figures = {
   },
   scientificOrder(d) {
     return {
-      caption: "N = a × 10ⁿ avec 1 ≤ |a| < 10. L’ordre de grandeur arrondit a à l’unité.",
+      caption: "On déplace la virgule de N jusqu’à 1 ≤ |a| < 10. L’ordre de grandeur arrondit a à l’unité.",
       svg: svg("Écriture scientifique", `${t(80, 90, `N = ${num(d.N, 6)}`)}${t(80, 140, "↓")}${t(80, 190, "a × 10ⁿ")}${t(280, 140, "ordre : b × 10ⁿ")}`)
     };
   },
@@ -118,7 +118,7 @@ const figures = {
   },
   sumIntegers(d) {
     return {
-      caption: "S₁ et S₂ sont des polynômes en n, obtenus en sommant une différence télescopique.",
+      caption: "S₁ et S₂ s’obtiennent en sommant P(k) − P(k − 1) pour k de 1 à n.",
       svg: svg("Sommes", `${t(80, 80, `1 + 2 + … + ${num(d.n)} = n(n+1)/2`)}${t(80, 130, `1² + 2² + … + n² = n(n+1)(2n+1)/6`)}${t(80, 190, "chapitre 3 · polynômes")}`)
     };
   },
