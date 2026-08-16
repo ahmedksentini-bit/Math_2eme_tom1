@@ -209,3 +209,15 @@ assert.equal(synthese[0].duration, 7200);
 for (const paper of synthese) {
   assert.ok(paper.exercises.length >= 4 && paper.exercises.length <= 5);
 }
+
+const annales = JSON.parse(readFileSync(new URL("../data/annales.json", import.meta.url)));
+assert.ok(annales.papers.length >= 50, "annales trop peu nombreuses");
+const annaleIds = new Set();
+for (const paper of annales.papers) {
+  assert.ok(paper.id && !annaleIds.has(paper.id), `id annale : ${paper.id}`);
+  annaleIds.add(paper.id);
+  assert.ok(paper.title && paper.statement && paper.statement.length > 80, `énoncé vide : ${paper.id}`);
+  assert.ok(Array.isArray(paper.exercises) && paper.exercises.length >= 1, `sans exercice : ${paper.id}`);
+}
+assert.ok(annales.papers.some(p => /Sfax/i.test(`${p.region || ""} ${p.lycee || ""}`)), "aucun sujet Sfax");
+assert.ok(annales.papers.some(p => p.pilote), "aucun sujet pilote");

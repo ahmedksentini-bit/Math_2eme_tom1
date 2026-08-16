@@ -6,8 +6,8 @@ import { BANDS, generateChapterSet, generatePapers } from "./bank.js";
 
 const app = document.querySelector("#app");
 const state = {
-  catalog: null, exercise: null, mode: "learn", data: {}, attempts: {}, timer: null, seconds: 0, installPrompt: null,
-  returnTo: null, proposed: null, paper: null, papers: null, examKind: "controle", examChapters: [], countdown: false
+  catalog: null, annales: { papers: [] }, exercise: null, mode: "learn", data: {}, attempts: {}, timer: null, seconds: 0, installPrompt: null,
+  returnTo: null, proposed: null, paper: null, papers: null, examKind: "controle", examChapters: [], countdown: false, annaleFilter: "all"
 };
 const modes = { learn: "Apprentissage", train: "Entraînement", exam: "Examen" };
 const pedagogy = {
@@ -133,14 +133,61 @@ function home() {
   state.paper = null;
   const nAct = state.catalog.exercises.filter(e => e.kind === "activity").length;
   const nPar = state.catalog.exercises.filter(e => e.kind !== "activity").length;
-  app.innerHTML = `<section class="hero"><p class="eyebrow">Mathématiques · 2ème année secondaire</p><h1>Comprendre, calculer, vérifier.</h1><p>Toutes les activités du manuel CNP (tome 1), dans l’ordre du livre, avec correction et trois modes de travail.</p><div class="signature">Lycée Pilote Sakiet Ezzit<br><strong>Mariam Ksentini</strong></div></section>
-  <div class="exam-launch"><button class="exam-launch-btn" id="makeControle"><strong>Devoirs surveillés</strong><span>Mi-trimestre · 1 h · 3 à 5 exercices</span></button><button class="exam-launch-btn" id="makeSynthese"><strong>Devoirs de synthèse</strong><span>Fin de trimestre · 2 h · 4 à 5 exercices</span></button></div>
+  const nAnn = state.annales.papers.length;
+  app.innerHTML = `<section class="hero"><p class="eyebrow">Mathématiques · 2ème année secondaire</p><h1>Comprendre, calculer, vérifier.</h1><p>Toutes les activités du manuel CNP (tome 1), dans l’ordre du livre, plus les énoncés de devoirs publics (Sfax, pilotes et autres lycées).</p><div class="signature">Lycée Pilote Sakiet Ezzit<br><strong>Mariam Ksentini</strong></div></section>
+  <div class="exam-launch three"><button class="exam-launch-btn" id="makeControle"><strong>Devoirs surveillés</strong><span>Mi-trimestre · 1 h · sujets générés</span></button><button class="exam-launch-btn" id="makeSynthese"><strong>Devoirs de synthèse</strong><span>Fin de trimestre · 2 h · sujets générés</span></button><button class="exam-launch-btn" id="openAnnales"><strong>Annales</strong><span>${nAnn} énoncés extraits · Sfax 1, Sfax 2, pilotes</span></button></div>
   <div class="section-title"><div><h2>Choisir un chapitre</h2><p>${nAct} activités du livre, ${nPar} exercices paramétriques, plus 40 exercices générés par chapitre (faciles, moyens, difficiles, casse-tête).</p></div></div>
   <section class="chapter-grid">${state.catalog.chapters.map(ch => { const n = state.catalog.exercises.filter(e => e.chapter === ch.id && e.kind === "activity").length; return `<button class="chapter" data-chapter="${ch.id}"><span class="num">${ch.number}</span><h3>${esc(ch.title)}</h3><p>${esc(ch.description)}</p><span class="count">${n} activité${n > 1 ? "s" : ""} du livre →</span></button>`; }).join("")}</section>`;
   document.querySelectorAll("[data-chapter]").forEach(button => button.addEventListener("click", () => chapterPage(button.dataset.chapter)));
   document.querySelector("#makeControle").addEventListener("click", () => examSetup("controle"));
   document.querySelector("#makeSynthese").addEventListener("click", () => examSetup("synthese"));
+  document.querySelector("#openAnnales").addEventListener("click", () => annalesPage(state.annaleFilter));
   history.replaceState({}, "", location.pathname);
+}
+
+const ANNALE_FILTERS = [
+  { id: "all", label: "Tous" },
+  { id: "sfax1", label: "Sfax 1" },
+  { id: "sfax2", label: "Sfax 2" },
+  { id: "pilote", label: "Pilotes" },
+  { id: "controle", label: "Contrôle" },
+  { id: "synthese", label: "Synthèse" }
+];
+
+function matchAnnale(p, filter) {
+  if (filter === "all") return true;
+  if (filter === "sfax1") return p.region === "Sfax 1" || /Sfax 1|Mohamed Ali|Bir Ali|Ghraiba/i.test(`${p.region || ""} ${p.lycee || ""}`);
+  if (filter === "sfax2") return p.region === "Sfax 2" || /Sakiet|Ezzit|Sfax 2/i.test(`${p.region || ""} ${p.lycee || ""}`);
+  if (filter === "pilote") return !!p.pilote;
+  if (filter === "controle") return p.kind === "controle";
+  if (filter === "synthese") return p.kind === "synthese";
+  return true;
+}
+
+function annalesPage(filter = "all") {
+  state.annaleFilter = filter;
+  const papers = state.annales.papers.filter(p => matchAnnale(p, filter));
+  app.innerHTML = `<button class="back" id="backHome">← Accueil</button>
+    <section class="chapter-banner"><span class="num">Σ</span><div><h1>Annales de devoirs</h1><p>Énoncés publics de 2ème Sciences (Sfax 1, Sfax 2, lycées pilotes et autres). Texte extrait des PDF : les figures du sujet original peuvent manquer.</p></div></section>
+    <div class="annale-filters">${ANNALE_FILTERS.map(f => `<button class="ghost ${filter === f.id ? "active" : ""}" data-filter="${f.id}">${f.label}</button>`).join("")}</div>
+    <div class="section-title"><div><h2>${papers.length} sujet${papers.length > 1 ? "s" : ""}</h2><p>Cliquer un devoir pour lire l’énoncé complet, exercice par exercice.</p></div></div>
+    <section class="exercise-list">${papers.map(p => `<button class="exercise-card" data-annale="${p.id}"><span class="exercise-index">${p.kind === "synthese" ? "DS" : "DC"}</span><span><strong>${esc(p.title)}</strong><small>${esc([p.lycee || p.region, p.year, `${p.exercises.length} exercice${p.exercises.length > 1 ? "s" : ""}`].filter(Boolean).join(" · "))}</small></span><span class="arrow">→</span></button>`).join("") || `<p class="muted">Aucun sujet dans ce filtre pour l’instant.</p>`}</section>`;
+  document.querySelector("#backHome").addEventListener("click", home);
+  document.querySelectorAll("[data-filter]").forEach(b => b.addEventListener("click", () => annalesPage(b.dataset.filter)));
+  document.querySelectorAll("[data-annale]").forEach(b => b.addEventListener("click", () => openAnnale(b.dataset.annale)));
+  history.replaceState({}, "", "#annales");
+}
+
+function openAnnale(id) {
+  const paper = state.annales.papers.find(p => p.id === id);
+  if (!paper) { annalesPage(state.annaleFilter); return; }
+  const meta = [paper.lycee, paper.region, paper.year, paper.kind === "synthese" ? "2 h" : "1 h"].filter(Boolean).join(" · ");
+  app.innerHTML = `<button class="back" id="backAnnales">← Toutes les annales</button>
+    <section class="chapter-banner"><span class="num">${paper.kind === "synthese" ? "DS" : "DC"}</span><div><h1>${esc(paper.title)}</h1><p>${esc(meta)}</p></div></section>
+    <article class="card"><h2>Énoncé complet</h2><p class="muted">Texte du sujet, tel qu’extrait du PDF public. Relire éventuellement le fichier original s’il y a une figure.</p><pre class="statement">${esc(paper.statement)}</pre>${paper.source ? `<p class="source-link"><a href="${esc(paper.source)}" target="_blank" rel="noopener">Ouvrir le PDF d’origine</a></p>` : ""}</article>
+    ${paper.exercises.map(ex => `<article class="card"><h2>Exercice ${ex.n}${ex.points ? ` <small>(${esc(ex.points)})</small>` : ""}</h2><pre class="statement">${esc(ex.statement)}</pre></article>`).join("")}`;
+  document.querySelector("#backAnnales").addEventListener("click", () => annalesPage(state.annaleFilter));
+  history.replaceState({}, "", `#${paper.id}`);
 }
 
 function courseHtml(chapterId) {
@@ -461,6 +508,9 @@ function stopTimer() { clearInterval(state.timer); state.timer = null; }
 document.querySelector("#homeButton").addEventListener("click", home);
 window.addEventListener("hashchange", () => {
   if (!state.catalog) return;
+  if (location.hash === "#annales") { annalesPage(state.annaleFilter); return; }
+  const annale = state.annales.papers.find(p => `#${p.id}` === location.hash);
+  if (annale) { openAnnale(annale.id); return; }
   const requested = state.catalog.exercises.find(e => `#${e.id}` === location.hash);
   if (requested) { state.returnTo = "chapter"; openExercise(requested); }
   else if (!location.hash) home();
@@ -470,18 +520,26 @@ if ("serviceWorker" in navigator) window.addEventListener("load", () => navigato
 
 const loadJson = url => fetch(url).then(r => r.ok ? r.json() : []);
 try {
-  const [catalog, batch14, batch59, actIndex] = await Promise.all([
+  const [catalog, batch14, batch59, actIndex, annales] = await Promise.all([
     fetch("./data/exercises.json").then(r => r.json()),
     loadJson("./data/exercises-ch1-ch4.json"),
     loadJson("./data/exercises-ch5-ch9.json"),
-    loadJson("./data/activites-index.json")
+    loadJson("./data/activites-index.json"),
+    fetch("./data/annales.json").then(r => r.ok ? r.json() : { papers: [] }).catch(() => ({ papers: [] }))
   ]);
   const actFiles = Array.isArray(actIndex) ? actIndex.map(item => loadJson(`./data/${item.file}`)) : [];
   const actPacks = await Promise.all(actFiles);
   const activities = actPacks.flat();
   state.catalog = { ...catalog, exercises: [...catalog.exercises, ...batch14, ...batch59, ...activities] };
-  const requested = state.catalog.exercises.find(e => `#${e.id}` === location.hash);
-  requested ? openExercise(requested) : home();
+  state.annales = { papers: Array.isArray(annales?.papers) ? annales.papers : [] };
+  if (location.hash === "#annales") annalesPage();
+  else {
+    const annale = state.annales.papers.find(p => `#${p.id}` === location.hash);
+    const requested = state.catalog.exercises.find(e => `#${e.id}` === location.hash);
+    if (annale) openAnnale(annale.id);
+    else if (requested) openExercise(requested);
+    else home();
+  }
 } catch {
   app.innerHTML = `<section class="card"><h1>Chargement impossible</h1><p>Lancez l’application depuis un serveur web local ou depuis Cloudflare Pages.</p></section>`;
 }
