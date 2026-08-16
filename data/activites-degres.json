@@ -7,20 +7,24 @@
     "solver": "fixed",
     "title": "Activité 1",
     "difficulty": 1,
-    "statement": "Activité 1\nJe pense un nombre je lui retranche 5 je multiplie le résultat obtenu par 2 puis j’ajoute 6\net je divise le résultat par 5, j’obtiens 2. Quel nombre j’ai pensé ?",
+    "statement": "Activité 1\nJe pense un nombre je lui retranche 5 je multiplie le résultat obtenu par 2 puis j’ajoute 6\net je divise le résultat par 5, j’obtiens 2. Quel nombre j’ai pensé ?\n\nÀ calculer dans l'application : Soit x le nombre pensé. ((x−5)×2+6)/5 = 2. Trouver x.",
     "variables": [],
     "questions": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 1 (« Activité 1 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "type": "number",
+        "label": "Nombre pensé",
+        "answer": 7
       }
     ],
     "steps": [
       [
-        "Manuel",
-        "Relire l’activité 1 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+        "Équation",
+        "((x−5)×2+6)/5 = 2 ⇔ 2x − 4 = 10 ⇔ x = 7."
+      ],
+      [
+        "Contrôle",
+        "(7−5)×2+6 = 10, 10/5 = 2."
       ]
     ]
   },
@@ -29,24 +33,65 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 2,
-    "solver": "fixed",
+    "solver": "quadraticSolve",
     "title": "Activité 2",
     "difficulty": 1,
-    "statement": "Activité 2\nDans la figure ci-contre, ABCD est un rectangle tel que\nAB = 2 et BC = 3.\nM étant un point du segment [AB], on construit\nle carré MNPA et le rectangle NQCR.\nOù placer le point M pour que le carré MNPA\net le rectangle NQCR aient la même aire?",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 2\nDans la figure ci-contre, ABCD est un rectangle tel que\nAB = 2 et BC = 3.\nM étant un point du segment [AB], on construit\nle carré MNPA et le rectangle NQCR.\nOù placer le point M pour que le carré MNPA\net le rectangle NQCR aient la même aire?\n\nÀ calculer dans l'application : Le carré de côté x et le rectangle 3×(2−x) ont la même aire : x² = 3(2−x), soit x² + 3x − 6 = 0. Résoudre.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 2 (« Activité 2 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 1,
+        "min": 1,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 3,
+        "min": -6,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": -6,
+        "min": -10,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 2 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "disc",
+        "label": "Discriminant Δ",
+        "unit": "—"
+      },
+      {
+        "key": "x1",
+        "label": "Racine x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "Racine x₂",
+        "unit": "—"
+      },
+      {
+        "key": "sum",
+        "label": "Somme",
+        "unit": "—"
+      },
+      {
+        "key": "prod",
+        "label": "Produit",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -57,20 +102,24 @@
     "solver": "fixed",
     "title": "Activité 3",
     "difficulty": 1,
-    "statement": "Activité 3\nQuel entier faut-il ajouter au numérateur et au dénominateur de 3 pour obtenir 1 ?\n5 2",
+    "statement": "Activité 3\nQuel entier faut-il ajouter au numérateur et au dénominateur de 3 pour obtenir 1 ?\n5 2\n\nÀ calculer dans l'application : Quel entier ajouter au numérateur et au dénominateur de 3/5 pour obtenir 1/2 ?",
     "variables": [],
     "questions": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 3 (« Activité 3 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "n",
+        "type": "number",
+        "label": "Entier à ajouter",
+        "answer": -1
       }
     ],
     "steps": [
       [
-        "Manuel",
-        "Relire l’activité 3 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+        "Équation",
+        "(3+x)/(5+x) = 1/2 ⇔ 6+2x = 5+x ⇔ x = −1."
+      ],
+      [
+        "Contrôle",
+        "2/4 = 1/2."
       ]
     ]
   },
@@ -79,24 +128,65 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 4,
-    "solver": "fixed",
+    "solver": "quadraticSolve",
     "title": "Activité 4",
     "difficulty": 1,
-    "statement": "Activité 4\nDans la figure ci-contre, AN = x, NC = 5, MN = 8,\nBC = 13 et la droite (MN) est parallèle à la droite (BC).\nDéterminer x.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 4\nDans la figure ci-contre, AN = x, NC = 5, MN = 8,\nBC = 13 et la droite (MN) est parallèle à la droite (BC).\nDéterminer x.\n\nÀ calculer dans l'application : Résoudre dans IR : 2x² + (-3)x + (-2) = 0. Donner Δ, les racines, la somme et le produit.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 4 (« Activité 4 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 2,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": -3,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": -2,
+        "min": -10,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 4 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "disc",
+        "label": "Discriminant Δ",
+        "unit": "—"
+      },
+      {
+        "key": "x1",
+        "label": "Racine x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "Racine x₂",
+        "unit": "—"
+      },
+      {
+        "key": "sum",
+        "label": "Somme",
+        "unit": "—"
+      },
+      {
+        "key": "prod",
+        "label": "Produit",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -104,24 +194,59 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 5,
-    "solver": "fixed",
+    "solver": "affineBounds",
     "title": "Activité 5",
     "difficulty": 1,
-    "statement": "Activité 5\nDeux agences A et B de location de voitures présentent les tarifs suivants pour\ndes véhicules identiques :\nAgence A : Un forfait de 36 dinars par jour, plus 0 d,450 par Km parcouru.\nAgence B : Un forfait de 20 dinars par jour, plus 0 d,650 par Km parcouru.\na) Quelle est l’agence qui propose un tarif plus avantageux, selon que l’on doit effectuer\ndans une journée un parcours de 50 Km ou 150 Km ?\nb) Soit x le nombre de kilomètres à parcourir dans la journée.\nDéterminer suivant x, l’agence qui propose un tarif plus avantageux.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 5\nDeux agences A et B de location de voitures présentent les tarifs suivants pour\ndes véhicules identiques :\nAgence A : Un forfait de 36 dinars par jour, plus 0 d,450 par Km parcouru.\nAgence B : Un forfait de 20 dinars par jour, plus 0 d,650 par Km parcouru.\na) Quelle est l’agence qui propose un tarif plus avantageux, selon que l’on doit effectuer\ndans une journée un parcours de 50 Km ou 150 Km ?\nb) Soit x le nombre de kilomètres à parcourir dans la journée.\nDéterminer suivant x, l’agence qui propose un tarif plus avantageux.\n\nÀ calculer dans l'application : f(a) = −3a + 5 sur [−2 ; 3]. Encadrer f(a).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 5 (« Activité 5 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "amin",
+        "label": "a min",
+        "unit": "—",
+        "value": -2,
+        "min": -4,
+        "max": 0,
+        "step": 1
+      },
+      {
+        "key": "amax",
+        "label": "a max",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "m",
+        "label": "m",
+        "unit": "—",
+        "value": -3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "p",
+        "label": "p",
+        "unit": "—",
+        "value": 5,
+        "min": -2,
+        "max": 8,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 5 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "ymin",
+        "label": "min de f",
+        "unit": "—"
+      },
+      {
+        "key": "ymax",
+        "label": "max de f",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -129,24 +254,65 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 6,
-    "solver": "fixed",
+    "solver": "quadraticSolve",
     "title": "Activité 6",
     "difficulty": 1,
-    "statement": "Activité 6\nOn considère un trapèze ABCD, de hauteur h, de bases AB = 4\net CD = x, avec x > 2.\nSoit M un point de la base [CD] tel que DM = 2.\na) Déterminer les réels x tels que l’aire du triangle BMC soit\ninférieure ou égale à la moitié de l’aire du trapèze ABCD.\nExplorer Explorer\nb) Déterminer les réels x tels que l’aire du triangle BMC soit comprise entre le quart et le tiers\nde l’aire du trapèze ABCD.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 6\nOn considère un trapèze ABCD, de hauteur h, de bases AB = 4\net CD = x, avec x > 2.\nSoit M un point de la base [CD] tel que DM = 2.\na) Déterminer les réels x tels que l’aire du triangle BMC soit\ninférieure ou égale à la moitié de l’aire du trapèze ABCD.\nExplorer Explorer\nb) Déterminer les réels x tels que l’aire du triangle BMC soit comprise entre le quart et le tiers\nde l’aire du trapèze ABCD.\n\nÀ calculer dans l'application : Résoudre dans IR : 1x² + (0)x + (-9) = 0. Donner Δ, les racines, la somme et le produit.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 6 (« Activité 6 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 1,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 0,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": -9,
+        "min": -10,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 6 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "disc",
+        "label": "Discriminant Δ",
+        "unit": "—"
+      },
+      {
+        "key": "x1",
+        "label": "Racine x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "Racine x₂",
+        "unit": "—"
+      },
+      {
+        "key": "sum",
+        "label": "Somme",
+        "unit": "—"
+      },
+      {
+        "key": "prod",
+        "label": "Produit",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -154,24 +320,41 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 7,
-    "solver": "fixed",
+    "solver": "absEquation",
     "title": "Activité 7",
     "difficulty": 1,
-    "statement": "Activité 7\nSoit Δ une droite munie d’un repère cartésien _O, OIi .\n1) Placer sur Δ les points A, B, C et D d’abscisses respectives –1 ; – 2 ; 3 et 5.\n2) Soit M un point de Δ, d’abscisse x.\nInterpréter chacune des valeurs absolues suivantes en termes de distance.\nx+1 ; x+2 ; x-3 ; x-5 .\n3) a) Déterminer l’ensemble des points M de Δ dont l’abscisse x vérifie |x – 3| = 2.\nb) Représenter sur la droite Δ l’ensemble des points M d’abscisse x tels que\nx+2 # .\nc) Représenter sur la droite Δ l’ensemble des points M d’abscisse x tels que x + 1 $ 3.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 7\nSoit Δ une droite munie d’un repère cartésien _O, OIi .\n1) Placer sur Δ les points A, B, C et D d’abscisses respectives –1 ; – 2 ; 3 et 5.\n2) Soit M un point de Δ, d’abscisse x.\nInterpréter chacune des valeurs absolues suivantes en termes de distance.\nx+1 ; x+2 ; x-3 ; x-5 .\n3) a) Déterminer l’ensemble des points M de Δ dont l’abscisse x vérifie |x – 3| = 2.\nb) Représenter sur la droite Δ l’ensemble des points M d’abscisse x tels que\nx+2 # .\nc) Représenter sur la droite Δ l’ensemble des points M d’abscisse x tels que x + 1 $ 3.\n\nÀ calculer dans l'application : |x − 1| = 4.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 7 (« Activité 7 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 4,
+        "min": 1,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 7 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x1",
+        "label": "x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "x₂",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -179,24 +362,65 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 8,
-    "solver": "fixed",
+    "solver": "quadraticSolve",
     "title": "Activité 8",
     "difficulty": 1,
-    "statement": "Activité 8\nRésoudre dans IR.\na) 2x + 3 = 2 ; b) 4x - 2 = 3 ; c) 3 - 4x = x - 2 5 .\nd) x + 2 2 1 ; e) - x + 3 1 2 ; f) 2x + 1 # ; - 4x + 5 $ 1, 8 .",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 8\nRésoudre dans IR.\na) 2x + 3 = 2 ; b) 4x - 2 = 3 ; c) 3 - 4x = x - 2 5 .\nd) x + 2 2 1 ; e) - x + 3 1 2 ; f) 2x + 1 # ; - 4x + 5 $ 1, 8 .\n\nÀ calculer dans l'application : Résoudre dans IR : 3x² + (-5)x + (2) = 0. Donner Δ, les racines, la somme et le produit.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 8 (« Activité 8 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": -5,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": 2,
+        "min": -10,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 8 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "disc",
+        "label": "Discriminant Δ",
+        "unit": "—"
+      },
+      {
+        "key": "x1",
+        "label": "Racine x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "Racine x₂",
+        "unit": "—"
+      },
+      {
+        "key": "sum",
+        "label": "Somme",
+        "unit": "—"
+      },
+      {
+        "key": "prod",
+        "label": "Produit",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -204,24 +428,65 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 9,
-    "solver": "fixed",
+    "solver": "quadraticSolve",
     "title": "Activité 9",
     "difficulty": 1,
-    "statement": "Activité 9\n1) Pour chacune des expressions suivantes, déterminer les valeurs de x pour lesquelles\nelle est définie.\na) x - 1 ; b) 2x + 1 ; c) 2x ; d) 2x + 3 ; e) 4x .\nx+3 x x+4 x-1 2x + 3\n2) Résoudre dans IR les équations suivantes.\n2x + 1\na) x - 1 = 5 ; b) = 2x ; c) 2x + 3 = 4x .\nx+3 4 x x+4 x-1 2x + 3",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 9\n1) Pour chacune des expressions suivantes, déterminer les valeurs de x pour lesquelles\nelle est définie.\na) x - 1 ; b) 2x + 1 ; c) 2x ; d) 2x + 3 ; e) 4x .\nx+3 x x+4 x-1 2x + 3\n2) Résoudre dans IR les équations suivantes.\n2x + 1\na) x - 1 = 5 ; b) = 2x ; c) 2x + 3 = 4x .\nx+3 4 x x+4 x-1 2x + 3\n\nÀ calculer dans l'application : Résoudre dans IR : 1x² + (-5)x + (6) = 0. Donner Δ, les racines, la somme et le produit.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 9 (« Activité 9 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 1,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": -5,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": 6,
+        "min": -10,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 9 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "disc",
+        "label": "Discriminant Δ",
+        "unit": "—"
+      },
+      {
+        "key": "x1",
+        "label": "Racine x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "Racine x₂",
+        "unit": "—"
+      },
+      {
+        "key": "sum",
+        "label": "Somme",
+        "unit": "—"
+      },
+      {
+        "key": "prod",
+        "label": "Produit",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -229,24 +494,65 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 10,
-    "solver": "fixed",
+    "solver": "quadraticSolve",
     "title": "Activité 10",
     "difficulty": 1,
-    "statement": "Activité 10\n1) Pour chacune des expressions suivantes, déterminer les valeurs de x pour lesquelles\nelle est définie.\na) x + 1 ; b) 3 - 2x ; c) x - 4 ; d) 22 - x ; e) 4x + 5 .\n2) Résoudre dans IR les équations suivantes.\na) x + 1 = 2 ; b) 3 - 2x = 5 ; c) x - 4 = 22 - x ; d) 4x + 5 = 6.\nE x p l o r e r",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 10\n1) Pour chacune des expressions suivantes, déterminer les valeurs de x pour lesquelles\nelle est définie.\na) x + 1 ; b) 3 - 2x ; c) x - 4 ; d) 22 - x ; e) 4x + 5 .\n2) Résoudre dans IR les équations suivantes.\na) x + 1 = 2 ; b) 3 - 2x = 5 ; c) x - 4 = 22 - x ; d) 4x + 5 = 6.\nE x p l o r e r\n\nÀ calculer dans l'application : Résoudre dans IR : 1x² + (-3)x + (-4) = 0. Donner Δ, les racines, la somme et le produit.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 10 (« Activité 10 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 1,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": -3,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": -4,
+        "min": -10,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 10 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "disc",
+        "label": "Discriminant Δ",
+        "unit": "—"
+      },
+      {
+        "key": "x1",
+        "label": "Racine x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "Racine x₂",
+        "unit": "—"
+      },
+      {
+        "key": "sum",
+        "label": "Somme",
+        "unit": "—"
+      },
+      {
+        "key": "prod",
+        "label": "Produit",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -254,24 +560,41 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 11,
-    "solver": "fixed",
+    "solver": "absEquation",
     "title": "Activité 11",
     "difficulty": 1,
-    "statement": "Activité 11\n1) Pour chacune des expressions suivantes, déterminer les valeurs de x pour lesquelles elle est\ndéfinie.\na) x + 2 ; b) 1 - 3x ; c) 5x - 4 ; d) x + 1 .\n2) Résoudre dans IR les inéquations suivantes.\na) x + 2 >1 ; b) 1 - 3x ≤ 2 ; c) 5x - 4 ≥ x + 1 .\nProblèmes du second degré\nEquations du second degré",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 11\n1) Pour chacune des expressions suivantes, déterminer les valeurs de x pour lesquelles elle est\ndéfinie.\na) x + 2 ; b) 1 - 3x ; c) 5x - 4 ; d) x + 1 .\n2) Résoudre dans IR les inéquations suivantes.\na) x + 2 >1 ; b) 1 - 3x ≤ 2 ; c) 5x - 4 ≥ x + 1 .\nProblèmes du second degré\nEquations du second degré\n\nÀ calculer dans l'application : |x + 2| = 3. Donner les deux solutions, de la plus petite à la plus grande.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 11 (« Activité 11 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 2,
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 11 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x1",
+        "label": "x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "x₂",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -279,24 +602,65 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 12,
-    "solver": "fixed",
+    "solver": "quadraticSolve",
     "title": "Activité 12",
     "difficulty": 1,
-    "statement": "Activité 12\nDans la figure ci-contre, la droite (BC) est parallèle à\nla droite (DE).\nDéterminer x.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 12\nDans la figure ci-contre, la droite (BC) est parallèle à\nla droite (DE).\nDéterminer x.\n\nÀ calculer dans l'application : Résoudre dans IR : 2x² + (-3)x + (-2) = 0. Donner Δ, les racines, la somme et le produit.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 12 (« Activité 12 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 2,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": -3,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": -2,
+        "min": -10,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 12 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "disc",
+        "label": "Discriminant Δ",
+        "unit": "—"
+      },
+      {
+        "key": "x1",
+        "label": "Racine x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "Racine x₂",
+        "unit": "—"
+      },
+      {
+        "key": "sum",
+        "label": "Somme",
+        "unit": "—"
+      },
+      {
+        "key": "prod",
+        "label": "Produit",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -304,24 +668,59 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 13,
-    "solver": "fixed",
+    "solver": "affineBounds",
     "title": "Activité 13",
     "difficulty": 1,
-    "statement": "Activité 13\nSoit ABC un triangle tel que AB = x + 3, AC = 3x + 4 et BC = 2x + 5, où x est un réel positif.\nDéterminer x pour que ce triangle soit rectangle en A.\nDéfinition\nSoient a, b et c trois réels avec a ≠ 0.\nL’équation a x2 + b x + c = 0 est dite équation du second degré d’inconnue x.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 13\nSoit ABC un triangle tel que AB = x + 3, AC = 3x + 4 et BC = 2x + 5, où x est un réel positif.\nDéterminer x pour que ce triangle soit rectangle en A.\nDéfinition\nSoient a, b et c trois réels avec a ≠ 0.\nL’équation a x2 + b x + c = 0 est dite équation du second degré d’inconnue x.\n\nÀ calculer dans l'application : f(a) = −3a + 5 sur [−2 ; 3]. Encadrer f(a).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 13 (« Activité 13 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "amin",
+        "label": "a min",
+        "unit": "—",
+        "value": -2,
+        "min": -4,
+        "max": 0,
+        "step": 1
+      },
+      {
+        "key": "amax",
+        "label": "a max",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "m",
+        "label": "m",
+        "unit": "—",
+        "value": -3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "p",
+        "label": "p",
+        "unit": "—",
+        "value": 5,
+        "min": -2,
+        "max": 8,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 13 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "ymin",
+        "label": "min de f",
+        "unit": "—"
+      },
+      {
+        "key": "ymax",
+        "label": "max de f",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -329,24 +728,65 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 14,
-    "solver": "fixed",
+    "solver": "quadraticSolve",
     "title": "Activité 14 Forme canonique de ax2 + bx + c",
     "difficulty": 1,
-    "statement": "Activité 14 Forme canonique de ax2 + bx + c\n1) Vérifier que\n1 2\na) x 2 – 6 x = (x – 3) 2 – 9 ; b) 2 x 2 + x = 2 [(x + ) – 1 ].\n4 16\n2) Ecrire chacune des expressions suivantes sous la forme a [(x + p) 2 + q], où a, p et q sont\ndes réels.\na) x 2 – 6 x +1 ; b) 2 x 2 + x + 5\nc) – 3 x 2 + 4 x + 7 ; d) –5 x 2 + 10 x – 8.\n3) Soient a, b, c trois réels avec a ≠ 0.\nb 2 b 2 - 4ac\nMontrer que a x 2 + b x + c = a <cx + m - F.\n2a 4a 2\nExplorer Explorer\nVocabulaire\n• Le réel b 2 – 4ac est noté Δ et appelé le discriminant de l’équation du second degré\na x 2 + b x + c = 0.\n2 2\n• a <cx + b m - b - 42 ac F est appelée la forme canonique de a x 2 + b x + c.\n2a 4a\nA s s iAssimiler",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 14 Forme canonique de ax2 + bx + c\n1) Vérifier que\n1 2\na) x 2 – 6 x = (x – 3) 2 – 9 ; b) 2 x 2 + x = 2 [(x + ) – 1 ].\n4 16\n2) Ecrire chacune des expressions suivantes sous la forme a [(x + p) 2 + q], où a, p et q sont\ndes réels.\na) x 2 – 6 x +1 ; b) 2 x 2 + x + 5\nc) – 3 x 2 + 4 x + 7 ; d) –5 x 2 + 10 x – 8.\n3) Soient a, b, c trois réels avec a ≠ 0.\nb 2 b 2 - 4ac\nMontrer que a x 2 + b x + c = a <cx + m - F.\n2a 4a 2\nExplorer Explorer\nVocabulaire\n• Le réel b 2 – 4ac est noté Δ et appelé le discriminant de l’équation du second degré\na x 2 + b x + c = 0.\n2 2\n• a <cx + b m - b - 42 ac F est appelée la forme canonique de a x 2 + b x + c.\n2a 4a\nA s s iAssimiler\n\nÀ calculer dans l'application : Résoudre dans IR : 1x² + (0)x + (-9) = 0. Donner Δ, les racines, la somme et le produit.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 14 (« Activité 14 Forme canonique de ax2 + bx + c ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 1,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 0,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": -9,
+        "min": -10,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 14 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "disc",
+        "label": "Discriminant Δ",
+        "unit": "—"
+      },
+      {
+        "key": "x1",
+        "label": "Racine x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "Racine x₂",
+        "unit": "—"
+      },
+      {
+        "key": "sum",
+        "label": "Somme",
+        "unit": "—"
+      },
+      {
+        "key": "prod",
+        "label": "Produit",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -354,24 +794,41 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 15,
-    "solver": "fixed",
+    "solver": "absEquation",
     "title": "Activité 15 Méthode géométrique d’Al Khawarizmi",
     "difficulty": 1,
-    "statement": "Activité 15 Méthode géométrique d’Al Khawarizmi\nLe mathématicien arabe Al Khawarizmi (780-850), a proposé une méthode géométrique\npour résoudre des équations du type x 2 + b x = c.\nPour résoudre l’équation x 2 + 10 x = 39, il procède de la\nmanière suivante :\n• Il considère un carré de côté x, bordé de deux rectangles\nde côtés x et 5 (voir la figure ci-contre).\n• Il exprime de deux façons différentes l’aire A(x) de la\npartie colorée : c’est d’une part la somme des aires du\ncarré de côté x et des deux rectangles de côtés x et 5 et\nd’autre part c’est l’aire du grand carré de côté x + 5 moins\nl’aire du petit carré de côté 5.\nIl obtient l’égalité x 2 + 10 x = (x + 5) 2 – 25.\n• Il détermine la solution positive de l’équation (x + 5) 2 – 25 = 39.\nUtiliser la méthode d’Al Khawarizmi, pour déterminer la solution positive de chacune des\néquations ci-dessous.\na) x 2 + 4 x = 5 ; b) x 2 + 20 x – 156 = 0.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 15 Méthode géométrique d’Al Khawarizmi\nLe mathématicien arabe Al Khawarizmi (780-850), a proposé une méthode géométrique\npour résoudre des équations du type x 2 + b x = c.\nPour résoudre l’équation x 2 + 10 x = 39, il procède de la\nmanière suivante :\n• Il considère un carré de côté x, bordé de deux rectangles\nde côtés x et 5 (voir la figure ci-contre).\n• Il exprime de deux façons différentes l’aire A(x) de la\npartie colorée : c’est d’une part la somme des aires du\ncarré de côté x et des deux rectangles de côtés x et 5 et\nd’autre part c’est l’aire du grand carré de côté x + 5 moins\nl’aire du petit carré de côté 5.\nIl obtient l’égalité x 2 + 10 x = (x + 5) 2 – 25.\n• Il détermine la solution positive de l’équation (x + 5) 2 – 25 = 39.\nUtiliser la méthode d’Al Khawarizmi, pour déterminer la solution positive de chacune des\néquations ci-dessous.\na) x 2 + 4 x = 5 ; b) x 2 + 20 x – 156 = 0.\n\nÀ calculer dans l'application : |x − 1| = 4.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 15 (« Activité 15 Méthode géométrique d’Al Khawarizmi ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 4,
+        "min": 1,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 15 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x1",
+        "label": "x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "x₂",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -379,24 +836,65 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 16,
-    "solver": "fixed",
+    "solver": "quadraticSolve",
     "title": "Activité 16",
     "difficulty": 2,
-    "statement": "Activité 16\nUn rectangle a pour périmètre 20 cm et pour longueur x cm.\n1) Exprimer, en fonction de x, l’aire a(x) du rectangle.\n2) Déterminer x pour que a(x) = 16 cm 2.\n3) Ce rectangle peut-il avoir une aire de 30 cm 2 ?",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 16\nUn rectangle a pour périmètre 20 cm et pour longueur x cm.\n1) Exprimer, en fonction de x, l’aire a(x) du rectangle.\n2) Déterminer x pour que a(x) = 16 cm 2.\n3) Ce rectangle peut-il avoir une aire de 30 cm 2 ?\n\nÀ calculer dans l'application : Résoudre dans IR : 3x² + (-5)x + (2) = 0. Donner Δ, les racines, la somme et le produit.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 16 (« Activité 16 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": -5,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": 2,
+        "min": -10,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 16 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "disc",
+        "label": "Discriminant Δ",
+        "unit": "—"
+      },
+      {
+        "key": "x1",
+        "label": "Racine x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "Racine x₂",
+        "unit": "—"
+      },
+      {
+        "key": "sum",
+        "label": "Somme",
+        "unit": "—"
+      },
+      {
+        "key": "prod",
+        "label": "Produit",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -404,24 +902,65 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 17,
-    "solver": "fixed",
+    "solver": "quadraticSolve",
     "title": "Activité 17",
     "difficulty": 2,
-    "statement": "Activité 17\nUne pierre lancée vers le haut atteint à l’instant t (en secondes) une hauteur h(t) (en mètres)\ntelle que h(t) = – 1 t 2 + 3t + 2.\na) Ecrire h(t) sous forme canonique.\nb) Déterminer la hauteur maximale que la pierre peut atteindre.\nc) Trouver à quel instant la pierre retombe au sol.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 17\nUne pierre lancée vers le haut atteint à l’instant t (en secondes) une hauteur h(t) (en mètres)\ntelle que h(t) = – 1 t 2 + 3t + 2.\na) Ecrire h(t) sous forme canonique.\nb) Déterminer la hauteur maximale que la pierre peut atteindre.\nc) Trouver à quel instant la pierre retombe au sol.\n\nÀ calculer dans l'application : Résoudre dans IR : 1x² + (-5)x + (6) = 0. Donner Δ, les racines, la somme et le produit.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 17 (« Activité 17 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 1,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": -5,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": 6,
+        "min": -10,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 17 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "disc",
+        "label": "Discriminant Δ",
+        "unit": "—"
+      },
+      {
+        "key": "x1",
+        "label": "Racine x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "Racine x₂",
+        "unit": "—"
+      },
+      {
+        "key": "sum",
+        "label": "Somme",
+        "unit": "—"
+      },
+      {
+        "key": "prod",
+        "label": "Produit",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -429,24 +968,65 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 18,
-    "solver": "fixed",
+    "solver": "quadraticSolve",
     "title": "Activité 18 Solutions d’une équation du second degré",
     "difficulty": 2,
-    "statement": "Activité 18 Solutions d’une équation du second degré\nSoit l’équation du second degré a x 2 + b x + c = 0 et soit Δ = b 2 – 4ac son discriminant.\nb 2 T\n1) Montrer que a x 2 + b x + c = 0 équivaut à cx + m = 2 .\n2a 4a\n2) Résoudre dans IR l’équation a x + b x + c = 0.\nRemarque\nToute solution de l’équation ax 2 + bx + c = 0 est aussi appelée racine de cette équation.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 18 Solutions d’une équation du second degré\nSoit l’équation du second degré a x 2 + b x + c = 0 et soit Δ = b 2 – 4ac son discriminant.\nb 2 T\n1) Montrer que a x 2 + b x + c = 0 équivaut à cx + m = 2 .\n2a 4a\n2) Résoudre dans IR l’équation a x + b x + c = 0.\nRemarque\nToute solution de l’équation ax 2 + bx + c = 0 est aussi appelée racine de cette équation.\n\nÀ calculer dans l'application : Résoudre dans IR : 1x² + (-3)x + (-4) = 0. Donner Δ, les racines, la somme et le produit.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 18 (« Activité 18 Solutions d’une équation du second degré ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 1,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": -3,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": -4,
+        "min": -10,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 18 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "disc",
+        "label": "Discriminant Δ",
+        "unit": "—"
+      },
+      {
+        "key": "x1",
+        "label": "Racine x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "Racine x₂",
+        "unit": "—"
+      },
+      {
+        "key": "sum",
+        "label": "Somme",
+        "unit": "—"
+      },
+      {
+        "key": "prod",
+        "label": "Produit",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -454,24 +1034,41 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 19,
-    "solver": "fixed",
+    "solver": "absEquation",
     "title": "Activité 19",
     "difficulty": 2,
-    "statement": "Activité 19\nRésoudre dans IR chacune des équations du second degré suivantes.\n1 2\na) x 2 + 2 x – 2 = 0 ; b) 5 y 2 – 3 y + 1 = 0 ; c) z – 3 z+3=0 ;\nd) 3 t 2 – 2 t = 0.\nm i l e r : 2-3\nA s s iAssimiler",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 19\nRésoudre dans IR chacune des équations du second degré suivantes.\n1 2\na) x 2 + 2 x – 2 = 0 ; b) 5 y 2 – 3 y + 1 = 0 ; c) z – 3 z+3=0 ;\nd) 3 t 2 – 2 t = 0.\nm i l e r : 2-3\nA s s iAssimiler\n\nÀ calculer dans l'application : |x + 2| = 3. Donner les deux solutions, de la plus petite à la plus grande.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 19 (« Activité 19 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 2,
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 19 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x1",
+        "label": "x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "x₂",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -479,24 +1076,65 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 20,
-    "solver": "fixed",
+    "solver": "quadraticSolve",
     "title": "Activité 20 Le discriminant réduit",
     "difficulty": 2,
-    "statement": "Activité 20 Le discriminant réduit\nOn considère l’équation du second degré a x 2 + b x + c = 0. Soit Δ son discriminant.\na) En posant b = 2 b’, vérifier que Δ = 4 Δ’ , où Δ’ = b’2 – a c.\nb) Déterminer suivant le signe de Δ’, le nombre de solutions de l’équation et donner les solu-\ntions en fonction de a, b’ et Δ’.\nc) Utiliser le discriminant réduit Δ’ pour résoudre l’équation 5 x 2 – 16 x + 3 = 0.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 20 Le discriminant réduit\nOn considère l’équation du second degré a x 2 + b x + c = 0. Soit Δ son discriminant.\na) En posant b = 2 b’, vérifier que Δ = 4 Δ’ , où Δ’ = b’2 – a c.\nb) Déterminer suivant le signe de Δ’, le nombre de solutions de l’équation et donner les solu-\ntions en fonction de a, b’ et Δ’.\nc) Utiliser le discriminant réduit Δ’ pour résoudre l’équation 5 x 2 – 16 x + 3 = 0.\n\nÀ calculer dans l'application : Résoudre dans IR : 2x² + (-3)x + (-2) = 0. Donner Δ, les racines, la somme et le produit.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 20 (« Activité 20 Le discriminant réduit ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 2,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": -3,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": -2,
+        "min": -10,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 20 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "disc",
+        "label": "Discriminant Δ",
+        "unit": "—"
+      },
+      {
+        "key": "x1",
+        "label": "Racine x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "Racine x₂",
+        "unit": "—"
+      },
+      {
+        "key": "sum",
+        "label": "Somme",
+        "unit": "—"
+      },
+      {
+        "key": "prod",
+        "label": "Produit",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -504,24 +1142,59 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 21,
-    "solver": "fixed",
+    "solver": "affineBounds",
     "title": "Activité 21",
     "difficulty": 2,
-    "statement": "Activité 21\nUn peintre dispose d’un tissu rectangulaire de longueur 3 m\net de largeur 2 m. Sur ce tissu, il veut dessiner deux bandes\nde même largeur, comme l’indique la figure, de sorte que\nl’aire des deux bandes soit égale à l’aire de la partie restante.\nDéterminer la largeur commune convenable.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 21\nUn peintre dispose d’un tissu rectangulaire de longueur 3 m\net de largeur 2 m. Sur ce tissu, il veut dessiner deux bandes\nde même largeur, comme l’indique la figure, de sorte que\nl’aire des deux bandes soit égale à l’aire de la partie restante.\nDéterminer la largeur commune convenable.\n\nÀ calculer dans l'application : f(a) = −3a + 5 sur [−2 ; 3]. Encadrer f(a).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 21 (« Activité 21 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "amin",
+        "label": "a min",
+        "unit": "—",
+        "value": -2,
+        "min": -4,
+        "max": 0,
+        "step": 1
+      },
+      {
+        "key": "amax",
+        "label": "a max",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "m",
+        "label": "m",
+        "unit": "—",
+        "value": -3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "p",
+        "label": "p",
+        "unit": "—",
+        "value": 5,
+        "min": -2,
+        "max": 8,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 21 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "ymin",
+        "label": "min de f",
+        "unit": "—"
+      },
+      {
+        "key": "ymax",
+        "label": "max de f",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -529,24 +1202,65 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 22,
-    "solver": "fixed",
+    "solver": "quadraticSolve",
     "title": "Activité 22 Somme et produit des racines d’une équation",
     "difficulty": 2,
-    "statement": "Activité 22 Somme et produit des racines d’une équation\ndu second degré\nSoit l’équation du second degré a x 2 + b x + c = 0. On suppose qu’elle admet deux racines x 1 et x 2.\nCalculer en fonction de a, b et c la somme x 1 + x 2 et le produit x 1 . x 2.\nExplorer Explorer",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 22 Somme et produit des racines d’une équation\ndu second degré\nSoit l’équation du second degré a x 2 + b x + c = 0. On suppose qu’elle admet deux racines x 1 et x 2.\nCalculer en fonction de a, b et c la somme x 1 + x 2 et le produit x 1 . x 2.\nExplorer Explorer\n\nÀ calculer dans l'application : Résoudre dans IR : 1x² + (0)x + (-9) = 0. Donner Δ, les racines, la somme et le produit.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 22 (« Activité 22 Somme et produit des racines d’une équation ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 1,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 0,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": -9,
+        "min": -10,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 22 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "disc",
+        "label": "Discriminant Δ",
+        "unit": "—"
+      },
+      {
+        "key": "x1",
+        "label": "Racine x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "Racine x₂",
+        "unit": "—"
+      },
+      {
+        "key": "sum",
+        "label": "Somme",
+        "unit": "—"
+      },
+      {
+        "key": "prod",
+        "label": "Produit",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -554,24 +1268,41 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 23,
-    "solver": "fixed",
+    "solver": "absEquation",
     "title": "Activité 23",
     "difficulty": 2,
-    "statement": "Activité 23\nSoit A(x) = x 2 + ( 3 – 2) x – 2 3 .\n1) Calculer A(2).\n2) En déduire les racines de l’équation A(x) = 0.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 23\nSoit A(x) = x 2 + ( 3 – 2) x – 2 3 .\n1) Calculer A(2).\n2) En déduire les racines de l’équation A(x) = 0.\n\nÀ calculer dans l'application : |x − 1| = 4.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 23 (« Activité 23 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 4,
+        "min": 1,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 23 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x1",
+        "label": "x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "x₂",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -579,24 +1310,65 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 24,
-    "solver": "fixed",
+    "solver": "quadraticSolve",
     "title": "Activité 24",
     "difficulty": 2,
-    "statement": "Activité 24\nPour chacune des équations ci-dessous, vérifier que x 1 est une racine puis déterminer l’autre\nracine.\na) 2 x 2 – 4 x – 6 = 0 et x 1 = 3.\nb) x 2 + 3 x + 2 = 0 et x 1 = – 2.\nc) – 4 x 2 + x 3 + 9 = 0 et x 1 = 3.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 24\nPour chacune des équations ci-dessous, vérifier que x 1 est une racine puis déterminer l’autre\nracine.\na) 2 x 2 – 4 x – 6 = 0 et x 1 = 3.\nb) x 2 + 3 x + 2 = 0 et x 1 = – 2.\nc) – 4 x 2 + x 3 + 9 = 0 et x 1 = 3.\n\nÀ calculer dans l'application : Résoudre dans IR : 3x² + (-5)x + (2) = 0. Donner Δ, les racines, la somme et le produit.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 24 (« Activité 24 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": -5,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": 2,
+        "min": -10,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 24 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "disc",
+        "label": "Discriminant Δ",
+        "unit": "—"
+      },
+      {
+        "key": "x1",
+        "label": "Racine x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "Racine x₂",
+        "unit": "—"
+      },
+      {
+        "key": "sum",
+        "label": "Somme",
+        "unit": "—"
+      },
+      {
+        "key": "prod",
+        "label": "Produit",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -604,24 +1376,65 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 25,
-    "solver": "fixed",
+    "solver": "quadraticSolve",
     "title": "Activité 25",
     "difficulty": 2,
-    "statement": "Activité 25\n1) Résoudre dans IR l’équation du second degré ax 2 + bx + c = 0 dans chacun des cas suivants.\n• a + b + c = 0. ; • a – b + c = 0.\n2) Résoudre dans IR les équations ci-dessous.\na) 3 x 2 + 5 x – 8 = 0 ; b) x 2 + 3 x + 3 – 1 = 0.\nA s s iAssimiler",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 25\n1) Résoudre dans IR l’équation du second degré ax 2 + bx + c = 0 dans chacun des cas suivants.\n• a + b + c = 0. ; • a – b + c = 0.\n2) Résoudre dans IR les équations ci-dessous.\na) 3 x 2 + 5 x – 8 = 0 ; b) x 2 + 3 x + 3 – 1 = 0.\nA s s iAssimiler\n\nÀ calculer dans l'application : Résoudre dans IR : 1x² + (-5)x + (6) = 0. Donner Δ, les racines, la somme et le produit.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 25 (« Activité 25 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 1,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": -5,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": 6,
+        "min": -10,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 25 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "disc",
+        "label": "Discriminant Δ",
+        "unit": "—"
+      },
+      {
+        "key": "x1",
+        "label": "Racine x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "Racine x₂",
+        "unit": "—"
+      },
+      {
+        "key": "sum",
+        "label": "Somme",
+        "unit": "—"
+      },
+      {
+        "key": "prod",
+        "label": "Produit",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -629,24 +1442,65 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 26,
-    "solver": "fixed",
+    "solver": "quadraticSolve",
     "title": "Activité 26",
     "difficulty": 2,
-    "statement": "Activité 26\na) Déterminer les dimensions d’un terrain rectangulaire de périmètre 122 m et\nd’aire 900 m 2.\nb) Existe-t-il un rectangle de périmètre 100 m et d’aire 700 m 2 ?\nm i l e r : 5-6\nA s s iAssimiler",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 26\na) Déterminer les dimensions d’un terrain rectangulaire de périmètre 122 m et\nd’aire 900 m 2.\nb) Existe-t-il un rectangle de périmètre 100 m et d’aire 700 m 2 ?\nm i l e r : 5-6\nA s s iAssimiler\n\nÀ calculer dans l'application : Résoudre dans IR : 1x² + (-3)x + (-4) = 0. Donner Δ, les racines, la somme et le produit.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 26 (« Activité 26 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 1,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": -3,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": -4,
+        "min": -10,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 26 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "disc",
+        "label": "Discriminant Δ",
+        "unit": "—"
+      },
+      {
+        "key": "x1",
+        "label": "Racine x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "Racine x₂",
+        "unit": "—"
+      },
+      {
+        "key": "sum",
+        "label": "Somme",
+        "unit": "—"
+      },
+      {
+        "key": "prod",
+        "label": "Produit",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -654,24 +1508,41 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 27,
-    "solver": "fixed",
+    "solver": "absEquation",
     "title": "Activité 27 Equations se ramenant à une équation du second degré",
     "difficulty": 2,
-    "statement": "Activité 27 Equations se ramenant à une équation du\nsecond degré\n1) Pour chacune des expressions suivantes, déterminer pour quelles valeurs de x elle est définie.\n1 x+2 1\na) x + + 2 ; b) ; c) ; d) x - 2\nx x-3 2x + 1\ne) x + 1 ; f) 2x 2 + x ; g) 3 x 4 – 5 x 2 + 2.\n3x2 + x - 4\nE x p l o r e r\n2) Résoudre dans IR les équations ci-dessous.\nx+2 1 2x 2 + x\na) x + 1 + 2 = 0 ; b) = ; c) x-2 = x + 1 ; d) =1\nx x - 3 2x + 1 3x2 + x - 4\ne) 3 x 4 – 5 x 2 + 2 = 0.\nA s s iAssimiler\nInéquations du second degré",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 27 Equations se ramenant à une équation du\nsecond degré\n1) Pour chacune des expressions suivantes, déterminer pour quelles valeurs de x elle est définie.\n1 x+2 1\na) x + + 2 ; b) ; c) ; d) x - 2\nx x-3 2x + 1\ne) x + 1 ; f) 2x 2 + x ; g) 3 x 4 – 5 x 2 + 2.\n3x2 + x - 4\nE x p l o r e r\n2) Résoudre dans IR les équations ci-dessous.\nx+2 1 2x 2 + x\na) x + 1 + 2 = 0 ; b) = ; c) x-2 = x + 1 ; d) =1\nx x - 3 2x + 1 3x2 + x - 4\ne) 3 x 4 – 5 x 2 + 2 = 0.\nA s s iAssimiler\nInéquations du second degré\n\nÀ calculer dans l'application : |x + 2| = 3. Donner les deux solutions, de la plus petite à la plus grande.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 27 (« Activité 27 Equations se ramenant à une équation du second degré ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 2,
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 27 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x1",
+        "label": "x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "x₂",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -679,24 +1550,65 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 28,
-    "solver": "fixed",
+    "solver": "quadraticSolve",
     "title": "Activité 28",
     "difficulty": 2,
-    "statement": "Activité 28\nPour quelles valeurs de x l’aire du rectangle est-elle plus grande que\nl’aire du demi disque ?",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 28\nPour quelles valeurs de x l’aire du rectangle est-elle plus grande que\nl’aire du demi disque ?\n\nÀ calculer dans l'application : Résoudre dans IR : 2x² + (-3)x + (-2) = 0. Donner Δ, les racines, la somme et le produit.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 28 (« Activité 28 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 2,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": -3,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": -2,
+        "min": -10,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 28 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "disc",
+        "label": "Discriminant Δ",
+        "unit": "—"
+      },
+      {
+        "key": "x1",
+        "label": "Racine x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "Racine x₂",
+        "unit": "—"
+      },
+      {
+        "key": "sum",
+        "label": "Somme",
+        "unit": "—"
+      },
+      {
+        "key": "prod",
+        "label": "Produit",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -704,24 +1616,59 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 29,
-    "solver": "fixed",
+    "solver": "affineBounds",
     "title": "Activité 29",
     "difficulty": 2,
-    "statement": "Activité 29\n1) Montrer que si x 1 et x 2 sont deux racines de l’équation a x 2 + b x + c = 0, alors\na x 2 + b x + c = a(x – x 1)(x – x 2).\n2) Factoriser chacune des expressions suivantes.\na) x 2 – (1 + 2) x + 2; b) 2 x 2 – 14 x + 24 ; c) – 9 x 2 + 12 x – 4 ; d) 5 x 2 + 8 x.\nm i l e r : 8-9\nA s s iAssimiler",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 29\n1) Montrer que si x 1 et x 2 sont deux racines de l’équation a x 2 + b x + c = 0, alors\na x 2 + b x + c = a(x – x 1)(x – x 2).\n2) Factoriser chacune des expressions suivantes.\na) x 2 – (1 + 2) x + 2; b) 2 x 2 – 14 x + 24 ; c) – 9 x 2 + 12 x – 4 ; d) 5 x 2 + 8 x.\nm i l e r : 8-9\nA s s iAssimiler\n\nÀ calculer dans l'application : f(a) = −3a + 5 sur [−2 ; 3]. Encadrer f(a).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 29 (« Activité 29 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "amin",
+        "label": "a min",
+        "unit": "—",
+        "value": -2,
+        "min": -4,
+        "max": 0,
+        "step": 1
+      },
+      {
+        "key": "amax",
+        "label": "a max",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "m",
+        "label": "m",
+        "unit": "—",
+        "value": -3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "p",
+        "label": "p",
+        "unit": "—",
+        "value": 5,
+        "min": -2,
+        "max": 8,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 29 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "ymin",
+        "label": "min de f",
+        "unit": "—"
+      },
+      {
+        "key": "ymax",
+        "label": "max de f",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -729,24 +1676,65 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 30,
-    "solver": "fixed",
+    "solver": "quadraticSolve",
     "title": "Activité 30 Signe de ax² + bx + c, (a ≠ 0)",
     "difficulty": 2,
-    "statement": "Activité 30 Signe de a x 2 + b x + c, (a & 0)\n1) Factoriser et déterminer le signe de chacune des expressions suivantes :\nA (x) = 4 x 2 – 12 x + 9 ; B (x) = x 2 – 5 x + 6 ; C (x) = – 2 x 2 + x + 1.\n2) Donner la forme canonique et déterminer le signe de chacune des expressions suivantes.\nP (x) = – 2 x 2 + x – 1 ; Q (x) = 3 x 2 – 2 x + 5.\n3) Soit a, b et c trois réels, avec a ≠ 0.\nDéterminer le signe de a x 2 + b x + c.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 30 Signe de a x 2 + b x + c, (a & 0)\n1) Factoriser et déterminer le signe de chacune des expressions suivantes :\nA (x) = 4 x 2 – 12 x + 9 ; B (x) = x 2 – 5 x + 6 ; C (x) = – 2 x 2 + x + 1.\n2) Donner la forme canonique et déterminer le signe de chacune des expressions suivantes.\nP (x) = – 2 x 2 + x – 1 ; Q (x) = 3 x 2 – 2 x + 5.\n3) Soit a, b et c trois réels, avec a ≠ 0.\nDéterminer le signe de a x 2 + b x + c.\n\nÀ calculer dans l'application : Résoudre dans IR : 1x² + (0)x + (-9) = 0. Donner Δ, les racines, la somme et le produit.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 30 (« Activité 30 Signe de ax² + bx + c, (a ≠ 0) ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 1,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 0,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": -9,
+        "min": -10,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 30 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "disc",
+        "label": "Discriminant Δ",
+        "unit": "—"
+      },
+      {
+        "key": "x1",
+        "label": "Racine x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "Racine x₂",
+        "unit": "—"
+      },
+      {
+        "key": "sum",
+        "label": "Somme",
+        "unit": "—"
+      },
+      {
+        "key": "prod",
+        "label": "Produit",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -754,24 +1742,41 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 31,
-    "solver": "fixed",
+    "solver": "absEquation",
     "title": "Activité 31",
     "difficulty": 2,
-    "statement": "Activité 31\n1) a) Résoudre dans IR l’inéquation x 2 – 5 x + 6 < 0.\nEn déduire les valeurs de x pour les quelles x 2 – 5 x + 6 ≥ 0.\nb) Résoudre dans IR l’inéquation – x 2 + 4 x – 3 ≤ 0.\nEn déduire les valeurs de x pour les quelles – x 2 + 4 x – 3 > 0.\n2) Résoudre dans IR les inéquations suivantes.\na) – x 2 + x – 1 > 0 ; b) 4 x 2 – 4 x + 1 ≤ 0 ; c) 5 – x 2 ≥ 0 ; d) 3 x 2 + 8 x + 5 < 0.\nm i l e r : 10-11-12\nA s s iAssimiler\nExplorer Explorer",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 31\n1) a) Résoudre dans IR l’inéquation x 2 – 5 x + 6 < 0.\nEn déduire les valeurs de x pour les quelles x 2 – 5 x + 6 ≥ 0.\nb) Résoudre dans IR l’inéquation – x 2 + 4 x – 3 ≤ 0.\nEn déduire les valeurs de x pour les quelles – x 2 + 4 x – 3 > 0.\n2) Résoudre dans IR les inéquations suivantes.\na) – x 2 + x – 1 > 0 ; b) 4 x 2 – 4 x + 1 ≤ 0 ; c) 5 – x 2 ≥ 0 ; d) 3 x 2 + 8 x + 5 < 0.\nm i l e r : 10-11-12\nA s s iAssimiler\nExplorer Explorer\n\nÀ calculer dans l'application : |x − 1| = 4.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 31 (« Activité 31 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 4,
+        "min": 1,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 31 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x1",
+        "label": "x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "x₂",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -779,24 +1784,65 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 32,
-    "solver": "fixed",
+    "solver": "quadraticSolve",
     "title": "Activité 32",
     "difficulty": 2,
-    "statement": "Activité 32\nDans la figure ci-contre, D et D’ désignent les représentations\ngraphiques des fonctions affines f et g définies par :\nf(x) = x – 1 et g(x) = – 2 x + 4.\nPar lecture graphique\na) Déterminer le signe de f(x) et celui de g(x).\nb) Déterminer le signe de (x – 1)(– 2 x + 4).",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 32\nDans la figure ci-contre, D et D’ désignent les représentations\ngraphiques des fonctions affines f et g définies par :\nf(x) = x – 1 et g(x) = – 2 x + 4.\nPar lecture graphique\na) Déterminer le signe de f(x) et celui de g(x).\nb) Déterminer le signe de (x – 1)(– 2 x + 4).\n\nÀ calculer dans l'application : Résoudre dans IR : 3x² + (-5)x + (2) = 0. Donner Δ, les racines, la somme et le produit.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 32 (« Activité 32 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": -5,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": 2,
+        "min": -10,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 32 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "disc",
+        "label": "Discriminant Δ",
+        "unit": "—"
+      },
+      {
+        "key": "x1",
+        "label": "Racine x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "Racine x₂",
+        "unit": "—"
+      },
+      {
+        "key": "sum",
+        "label": "Somme",
+        "unit": "—"
+      },
+      {
+        "key": "prod",
+        "label": "Produit",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -804,24 +1850,65 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 33,
-    "solver": "fixed",
+    "solver": "quadraticSolve",
     "title": "Activité 33",
     "difficulty": 2,
-    "statement": "Activité 33\nDans la figure ci-contre, ABCD est un rectangle tel que\nAB = 2 et AD = 3, I est le milieu du côté [AB] et M est\nun point du côté [AD]. On pose x = AM et\nF(x) = IM 2 + MC 2.\n1) a) Exprimer F(x) en fonction de x.\nb) Déterminer x pour que le triangle IMC soit rectangle en M.\n2) a) Résoudre l’inéquation F(x) ≥ .\nb) En déduire la position du point M pour la quelle F(x) est minimale.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 33\nDans la figure ci-contre, ABCD est un rectangle tel que\nAB = 2 et AD = 3, I est le milieu du côté [AB] et M est\nun point du côté [AD]. On pose x = AM et\nF(x) = IM 2 + MC 2.\n1) a) Exprimer F(x) en fonction de x.\nb) Déterminer x pour que le triangle IMC soit rectangle en M.\n2) a) Résoudre l’inéquation F(x) ≥ .\nb) En déduire la position du point M pour la quelle F(x) est minimale.\n\nÀ calculer dans l'application : Résoudre dans IR : 1x² + (-5)x + (6) = 0. Donner Δ, les racines, la somme et le produit.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 33 (« Activité 33 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 1,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": -5,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": 6,
+        "min": -10,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 33 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "disc",
+        "label": "Discriminant Δ",
+        "unit": "—"
+      },
+      {
+        "key": "x1",
+        "label": "Racine x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "Racine x₂",
+        "unit": "—"
+      },
+      {
+        "key": "sum",
+        "label": "Somme",
+        "unit": "—"
+      },
+      {
+        "key": "prod",
+        "label": "Produit",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -829,24 +1916,65 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 34,
-    "solver": "fixed",
+    "solver": "quadraticSolve",
     "title": "Activité 34",
     "difficulty": 2,
-    "statement": "Activité 34\n1) Résoudre l’inéquation x 2 – 4 x + 3 > 0.\n2) Dans la figure ci-contre, ABCD et BEFG sont des carrés.\nDéterminer les réels x pour que la somme des aires de ces\ndeux carrés soit supérieure à 10.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 34\n1) Résoudre l’inéquation x 2 – 4 x + 3 > 0.\n2) Dans la figure ci-contre, ABCD et BEFG sont des carrés.\nDéterminer les réels x pour que la somme des aires de ces\ndeux carrés soit supérieure à 10.\n\nÀ calculer dans l'application : Résoudre dans IR : 1x² + (-3)x + (-4) = 0. Donner Δ, les racines, la somme et le produit.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 34 (« Activité 34 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 1,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": -3,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": -4,
+        "min": -10,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 34 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "disc",
+        "label": "Discriminant Δ",
+        "unit": "—"
+      },
+      {
+        "key": "x1",
+        "label": "Racine x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "Racine x₂",
+        "unit": "—"
+      },
+      {
+        "key": "sum",
+        "label": "Somme",
+        "unit": "—"
+      },
+      {
+        "key": "prod",
+        "label": "Produit",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -854,24 +1982,41 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 35,
-    "solver": "fixed",
+    "solver": "absEquation",
     "title": "Activité 35 Le poids d’un astronaute",
     "difficulty": 2,
-    "statement": "Activité 35 Le poids d’un astronaute\nAu fur et à mesure qu’une navette spatiale prend de l’altitude, le poids de l’astronaute\ndiminue jusqu'à atteindre un état d’apesanteur.\nSi p est le poids (en kg) d’un astronaute sur la terre, son poids (en kg) à l’altitude x (en km)\n6400 2\nest P]x g = p c m.\n6400 + x\nUn astronaute pèse sur terre 81 kg.\n1) Quel est son poids à 1000 km d’altitude ?\n2) A quelle altitude pèsera t-il 49 kg ? 25 kg ?\n3) A quelle altitude pèsera-t-il moins de 9 kg ?",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 35 Le poids d’un astronaute\nAu fur et à mesure qu’une navette spatiale prend de l’altitude, le poids de l’astronaute\ndiminue jusqu'à atteindre un état d’apesanteur.\nSi p est le poids (en kg) d’un astronaute sur la terre, son poids (en kg) à l’altitude x (en km)\n6400 2\nest P]x g = p c m.\n6400 + x\nUn astronaute pèse sur terre 81 kg.\n1) Quel est son poids à 1000 km d’altitude ?\n2) A quelle altitude pèsera t-il 49 kg ? 25 kg ?\n3) A quelle altitude pèsera-t-il moins de 9 kg ?\n\nÀ calculer dans l'application : |x + 2| = 3. Donner les deux solutions, de la plus petite à la plus grande.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 35 (« Activité 35 Le poids d’un astronaute ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 2,
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 35 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x1",
+        "label": "x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "x₂",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -879,24 +2024,65 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 36,
-    "solver": "fixed",
+    "solver": "quadraticSolve",
     "title": "Activité 36",
     "difficulty": 3,
-    "statement": "Activité 36\nRésoudre dans IR les inéquations suivantes.\na) (x – 1)(–x 2 + 2) < 0 ; b) (–2 x + 3)(4 x 2 + 5 x + 1) ≥ 0 ;\nc) ( 3 – x 2)(x 2 – x – 1) < 0 ; d) 3 x 3 ≤ 5 x 2 – 3 x ; e) (2x 2 + 3 x – 5)(x 2 – x – 1) > 0.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 36\nRésoudre dans IR les inéquations suivantes.\na) (x – 1)(–x 2 + 2) < 0 ; b) (–2 x + 3)(4 x 2 + 5 x + 1) ≥ 0 ;\nc) ( 3 – x 2)(x 2 – x – 1) < 0 ; d) 3 x 3 ≤ 5 x 2 – 3 x ; e) (2x 2 + 3 x – 5)(x 2 – x – 1) > 0.\n\nÀ calculer dans l'application : Résoudre dans IR : 2x² + (-3)x + (-2) = 0. Donner Δ, les racines, la somme et le produit.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 36 (« Activité 36 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 2,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": -3,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": -2,
+        "min": -10,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 36 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "disc",
+        "label": "Discriminant Δ",
+        "unit": "—"
+      },
+      {
+        "key": "x1",
+        "label": "Racine x₁",
+        "unit": "—"
+      },
+      {
+        "key": "x2",
+        "label": "Racine x₂",
+        "unit": "—"
+      },
+      {
+        "key": "sum",
+        "label": "Somme",
+        "unit": "—"
+      },
+      {
+        "key": "prod",
+        "label": "Produit",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -904,24 +2090,59 @@
     "chapter": "degres",
     "kind": "activity",
     "activity": 37,
-    "solver": "fixed",
+    "solver": "affineBounds",
     "title": "Activité 37",
     "difficulty": 3,
-    "statement": "Activité 37\n1) Pour chacune des expressions suivantes, déterminer les valeurs de x pour lesquelles elle est\ndéfinie.\na) x + 3 ; b) x2 + 3x ; c) - 3x2 + 2x + 1.\nx2 + 5 x2 + 5x - 6 x2 - x - 2\n2) Résoudre dans IR les inéquations suivantes.\na) x + 3 x2 + 3x - 3x2 + 2x + 1\nx2 + 5 x2 + 5x - 6 x2 - x - 2\nAssimiler Assimiler\n1 Ecrire sous forme canonique les expressions suivantes.\na) A(x) = 2x 2 – 6 x + 5. b) B(x) = – 3x 2 + 5x. c) C(x) = x 2 + 4.\n2 Résoudre dans IR les équations suivantes.\na) 2x 2 – 3 = 0 ; b) 4x 2 + 12 x + 9 = 0 ; c) (x + 1) 2 = 2x 2 – 2x 2 + 1.\nd) (x + 1)(5x – 2) = 0 ; e) (x – 2) (2x – 1) + (x 2 – 4) = 0 ; f) 3(x + 1) 2 = x 2 – 1.\n3 Résoudre dans IR les équations suivantes :\na) x 2 + 2x – 4 = 0 ; b) x 2 + (x – 2) 2 = 5 ; c) 8x ( x – 1) = 6x + 1.\n4 Résoudre chacune des équations suivantes sans calculer son discriminant.\na) 7x 2 + 8x + 1 = 0\nb) x 2 – 7x + 6 = 0\nc) x 2 – ]5 + rgx + 5r = 0\n5 Déterminer, s’ils existent, deux réels a et b tels que :\na) a+b = 2 b) a + b =- 2\n) )\nab =- 2 ab = 1\nc) )a + b = 5 d) *ab = 6\nab = 7 a-b = 2 2\n6 Trouver deux nombres dont la somme est11 et dont la somme des inverses est\n7 Résoudre dans IR les équations suivantes :\na) x 4 = ( x + 2) 2 ; b) 3x - 2x - 1 = 3 .\nx-1\n8 Dans chacun des cas,donner une équation du second degré admettant pour racines les deux\nréels donnés.\na) –1 et 3 ; b) 2 et 5 ; c) 0 et –4 ; d) et 1.\nler\nA s s i m iAssimiler\n9 Factoriser, quand cela est possible, chacune des expressions suivantes.\na) A(x) = 5x 2 + 9x – 2 b) B(x) = – 2 x 2 + 3x – 1\nc) C(x) = 5x 2 – 2x + 1 c) D(x) = x 2 – x + 3.\n10 1) Résoudre dans IR les inéquations suivantes:\na) x 2 + 5x ; b) 2x 2 – 5x + 3 ; c) 3x 2 – 2x + 1\n2) En déduire la résolution dans IR des inéquations suivates.\na) x 2 + 5x ≤ 0 ; b) 2x 2 – 5x + 3 > 0 ; c) 3x 2 – 2x + 1 < 0\n11 Ci-dessous le tableau de signe d’une expression P(x) de la forme a x 2 + b x + c.\nx – –2 3 +\nSigne de P(x) – 0 + 0 –\nPar lecture de ce tableau,\na) Déterminer le signe de : P(-5) ; P(- 3 ) et P(8).\nb) Indiquer l’ensemble de solutions de l’inéquation P(x) ≤ 0.\n12 Résoudre dans IR les inéquations suivantes.\na) x 2 – 4x ≥ 0 ; b) x 2 – 5x + 6 < 0 ; c) 2x 2 – 6x ≤ x 2 + x\n1 2 3 3\nd) x + x –1≥0 ; e) 3x 2 – 6x 2+2≥0 ; f) –x 2 + x – 1 ≥ 0.\n2 4 4\n♦ Soit f(x) = ax2 + bx + c ou a, b et c sont trois réels tels que a ≠ 0\n♦ Soit Δ = b2 – 4ac le discriminant de l’équation f(x) = 0.\nRacines (ou solutions) de l’équation f(x) = 0\nFactorisation et signe de f(x)\nRacine de f(x) = 0 Factorisation de f(x) Signe de f(x)\nL’équation n’a pas de racines On ne peut pas Pour tout réel x, f(x) est\nΔ<0\nfactoriser f(x) du signe de a.\nL’équation a une seule racine Pour tout réel x≠x0,\nΔ=0 b f(x) = a(x - x0 )2\nx0 = - f(x) est du signe de a.\n2a\nL’équation a deux racines distinctes f(x) est du signe de a à\nΔ>0\nl’extérieur des racines.\n-b - T -b + T f(x) = a(x - x1 )(x - x2 ) f(x) est du signe de (-a )\nx1 = et x2 =\n2a 2a entre les racines\nLe discriminant réduit\nb\nIl est parfois commode d’utiliser le descriminant réduit Δ' = b’2 - ac ; où b’ = .\nOn a :\n♦ Δ = 4 Δ'\n♦ Δ' < 0 équivaut à f(x) = 0 n’a pas de racines.\n♦ Δ' = 0 équivaut à f(x) = 0 a une seule racine x 0 = - b' .\na\n- bl - Tl - b' + T'\n♦ Δ' > 0 équivaut à f(x) = 0 a deux racines distinctes x 1 = et x 2 =\na a\nSomme et produit des racines de l’équation f(x) = 0\nLorsque l’équation f(x) = 0 admet deux racines x 1 et x 2 , on a :\nb c\nx 1 + x 2 = - et x 1x 2 =\na a\nRemarque\n♦ Si a + b + c = 0, alors 1 est une racine de l’équation f(x) = 0 et l’autre racine est c .\na\n♦ Si a – b + c = 0, alors – 1 est une racine de l’équation f(x) = 0 et l’autre racine est- c .\na\nDéveloppe r s eses\nDévelopper compé\ns compétences\n1 Un riche diamantaire, sentant sa fin prochaine, fit venir ses enfants afin de leur distribuer\nsa fortune, constituée exclusivement de diamants. L’aîné prendra un diamant et le septième de\nce qui reste. Le second aura deux diamants et le septième de ce qui reste. Le troisième aura\ntrois diamants et le septième de ce qui reste et ainsi de suite. En bon père de famille le\ndiamantaire a pris soin de ne léser personne : toutes les parts sont égales.\nCombien possède-t-il de diamants ? Quel est le nombre de ses enfants ?\nIndication\nExprimer la part de chacun des deux premiers enfants, en fonction du nombre x de diamants.\n2 Le plan est muni d’un repère orthonormé _O, i , j i . Soit I le point de coordonnées (2 , 2).\nSoit x un réel strictement supérieur à 2. A tout point M(x, 0) on associe le point N,\nintersection de la droite (IM) avec l’axe des ordonnées.\n1) Exprimer en fonction de x, l’aire A(x) du triangle OMN.\n2) Déterminer x pour que\na) A(x) = 10 ; b) A(x) = 8.\n3) Montrer que l’aire du triangle OMN est supérieure ou égale à 8.\nIndication\n1) Déterminer les coordonnées du point N en fonction de x et en déduire A(x).\n3 Nombre d’or\nSoit ABCD un rectangle.\nOn se propose d’inscrire un triangle APQ dans le rectangle\nABCD, de telle sorte que les trois triangles ABQ, PCQ et\nADP, ainsi formés, soient d’aires égales.\nOn pose DP = a, PC = b, QC = d et BQ = c.\n1) a) Montrer que d2 – cd – c2 = 0.\nd 2 d\nb) En déduire que b l - - 1 = 0\nc c\nd 1+ 5\net que = b =\nc a 2\n1+ 5\n( est appelé le nombre d’or et il est souvent noté ϕ ).\n2) a) Montrer que le triangle APQ est isocèle en P si et seulement si a = c ϕ.\nL\nb) Montrer que, dans ce cas, = ϕ , où L est la longueur et l la largeur du rectangle\nABCD. (Dans ce cas, on dit que ABCD est un rectangle d’or).\nDévelopper ses compé\nDévelopper ses compétences\nIndication\n1) a) •Exprimer le fait que les trois triangles sont d’aires égales.\n• Eliminer a.\n2) a) • Exprimer le fait que APQ est isocèle.\n• Vérifier que ϕ 2 – 1 = ϕ et que 1 + 2 ϕ = ϕ 3.\n4 Deux cyclistes A et B partent de deux villes distantes de 132 Km et vont à la rencontre l’un\nde l’autre.\nS’ils partent en même temps, la rencontre aura lieu après 3 heures.\nSi le cycliste A part 33 minutes avant B, la rencontre aura lieu à mi–chemin.\nCalculer la vitesse moyenne de chaque cycliste.\nIndication\nSoit V A la vitesse moyenne du cycliste A et VB celle du cycliste B.\nDéterminer les distances dA et dB, parcourues par les cyclistes A et B en 3 heures.\n5 En courant continu, à partir de deux résistors\nde résistances respectives R 1 et R 2 on obtient une\nrésistance équivalente R telle que R = R 1 + R 2\ndans une association en série, et une résistance\n1 1 1\néquivalente r telle que r = + dans une\nR1 R2\nassociation en parallèle.\n1) Déterminer R1 et R2 sachant que R = 2,5 Ω et r = 0,4 Ω .\n2) On considère le montage de résistances\nci-contre. Déterminer la valeur de x pour que\nla résistance totale du montage soit équivalente à 3 Ω .\n3) Un fil cylindrique homogène de longueur 1m a pour résistance 10 Ω, on en coupe une lon-\ngueur x cm et on monte les deux brins obtenus en parallèle.\nDéterminer x pour que la résistance équivalente obtenue soit égale à 2,4 Ω .\nIndication\n3) Le fil est homogène, donc la résistance est proportionnelle à la longueur du fil.\nU t i l i s e r l e sUtiliser\nT IlesCTIC\nUtiliser un tableur pour résoudre une équation\ndu second degré\nOn se propose de résoudre des équations du second degré, à l’aide d’un tableur.\nOuvrir une feuille de calcul sur Excel et remplir un tableau comme ci-dessous.\nA B C D E F G\n1 a b c Δ\n2 =B2^2 – 4*A2*C2\n• Dans la cellule E2\n- Utiliser le menu du logiciel :\nInsertion / Fonction, puis sélectionner la fonction test SI et valider.\nRemplir les champs de textes comme suit :\nD2 > =0\nDeux racines\nPas de racines\n• Dans la cellule F2\n- Utiliser le menu du logiciel :\nInsertion / Fonction, puis sélectionner la fonction test SI et valider.\nRemplir les champs de textes comme suit :\nD2 > = 0\n(–B2–RACINE(D2))/(2*A2)\n(Laisser vide le troisième champ de texte)\n• Dans la cellule G2\n• Utiliser le menu du logiciel :\nInsertion / Fonction, puis sélectionner la fonction test SI et valider.\nRemplir les champs de textes comme suit :\nD2 > = 0\n(-B2+RACINE(D2))/(2*A2)\n(Laisser vide le troisième champ de texte).\n• Donner les valeurs a, b, c et sélectionner D2 et tirer vers les cellules E2, F2 et G2.\n• Pour entrer d’autres valeurs de a, b et c, passer à la ligne suivante et pour les cellules E2,\nF2 et G2, tirer vers le bas.\nExercices et problèmes\nExercices et problèmes\nAppliquer 7Résoudre dans IR\na) (1– x 2) (x 2– 3x) ≤ 0\n1 Résoudre dans IR les équations b) x 4 > (x – 2) 2\nci-dessous. c) x - x # 1\na) (7 x – 1)(0,4 x – 4) = 0. d) ⎜x 2 - 2x⎜ < ⎜3x 2 - x - 10⎜\nb) y2 – 2 y = (y – 2)(y + 3). e) 2x + 6 > x – 1\nc) t2 – 6 t + 9 = 0. f) 4x 2 – ⎜x ⎜ – 14 ≥ 0\nd) 0,09 m2 = 1. g) x – 2 < x\n2 Résoudre dans IR les équations Maîtriser\nci-dessous.\n6t + 8 4 x\n8Quel heure est –il ?\na) = 3 ; b) = . \" Bonjour monsieur l’agent, pouvez vous me\n1-t x 3\ndire l’heure ? \"\nm2 1 1\nc) = 1 ; d) + =0. Mais bien sur répondit l’agent qui avait une\n6m - 9 y y+1\nréputation de mathématicien : ajoutez au\n3 Résoudre dans IR les équations quart du temps depuis minuit la moitié du\ntemps jusqu'à minuit et vous aurez l’heure\nci-dessous.\nexacte.\na) 4x2 + 3x – 1 = 0. Quelle heure était-il ?\nb) 5x2 + (x – 1)2 = 0. (Les casse-tête mathématiques –Sam loyd)\nc) x2 + ^ 2 - 5 h x = 10 .\n3 Trouver cinq entiers naturels consécutifs,\nd) + x = 6. dont la somme est comprise entre 2004 et\nx-1\n2009.\ne) ⎜x2 - 2x⎜ = ⎜3x2 - x - 10⎜ .\n10 Dans un examen, la moyenne des candi-\nf) 2x + 6 = x – 1.\ndats admis est 13, la moyenne des candidats\n4 Résoudre dans IR. refusés est 7 et la moyenne de l’ensemble des\na) 4x2 – ⎜x⎜ – 14 = 0 ; b) x – 2 = x. candidats est 10,60.\n10 Quel est le pourcentage des admis par rapport\nc) x2 – 2 = 3.\nx à l’ensemble des candidats ?\n5 Existe-t-il un carré tel que si l’on diminue 11 Dans la figure ci-dessous, AD = 6,\nde 3 cm la longueur de ses côtés, on diminue BC = 2, OH = x, AB = a et AH = b, où a et b\nalors de 12 cm2 l’aire de ce carré ? sont deux réels positifs.\nD\n6 Déterminer la\nhauteur h du trapèze h C\nci-contre sachant 45°\nO\nqu’il a une aire\négale à 4. 3\nA H B\nExercices etExercices lèmes\nproetbproblèmes\n1) En utilisant le théorème de Thalès dans le 9\nu + v = u 2 - v 2 =- 6\ntriangle ABC, donner l’expression de b en c) * 2 d) )\nuv = 4\nfonction de a et x. uv =- 2\n2) En utilisant de nouveau le théorème de\nThalès dans le triangle ABD, donner l’expres- 15 Un\ncycliste effectue un trajet aller et\nsion de b en fonction de a et x. retour entre deux endroits A et B distants de\n3) En déduire que la distance OH est indé- 90 km. Il met au total 5 heures et 15 minutes.\npendante de la distance AB et la calculer. Calculer sa vitesse moyenne à l’aller sachant\n12 Trouver cinq entiers naturels consécutifs qu’elle est supérieure de 10 km/h à celle du\ntels que la somme des carrés des deux plus retour.\ngrands soit égale à la somme des carrés des\ntrois autres. 16\nDéterminer la longueur des côtés d’un\n13 Soit ABCD un trapèze de bases AB =1 et triangle rectangle sachant que :\nCD = 7 et K le projeté orthogonal de B sur a) L’aire est égale à 210, l’hypoténuse est\n(DC). On désigne par J le point de [DC] tel égale à 29.\nque DJ =1 et par M un point du segment b) Le périmètre est égal à 56, l’hypoténuse est\n[AD]. égale à 25.\nLa parallèle à (DC) passant par M coupe\nrespectivement les segments [BJ], [BK] et La pierre dans le puits (d’après le Petit\n[BC] en I, H et N. Archimède).\nJe laisse tomber une pierre dans un puits et au\n1) Montrer que BH = BI . bout de 3 secondes j’entends le « plouf ».\nBK BJ\n2) On pose MN = x. Quelle est la profondeur du puits ?\nInformation :\nMontrer que BI = x - 1 . Un caillou en chute libre, lâché sans vitesse\nBJ 6\n]x + 1gBH initiale, parcourt au bout de t secondes une\n3) Montrer que aire (ABMN) =\n2 distance x = 5t 2 (en mètres). La vitesse du son\n8BK - ]x + 1gBH est de 340 m/s.\net aire (MNCD) =\n4) Montrer que si MNCD et ABNM ont 18 Dans la figure ci-dessous, M est un point\nBH 4 variable du segment [AB], les triangles AMI\nmême aire alors = . et BMJ sont équilatéraux.\nBK x + 1\n5) Pour quelle valeur de x le segment [MN] On pose AB = a et AM = x.\npartage-t-il le trapèze ABCD en deux trapèzes\nI\nde même aire ?\nJ\n14 Déterminer deux réels u et v tels que :\n1 1 7 u2 + v2 = 8\n+ =\na) * u v 6 b) ) A M B\nu+v = 2\nuv = 3\nExercices et problèmes\nExercices et problèmes\n1) Montrer que l’aire du triangle MIJ est 23 Le plan est munit d’un repère orthonormé\n⎯→ ⎯→\n3 (O, i, j ).\nA]x g = x]a - xg Soit D la droite d’équation y = 2 x + 3.\n2) Déterminer x pour que l’aire de MIJ soit Soit M un point de la droite D et a son abscis-\négale à la moitié de celle de AMI se.\n6 2 9\n1)a) Montrer que OM2 = 5 ca + m + .\n3) Déterminer la position du point M pour que 5 5\nb) En déduire la valeur de a pour la quelle la\nl’aire du triangle MIJ soit maximale.\ndistance OM est minimale.\n2) Tracer la droite D et construire le point M 0\n19 Résoudre dans IR :\npour lequel la distance OM est minimale.\na) x2 + 3x – 4 = x3 - 1 24 La figure ci-desous, représente un cube\nb) x2 + 3x – 4 < x3 - 1 duquel on a découpé un autre cube.\nQuelle est l’arête du cube découpé sachant\n1 2 1\n20 Soit f(x) = bx + l + 2 bx + l - 3 .\nx x que le volume du solide restant est 279 cm 3?\n1) Résoudre l’équation f(x) = 0\n2) Factoriser f(x), puis résoudre l’inéquation\nf(x) < 0.\n21 Soit A(x) = x 2 + 7x – 3.\n1) Vérifier que le trinôme A(x) admet deux 3 cm\nracines distinctes x 1 et x 2.\n2) Sans calculer ces racines, montrer qu’elles\nsont de signes opposés.\n25 Résoudre dans IR l’équation\n3) Préciser la position du réel 1 par rapport à (x 2 – x) 2 – 7 (x 2 – x) + 10 = 0.\nces racines.\n26 On considère un rectangle de périmètre 36\n22 Soit ABCD un carré de côté 7. On place cm.\nles points M, N, P et Q respectivement sur Montrer que l’aire de ce rectangle est\ninférieure ou égale à 81 cm 2.\n[AB], [BC], [CD], [DA] tels que\nDans quel cas l’aire est égale à 81 cm 2 ?\nAM = BN = CP = DQ = x. On note S(x)\nl’aire du quadrilatère MNPQ.\n1) Montrer que MNPQ est un carré.\n2) a) Déterminer x pour que S(x) soit égale à\n25.\nb) Déterminer les valeurs de x pour lesquelles\nS(x) ≥ 25.\nM a t h e t cMath ure\nu lettculture\nAL - KHAWARIZMI\nMohamed Al – Khawarizmi est né en 780 à Khiva (actuellement ville d’Ouzbékistan) et\nmort à Bagdad en 850.\nAyant assimilé l’héritage mathématique grec, égyptien et hindou,\nAl – Khawarizmi a rédigé plusieurs traîtés qui seront à l’origine de sciences nouvelles telles\nque l’algèbre ou l’arithmétique.\nDans ses livres d’arithmétique, on trouve le premier exposé connu sur le système de numé-\nration décimale. On apprend à utiliser neuf petits dessins, appelés chiffres et un petit cercle (le\nzéro) pour exprimer tous le nombres.\nLe mot Al – Jabr apparaît dans son ouvrage « Al – Kitab Al – Mukhtassar fi hissab Al – Jabr\nwal Moukabala » et devient par la suite « Algèbre » en Europe. C’est dans ce livre qu’il étudie\nles équations du premier et du second degré. Son nom, Al – Khawarizmi, se transforme en\n« algorithme » qui veut dire « technique de calcul ».\nAl – Khawarizmi ramène toutes les équations du premier et du second degré à six types\nd’équations :\n• ax 2 = bx • ax 2 = c • ax = c\n• x + bx = c\n• x + c = bx\n• x 2 = bx + c\nles nombre a, b et c étant toujours positifs car à son époque, on ne connaît pas les nombres\nnégatifs.\nPar ailleurs, pour lui, résoudre une équation, c’est chercher ses racines positives seulement.\nS’il n’y en a pas, le problème est considéré comme impossible.\nLa théorie des équations est utilisée par Al – Khawarizmi pour résoudre des problèmes\nd’héritages, de géométrie, de commerce et d’astronomie.\nIl démontre tous les résultats qu’il obtient en interprétant algébriquement des techniques\ngéométriques.\nD’après la revue « Omar El – Khayam »",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 37\n1) Pour chacune des expressions suivantes, déterminer les valeurs de x pour lesquelles elle est\ndéfinie.\na) x + 3 ; b) x2 + 3x ; c) - 3x2 + 2x + 1.\nx2 + 5 x2 + 5x - 6 x2 - x - 2\n2) Résoudre dans IR les inéquations suivantes.\na) x + 3 x2 + 3x - 3x2 + 2x + 1\nx2 + 5 x2 + 5x - 6 x2 - x - 2\nAssimiler Assimiler\n1 Ecrire sous forme canonique les expressions suivantes.\na) A(x) = 2x 2 – 6 x + 5. b) B(x) = – 3x 2 + 5x. c) C(x) = x 2 + 4.\n2 Résoudre dans IR les équations suivantes.\na) 2x 2 – 3 = 0 ; b) 4x 2 + 12 x + 9 = 0 ; c) (x + 1) 2 = 2x 2 – 2x 2 + 1.\nd) (x + 1)(5x – 2) = 0 ; e) (x – 2) (2x – 1) + (x 2 – 4) = 0 ; f) 3(x + 1) 2 = x 2 – 1.\n3 Résoudre dans IR les équations suivantes :\na) x 2 + 2x – 4 = 0 ; b) x 2 + (x – 2) 2 = 5 ; c) 8x ( x – 1) = 6x + 1.\n4 Résoudre chacune des équations suivantes sans calculer son discriminant.\na) 7x 2 + 8x + 1 = 0\nb) x 2 – 7x + 6 = 0\nc) x 2 – ]5 + rgx + 5r = 0\n5 Déterminer, s’ils existent, deux réels a et b tels que :\na) a+b = 2 b) a + b =- 2\n) )\nab =- 2 ab = 1\nc) )a + b = 5 d) *ab = 6\nab = 7 a-b = 2 2\n6 Trouver deux nombres dont la somme est11 et dont la somme des inverses est\n7 Résoudre dans IR les équations suivantes :\na) x 4 = ( x + 2) 2 ; b) 3x - 2x - 1 = 3 .\nx-1\n8 Dans chacun des cas,donner une équation du second degré admettant pour racines les deux\nréels donnés.\na) –1 et 3 ; b) 2 et 5 ; c) 0 et –4 ; d) et 1.\nler\nA s s i m iAssimiler\n9 Factoriser, quand cela est possible, chacune des expressions suivantes.\na) A(x) = 5x 2 + 9x – 2 b) B(x) = – 2 x 2 + 3x – 1\nc) C(x) = 5x 2 – 2x + 1 c) D(x) = x 2 – x + 3.\n10 1) Résoudre dans IR les inéquations suivantes:\na) x 2 + 5x ; b) 2x 2 – 5x + 3 ; c) 3x 2 – 2x + 1\n2) En déduire la résolution dans IR des inéquations suivates.\na) x 2 + 5x ≤ 0 ; b) 2x 2 – 5x + 3 > 0 ; c) 3x 2 – 2x + 1 < 0\n11 Ci-dessous le tableau de signe d’une expression P(x) de la forme a x 2 + b x + c.\nx – –2 3 +\nSigne de P(x) – 0 + 0 –\nPar lecture de ce tableau,\na) Déterminer le signe de : P(-5) ; P(- 3 ) et P(8).\nb) Indiquer l’ensemble de solutions de l’inéquation P(x) ≤ 0.\n12 Résoudre dans IR les inéquations suivantes.\na) x 2 – 4x ≥ 0 ; b) x 2 – 5x + 6 < 0 ; c) 2x 2 – 6x ≤ x 2 + x\n1 2 3 3\nd) x + x –1≥0 ; e) 3x 2 – 6x 2+2≥0 ; f) –x 2 + x – 1 ≥ 0.\n2 4 4\n♦ Soit f(x) = ax2 + bx + c ou a, b et c sont trois réels tels que a ≠ 0\n♦ Soit Δ = b2 – 4ac le discriminant de l’équation f(x) = 0.\nRacines (ou solutions) de l’équation f(x) = 0\nFactorisation et signe de f(x)\nRacine de f(x) = 0 Factorisation de f(x) Signe de f(x)\nL’équation n’a pas de racines On ne peut pas Pour tout réel x, f(x) est\nΔ<0\nfactoriser f(x) du signe de a.\nL’équation a une seule racine Pour tout réel x≠x0,\nΔ=0 b f(x) = a(x - x0 )2\nx0 = - f(x) est du signe de a.\n2a\nL’équation a deux racines distinctes f(x) est du signe de a à\nΔ>0\nl’extérieur des racines.\n-b - T -b + T f(x) = a(x - x1 )(x - x2 ) f(x) est du signe de (-a )\nx1 = et x2 =\n2a 2a entre les racines\nLe discriminant réduit\nb\nIl est parfois commode d’utiliser le descriminant réduit Δ' = b’2 - ac ; où b’ = .\nOn a :\n♦ Δ = 4 Δ'\n♦ Δ' < 0 équivaut à f(x) = 0 n’a pas de racines.\n♦ Δ' = 0 équivaut à f(x) = 0 a une seule racine x 0 = - b' .\na\n- bl - Tl - b' + T'\n♦ Δ' > 0 équivaut à f(x) = 0 a deux racines distinctes x 1 = et x 2 =\na a\nSomme et produit des racines de l’équation f(x) = 0\nLorsque l’équation f(x) = 0 admet deux racines x 1 et x 2 , on a :\nb c\nx 1 + x 2 = - et x 1x 2 =\na a\nRemarque\n♦ Si a + b + c = 0, alors 1 est une racine de l’équation f(x) = 0 et l’autre racine est c .\na\n♦ Si a – b + c = 0, alors – 1 est une racine de l’équation f(x) = 0 et l’autre racine est- c .\na\nDéveloppe r s eses\nDévelopper compé\ns compétences\n1 Un riche diamantaire, sentant sa fin prochaine, fit venir ses enfants afin de leur distribuer\nsa fortune, constituée exclusivement de diamants. L’aîné prendra un diamant et le septième de\nce qui reste. Le second aura deux diamants et le septième de ce qui reste. Le troisième aura\ntrois diamants et le septième de ce qui reste et ainsi de suite. En bon père de famille le\ndiamantaire a pris soin de ne léser personne : toutes les parts sont égales.\nCombien possède-t-il de diamants ? Quel est le nombre de ses enfants ?\nIndication\nExprimer la part de chacun des deux premiers enfants, en fonction du nombre x de diamants.\n2 Le plan est muni d’un repère orthonormé _O, i , j i . Soit I le point de coordonnées (2 , 2).\nSoit x un réel strictement supérieur à 2. A tout point M(x, 0) on associe le point N,\nintersection de la droite (IM) avec l’axe des ordonnées.\n1) Exprimer en fonction de x, l’aire A(x) du triangle OMN.\n2) Déterminer x pour que\na) A(x) = 10 ; b) A(x) = 8.\n3) Montrer que l’aire du triangle OMN est supérieure ou égale à 8.\nIndication\n1) Déterminer les coordonnées du point N en fonction de x et en déduire A(x).\n3 Nombre d’or\nSoit ABCD un rectangle.\nOn se propose d’inscrire un triangle APQ dans le rectangle\nABCD, de telle sorte que les trois triangles ABQ, PCQ et\nADP, ainsi formés, soient d’aires égales.\nOn pose DP = a, PC = b, QC = d et BQ = c.\n1) a) Montrer que d2 – cd – c2 = 0.\nd 2 d\nb) En déduire que b l - - 1 = 0\nc c\nd 1+ 5\net que = b =\nc a 2\n1+ 5\n( est appelé le nombre d’or et il est souvent noté ϕ ).\n2) a) Montrer que le triangle APQ est isocèle en P si et seulement si a = c ϕ.\nL\nb) Montrer que, dans ce cas, = ϕ , où L est la longueur et l la largeur du rectangle\nABCD. (Dans ce cas, on dit que ABCD est un rectangle d’or).\nDévelopper ses compé\nDévelopper ses compétences\nIndication\n1) a) •Exprimer le fait que les trois triangles sont d’aires égales.\n• Eliminer a.\n2) a) • Exprimer le fait que APQ est isocèle.\n• Vérifier que ϕ 2 – 1 = ϕ et que 1 + 2 ϕ = ϕ 3.\n4 Deux cyclistes A et B partent de deux villes distantes de 132 Km et vont à la rencontre l’un\nde l’autre.\nS’ils partent en même temps, la rencontre aura lieu après 3 heures.\nSi le cycliste A part 33 minutes avant B, la rencontre aura lieu à mi–chemin.\nCalculer la vitesse moyenne de chaque cycliste.\nIndication\nSoit V A la vitesse moyenne du cycliste A et VB celle du cycliste B.\nDéterminer les distances dA et dB, parcourues par les cyclistes A et B en 3 heures.\n5 En courant continu, à partir de deux résistors\nde résistances respectives R 1 et R 2 on obtient une\nrésistance équivalente R telle que R = R 1 + R 2\ndans une association en série, et une résistance\n1 1 1\néquivalente r telle que r = + dans une\nR1 R2\nassociation en parallèle.\n1) Déterminer R1 et R2 sachant que R = 2,5 Ω et r = 0,4 Ω .\n2) On considère le montage de résistances\nci-contre. Déterminer la valeur de x pour que\nla résistance totale du montage soit équivalente à 3 Ω .\n3) Un fil cylindrique homogène de longueur 1m a pour résistance 10 Ω, on en coupe une lon-\ngueur x cm et on monte les deux brins obtenus en parallèle.\nDéterminer x pour que la résistance équivalente obtenue soit égale à 2,4 Ω .\nIndication\n3) Le fil est homogène, donc la résistance est proportionnelle à la longueur du fil.\nU t i l i s e r l e sUtiliser\nT IlesCTIC\nUtiliser un tableur pour résoudre une équation\ndu second degré\nOn se propose de résoudre des équations du second degré, à l’aide d’un tableur.\nOuvrir une feuille de calcul sur Excel et remplir un tableau comme ci-dessous.\nA B C D E F G\n1 a b c Δ\n2 =B2^2 – 4*A2*C2\n• Dans la cellule E2\n- Utiliser le menu du logiciel :\nInsertion / Fonction, puis sélectionner la fonction test SI et valider.\nRemplir les champs de textes comme suit :\nD2 > =0\nDeux racines\nPas de racines\n• Dans la cellule F2\n- Utiliser le menu du logiciel :\nInsertion / Fonction, puis sélectionner la fonction test SI et valider.\nRemplir les champs de textes comme suit :\nD2 > = 0\n(–B2–RACINE(D2))/(2*A2)\n(Laisser vide le troisième champ de texte)\n• Dans la cellule G2\n• Utiliser le menu du logiciel :\nInsertion / Fonction, puis sélectionner la fonction test SI et valider.\nRemplir les champs de textes comme suit :\nD2 > = 0\n(-B2+RACINE(D2))/(2*A2)\n(Laisser vide le troisième champ de texte).\n• Donner les valeurs a, b, c et sélectionner D2 et tirer vers les cellules E2, F2 et G2.\n• Pour entrer d’autres valeurs de a, b et c, passer à la ligne suivante et pour les cellules E2,\nF2 et G2, tirer vers le bas.\nExercices et problèmes\nExercices et problèmes\nAppliquer 7Résoudre dans IR\na) (1– x 2) (x 2– 3x) ≤ 0\n1 Résoudre dans IR les équations b) x 4 > (x – 2) 2\nci-dessous. c) x - x # 1\na) (7 x – 1)(0,4 x – 4) = 0. d) ⎜x 2 - 2x⎜ < ⎜3x 2 - x - 10⎜\nb) y2 – 2 y = (y – 2)(y + 3). e) 2x + 6 > x – 1\nc) t2 – 6 t + 9 = 0. f) 4x 2 – ⎜x ⎜ – 14 ≥ 0\nd) 0,09 m2 = 1. g) x – 2 < x\n2 Résoudre dans IR les équations Maîtriser\nci-dessous.\n6t + 8 4 x\n8Quel heure est –il ?\na) = 3 ; b) = . \" Bonjour monsieur l’agent, pouvez vous me\n1-t x 3\ndire l’heure ? \"\nm2 1 1\nc) = 1 ; d) + =0. Mais bien sur répondit l’agent qui avait une\n6m - 9 y y+1\nréputation de mathématicien : ajoutez au\n3 Résoudre dans IR les équations quart du temps depuis minuit la moitié du\ntemps jusqu'à minuit et vous aurez l’heure\nci-dessous.\nexacte.\na) 4x2 + 3x – 1 = 0. Quelle heure était-il ?\nb) 5x2 + (x – 1)2 = 0. (Les casse-tête mathématiques –Sam loyd)\nc) x2 + ^ 2 - 5 h x = 10 .\n3 Trouver cinq entiers naturels consécutifs,\nd) + x = 6. dont la somme est comprise entre 2004 et\nx-1\n2009.\ne) ⎜x2 - 2x⎜ = ⎜3x2 - x - 10⎜ .\n10 Dans un examen, la moyenne des candi-\nf) 2x + 6 = x – 1.\ndats admis est 13, la moyenne des candidats\n4 Résoudre dans IR. refusés est 7 et la moyenne de l’ensemble des\na) 4x2 – ⎜x⎜ – 14 = 0 ; b) x – 2 = x. candidats est 10,60.\n10 Quel est le pourcentage des admis par rapport\nc) x2 – 2 = 3.\nx à l’ensemble des candidats ?\n5 Existe-t-il un carré tel que si l’on diminue 11 Dans la figure ci-dessous, AD = 6,\nde 3 cm la longueur de ses côtés, on diminue BC = 2, OH = x, AB = a et AH = b, où a et b\nalors de 12 cm2 l’aire de ce carré ? sont deux réels positifs.\nD\n6 Déterminer la\nhauteur h du trapèze h C\nci-contre sachant 45°\nO\nqu’il a une aire\négale à 4. 3\nA H B\nExercices etExercices lèmes\nproetbproblèmes\n1) En utilisant le théorème de Thalès dans le 9\nu + v = u 2 - v 2 =- 6\ntriangle ABC, donner l’expression de b en c) * 2 d) )\nuv = 4\nfonction de a et x. uv =- 2\n2) En utilisant de nouveau le théorème de\nThalès dans le triangle ABD, donner l’expres- 15 Un\ncycliste effectue un trajet aller et\nsion de b en fonction de a et x. retour entre deux endroits A et B distants de\n3) En déduire que la distance OH est indé- 90 km. Il met au total 5 heures et 15 minutes.\npendante de la distance AB et la calculer. Calculer sa vitesse moyenne à l’aller sachant\n12 Trouver cinq entiers naturels consécutifs qu’elle est supérieure de 10 km/h à celle du\ntels que la somme des carrés des deux plus retour.\ngrands soit égale à la somme des carrés des\ntrois autres. 16\nDéterminer la longueur des côtés d’un\n13 Soit ABCD un trapèze de bases AB =1 et triangle rectangle sachant que :\nCD = 7 et K le projeté orthogonal de B sur a) L’aire est égale à 210, l’hypoténuse est\n(DC). On désigne par J le point de [DC] tel égale à 29.\nque DJ =1 et par M un point du segment b) Le périmètre est égal à 56, l’hypoténuse est\n[AD]. égale à 25.\nLa parallèle à (DC) passant par M coupe\nrespectivement les segments [BJ], [BK] et La pierre dans le puits (d’après le Petit\n[BC] en I, H et N. Archimède).\nJe laisse tomber une pierre dans un puits et au\n1) Montrer que BH = BI . bout de 3 secondes j’entends le « plouf ».\nBK BJ\n2) On pose MN = x. Quelle est la profondeur du puits ?\nInformation :\nMontrer que BI = x - 1 . Un caillou en chute libre, lâché sans vitesse\nBJ 6\n]x + 1gBH initiale, parcourt au bout de t secondes une\n3) Montrer que aire (ABMN) =\n2 distance x = 5t 2 (en mètres). La vitesse du son\n8BK - ]x + 1gBH est de 340 m/s.\net aire (MNCD) =\n4) Montrer que si MNCD et ABNM ont 18 Dans la figure ci-dessous, M est un point\nBH 4 variable du segment [AB], les triangles AMI\nmême aire alors = . et BMJ sont équilatéraux.\nBK x + 1\n5) Pour quelle valeur de x le segment [MN] On pose AB = a et AM = x.\npartage-t-il le trapèze ABCD en deux trapèzes\nI\nde même aire ?\nJ\n14 Déterminer deux réels u et v tels que :\n1 1 7 u2 + v2 = 8\n+ =\na) * u v 6 b) ) A M B\nu+v = 2\nuv = 3\nExercices et problèmes\nExercices et problèmes\n1) Montrer que l’aire du triangle MIJ est 23 Le plan est munit d’un repère orthonormé\n⎯→ ⎯→\n3 (O, i, j ).\nA]x g = x]a - xg Soit D la droite d’équation y = 2 x + 3.\n2) Déterminer x pour que l’aire de MIJ soit Soit M un point de la droite D et a son abscis-\négale à la moitié de celle de AMI se.\n6 2 9\n1)a) Montrer que OM2 = 5 ca + m + .\n3) Déterminer la position du point M pour que 5 5\nb) En déduire la valeur de a pour la quelle la\nl’aire du triangle MIJ soit maximale.\ndistance OM est minimale.\n2) Tracer la droite D et construire le point M 0\n19 Résoudre dans IR :\npour lequel la distance OM est minimale.\na) x2 + 3x – 4 = x3 - 1 24 La figure ci-desous, représente un cube\nb) x2 + 3x – 4 < x3 - 1 duquel on a découpé un autre cube.\nQuelle est l’arête du cube découpé sachant\n1 2 1\n20 Soit f(x) = bx + l + 2 bx + l - 3 .\nx x que le volume du solide restant est 279 cm 3?\n1) Résoudre l’équation f(x) = 0\n2) Factoriser f(x), puis résoudre l’inéquation\nf(x) < 0.\n21 Soit A(x) = x 2 + 7x – 3.\n1) Vérifier que le trinôme A(x) admet deux 3 cm\nracines distinctes x 1 et x 2.\n2) Sans calculer ces racines, montrer qu’elles\nsont de signes opposés.\n25 Résoudre dans IR l’équation\n3) Préciser la position du réel 1 par rapport à (x 2 – x) 2 – 7 (x 2 – x) + 10 = 0.\nces racines.\n26 On considère un rectangle de périmètre 36\n22 Soit ABCD un carré de côté 7. On place cm.\nles points M, N, P et Q respectivement sur Montrer que l’aire de ce rectangle est\ninférieure ou égale à 81 cm 2.\n[AB], [BC], [CD], [DA] tels que\nDans quel cas l’aire est égale à 81 cm 2 ?\nAM = BN = CP = DQ = x. On note S(x)\nl’aire du quadrilatère MNPQ.\n1) Montrer que MNPQ est un carré.\n2) a) Déterminer x pour que S(x) soit égale à\n25.\nb) Déterminer les valeurs de x pour lesquelles\nS(x) ≥ 25.\nM a t h e t cMath ure\nu lettculture\nAL - KHAWARIZMI\nMohamed Al – Khawarizmi est né en 780 à Khiva (actuellement ville d’Ouzbékistan) et\nmort à Bagdad en 850.\nAyant assimilé l’héritage mathématique grec, égyptien et hindou,\nAl – Khawarizmi a rédigé plusieurs traîtés qui seront à l’origine de sciences nouvelles telles\nque l’algèbre ou l’arithmétique.\nDans ses livres d’arithmétique, on trouve le premier exposé connu sur le système de numé-\nration décimale. On apprend à utiliser neuf petits dessins, appelés chiffres et un petit cercle (le\nzéro) pour exprimer tous le nombres.\nLe mot Al – Jabr apparaît dans son ouvrage « Al – Kitab Al – Mukhtassar fi hissab Al – Jabr\nwal Moukabala » et devient par la suite « Algèbre » en Europe. C’est dans ce livre qu’il étudie\nles équations du premier et du second degré. Son nom, Al – Khawarizmi, se transforme en\n« algorithme » qui veut dire « technique de calcul ».\nAl – Khawarizmi ramène toutes les équations du premier et du second degré à six types\nd’équations :\n• ax 2 = bx • ax 2 = c • ax = c\n• x + bx = c\n• x + c = bx\n• x 2 = bx + c\nles nombre a, b et c étant toujours positifs car à son époque, on ne connaît pas les nombres\nnégatifs.\nPar ailleurs, pour lui, résoudre une équation, c’est chercher ses racines positives seulement.\nS’il n’y en a pas, le problème est considéré comme impossible.\nLa théorie des équations est utilisée par Al – Khawarizmi pour résoudre des problèmes\nd’héritages, de géométrie, de commerce et d’astronomie.\nIl démontre tous les résultats qu’il obtient en interprétant algébriquement des techniques\ngéométriques.\nD’après la revue « Omar El – Khayam »\n\nÀ calculer dans l'application : f(a) = −3a + 5 sur [−2 ; 3]. Encadrer f(a).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 37 (« Activité 37 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "amin",
+        "label": "a min",
+        "unit": "—",
+        "value": -2,
+        "min": -4,
+        "max": 0,
+        "step": 1
+      },
+      {
+        "key": "amax",
+        "label": "a max",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "m",
+        "label": "m",
+        "unit": "—",
+        "value": -3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "p",
+        "label": "p",
+        "unit": "—",
+        "value": 5,
+        "min": -2,
+        "max": 8,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 37 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "ymin",
+        "label": "min de f",
+        "unit": "—"
+      },
+      {
+        "key": "ymax",
+        "label": "max de f",
+        "unit": "—"
+      }
     ]
   }
 ]

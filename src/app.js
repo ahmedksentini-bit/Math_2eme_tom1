@@ -52,7 +52,7 @@ const pedagogy = {
   distance2d: { hypotheses: "Repère orthonormé. Distance et milieu.", why: ["AB = √[(Δx)²+(Δy)²].", "I est la moyenne des coordonnées."], check: "AI = IB = AB/2." },
   lineSlope: { hypotheses: "Droite non verticale. y = mx + p.", why: ["m = (y_B−y_A)/(x_B−x_A).", "p = y_A − m x_A."], check: "Les deux points doivent vérifier l’équation." },
   statsMean: { hypotheses: "Série quantitative d’effectif n.", why: ["x̄ = (Σxᵢ)/n.", "Étendue = max − min."], check: "La moyenne est entre min et max." },
-  fixed: { hypotheses: "On travaille avec le cours du chapitre, tel qu’il est dans le manuel.", why: ["On relit la question.", "On applique le résultat de la synthèse."], check: "La réponse doit coller à l’énoncé du polycopié." }
+  fixed: { hypotheses: "On travaille avec le cours du chapitre, sur les questions posées dans l’application.", why: ["On identifie la relation du cours.", "On substitue les données, puis on contrôle."], check: "La réponse doit coller au calcul, pas à une relecture du livre." },
 };
 
 const equationSheets = {
@@ -97,7 +97,7 @@ const equationSheets = {
   distance2d: ["AB = √[(x_B−x_A)²+(y_B−y_A)²]", "I milieu"],
   lineSlope: ["m = (y_B−y_A)/(x_B−x_A)", "y = mx + p"],
   statsMean: ["x̄ = (Σxᵢ)/n", "étendue = max − min"],
-  fixed: ["Relire la synthèse du chapitre dans le polycopié."]
+  fixed: ["Écrire la relation du cours, puis substituer les données."],
 };
 
 const esc = value => String(value).replace(/[&<>'"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[c]));
@@ -438,7 +438,7 @@ function check(key) {
   state.attempts[key] = (state.attempts[key] || 0) + 1;
   const correct = answersMatch(q, given, target);
   feedback.className = `feedback ${correct ? "good" : "bad"}`;
-  feedback.innerHTML = correct ? "✓ Correct." : `✕ À revoir.${state.mode === "learn" && state.attempts[key] > 1 ? `<span class="hint">Indice : relire l’énoncé du manuel, puis la synthèse du chapitre.</span>` : ""}`;
+  feedback.innerHTML = correct ? "✓ Correct." : `✕ À revoir.${state.mode === "learn" && state.attempts[key] > 1 ? `<span class="hint">Indice : écrire d’abord la relation du cours, puis substituer les données.</span>` : ""}`;
   return correct;
 }
 function submitAll() {
@@ -452,7 +452,7 @@ function showCorrection() {
   const vars = varsOf(state.exercise);
   const dataHtml = vars.length
     ? `<div class="data-summary">${vars.map(v => `<span><small>${esc(v.label)}</small><strong>${esc(state.data[v.key])} ${v.unit}</strong></span>`).join("")}</div><p class="method-note">Avant tout calcul, on écrit la relation littérale du cours, on identifie chaque grandeur, puis on substitue.</p>`
-    : `<p class="method-note">Aucune donnée à saisir : on travaille directement sur l’énoncé du polycopié.</p>`;
+    : `<p class="method-note">Les questions ci-contre se calculent dans l’application : la correction s’affiche après vérification.</p>`;
   box.hidden = false; box.innerHTML = `<h2>Correction détaillée</h2><section class="reasoning"><h3>1. Hypothèses et modèle</h3><p>${esc(guide.hypotheses)}</p></section><section class="given-data"><h3>2. Données de l’énoncé</h3>${dataHtml}</section><h3>3. Résolution raisonnée</h3>${result.steps.map((s, i) => `<div class="solution-step" data-step="${i + 1}"><h3>${esc(s[0])}</h3>${guide.why[i] ? `<p class="explanation">${esc(guide.why[i])}</p>` : ""}<p class="formula">${esc(s[1]).replace(/\n/g, "<br>")}</p></div>`).join("")}<div class="final-result"><strong>4. Réponses</strong><br>${state.exercise.questions.map(q => `${esc(q.label)} : <strong>${esc(formatAnswer(q, result.values[q.key]))}</strong>`).join("<br>")}</div><section class="sanity-check"><h3>5. Interprétation et contrôle</h3><p>${esc(guide.check)}</p></section>`; box.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 function bindExerciseEvents() {

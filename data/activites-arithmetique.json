@@ -4,24 +4,41 @@
     "chapter": "arithmetique",
     "kind": "activity",
     "activity": 1,
-    "solver": "fixed",
+    "solver": "euclidDiv",
     "title": "Activité 1",
     "difficulty": 1,
-    "statement": "Activité 1\nQuel jour de la semaine serons-nous ;\n• après 77 jours ?\n• après 155 jours ?\n• après 234 jours ?",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 1\nQuel jour de la semaine serons-nous ;\n• après 77 jours ?\n• après 155 jours ?\n• après 234 jours ?\n\nÀ calculer dans l'application : Division euclidienne de 2613 par 8.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 1 (« Activité 1 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "dividende",
+        "unit": "—",
+        "value": 2613,
+        "min": 100,
+        "max": 4000,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "diviseur",
+        "unit": "—",
+        "value": 8,
+        "min": 3,
+        "max": 12,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 1 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "q",
+        "label": "quotient q",
+        "unit": "—"
+      },
+      {
+        "key": "r",
+        "label": "reste r",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -29,24 +46,41 @@
     "chapter": "arithmetique",
     "kind": "activity",
     "activity": 2,
-    "solver": "fixed",
+    "solver": "remainderDigits",
     "title": "Activité 2",
     "difficulty": 1,
-    "statement": "Activité 2\nLes entiers naturels de 0 à 1000 ont été reliés par des flèches comme l’indique la figure\nci-dessous.\nQuelle est parmi les successions de flèches suivantes celle qui relie le nombre 527 au nombre\n530 ?\n(D’après le Kongourou des Mathématiques)",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 2\nLes entiers naturels de 0 à 1000 ont été reliés par des flèches comme l’indique la figure\nci-dessous.\nQuelle est parmi les successions de flèches suivantes celle qui relie le nombre 527 au nombre\n530 ?\n(D’après le Kongourou des Mathématiques)\n\nÀ calculer dans l'application : Reste de 1963 modulo 9 (somme des chiffres).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 2 (« Activité 2 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 1963,
+        "min": 100,
+        "max": 4000,
+        "step": 1
+      },
+      {
+        "key": "div",
+        "label": "module",
+        "unit": "—",
+        "value": 9,
+        "min": 9,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 2 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "sum",
+        "label": "Somme des chiffres",
+        "unit": "—"
+      },
+      {
+        "key": "r",
+        "label": "Reste",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -54,24 +88,41 @@
     "chapter": "arithmetique",
     "kind": "activity",
     "activity": 3,
-    "solver": "fixed",
+    "solver": "remainderLast3",
     "title": "Activité 3",
     "difficulty": 1,
-    "statement": "Activité 3\nSoient n, x et y trois entiers naturels tels que n divise x et n divise y.\na) Montrer que n divise px et n divise py, où p est un entier naturel.\nb) Montrer que n divise x + y.\nc) Montrer que n divise x – y ; (x ≥ y).\nm i l e r : 1-2-3-4\nA s s iAssimiler\nCritères de divisibilité par 2, 5, 4, 25 et 8",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 3\nSoient n, x et y trois entiers naturels tels que n divise x et n divise y.\na) Montrer que n divise px et n divise py, où p est un entier naturel.\nb) Montrer que n divise x + y.\nc) Montrer que n divise x – y ; (x ≥ y).\nm i l e r : 1-2-3-4\nA s s iAssimiler\nCritères de divisibilité par 2, 5, 4, 25 et 8\n\nÀ calculer dans l'application : Reste de 127645264 modulo 8 (trois derniers chiffres).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 3 (« Activité 3 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 127645264,
+        "min": 100000,
+        "max": 200000000,
+        "step": 1
+      },
+      {
+        "key": "div",
+        "label": "module",
+        "unit": "—",
+        "value": 8,
+        "min": 8,
+        "max": 9,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 3 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "last",
+        "label": "Trois derniers chiffres",
+        "unit": "—"
+      },
+      {
+        "key": "r",
+        "label": "Reste",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -79,24 +130,50 @@
     "chapter": "arithmetique",
     "kind": "activity",
     "activity": 4,
-    "solver": "fixed",
+    "solver": "gcd3",
     "title": "Activité 4",
     "difficulty": 1,
-    "statement": "Activité 4\n1) a) Déterminer pour chacun des nombres 8 ; 37 ; 175 ; 18159 ; 350600 ; 8587325 ; le reste\nde sa division euclidienne par 10.\nQue remarque t-on ?\nb) Soit n un entier naturel. On désigne par u le chiffre des unités de n.\nJustifier l’écriture de n sous la forme n = 10 q + u, où q est un entier naturel.\n2) a) Soit r le reste de la division euclidienne de u par 5.\nDonner les valeurs possibles de r et montrer que , dans chaque cas, r est aussi le reste de la\ndivision euclidienne de n par 5.\nb) Montrer que n et u ont le même reste dans la division euclidienne par 5.\nc) Montrer que n et u ont le même reste dans la division euclidienne par 2.\n3) Enoncer un critère de divisibilité par 2 et par 5.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 4\n1) a) Déterminer pour chacun des nombres 8 ; 37 ; 175 ; 18159 ; 350600 ; 8587325 ; le reste\nde sa division euclidienne par 10.\nQue remarque t-on ?\nb) Soit n un entier naturel. On désigne par u le chiffre des unités de n.\nJustifier l’écriture de n sous la forme n = 10 q + u, où q est un entier naturel.\n2) a) Soit r le reste de la division euclidienne de u par 5.\nDonner les valeurs possibles de r et montrer que , dans chaque cas, r est aussi le reste de la\ndivision euclidienne de n par 5.\nb) Montrer que n et u ont le même reste dans la division euclidienne par 5.\nc) Montrer que n et u ont le même reste dans la division euclidienne par 2.\n3) Enoncer un critère de divisibilité par 2 et par 5.\n\nÀ calculer dans l'application : Plus grande arête cubique pour un pavé 120 × 200 × 180.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 4 (« Activité 4 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "L",
+        "unit": "—",
+        "value": 120,
+        "min": 60,
+        "max": 180,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "ℓ",
+        "unit": "—",
+        "value": 200,
+        "min": 80,
+        "max": 240,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "h",
+        "unit": "—",
+        "value": 180,
+        "min": 60,
+        "max": 240,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 4 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "g",
+        "label": "Arête a",
+        "unit": "—"
+      },
+      {
+        "key": "nBoxes",
+        "label": "Nombre de cubes",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -104,24 +181,41 @@
     "chapter": "arithmetique",
     "kind": "activity",
     "activity": 5,
-    "solver": "fixed",
+    "solver": "euclidDiv",
     "title": "Activité 5",
     "difficulty": 1,
-    "statement": "Activité 5\n1) a) Déterminer pour chacun des nombres 12 ; 50 ; 133 ; 984 ; 4500 ; 79375 le reste de sa\ndivision euclidienne par 100.\nQue remarque t-on ?\nb) Pour chacun des nombres précédents, déterminer le reste de sa division euclidienne par\n4 et par 25.\n2) Soit n un entier naturel supérieur ou égal à 10 et soit b le nombre formé par ses deux\nderniers chiffres.\na) Justifier l’écriture de n sous la forme n = 100 a + b, où a est un entier naturel.\nb) Montrer que n et b ont le même reste dans la division euclidienne par 4.\nc) Montrer que n et b ont le même reste dans la division euclidienne par 25.\n3) Enoncer un critère de divisibilité par 4 et par 25.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 5\n1) a) Déterminer pour chacun des nombres 12 ; 50 ; 133 ; 984 ; 4500 ; 79375 le reste de sa\ndivision euclidienne par 100.\nQue remarque t-on ?\nb) Pour chacun des nombres précédents, déterminer le reste de sa division euclidienne par\n4 et par 25.\n2) Soit n un entier naturel supérieur ou égal à 10 et soit b le nombre formé par ses deux\nderniers chiffres.\na) Justifier l’écriture de n sous la forme n = 100 a + b, où a est un entier naturel.\nb) Montrer que n et b ont le même reste dans la division euclidienne par 4.\nc) Montrer que n et b ont le même reste dans la division euclidienne par 25.\n3) Enoncer un critère de divisibilité par 4 et par 25.\n\nÀ calculer dans l'application : Division de 1001 par 13.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 5 (« Activité 5 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "dividende",
+        "unit": "—",
+        "value": 1001,
+        "min": 200,
+        "max": 2000,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "diviseur",
+        "unit": "—",
+        "value": 13,
+        "min": 5,
+        "max": 20,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 5 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "q",
+        "label": "quotient q",
+        "unit": "—"
+      },
+      {
+        "key": "r",
+        "label": "reste r",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -129,24 +223,41 @@
     "chapter": "arithmetique",
     "kind": "activity",
     "activity": 6,
-    "solver": "fixed",
+    "solver": "remainderDigits",
     "title": "Activité 6",
     "difficulty": 1,
-    "statement": "Activité 6\n1) a) Déterminer pour chacun des nombres 23 ; 96 ; 249 ; 1672 ; 3502 ; 19456 le reste de sa\ndivision euclidienne par 1000.\nQue remarque t-on ?\nb) Pour chacun des nombres précédents, déterminer le reste de sa division euclidienne par 8.\n2) Soit n un entier naturel supérieur ou égal à 100 et soit b le nombre formé par ses trois der-\nniers chiffres.\na) Justifier l’écriture de n sous la forme n = 1000 a + b, où a est un entier naturel.\nb) Montrer que n et b ont le même reste dans la division euclidienne par 8.\nc) Enoncer un critère de divisibilité par 8.\nm i l e r : 5-6-7\nA s s iAssimiler\nCritères de divisibilité par 3 et par 9",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 6\n1) a) Déterminer pour chacun des nombres 23 ; 96 ; 249 ; 1672 ; 3502 ; 19456 le reste de sa\ndivision euclidienne par 1000.\nQue remarque t-on ?\nb) Pour chacun des nombres précédents, déterminer le reste de sa division euclidienne par 8.\n2) Soit n un entier naturel supérieur ou égal à 100 et soit b le nombre formé par ses trois der-\nniers chiffres.\na) Justifier l’écriture de n sous la forme n = 1000 a + b, où a est un entier naturel.\nb) Montrer que n et b ont le même reste dans la division euclidienne par 8.\nc) Enoncer un critère de divisibilité par 8.\nm i l e r : 5-6-7\nA s s iAssimiler\nCritères de divisibilité par 3 et par 9\n\nÀ calculer dans l'application : Reste de 258 modulo 9.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 6 (« Activité 6 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 258,
+        "min": 20,
+        "max": 900,
+        "step": 1
+      },
+      {
+        "key": "div",
+        "label": "module",
+        "unit": "—",
+        "value": 9,
+        "min": 9,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 6 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "sum",
+        "label": "Somme des chiffres",
+        "unit": "—"
+      },
+      {
+        "key": "r",
+        "label": "Reste",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -154,24 +265,41 @@
     "chapter": "arithmetique",
     "kind": "activity",
     "activity": 7,
-    "solver": "fixed",
+    "solver": "euclidDiv",
     "title": "Activité 7",
     "difficulty": 1,
-    "statement": "Activité 7\nn étant un entier naturel et S la somme de ses chiffres, on sait que :\n• n est divisible par 3 (respectivement par 9) si et seulement si S est divisible par 3\n(respectivement par 9).\n• n et S ont le même reste dans la division euclidienne par 3 (respectivement par 9).\nDans cette activité on se propose de démontrer ces résultats pour un entier n à quatre chiffres.\n1) Soit n un entier naturel à quatre chiffres. On désigne par a, b, c et d respectivement, les\nchiffres des milliers, des centaines, des dizaines et des unités de n.\nSoit S = a + b + c + d la somme des chiffres de n.\na) Justifier l’écriture n = 999 a + 99 b + 9 c + S.\nExplorer Explorer\nb) Montrer que n – S est divisible par 3 et par 9.\n2) a) Montrer que n et S ont le même reste dans la division euclidienne par 3.\nb) Montrer que n et S ont le même reste dans la division euclidienne par 9.\nm i l e r : 8-9\nA s s iAssimiler",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 7\nn étant un entier naturel et S la somme de ses chiffres, on sait que :\n• n est divisible par 3 (respectivement par 9) si et seulement si S est divisible par 3\n(respectivement par 9).\n• n et S ont le même reste dans la division euclidienne par 3 (respectivement par 9).\nDans cette activité on se propose de démontrer ces résultats pour un entier n à quatre chiffres.\n1) Soit n un entier naturel à quatre chiffres. On désigne par a, b, c et d respectivement, les\nchiffres des milliers, des centaines, des dizaines et des unités de n.\nSoit S = a + b + c + d la somme des chiffres de n.\na) Justifier l’écriture n = 999 a + 99 b + 9 c + S.\nExplorer Explorer\nb) Montrer que n – S est divisible par 3 et par 9.\n2) a) Montrer que n et S ont le même reste dans la division euclidienne par 3.\nb) Montrer que n et S ont le même reste dans la division euclidienne par 9.\nm i l e r : 8-9\nA s s iAssimiler\n\nÀ calculer dans l'application : Division de 47 par 5.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 7 (« Activité 7 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "dividende",
+        "unit": "—",
+        "value": 47,
+        "min": 20,
+        "max": 90,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "diviseur",
+        "unit": "—",
+        "value": 5,
+        "min": 2,
+        "max": 9,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 7 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "q",
+        "label": "quotient q",
+        "unit": "—"
+      },
+      {
+        "key": "r",
+        "label": "reste r",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -179,24 +307,50 @@
     "chapter": "arithmetique",
     "kind": "activity",
     "activity": 8,
-    "solver": "fixed",
+    "solver": "gcd3",
     "title": "Activité 8 Du lait de l’huile et du pétrole",
     "difficulty": 1,
-    "statement": "Activité 8 Du lait de l’huile et du pétrole\nUn paysan part avec sa camionnette vers le marché pour acheter du lait, de l’huile et du pétro-\nle. Il dispose de neuf récipients de contenances respectives (en litres)\n3 ; 6 ; 10 ; 11 ; 15 ; 17 ; 23 ; 25 et 30.\nIl revient avec deux fois plus de lait que d’huile et 3 fois plus de pétrole que de lait. Tous ses\nrécipients sont complètement remplis, sauf un qui est vide. Lequel ?\nIndiquer le contenu de chaque récipient.\n( D’après Oh les maths, P. YAKOV )\nCritères de divisibilité par 11",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 8 Du lait de l’huile et du pétrole\nUn paysan part avec sa camionnette vers le marché pour acheter du lait, de l’huile et du pétro-\nle. Il dispose de neuf récipients de contenances respectives (en litres)\n3 ; 6 ; 10 ; 11 ; 15 ; 17 ; 23 ; 25 et 30.\nIl revient avec deux fois plus de lait que d’huile et 3 fois plus de pétrole que de lait. Tous ses\nrécipients sont complètement remplis, sauf un qui est vide. Lequel ?\nIndiquer le contenu de chaque récipient.\n( D’après Oh les maths, P. YAKOV )\nCritères de divisibilité par 11\n\nÀ calculer dans l'application : Pavé 60 × 90 × 150.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 8 (« Activité 8 Du lait de l’huile et du pétrole ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "L",
+        "unit": "—",
+        "value": 60,
+        "min": 30,
+        "max": 120,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "ℓ",
+        "unit": "—",
+        "value": 90,
+        "min": 30,
+        "max": 180,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "h",
+        "unit": "—",
+        "value": 150,
+        "min": 60,
+        "max": 240,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 8 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "g",
+        "label": "Arête a",
+        "unit": "—"
+      },
+      {
+        "key": "nBoxes",
+        "label": "Nombre de cubes",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -204,24 +358,41 @@
     "chapter": "arithmetique",
     "kind": "activity",
     "activity": 9,
-    "solver": "fixed",
+    "solver": "euclidDiv",
     "title": "Activité 9",
     "difficulty": 1,
-    "statement": "Activité 9\nSoit n un entier naturel non nul.\n1) a) Vérifier que 11 divise 10 2 – 1.\nb) Montrer que si 11 divise n – 1 alors 11 divise 10 2 n – 1\nc) En déduire que 10 4 – 1, 10 6 – 1, 10 8 – 1 et 10 10 – 1 sont divisibles par 11.\n2) a) Vérifier que 11 divise 10 3 + 1.\nb) Montrer que si 11 divise n + 1 alors 11 divise 10 2 n + 1\nc) En déduire que 10 5 + 1, 10 7 + 1 et 10 9 + 1 sont divisibles par 11.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 9\nSoit n un entier naturel non nul.\n1) a) Vérifier que 11 divise 10 2 – 1.\nb) Montrer que si 11 divise n – 1 alors 11 divise 10 2 n – 1\nc) En déduire que 10 4 – 1, 10 6 – 1, 10 8 – 1 et 10 10 – 1 sont divisibles par 11.\n2) a) Vérifier que 11 divise 10 3 + 1.\nb) Montrer que si 11 divise n + 1 alors 11 divise 10 2 n + 1\nc) En déduire que 10 5 + 1, 10 7 + 1 et 10 9 + 1 sont divisibles par 11.\n\nÀ calculer dans l'application : Division euclidienne de 2613 par 8.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 9 (« Activité 9 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "dividende",
+        "unit": "—",
+        "value": 2613,
+        "min": 100,
+        "max": 4000,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "diviseur",
+        "unit": "—",
+        "value": 8,
+        "min": 3,
+        "max": 12,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 9 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "q",
+        "label": "quotient q",
+        "unit": "—"
+      },
+      {
+        "key": "r",
+        "label": "reste r",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -229,24 +400,41 @@
     "chapter": "arithmetique",
     "kind": "activity",
     "activity": 10,
-    "solver": "fixed",
+    "solver": "remainderDigits",
     "title": "Activité 10",
     "difficulty": 1,
-    "statement": "Activité 10\n1) a) Vérifier que\n75429 =\n7×(10 4 – 1) + 5 × (10 3 + 1) + 4 × (10 2 – 1) + 2 × (10 1 + 1) + 9 × (10 0 – 1) + (9 – 2 + 4 – 5 + 7) .\nb) Recopier puis compléter\n2765 = 2 × (10 + 1) + 7 × (10 – 1) + 6 × (10 1 + 1) + 5 × (10 0 – 1) + (5 – 6 + 7 – 2 ) .\n… …\n185042 = 1 × (10 5 – 1) + … + … + … + … + 2 × (10 0 – 1)+(2 – … + 0 – … + … – 1) .\n2) a) Reproduire et compléter le tableau suivant :\nn d n est divisible par 11 d est divisible par 11\n2765 5–6+7–2=4 Faux\n473 3–7+4=0\n1738 Vrai\n80916\n91827 7 – 2 + 8 – 1 + 9 = 21\n9081919\nb) Que remarque t-on ?\nc) Déterminer parmi les entiers suivants ceux qui sont divisibles par 11\n187 ; 463 ; 825 ; 2731 ; 26103 et 123454321.\nE x p l o r e r",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 10\n1) a) Vérifier que\n75429 =\n7×(10 4 – 1) + 5 × (10 3 + 1) + 4 × (10 2 – 1) + 2 × (10 1 + 1) + 9 × (10 0 – 1) + (9 – 2 + 4 – 5 + 7) .\nb) Recopier puis compléter\n2765 = 2 × (10 + 1) + 7 × (10 – 1) + 6 × (10 1 + 1) + 5 × (10 0 – 1) + (5 – 6 + 7 – 2 ) .\n… …\n185042 = 1 × (10 5 – 1) + … + … + … + … + 2 × (10 0 – 1)+(2 – … + 0 – … + … – 1) .\n2) a) Reproduire et compléter le tableau suivant :\nn d n est divisible par 11 d est divisible par 11\n2765 5–6+7–2=4 Faux\n473 3–7+4=0\n1738 Vrai\n80916\n91827 7 – 2 + 8 – 1 + 9 = 21\n9081919\nb) Que remarque t-on ?\nc) Déterminer parmi les entiers suivants ceux qui sont divisibles par 11\n187 ; 463 ; 825 ; 2731 ; 26103 et 123454321.\nE x p l o r e r\n\nÀ calculer dans l'application : Reste de 1963 modulo 9 (somme des chiffres).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 10 (« Activité 10 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 1963,
+        "min": 100,
+        "max": 4000,
+        "step": 1
+      },
+      {
+        "key": "div",
+        "label": "module",
+        "unit": "—",
+        "value": 9,
+        "min": 9,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 10 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "sum",
+        "label": "Somme des chiffres",
+        "unit": "—"
+      },
+      {
+        "key": "r",
+        "label": "Reste",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -254,24 +442,41 @@
     "chapter": "arithmetique",
     "kind": "activity",
     "activity": 11,
-    "solver": "fixed",
+    "solver": "remainderLast3",
     "title": "Activité 11",
     "difficulty": 1,
-    "statement": "Activité 11\nDéterminer dans chacun des cas suivants la valeur du chiffre a pour que le nombre n soit divisible par 11.\nn = 4a68 n = 8291a.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 11\nDéterminer dans chacun des cas suivants la valeur du chiffre a pour que le nombre n soit divisible par 11.\nn = 4a68 n = 8291a.\n\nÀ calculer dans l'application : Reste de 127645264 modulo 8 (trois derniers chiffres).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 11 (« Activité 11 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 127645264,
+        "min": 100000,
+        "max": 200000000,
+        "step": 1
+      },
+      {
+        "key": "div",
+        "label": "module",
+        "unit": "—",
+        "value": 8,
+        "min": 8,
+        "max": 9,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 11 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "last",
+        "label": "Trois derniers chiffres",
+        "unit": "—"
+      },
+      {
+        "key": "r",
+        "label": "Reste",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -279,24 +484,50 @@
     "chapter": "arithmetique",
     "kind": "activity",
     "activity": 12,
-    "solver": "fixed",
+    "solver": "gcd3",
     "title": "Activité 12",
     "difficulty": 1,
-    "statement": "Activité 12\na) Reproduire et compléter le tableau suivant :\nle reste de la division le reste de la division\nn d de n par 11 de d par 11\n743 3–4+7=6 6 6\n1728\n60918\n72819\n180726 6 – 2 + 7 – 0 + 8 – 1 = 18\nb) Que remarque t-on ?\nc) Déterminer les restes de la division euclidienne par 11 des entiers 204 ; 833 ; 2731 ; 26103;\n135822468.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 12\na) Reproduire et compléter le tableau suivant :\nle reste de la division le reste de la division\nn d de n par 11 de d par 11\n743 3–4+7=6 6 6\n1728\n60918\n72819\n180726 6 – 2 + 7 – 0 + 8 – 1 = 18\nb) Que remarque t-on ?\nc) Déterminer les restes de la division euclidienne par 11 des entiers 204 ; 833 ; 2731 ; 26103;\n135822468.\n\nÀ calculer dans l'application : Plus grande arête cubique pour un pavé 120 × 200 × 180.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 12 (« Activité 12 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "a",
+        "label": "L",
+        "unit": "—",
+        "value": 120,
+        "min": 60,
+        "max": 180,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "ℓ",
+        "unit": "—",
+        "value": 200,
+        "min": 80,
+        "max": 240,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "h",
+        "unit": "—",
+        "value": 180,
+        "min": 60,
+        "max": 240,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 12 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "g",
+        "label": "Arête a",
+        "unit": "—"
+      },
+      {
+        "key": "nBoxes",
+        "label": "Nombre de cubes",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -304,24 +535,50 @@
     "chapter": "arithmetique",
     "kind": "activity",
     "activity": 13,
-    "solver": "fixed",
+    "solver": "arithSeq",
     "title": "Activité 13",
     "difficulty": 1,
-    "statement": "Activité 13\n1) a) Déterminer les multiples de 11 inférieurs à 100.\nb) Pour chacun des entiers d suivants, déterminer le plus petit multiple m de 11, tel que\nd + m soit positif ou nul :\n–5 ; –13 ; – 22 ; – 27 ; – 93.\n2) a) Vérifier que\n8291 = 9 x (10 3 + 1) + 2 x (10 2 – 1) + 9 x (10 1 + 1) + 1 x (10 0 – 1) + (1 – 9 + 2 – 8 ).\nSoit d = (1 – 9 + 2 – 8 ) = – 14.\nQuel est le plus petit multiple m de 11, tel que d + m soit positif ou nul ?\nb) Reproduire et compléter le tableau suivant :\nLe reste de la\nn d m d+m\ndivision de n par 11\n8291 8 1– 9 + 2 – 8 = – 14 22\n190 3\n5071 1 – 7 + 0 – 5 = – 11 11\n8370\n709180\nc) Que remarque t-on ?\n3) Déterminer les restes de la division euclidienne par 11 des entiers 391 ; 2381 ; 9391 ; 30162;\n657498324106.\nm i l e r : 10-11\nA s s iAssimiler\nAssimiler Assimiler\nDivisibilité\n1 Montrer que si un entier naturel divise 328 et divise 299, alors il divise 29.\nEn déduire que 328 et 299 sont premiers entre eux.\n2 Décomposer 343 en produit de facteurs premiers et montrer que 118 et 225 sont premiers\nentre eux.\n3 Soient a, b et n trois entiers naturels. Montrer que :\nSi n divise 2 a + 3 b et n divise 3 a + 2 b, alors n divise 5 a et n divise 5 b.\n4 Déterminer tous les entiers naturels n tels que n divise n + 15.\nCritères de divisibilité par 2, 4, 5, 8 et 25\n5 Les nombres suivants sont-ils divisibles par 2 ? par 4 ? par 5 ? par 8 ? par 25 ?\n49 ; 316 ; 1050 ; 27960 ; 131675.\n6 Déterminer le reste de la division euclidienne de chacun des nombres suivants respectivement\npar 2 ; 4 ; 5 ; 8 et 25 :\n619 ; 1032 ; 69137 ; 234105\n7 Montrer que 2721 + 2723 est divisible par 5.\nCritères de divisibilité par 3 et par 9\n8 Parmi les nombres suivants déterminer ceux qui sont divisibles par 3 et ceux qui sont\ndivisibles par 9 :\n315 ; 745 ; 2325 ; 11111 ; 100035 ; 2734106.\n9 Déterminer le reste de la division euclidienne par 3 puis par 9 de chacun des nombres\nsuivants : 86 ; 195 ; 206 ; 1359 ; 7695 ; 11111 ; 2851961.\nCritères de divisibilité par 11\n10 Pour chacun des entiers suivants vérifier s’il est divisible par 11 et déterminer son reste\ndans la division euclidienne par 11 : 96 ; 704 ;1111 ; 8190 ; 195674 ; 541145.\n11 Montrer que tout entier naturel de la forme abcabc, où a, b et c sont des chiffres,\nest divisible par 11.\nEn est il de même pour les entiers naturels de la forme abceabce ?\nDivision euclidienne\n♦ a et b désignent deux entiers naturels tels que b est différent de zéro.\nOn admet l’existence d’un couple unique (q, r) d’entiers naturels tels que :\na = b q + r avec 0 ≤ r < b.\n♦ Effectuer la division euclidienne de a par b, c’est trouver le couple (q, r) d’entiers naturels\ntels que : a = b q + r avec 0 ≤ r < b.\na est le dividende, b est le diviseur, q est le quotient et r est le reste.\ndivisibilité par 2 et 5\n♦ Un entier est divisible par 2 (respectivement par 5) si et seulement si son chiffre\ndes unités est divisible par 2 (respectivement par 5).\nLe reste de la division euclidienne d’un entier par 2 (respectivement par 5) est égal au reste\nde la division euclidienne de son chiffre des unités par 2 (respectivement par 5).\ndivisibilité par 4 et 25\n♦ Un entier est divisible par 4 (respectivement par 25), si et seulement si le nombre formé par\nses deux derniers chiffres est divisible par 4 (respectivement par 25).\nLe reste de la division euclidienne d’un entier par 4 (respectivement par 25) est égal au reste\nde la division euclidienne par 4 (respectivement par 25) du nombre formé par ses deux der-\nniers chiffres.\ndivisibilité par 3 et 9\n♦ Un entier est divisible par 3 (respectivement par 9) si et seulement si la somme de ses\nchiffres est divisible par 3 (respectivement par 9).\nLe reste de la division euclidienne d’un entier par 3 (respectivement par 9) est égal au reste\nde la division euclidienne de la somme de ses chiffres par 3 (respectivement par 9).\ndivisibilité par 8\n♦ Un entier, supérieur ou égal à 100, est divisible par 8 si et seulement si le nombre formé par\nses trois derniers chiffres est divisible par 8.\nLe reste de la division euclidienne d’un entier par 8 est égal au reste de la division\neuclidienne par 8 du nombre formé par ses trois derniers chiffres.\ndivisibilité par 11\nSoit n un entier naturel, on désigne par S1 la somme de ses chiffres de rang impairs (de\ndroite à gauche) et par S2 la somme de ses chiffres de rang pairs. Soit d = S1 – S2.\n1er cas : d ≥ 0\n♦ n est divisible par 11 si et seulement si d est divisible par 11.\nLe reste de la division euclidienne de n par 11 est égal au reste de la division euclidienne de\nd par 11.\n2ème cas : d < 0\nSoit p le plus petit entier naturel tel que d + 11p soit positif ou nul.\n♦ n est divisible par 11 si et seulement si d + 11p est divisible par 11.\n♦ Le reste de la division euclidienne de n par 11 est d + 11p.\nDévelopper ses compé\nDévelopper ses compétences\n1 On dispose de 8 boites contenant respectivement 7 ; 10 ; 13 ; 18 ; 28 ; 31 ; 46 et 62 boules.\nChaque boite contient à la fois des boules rouges et des boules noires. On a enlevé une boite\net on a alors constaté que le nombre total des boules rouges contenues dans les 7 boites\nrestantes est le double du nombre de boules noires contenues dans ces 7 boites. Quelle est la\nboite enlevée ?\nIndication\nLe nombre total des boules contenues dans les 7 boîtes restantes est un multiple de 3.\n2 Soient a et b deux entiers naturels tels que a > b\nMontrer que a 2 b 2 (a 2 – b 2 ) est divisible par 3 et par 4.\nIndication\nFaire un arbre de choix selon les restes de la division euclidienne de a et de b par 3.\n3 Soit x = 7n + 4 et y = 3n – 2, où n est un entier naturel non nul, et soit d un diviseur\ncommun à x et y.\na) Montrer que d divise 26.\nb) Quelles sont les valeurs possibles de d ?\nIndication\nExprimer 26 en fonction de x et y.\n4 Question d’âge\nQuel âge as-tu ? demande Ali à Mohamed.\nMohamed répond :\n• L’an prochain, mon âge sera divisible par 2 ;\n• Dans deux ans, mon âge sera divisible par 3 ;\n• Dans 3 ans, mon âge sera divisible par 4 ;\n• Dans 4 ans, mon âge sera divisible par 5.\nPourras-tu trouver mon âge ?\nIndication\nSi on désigne par a l’âge de Mohamed, déterminer les conditions que doit vérifier a – 1.\n5 On découpe une feuille de papiers en 5 morceaux, puis l’un des morceaux est choisi et est\ndécoupé en 5 morceaux… et ainsi de suite.\nAu bout de combien d’étapes obtient-on 61 morceaux ?\nIndication\n• Au bout de la première étape on obtient 5 morceaux.\n• Au bout de la deuxième étape on obtient 4 + 5 morceaux.\n• Au bout de la troisième étape on obtient 4 + 4 + 5 morceaux.\nU t i l i s e r lUtiliser\nes T les TIC\nIC\nConjecturer avec un tableur\nLe but de l’exercice est de déterminer le chiffre des unités de l’entier 3 n, où n est un entier\nnaturel.\na) Ouvrir une feuille sur le tableur Excel et remplir un tableau comme ci-dessous :\nA B C D\n1 n 3n Le chiffre des unités\n2 =0 =1 = MOD(B2 ; 10)\n3 = A2 + 1 = B2 * 3\nDans Excel, la formule = MOD (B2 ; 10) donne le reste de la division euclidienne de B2 par\n10, qui est aussi le chiffre des unités de B2.\nLa colonne A affiche les valeurs prises par l’entier n : 0, 1, 2, 3, …\nLa colonne B affiche les puissances de 3.\nCliquer sur la cellule A3, une croix noire s’affiche au coin inférieur droit de cette cellule.\nPositionner le curseur sur cette croix et tirer vers le bas, jusqu’à atteindre la valeur désirée de n.\nProcéder de la même façon avec B3 et C2 .\nb) Conjecturer\nc) Quel est le chiffre des unités de chacun des nombres suivants: 3 41, 3 175, 3 1000 et 3 2006 ?\nExercices et problèmes\nExercices et problèmes\nAppliquer\nTrouver les chiffres x et y pour que l’en-\n1 Déterminer le reste de la division eucli- tier 28xy5 soit divisible par 11 et 25.\ndienne par 8 de chacun des entiers suivants :\n104, 2613, 93765, 127645264. 13 Trouver les chiffres x et y pour que l’en-\ntier 9x23y soit divisible par 9 et 11.\n2 Déterminer le reste de la division\neuclidienne par 25 de chacun des entiers Maîtriser\nsuivants : 392, 1006, 1963, 6150, 2548175\n14 a) Quels sont les nombres dont la division\n3 Déterminer le chiffre x pour que le reste euclidienne par 5 donne un reste égal au\nde la division euclidienne de l’entier 7x62 quotient ?\npar 9 soit égal à 2. b) Quels sont les nombres dont le quotient de\nla division euclidienne par 4 est égal au triple\n4 Déterminer le chiffre u pour que l’entier du reste ?\n513u ait 4 comme reste de la division\neuclidienne par 11. 15 On divise 2005 et 5002 par un même\nentier naturel non nul n, on obtient respective-\n5 Déterminer le chiffre a pour que l’entier ment 10 et 32 pour restes. Trouver l’entier n.\n73a 2 soit divisible par 9.\n16 Trouver tous les entiers naturels dont la\n6 Déterminer les chiffres a et b pour que division euclidienne par 29 donne un reste\nl’entier 2a3b soit divisible par 4 et 3. égal au carré du quotient.\n7 Déterminer les chiffres a et b pour que le 17 Déterminer les entiers naturels a et b dont\nnombre 513ab soit divisible par 3 et 5. la différence est 709 et tels que le quotient et\nle reste de la division euclidienne de a par b\n8 a) Déterminer les chiffres a et b pour que sont respectivement 16 et 19.\nle nombre b421a soit divisible par 2 et 3.\nb) Déterminer les chiffres a et b pour que le 18 Soit N = 12345679\nnombre a1215b soit divisible par 2 et 9. A l’aide de votre calculatrice, calculer 9 N,\n18 N, 27 N et 36 N.\n9 Pour chacun des entiers suivants, vérifier Conjecturer et justifier votre conjecture.\ns’il est divisible par 11 et déterminer son reste\ndans la division euclidienne par 11 : 19 Trouver les entiers naturels n tels que\n175, 249, 517, 8291, 20042005, 1234321. n + 25 soit un entier.\nn+4\n10 Trouver le chiffre x pour que l’entier 4x73\n20 Déterminer les valeurs de l’entier naturel\nsoit divisible par 11.\np telles que p – 1 divise p + 11.\n11 Trouver les chiffres x et y pour que\nl’entier 13x45y soit divisible par 8 et 9.\nExercices etExercices lèmes\nproetbproblèmes\n21 Le dividende d’une division euclidienne a) L’école Farhat Hached comporte 158\nest inférieur à 5000. Le quotient de cette élèves. Combien fera-t-on de groupes ?\nmême division est égal à 93 et le reste à 51. Donner deux exemples de formation de ces\nDéterminer les valeurs possibles du dividende groupes.\net du diviseur. b) L’école Abou El kacem Chebbi comporte\n212 élèves. Combien peut-on faire de\n22 On donne deux entiers naturels a et b tels groupes?\nque a > b. On effectue, d’une part, la division Donner, pour chacune des solutions possibles\neuclidienne de a par a – b et d’autre part la un exemple de formation des groupes.\ndivision euclidienne de b par a – b.\nComparer les quotients respectifs et les restes 27 1) Quel jour de la semaine serons nous\nrespectifs de ces deux divisions. après 123 jours ?\n2) Quel jour de la semaine sera le 1er Janvier\n23 La combinaison secrète d’un coffre com- 2020 ?\nporte cinq chiffres différents. 3) Quel était le jour de la semaine de votre\nSachant que : anniversaire en 1998 ?\n• Le premier chiffre est pair ;\n• La somme des deux premiers chiffres est 15 ; 28 Quel est le plus petit entier naturel qui\n• Le troisième chiffre est la différence des donne pour reste 3 quand on le divise par 20,\ndeux premiers ; par 21 et par 35 ?\n• Le premier chiffre est le produit du\ntroisième par le quatrième ; 29 Quel est le plus petit entier naturel qui\n• Le nombre est divisible par 9. donne pour reste :\nSauriez- vous ouvrir le coffre ? 19 quand on le divise par 20\n20 quand on le divise par 21\n24 Soit n un entier naturel. 34 quand on le divise par 35 ?\nMontrer que l’entier A = n (n 2 + 5) est\ndivisible par 3. 30 Les dimensions d’une caisse parallélé-\npipédique sont 120 cm, 200 cm et 180 cm. On\n25 Soit n un entier naturel.\nveut réaliser des boites cubiques de même\nQuels sont les restes possibles de la division\narête a (a un entier) qui permettent de remplir\neuclidienne de n 2 par 3 ?\nentièrement la caisse.\nEn déduire, sans calcul, que le nombre\nQuelle doit être l’arête a pour utiliser le mini-\n59873120 2 – 1 est divisible par 3.\nmum de boites ?\n26 Un musée organise des visites guidées à\n31 n étant un entier naturel de 4 chiffres tel\nl’intention des élèves d’une même école.\nOn répartit les élèves en groupes, que :\néventuellement inégaux, dont aucun ne • n est divisible par 9\ncomporte plus de vingt-quatre élèves ni moins • les chiffres de l’entier n sont consécutifs et\nde vingt. classés par ordre croissant de gauche à droite.\nTrouver n.\nM a t h e t cMath ure\nu lettculture\nLe code barre\nLa plupart des produits de commerce comportent un code barre : c’est un code universel dit\ncode UPC (Universal Product Code), formé de 13 chiffres situés au-dessous d’une succession\nde barres parallèles lues à l’aide d’un appareil spécial. Dans ce code, les douze premiers\nchiffres désignent le pays, le fabriquant et le produit vendu, alors que le dernier représente la\nclé de contrôle.\nSi on ajoute les sept chiffres de rang impair du code et le triple de la somme des chiffres de\nrang pair du code, le résultat doit être divisible par 10.\nCi-contre le code barre du livre de mathématique de\ndeuxième année sciences.\nLes douze premiers chiffres d’un code barre sont 619220260141. Déterminer la clé de contrô-\nle de ce code.\nLes nombres amiables 220 284\nDeux entiers sont amiables si la somme des diviseurs propres de chacun est égale à l’autre.\nLes entiers 220 et 284 sont amiables, en effet :\n• Les diviseurs propres de 220 (autres que lui même) sont :\n1, 2, 4, 5, 10, 11, 20,22, 44, 55 et 110 dont la somme est 284.\n• Les diviseurs de 284 autres que lui même sont :\n1, 2, 4, 71 et 142 dont la somme n’est autre que 220.\nLe couple (220, 284) est cité par Pythagore et c’est le plus petit couple.\nLes grecs ne connaissaient que ce couple de nombres amiables.\nLes mathématiciens arabes vont en détecter d’autres : Al Farissi découvrit le couple\n(17296, 18416) et Al Yazdi découvrit le couple (9363584, 9437056).\nCes deux derniers couples sont connus respectivement comme couple de Fermat et Descartes,\nparce que ces derniers ils les ont rédécouvert plusieurs siècles après !\nDès le 9ème siècle le mathématicien arabe Thabit Ibn Qurra énonce le théorème fondamental\nsur les nombres amiables :\nSi p = 3 × 2 n-1 – 1, q = 3 × 2 n – 1 et r = 9 × 2 2n-1 – 1 sont tous trois premiers, alors les\ndeux nombres a = 2 n pq et b = 2 n r sont amiables.\nLes trois couples de nombres amiables, cités précédemment, sont obtenus pour n = 2,\nn = 4 et n = 7.\nThabit Ibn Qurra (836 – 901 Baghdad)\nMathématicien et astronome, il a apporté de nombreuses contributions dans tous les domaines\nmathématiques. Il est l’auteur d’un livre sur les nombres amiables.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 13\n1) a) Déterminer les multiples de 11 inférieurs à 100.\nb) Pour chacun des entiers d suivants, déterminer le plus petit multiple m de 11, tel que\nd + m soit positif ou nul :\n–5 ; –13 ; – 22 ; – 27 ; – 93.\n2) a) Vérifier que\n8291 = 9 x (10 3 + 1) + 2 x (10 2 – 1) + 9 x (10 1 + 1) + 1 x (10 0 – 1) + (1 – 9 + 2 – 8 ).\nSoit d = (1 – 9 + 2 – 8 ) = – 14.\nQuel est le plus petit multiple m de 11, tel que d + m soit positif ou nul ?\nb) Reproduire et compléter le tableau suivant :\nLe reste de la\nn d m d+m\ndivision de n par 11\n8291 8 1– 9 + 2 – 8 = – 14 22\n190 3\n5071 1 – 7 + 0 – 5 = – 11 11\n8370\n709180\nc) Que remarque t-on ?\n3) Déterminer les restes de la division euclidienne par 11 des entiers 391 ; 2381 ; 9391 ; 30162;\n657498324106.\nm i l e r : 10-11\nA s s iAssimiler\nAssimiler Assimiler\nDivisibilité\n1 Montrer que si un entier naturel divise 328 et divise 299, alors il divise 29.\nEn déduire que 328 et 299 sont premiers entre eux.\n2 Décomposer 343 en produit de facteurs premiers et montrer que 118 et 225 sont premiers\nentre eux.\n3 Soient a, b et n trois entiers naturels. Montrer que :\nSi n divise 2 a + 3 b et n divise 3 a + 2 b, alors n divise 5 a et n divise 5 b.\n4 Déterminer tous les entiers naturels n tels que n divise n + 15.\nCritères de divisibilité par 2, 4, 5, 8 et 25\n5 Les nombres suivants sont-ils divisibles par 2 ? par 4 ? par 5 ? par 8 ? par 25 ?\n49 ; 316 ; 1050 ; 27960 ; 131675.\n6 Déterminer le reste de la division euclidienne de chacun des nombres suivants respectivement\npar 2 ; 4 ; 5 ; 8 et 25 :\n619 ; 1032 ; 69137 ; 234105\n7 Montrer que 2721 + 2723 est divisible par 5.\nCritères de divisibilité par 3 et par 9\n8 Parmi les nombres suivants déterminer ceux qui sont divisibles par 3 et ceux qui sont\ndivisibles par 9 :\n315 ; 745 ; 2325 ; 11111 ; 100035 ; 2734106.\n9 Déterminer le reste de la division euclidienne par 3 puis par 9 de chacun des nombres\nsuivants : 86 ; 195 ; 206 ; 1359 ; 7695 ; 11111 ; 2851961.\nCritères de divisibilité par 11\n10 Pour chacun des entiers suivants vérifier s’il est divisible par 11 et déterminer son reste\ndans la division euclidienne par 11 : 96 ; 704 ;1111 ; 8190 ; 195674 ; 541145.\n11 Montrer que tout entier naturel de la forme abcabc, où a, b et c sont des chiffres,\nest divisible par 11.\nEn est il de même pour les entiers naturels de la forme abceabce ?\nDivision euclidienne\n♦ a et b désignent deux entiers naturels tels que b est différent de zéro.\nOn admet l’existence d’un couple unique (q, r) d’entiers naturels tels que :\na = b q + r avec 0 ≤ r < b.\n♦ Effectuer la division euclidienne de a par b, c’est trouver le couple (q, r) d’entiers naturels\ntels que : a = b q + r avec 0 ≤ r < b.\na est le dividende, b est le diviseur, q est le quotient et r est le reste.\ndivisibilité par 2 et 5\n♦ Un entier est divisible par 2 (respectivement par 5) si et seulement si son chiffre\ndes unités est divisible par 2 (respectivement par 5).\nLe reste de la division euclidienne d’un entier par 2 (respectivement par 5) est égal au reste\nde la division euclidienne de son chiffre des unités par 2 (respectivement par 5).\ndivisibilité par 4 et 25\n♦ Un entier est divisible par 4 (respectivement par 25), si et seulement si le nombre formé par\nses deux derniers chiffres est divisible par 4 (respectivement par 25).\nLe reste de la division euclidienne d’un entier par 4 (respectivement par 25) est égal au reste\nde la division euclidienne par 4 (respectivement par 25) du nombre formé par ses deux der-\nniers chiffres.\ndivisibilité par 3 et 9\n♦ Un entier est divisible par 3 (respectivement par 9) si et seulement si la somme de ses\nchiffres est divisible par 3 (respectivement par 9).\nLe reste de la division euclidienne d’un entier par 3 (respectivement par 9) est égal au reste\nde la division euclidienne de la somme de ses chiffres par 3 (respectivement par 9).\ndivisibilité par 8\n♦ Un entier, supérieur ou égal à 100, est divisible par 8 si et seulement si le nombre formé par\nses trois derniers chiffres est divisible par 8.\nLe reste de la division euclidienne d’un entier par 8 est égal au reste de la division\neuclidienne par 8 du nombre formé par ses trois derniers chiffres.\ndivisibilité par 11\nSoit n un entier naturel, on désigne par S1 la somme de ses chiffres de rang impairs (de\ndroite à gauche) et par S2 la somme de ses chiffres de rang pairs. Soit d = S1 – S2.\n1er cas : d ≥ 0\n♦ n est divisible par 11 si et seulement si d est divisible par 11.\nLe reste de la division euclidienne de n par 11 est égal au reste de la division euclidienne de\nd par 11.\n2ème cas : d < 0\nSoit p le plus petit entier naturel tel que d + 11p soit positif ou nul.\n♦ n est divisible par 11 si et seulement si d + 11p est divisible par 11.\n♦ Le reste de la division euclidienne de n par 11 est d + 11p.\nDévelopper ses compé\nDévelopper ses compétences\n1 On dispose de 8 boites contenant respectivement 7 ; 10 ; 13 ; 18 ; 28 ; 31 ; 46 et 62 boules.\nChaque boite contient à la fois des boules rouges et des boules noires. On a enlevé une boite\net on a alors constaté que le nombre total des boules rouges contenues dans les 7 boites\nrestantes est le double du nombre de boules noires contenues dans ces 7 boites. Quelle est la\nboite enlevée ?\nIndication\nLe nombre total des boules contenues dans les 7 boîtes restantes est un multiple de 3.\n2 Soient a et b deux entiers naturels tels que a > b\nMontrer que a 2 b 2 (a 2 – b 2 ) est divisible par 3 et par 4.\nIndication\nFaire un arbre de choix selon les restes de la division euclidienne de a et de b par 3.\n3 Soit x = 7n + 4 et y = 3n – 2, où n est un entier naturel non nul, et soit d un diviseur\ncommun à x et y.\na) Montrer que d divise 26.\nb) Quelles sont les valeurs possibles de d ?\nIndication\nExprimer 26 en fonction de x et y.\n4 Question d’âge\nQuel âge as-tu ? demande Ali à Mohamed.\nMohamed répond :\n• L’an prochain, mon âge sera divisible par 2 ;\n• Dans deux ans, mon âge sera divisible par 3 ;\n• Dans 3 ans, mon âge sera divisible par 4 ;\n• Dans 4 ans, mon âge sera divisible par 5.\nPourras-tu trouver mon âge ?\nIndication\nSi on désigne par a l’âge de Mohamed, déterminer les conditions que doit vérifier a – 1.\n5 On découpe une feuille de papiers en 5 morceaux, puis l’un des morceaux est choisi et est\ndécoupé en 5 morceaux… et ainsi de suite.\nAu bout de combien d’étapes obtient-on 61 morceaux ?\nIndication\n• Au bout de la première étape on obtient 5 morceaux.\n• Au bout de la deuxième étape on obtient 4 + 5 morceaux.\n• Au bout de la troisième étape on obtient 4 + 4 + 5 morceaux.\nU t i l i s e r lUtiliser\nes T les TIC\nIC\nConjecturer avec un tableur\nLe but de l’exercice est de déterminer le chiffre des unités de l’entier 3 n, où n est un entier\nnaturel.\na) Ouvrir une feuille sur le tableur Excel et remplir un tableau comme ci-dessous :\nA B C D\n1 n 3n Le chiffre des unités\n2 =0 =1 = MOD(B2 ; 10)\n3 = A2 + 1 = B2 * 3\nDans Excel, la formule = MOD (B2 ; 10) donne le reste de la division euclidienne de B2 par\n10, qui est aussi le chiffre des unités de B2.\nLa colonne A affiche les valeurs prises par l’entier n : 0, 1, 2, 3, …\nLa colonne B affiche les puissances de 3.\nCliquer sur la cellule A3, une croix noire s’affiche au coin inférieur droit de cette cellule.\nPositionner le curseur sur cette croix et tirer vers le bas, jusqu’à atteindre la valeur désirée de n.\nProcéder de la même façon avec B3 et C2 .\nb) Conjecturer\nc) Quel est le chiffre des unités de chacun des nombres suivants: 3 41, 3 175, 3 1000 et 3 2006 ?\nExercices et problèmes\nExercices et problèmes\nAppliquer\nTrouver les chiffres x et y pour que l’en-\n1 Déterminer le reste de la division eucli- tier 28xy5 soit divisible par 11 et 25.\ndienne par 8 de chacun des entiers suivants :\n104, 2613, 93765, 127645264. 13 Trouver les chiffres x et y pour que l’en-\ntier 9x23y soit divisible par 9 et 11.\n2 Déterminer le reste de la division\neuclidienne par 25 de chacun des entiers Maîtriser\nsuivants : 392, 1006, 1963, 6150, 2548175\n14 a) Quels sont les nombres dont la division\n3 Déterminer le chiffre x pour que le reste euclidienne par 5 donne un reste égal au\nde la division euclidienne de l’entier 7x62 quotient ?\npar 9 soit égal à 2. b) Quels sont les nombres dont le quotient de\nla division euclidienne par 4 est égal au triple\n4 Déterminer le chiffre u pour que l’entier du reste ?\n513u ait 4 comme reste de la division\neuclidienne par 11. 15 On divise 2005 et 5002 par un même\nentier naturel non nul n, on obtient respective-\n5 Déterminer le chiffre a pour que l’entier ment 10 et 32 pour restes. Trouver l’entier n.\n73a 2 soit divisible par 9.\n16 Trouver tous les entiers naturels dont la\n6 Déterminer les chiffres a et b pour que division euclidienne par 29 donne un reste\nl’entier 2a3b soit divisible par 4 et 3. égal au carré du quotient.\n7 Déterminer les chiffres a et b pour que le 17 Déterminer les entiers naturels a et b dont\nnombre 513ab soit divisible par 3 et 5. la différence est 709 et tels que le quotient et\nle reste de la division euclidienne de a par b\n8 a) Déterminer les chiffres a et b pour que sont respectivement 16 et 19.\nle nombre b421a soit divisible par 2 et 3.\nb) Déterminer les chiffres a et b pour que le 18 Soit N = 12345679\nnombre a1215b soit divisible par 2 et 9. A l’aide de votre calculatrice, calculer 9 N,\n18 N, 27 N et 36 N.\n9 Pour chacun des entiers suivants, vérifier Conjecturer et justifier votre conjecture.\ns’il est divisible par 11 et déterminer son reste\ndans la division euclidienne par 11 : 19 Trouver les entiers naturels n tels que\n175, 249, 517, 8291, 20042005, 1234321. n + 25 soit un entier.\nn+4\n10 Trouver le chiffre x pour que l’entier 4x73\n20 Déterminer les valeurs de l’entier naturel\nsoit divisible par 11.\np telles que p – 1 divise p + 11.\n11 Trouver les chiffres x et y pour que\nl’entier 13x45y soit divisible par 8 et 9.\nExercices etExercices lèmes\nproetbproblèmes\n21 Le dividende d’une division euclidienne a) L’école Farhat Hached comporte 158\nest inférieur à 5000. Le quotient de cette élèves. Combien fera-t-on de groupes ?\nmême division est égal à 93 et le reste à 51. Donner deux exemples de formation de ces\nDéterminer les valeurs possibles du dividende groupes.\net du diviseur. b) L’école Abou El kacem Chebbi comporte\n212 élèves. Combien peut-on faire de\n22 On donne deux entiers naturels a et b tels groupes?\nque a > b. On effectue, d’une part, la division Donner, pour chacune des solutions possibles\neuclidienne de a par a – b et d’autre part la un exemple de formation des groupes.\ndivision euclidienne de b par a – b.\nComparer les quotients respectifs et les restes 27 1) Quel jour de la semaine serons nous\nrespectifs de ces deux divisions. après 123 jours ?\n2) Quel jour de la semaine sera le 1er Janvier\n23 La combinaison secrète d’un coffre com- 2020 ?\nporte cinq chiffres différents. 3) Quel était le jour de la semaine de votre\nSachant que : anniversaire en 1998 ?\n• Le premier chiffre est pair ;\n• La somme des deux premiers chiffres est 15 ; 28 Quel est le plus petit entier naturel qui\n• Le troisième chiffre est la différence des donne pour reste 3 quand on le divise par 20,\ndeux premiers ; par 21 et par 35 ?\n• Le premier chiffre est le produit du\ntroisième par le quatrième ; 29 Quel est le plus petit entier naturel qui\n• Le nombre est divisible par 9. donne pour reste :\nSauriez- vous ouvrir le coffre ? 19 quand on le divise par 20\n20 quand on le divise par 21\n24 Soit n un entier naturel. 34 quand on le divise par 35 ?\nMontrer que l’entier A = n (n 2 + 5) est\ndivisible par 3. 30 Les dimensions d’une caisse parallélé-\npipédique sont 120 cm, 200 cm et 180 cm. On\n25 Soit n un entier naturel.\nveut réaliser des boites cubiques de même\nQuels sont les restes possibles de la division\narête a (a un entier) qui permettent de remplir\neuclidienne de n 2 par 3 ?\nentièrement la caisse.\nEn déduire, sans calcul, que le nombre\nQuelle doit être l’arête a pour utiliser le mini-\n59873120 2 – 1 est divisible par 3.\nmum de boites ?\n26 Un musée organise des visites guidées à\n31 n étant un entier naturel de 4 chiffres tel\nl’intention des élèves d’une même école.\nOn répartit les élèves en groupes, que :\néventuellement inégaux, dont aucun ne • n est divisible par 9\ncomporte plus de vingt-quatre élèves ni moins • les chiffres de l’entier n sont consécutifs et\nde vingt. classés par ordre croissant de gauche à droite.\nTrouver n.\nM a t h e t cMath ure\nu lettculture\nLe code barre\nLa plupart des produits de commerce comportent un code barre : c’est un code universel dit\ncode UPC (Universal Product Code), formé de 13 chiffres situés au-dessous d’une succession\nde barres parallèles lues à l’aide d’un appareil spécial. Dans ce code, les douze premiers\nchiffres désignent le pays, le fabriquant et le produit vendu, alors que le dernier représente la\nclé de contrôle.\nSi on ajoute les sept chiffres de rang impair du code et le triple de la somme des chiffres de\nrang pair du code, le résultat doit être divisible par 10.\nCi-contre le code barre du livre de mathématique de\ndeuxième année sciences.\nLes douze premiers chiffres d’un code barre sont 619220260141. Déterminer la clé de contrô-\nle de ce code.\nLes nombres amiables 220 284\nDeux entiers sont amiables si la somme des diviseurs propres de chacun est égale à l’autre.\nLes entiers 220 et 284 sont amiables, en effet :\n• Les diviseurs propres de 220 (autres que lui même) sont :\n1, 2, 4, 5, 10, 11, 20,22, 44, 55 et 110 dont la somme est 284.\n• Les diviseurs de 284 autres que lui même sont :\n1, 2, 4, 71 et 142 dont la somme n’est autre que 220.\nLe couple (220, 284) est cité par Pythagore et c’est le plus petit couple.\nLes grecs ne connaissaient que ce couple de nombres amiables.\nLes mathématiciens arabes vont en détecter d’autres : Al Farissi découvrit le couple\n(17296, 18416) et Al Yazdi découvrit le couple (9363584, 9437056).\nCes deux derniers couples sont connus respectivement comme couple de Fermat et Descartes,\nparce que ces derniers ils les ont rédécouvert plusieurs siècles après !\nDès le 9ème siècle le mathématicien arabe Thabit Ibn Qurra énonce le théorème fondamental\nsur les nombres amiables :\nSi p = 3 × 2 n-1 – 1, q = 3 × 2 n – 1 et r = 9 × 2 2n-1 – 1 sont tous trois premiers, alors les\ndeux nombres a = 2 n pq et b = 2 n r sont amiables.\nLes trois couples de nombres amiables, cités précédemment, sont obtenus pour n = 2,\nn = 4 et n = 7.\nThabit Ibn Qurra (836 – 901 Baghdad)\nMathématicien et astronome, il a apporté de nombreuses contributions dans tous les domaines\nmathématiques. Il est l’auteur d’un livre sur les nombres amiables.\n\nÀ calculer dans l'application : Suite des entiers pairs : u₁ = 2, r = 2. Calculer u₁₀ et S₁₀.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 13 (« Activité 13 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 2,
+        "min": 0,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "r",
+        "label": "r",
+        "unit": "—",
+        "value": 2,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 10,
+        "min": 4,
+        "max": 16,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 13 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   }
 ]

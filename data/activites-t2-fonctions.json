@@ -5,24 +5,45 @@
     "tome": 2,
     "kind": "activity",
     "activity": 1,
-    "solver": "fixed",
+    "solver": "affineFn",
     "title": "Activité 1",
     "difficulty": 1,
-    "statement": "Activité 1\nSoit ABCD un rectangle de périmètre 10 et de côté variable AB = x.\n1) Exprimer AD en fonction de x.\n2) Soit f la fonction telle que f(x) soit égale à l’aire du rectangle ABCD.\nDonner l’ensemble de définition de f et déterminer l’expression de f(x).\n3) Le plan est muni d’un repère orthogonal\nDans le graphique ci-dessous, est représentée la courbe C, ensemble de points M(x , f(x)),\navec x ∈ ]0 , 5[.\nPlacer sur la courbe C, les points M de coordonnés (x , f(x)), du tableau suivant.\n4) Par une lecture graphique déterminer la valeur maximale de f(x).\n5) Déterminer les dimensions des rectangles dont l’aire est égale à 4.\nDéfinition\nVocabulaire\nSi une fonction f, définie sur un ensemble E, a pour représentation graphique la courbe C, on\ndit que C a pour équation y = f(x), avec x ∈ E.\nx 0,5 1 1,5 2 2,5 3 3,5 4 4,5\nf(x)\nJ\nO I\nC\nLe plan est muni d’un repère\nSoit f une fonction définie sur un ensemble E.\nOn appelle représentation graphique de f, ou courbe représentative de f, l’ensemble des\npoints M de coordonnées (x , f(x)), où x appartient à E.\n( O , I , j )\nO, O I ,O J_i .\nEExplorerExplorer",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 1\nSoit ABCD un rectangle de périmètre 10 et de côté variable AB = x.\n1) Exprimer AD en fonction de x.\n2) Soit f la fonction telle que f(x) soit égale à l’aire du rectangle ABCD.\nDonner l’ensemble de définition de f et déterminer l’expression de f(x).\n3) Le plan est muni d’un repère orthogonal\nDans le graphique ci-dessous, est représentée la courbe C, ensemble de points M(x , f(x)),\navec x ∈ ]0 , 5[.\nPlacer sur la courbe C, les points M de coordonnés (x , f(x)), du tableau suivant.\n4) Par une lecture graphique déterminer la valeur maximale de f(x).\n5) Déterminer les dimensions des rectangles dont l’aire est égale à 4.\nDéfinition\nVocabulaire\nSi une fonction f, définie sur un ensemble E, a pour représentation graphique la courbe C, on\ndit que C a pour équation y = f(x), avec x ∈ E.\nx 0,5 1 1,5 2 2,5 3 3,5 4 4,5\nf(x)\nJ\nO I\nC\nLe plan est muni d’un repère\nSoit f une fonction définie sur un ensemble E.\nOn appelle représentation graphique de f, ou courbe représentative de f, l’ensemble des\npoints M de coordonnées (x , f(x)), où x appartient à E.\n( O , I , j )\nO, O I ,O J_i .\nEExplorerExplorer\n\nÀ calculer dans l'application : f(x) = −2x + 3. Calculer f(4).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 1 (« Activité 1 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 3,
+        "min": -6,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x₀",
+        "unit": "—",
+        "value": 4,
+        "min": -3,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 1 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "y",
+        "label": "f(x₀)",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -31,24 +52,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 2,
-    "solver": "fixed",
+    "solver": "quadFn",
     "title": "Activité 2",
     "difficulty": 1,
-    "statement": "Activité 2\nOn considère la fonction f définie sur IR par f(x) = 2 x 2 – 3 x. On désigne par C sa courbe\nreprésentative dans un repère\n1) Parmi les points suivants, quels sont ceux qui appartiennent à C :\nA(1 , –1) ; B( , 0) ; D( –2 , 2) ; E( , –0,23) ; F(–6 , 90) ?\n2) Quels sont les points de la courbe C, ayant pour ordonnée 5 ?",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 2\nOn considère la fonction f définie sur IR par f(x) = 2 x 2 – 3 x. On désigne par C sa courbe\nreprésentative dans un repère\n1) Parmi les points suivants, quels sont ceux qui appartiennent à C :\nA(1 , –1) ; B( , 0) ; D( –2 , 2) ; E( , –0,23) ; F(–6 , 90) ?\n2) Quels sont les points de la courbe C, ayant pour ordonnée 5 ?\n\nÀ calculer dans l'application : f(x) = x² − 3x − 4. Calculer f(2).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 2 (« Activité 2 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 1,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": -3,
+        "min": -6,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": -4,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x₀",
+        "unit": "—",
+        "value": 2,
+        "min": -3,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 2 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "y",
+        "label": "f(x₀)",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -57,24 +108,45 @@
     "tome": 2,
     "kind": "activity",
     "activity": 3,
-    "solver": "fixed",
+    "solver": "affineFn",
     "title": "Activité 3",
     "difficulty": 1,
-    "statement": "Activité 3\nParmi les courbes ci-dessous, indiquer celles qui représentent une fonction.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 3\nParmi les courbes ci-dessous, indiquer celles qui représentent une fonction.\n\nÀ calculer dans l'application : f(x) = 3x − 1. Calculer f(−2).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 3 (« Activité 3 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": -1,
+        "min": -6,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x₀",
+        "unit": "—",
+        "value": -2,
+        "min": -4,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 3 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "y",
+        "label": "f(x₀)",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -83,24 +155,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 4,
-    "solver": "fixed",
+    "solver": "quadFn",
     "title": "Activité 4",
     "difficulty": 1,
-    "statement": "Activité 4\nLa courbe ci-contre est la représentation graphique d’une fonction f.\nLire sur ce graphique :\n1) Les images de 1, 2 et par f.\n2) Les antécédents de 0.\n3) La valeur minimale de f(x).\n4) Le nombre de points d’intersection de la courbe\navec la droite d’équation y =\n5) L’ensemble de solutions de l’inéquation f(x) < 0.\nO I\nJ\nI\nJ\nO\nO, i ,j_i .\n3 2\n- 2",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 4\nLa courbe ci-contre est la représentation graphique d’une fonction f.\nLire sur ce graphique :\n1) Les images de 1, 2 et par f.\n2) Les antécédents de 0.\n3) La valeur minimale de f(x).\n4) Le nombre de points d’intersection de la courbe\navec la droite d’équation y =\n5) L’ensemble de solutions de l’inéquation f(x) < 0.\nO I\nJ\nI\nJ\nO\nO, i ,j_i .\n3 2\n- 2\n\nÀ calculer dans l'application : f(x) = −x² + 4x. Calculer f(1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 4 (« Activité 4 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": -1,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": 0,
+        "min": -6,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x₀",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 4 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "y",
+        "label": "f(x₀)",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -109,24 +211,45 @@
     "tome": 2,
     "kind": "activity",
     "activity": 5,
-    "solver": "fixed",
+    "solver": "affineFn",
     "title": "Activité 5",
     "difficulty": 1,
-    "statement": "Activité 5\nDans la figure ci-contre, on a représenté deux\nfonctions f et g.\n1) Lire l’image de –1 par f et g respectivement.\n2) Résoudre graphiquement\na) f(x) = 2 ; b) g(x) = 3 ;\nc) f(x) = g(x) ; d) f(x) < - 1.\n3) Comparer f(x) et g(x) lorsque x est un réel de l’intervalle [-3,1].\nMaximum et minimum",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 5\nDans la figure ci-contre, on a représenté deux\nfonctions f et g.\n1) Lire l’image de –1 par f et g respectivement.\n2) Résoudre graphiquement\na) f(x) = 2 ; b) g(x) = 3 ;\nc) f(x) = g(x) ; d) f(x) < - 1.\n3) Comparer f(x) et g(x) lorsque x est un réel de l’intervalle [-3,1].\nMaximum et minimum\n\nÀ calculer dans l'application : f(x) = 0,5x + 2. Calculer f(6).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 5 (« Activité 5 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 0.5,
+        "min": -4,
+        "max": 5,
+        "step": 0.5
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 2,
+        "min": -4,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x₀",
+        "unit": "—",
+        "value": 6,
+        "min": -3,
+        "max": 8,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 5 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "y",
+        "label": "f(x₀)",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -135,24 +258,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 6,
-    "solver": "fixed",
+    "solver": "quadFn",
     "title": "Activité 6",
     "difficulty": 1,
-    "statement": "Activité 6\nCi-contre, la courbe représentative de la fonction f\ndéfinie sur [-4 , 4] par f(x) =\n1) Déterminer graphiquement la valeur minimale de f(x)\nPour quelle valeur de x cette valeur minimale est-elle\natteinte ?\n2) Vérifier ce résultat par le calcul.\nDéfinition",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 6\nCi-contre, la courbe représentative de la fonction f\ndéfinie sur [-4 , 4] par f(x) =\n1) Déterminer graphiquement la valeur minimale de f(x)\nPour quelle valeur de x cette valeur minimale est-elle\natteinte ?\n2) Vérifier ce résultat par le calcul.\nDéfinition\n\nÀ calculer dans l'application : f(x) = 2x² − 8. Calculer f(3).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 6 (« Activité 6 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 2,
+        "min": -2,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 0,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": -8,
+        "min": -10,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x₀",
+        "unit": "—",
+        "value": 3,
+        "min": -3,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 6 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "y",
+        "label": "f(x₀)",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -161,24 +314,45 @@
     "tome": 2,
     "kind": "activity",
     "activity": 7,
-    "solver": "fixed",
+    "solver": "affineFn",
     "title": "Activité 7",
     "difficulty": 1,
-    "statement": "Activité 7\nCi-contre, la courbe représentative d’une fonction f\ndéfinie sur IR.\nPar une lecture graphique, déterminer le maximum\nM et le minimum m de f sur l’intervalle [0 , ].\nA-t-on f(x) ≤ M, pour tout x ∈ IR ?\nA-t-on f(x) ≥ m, pour tout x ∈ IR ?\nx2 +1\nx .\nSoit f une fonction définie sur un intervalle I et a un réel appartenant à I.\n•La fonction f admet un minimum en a sur l’intervalle I, lorsque :\nPour tout réel x de I, f(x) ≥ f(a). Le réel f(a) est le minimum de f sur I.\n•La fonction f admet un maximum en a sur l’intervalle I, lorsque :\nPour tout réel x de I, f(x) ≤ f(a). Le réel f(a) est le maximum de f sur I.\nO I\nJ",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 7\nCi-contre, la courbe représentative d’une fonction f\ndéfinie sur IR.\nPar une lecture graphique, déterminer le maximum\nM et le minimum m de f sur l’intervalle [0 , ].\nA-t-on f(x) ≤ M, pour tout x ∈ IR ?\nA-t-on f(x) ≥ m, pour tout x ∈ IR ?\nx2 +1\nx .\nSoit f une fonction définie sur un intervalle I et a un réel appartenant à I.\n•La fonction f admet un minimum en a sur l’intervalle I, lorsque :\nPour tout réel x de I, f(x) ≥ f(a). Le réel f(a) est le minimum de f sur I.\n•La fonction f admet un maximum en a sur l’intervalle I, lorsque :\nPour tout réel x de I, f(x) ≤ f(a). Le réel f(a) est le maximum de f sur I.\nO I\nJ\n\nÀ calculer dans l'application : f(x) = −x + 5. Calculer f(5).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 7 (« Activité 7 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": -1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 5,
+        "min": -4,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x₀",
+        "unit": "—",
+        "value": 5,
+        "min": -3,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 7 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "y",
+        "label": "f(x₀)",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -187,24 +361,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 8,
-    "solver": "fixed",
+    "solver": "quadFn",
     "title": "Activité 8",
     "difficulty": 1,
-    "statement": "Activité 8\nOn considère la fonction f définie sur IR par f(x) = x 2 + 2 x – 3.\na) Calculer f(–1), puis f(x) – f(–1).\nb) En déduire que f admet un minimum que l’on précisera.\nSens de variations d’une fonction",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 8\nOn considère la fonction f définie sur IR par f(x) = x 2 + 2 x – 3.\na) Calculer f(–1), puis f(x) – f(–1).\nb) En déduire que f admet un minimum que l’on précisera.\nSens de variations d’une fonction\n\nÀ calculer dans l'application : f(x) = x² + x − 6. Calculer f(−2).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 8 (« Activité 8 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 1,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": -6,
+        "min": -10,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x₀",
+        "unit": "—",
+        "value": -2,
+        "min": -4,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 8 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "y",
+        "label": "f(x₀)",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -213,24 +417,45 @@
     "tome": 2,
     "kind": "activity",
     "activity": 9,
-    "solver": "fixed",
+    "solver": "affineFn",
     "title": "Activité 9",
     "difficulty": 1,
-    "statement": "Activité 9\nLa courbe ci-contre, est la représentation graphique\nd’une fonction f définie sur [–4 , 7].\n1) Soient a et b deux réels de l’intervalle [–4 , –1] tels\nque a ≤ b. Comparer f(a) et f(b).\n2) Reprendre la même question lorsque :\na) a et b appartiennent à [–1 , 4] et a ≤ b.\nb) a et b appartiennent à [4 , 7] et a ≤ b.\nDéfinition\nVocabulaire\nUne fonction est dite monotone sur un intervalle I, si elle est croissante sur I ou décroissante sur I.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 9\nLa courbe ci-contre, est la représentation graphique\nd’une fonction f définie sur [–4 , 7].\n1) Soient a et b deux réels de l’intervalle [–4 , –1] tels\nque a ≤ b. Comparer f(a) et f(b).\n2) Reprendre la même question lorsque :\na) a et b appartiennent à [–1 , 4] et a ≤ b.\nb) a et b appartiennent à [4 , 7] et a ≤ b.\nDéfinition\nVocabulaire\nUne fonction est dite monotone sur un intervalle I, si elle est croissante sur I ou décroissante sur I.\n\nÀ calculer dans l'application : f(x) = −2x + 3. Calculer f(4).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 9 (« Activité 9 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 3,
+        "min": -6,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x₀",
+        "unit": "—",
+        "value": 4,
+        "min": -3,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 9 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "y",
+        "label": "f(x₀)",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -239,24 +464,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 10,
-    "solver": "fixed",
+    "solver": "quadFn",
     "title": "Activité 10",
     "difficulty": 1,
-    "statement": "Activité 10\nDécrire les variations de f dans\nchacun des cas suivants :\nSoit f une fonction définie sur un ensemble E et I un intervalle inclus dans E.\n•La fonction f est croissante sur l’intervalle I si, pour tous réels a et b de I tels que a ≤ b,\nf(a) ≤ f(b).\n•La fonction f est décroissante sur l’intervalle I si, pour tous réels a et b de I tels que a ≤ b,\nf(a) ≥ f(b).\n•La fonction f est constante sur l’intervalle I si, pour tous réels a et b de I, f(a) = f(b).\nEExplorerExplorer",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 10\nDécrire les variations de f dans\nchacun des cas suivants :\nSoit f une fonction définie sur un ensemble E et I un intervalle inclus dans E.\n•La fonction f est croissante sur l’intervalle I si, pour tous réels a et b de I tels que a ≤ b,\nf(a) ≤ f(b).\n•La fonction f est décroissante sur l’intervalle I si, pour tous réels a et b de I tels que a ≤ b,\nf(a) ≥ f(b).\n•La fonction f est constante sur l’intervalle I si, pour tous réels a et b de I, f(a) = f(b).\nEExplorerExplorer\n\nÀ calculer dans l'application : f(x) = x² − 3x − 4. Calculer f(2).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 10 (« Activité 10 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 1,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": -3,
+        "min": -6,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": -4,
+        "min": -8,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x₀",
+        "unit": "—",
+        "value": 2,
+        "min": -3,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 10 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "y",
+        "label": "f(x₀)",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -265,24 +520,45 @@
     "tome": 2,
     "kind": "activity",
     "activity": 11,
-    "solver": "fixed",
+    "solver": "affineFn",
     "title": "Activité 11",
     "difficulty": 2,
-    "statement": "Activité 11\nSoit f la fonction définie sur IR par f(x) = – x2 + 4 x + 1.\n1) Soient a et b deux réels de l’intervalle ]-∞ , 2], tels que a ≤ b.\nComparer f(a) et f(b). En déduire le sens de variation de f sur ]- ∞ , 2].\n2) Etudier les variations de f sur l’intervalle [2 , +∞ [.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 11\nSoit f la fonction définie sur IR par f(x) = – x2 + 4 x + 1.\n1) Soient a et b deux réels de l’intervalle ]-∞ , 2], tels que a ≤ b.\nComparer f(a) et f(b). En déduire le sens de variation de f sur ]- ∞ , 2].\n2) Etudier les variations de f sur l’intervalle [2 , +∞ [.\n\nÀ calculer dans l'application : f(x) = 3x − 1. Calculer f(−2).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 11 (« Activité 11 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": -1,
+        "min": -6,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x₀",
+        "unit": "—",
+        "value": -2,
+        "min": -4,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 11 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "y",
+        "label": "f(x₀)",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -291,24 +567,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 12,
-    "solver": "fixed",
+    "solver": "quadFn",
     "title": "Activité 12",
     "difficulty": 2,
-    "statement": "Activité 12\nDans la figure ci-dessous, ABC est un triangle isocèle, de sommet principal A tel que AB = 5\net BC = 6. Le point M se déplace sur le segment [AB], privé des deux points A et B. N et Q\nsont deux points respectivement de [AC] et de [BC], tels que MNQB soit un parallélogramme.\nOn pose AM = x.\n1) Sur le graphique ci-dessous, les courbes C\n1, C2, C3 et C4 représentent, les aires, en fonction\nde x, des triangles AMN, NCQ, ABC et celle du parallélogramme MNQB, lorsque M se déplace\nde A vers B.\na) Comment varie l’aire du triangle AMN ? Quelle est la courbe associée à cette aire ?\nb) Reprendre les deux questions précédentes pour chacun des triangles NCQ et ABC.\n2)a) Déterminer graphiquement la valeur de x pour laquelle l’aire du parallélogramme est\nmaximale.\nO I\nJ\nC 4\nAAssimilerAssimiler : 3-4-5\nb) Dans ce cas, que peut-on dire des aires des triangles AMN et NCQ ?\nComparer alors l’aire du parallélogramme MNQB à celle du triangle ABC.\nParité et symétrie",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 12\nDans la figure ci-dessous, ABC est un triangle isocèle, de sommet principal A tel que AB = 5\net BC = 6. Le point M se déplace sur le segment [AB], privé des deux points A et B. N et Q\nsont deux points respectivement de [AC] et de [BC], tels que MNQB soit un parallélogramme.\nOn pose AM = x.\n1) Sur le graphique ci-dessous, les courbes C\n1, C2, C3 et C4 représentent, les aires, en fonction\nde x, des triangles AMN, NCQ, ABC et celle du parallélogramme MNQB, lorsque M se déplace\nde A vers B.\na) Comment varie l’aire du triangle AMN ? Quelle est la courbe associée à cette aire ?\nb) Reprendre les deux questions précédentes pour chacun des triangles NCQ et ABC.\n2)a) Déterminer graphiquement la valeur de x pour laquelle l’aire du parallélogramme est\nmaximale.\nO I\nJ\nC 4\nAAssimilerAssimiler : 3-4-5\nb) Dans ce cas, que peut-on dire des aires des triangles AMN et NCQ ?\nComparer alors l’aire du parallélogramme MNQB à celle du triangle ABC.\nParité et symétrie\n\nÀ calculer dans l'application : f(x) = −x² + 4x. Calculer f(1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 12 (« Activité 12 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": -1,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": 0,
+        "min": -6,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x₀",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 12 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "y",
+        "label": "f(x₀)",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -317,24 +623,45 @@
     "tome": 2,
     "kind": "activity",
     "activity": 13,
-    "solver": "fixed",
+    "solver": "affineFn",
     "title": "Activité 13",
     "difficulty": 2,
-    "statement": "Activité 13\nSoit f la fonction définie sur [–4 , 4] par f(x) =\n1) a) Vérifier que si x ∈ [–4 , 4] alors –x ∈ [–4 , 4].\nb) Comparer f(–x) et f(x).\n2) On muni le plan d’un repère orthogonal\net on désigne par C la courbe représentative de f dans ce repère.\na) Soit M un point de C d'abscisse x et N le point de\nC d'abscisse –x.\nb) Montrer que les points M et N sont symétriques\npar rapport à l'axe des ordonnées.\n3) On a représenté ci-contre une partie de la courbe C de f.\nCopier et compléter la courbe C.\nDéfinition\nO, O I ,O J_i .\nSoit f une fonction définie sur E.\nOn dit que f est paire si, pour tout réel x de E, on a –x ∈ E et f(–x) = f(x).\nEExplorerExplorer\nx2 + 1\nConséquence\nDans un repère orthogonal, la courbe d'une fonction paire est symétrique par rapport à l'axe\ndes ordonnées.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 13\nSoit f la fonction définie sur [–4 , 4] par f(x) =\n1) a) Vérifier que si x ∈ [–4 , 4] alors –x ∈ [–4 , 4].\nb) Comparer f(–x) et f(x).\n2) On muni le plan d’un repère orthogonal\net on désigne par C la courbe représentative de f dans ce repère.\na) Soit M un point de C d'abscisse x et N le point de\nC d'abscisse –x.\nb) Montrer que les points M et N sont symétriques\npar rapport à l'axe des ordonnées.\n3) On a représenté ci-contre une partie de la courbe C de f.\nCopier et compléter la courbe C.\nDéfinition\nO, O I ,O J_i .\nSoit f une fonction définie sur E.\nOn dit que f est paire si, pour tout réel x de E, on a –x ∈ E et f(–x) = f(x).\nEExplorerExplorer\nx2 + 1\nConséquence\nDans un repère orthogonal, la courbe d'une fonction paire est symétrique par rapport à l'axe\ndes ordonnées.\n\nÀ calculer dans l'application : f(x) = 0,5x + 2. Calculer f(6).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 13 (« Activité 13 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 0.5,
+        "min": -4,
+        "max": 5,
+        "step": 0.5
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 2,
+        "min": -4,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x₀",
+        "unit": "—",
+        "value": 6,
+        "min": -3,
+        "max": 8,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 13 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "y",
+        "label": "f(x₀)",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -343,24 +670,45 @@
     "tome": 2,
     "kind": "activity",
     "activity": 15,
-    "solver": "fixed",
+    "solver": "affineFn",
     "title": "Activité 15",
     "difficulty": 2,
-    "statement": "Activité 15\nSoit f la fonction définie sur [–1 , 1] par f(x) = x 3.\n1) a) Vérifier que si x ∈ [–1 , 1] alors – x ∈ [–1 , 1].\nb) Comparer f(–x) et f(x).\n2) On muni le plan d’un repère orthogonal\net on désigne par C la courbe représentative de f dans ce repère.\na) Soit M un point de C d'abscisse x et N le point de C\nd'abscisse – x.\nMontrer que les points M et N sont symétriques par rapport à l'origine O.\nb) On a représenté ci-contre une partie de la courbe C de f. Copier et compléter cette courbe.\nDéfinition\nConséquence\nLa courbe d'une fonction impaire est symétrique par rapport à l’origine du repère.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 15\nSoit f la fonction définie sur [–1 , 1] par f(x) = x 3.\n1) a) Vérifier que si x ∈ [–1 , 1] alors – x ∈ [–1 , 1].\nb) Comparer f(–x) et f(x).\n2) On muni le plan d’un repère orthogonal\net on désigne par C la courbe représentative de f dans ce repère.\na) Soit M un point de C d'abscisse x et N le point de C\nd'abscisse – x.\nMontrer que les points M et N sont symétriques par rapport à l'origine O.\nb) On a représenté ci-contre une partie de la courbe C de f. Copier et compléter cette courbe.\nDéfinition\nConséquence\nLa courbe d'une fonction impaire est symétrique par rapport à l’origine du repère.\n\nÀ calculer dans l'application : f(x) = −x + 5. Calculer f(5).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 15 (« Activité 15 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": -1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 5,
+        "min": -4,
+        "max": 9,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x₀",
+        "unit": "—",
+        "value": 5,
+        "min": -3,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 15 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "y",
+        "label": "f(x₀)",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -369,24 +717,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 16,
-    "solver": "fixed",
+    "solver": "quadFn",
     "title": "Activité 16",
     "difficulty": 2,
-    "statement": "Activité 16\nSoit f une fonction de IR vers IR. Déterminer dans chacun des cas suivants l’ensemble de\ndéfinition de f puis dire si la fonction est paire, impaire ou ni paire ni impaire.\na) f(x) = ; b) f(x) = ; c) f(x) =\nd) f(x) = x + ; e) f(x) = x\n2 + .",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 16\nSoit f une fonction de IR vers IR. Déterminer dans chacun des cas suivants l’ensemble de\ndéfinition de f puis dire si la fonction est paire, impaire ou ni paire ni impaire.\na) f(x) = ; b) f(x) = ; c) f(x) =\nd) f(x) = x + ; e) f(x) = x\n2 + .\n\nÀ calculer dans l'application : f(x) = x² + x − 6. Calculer f(−2).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 16 (« Activité 16 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": 1,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "c",
+        "label": "c",
+        "unit": "—",
+        "value": -6,
+        "min": -10,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x₀",
+        "unit": "—",
+        "value": -2,
+        "min": -4,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 16 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "y",
+        "label": "f(x₀)",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -395,24 +773,45 @@
     "tome": 2,
     "kind": "activity",
     "activity": 17,
-    "solver": "fixed",
+    "solver": "affineFn",
     "title": "Activité 17",
     "difficulty": 2,
-    "statement": "Activité 17\nLa courbe ci-contre, est une partie de la\nreprésentation graphique d’une fonction\nf définie sur [–5,5].\nRecopier et compléter cette représentation\ngraphique dans chacun des cas suivants :\na) f est paire. b) f est impaire.\n,, .OO IO J_i\nSoit f une fonction définie sur E.\nOn dit que f est impaire si, pour tout réel x de E, on a –x ∈ E et f(–x) = –f(x).\nx-2\nx\nx\nx\nx -2\nx x1- 2\nSoit f la fonction de IR vers IR définie par f(x) =\na) Déterminer l’ensemble de définition de la fonction f.\nb) Calculer les images de –2, 0 et par f.\nc) Déterminer les antécédents du réel 2 par f.\nDans la figure ci-contre, la représentation graphique d’une fonction f définie sur [-5,6].\n1) Lire sur ce graphique\na) Les images des réels – 2, 0 et 2 par f.\nb) Les antécédents du réel 1 par f.\nc) La valeur minimale de f(x).\n2) Résoudre graphiquement l’inéquation f(x) > 1.\nDans les graphiques ci-dessous, les courbes représentatives de trois fonctions f, g et h\ndéfinies respectivement sur [–3,–1] U [1,4], [–3,1] et [–3, 3].\nDécrire les variations de chaque fonction.\nDans la figure ci-contre, deux carrés de même centre et de côtés respectifs 4 et x ;\noù x est un réel de l’intervalle ]0 , 4[.\nOn désigne par A(x) l’aire de la région grisée et par P(x) le\npérimètre du carré en blanc.\nSans effectuer de calcul, déterminer le sens de variation des\nfonctions A et P, sur l’intervalle ]0 , 4[.\nx4- 2\nSoit f la fonction définie sur [-5 , 5] par f(x) = |x| - 2.\na) Montrer que f est décroissante sur [-5 , 0] et croissante sur [0 , 5].\nb) Représenter graphiquement f.\nDire, pour chacune des fonctions f, g et h représentées ci-dessous, si elle est paire,\nimpaire ou ni paire ni impaire.\nSoit f la fonction définie f(x) =\na) Déterminer l’ensemble de définition de f.\nb) Montrer que f est paire.\nc) Copier et compléter la courbe de f dont une\npartie est donnée ci-contre.\n6-4 -2 -\n2-\n.x1-\nReprésentation graphique d’une fonction\nSoit f une fonction définie sur un ensemble E. On désigne par C sa courbe représentative\ndans un repère du plan.\n♦ C est l’ensemble de points de coordonnées (x , f(x)), avec x ∈ E.\n♦ Soit M(x , y) un point du plan.\nM(x , y) ∈ C si et seulement si (x ∈ E et y = f(x)).\nMaximum et minimum\nSoit f une fonction définie sur un intervalle I et a un réel de I.\n♦ f(a) est un minimum de f sur l’intervalle I si et seulement si f(x) ≥ f(a), pour tout x de I.\n♦ f(a) est un maximum de f sur l’intervalle I si et seulement si f(x) ≤ f(a), pour tout x de I\nParité et symétrie\nSoit f une fonction définie sur un ensemble E. On désigne par C sa courbe représentative\ndans un repère orthogonal du plan.\n♦ f est une fonction paire si et seulement si (Pour tout x ∈ E, -x ∈ E et f(-x) = f(x)).\nLa courbe d’une fonction paire est symétrique par rapport à l’axe des ordonnées.\n♦ f est une fonction impaire si et seulement si (Pour tout x ∈ E, -x ∈ E et f(-x) = - f(x)).\nLa courbe d’une fonction impaire est symétrique par rapport à l’origine du repère.\nDévelopper ses compéDévelopper ses compétences\nProblème de récipients\nLes quatre récipients ci-dessous, ont la même hauteur et la même capacité de 20 litres. On les\nremplit un à un à l’aide d’un robinet à débit constant.\nOn a représenté, pour chaque récipient, la hauteur de l’eau (en centimètres) dans le récipient\nen fonction du temps de remplissage écoulé (en minutes).\na) Déterminer la hauteur de ces récipients.\nb) Quel est le débit du robinet (en litres par minute)\nc) Associer chaque récipient à la courbe qui lui correspond.\nRecherche d’un maximum et d’un minimum\nOn considère la fonction f définie sur IR par f(x) =\nOn se propose de déterminer, si elles existent, la valeur maximale et la valeur minimale de f.\n1) Soit a et b deux réels positifs tels que a < b.\na) Montrer que f(b) – f(a) a le même signe que 1 – ab.\nb) En déduire le sens de variation de f sur [0 , 1] et sur [1 , + ∞ [.\nc) Déterminer alors la valeur maximale de f sur [0 , + ∞ [ puis sur IR.\n2) Déterminer la valeur minimale de f sur IR.\nIndications\n1) a) Factoriser f(b) – f(a).\nb) Déterminer, pour chaque intervalle, le signe de f(b) – f(a).\nc) Remarquer que si x ∈ ]–∞ , 0] alors f(x) < 0.\n2) Exploiter la parité de f.\nO I O I\nO I O I\nx2 +1\nx .\nUtiliser les TIC\nUtiliser les TIC\nExpérimenter à l’aide d’un logiciel de géométrie\nABCD est un trapèze de bases [AB] et [CD], tel que AB = 1, BC = 2 et CD = 3.\nM un point du segment [BC]. La parallèle à [CD] passant par M, coupe [AD] en N.\nOn se propose d’étudier la variation de l’aire du polygone MNDC, lorsque le point M varie sur\nle segment [BC].\n- Construire un trapèze ABCD de bases [AB] et [CD], tel que AB = 1, BC = 2 et CD = 3.\n- Marquer un point M sur le segment [BC] (point sur objet) et construire le point N, intersec-\ntion de [AD] et la parallèle à (CD) passant par M.\n- Construire le polygone MNDC.\n- Mesurer la longueur du segment [CM] et l’aire du polygone MNDC.\n- Faire apparaître les axes du repère du logiciel.\n- Reporter la longueur du segment [CM] sur l’axe des abscisses et l’aire du polygone sur l’axe\ndes ordonnées (report de mesure).\n- Marquer dans le repère, le point M’ dont les coordonnées sont les valeurs des mesures repor-\ntées sur les axes (intersection des perpendiculaires aux axes).\n- Déplacer le point M sur le segment [BC] et observer où varie le point M’.\n- Utiliser le menu du logiciel, pour déterminer le lieu du point M’ lorsque le point M varie.\n- déterminer un équation du lieu du point M’ (coordonnées ou équation).\nExercices et problèmesExercices et problèmes\nAppliquer\nSoit f une fonction de IR vers IR.\nDéterminer l’ensemble de définition\nde f dans chacun des cas suivants :\na) f(x) = ; b) f(x) =\nc) f(x) = ; d) f(x) =\nSoit f la fonction définie sur IR par\nDéterminer les antécédents éventuels de\nchacun des réels 0, 1 et –2.\nSoit f la fonction de IR vers IR, définie par\na) Déterminer l’ensemble de définition de f.\nb) Parmi les points suivants, indiquer ceux qui\nsont situés sur la courbe de f.\nA(2,0) , B(3,1) , C(0, – ) , D(4, ).\nDans le graphique ci-dessous, la courbe\nreprésentative d’une fonction f définie sur\n[–3 , 2].\n1) Lire sur cette courbe :\na) f(–1) , f(0) et f(– ).\nb) La valeur maximale de f(x).\nc) Le nombre d’antécédents de – .\n2) Résoudre graphiquement :\na) Les équations f(x) = 1 et f(x) = 0.\nb) L’inéquation f(x) < 0.\nSoit f la fonction définie sur [0,5[ par\nf(x) = |x – 2|.\nMontrer que f est décroissante sur [0,2] et\ncroissante sur [2,5].\nRépondre par vraie ou faux :\na) La fonction f définie sur [– 2 , 3] par\nf(x) = x\n2 est paire.\nb) La fonction f définie sur [–1, 0[ U ]0 , 1]\npar f(x) = est impaire.\nc) La fonction f définie sur IR par f(x) = x |x|\nn’est ni paire ni impaire.\nMaîtriser\nDans le graphique ci-dessous, sont repré-\nsentées les courbes représentatives de deux\nfonctions f et g définies sur [–3,7].\nRésoudre graphiquement.\na) f(x) = 1 ; b) g(x) = -2\nc) f(x) = g(x) ; d) f(x) < 1\ne) –2 < g(x) < 1 ; f) f(x) ≥ g(x).\nSoit f la fonction définie par\nf(x) = . On désigne par C la courbe\nreprésentative de la fonction f dans un repère\northonormé.\n1) a) Donner l’ensemble de définition de f.\nb) Montrer que f est paire.\n2) Etudier les variations de f sur l’intervalle\n[0 , 3].\n2- x x2 +2 x\nx-1\nx x- x\n1 .\nf( x ) = x2 +1\nx .\nf( x ) = x-3\nx-2 .\n1 2\nx\n9-x 2\n3) a) Montrer que si M est un point de C, alors\nOM = 3.\nb) Construire alors la courbe de f.\nSoit f une fonction croissante sur [3 , 7] et\ndécroissante sur [7 , 10].\na) Comparer f(4) et f(5).\nb) Sachant que f(3) = 1 et que f(8) = 0,\ncomparer f(4) et f(10).\nSoit f une fonction croissante sur [–1 , 5].\na) Soit g la fonction définie sur [–1 , 5] par\ng(x) = f(x) + 1.\nMontrer que g est croissante sur [–1 , 5]\nb) Soit h la fonction définie sur [–1 , 5] par\nh(x) = – f(x).\nDéterminer le sens de variations de h.\nEtudier la parité de chacune des fonctions\nf, g et h définies par\nf(x) = x\n2 + x ,\net\nSoient f et g deux fonctions définies sur\n[–2 , 2] et [–6 , 6] respectivement.\nCopier et compléter la courbe de chaque\nfonction sachant que f est paire et que\ng est impaire.\nOn se propose de déterminer parmi les\nrectangles d’aire 4 cm\n2 celui qui a le plus petit\npérimètre.\nOn désigne par x la longueur d’un côté de ce\nrectangle et on note f la fonction qui à x asso-\ncie le périmètre du rectangle.\n1)a) Quel est l’ensemble de définition de f ?\nb) Montrer que\n2) Soient a et b deux réels de l’intervalle\n]0,+ ∞ [ tels que a < b.\na) Montrer que\nb) En déduire les variations de f sur chacun\ndes intervalles ]0 , 2] et [2 , + ∞ [.\n3) Conclure.\nExercices et problèmesExercices et problèmes\nO I\nJ\ng( x ) = x -2\nx\nx1-\nf( x ) = 2 x +x\n8 .\n() () .fb fa ab\nba a b24-= --]] gg\nMath et cultureMath et culture\nFractions égyptiennes\nOn partage bien les chevaux\nAujourd’hui, l’étude des fractions égyptiennes est un domaine restreint de la théorie des nombres\noù plusieurs problèmes fondamentaux ne sont pas encore résolus. Certains d’entre eux sont à la\nportée de l’amateur averti. Prenons le casse-tête arabe de l’homme qui voulait qu’à sa mort on par-\ntage ses 11 chevaux entre ses héritiers de sorte que l’aîné en ait la moitié, son deuxième fils un\nquart et le cadet un sixième. Lorsqu’il mourut, le notaire fut bien embarrassé pour exécuter les\nvolontés du défunt :\nUn cheval a bien peu de valeur une fois en morceaux ! Un parent informé du problème le résolut\nen prêtant un de ses chevaux. Les 12 destriers furent alors répartis selon les vœux du testament,\nles trois fils recevant six, trois et deux chevaux. L’altruiste récupéra le cheval, le sien, qui restait :\nun altruisme bien calculé !\nCe casse-tête fut exposé de façons diverses et peut être généralisé à un plus grand nombre d’héri-\ntiers et un plus grand nombre de chevaux, prêtés, puis restitués. En respectant la forme tradition-\nnelle de l’histoire, avec trois héritiers et un cheval prêté, combien existe-t-il de variantes dans le\nnombre des chevaux à diviser et les proportions souhaitées dans le testament du père ? Une infi-\nnité ? Que nenni,\nIl n’y en a que sept ! Ce sont les sept solutions de l’équation diophantienne (parce qu’à coefficients\net solutions entières) n/n+1 = 1/a + 1/b + 1/c, où a, b etc sont des entiers positifs distincts respec-\ntant la condition ( a<b<c ) et ( n+1 ) le plus petit commun multiple de a, b et c (pour l’intégrité des\nchevaux !).\nD’abord, on remarque que a doit être égal à deux. En effet, si a est supérieur à deux, la valeur mini-\nmale de (n+1) est 12 obtenue pour a=3, b=4 et c=6. En conséquence, n/n+1 doit valoir au mois\n11/12. Cependant, la somme 1/3+ 1/4 +1/5 est égale à 47/60 qui est inférieur à 11/12, et si l’on aug-\nmente les dénominateurs, la somme sera encore plus petite. (3, 4, 6) n’étant pas solution de l’équa-\ntion, a n’est pas plus grand que 2. Un argument semblable montre que b doit être égal à 3 ou à 4.\nAvec ce renseignement, on détermine toutes les valeurs possibles de c (voir figure ci-dessous).\nD’après le magazine « Dossier pour la Science » N° 47\nAvril / Juin 2005\nn a b c\n7 2 4 8\n11 2 4 6\n11 2 3 12\n17 2 3 9\n19 2 4 5\n23 2 3 8\n41 2 3 7\nLE PARTAGE de n chevaux\nentre trois héritiers de façon à ce\nque leurs parts respectent les\nproportions suivantes 1/a, 1/b et\n1/c, n’admet que sept solutions.\nDans chaque cas, un cheval est\nprêté par un tiers, qui le récupère\naprès le partage.\nPour démarrerPour démarrerPour démarrerPour démarrer\nLes miroirs feraient bien de reflechir avant de renvoyer les images\nJean Cocteau",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 17\nLa courbe ci-contre, est une partie de la\nreprésentation graphique d’une fonction\nf définie sur [–5,5].\nRecopier et compléter cette représentation\ngraphique dans chacun des cas suivants :\na) f est paire. b) f est impaire.\n,, .OO IO J_i\nSoit f une fonction définie sur E.\nOn dit que f est impaire si, pour tout réel x de E, on a –x ∈ E et f(–x) = –f(x).\nx-2\nx\nx\nx\nx -2\nx x1- 2\nSoit f la fonction de IR vers IR définie par f(x) =\na) Déterminer l’ensemble de définition de la fonction f.\nb) Calculer les images de –2, 0 et par f.\nc) Déterminer les antécédents du réel 2 par f.\nDans la figure ci-contre, la représentation graphique d’une fonction f définie sur [-5,6].\n1) Lire sur ce graphique\na) Les images des réels – 2, 0 et 2 par f.\nb) Les antécédents du réel 1 par f.\nc) La valeur minimale de f(x).\n2) Résoudre graphiquement l’inéquation f(x) > 1.\nDans les graphiques ci-dessous, les courbes représentatives de trois fonctions f, g et h\ndéfinies respectivement sur [–3,–1] U [1,4], [–3,1] et [–3, 3].\nDécrire les variations de chaque fonction.\nDans la figure ci-contre, deux carrés de même centre et de côtés respectifs 4 et x ;\noù x est un réel de l’intervalle ]0 , 4[.\nOn désigne par A(x) l’aire de la région grisée et par P(x) le\npérimètre du carré en blanc.\nSans effectuer de calcul, déterminer le sens de variation des\nfonctions A et P, sur l’intervalle ]0 , 4[.\nx4- 2\nSoit f la fonction définie sur [-5 , 5] par f(x) = |x| - 2.\na) Montrer que f est décroissante sur [-5 , 0] et croissante sur [0 , 5].\nb) Représenter graphiquement f.\nDire, pour chacune des fonctions f, g et h représentées ci-dessous, si elle est paire,\nimpaire ou ni paire ni impaire.\nSoit f la fonction définie f(x) =\na) Déterminer l’ensemble de définition de f.\nb) Montrer que f est paire.\nc) Copier et compléter la courbe de f dont une\npartie est donnée ci-contre.\n6-4 -2 -\n2-\n.x1-\nReprésentation graphique d’une fonction\nSoit f une fonction définie sur un ensemble E. On désigne par C sa courbe représentative\ndans un repère du plan.\n♦ C est l’ensemble de points de coordonnées (x , f(x)), avec x ∈ E.\n♦ Soit M(x , y) un point du plan.\nM(x , y) ∈ C si et seulement si (x ∈ E et y = f(x)).\nMaximum et minimum\nSoit f une fonction définie sur un intervalle I et a un réel de I.\n♦ f(a) est un minimum de f sur l’intervalle I si et seulement si f(x) ≥ f(a), pour tout x de I.\n♦ f(a) est un maximum de f sur l’intervalle I si et seulement si f(x) ≤ f(a), pour tout x de I\nParité et symétrie\nSoit f une fonction définie sur un ensemble E. On désigne par C sa courbe représentative\ndans un repère orthogonal du plan.\n♦ f est une fonction paire si et seulement si (Pour tout x ∈ E, -x ∈ E et f(-x) = f(x)).\nLa courbe d’une fonction paire est symétrique par rapport à l’axe des ordonnées.\n♦ f est une fonction impaire si et seulement si (Pour tout x ∈ E, -x ∈ E et f(-x) = - f(x)).\nLa courbe d’une fonction impaire est symétrique par rapport à l’origine du repère.\nDévelopper ses compéDévelopper ses compétences\nProblème de récipients\nLes quatre récipients ci-dessous, ont la même hauteur et la même capacité de 20 litres. On les\nremplit un à un à l’aide d’un robinet à débit constant.\nOn a représenté, pour chaque récipient, la hauteur de l’eau (en centimètres) dans le récipient\nen fonction du temps de remplissage écoulé (en minutes).\na) Déterminer la hauteur de ces récipients.\nb) Quel est le débit du robinet (en litres par minute)\nc) Associer chaque récipient à la courbe qui lui correspond.\nRecherche d’un maximum et d’un minimum\nOn considère la fonction f définie sur IR par f(x) =\nOn se propose de déterminer, si elles existent, la valeur maximale et la valeur minimale de f.\n1) Soit a et b deux réels positifs tels que a < b.\na) Montrer que f(b) – f(a) a le même signe que 1 – ab.\nb) En déduire le sens de variation de f sur [0 , 1] et sur [1 , + ∞ [.\nc) Déterminer alors la valeur maximale de f sur [0 , + ∞ [ puis sur IR.\n2) Déterminer la valeur minimale de f sur IR.\nIndications\n1) a) Factoriser f(b) – f(a).\nb) Déterminer, pour chaque intervalle, le signe de f(b) – f(a).\nc) Remarquer que si x ∈ ]–∞ , 0] alors f(x) < 0.\n2) Exploiter la parité de f.\nO I O I\nO I O I\nx2 +1\nx .\nUtiliser les TIC\nUtiliser les TIC\nExpérimenter à l’aide d’un logiciel de géométrie\nABCD est un trapèze de bases [AB] et [CD], tel que AB = 1, BC = 2 et CD = 3.\nM un point du segment [BC]. La parallèle à [CD] passant par M, coupe [AD] en N.\nOn se propose d’étudier la variation de l’aire du polygone MNDC, lorsque le point M varie sur\nle segment [BC].\n- Construire un trapèze ABCD de bases [AB] et [CD], tel que AB = 1, BC = 2 et CD = 3.\n- Marquer un point M sur le segment [BC] (point sur objet) et construire le point N, intersec-\ntion de [AD] et la parallèle à (CD) passant par M.\n- Construire le polygone MNDC.\n- Mesurer la longueur du segment [CM] et l’aire du polygone MNDC.\n- Faire apparaître les axes du repère du logiciel.\n- Reporter la longueur du segment [CM] sur l’axe des abscisses et l’aire du polygone sur l’axe\ndes ordonnées (report de mesure).\n- Marquer dans le repère, le point M’ dont les coordonnées sont les valeurs des mesures repor-\ntées sur les axes (intersection des perpendiculaires aux axes).\n- Déplacer le point M sur le segment [BC] et observer où varie le point M’.\n- Utiliser le menu du logiciel, pour déterminer le lieu du point M’ lorsque le point M varie.\n- déterminer un équation du lieu du point M’ (coordonnées ou équation).\nExercices et problèmesExercices et problèmes\nAppliquer\nSoit f une fonction de IR vers IR.\nDéterminer l’ensemble de définition\nde f dans chacun des cas suivants :\na) f(x) = ; b) f(x) =\nc) f(x) = ; d) f(x) =\nSoit f la fonction définie sur IR par\nDéterminer les antécédents éventuels de\nchacun des réels 0, 1 et –2.\nSoit f la fonction de IR vers IR, définie par\na) Déterminer l’ensemble de définition de f.\nb) Parmi les points suivants, indiquer ceux qui\nsont situés sur la courbe de f.\nA(2,0) , B(3,1) , C(0, – ) , D(4, ).\nDans le graphique ci-dessous, la courbe\nreprésentative d’une fonction f définie sur\n[–3 , 2].\n1) Lire sur cette courbe :\na) f(–1) , f(0) et f(– ).\nb) La valeur maximale de f(x).\nc) Le nombre d’antécédents de – .\n2) Résoudre graphiquement :\na) Les équations f(x) = 1 et f(x) = 0.\nb) L’inéquation f(x) < 0.\nSoit f la fonction définie sur [0,5[ par\nf(x) = |x – 2|.\nMontrer que f est décroissante sur [0,2] et\ncroissante sur [2,5].\nRépondre par vraie ou faux :\na) La fonction f définie sur [– 2 , 3] par\nf(x) = x\n2 est paire.\nb) La fonction f définie sur [–1, 0[ U ]0 , 1]\npar f(x) = est impaire.\nc) La fonction f définie sur IR par f(x) = x |x|\nn’est ni paire ni impaire.\nMaîtriser\nDans le graphique ci-dessous, sont repré-\nsentées les courbes représentatives de deux\nfonctions f et g définies sur [–3,7].\nRésoudre graphiquement.\na) f(x) = 1 ; b) g(x) = -2\nc) f(x) = g(x) ; d) f(x) < 1\ne) –2 < g(x) < 1 ; f) f(x) ≥ g(x).\nSoit f la fonction définie par\nf(x) = . On désigne par C la courbe\nreprésentative de la fonction f dans un repère\northonormé.\n1) a) Donner l’ensemble de définition de f.\nb) Montrer que f est paire.\n2) Etudier les variations de f sur l’intervalle\n[0 , 3].\n2- x x2 +2 x\nx-1\nx x- x\n1 .\nf( x ) = x2 +1\nx .\nf( x ) = x-3\nx-2 .\n1 2\nx\n9-x 2\n3) a) Montrer que si M est un point de C, alors\nOM = 3.\nb) Construire alors la courbe de f.\nSoit f une fonction croissante sur [3 , 7] et\ndécroissante sur [7 , 10].\na) Comparer f(4) et f(5).\nb) Sachant que f(3) = 1 et que f(8) = 0,\ncomparer f(4) et f(10).\nSoit f une fonction croissante sur [–1 , 5].\na) Soit g la fonction définie sur [–1 , 5] par\ng(x) = f(x) + 1.\nMontrer que g est croissante sur [–1 , 5]\nb) Soit h la fonction définie sur [–1 , 5] par\nh(x) = – f(x).\nDéterminer le sens de variations de h.\nEtudier la parité de chacune des fonctions\nf, g et h définies par\nf(x) = x\n2 + x ,\net\nSoient f et g deux fonctions définies sur\n[–2 , 2] et [–6 , 6] respectivement.\nCopier et compléter la courbe de chaque\nfonction sachant que f est paire et que\ng est impaire.\nOn se propose de déterminer parmi les\nrectangles d’aire 4 cm\n2 celui qui a le plus petit\npérimètre.\nOn désigne par x la longueur d’un côté de ce\nrectangle et on note f la fonction qui à x asso-\ncie le périmètre du rectangle.\n1)a) Quel est l’ensemble de définition de f ?\nb) Montrer que\n2) Soient a et b deux réels de l’intervalle\n]0,+ ∞ [ tels que a < b.\na) Montrer que\nb) En déduire les variations de f sur chacun\ndes intervalles ]0 , 2] et [2 , + ∞ [.\n3) Conclure.\nExercices et problèmesExercices et problèmes\nO I\nJ\ng( x ) = x -2\nx\nx1-\nf( x ) = 2 x +x\n8 .\n() () .fb fa ab\nba a b24-= --]] gg\nMath et cultureMath et culture\nFractions égyptiennes\nOn partage bien les chevaux\nAujourd’hui, l’étude des fractions égyptiennes est un domaine restreint de la théorie des nombres\noù plusieurs problèmes fondamentaux ne sont pas encore résolus. Certains d’entre eux sont à la\nportée de l’amateur averti. Prenons le casse-tête arabe de l’homme qui voulait qu’à sa mort on par-\ntage ses 11 chevaux entre ses héritiers de sorte que l’aîné en ait la moitié, son deuxième fils un\nquart et le cadet un sixième. Lorsqu’il mourut, le notaire fut bien embarrassé pour exécuter les\nvolontés du défunt :\nUn cheval a bien peu de valeur une fois en morceaux ! Un parent informé du problème le résolut\nen prêtant un de ses chevaux. Les 12 destriers furent alors répartis selon les vœux du testament,\nles trois fils recevant six, trois et deux chevaux. L’altruiste récupéra le cheval, le sien, qui restait :\nun altruisme bien calculé !\nCe casse-tête fut exposé de façons diverses et peut être généralisé à un plus grand nombre d’héri-\ntiers et un plus grand nombre de chevaux, prêtés, puis restitués. En respectant la forme tradition-\nnelle de l’histoire, avec trois héritiers et un cheval prêté, combien existe-t-il de variantes dans le\nnombre des chevaux à diviser et les proportions souhaitées dans le testament du père ? Une infi-\nnité ? Que nenni,\nIl n’y en a que sept ! Ce sont les sept solutions de l’équation diophantienne (parce qu’à coefficients\net solutions entières) n/n+1 = 1/a + 1/b + 1/c, où a, b etc sont des entiers positifs distincts respec-\ntant la condition ( a<b<c ) et ( n+1 ) le plus petit commun multiple de a, b et c (pour l’intégrité des\nchevaux !).\nD’abord, on remarque que a doit être égal à deux. En effet, si a est supérieur à deux, la valeur mini-\nmale de (n+1) est 12 obtenue pour a=3, b=4 et c=6. En conséquence, n/n+1 doit valoir au mois\n11/12. Cependant, la somme 1/3+ 1/4 +1/5 est égale à 47/60 qui est inférieur à 11/12, et si l’on aug-\nmente les dénominateurs, la somme sera encore plus petite. (3, 4, 6) n’étant pas solution de l’équa-\ntion, a n’est pas plus grand que 2. Un argument semblable montre que b doit être égal à 3 ou à 4.\nAvec ce renseignement, on détermine toutes les valeurs possibles de c (voir figure ci-dessous).\nD’après le magazine « Dossier pour la Science » N° 47\nAvril / Juin 2005\nn a b c\n7 2 4 8\n11 2 4 6\n11 2 3 12\n17 2 3 9\n19 2 4 5\n23 2 3 8\n41 2 3 7\nLE PARTAGE de n chevaux\nentre trois héritiers de façon à ce\nque leurs parts respectent les\nproportions suivantes 1/a, 1/b et\n1/c, n’admet que sept solutions.\nDans chaque cas, un cheval est\nprêté par un tiers, qui le récupère\naprès le partage.\nPour démarrerPour démarrerPour démarrerPour démarrer\nLes miroirs feraient bien de reflechir avant de renvoyer les images\nJean Cocteau\n\nÀ calculer dans l'application : f(x) = −2x + 3. Calculer f(4).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 17 (« Activité 17 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "a",
+        "label": "a",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "b",
+        "label": "b",
+        "unit": "—",
+        "value": 3,
+        "min": -6,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x₀",
+        "unit": "—",
+        "value": 4,
+        "min": -3,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 17 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "y",
+        "label": "f(x₀)",
+        "unit": "—"
+      }
     ]
   }
 ]

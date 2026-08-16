@@ -5,24 +5,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 1,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 1 Séries chronologiques - Courbe d’évolution",
     "difficulty": 1,
-    "statement": "Activité 1 Séries chronologiques - Courbe d’évolution\nLe tableau suivant donne la production annuelle des céréales en Tunisie (en milliers de tonnes)\nde 1990 à 2003.\n1) Représenter à l’aide d’un diagramme circulaire la production, en 1990, des quatre types de\ncéréales.\n2) Représenter à l’aide d’un diagramme la production de triticale de1997 à 2003.\n3) a) Recopier et compléter le tableau suivant relatif à la production du blé dur.\n(On arrondira le coefficient multiplicateur au centième).\nb) Tracer la courbe d’évolution de la production du blé dur de 1994 à 2003 (on portera les\nannées sur l’axe des abscisses et les coefficients multiplicateurs sur l’axe des ordonnées).\nDéfinition\nUne série chronologique est une série de valeurs provenant d’une même variable observée à\ndes instants régulièrement espacés dans le temps.\n1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003\n897 1423 1323 1134 436 472 1706 723 1090 1144 706 935 371 1646\n225 363 261 279 66 59 312 162 263 253 136 183 52 337\n477 721 570 478 145 80 834 160 303 408 241 233 90 914\n34 44 41 23 7 9 15 9 9 7 3 3 1 7\n1633 2551 2195 1914 654 620 2867 1054 1665 1812 1086 1354 514 2904\nBlé dur\nBlé tendre\nOrge\nTriticale\nEnsemble\nAnnées 1990 1992 1994 1996 1998 2000 2002\nProduction 897 1323 436 1706 1090 706 371\nCoefficient\nmultiplicateur 1 1,47 0,41\nIndice 100 147 49 41",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 1 Séries chronologiques - Courbe d’évolution\nLe tableau suivant donne la production annuelle des céréales en Tunisie (en milliers de tonnes)\nde 1990 à 2003.\n1) Représenter à l’aide d’un diagramme circulaire la production, en 1990, des quatre types de\ncéréales.\n2) Représenter à l’aide d’un diagramme la production de triticale de1997 à 2003.\n3) a) Recopier et compléter le tableau suivant relatif à la production du blé dur.\n(On arrondira le coefficient multiplicateur au centième).\nb) Tracer la courbe d’évolution de la production du blé dur de 1994 à 2003 (on portera les\nannées sur l’axe des abscisses et les coefficients multiplicateurs sur l’axe des ordonnées).\nDéfinition\nUne série chronologique est une série de valeurs provenant d’une même variable observée à\ndes instants régulièrement espacés dans le temps.\n1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003\n897 1423 1323 1134 436 472 1706 723 1090 1144 706 935 371 1646\n225 363 261 279 66 59 312 162 263 253 136 183 52 337\n477 721 570 478 145 80 834 160 303 408 241 233 90 914\n34 44 41 23 7 9 15 9 9 7 3 3 1 7\n1633 2551 2195 1914 654 620 2867 1054 1665 1812 1086 1354 514 2904\nBlé dur\nBlé tendre\nOrge\nTriticale\nEnsemble\nAnnées 1990 1992 1994 1996 1998 2000 2002\nProduction 897 1323 436 1706 1090 706 371\nCoefficient\nmultiplicateur 1 1,47 0,41\nIndice 100 147 49 41\n\nÀ calculer dans l'application : n = 10, Σ = 120, min = 5, max = 19. Moyenne et étendue.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 1 (« Activité 1 Séries chronologiques - Courbe d’évolution ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 10,
+        "min": 4,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 120,
+        "min": 40,
+        "max": 200,
+        "step": 4
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 5,
+        "min": 1,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 19,
+        "min": 12,
+        "max": 30,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 1 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -31,24 +66,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 2,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 2 Série discrète-Diagramme ; Série continue-Histogramme",
     "difficulty": 1,
-    "statement": "Activité 2 Série discrète-Diagramme ; Série continue-Histogramme\nLe service de la médecine scolaire a mené une enquête auprès des 100 élèves internes d’un\nétablissement scolaire portant sur l’âge, le poids, la taille et le groupe sanguin.\na) Déterminer la population, l’échantillon et la taille de cet échantillon.\nb) Déterminer les caractères quantitatifs et le caractère qualitatif étudiés.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 2 Série discrète-Diagramme ; Série continue-Histogramme\nLe service de la médecine scolaire a mené une enquête auprès des 100 élèves internes d’un\nétablissement scolaire portant sur l’âge, le poids, la taille et le groupe sanguin.\na) Déterminer la population, l’échantillon et la taille de cet échantillon.\nb) Déterminer les caractères quantitatifs et le caractère qualitatif étudiés.\n\nÀ calculer dans l'application : n = 8, Σ = 96, min = 7, max = 18.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 2 (« Activité 2 Série discrète-Diagramme ; Série continue-Histogramme ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 8,
+        "min": 4,
+        "max": 16,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 96,
+        "min": 32,
+        "max": 160,
+        "step": 4
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 7,
+        "min": 1,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 18,
+        "min": 12,
+        "max": 28,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 2 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -57,24 +127,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 3,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 3",
     "difficulty": 1,
-    "statement": "Activité 3\nLes résultats de l’enquête précédente sont résumés dans les diagrammes et les histogrammes\nsuivants :\nDiagramme de la répartition des élèves selon l’âge\nHistogramme de la répartition des élèves selon leurs poids\neffectif\n20 45 25 4 1 3 2\nans\nans\nans\nans\nans\nans\nans\neffectif\n5 7\n15 13 10\nEffectif\np<50\n50=p< 55\n55=p< 60\n60=p< 65\n65=p< 70\n70=p< 75\n75=p\nHistogramme de la répartition des élèves par tranche de taille\nRépartition des élèves selon le Groupe sanguin\n1) a) Quel est le pourcentage des élèves âgés de plus de 20 ans ?\nb) Quel est le pourcentage des élèves ayant un phénotype rhésus plus ?\n2) Pour la série continue des tailles,\na) Recopier et compléter le tableau suivant\nb) Tracer le polygone des effectifs.\nc) Tracer la courbe des fréquences cumulées croissantes.\n3) Recopier et compléter le tableau suivant\nEffectif\ntaille\neffectif\n140=t<145\n145=t<150\n150=t<155\n155=t<160\n160=t<165\n165=t<170\n170=t<175\nTaille (t)\nen cm\n140≤t<145 145≤t<150 150≤t<155 155≤t<160 160≤t<165 165≤t<170 170≤t<175\nEffectif 2 6\nEffectifs\ncumules\ncroissants\neffectif\n10 10\n55 0\nA+ A- B+ B- AB+ AB- O+ O -\nA+\nA-\nB+\nB-\nAB+\nAB-\nO+\nO-\nParamètres de position d’une série statistique",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 3\nLes résultats de l’enquête précédente sont résumés dans les diagrammes et les histogrammes\nsuivants :\nDiagramme de la répartition des élèves selon l’âge\nHistogramme de la répartition des élèves selon leurs poids\neffectif\n20 45 25 4 1 3 2\nans\nans\nans\nans\nans\nans\nans\neffectif\n5 7\n15 13 10\nEffectif\np<50\n50=p< 55\n55=p< 60\n60=p< 65\n65=p< 70\n70=p< 75\n75=p\nHistogramme de la répartition des élèves par tranche de taille\nRépartition des élèves selon le Groupe sanguin\n1) a) Quel est le pourcentage des élèves âgés de plus de 20 ans ?\nb) Quel est le pourcentage des élèves ayant un phénotype rhésus plus ?\n2) Pour la série continue des tailles,\na) Recopier et compléter le tableau suivant\nb) Tracer le polygone des effectifs.\nc) Tracer la courbe des fréquences cumulées croissantes.\n3) Recopier et compléter le tableau suivant\nEffectif\ntaille\neffectif\n140=t<145\n145=t<150\n150=t<155\n155=t<160\n160=t<165\n165=t<170\n170=t<175\nTaille (t)\nen cm\n140≤t<145 145≤t<150 150≤t<155 155≤t<160 160≤t<165 165≤t<170 170≤t<175\nEffectif 2 6\nEffectifs\ncumules\ncroissants\neffectif\n10 10\n55 0\nA+ A- B+ B- AB+ AB- O+ O -\nA+\nA-\nB+\nB-\nAB+\nAB-\nO+\nO-\nParamètres de position d’une série statistique\n\nÀ calculer dans l'application : n = 5, Σ = 40, min = 4, max = 12.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 3 (« Activité 3 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 5,
+        "min": 4,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 40,
+        "min": 16,
+        "max": 80,
+        "step": 4
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 4,
+        "min": 1,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 12,
+        "min": 8,
+        "max": 24,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 3 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -83,24 +188,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 4,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 4 Mode - Médiane",
     "difficulty": 1,
-    "statement": "Activité 4 Mode - Médiane\n1) Pour chacune des séries définies dans l’activité 2, déterminer l’étendue, le mode ou la classe\nmodale ou la modalité.\n2) Pour cet échantillon d’élèves\na) Déterminer l’âge médian.\nb) En utilisant la courbe des fréquences cumulées croissantes, Donner une valeur\napprochée de la taille médiane.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 4 Mode - Médiane\n1) Pour chacune des séries définies dans l’activité 2, déterminer l’étendue, le mode ou la classe\nmodale ou la modalité.\n2) Pour cet échantillon d’élèves\na) Déterminer l’âge médian.\nb) En utilisant la courbe des fréquences cumulées croissantes, Donner une valeur\napprochée de la taille médiane.\n\nÀ calculer dans l'application : n = 12, Σ = 180, min = 8, max = 22.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 4 (« Activité 4 Mode - Médiane ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 12,
+        "min": 6,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 180,
+        "min": 60,
+        "max": 240,
+        "step": 4
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 8,
+        "min": 2,
+        "max": 14,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 22,
+        "min": 14,
+        "max": 30,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 4 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -109,24 +249,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 5,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 5",
     "difficulty": 1,
-    "statement": "Activité 5\nUne enquête est effectuée pour étudier le temps consacré au transport chaque jour par les 300\nouvriers d’une entreprise. Les résultats sont résumés dans l’histogramme ci-dessous.\nOn suppose que dans chaque classe les effectifs sont répartis d’une manière régulière.\n1) a) Reproduire cet histogramme et construire le polygone des effectifs.\nb) Déterminer la classe modale.\nPoids (p)\nen kg\np < 50 50≤p<55 55≤p<60 60≤p<65 65≤p<70 70≤p<75 75≤p\nEffectif 5 13\nFréquences\n12 3\nNombres d ’ouvriers\ntemps (en minutes)\nnombre d'ouvriers\n[20 ;40[\n[40 ;60[\n[60 ;80[\n[80 ;100[\n[100 ;120 [\n[120 ;140[\n2) Dans cette question, on se propose de donner une estimation de la médiane de la série,\nc'est-à-dire la valeur m telle que 150 ouvriers mettent un temps inférieur à m et 150 ouvriers\nmettent un temps supérieur à m.\na) Calculer la somme des effectifs des deux premières classes.\nb) Justifier l’appartenance de m à l’intervalle [60 , 80[.\n3) a) Construire le polygone des fréquences cumulées croissantes. Donner graphiquement une\nestimation de la médiane m.\nb) Justifier la relation\nEn déduire m. (Cette méthode de calcul de m, est appelée méthode d’interpolation linéaire).",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 5\nUne enquête est effectuée pour étudier le temps consacré au transport chaque jour par les 300\nouvriers d’une entreprise. Les résultats sont résumés dans l’histogramme ci-dessous.\nOn suppose que dans chaque classe les effectifs sont répartis d’une manière régulière.\n1) a) Reproduire cet histogramme et construire le polygone des effectifs.\nb) Déterminer la classe modale.\nPoids (p)\nen kg\np < 50 50≤p<55 55≤p<60 60≤p<65 65≤p<70 70≤p<75 75≤p\nEffectif 5 13\nFréquences\n12 3\nNombres d ’ouvriers\ntemps (en minutes)\nnombre d'ouvriers\n[20 ;40[\n[40 ;60[\n[60 ;80[\n[80 ;100[\n[100 ;120 [\n[120 ;140[\n2) Dans cette question, on se propose de donner une estimation de la médiane de la série,\nc'est-à-dire la valeur m telle que 150 ouvriers mettent un temps inférieur à m et 150 ouvriers\nmettent un temps supérieur à m.\na) Calculer la somme des effectifs des deux premières classes.\nb) Justifier l’appartenance de m à l’intervalle [60 , 80[.\n3) a) Construire le polygone des fréquences cumulées croissantes. Donner graphiquement une\nestimation de la médiane m.\nb) Justifier la relation\nEn déduire m. (Cette méthode de calcul de m, est appelée méthode d’interpolation linéaire).\n\nÀ calculer dans l'application : n = 6, Σ = 54, min = 3, max = 15.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 5 (« Activité 5 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 6,
+        "min": 4,
+        "max": 14,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 54,
+        "min": 20,
+        "max": 100,
+        "step": 2
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 15,
+        "min": 10,
+        "max": 25,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 5 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -135,24 +310,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 6,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 6 Quartiles - Diagrammes en boîte",
     "difficulty": 1,
-    "statement": "Activité 6 Quartiles - Diagrammes en boîte\nCi-dessous sont indiquées les notes obtenues, dans un même devoir, par deux groupes de 20\nélèves.\nNotes du 1\ner Groupe\n7 ; 7 ; 8 ; 11 ; 10 ; 7 ; 12 ; 14 ; 6 ; 8 ; 9 ; 9 ; 11 ; 7 ; 9 ; 13 ; 11 ; 10 ; 13 ; 8.\nNotes du 2ème groupe\n6 ; 7 ; 11 ; 11 ;17 ; 4 ;10 ; 5 ; 2 ; 7 ; 4 ;17 ; 8 ;19 ; 5 ; 15 ; 5 ; 17 ; 6 ;14.\n1) Pour chaque groupe\na) Déterminer l’étendue de la série.\nb) Résumer les données dans un tableau.\n2) Construire sur un même dessin les diagrammes en bâtons représentant les notes de chaque\ngroupe.\n3) Pour le premier groupe\na) Calculer la médiane m\n1.\nb) Quel est le pourcentage des élèves qui ont une note inférieure ou égale à 7 ?\nc) Quel est le pourcentage des élèves qui ont une note inférieure ou égale à 11 ?\nd) Quel est le pourcentage des élèves qui ont une note comprise entre 7 et 11 ?\ne) Commenter la répartition des notes comprises entre 7 et 11 autour de la médiane m\n1.\n4) Pour le deuxième groupe\na) Calculer la médiane m 2.\nb) Quel est le pourcentage des élèves qui ont une note inférieure ou égale à 5 ?\nc) Quel est le pourcentage des élèves qui ont une note inférieure ou égale à 14 ?\nd) Quel est le pourcentage des élèves qui ont une note comprise entre 7 et 11 ?\ne) Commenter la répartition des notes comprises entre 5 et 14 autour de la médiane m\n2.\n.m\n80 60\n157 74\n150 74\n-\n- = -\n-\nDéfinition et détermination des quartilles\nLes quartiles Q1, Q2 et Q3 d’une serie la partagent en quatre parties.\nRemarque\nOn convient que le deuxième quartile Q 2 est la médiane.\nCas d’une série discrète\nSoit (xi ; ni) une série statistique dont les valeurs x i sont ordonnées par ordre croissant.\n•Le premier quartile est le nombre noté Q 1 et qui égal à la plus petite valeur x i telle qu’au\nmoins 25% de l’effectif de la série prennent des valeurs inférieures ou égales à Q 1.\n•Le troisième quartile est le nombre noté Q3 et qui égal à la plus petite valeur xi telle qu’au\nmoins 75% de l’effectif de la série prennent des valeurs inférieures ou égales à Q 3.\nCas d’une série continue\nPour une telle série, comme la médiane, les quartiles peuvent être obtenues de deux façons :\n1ère façon : Au moyen d’une interpolation linéaire en utilisant le tableau des effectifs cumulés.\n2ème façon : En exploitant la courbe des fréquences cumulées\nLes quartiles Q 1 et Q 3 sont les abscisses des points de la courbe des fréquences cumulées\ncroissantes dont les ordonnées sont 0,25 et 0,75.\nVocabulaire\n•L’intervalle [Q1 ; Q 3] est appelé l’intervalle interquartile.\n•Le réel Q 3 – Q1 est appelé l’écart interquartile.\nConstruction d’un diagramme en boîte\nUn diagramme en boite est un diagramme permettant de positionner les quartiles Q 1 et Q3 et\nla médiane m au moyen d’un rectangle de largeur arbitraire et de longueur Q 3 – Q1.\nOn représente une série par un diagramme en boite de la manière suivante\n•Sur un segment gradué on place\n- les valeurs extrêmes x1 et xn de la série ;\n- les quartiles Q 1 et Q3 et la médiane m.\n•On construit un rectangle dont la longueur est l’écart interquartile Q 3 – Q1 et de largeur\narbitraire.\n•Un trait vertical à l’intérieur de ce rectangle correspondant à la médiane.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 6 Quartiles - Diagrammes en boîte\nCi-dessous sont indiquées les notes obtenues, dans un même devoir, par deux groupes de 20\nélèves.\nNotes du 1\ner Groupe\n7 ; 7 ; 8 ; 11 ; 10 ; 7 ; 12 ; 14 ; 6 ; 8 ; 9 ; 9 ; 11 ; 7 ; 9 ; 13 ; 11 ; 10 ; 13 ; 8.\nNotes du 2ème groupe\n6 ; 7 ; 11 ; 11 ;17 ; 4 ;10 ; 5 ; 2 ; 7 ; 4 ;17 ; 8 ;19 ; 5 ; 15 ; 5 ; 17 ; 6 ;14.\n1) Pour chaque groupe\na) Déterminer l’étendue de la série.\nb) Résumer les données dans un tableau.\n2) Construire sur un même dessin les diagrammes en bâtons représentant les notes de chaque\ngroupe.\n3) Pour le premier groupe\na) Calculer la médiane m\n1.\nb) Quel est le pourcentage des élèves qui ont une note inférieure ou égale à 7 ?\nc) Quel est le pourcentage des élèves qui ont une note inférieure ou égale à 11 ?\nd) Quel est le pourcentage des élèves qui ont une note comprise entre 7 et 11 ?\ne) Commenter la répartition des notes comprises entre 7 et 11 autour de la médiane m\n1.\n4) Pour le deuxième groupe\na) Calculer la médiane m 2.\nb) Quel est le pourcentage des élèves qui ont une note inférieure ou égale à 5 ?\nc) Quel est le pourcentage des élèves qui ont une note inférieure ou égale à 14 ?\nd) Quel est le pourcentage des élèves qui ont une note comprise entre 7 et 11 ?\ne) Commenter la répartition des notes comprises entre 5 et 14 autour de la médiane m\n2.\n.m\n80 60\n157 74\n150 74\n-\n- = -\n-\nDéfinition et détermination des quartilles\nLes quartiles Q1, Q2 et Q3 d’une serie la partagent en quatre parties.\nRemarque\nOn convient que le deuxième quartile Q 2 est la médiane.\nCas d’une série discrète\nSoit (xi ; ni) une série statistique dont les valeurs x i sont ordonnées par ordre croissant.\n•Le premier quartile est le nombre noté Q 1 et qui égal à la plus petite valeur x i telle qu’au\nmoins 25% de l’effectif de la série prennent des valeurs inférieures ou égales à Q 1.\n•Le troisième quartile est le nombre noté Q3 et qui égal à la plus petite valeur xi telle qu’au\nmoins 75% de l’effectif de la série prennent des valeurs inférieures ou égales à Q 3.\nCas d’une série continue\nPour une telle série, comme la médiane, les quartiles peuvent être obtenues de deux façons :\n1ère façon : Au moyen d’une interpolation linéaire en utilisant le tableau des effectifs cumulés.\n2ème façon : En exploitant la courbe des fréquences cumulées\nLes quartiles Q 1 et Q 3 sont les abscisses des points de la courbe des fréquences cumulées\ncroissantes dont les ordonnées sont 0,25 et 0,75.\nVocabulaire\n•L’intervalle [Q1 ; Q 3] est appelé l’intervalle interquartile.\n•Le réel Q 3 – Q1 est appelé l’écart interquartile.\nConstruction d’un diagramme en boîte\nUn diagramme en boite est un diagramme permettant de positionner les quartiles Q 1 et Q3 et\nla médiane m au moyen d’un rectangle de largeur arbitraire et de longueur Q 3 – Q1.\nOn représente une série par un diagramme en boite de la manière suivante\n•Sur un segment gradué on place\n- les valeurs extrêmes x1 et xn de la série ;\n- les quartiles Q 1 et Q3 et la médiane m.\n•On construit un rectangle dont la longueur est l’écart interquartile Q 3 – Q1 et de largeur\narbitraire.\n•Un trait vertical à l’intérieur de ce rectangle correspondant à la médiane.\n\nÀ calculer dans l'application : n = 15, Σ = 225, min = 6, max = 24.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 6 (« Activité 6 Quartiles - Diagrammes en boîte ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 15,
+        "min": 8,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 225,
+        "min": 80,
+        "max": 300,
+        "step": 5
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 6,
+        "min": 1,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 24,
+        "min": 14,
+        "max": 30,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 6 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -161,24 +371,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 7,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 7",
     "difficulty": 1,
-    "statement": "Activité 7\nEn revenant à l’activité précédente,\n1) Recopier et compléter les tableaux suivants\nNotes du 1er groupe\nNotes du 2ème groupe\n2) Les notes de ces deux groupes d’élèves ont été représentées par les deux diagrammes en\nboîtes suivantes.\na) En calculant pour chaque série les quartiles et la médiane, expliquer cette représentation.\nb) Commenter, pour chaque série, la répartition des notes autour de la médiane.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 7\nEn revenant à l’activité précédente,\n1) Recopier et compléter les tableaux suivants\nNotes du 1er groupe\nNotes du 2ème groupe\n2) Les notes de ces deux groupes d’élèves ont été représentées par les deux diagrammes en\nboîtes suivantes.\na) En calculant pour chaque série les quartiles et la médiane, expliquer cette représentation.\nb) Commenter, pour chaque série, la répartition des notes autour de la médiane.\n\nÀ calculer dans l'application : n = 9, Σ = 81, min = 2, max = 16.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 7 (« Activité 7 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 9,
+        "min": 4,
+        "max": 16,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 81,
+        "min": 30,
+        "max": 150,
+        "step": 3
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 2,
+        "min": 1,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 16,
+        "min": 10,
+        "max": 28,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 7 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -187,24 +432,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 8,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 8",
     "difficulty": 1,
-    "statement": "Activité 8\nOn considère la série représentée par l’histogramme suivant.\nNote 6 7 8 9 10 11 12 13 14\nEffectif 1 1\nNote 2 7 11 19\nEffectif 1 2 2\nQ1 Q3m1\nQ1 Q3m2\n1er\ngroupe\n2ème\ngroupe\n2 3 4 5678 91 0 1 1 1 2 1 31 4 1 5 1 6 1 7 1 8 1 9\n1) a) Recopier et compléter le tableau suivant.\nb) Déterminer le tableau des effectifs cumulés croissants.\nc) Déterminer la classe qui contient la médiane m.\nd) Déterminer les classes qui contiennent les quartiles Q\n1 et Q3.\n2) On suppose que la répartition est uniforme à l’intérieur de chaque classe.\nDonner, au moyen d’une interpolation linéaire, des valeurs approchées de m, Q\n1 et Q3.\n3) Construire le diagramme en boite de la série.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 8\nOn considère la série représentée par l’histogramme suivant.\nNote 6 7 8 9 10 11 12 13 14\nEffectif 1 1\nNote 2 7 11 19\nEffectif 1 2 2\nQ1 Q3m1\nQ1 Q3m2\n1er\ngroupe\n2ème\ngroupe\n2 3 4 5678 91 0 1 1 1 2 1 31 4 1 5 1 6 1 7 1 8 1 9\n1) a) Recopier et compléter le tableau suivant.\nb) Déterminer le tableau des effectifs cumulés croissants.\nc) Déterminer la classe qui contient la médiane m.\nd) Déterminer les classes qui contiennent les quartiles Q\n1 et Q3.\n2) On suppose que la répartition est uniforme à l’intérieur de chaque classe.\nDonner, au moyen d’une interpolation linéaire, des valeurs approchées de m, Q\n1 et Q3.\n3) Construire le diagramme en boite de la série.\n\nÀ calculer dans l'application : n = 20, Σ = 200, min = 1, max = 19.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 8 (« Activité 8 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 20,
+        "min": 8,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 200,
+        "min": 80,
+        "max": 280,
+        "step": 5
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 1,
+        "min": 1,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 19,
+        "min": 12,
+        "max": 30,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 8 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -213,24 +493,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 9,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 9",
     "difficulty": 1,
-    "statement": "Activité 9\nLa courbe suivante est le polygone des effectifs cumulés\ncroissants d’une variable statistique continue.\nLire sur le graphique la médiane et les quartiles Q\n1 et Q3.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 9\nLa courbe suivante est le polygone des effectifs cumulés\ncroissants d’une variable statistique continue.\nLire sur le graphique la médiane et les quartiles Q\n1 et Q3.\n\nÀ calculer dans l'application : n = 10, Σ = 120, min = 5, max = 19. Moyenne et étendue.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 9 (« Activité 9 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 10,
+        "min": 4,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 120,
+        "min": 40,
+        "max": 200,
+        "step": 4
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 5,
+        "min": 1,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 19,
+        "min": 12,
+        "max": 30,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 9 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -239,24 +554,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 10,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 10",
     "difficulty": 1,
-    "statement": "Activité 10\nLes séries suivantes donnent les précipitations moyennes mensuelles en millimètres dans deux\nvilles A et B pendant 9 mois\n[10,20[ [20,30[ [30,40[ [40,50[ [50,60[\nSérie1\nClasse [10 ; 20[ [20 ; 30[ [30 ; 40[ [40 ; 50[ [50 ; 60[\nEffectif 225 150\nFréquence\nMois Sep Oct Nov Dec Jan Fev Mars Avril Mai\nVille A 47 63 51 50 63 89 72 9 7\nVille B 33 28 41 34 33 37 34 20 10\na) Construire le diagramme en boite de chaque série.\nb) Comparer les deux séries à l’aide de leurs diagrammes en boites.\nMoyenne d’une série statistique",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 10\nLes séries suivantes donnent les précipitations moyennes mensuelles en millimètres dans deux\nvilles A et B pendant 9 mois\n[10,20[ [20,30[ [30,40[ [40,50[ [50,60[\nSérie1\nClasse [10 ; 20[ [20 ; 30[ [30 ; 40[ [40 ; 50[ [50 ; 60[\nEffectif 225 150\nFréquence\nMois Sep Oct Nov Dec Jan Fev Mars Avril Mai\nVille A 47 63 51 50 63 89 72 9 7\nVille B 33 28 41 34 33 37 34 20 10\na) Construire le diagramme en boite de chaque série.\nb) Comparer les deux séries à l’aide de leurs diagrammes en boites.\nMoyenne d’une série statistique\n\nÀ calculer dans l'application : n = 8, Σ = 96, min = 7, max = 18.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 10 (« Activité 10 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 8,
+        "min": 4,
+        "max": 16,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 96,
+        "min": 32,
+        "max": 160,
+        "step": 4
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 7,
+        "min": 1,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 18,
+        "min": 12,
+        "max": 28,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 10 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -265,24 +615,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 11,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 11",
     "difficulty": 2,
-    "statement": "Activité 11\nEn testant 150 voitures pour étudier leur consommation d’essence (en litres ) au 100 Km, on\na obtenu les résultats suivants :\na) Préciser la classe modale et donner une estimation de la médiane de cette série.\nb) Donner l’arrondi à 10-1 près de la consommation moyenne d’une voiture.\nc) Dresser le tableau des effectifs cumulés croissants.\nd) En supposant que les valeurs sont uniformément réparties dans chaque classe, retrouver, par\ninterpolation linéaire, une valeur approchée de la médiane.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 11\nEn testant 150 voitures pour étudier leur consommation d’essence (en litres ) au 100 Km, on\na obtenu les résultats suivants :\na) Préciser la classe modale et donner une estimation de la médiane de cette série.\nb) Donner l’arrondi à 10-1 près de la consommation moyenne d’une voiture.\nc) Dresser le tableau des effectifs cumulés croissants.\nd) En supposant que les valeurs sont uniformément réparties dans chaque classe, retrouver, par\ninterpolation linéaire, une valeur approchée de la médiane.\n\nÀ calculer dans l'application : n = 5, Σ = 40, min = 4, max = 12.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 11 (« Activité 11 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 5,
+        "min": 4,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 40,
+        "min": 16,
+        "max": 80,
+        "step": 4
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 4,
+        "min": 1,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 12,
+        "min": 8,
+        "max": 24,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 11 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -291,24 +676,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 12,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 12",
     "difficulty": 2,
-    "statement": "Activité 12\nLes tableaux suivants représentent les âges (en années) de deux groupes de 14 personnes\nchacun.\nGroupe I\nGroupe I\nCalculer l’âge moyen de chaque groupe.\nEst-il significatif ?\nConsommation [8 ; 9[ [9 ; 10[ [10 ; 11[ [11 ;12[ [12 ;13[\nEffectifs 32 27 20 43 28\nAge 2 4 5 7 10 11 34 35 50 58\nEffectif 3 1 1 1 1 2 1 2 1 1\nAge 18 19 20 45 46 47 48 50\nEffectif 1 5 2 2 1 1 1 1",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 12\nLes tableaux suivants représentent les âges (en années) de deux groupes de 14 personnes\nchacun.\nGroupe I\nGroupe I\nCalculer l’âge moyen de chaque groupe.\nEst-il significatif ?\nConsommation [8 ; 9[ [9 ; 10[ [10 ; 11[ [11 ;12[ [12 ;13[\nEffectifs 32 27 20 43 28\nAge 2 4 5 7 10 11 34 35 50 58\nEffectif 3 1 1 1 1 2 1 2 1 1\nAge 18 19 20 45 46 47 48 50\nEffectif 1 5 2 2 1 1 1 1\n\nÀ calculer dans l'application : n = 12, Σ = 180, min = 8, max = 22.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 12 (« Activité 12 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 12,
+        "min": 6,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 180,
+        "min": 60,
+        "max": 240,
+        "step": 4
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 8,
+        "min": 2,
+        "max": 14,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 22,
+        "min": 14,
+        "max": 30,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 12 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -317,24 +737,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 13,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 13 Propriété de la moyenne - Moyennes partielles",
     "difficulty": 2,
-    "statement": "Activité 13 Propriété de la moyenne - Moyennes partielles\nV oici les notes obtenues dans un devoir par les 35 élèves d’une classe de 2ème sciences (20 filles\net 15 garçons)\nNotes des filles 12-10-10-6-8-13-11-8-6-8-10-10-10-4-7-15-14-9-12-8\nNotes des garçons 8-11-11-9-15-14-13-10-10-9-7-6-15-14-14\n1) Déterminer la moyenne des notes de la classe.\n2) a) Déterminer la moyenne des notes obtenues par les filles.\nb) Déterminer la moyenne des notes obtenues par les garçons.\n3) Comment peut-on retrouver à partir de et .",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 13 Propriété de la moyenne - Moyennes partielles\nV oici les notes obtenues dans un devoir par les 35 élèves d’une classe de 2ème sciences (20 filles\net 15 garçons)\nNotes des filles 12-10-10-6-8-13-11-8-6-8-10-10-10-4-7-15-14-9-12-8\nNotes des garçons 8-11-11-9-15-14-13-10-10-9-7-6-15-14-14\n1) Déterminer la moyenne des notes de la classe.\n2) a) Déterminer la moyenne des notes obtenues par les filles.\nb) Déterminer la moyenne des notes obtenues par les garçons.\n3) Comment peut-on retrouver à partir de et .\n\nÀ calculer dans l'application : n = 6, Σ = 54, min = 3, max = 15.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 13 (« Activité 13 Propriété de la moyenne - Moyennes partielles ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 6,
+        "min": 4,
+        "max": 14,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 54,
+        "min": 20,
+        "max": 100,
+        "step": 2
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 15,
+        "min": 10,
+        "max": 25,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 13 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -343,24 +798,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 14,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 14 Effet d’une application affine",
     "difficulty": 2,
-    "statement": "Activité 14 Effet d’une application affine\n1) De combien augmente la moyenne d’une classe dans un devoir si on ajoute 2 points pour\nchaque élève ?\n2) Dans un devoir la moyenne d’une classe est de 14.\nQuelle serait la moyenne de cette classe si on avait noté\na) Sur 40 ? b) Sur 10 ? c) Sur 100 ?\n3) Les notes d’un élève dans six devoirs sont 8 ; 13 :12 ; 9 ;14 et 10.\nPour calculer sa moyenne il a procédé de la manière suivante\net il en a déduit que sa moyenne est 11. Justifier sa procédure.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 14 Effet d’une application affine\n1) De combien augmente la moyenne d’une classe dans un devoir si on ajoute 2 points pour\nchaque élève ?\n2) Dans un devoir la moyenne d’une classe est de 14.\nQuelle serait la moyenne de cette classe si on avait noté\na) Sur 40 ? b) Sur 10 ? c) Sur 100 ?\n3) Les notes d’un élève dans six devoirs sont 8 ; 13 :12 ; 9 ;14 et 10.\nPour calculer sa moyenne il a procédé de la manière suivante\net il en a déduit que sa moyenne est 11. Justifier sa procédure.\n\nÀ calculer dans l'application : n = 15, Σ = 225, min = 6, max = 24.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 14 (« Activité 14 Effet d’une application affine ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 15,
+        "min": 8,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 225,
+        "min": 80,
+        "max": 300,
+        "step": 5
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 6,
+        "min": 1,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 24,
+        "min": 14,
+        "max": 30,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 14 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -369,24 +859,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 15,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 15",
     "difficulty": 2,
-    "statement": "Activité 15\nLe tableau suivant représente le nombre de kilomètres parcourus par une voiture par mois\npendant douze mois.\nQuel est le nombre moyen de kilomètres parcourus par cette voiture pendant un mois ?",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 15\nLe tableau suivant représente le nombre de kilomètres parcourus par une voiture par mois\npendant douze mois.\nQuel est le nombre moyen de kilomètres parcourus par cette voiture pendant un mois ?\n\nÀ calculer dans l'application : n = 9, Σ = 81, min = 2, max = 16.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 15 (« Activité 15 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 9,
+        "min": 4,
+        "max": 16,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 81,
+        "min": 30,
+        "max": 150,
+        "step": 3
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 2,
+        "min": 1,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 16,
+        "min": 10,
+        "max": 28,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 15 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -395,24 +920,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 16,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 16 Moyenne élaguée",
     "difficulty": 2,
-    "statement": "Activité 16 Moyenne élaguée\nLe tableau suivant donne les précipitations en millimètres enregistrées dans une même région\npendant 10 jours consécutifs.\na) Calculer la précipitation moyenne\nx\nx\ny\ny\nz\nz\n23 2 1 4 1-++ - + =\nMois 1 2 3 4 5 6 7 8 9 10 11 12\nKm parcourus 1400 2600 1800 2300 2400 1600 2800 2900 2100 1500 2000 1200\nPrécipitation 0 10 11 15 20 150\nNombre de jours 2 2 3 1 1 1\nb) En supprimant les deux valeurs extrêmes, calculer la précipitation moyenne des sept jours\nrestants (cette moyenne est appelée moyenne élaguée).\nParamètres de dispersion d’une série statistique",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 16 Moyenne élaguée\nLe tableau suivant donne les précipitations en millimètres enregistrées dans une même région\npendant 10 jours consécutifs.\na) Calculer la précipitation moyenne\nx\nx\ny\ny\nz\nz\n23 2 1 4 1-++ - + =\nMois 1 2 3 4 5 6 7 8 9 10 11 12\nKm parcourus 1400 2600 1800 2300 2400 1600 2800 2900 2100 1500 2000 1200\nPrécipitation 0 10 11 15 20 150\nNombre de jours 2 2 3 1 1 1\nb) En supprimant les deux valeurs extrêmes, calculer la précipitation moyenne des sept jours\nrestants (cette moyenne est appelée moyenne élaguée).\nParamètres de dispersion d’une série statistique\n\nÀ calculer dans l'application : n = 20, Σ = 200, min = 1, max = 19.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 16 (« Activité 16 Moyenne élaguée ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 20,
+        "min": 8,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 200,
+        "min": 80,
+        "max": 280,
+        "step": 5
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 1,
+        "min": 1,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 19,
+        "min": 12,
+        "max": 30,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 16 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -421,24 +981,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 17,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 17 Variance- Ecart type",
     "difficulty": 2,
-    "statement": "Activité 17 Variance- Ecart type\nLes séries suivantes donnent les températures, en degré Celsius, prises à la même heure\npendant quatre jours dans deux villes A et B.\n1) a) Calculer la température moyenne pour chaque ville\nb) Pour la ville A, quelles erreurs commet-on si on remplace la température de chaque jour\npar la température moyenne ?\n2) Pour tout réel x on considère la fonction f définie par\na) Développer et réduire f(x).\nb) Pour quelle valeur de x, f(x) est - il minimal? Déterminer dans ce cas\n3) Pour tout réel x on considère la fonction g définie par\na) Développer et réduire g(x).\nb) Pour quelle valeur de x, g(x) est-il minimal? Déterminer dans ce cas",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 17 Variance- Ecart type\nLes séries suivantes donnent les températures, en degré Celsius, prises à la même heure\npendant quatre jours dans deux villes A et B.\n1) a) Calculer la température moyenne pour chaque ville\nb) Pour la ville A, quelles erreurs commet-on si on remplace la température de chaque jour\npar la température moyenne ?\n2) Pour tout réel x on considère la fonction f définie par\na) Développer et réduire f(x).\nb) Pour quelle valeur de x, f(x) est - il minimal? Déterminer dans ce cas\n3) Pour tout réel x on considère la fonction g définie par\na) Développer et réduire g(x).\nb) Pour quelle valeur de x, g(x) est-il minimal? Déterminer dans ce cas\n\nÀ calculer dans l'application : n = 10, Σ = 120, min = 5, max = 19. Moyenne et étendue.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 17 (« Activité 17 Variance- Ecart type ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 10,
+        "min": 4,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 120,
+        "min": 40,
+        "max": 200,
+        "step": 4
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 5,
+        "min": 1,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 19,
+        "min": 12,
+        "max": 30,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 17 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -447,24 +1042,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 18,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 18",
     "difficulty": 2,
-    "statement": "Activité 18\nOn considère la série statistique suivante.\nOn désigne par n = n 1 + n2 + n3 l’effectif total et par la moyenne de cette série .\nOn considère la fonction f définie pour tout réel x par\nJour J1 J2 J3 J4\nTempérature Ville A 6 5 17 16\nVille B 10 11 11 12\n.fx xxx x\n6 5 17 1622 2 2-= +- +- +-] ]]] ]g gg g g\n.fx] g\n.gx xx x\n10 2 11 1222 2\n= -+ - + -] ] ]]g g gg\n.gx] g\nValeurs x1 x2 x3\nEffectifs n1 n2 n3\nx\n.fx n\nnx x nx x nx x11\n= -+ -+ -] ]] ^\ng gg h\na) Montrer que\nb) Soit\nc) Exprimer f en fonction de V .\nd) Pour quelle valeur de x la fonction f admet–elle un minimum ? Quelle est la valeur de ce\nminimum ?\nDéfinition\nRemarque\nLa variance et l’écart -type d’une série continue sont définies par les mêmes formules où\nx\n1 , x2 , ….. , x p sont les centres des classes et n 1 , n2 , … , n p sont les effectifs respectifs\nde ces classes.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 18\nOn considère la série statistique suivante.\nOn désigne par n = n 1 + n2 + n3 l’effectif total et par la moyenne de cette série .\nOn considère la fonction f définie pour tout réel x par\nJour J1 J2 J3 J4\nTempérature Ville A 6 5 17 16\nVille B 10 11 11 12\n.fx xxx x\n6 5 17 1622 2 2-= +- +- +-] ]]] ]g gg g g\n.fx] g\n.gx xx x\n10 2 11 1222 2\n= -+ - + -] ] ]]g g gg\n.gx] g\nValeurs x1 x2 x3\nEffectifs n1 n2 n3\nx\n.fx n\nnx x nx x nx x11\n= -+ -+ -] ]] ^\ng gg h\na) Montrer que\nb) Soit\nc) Exprimer f en fonction de V .\nd) Pour quelle valeur de x la fonction f admet–elle un minimum ? Quelle est la valeur de ce\nminimum ?\nDéfinition\nRemarque\nLa variance et l’écart -type d’une série continue sont définies par les mêmes formules où\nx\n1 , x2 , ….. , x p sont les centres des classes et n 1 , n2 , … , n p sont les effectifs respectifs\nde ces classes.\n\nÀ calculer dans l'application : n = 8, Σ = 96, min = 7, max = 18.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 18 (« Activité 18 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 8,
+        "min": 4,
+        "max": 16,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 96,
+        "min": 32,
+        "max": 160,
+        "step": 4
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 7,
+        "min": 1,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 18,
+        "min": 12,
+        "max": 28,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 18 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -473,24 +1103,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 19,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 19 Effet d’une application affine",
     "difficulty": 2,
-    "statement": "Activité 19 Effet d’une application affine\nOn a relevé les températures, en degré Celsius, enregistrées dans trois villes A , B et C pen-\ndant dix jours à la même heure.\nLes résultats obtenus sont donnés par les tableaux suivants.\nVille A\nVille B\nSoit (x i , ni) une série discrète définie par ses valeurs x 1 , x2 ,….. , x p et par les effectifs\ncorrespondants n1 , n2 ,…, n p.\n•La variance de la série est le nombre noté V et défini par\noù n est l’effectif total ( n = n1+n2+…+n p ).\n•L’écart type de la série est le nombre noté σ et défini par σ = .V\nTemperature -1 0 1 2 5\nNombre de jours 1 3 4 1 1\nTemperature 0 1 2 3 6\nNombre de jours 1 3 4 1 1\n...\n;V n\nnx nx n x\nx\npp11\n2=\n++ +\n-\n]] ^ ]gg h g\nV n\nnx nx nx x\n3 2= ++ -]] ^\n]gg h\ng\n.fx n\nnx nxx n x n x n x22\n= -+ + +] ]] ^\ng gg h\nVille C\n1) a) Calculer la température moyenne dans la ville A\nb) En déduire les températures moyennes dans les villes B et C\n2) Calculer, pour la série des températures de la ville A, la variance V et l’écart type σ\n3) En déduire\na) La variance et l’écart type de la série des températures de la ville B.\nb) La variance et l’écart type de la série des températures de la ville C.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 19 Effet d’une application affine\nOn a relevé les températures, en degré Celsius, enregistrées dans trois villes A , B et C pen-\ndant dix jours à la même heure.\nLes résultats obtenus sont donnés par les tableaux suivants.\nVille A\nVille B\nSoit (x i , ni) une série discrète définie par ses valeurs x 1 , x2 ,….. , x p et par les effectifs\ncorrespondants n1 , n2 ,…, n p.\n•La variance de la série est le nombre noté V et défini par\noù n est l’effectif total ( n = n1+n2+…+n p ).\n•L’écart type de la série est le nombre noté σ et défini par σ = .V\nTemperature -1 0 1 2 5\nNombre de jours 1 3 4 1 1\nTemperature 0 1 2 3 6\nNombre de jours 1 3 4 1 1\n...\n;V n\nnx nx n x\nx\npp11\n2=\n++ +\n-\n]] ^ ]gg h g\nV n\nnx nx nx x\n3 2= ++ -]] ^\n]gg h\ng\n.fx n\nnx nxx n x n x n x22\n= -+ + +] ]] ^\ng gg h\nVille C\n1) a) Calculer la température moyenne dans la ville A\nb) En déduire les températures moyennes dans les villes B et C\n2) Calculer, pour la série des températures de la ville A, la variance V et l’écart type σ\n3) En déduire\na) La variance et l’écart type de la série des températures de la ville B.\nb) La variance et l’écart type de la série des températures de la ville C.\n\nÀ calculer dans l'application : n = 5, Σ = 40, min = 4, max = 12.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 19 (« Activité 19 Effet d’une application affine ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 5,
+        "min": 4,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 40,
+        "min": 16,
+        "max": 80,
+        "step": 4
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 4,
+        "min": 1,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 12,
+        "min": 8,
+        "max": 24,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 19 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -499,24 +1164,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 20,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 20",
     "difficulty": 2,
-    "statement": "Activité 20\nLe tableau suivant fournit les nombres d’apparition de PILE après 20 simulations de 100\nlancers d’une pièce de monnaie.\n1) Déterminer la moyenne de la série.\n2) a) Déterminer la variance V et l’écart-type σ.\nb) Combien y-a-t-il de simulations dont le nombre d’apparitions de PILE appartient à\nl’intervalle\nc) Combien y-a-t-il de simulations dont le nombre d’apparitions de PILE appartient à\nl’intervalle",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 20\nLe tableau suivant fournit les nombres d’apparition de PILE après 20 simulations de 100\nlancers d’une pièce de monnaie.\n1) Déterminer la moyenne de la série.\n2) a) Déterminer la variance V et l’écart-type σ.\nb) Combien y-a-t-il de simulations dont le nombre d’apparitions de PILE appartient à\nl’intervalle\nc) Combien y-a-t-il de simulations dont le nombre d’apparitions de PILE appartient à\nl’intervalle\n\nÀ calculer dans l'application : n = 12, Σ = 180, min = 8, max = 22.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 20 (« Activité 20 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 12,
+        "min": 6,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 180,
+        "min": 60,
+        "max": 240,
+        "step": 4
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 8,
+        "min": 2,
+        "max": 14,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 22,
+        "min": 14,
+        "max": 30,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 20 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -525,24 +1225,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 21,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 21",
     "difficulty": 2,
-    "statement": "Activité 21\nOn considère la série suivante\nTemperature -2 0 2 4 10\nNombre de jours 1 3 4 1 1\n46 48 51 62 45 47 57 59 49 53 56 44 49 50 41 58 47 56 53 46\nx\nx? mm,x- +6 @\nx?m, mx2 2-+6 @\nni\n[0,5[\n[5,10[\n[10,15[\n[15,20[\n[20,25[\n[25,30[\n[30,35\n[\nni\n1) a)Recopier et compléter le tableau suivant\nb) Calculer la moyenne , la variance V et l’écart type σ.\n2) L’histogramme ci-dessous représente les tailles des élèves d’une classe de deuxième année.\na) Calculer, en utilisant les résultats de la 1 ère question, la moyenne , la variance V et\nl’écart type σ.\nb) Quel est le pourcentage d’élèves ayant une taille comprise entre\nCentre des classes xi Effectif ni ni xi ni xi\n2,5 1 2,5\n7,5 4\n12,5 7 7x(12,5)2=1093,75\n17,5 10\n22,5 8 8x22,5=180\n27,5 3\n32,5 2\nTotal 35 622,5 12818,75\n3 2\nEffectif\ntailles (en cm )\neffectifs\n[140 ,145 [\n[145 ,150 [\n[150 ,155 [\n[155 ,160 [\n[160 ,165 [\n[165 ,170 [\n[170 ,175 [\nx\nx\n?σσxe t x-+",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 21\nOn considère la série suivante\nTemperature -2 0 2 4 10\nNombre de jours 1 3 4 1 1\n46 48 51 62 45 47 57 59 49 53 56 44 49 50 41 58 47 56 53 46\nx\nx? mm,x- +6 @\nx?m, mx2 2-+6 @\nni\n[0,5[\n[5,10[\n[10,15[\n[15,20[\n[20,25[\n[25,30[\n[30,35\n[\nni\n1) a)Recopier et compléter le tableau suivant\nb) Calculer la moyenne , la variance V et l’écart type σ.\n2) L’histogramme ci-dessous représente les tailles des élèves d’une classe de deuxième année.\na) Calculer, en utilisant les résultats de la 1 ère question, la moyenne , la variance V et\nl’écart type σ.\nb) Quel est le pourcentage d’élèves ayant une taille comprise entre\nCentre des classes xi Effectif ni ni xi ni xi\n2,5 1 2,5\n7,5 4\n12,5 7 7x(12,5)2=1093,75\n17,5 10\n22,5 8 8x22,5=180\n27,5 3\n32,5 2\nTotal 35 622,5 12818,75\n3 2\nEffectif\ntailles (en cm )\neffectifs\n[140 ,145 [\n[145 ,150 [\n[150 ,155 [\n[155 ,160 [\n[160 ,165 [\n[165 ,170 [\n[170 ,175 [\nx\nx\n?σσxe t x-+\n\nÀ calculer dans l'application : n = 6, Σ = 54, min = 3, max = 15.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 21 (« Activité 21 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 6,
+        "min": 4,
+        "max": 14,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 54,
+        "min": 20,
+        "max": 100,
+        "step": 2
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 15,
+        "min": 10,
+        "max": 25,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 21 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -551,24 +1286,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 22,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 22 La méthode du serpent–Harmonisation de jury",
     "difficulty": 2,
-    "statement": "Activité 22 La méthode du serpent–Harmonisation de jury\n30 candidats admis à l’écrit et classés du 1 ère au 30ème se présentent à l’oral. Leur répartition\nentre les trois jurys de l’oral est effectuée suivant la méthode suivante (parfois appelée\n« Méthode du serpent » )\n1) Calculer le rang moyen des candidates passant l’oral dans chaque jury\n2) Calculer les écarts types correspondants.\n3) Le tableau suivant indique les notes attribuées par chaque jury à ses candidats.\na) Pour chaque jury, calculer la moyenne des notes et l’écart-type arrondi à 0,1.\nb) Regrouper les notes des trois jurys et déterminer les valeurs extrêmes, l’étendu, la\nmédiane et les quartiles Q\n1 et Q3.\nc) Calculer la moyenne des 30 candidats.\n4) On désire harmoniser les notations entre les trois jury.\nPour cela, on effectue une transformation des notes, de sorte que les trois jurys aient la même\nmoyenne et le même écart – type.\na) Soit (xi) les notes attribuées par le Jury\n1. On pose yi = a xi + b où a et b sont des réels\navec a > 0. Déterminer a et b pour que la série (yi) ait une moyenne égale à 10 et un écart\ntype égal à 3.\nQuelles sont les nouvelles notes du jury1, arrondies à 0.5 ?\nb) Transformer de façon analogue les notes du jury 2 puis celle du jury 3 pour obtenir une\nmoyenne égale à 10 et un écart type égal à 3\nRang du candidat\nJury 1 1 6 7 12 13 18 19 24 25 30\nJury 2 2 5 8 11 14 17 20 23 26 29\nJury 3 3 4 9 10 15 16 21 22 27 28\nNotes des candidats\nJury 1 13 17 4 5 15 16 5 8 5 12\nJury 2 10 15 7 6 10 11 8 5 6 7\nJury 3 14 17 17 3 19 5 2 8 19 6\n5) On étudie maintenant la série obtenue en regroupant les 30 notes transformées des 3 jurys\na) Quelle est la moyenne de cette série\nb) Déterminer les valeurs extrêmes, l’étendu, la médiane et les quartiles Q\n1 et Q3\nc) Construire le diagramme en boite de cette série et celui de la série d’origine\nd) Comparer les deux séries\nEffet de structure",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 22 La méthode du serpent–Harmonisation de jury\n30 candidats admis à l’écrit et classés du 1 ère au 30ème se présentent à l’oral. Leur répartition\nentre les trois jurys de l’oral est effectuée suivant la méthode suivante (parfois appelée\n« Méthode du serpent » )\n1) Calculer le rang moyen des candidates passant l’oral dans chaque jury\n2) Calculer les écarts types correspondants.\n3) Le tableau suivant indique les notes attribuées par chaque jury à ses candidats.\na) Pour chaque jury, calculer la moyenne des notes et l’écart-type arrondi à 0,1.\nb) Regrouper les notes des trois jurys et déterminer les valeurs extrêmes, l’étendu, la\nmédiane et les quartiles Q\n1 et Q3.\nc) Calculer la moyenne des 30 candidats.\n4) On désire harmoniser les notations entre les trois jury.\nPour cela, on effectue une transformation des notes, de sorte que les trois jurys aient la même\nmoyenne et le même écart – type.\na) Soit (xi) les notes attribuées par le Jury\n1. On pose yi = a xi + b où a et b sont des réels\navec a > 0. Déterminer a et b pour que la série (yi) ait une moyenne égale à 10 et un écart\ntype égal à 3.\nQuelles sont les nouvelles notes du jury1, arrondies à 0.5 ?\nb) Transformer de façon analogue les notes du jury 2 puis celle du jury 3 pour obtenir une\nmoyenne égale à 10 et un écart type égal à 3\nRang du candidat\nJury 1 1 6 7 12 13 18 19 24 25 30\nJury 2 2 5 8 11 14 17 20 23 26 29\nJury 3 3 4 9 10 15 16 21 22 27 28\nNotes des candidats\nJury 1 13 17 4 5 15 16 5 8 5 12\nJury 2 10 15 7 6 10 11 8 5 6 7\nJury 3 14 17 17 3 19 5 2 8 19 6\n5) On étudie maintenant la série obtenue en regroupant les 30 notes transformées des 3 jurys\na) Quelle est la moyenne de cette série\nb) Déterminer les valeurs extrêmes, l’étendu, la médiane et les quartiles Q\n1 et Q3\nc) Construire le diagramme en boite de cette série et celui de la série d’origine\nd) Comparer les deux séries\nEffet de structure\n\nÀ calculer dans l'application : n = 15, Σ = 225, min = 6, max = 24.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 22 (« Activité 22 La méthode du serpent–Harmonisation de jury ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 15,
+        "min": 8,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 225,
+        "min": 80,
+        "max": 300,
+        "step": 5
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 6,
+        "min": 1,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 24,
+        "min": 14,
+        "max": 30,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 22 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -577,24 +1347,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 23,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 23",
     "difficulty": 3,
-    "statement": "Activité 23\nV oici les résultats au baccalauréat d’un lycée en 2004 puis en 2005.\nLe directeur du lycée : « l’année 2005 marque une progression de 13% dans la réussite au bac:\nje félicite les profs du lycée »\nUn professeur de terminale « je vous remercie monsieur le directeur, mais le taux de réussite\nn’a progressé que de 8% »\nUn élève du lycée : « Qu’on soit redoublant ou pas, les résultas de 2004 sont meilleurs que\nceux de 2005 »\nUn redoublant « En tout cas, dans ce lycée en redoublant les chances de réussir ont\ndiminué de 10% ».\nQui a raison, le directeur ? Le professeur ? L’élève? Le redoublant ?\n(On pourra calculer : le taux de réussite en 2004 puis en 2005 ; le taux de réussite des non\nredoublants en 2004 puis en 2005 ; le taux de réussite des redoublants en 2004 puis en 2005).\n2004 2005\nPrésentés Admis Présentés Admis\nNon redoublants 220 120 150 80\nRedoublants 30 30 100 90\nTotal 250 150 250 170",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 23\nV oici les résultats au baccalauréat d’un lycée en 2004 puis en 2005.\nLe directeur du lycée : « l’année 2005 marque une progression de 13% dans la réussite au bac:\nje félicite les profs du lycée »\nUn professeur de terminale « je vous remercie monsieur le directeur, mais le taux de réussite\nn’a progressé que de 8% »\nUn élève du lycée : « Qu’on soit redoublant ou pas, les résultas de 2004 sont meilleurs que\nceux de 2005 »\nUn redoublant « En tout cas, dans ce lycée en redoublant les chances de réussir ont\ndiminué de 10% ».\nQui a raison, le directeur ? Le professeur ? L’élève? Le redoublant ?\n(On pourra calculer : le taux de réussite en 2004 puis en 2005 ; le taux de réussite des non\nredoublants en 2004 puis en 2005 ; le taux de réussite des redoublants en 2004 puis en 2005).\n2004 2005\nPrésentés Admis Présentés Admis\nNon redoublants 220 120 150 80\nRedoublants 30 30 100 90\nTotal 250 150 250 170\n\nÀ calculer dans l'application : n = 9, Σ = 81, min = 2, max = 16.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 23 (« Activité 23 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 9,
+        "min": 4,
+        "max": 16,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 81,
+        "min": 30,
+        "max": 150,
+        "step": 3
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 2,
+        "min": 1,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 16,
+        "min": 10,
+        "max": 28,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 23 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -603,24 +1408,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 24,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 24",
     "difficulty": 3,
-    "statement": "Activité 24\nPour tester l’efficacité d’un médicament et comparer notamment les taux de guérison chez\nl’homme et chez la femme, on a procédé à deux expérimentations en zone rurale et en zone\nurbaine ; celles-ci ont conduit aux résultats suivants :\nZone rurale\nZone urbaine\n1) L’affirmation « le médicament est légèrement plus efficace chez les hommes que chez les\nfemmes » ne parait–elle pas légitime ?\n2) Reproduire et compléter le tableau suivant où sont regroupées toutes les données.\nQuelle est votre conclusion ?\nHommes Femmes Total\nEffectif 3500 1500 5000\nGuérisons 1500 500 2000\n% de guérisons 42,86% 33,33% 40%\nHommes Femmes Total\nEffectif 3000 5500 8500\nGuérisons 2000 3500 5500\n% de guérisons 66,67% 63,64% 64,71%\nHommes Femmes Total\nEffectif 6000\nGuérisons\n% de guérisons\nSimulation - Fluctuation d’échantillonnage",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 24\nPour tester l’efficacité d’un médicament et comparer notamment les taux de guérison chez\nl’homme et chez la femme, on a procédé à deux expérimentations en zone rurale et en zone\nurbaine ; celles-ci ont conduit aux résultats suivants :\nZone rurale\nZone urbaine\n1) L’affirmation « le médicament est légèrement plus efficace chez les hommes que chez les\nfemmes » ne parait–elle pas légitime ?\n2) Reproduire et compléter le tableau suivant où sont regroupées toutes les données.\nQuelle est votre conclusion ?\nHommes Femmes Total\nEffectif 3500 1500 5000\nGuérisons 1500 500 2000\n% de guérisons 42,86% 33,33% 40%\nHommes Femmes Total\nEffectif 3000 5500 8500\nGuérisons 2000 3500 5500\n% de guérisons 66,67% 63,64% 64,71%\nHommes Femmes Total\nEffectif 6000\nGuérisons\n% de guérisons\nSimulation - Fluctuation d’échantillonnage\n\nÀ calculer dans l'application : n = 20, Σ = 200, min = 1, max = 19.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 24 (« Activité 24 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 20,
+        "min": 8,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 200,
+        "min": 80,
+        "max": 280,
+        "step": 5
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 1,
+        "min": 1,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 19,
+        "min": 12,
+        "max": 30,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 24 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -629,24 +1469,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 25,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 25 La loi de Benford",
     "difficulty": 3,
-    "statement": "Activité 25 La loi de Benford\n1) Chaque élève de la classe simule avec sa calculatrice 30 tirages d’un chiffre compris entre\n1 et 9 et résume les résultas dans ce tableau.\n2) Pour chaque rangée on résume les résultats obtenus par tous les élèves de cette rangée dans\nun tableau identique au tableau suivant (on aura ainsi autant de tableaux que de rangées).\n3) a) On résume les résultats obtenus par tous les élèves de la classe dans un tableau\nidentique au précédent\nb) Comparer votre tableau à celui de franck Benford qui donne les fréquences théoriques\nd’apparition des chiffres significatifs.\nTableau de Franck Benford.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 25 La loi de Benford\n1) Chaque élève de la classe simule avec sa calculatrice 30 tirages d’un chiffre compris entre\n1 et 9 et résume les résultas dans ce tableau.\n2) Pour chaque rangée on résume les résultats obtenus par tous les élèves de cette rangée dans\nun tableau identique au tableau suivant (on aura ainsi autant de tableaux que de rangées).\n3) a) On résume les résultats obtenus par tous les élèves de la classe dans un tableau\nidentique au précédent\nb) Comparer votre tableau à celui de franck Benford qui donne les fréquences théoriques\nd’apparition des chiffres significatifs.\nTableau de Franck Benford.\n\nÀ calculer dans l'application : n = 10, Σ = 120, min = 5, max = 19. Moyenne et étendue.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 25 (« Activité 25 La loi de Benford ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 10,
+        "min": 4,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 120,
+        "min": 40,
+        "max": 200,
+        "step": 4
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 5,
+        "min": 1,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 19,
+        "min": 12,
+        "max": 30,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 25 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -655,24 +1530,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 26,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 26",
     "difficulty": 3,
-    "statement": "Activité 26\n1) Simuler avec la touche RANDOM de votre calculatrice 20 lancers d’une pièce de monnaie\nordinaire et indiquer la fréquence d’apparition de la face « PILE »\n2) Recommencer 3 fois la simulation précédente et noter à chaque fois la fréquence d’apparition\nde « PILE »\nQuelle est l’étendue de la série des 4 fréquences de « PILE » obtenues ?\nChiffres 1 2 3 4 5 6 7 8 9\nNombre\nd’apparition\nChiffres 1 2 3 4 5 6 7 8 9\nNombre\nd’apparition\nFréquence\nd’apparitionChiffres 1 2 3 4 5 6 7 8 9\nFréquence 0,301 0,176 0,124 0,097 0,079 0,068 0,057 0,053 0,045",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 26\n1) Simuler avec la touche RANDOM de votre calculatrice 20 lancers d’une pièce de monnaie\nordinaire et indiquer la fréquence d’apparition de la face « PILE »\n2) Recommencer 3 fois la simulation précédente et noter à chaque fois la fréquence d’apparition\nde « PILE »\nQuelle est l’étendue de la série des 4 fréquences de « PILE » obtenues ?\nChiffres 1 2 3 4 5 6 7 8 9\nNombre\nd’apparition\nChiffres 1 2 3 4 5 6 7 8 9\nNombre\nd’apparition\nFréquence\nd’apparitionChiffres 1 2 3 4 5 6 7 8 9\nFréquence 0,301 0,176 0,124 0,097 0,079 0,068 0,057 0,053 0,045\n\nÀ calculer dans l'application : n = 8, Σ = 96, min = 7, max = 18.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 26 (« Activité 26 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 8,
+        "min": 4,
+        "max": 16,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 96,
+        "min": 32,
+        "max": 160,
+        "step": 4
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 7,
+        "min": 1,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 18,
+        "min": 12,
+        "max": 28,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 26 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -681,24 +1591,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 27,
-    "solver": "fixed",
+    "solver": "statsMean",
     "title": "Activité 27",
     "difficulty": 3,
-    "statement": "Activité 27\n1) Simuler 20 lancers de deux dés ordinaires dont les faces sont numérotées de 1 à 6 et\ncompter le nombre de réalisation de chacun des événements suivants.\nA : « la somme des chiffres est 10 »\nB : « les deux chiffres sont de même parité »\nC : « la somme des chiffres est un multiple de 5 »\n2) Calculer la fréquence de chacun de ces événements.\n3) Recommencer la même simulation et répondre aux mêmes questions.\nObtenez-vous les mêmes résultats ?\nLe tableau suivant donne le pourcentage (arrondi à l’unité) de réussite au baccalauréat,\npour un établissement donné, de 1996 à 2005.\nReprésenter cette série chronologique dans un repère.\nLe tableau ci-dessous, donne quelques indicateurs sur l’enseignement supérieur de l’année\nuniversitaire 1993/1994 à l’année 2002/2003.\n1) Déterminer, pour chaque année universitaire,\na) le nombre d’étudiants (Garçons) de 1993/94 à 2002/2003.\nb) le nombre d’étudiantes de 1993/94 à 2002/2003.\n2) Représenter par une courbe l’évolution de 1993/94 à 2002/2003.\na) du nombre d’étudiants (Garçons).\nb) du nombre d’étudiantes\n(On prendra comme unités 1 cm pour 1000 étudiants).\nAnnée 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005\nPourcentage 35 38 32 45 52 40 55 58 53 52\nIndicateur 1993\n1994\n1994\n1995\n1995\n1996\n1996\n1997\n1997\n1998\n1998\n1999\n1999\n2000\n2000\n2001\n2001\n2002\n2002\n2003\n2003\n2004\nNombre\nd’université 6 6 6 6 6 6 6 7 7 7 7\nNombre\nd’établissements\n85 83 89 89 90 91 95 107 121 141\nEffectif global\nd’étudiants\n96101 102682 112634 121787 137024 155120 180044 207388 226102 262502\nPart des filles\n(%)\n42.2 43.1 43.7 44.6 45.9 48.3 50.4 51.9 53.9 55.1\nLes notes d’une classe de 32 élèves (15 filles et 17 garçons ) dans un devoir sont résumées\ndans le tableau suivant\na) Représenter, dans le même repère, les deux séries de notes par des diagrammes en bâtons\nb) Pour chaque série déterminer le mode, la médiane et l’étendue.\nc) Commenter ces résultats.\nLe tableau suivant donne la répartition des montants en dinars des salaires mensuels des\nemployés d’une entreprise.\n1) a) Déterminer le tableau des effectifs cumulés croissants.\nb) Déterminer la classe qui contient la médiane m.\nc) Déterminer les classes qui contiennent les quartiles Q\n1 et Q3.\n2) On suppose que la répartition est uniforme à l’intérieur de chaque classe.\nDonner des valeurs approchées de m, Q\n1 et Q3.\n3) Construire le diagramme en boite de la série.\nUne étude sociale auprès de 100 élèves d’un établissement scolaire et portant sur le\nnombre de frères et sœurs, la profession du père et la distance du domicile au lycée a donné\nles résultats suivants.\nTableau 1\nNotes 2 5 7 8 9 10 11 12 13 14 15 17 20\nFilles 0 0 0 1 2 3 3 3 2 1 0 0 0\nGarçons 1 2 1 2 0 1 3 1 0 2 1 1 1\nSalaires 200≤s<250 250≤s<300 300≤s<350 350≤s<400 400≤s<450 450≤s<500 500≤s<550 550≤s<600\nEffectif 23 36 45 69 128 112 117 24\nNombre de frères et soeurs 1 2 3 4 5\nEffectifs 5 8 21 54 12\nTableau 2\nTableau 3\n1) Un élève a représenté les distances du domicile au lycée par l’histogramme suivant.\nTrouver les erreurs et tracer l’histogramme de cette série.\n2) Déterminer la distance moyenne d’un domicile au lycée\n3) Déterminer le nombre moyen de frères et sœurs par élève .\n4) Représenter la répartition des élèves selon la profession du père par un diagramme circulaire\nCalculer la moyenne et l’écart type de chacune des séries suivantes\nDistance (d) du\ndomicile\nau lycée en Km\nd<2 2≤d<55≤d<1010≤p<2020≤p<5050≤p<100p≥100\nEffectifs 40 20 15 10 10 2 3\nProfession\ndu pere Ouvrier Ouvrier à l’étranger Cadre moyen cadre supérieur autres\nEffectifs 25 15 35 15 10\nd<2\n2= d<5\n5= d<10\n10=p<20\n20=p<50\n50=p<100\np=100\nValeur -2 0 1 2 3\nEffectif 1 4 2 3 1\nClasse effectif [-1 ; 1[ [1 ; 3[ [3 ; 5[ [5 ; 7[\nEffectif 1 0 3 2\n1) Moyennes partielles\nSi une série est partagée en deux séries d’effectifs p et q et de moyennes et alors la\nmoyenne de la série totale est\n2) Effet d’une application affine\nSoit (xi , ni) une série et soit sa moyenne\n/circle6Si on ajoute un nombre réel b à toutes les valeurs de cette série alors la moyenne de la\nnouvelle série (xi+b, ni ) est +b\n/circle6Si on multiplie toutes les valeurs de cette série par un même nombre réel non nul a\nalors la moyenne de la nouvelle série (a x i , ni ) est a\n/circle6Plus généralement, soit a et b deux nombres réels.\nSi est la moyenne de la série (xi , ni ) alors a +b est la moyenne de la série (a x i + b , ni )\nCas d’une série discrète\nSoit (xi , ni ) une série discrète définie par toutes ses valeurs x 1 , x2 ,….. ,x p et par les\neffectifs correspondants n1 , n2 ,…, n p\n/circle6La variance de la série est le nombre noté V et défini par\noù n est l’effectif total (n = n1+n2+….+n p)\n/circle6L’écart type de la série est le nombre noté σ et défini par\nCas d’une série continue\nLa variance et l’écart - type d’une série continue sont définies par les mêmes formules\noù x1 , x2 , ….. , x p sont les centres des classes et n 1 , n2 , … , n p sont les effectifs respectifs\nde ces classes .\nEffet d’une application affine\nSoit (xi , ni) une série et σ son écart type .Soit a et b deux nombres réels.\nL’écart type de la série( axi , ni) est\nL’écart type de la série(xi + b , ni) est σ\nPropriétés de la moyenne\nVariance et écart type\nyx\n.z pq\npx qy= +\n+\nx\nx\nx x\nx\nσa\n.σ V=\n...\n;V n\nnx nx n x\nx\npp11\n2=\n++ +\n-\n]] ^ ]gg h g\nDévelopper ses compéDévelopper ses compétences\nLe fabricant de chaussures\nPour avoir une idée sur les pointures fréquentes et celles qui sont rares et pour organiser sa\nproduction, un fabricant de chaussures pour hommes fait un sondage, sur 250 hommes adultes\nchoisis au hasard.\nLes résultats de ce sondage sont indiqués dans le tableau suivant\n1) a) Déterminer le mode la médiane et la moyenne de cette série .\nb) Parmi ces paramètres, quels sont ceux qui sont signifiants pour ce fabricant ?\nc) Quel pourcentage de l’échantillon représentent les personnes interrogées qui ont une\npointure comprise entre 41 et 43 ?\n2) Pour ne pas investir dans la fabrication de pointures très rares il décide de ne fabriquer que\nles chaussures dont la demande dépasse 95% .\nS’il se base sur les résultats de ce sondage, quelles pointures seront fabriquées? Quel est le\npourcentage des clients potentiels qui ne trouveront pas chaussures à leurs pieds?\nIndication\n1)Recopier et compléter le tableau suivant\n2)Déterminer la fréquence de chaque pointure\nPointure 37 38 39 40 41 42 43 44 45 46 47\nEffectif 50\n37 38 39 40 41 42 43 44 45 46 47\n1 2 5\n123456789 1 0 1 1\nPointure\neffectif\nDévelopper ses compéDévelopper ses compétences\nLa population du monde arabe\nLe tableau suivant indique la population (en millions d’habitants) et la densité (nombre\nd’habitant par km\n2) de quelques pays arabes\nEtude de la série des populations\n1) Calculer la moyenne, l’étendue et la médiane de la série\n2) a) Quels sont les pays dont la population est la plus voisine de la médiane ?\nb) Quels sont les pays dont la population est la plus voisine de la moyenne?\n3) on considère la série des populations des pays précédents sauf le Bahrein , le Qatar\nl’Egypte et l’Algérie .\nCalculer la moyenne, l’étendue et la médiane de cette série.\nEtude de la série des densités\n1) Calculer la moyenne, l’étendue et la médiane de la série.\n2) a) Calculer la population totale de ces pays.\nb) Calculer la superficie totale de ces pays.\nc) En déduire la densité de l’ensemble de ces pays.\nd) Cette densité est-elle égale à la moyenne des densités ? Expliquer pourquoi.\n3) On considère la série des densités des pays précédents sauf le Bahrein\nCalculer la moyenne, l’étendue et la médiane de cette série.\nDurée de vie d’une ampoule\nOn a testé la durée de vie de 100 ampoules de type A et de 75 ampoules de type B.\nOn a obtenu les résultats suivants donnant, en fonction de la durée d’utilisation ( en heures),\nle nombre d’ampoules encore en état de marche.\nPAYS Bahrein Emirates Egypte Jordanie Koweit Liban Algerie Oman Qatar Tunisie Yemen\nPopulation 0,7 2,8 70 4,7 2,1 4,1 29,1 2,5 0,5 9,94 16,4\nDensité 700 33 67 48 117 410 12 11,7 45 64 31\nDévelopper ses compéDévelopper ses compétences\n1) Construire les diagrammes en boites représentant la durée de vie de ces échantillons\nd’ampoules.\nCommenter ces deux diagrammes\n2) a) Quelle est la durée de vie moyenne m d’une ampoule du type A ?\nQuelle est la durée de vie moyenne m’ d’une ampoule du type B ?\n3)Pour la série relative à la durée de vie des ampoules du type A déterminer\na) l’écart type σ\nb) le nombre d’ampoules dont la durée de vie appartient à l’intervalle [m – σ , m + σ[\n4) Pour la série relative à la durée de vie des ampoules du type A déterminer\na) l’écart type σ’\nb) le nombre d’ampoules dont la durée de vie appartient à l’intervalle [m’– σ’ , m’+ σ’[\nAttention radar\nLes agents de la garde de la circulation décident de chronométrer discrètement les vitesses des\nvoitures passant sur une portion de la route ou la vitesse est limitée à 70km/h.\nV oici les vitesses recueillis pour les 50 premières voitures .\nDurée (en h) 400 500 600 700 800 900 1000 1100 1200 1300 1400 1500 1600\nEffectif\nType\nA\n99 95 92 88 85 80 70 65 52 48 33 17 11\nType\nB\n72 71 68 60 58 52 47 43 40 35 30 20 15\n70 45 58 82 66 60 77 68 65 75\n40 55 74 51 72 44 85 53 77 61\n95 59 85 75 66 78 94 80 60 54\n55 45 95 82 51 75 66 72 53 98\n45 50 65 75 85 92 60 75 65 95\nDévelopper ses compéDévelopper ses compétences\n1) a) Etablir un tableau d’effectifs par classe d’amplitude 10 ([40 ,50[ ; [50 ,60[…)\nb) Construire un histogramme représentant ce tableau\n1) Quel est le pourcentage des voitures en excès de vitesse ?\n2) Calculer la vitesse moyenne\na) A partir des données initiales\nb) A partir du tableau de la question 1) a\nc) Comparer et commenter les résultats obtenus .\nStratégie de résolution.\n2) On peut penser au tableau des fréquences cumulées\n3) c) Est il normal que les résultats soient différents ? Quel est le plus exact ? Quel est le plus\nrapide à calculer ?\nUtiliser les TICUtiliser les TIC\nUtiliser un tableur pour calculer la moyenne, la variance,\nles quartiles et la médiane d’une série statistique\nLes données sont celles de l’activité 13 de la rubrique « explorer ».\n/circle6Ouvrir une feuille de calcul (sur Excel, par exemple).\n/circle6Taper les notes des 35 élèves (une note par cellule).\n/circle6Sélectionner la zone où sont écrites les données. Utiliser le menu\n(Insertion/Nom/Définir) pour nommer cette série (exemple devoir).\n• Pour calculer la moyenne, taper la formule\n= MOYENNE (devoir)\n• Pour calculer le mode, taper la formule\n= MODE (devoir)\n• Pour calculer les quartiles, taper la formule\n= QUARTILE (devoir ; 1) donne le premier quartile.\n= QUARTILE (devoir ; 2) donne la médiane.\n= QUARTILE (devoir ; 3) donne le troisième quartile.\n• Pour calculer la variance, taper la formule\n= V AR (devoir)\n• Pour calculer l’écart type, taper la formule\n= ECARTYPE (devoir)\n12 10 10 6 8 13 11\n8 6 8 10 10 10 4\n7 15 14 9 12 8 8\n11 11 9 15 14 13 10\n10 9 7 6 15 14 14\nMoyenne 10,0714286\nMode 10\nPremier quartile 8\nMédiane 10\nTroisième quartile 12\nVariance 7,77248677\nEcart type 2,787918\nAppliquer\nPour chacune des deux séries suivantes,\nCalculer le (ou les ) mode (s) ; la médiane et\nla moyenne.\nDans une classe de 36 élèves on trouve la\nrépartition suivante du nombre d’enfants par\nfamille\na) Représenter cette série par un diagram-\nme en bâtons\nb) Déterminer le mode et la médiane de\ncette série.\nCi-dessous la répartition des moyennes\ntrimestrielles en mathématiques, d’une classe\nde 20 élèves.\n1) Représenter cette série par un diagramme\ncirculaire.\n2) Calculer les effectifs correspondants à\nchaque classe et préciser la classe modale\n3) a) Donner le tableau des effectifs cumulés\ncroissants et des fréquences cumulées\ncroissantes\nb) Tracer la courbe des fréquences\ncumulées croissantes .\nc) Donner une valeur approchée de la\nmédiane\n4) V oici les données détaillées de ces\nmoyennes(arrondies au dixième)\n8,3 ; 6,6 ; 8,8 ; 11,4 ; 12,1 ; 13,2 ; 11,8 ;\n14 ;15,9 ; 9,1 ; 10,4 ; 10,5 ; 6,8 ; 7,2 ;\n11 ; 10,8 ; 12,5 ; 15,4 ; 7,3 ; 13\na) Calculer la moyenne de la classe et la\nnote médiane.\nb) Comparer avec les résultats obtenus\nprécédemment.\nMaîtriser\nUne étude statistique portant sur les salaires\nmensuels, en dinars, des employés d’une entre-\nprise a donné l’histogramme suivant\na) Dresser le tableau des effectifs\nb) Calculer le salaire moyen\nc) Déterminer le salaire médian.\nDans un groupe de 60 personnes la\nmoyenne d’âge est de 22 ans pour les femmes\net de 28 ans pour les hommes. Sachant qu’il y\na 60% d’hommes dans ce groupe, quelle est la\nmoyenne d’âge du groupe ?\nExercices et problèmesExercices et problèmes\nValeur 5 6 8 10 11 14 15\nEffectifs 2 1 7 12 15 11 1\nNombre d’enfants 2 3 4 5 6\nNombre de familles 12 15 5 2 2\nNote [6,8[ [8,10[ [10,12[ [12,14[ [14,16[\nPourcen\ntage 20% 15% 30% 20% 15%\nValeur 0 1 2 3 4 5 6 7 8\nEffectifs 10 5 15 8 7 5 9 15 11\n12 10\nnombre d’employés\nsalaire\nnombred'employés\n[350,400[ [400,4500[ [450,500[\n[500,550[ [550,600[ [600,650[\nExercices et problèmesExercices et problèmes\nLe tableau ci dessous indique les ventes\nmensuelles de postes de télévision par un\nmagasin durant 6 mois.\nCalculer la moyenne et l’écart type des ventes\nmensuelles .\nLe tableau suivant indique les revenues\npétroliers (en millions de dollars) de l’Algérie\net de la Libye de 1990 à 1999\n1) Pour chaque pays\na) Calculer le coefficient multiplicateur,\narrondi au centième près, qui permet de\npasser de l’année 1990 à l’année 1991. En\ndéduire l’indice de l’année 1991 par\nrapport à l’année de base 1990\nb)Recopier et compléter le tableau suivant\n2) Tracer dans un même repère la courbe\nd’évolution des revenues pétroliers de 1990\nà1991\n(les points de cette courbe sont les points\nd’abscisse l’année et d’ordonnée l’indice par\nrapport à l’année 1990)\nLe tableau ci-dessous donne la production\nde pétrole, en millions de tonnes, des pays de\nl’OPEP de 1987 à 1997\n1) a) Calculer le coefficient multiplicateur,\narrondi au centième près ,qui permet de\npasser de l’année 1987 à l’année 1988 .En\ndéduire l’indice de l’année 1988 par\nrapport à l’année de base 1987\nb) Recopier et compléter le tableau\nprécédent\n2) Représenter cette production par un dia-\ngramme\n3) Tracer la courbe d’évolution de la\nproduction de 1987 à 1997( les points de cette\ncourbe sont les points d’abscisse l’année et\nd’ordonnée l’indice par rapport à l’année\n1987 )\nLes loyers mensuels des appartements\nd’un ensemble d’immeubles sont répartis\ncomme suit\n1) Quel est le loyer moyen ?\n2) Quel serait le loyer moyen si\na) les loyers augmentent de 10 dinars ?\nb) les loyers augmentent de 5%\na) Dans la classe 2\nème sciences I il y a 24\ngarçons et 12 filles. La moyenne d’âge des\ngarçons est 17 ans 8 mois, celle des filles est\n17 ans 2 mois.\nMois Jan Fév Mais Avr Mai Juin\nNombre de\nTV vendus 15 20 18 17 22 15\nAnnée 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999\nAlgérie 10497 9600 7885 6902 6335 6938 9164 8800 5691 7556\nLibye 11500 10000 9326 7689 7170 7763 9543 8905 5612 7734\nAnnée 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997\nProduction 944 1065 1137 1232 1231 1297 1322 1333 1368 1408 1423\nCoefficient\nmultiplica-\nteur\nIndice 100\nAnnée 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999\nCoefficient\nmultiplicateur\nIndice 100\nCatégorie Studio 1 + S 2 + S 3 + S\nNombre 5 10 30 10\nLoyer\n(en dinars)\n100 120 150 200\nQuelle est l’âge moyen des élèves de cette\nclasse ?\nb) Dans la classe 2\nème sciences II il y a 35\nélèves. L’âge moyen des filles est 17 ans 2\nmois, celui des garçons est 17 ans 7 mois, et\nla moyenne d’âge de la classe est 17 ans 4\nmois\nCombien y a-t-il de filles et de garçons dans\ncette classe ?\nLes séries suivantes représentent les notes\nobtenues, dans un même devoir, par trois\nclasses de 2\néme année sciences\n1) Déterminer pour chaque série\na) le mode, la médiane\nb) le premier quartile, le troisième\nquartile et l’écart interquartile.\n2) Faire les diagrammes en boite de chaque\nsérie et commenter les résultats en utilisant\nces diagrammes\n3) Calculer pour chaque série\na) la moyenne m et l’écart type σ\nb) le pourcentage d’élèves ayant une note\ndans l’intervalle [m - σ ,m + σ[.\nPour comparer l’efficacité de deux\nrégimes amaigrissants A et B on a enquêté\nauprès de 100 personnes qui suivent le régime\nA et 100 personnes qui suivent le régime B\na) Calculer la valeur moyenne et l’écart type\npour chaque série\nb) Comparer ces deux régimes\nLes notes obtenues par une même classe\ndans un devoir de mathématiques et dans un\ndevoir de physique sont les suivantes\nNotes de mathématiques\n9, 12, 10, 10, 10, 12, 13, 9, 8, 12,10, 10, 11,\n11, 10, 10, 12, 9, 11, 8, 10,\n11, 8, 14, 9, 7, 10, 12, 9, 10 , 8 , 9 , 10\nNotes de physique\n11, 12, 4, 8, 15, 5, 16, 5, 8, 5, 10, 12, 16, 15,\n9, 9 ; 9, 12, 12, 11, 10, 8, 5,\n13, 18, 7, 13, 8, 13, 9, 10, 8, 9\nCalculer , pour chaque matière ,\na)La moyenne et l’écart-type σ\nb)Le pourcentage d’élèves ayant une note\nappartenant à l’intervalle\nc)Tracer les diagrammes en boites de chaque\nsérie de notes et comparer les notes de cette\nclasse dans ces deux matières.\nExercices et problèmesExercices et problèmes\nPerte de poids\nen kg [0,2[ [2,4[ [4,6[ [6,8[ [8,10[ [10,12[\nRégime A 11 18 30 29 10 2\nRégime B 34 20 15 14 12 5\nNote 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18\nEffectif\n2èSC1 3 4 1 2 0 0 5 1 0 0 4 4 3 1 2\n2èSC2 2 1 2 2 1 2 5 3 2 1 1 3 1 2 2\n2èSC3 1 0 0 1 3 4 6 2 5 3 2 0 2 0 1\n,? σσxx-+6 @\nx\nMath et cultureMath et culture\nLes pièges de la moyennes\n/circle6La justice est sauve. Un avocat célèbre avoue en privé que sa gloire lui fait gagner des\nprocès qu’il devrait perdre. Mais , ajoute-t-il , en début de carrière , il avait perdu bien des\nprocès qu’il aurait dù gagner. Et de conclure : « En moyenne , la justice est sauve »\n/circle6La balance truquée. Un marchand dispose d’une balance dont les deux bras n’ont\npas tout à fait la même longueur, de sorte que les masses marquées placées dans l’un des\nplateaux équilibrent une masse différente placée dans l’autre plateau.\n/circle6Pour effectuer une pesée, il décide de faire deux mesures successives , une en plaçant\nles masses marquées à gauche : il trouve 900 grammes .L’autre en plaçant les masses marquées\nà droite , il trouve 961grammes .Il annonce alors la masse exacte 930,5 grammes , la\nmoyenne des deux résultats .\nVrai ou faux?\nSource : la statistique du quotidien J.L.boursin\n/circle6La langue de bois. Cent bucherons partirent un jour vers la forêt accompagnés par\ndeux femmes chargées de l’intendance. Avant la fin de l’hiver, deux des hommes épousèrent\nles deux femmes. Un statisticien à qui l’histoire était racontée résuma ainsi l’anecdote : 2% des\nhommes ont épousé 100% des femmes\nF .Casiro tangente No 77\nCible .Trois statisticiens partent à la chasse au gros gibier munis d’arcs et de flèches. A\nla vue d’un cerf, deux d’entre eux se mettent en position de tir. La flèche du premier passe trois\nmètres à droite de l’animal ,celle du second passe trois mètres à gauche. Fou de joie le\ntroisième statisticien se met à sauter sur place en hurlant : « On l’a eu , on l’a eu … »\nB.Rittaud et F .Casiro tangente No 77\nOMEGA EDITIONS 2007",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 27\n1) Simuler 20 lancers de deux dés ordinaires dont les faces sont numérotées de 1 à 6 et\ncompter le nombre de réalisation de chacun des événements suivants.\nA : « la somme des chiffres est 10 »\nB : « les deux chiffres sont de même parité »\nC : « la somme des chiffres est un multiple de 5 »\n2) Calculer la fréquence de chacun de ces événements.\n3) Recommencer la même simulation et répondre aux mêmes questions.\nObtenez-vous les mêmes résultats ?\nLe tableau suivant donne le pourcentage (arrondi à l’unité) de réussite au baccalauréat,\npour un établissement donné, de 1996 à 2005.\nReprésenter cette série chronologique dans un repère.\nLe tableau ci-dessous, donne quelques indicateurs sur l’enseignement supérieur de l’année\nuniversitaire 1993/1994 à l’année 2002/2003.\n1) Déterminer, pour chaque année universitaire,\na) le nombre d’étudiants (Garçons) de 1993/94 à 2002/2003.\nb) le nombre d’étudiantes de 1993/94 à 2002/2003.\n2) Représenter par une courbe l’évolution de 1993/94 à 2002/2003.\na) du nombre d’étudiants (Garçons).\nb) du nombre d’étudiantes\n(On prendra comme unités 1 cm pour 1000 étudiants).\nAnnée 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005\nPourcentage 35 38 32 45 52 40 55 58 53 52\nIndicateur 1993\n1994\n1994\n1995\n1995\n1996\n1996\n1997\n1997\n1998\n1998\n1999\n1999\n2000\n2000\n2001\n2001\n2002\n2002\n2003\n2003\n2004\nNombre\nd’université 6 6 6 6 6 6 6 7 7 7 7\nNombre\nd’établissements\n85 83 89 89 90 91 95 107 121 141\nEffectif global\nd’étudiants\n96101 102682 112634 121787 137024 155120 180044 207388 226102 262502\nPart des filles\n(%)\n42.2 43.1 43.7 44.6 45.9 48.3 50.4 51.9 53.9 55.1\nLes notes d’une classe de 32 élèves (15 filles et 17 garçons ) dans un devoir sont résumées\ndans le tableau suivant\na) Représenter, dans le même repère, les deux séries de notes par des diagrammes en bâtons\nb) Pour chaque série déterminer le mode, la médiane et l’étendue.\nc) Commenter ces résultats.\nLe tableau suivant donne la répartition des montants en dinars des salaires mensuels des\nemployés d’une entreprise.\n1) a) Déterminer le tableau des effectifs cumulés croissants.\nb) Déterminer la classe qui contient la médiane m.\nc) Déterminer les classes qui contiennent les quartiles Q\n1 et Q3.\n2) On suppose que la répartition est uniforme à l’intérieur de chaque classe.\nDonner des valeurs approchées de m, Q\n1 et Q3.\n3) Construire le diagramme en boite de la série.\nUne étude sociale auprès de 100 élèves d’un établissement scolaire et portant sur le\nnombre de frères et sœurs, la profession du père et la distance du domicile au lycée a donné\nles résultats suivants.\nTableau 1\nNotes 2 5 7 8 9 10 11 12 13 14 15 17 20\nFilles 0 0 0 1 2 3 3 3 2 1 0 0 0\nGarçons 1 2 1 2 0 1 3 1 0 2 1 1 1\nSalaires 200≤s<250 250≤s<300 300≤s<350 350≤s<400 400≤s<450 450≤s<500 500≤s<550 550≤s<600\nEffectif 23 36 45 69 128 112 117 24\nNombre de frères et soeurs 1 2 3 4 5\nEffectifs 5 8 21 54 12\nTableau 2\nTableau 3\n1) Un élève a représenté les distances du domicile au lycée par l’histogramme suivant.\nTrouver les erreurs et tracer l’histogramme de cette série.\n2) Déterminer la distance moyenne d’un domicile au lycée\n3) Déterminer le nombre moyen de frères et sœurs par élève .\n4) Représenter la répartition des élèves selon la profession du père par un diagramme circulaire\nCalculer la moyenne et l’écart type de chacune des séries suivantes\nDistance (d) du\ndomicile\nau lycée en Km\nd<2 2≤d<55≤d<1010≤p<2020≤p<5050≤p<100p≥100\nEffectifs 40 20 15 10 10 2 3\nProfession\ndu pere Ouvrier Ouvrier à l’étranger Cadre moyen cadre supérieur autres\nEffectifs 25 15 35 15 10\nd<2\n2= d<5\n5= d<10\n10=p<20\n20=p<50\n50=p<100\np=100\nValeur -2 0 1 2 3\nEffectif 1 4 2 3 1\nClasse effectif [-1 ; 1[ [1 ; 3[ [3 ; 5[ [5 ; 7[\nEffectif 1 0 3 2\n1) Moyennes partielles\nSi une série est partagée en deux séries d’effectifs p et q et de moyennes et alors la\nmoyenne de la série totale est\n2) Effet d’une application affine\nSoit (xi , ni) une série et soit sa moyenne\n/circle6Si on ajoute un nombre réel b à toutes les valeurs de cette série alors la moyenne de la\nnouvelle série (xi+b, ni ) est +b\n/circle6Si on multiplie toutes les valeurs de cette série par un même nombre réel non nul a\nalors la moyenne de la nouvelle série (a x i , ni ) est a\n/circle6Plus généralement, soit a et b deux nombres réels.\nSi est la moyenne de la série (xi , ni ) alors a +b est la moyenne de la série (a x i + b , ni )\nCas d’une série discrète\nSoit (xi , ni ) une série discrète définie par toutes ses valeurs x 1 , x2 ,….. ,x p et par les\neffectifs correspondants n1 , n2 ,…, n p\n/circle6La variance de la série est le nombre noté V et défini par\noù n est l’effectif total (n = n1+n2+….+n p)\n/circle6L’écart type de la série est le nombre noté σ et défini par\nCas d’une série continue\nLa variance et l’écart - type d’une série continue sont définies par les mêmes formules\noù x1 , x2 , ….. , x p sont les centres des classes et n 1 , n2 , … , n p sont les effectifs respectifs\nde ces classes .\nEffet d’une application affine\nSoit (xi , ni) une série et σ son écart type .Soit a et b deux nombres réels.\nL’écart type de la série( axi , ni) est\nL’écart type de la série(xi + b , ni) est σ\nPropriétés de la moyenne\nVariance et écart type\nyx\n.z pq\npx qy= +\n+\nx\nx\nx x\nx\nσa\n.σ V=\n...\n;V n\nnx nx n x\nx\npp11\n2=\n++ +\n-\n]] ^ ]gg h g\nDévelopper ses compéDévelopper ses compétences\nLe fabricant de chaussures\nPour avoir une idée sur les pointures fréquentes et celles qui sont rares et pour organiser sa\nproduction, un fabricant de chaussures pour hommes fait un sondage, sur 250 hommes adultes\nchoisis au hasard.\nLes résultats de ce sondage sont indiqués dans le tableau suivant\n1) a) Déterminer le mode la médiane et la moyenne de cette série .\nb) Parmi ces paramètres, quels sont ceux qui sont signifiants pour ce fabricant ?\nc) Quel pourcentage de l’échantillon représentent les personnes interrogées qui ont une\npointure comprise entre 41 et 43 ?\n2) Pour ne pas investir dans la fabrication de pointures très rares il décide de ne fabriquer que\nles chaussures dont la demande dépasse 95% .\nS’il se base sur les résultats de ce sondage, quelles pointures seront fabriquées? Quel est le\npourcentage des clients potentiels qui ne trouveront pas chaussures à leurs pieds?\nIndication\n1)Recopier et compléter le tableau suivant\n2)Déterminer la fréquence de chaque pointure\nPointure 37 38 39 40 41 42 43 44 45 46 47\nEffectif 50\n37 38 39 40 41 42 43 44 45 46 47\n1 2 5\n123456789 1 0 1 1\nPointure\neffectif\nDévelopper ses compéDévelopper ses compétences\nLa population du monde arabe\nLe tableau suivant indique la population (en millions d’habitants) et la densité (nombre\nd’habitant par km\n2) de quelques pays arabes\nEtude de la série des populations\n1) Calculer la moyenne, l’étendue et la médiane de la série\n2) a) Quels sont les pays dont la population est la plus voisine de la médiane ?\nb) Quels sont les pays dont la population est la plus voisine de la moyenne?\n3) on considère la série des populations des pays précédents sauf le Bahrein , le Qatar\nl’Egypte et l’Algérie .\nCalculer la moyenne, l’étendue et la médiane de cette série.\nEtude de la série des densités\n1) Calculer la moyenne, l’étendue et la médiane de la série.\n2) a) Calculer la population totale de ces pays.\nb) Calculer la superficie totale de ces pays.\nc) En déduire la densité de l’ensemble de ces pays.\nd) Cette densité est-elle égale à la moyenne des densités ? Expliquer pourquoi.\n3) On considère la série des densités des pays précédents sauf le Bahrein\nCalculer la moyenne, l’étendue et la médiane de cette série.\nDurée de vie d’une ampoule\nOn a testé la durée de vie de 100 ampoules de type A et de 75 ampoules de type B.\nOn a obtenu les résultats suivants donnant, en fonction de la durée d’utilisation ( en heures),\nle nombre d’ampoules encore en état de marche.\nPAYS Bahrein Emirates Egypte Jordanie Koweit Liban Algerie Oman Qatar Tunisie Yemen\nPopulation 0,7 2,8 70 4,7 2,1 4,1 29,1 2,5 0,5 9,94 16,4\nDensité 700 33 67 48 117 410 12 11,7 45 64 31\nDévelopper ses compéDévelopper ses compétences\n1) Construire les diagrammes en boites représentant la durée de vie de ces échantillons\nd’ampoules.\nCommenter ces deux diagrammes\n2) a) Quelle est la durée de vie moyenne m d’une ampoule du type A ?\nQuelle est la durée de vie moyenne m’ d’une ampoule du type B ?\n3)Pour la série relative à la durée de vie des ampoules du type A déterminer\na) l’écart type σ\nb) le nombre d’ampoules dont la durée de vie appartient à l’intervalle [m – σ , m + σ[\n4) Pour la série relative à la durée de vie des ampoules du type A déterminer\na) l’écart type σ’\nb) le nombre d’ampoules dont la durée de vie appartient à l’intervalle [m’– σ’ , m’+ σ’[\nAttention radar\nLes agents de la garde de la circulation décident de chronométrer discrètement les vitesses des\nvoitures passant sur une portion de la route ou la vitesse est limitée à 70km/h.\nV oici les vitesses recueillis pour les 50 premières voitures .\nDurée (en h) 400 500 600 700 800 900 1000 1100 1200 1300 1400 1500 1600\nEffectif\nType\nA\n99 95 92 88 85 80 70 65 52 48 33 17 11\nType\nB\n72 71 68 60 58 52 47 43 40 35 30 20 15\n70 45 58 82 66 60 77 68 65 75\n40 55 74 51 72 44 85 53 77 61\n95 59 85 75 66 78 94 80 60 54\n55 45 95 82 51 75 66 72 53 98\n45 50 65 75 85 92 60 75 65 95\nDévelopper ses compéDévelopper ses compétences\n1) a) Etablir un tableau d’effectifs par classe d’amplitude 10 ([40 ,50[ ; [50 ,60[…)\nb) Construire un histogramme représentant ce tableau\n1) Quel est le pourcentage des voitures en excès de vitesse ?\n2) Calculer la vitesse moyenne\na) A partir des données initiales\nb) A partir du tableau de la question 1) a\nc) Comparer et commenter les résultats obtenus .\nStratégie de résolution.\n2) On peut penser au tableau des fréquences cumulées\n3) c) Est il normal que les résultats soient différents ? Quel est le plus exact ? Quel est le plus\nrapide à calculer ?\nUtiliser les TICUtiliser les TIC\nUtiliser un tableur pour calculer la moyenne, la variance,\nles quartiles et la médiane d’une série statistique\nLes données sont celles de l’activité 13 de la rubrique « explorer ».\n/circle6Ouvrir une feuille de calcul (sur Excel, par exemple).\n/circle6Taper les notes des 35 élèves (une note par cellule).\n/circle6Sélectionner la zone où sont écrites les données. Utiliser le menu\n(Insertion/Nom/Définir) pour nommer cette série (exemple devoir).\n• Pour calculer la moyenne, taper la formule\n= MOYENNE (devoir)\n• Pour calculer le mode, taper la formule\n= MODE (devoir)\n• Pour calculer les quartiles, taper la formule\n= QUARTILE (devoir ; 1) donne le premier quartile.\n= QUARTILE (devoir ; 2) donne la médiane.\n= QUARTILE (devoir ; 3) donne le troisième quartile.\n• Pour calculer la variance, taper la formule\n= V AR (devoir)\n• Pour calculer l’écart type, taper la formule\n= ECARTYPE (devoir)\n12 10 10 6 8 13 11\n8 6 8 10 10 10 4\n7 15 14 9 12 8 8\n11 11 9 15 14 13 10\n10 9 7 6 15 14 14\nMoyenne 10,0714286\nMode 10\nPremier quartile 8\nMédiane 10\nTroisième quartile 12\nVariance 7,77248677\nEcart type 2,787918\nAppliquer\nPour chacune des deux séries suivantes,\nCalculer le (ou les ) mode (s) ; la médiane et\nla moyenne.\nDans une classe de 36 élèves on trouve la\nrépartition suivante du nombre d’enfants par\nfamille\na) Représenter cette série par un diagram-\nme en bâtons\nb) Déterminer le mode et la médiane de\ncette série.\nCi-dessous la répartition des moyennes\ntrimestrielles en mathématiques, d’une classe\nde 20 élèves.\n1) Représenter cette série par un diagramme\ncirculaire.\n2) Calculer les effectifs correspondants à\nchaque classe et préciser la classe modale\n3) a) Donner le tableau des effectifs cumulés\ncroissants et des fréquences cumulées\ncroissantes\nb) Tracer la courbe des fréquences\ncumulées croissantes .\nc) Donner une valeur approchée de la\nmédiane\n4) V oici les données détaillées de ces\nmoyennes(arrondies au dixième)\n8,3 ; 6,6 ; 8,8 ; 11,4 ; 12,1 ; 13,2 ; 11,8 ;\n14 ;15,9 ; 9,1 ; 10,4 ; 10,5 ; 6,8 ; 7,2 ;\n11 ; 10,8 ; 12,5 ; 15,4 ; 7,3 ; 13\na) Calculer la moyenne de la classe et la\nnote médiane.\nb) Comparer avec les résultats obtenus\nprécédemment.\nMaîtriser\nUne étude statistique portant sur les salaires\nmensuels, en dinars, des employés d’une entre-\nprise a donné l’histogramme suivant\na) Dresser le tableau des effectifs\nb) Calculer le salaire moyen\nc) Déterminer le salaire médian.\nDans un groupe de 60 personnes la\nmoyenne d’âge est de 22 ans pour les femmes\net de 28 ans pour les hommes. Sachant qu’il y\na 60% d’hommes dans ce groupe, quelle est la\nmoyenne d’âge du groupe ?\nExercices et problèmesExercices et problèmes\nValeur 5 6 8 10 11 14 15\nEffectifs 2 1 7 12 15 11 1\nNombre d’enfants 2 3 4 5 6\nNombre de familles 12 15 5 2 2\nNote [6,8[ [8,10[ [10,12[ [12,14[ [14,16[\nPourcen\ntage 20% 15% 30% 20% 15%\nValeur 0 1 2 3 4 5 6 7 8\nEffectifs 10 5 15 8 7 5 9 15 11\n12 10\nnombre d’employés\nsalaire\nnombred'employés\n[350,400[ [400,4500[ [450,500[\n[500,550[ [550,600[ [600,650[\nExercices et problèmesExercices et problèmes\nLe tableau ci dessous indique les ventes\nmensuelles de postes de télévision par un\nmagasin durant 6 mois.\nCalculer la moyenne et l’écart type des ventes\nmensuelles .\nLe tableau suivant indique les revenues\npétroliers (en millions de dollars) de l’Algérie\net de la Libye de 1990 à 1999\n1) Pour chaque pays\na) Calculer le coefficient multiplicateur,\narrondi au centième près, qui permet de\npasser de l’année 1990 à l’année 1991. En\ndéduire l’indice de l’année 1991 par\nrapport à l’année de base 1990\nb)Recopier et compléter le tableau suivant\n2) Tracer dans un même repère la courbe\nd’évolution des revenues pétroliers de 1990\nà1991\n(les points de cette courbe sont les points\nd’abscisse l’année et d’ordonnée l’indice par\nrapport à l’année 1990)\nLe tableau ci-dessous donne la production\nde pétrole, en millions de tonnes, des pays de\nl’OPEP de 1987 à 1997\n1) a) Calculer le coefficient multiplicateur,\narrondi au centième près ,qui permet de\npasser de l’année 1987 à l’année 1988 .En\ndéduire l’indice de l’année 1988 par\nrapport à l’année de base 1987\nb) Recopier et compléter le tableau\nprécédent\n2) Représenter cette production par un dia-\ngramme\n3) Tracer la courbe d’évolution de la\nproduction de 1987 à 1997( les points de cette\ncourbe sont les points d’abscisse l’année et\nd’ordonnée l’indice par rapport à l’année\n1987 )\nLes loyers mensuels des appartements\nd’un ensemble d’immeubles sont répartis\ncomme suit\n1) Quel est le loyer moyen ?\n2) Quel serait le loyer moyen si\na) les loyers augmentent de 10 dinars ?\nb) les loyers augmentent de 5%\na) Dans la classe 2\nème sciences I il y a 24\ngarçons et 12 filles. La moyenne d’âge des\ngarçons est 17 ans 8 mois, celle des filles est\n17 ans 2 mois.\nMois Jan Fév Mais Avr Mai Juin\nNombre de\nTV vendus 15 20 18 17 22 15\nAnnée 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999\nAlgérie 10497 9600 7885 6902 6335 6938 9164 8800 5691 7556\nLibye 11500 10000 9326 7689 7170 7763 9543 8905 5612 7734\nAnnée 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997\nProduction 944 1065 1137 1232 1231 1297 1322 1333 1368 1408 1423\nCoefficient\nmultiplica-\nteur\nIndice 100\nAnnée 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999\nCoefficient\nmultiplicateur\nIndice 100\nCatégorie Studio 1 + S 2 + S 3 + S\nNombre 5 10 30 10\nLoyer\n(en dinars)\n100 120 150 200\nQuelle est l’âge moyen des élèves de cette\nclasse ?\nb) Dans la classe 2\nème sciences II il y a 35\nélèves. L’âge moyen des filles est 17 ans 2\nmois, celui des garçons est 17 ans 7 mois, et\nla moyenne d’âge de la classe est 17 ans 4\nmois\nCombien y a-t-il de filles et de garçons dans\ncette classe ?\nLes séries suivantes représentent les notes\nobtenues, dans un même devoir, par trois\nclasses de 2\néme année sciences\n1) Déterminer pour chaque série\na) le mode, la médiane\nb) le premier quartile, le troisième\nquartile et l’écart interquartile.\n2) Faire les diagrammes en boite de chaque\nsérie et commenter les résultats en utilisant\nces diagrammes\n3) Calculer pour chaque série\na) la moyenne m et l’écart type σ\nb) le pourcentage d’élèves ayant une note\ndans l’intervalle [m - σ ,m + σ[.\nPour comparer l’efficacité de deux\nrégimes amaigrissants A et B on a enquêté\nauprès de 100 personnes qui suivent le régime\nA et 100 personnes qui suivent le régime B\na) Calculer la valeur moyenne et l’écart type\npour chaque série\nb) Comparer ces deux régimes\nLes notes obtenues par une même classe\ndans un devoir de mathématiques et dans un\ndevoir de physique sont les suivantes\nNotes de mathématiques\n9, 12, 10, 10, 10, 12, 13, 9, 8, 12,10, 10, 11,\n11, 10, 10, 12, 9, 11, 8, 10,\n11, 8, 14, 9, 7, 10, 12, 9, 10 , 8 , 9 , 10\nNotes de physique\n11, 12, 4, 8, 15, 5, 16, 5, 8, 5, 10, 12, 16, 15,\n9, 9 ; 9, 12, 12, 11, 10, 8, 5,\n13, 18, 7, 13, 8, 13, 9, 10, 8, 9\nCalculer , pour chaque matière ,\na)La moyenne et l’écart-type σ\nb)Le pourcentage d’élèves ayant une note\nappartenant à l’intervalle\nc)Tracer les diagrammes en boites de chaque\nsérie de notes et comparer les notes de cette\nclasse dans ces deux matières.\nExercices et problèmesExercices et problèmes\nPerte de poids\nen kg [0,2[ [2,4[ [4,6[ [6,8[ [8,10[ [10,12[\nRégime A 11 18 30 29 10 2\nRégime B 34 20 15 14 12 5\nNote 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18\nEffectif\n2èSC1 3 4 1 2 0 0 5 1 0 0 4 4 3 1 2\n2èSC2 2 1 2 2 1 2 5 3 2 1 1 3 1 2 2\n2èSC3 1 0 0 1 3 4 6 2 5 3 2 0 2 0 1\n,? σσxx-+6 @\nx\nMath et cultureMath et culture\nLes pièges de la moyennes\n/circle6La justice est sauve. Un avocat célèbre avoue en privé que sa gloire lui fait gagner des\nprocès qu’il devrait perdre. Mais , ajoute-t-il , en début de carrière , il avait perdu bien des\nprocès qu’il aurait dù gagner. Et de conclure : « En moyenne , la justice est sauve »\n/circle6La balance truquée. Un marchand dispose d’une balance dont les deux bras n’ont\npas tout à fait la même longueur, de sorte que les masses marquées placées dans l’un des\nplateaux équilibrent une masse différente placée dans l’autre plateau.\n/circle6Pour effectuer une pesée, il décide de faire deux mesures successives , une en plaçant\nles masses marquées à gauche : il trouve 900 grammes .L’autre en plaçant les masses marquées\nà droite , il trouve 961grammes .Il annonce alors la masse exacte 930,5 grammes , la\nmoyenne des deux résultats .\nVrai ou faux?\nSource : la statistique du quotidien J.L.boursin\n/circle6La langue de bois. Cent bucherons partirent un jour vers la forêt accompagnés par\ndeux femmes chargées de l’intendance. Avant la fin de l’hiver, deux des hommes épousèrent\nles deux femmes. Un statisticien à qui l’histoire était racontée résuma ainsi l’anecdote : 2% des\nhommes ont épousé 100% des femmes\nF .Casiro tangente No 77\nCible .Trois statisticiens partent à la chasse au gros gibier munis d’arcs et de flèches. A\nla vue d’un cerf, deux d’entre eux se mettent en position de tir. La flèche du premier passe trois\nmètres à droite de l’animal ,celle du second passe trois mètres à gauche. Fou de joie le\ntroisième statisticien se met à sauter sur place en hurlant : « On l’a eu , on l’a eu … »\nB.Rittaud et F .Casiro tangente No 77\nOMEGA EDITIONS 2007\n\nÀ calculer dans l'application : n = 5, Σ = 40, min = 4, max = 12.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 27 (« Activité 27 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 5,
+        "min": 4,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "key": "sum",
+        "label": "Σ",
+        "unit": "—",
+        "value": 40,
+        "min": 16,
+        "max": 80,
+        "step": 4
+      },
+      {
+        "key": "xmin",
+        "label": "min",
+        "unit": "—",
+        "value": 4,
+        "min": 1,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "key": "xmax",
+        "label": "max",
+        "unit": "—",
+        "value": 12,
+        "min": 8,
+        "max": 24,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 27 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "mean",
+        "label": "x̄",
+        "unit": "—"
+      },
+      {
+        "key": "range",
+        "label": "étendue",
+        "unit": "—"
+      }
     ]
   }
 ]

@@ -378,13 +378,13 @@ const recaps = {
   },
   fixed: {
     title: "Activité du manuel",
-    lead: "Cette activité est celle du polycopié CNP. On répond avec le cours du chapitre, sans notion hors programme.",
+    lead: "L’énoncé est celui du livre. Les questions se calculent ici : l’application donne la correction.",
     points: [
-      "Lire tout l’énoncé avant de calculer.",
+      "Lire l’énoncé, puis les questions de l’application.",
       "Écrire la relation du cours, puis substituer.",
-      "Contrôler l’ordre de grandeur et les unités."
+      "Contrôler l’ordre de grandeur."
     ],
-    watch: "Les numéros d’activité sont ceux du manuel. La correction suit la synthèse du chapitre."
+    watch: "Ne pas se contenter de relire le livre : chaque question a une réponse à saisir."
   }
 };
 

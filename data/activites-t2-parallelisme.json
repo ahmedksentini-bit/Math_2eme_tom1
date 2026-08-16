@@ -5,24 +5,64 @@
     "tome": 2,
     "kind": "activity",
     "activity": 1,
-    "solver": "fixed",
+    "solver": "distance2d",
     "title": "Activité 1",
     "difficulty": 1,
-    "statement": "Activité 1\nDans la figure ci-contre, ABCD est un tétraèdre.\nLes points I, J, K et L sont les milieux respectifs\nde [AB],[CD] ,[IJ] et [BJ].\n1) Les droites (KL) et (IB) sont-elles parallèles ? Justifier.\n2) Les droites (AJ) et (I L) sont-elles parallèles ? Justifier.\n3) Les droites (IJ) et (AD) sont-elles parallèles ? Justifier.\nVocabulaire\nDeux droites parallèles sont soit confondues soit distinctes.\nLorsqu’elles sont distinctes on dit qu’elles sont strictement parallèles.\nRemarque\nDeux droites D et D’ de l’espace telles que D∩ D’=\nne sont pas forcement parallèles.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 1\nDans la figure ci-contre, ABCD est un tétraèdre.\nLes points I, J, K et L sont les milieux respectifs\nde [AB],[CD] ,[IJ] et [BJ].\n1) Les droites (KL) et (IB) sont-elles parallèles ? Justifier.\n2) Les droites (AJ) et (I L) sont-elles parallèles ? Justifier.\n3) Les droites (IJ) et (AD) sont-elles parallèles ? Justifier.\nVocabulaire\nDeux droites parallèles sont soit confondues soit distinctes.\nLorsqu’elles sont distinctes on dit qu’elles sont strictement parallèles.\nRemarque\nDeux droites D et D’ de l’espace telles que D∩ D’=\nne sont pas forcement parallèles.\n\nÀ calculer dans l'application : A(0 ; 1), B(4 ; 4). Distance AB et milieu I.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 1 (« Activité 1 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 0,
+        "min": -4,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 1,
+        "min": -4,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 4,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 4,
+        "min": -2,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 1 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dist",
+        "label": "AB",
+        "unit": "—"
+      },
+      {
+        "key": "xI",
+        "label": "x_I",
+        "unit": "—"
+      },
+      {
+        "key": "yI",
+        "label": "y_I",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -31,24 +71,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 2,
-    "solver": "fixed",
+    "solver": "lineSlope",
     "title": "Activité 2",
     "difficulty": 1,
-    "statement": "Activité 2\n1) Soit Δ une droite de l’espace et A un point n’appartenant pas à Δ\nMontrer qu’il existe une droite et une seule passant par A\net parallèle à la droite Δ\n( On pourra considérer le plan P défini par la droite Δ et le point A )\n2) Soient D et D’ deux droites strictement parallèles .\nMontrer qu’il existe un unique plan contenant D et D’.\nRemarque\nOn admet les deux propriétés suivantes\nDeux droites de l’espace sont parallèles si elles sont contenues\ndans un même plan et si elles sont parallèles dans ce plan.\nDéfinition\nK\u0001\nL\u0001\nI\u0001\nJ\u0001\nA\u0001\nB\u0001 D\u0001\nA\u0001\nΔ\nD\nD’Ø\nPropriété1 : si deux droites sont parallèles tout plan qui coupe l’une coupe l’autre.\nPropriété2 : si deux droites sont parallèles à une même troisième elle sont parallèles entre\nelles .",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 2\n1) Soit Δ une droite de l’espace et A un point n’appartenant pas à Δ\nMontrer qu’il existe une droite et une seule passant par A\net parallèle à la droite Δ\n( On pourra considérer le plan P défini par la droite Δ et le point A )\n2) Soient D et D’ deux droites strictement parallèles .\nMontrer qu’il existe un unique plan contenant D et D’.\nRemarque\nOn admet les deux propriétés suivantes\nDeux droites de l’espace sont parallèles si elles sont contenues\ndans un même plan et si elles sont parallèles dans ce plan.\nDéfinition\nK\u0001\nL\u0001\nI\u0001\nJ\u0001\nA\u0001\nB\u0001 D\u0001\nA\u0001\nΔ\nD\nD’Ø\nPropriété1 : si deux droites sont parallèles tout plan qui coupe l’une coupe l’autre.\nPropriété2 : si deux droites sont parallèles à une même troisième elle sont parallèles entre\nelles .\n\nÀ calculer dans l'application : A(0 ; 1), B(4 ; 3). Pente m et ordonnée à l’origine p.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 2 (« Activité 2 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 1,
+        "min": -4,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 4,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 3,
+        "min": -3,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 2 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "m",
+        "label": "m",
+        "unit": "—"
+      },
+      {
+        "key": "p",
+        "label": "p",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -57,24 +132,64 @@
     "tome": 2,
     "kind": "activity",
     "activity": 3,
-    "solver": "fixed",
+    "solver": "distance2d",
     "title": "Activité 3",
     "difficulty": 1,
-    "statement": "Activité 3\nOn considère un tétraèdre ABCD et on désigne par I, J, K et L les milieux respectifs des arêtes\n[AB], [BC], [CD] et [DA].\n1) Montrer que IJKL est un parallélogramme.\n2) Soit M et N les milieux respectifs de [AC] et [BD]\nMontrer que IMKN est un parallélogramme\n3) Déduire de ce qui précède que dans un tétraèdre, les trois droites joignant les milieux des\narêtes opposés sont concourantes.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 3\nOn considère un tétraèdre ABCD et on désigne par I, J, K et L les milieux respectifs des arêtes\n[AB], [BC], [CD] et [DA].\n1) Montrer que IJKL est un parallélogramme.\n2) Soit M et N les milieux respectifs de [AC] et [BD]\nMontrer que IMKN est un parallélogramme\n3) Déduire de ce qui précède que dans un tétraèdre, les trois droites joignant les milieux des\narêtes opposés sont concourantes.\n\nÀ calculer dans l'application : A(−2 ; 3), B(4 ; −1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 3 (« Activité 3 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 3,
+        "min": -3,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 4,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 3 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dist",
+        "label": "AB",
+        "unit": "—"
+      },
+      {
+        "key": "xI",
+        "label": "x_I",
+        "unit": "—"
+      },
+      {
+        "key": "yI",
+        "label": "y_I",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -83,24 +198,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 4,
-    "solver": "fixed",
+    "solver": "lineSlope",
     "title": "Activité 4",
     "difficulty": 1,
-    "statement": "Activité 4\nDans la figure ci-contre ABCDE est une pyramide dont la\nbase BCDE est un parallélogramme , C’ et D’ sont les milieux\nrespectifs des arêtes[AC] et [AD] .\n1) Montrer que les droites (C’D’) et (EB) sont parallèles\n2) Dans le plan (ACD) on désigne par I le symétrique de C’ par rapport à D’.\nMontrer que les droites (BC’) et (EI) sont parallèles",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 4\nDans la figure ci-contre ABCDE est une pyramide dont la\nbase BCDE est un parallélogramme , C’ et D’ sont les milieux\nrespectifs des arêtes[AC] et [AD] .\n1) Montrer que les droites (C’D’) et (EB) sont parallèles\n2) Dans le plan (ACD) on désigne par I le symétrique de C’ par rapport à D’.\nMontrer que les droites (BC’) et (EI) sont parallèles\n\nÀ calculer dans l'application : A(−1 ; 0), B(3 ; 2).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 4 (« Activité 4 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": -1,
+        "min": -3,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 0,
+        "min": -4,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 2,
+        "min": -3,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 4 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "m",
+        "label": "m",
+        "unit": "—"
+      },
+      {
+        "key": "p",
+        "label": "p",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -109,24 +259,64 @@
     "tome": 2,
     "kind": "activity",
     "activity": 5,
-    "solver": "fixed",
+    "solver": "distance2d",
     "title": "Activité 5 Droites et plans parallèles",
     "difficulty": 1,
-    "statement": "Activité 5 Droites et plans parallèles\nDans la figure ci-contre, ABCDA’B’C’D’est un parallélépipède.\n1) a) La droite (AB) est elle sécante au plan (ABC) ?\nb) La droite (A’C’) est elle sécante au plan (ABC) ?\nc) La droite (DD’) est elle sécante au plan (ABC) ?\n2) Nommer des droites parallèles au plan (BCC’)\nIllustration de la propriété 1 Illustration de la propriété 2\nD\u0001E\u0001\nB\u0001 C\u0001\nA\u0001\nC’\u0001\nD’\u0001\nEExplorerExplorer\n3)Nommer des droites parallèles au plan (A A’C)\nVocabulaire\nSi une droite D est parallèle à un plan P\nOn dit aussi que le plan P est parallèle à la droite D ou que le plan P et la droite D sont\nparallèles et on écrit D // P ou P // D .\nSi de plus D ∩ P = , on dit que D et P sont strictement parallèles.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 5 Droites et plans parallèles\nDans la figure ci-contre, ABCDA’B’C’D’est un parallélépipède.\n1) a) La droite (AB) est elle sécante au plan (ABC) ?\nb) La droite (A’C’) est elle sécante au plan (ABC) ?\nc) La droite (DD’) est elle sécante au plan (ABC) ?\n2) Nommer des droites parallèles au plan (BCC’)\nIllustration de la propriété 1 Illustration de la propriété 2\nD\u0001E\u0001\nB\u0001 C\u0001\nA\u0001\nC’\u0001\nD’\u0001\nEExplorerExplorer\n3)Nommer des droites parallèles au plan (A A’C)\nVocabulaire\nSi une droite D est parallèle à un plan P\nOn dit aussi que le plan P est parallèle à la droite D ou que le plan P et la droite D sont\nparallèles et on écrit D // P ou P // D .\nSi de plus D ∩ P = , on dit que D et P sont strictement parallèles.\n\nÀ calculer dans l'application : A(1 ; 1), B(5 ; 4).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 5 (« Activité 5 Droites et plans parallèles ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 5,
+        "min": 1,
+        "max": 7,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 4,
+        "min": -2,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 5 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dist",
+        "label": "AB",
+        "unit": "—"
+      },
+      {
+        "key": "xI",
+        "label": "x_I",
+        "unit": "—"
+      },
+      {
+        "key": "yI",
+        "label": "y_I",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -135,24 +325,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 6,
-    "solver": "fixed",
+    "solver": "lineSlope",
     "title": "Activité 6",
     "difficulty": 1,
-    "statement": "Activité 6\nOn se propose dans cette activité de démontrer la propriété suivante .\nPropriété 3 : Si une droite D et un plan P sont parallèles\nalors toute droite parallèle à D et passant par un point\nde P est incluse dans le plan P.\nSoit D une droite parallèle à un plan P et soit A un point de P.\nOn désigne par D’ la droite passant par A et parallèle à la droite D .\na) Montrer, par l’absurde, que D’ est incluse dans le plan P.\nb) Conclure.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 6\nOn se propose dans cette activité de démontrer la propriété suivante .\nPropriété 3 : Si une droite D et un plan P sont parallèles\nalors toute droite parallèle à D et passant par un point\nde P est incluse dans le plan P.\nSoit D une droite parallèle à un plan P et soit A un point de P.\nOn désigne par D’ la droite passant par A et parallèle à la droite D .\na) Montrer, par l’absurde, que D’ est incluse dans le plan P.\nb) Conclure.\n\nÀ calculer dans l'application : A(0 ; 0), B(6 ; 3).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 6 (« Activité 6 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 6,
+        "min": 2,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 3,
+        "min": -2,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 6 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "m",
+        "label": "m",
+        "unit": "—"
+      },
+      {
+        "key": "p",
+        "label": "p",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -161,24 +386,64 @@
     "tome": 2,
     "kind": "activity",
     "activity": 7,
-    "solver": "fixed",
+    "solver": "distance2d",
     "title": "Activité 7",
     "difficulty": 1,
-    "statement": "Activité 7\nDémontrer les propriétés suivantes\nPr\nopriété 4 : Si deux droites sont parallèles tout plan parallèle à l’une est parallèle à l’autre\nIndication : on pourra raisonner par l’absurde et utiliser la propriété1.\nPropriété 5 : Si une droite est parallèle à deux plans sécants alors elle est parallèle à leur\ndroite d’intersection.\nIndication : soit A un point de l’intersection des deux plans la parallèle en A à la droite\nest contenue dans chacun des deux plans.\nPr\nopriété 6( théorème du toit) : Soit D et D’ deux droites parallèles et P et P’ deux plans\ncontenant respectivement D et D’ .\nSi P et P’ sont sécants ,alors leur droite d’intersection Δ est parallèle à D et à D’\nIndication : P et P’ sont parallèles à la droite D donc d’après la propriété 5 les droites\nD et Δ sont parallèles .\nOn dit qu’une droite est parallèle à un plan si elle est parallèle\nà une droite de ce plan\nDéfinition\nP\u0001 A\u0001\nD’\u0001\nD\u0001\nØ",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 7\nDémontrer les propriétés suivantes\nPr\nopriété 4 : Si deux droites sont parallèles tout plan parallèle à l’une est parallèle à l’autre\nIndication : on pourra raisonner par l’absurde et utiliser la propriété1.\nPropriété 5 : Si une droite est parallèle à deux plans sécants alors elle est parallèle à leur\ndroite d’intersection.\nIndication : soit A un point de l’intersection des deux plans la parallèle en A à la droite\nest contenue dans chacun des deux plans.\nPr\nopriété 6( théorème du toit) : Soit D et D’ deux droites parallèles et P et P’ deux plans\ncontenant respectivement D et D’ .\nSi P et P’ sont sécants ,alors leur droite d’intersection Δ est parallèle à D et à D’\nIndication : P et P’ sont parallèles à la droite D donc d’après la propriété 5 les droites\nD et Δ sont parallèles .\nOn dit qu’une droite est parallèle à un plan si elle est parallèle\nà une droite de ce plan\nDéfinition\nP\u0001 A\u0001\nD’\u0001\nD\u0001\nØ\n\nÀ calculer dans l'application : A(−4 ; 0), B(2 ; 8).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 7 (« Activité 7 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": -4,
+        "min": -6,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 0,
+        "min": -4,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 2,
+        "min": -2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 8,
+        "min": 0,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 7 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dist",
+        "label": "AB",
+        "unit": "—"
+      },
+      {
+        "key": "xI",
+        "label": "x_I",
+        "unit": "—"
+      },
+      {
+        "key": "yI",
+        "label": "y_I",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -187,24 +452,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 8,
-    "solver": "fixed",
+    "solver": "lineSlope",
     "title": "Activité 8",
     "difficulty": 1,
-    "statement": "Activité 8\nSoit SABCD une pyramide de sommet S et de base ABCD tel que les droites (AB) et (CD)\nsoient parallèles.\n1) Construire l’intersection des plans (SAD) et (SBC)\n2) Construire l’intersection des plans (SAB) et ( SCD)\nIndication : Remarquer que le plan (SAB) contient une droite parallèle a une droite du plan\n(SCD) et utiliser le théorème du toit.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 8\nSoit SABCD une pyramide de sommet S et de base ABCD tel que les droites (AB) et (CD)\nsoient parallèles.\n1) Construire l’intersection des plans (SAD) et (SBC)\n2) Construire l’intersection des plans (SAB) et ( SCD)\nIndication : Remarquer que le plan (SAB) contient une droite parallèle a une droite du plan\n(SCD) et utiliser le théorème du toit.\n\nÀ calculer dans l'application : A(1 ; −2), B(5 ; 6).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 8 (« Activité 8 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 5,
+        "min": 1,
+        "max": 7,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 6,
+        "min": -1,
+        "max": 8,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 8 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "m",
+        "label": "m",
+        "unit": "—"
+      },
+      {
+        "key": "p",
+        "label": "p",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -213,24 +513,64 @@
     "tome": 2,
     "kind": "activity",
     "activity": 9,
-    "solver": "fixed",
+    "solver": "distance2d",
     "title": "Activité 9",
     "difficulty": 1,
-    "statement": "Activité 9\nSoit ABCDA’B’C’D’ un parallélépipède et soit I,J et K les milieux respectifs de [A’B’], [B’C’]\net [C’D’] .\nMontrer que les droites (BC) et (AC) sont parallèles au plan (IJK).",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 9\nSoit ABCDA’B’C’D’ un parallélépipède et soit I,J et K les milieux respectifs de [A’B’], [B’C’]\net [C’D’] .\nMontrer que les droites (BC) et (AC) sont parallèles au plan (IJK).\n\nÀ calculer dans l'application : A(0 ; 1), B(4 ; 4). Distance AB et milieu I.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 9 (« Activité 9 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 0,
+        "min": -4,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 1,
+        "min": -4,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 4,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 4,
+        "min": -2,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 9 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dist",
+        "label": "AB",
+        "unit": "—"
+      },
+      {
+        "key": "xI",
+        "label": "x_I",
+        "unit": "—"
+      },
+      {
+        "key": "yI",
+        "label": "y_I",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -239,24 +579,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 10,
-    "solver": "fixed",
+    "solver": "lineSlope",
     "title": "Activité 10",
     "difficulty": 1,
-    "statement": "Activité 10\n1) Soient D et D’ deux droites non coplanaires et A un point . On désigne par Δ la parallèle\nà la droite D passant par A et par Δ’ la parallèle à la droite D’ passant par A.\nMontrer qu’il existe un plan et un seul passant par A et parallèle à la droite D et à la droite D’.\n(On pourra considérer le plan défini par les droites Δ et Δ’)\n2) Soit ABCD un tétraèdre et M un point du segment [AC] distinct de A et de C .\nOn désigne par P le plan passant par M et parallèle aux droites (AB) et (CD).\na) Construire les points N, P et Q intersections du plan P avec les droites (BC), (BD) et (AD).\nb) Montrer que le quadrilatère MNPQ est un parallélogramme.\nVocabulaire\nSi P et Q sont deux plans tels que P∩ Q = , on dit qu’ils sont strictement parallèles.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 10\n1) Soient D et D’ deux droites non coplanaires et A un point . On désigne par Δ la parallèle\nà la droite D passant par A et par Δ’ la parallèle à la droite D’ passant par A.\nMontrer qu’il existe un plan et un seul passant par A et parallèle à la droite D et à la droite D’.\n(On pourra considérer le plan défini par les droites Δ et Δ’)\n2) Soit ABCD un tétraèdre et M un point du segment [AC] distinct de A et de C .\nOn désigne par P le plan passant par M et parallèle aux droites (AB) et (CD).\na) Construire les points N, P et Q intersections du plan P avec les droites (BC), (BD) et (AD).\nb) Montrer que le quadrilatère MNPQ est un parallélogramme.\nVocabulaire\nSi P et Q sont deux plans tels que P∩ Q = , on dit qu’ils sont strictement parallèles.\n\nÀ calculer dans l'application : A(0 ; 1), B(4 ; 3). Pente m et ordonnée à l’origine p.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 10 (« Activité 10 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 1,
+        "min": -4,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 4,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 3,
+        "min": -3,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 10 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "m",
+        "label": "m",
+        "unit": "—"
+      },
+      {
+        "key": "p",
+        "label": "p",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -265,24 +640,64 @@
     "tome": 2,
     "kind": "activity",
     "activity": 11,
-    "solver": "fixed",
+    "solver": "distance2d",
     "title": "Activité 11",
     "difficulty": 2,
-    "statement": "Activité 11\nMontrer les propriétés suivantes\nPropriété 7.Si deux plans sont parallèles, alors toute droite\nde l’un est parallèle à l’autre.\nOn dit que deux plans sont parallèles lorsqu’ils n’ont\naucun point commun ou lorsqu’ils sont confondus.\nAinsi, si P et Q sont deux plans\n( P // Q ) équivaut à ( P ∩ Q = ou P = Q )\nDéfinition\nP\u0001\nQ\u0001\nØ\nØ\nPropriété 8 .Si deux plans sont parallèles alors\ntoute droite parallèle à l’un est parallèle à l’autre\nProriété 9 : Si deux plans sont parallèles alors\ntoute droite qui perce l’un perce l’autre",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 11\nMontrer les propriétés suivantes\nPropriété 7.Si deux plans sont parallèles, alors toute droite\nde l’un est parallèle à l’autre.\nOn dit que deux plans sont parallèles lorsqu’ils n’ont\naucun point commun ou lorsqu’ils sont confondus.\nAinsi, si P et Q sont deux plans\n( P // Q ) équivaut à ( P ∩ Q = ou P = Q )\nDéfinition\nP\u0001\nQ\u0001\nØ\nØ\nPropriété 8 .Si deux plans sont parallèles alors\ntoute droite parallèle à l’un est parallèle à l’autre\nProriété 9 : Si deux plans sont parallèles alors\ntoute droite qui perce l’un perce l’autre\n\nÀ calculer dans l'application : A(−2 ; 3), B(4 ; −1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 11 (« Activité 11 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 3,
+        "min": -3,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 4,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 11 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dist",
+        "label": "AB",
+        "unit": "—"
+      },
+      {
+        "key": "xI",
+        "label": "x_I",
+        "unit": "—"
+      },
+      {
+        "key": "yI",
+        "label": "y_I",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -291,24 +706,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 12,
-    "solver": "fixed",
+    "solver": "lineSlope",
     "title": "Activité 12",
     "difficulty": 2,
-    "statement": "Activité 12\nDans cette activité on se propose de démontrer la propriété suivante\nPr\nopriété 10 : Si deux droites sécantes d’un plan P sont parallèles à deux droites sécantes d’un\nplan Q alors les plans P et Q sont parallèles\nSoient D et Δ deux droites sécantes d’un plan P et D’ et Δ’ deux droites sécantes d’un plan P’\net telles que D est parallèle à Δ et D’ est parallèle à Δ’\n1) a) Justifier que les droites D et Δ sont parallèles au plan P’\nb) Justifier que les droites D’et Δ’ sont parallèles au plan P.\n2) Supposons que les plans P et P’ sont sécants et désignons par δ la droite d’intersection de\nces deux plans.\na) Déterminer la position relative des droites D et δ\nb) Déterminer la position relative des droites Δ et δ\nc) Conclure.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 12\nDans cette activité on se propose de démontrer la propriété suivante\nPr\nopriété 10 : Si deux droites sécantes d’un plan P sont parallèles à deux droites sécantes d’un\nplan Q alors les plans P et Q sont parallèles\nSoient D et Δ deux droites sécantes d’un plan P et D’ et Δ’ deux droites sécantes d’un plan P’\net telles que D est parallèle à Δ et D’ est parallèle à Δ’\n1) a) Justifier que les droites D et Δ sont parallèles au plan P’\nb) Justifier que les droites D’et Δ’ sont parallèles au plan P.\n2) Supposons que les plans P et P’ sont sécants et désignons par δ la droite d’intersection de\nces deux plans.\na) Déterminer la position relative des droites D et δ\nb) Déterminer la position relative des droites Δ et δ\nc) Conclure.\n\nÀ calculer dans l'application : A(−1 ; 0), B(3 ; 2).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 12 (« Activité 12 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": -1,
+        "min": -3,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 0,
+        "min": -4,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 2,
+        "min": -3,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 12 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "m",
+        "label": "m",
+        "unit": "—"
+      },
+      {
+        "key": "p",
+        "label": "p",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -317,24 +767,64 @@
     "tome": 2,
     "kind": "activity",
     "activity": 13,
-    "solver": "fixed",
+    "solver": "distance2d",
     "title": "Activité 13",
     "difficulty": 2,
-    "statement": "Activité 13\nMontrer la propriété suivante\nPropriété 11 : Par un point donné passe un plan et un seul parallèle à un plan donné.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 13\nMontrer la propriété suivante\nPropriété 11 : Par un point donné passe un plan et un seul parallèle à un plan donné.\n\nÀ calculer dans l'application : A(1 ; 1), B(5 ; 4).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 13 (« Activité 13 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 5,
+        "min": 1,
+        "max": 7,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 4,
+        "min": -2,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 13 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dist",
+        "label": "AB",
+        "unit": "—"
+      },
+      {
+        "key": "xI",
+        "label": "x_I",
+        "unit": "—"
+      },
+      {
+        "key": "yI",
+        "label": "y_I",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -343,24 +833,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 14,
-    "solver": "fixed",
+    "solver": "lineSlope",
     "title": "Activité 14",
     "difficulty": 2,
-    "statement": "Activité 14\nOn se propose de démontrer la propriété suivante\nPropriété 12 : Si deux plans sont parallèles alors tout plan qui coupe l’un coupe l’autre et les\ndroites d’intersection sont parallèles.\nSoient P et P’ deux plans strictement parallèles et Q un plan qui coupe P suivant une droite D.\n1) a) Supposons que les plans Q et P’ sont parallèles et désignons par A un point de la droite D.\nJustifier alors que Q et P sont deux plans passant par A et parallèle au plan P.\nb) Utiliser la propriété11 et conclure que le plan Q coupe le plan P’ .\n2) Soit D’ la droite d’intersection de Q et P’.\na) Justifier que D et D’ sont coplanaires.\nb) Montrer que D et D’ sont parallèles.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 14\nOn se propose de démontrer la propriété suivante\nPropriété 12 : Si deux plans sont parallèles alors tout plan qui coupe l’un coupe l’autre et les\ndroites d’intersection sont parallèles.\nSoient P et P’ deux plans strictement parallèles et Q un plan qui coupe P suivant une droite D.\n1) a) Supposons que les plans Q et P’ sont parallèles et désignons par A un point de la droite D.\nJustifier alors que Q et P sont deux plans passant par A et parallèle au plan P.\nb) Utiliser la propriété11 et conclure que le plan Q coupe le plan P’ .\n2) Soit D’ la droite d’intersection de Q et P’.\na) Justifier que D et D’ sont coplanaires.\nb) Montrer que D et D’ sont parallèles.\n\nÀ calculer dans l'application : A(0 ; 0), B(6 ; 3).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 14 (« Activité 14 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 6,
+        "min": 2,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 3,
+        "min": -2,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 14 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "m",
+        "label": "m",
+        "unit": "—"
+      },
+      {
+        "key": "p",
+        "label": "p",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -369,24 +894,64 @@
     "tome": 2,
     "kind": "activity",
     "activity": 15,
-    "solver": "fixed",
+    "solver": "distance2d",
     "title": "Activité 15",
     "difficulty": 2,
-    "statement": "Activité 15\nChacune des trois figures suivantes illustre une propriété parmi celles qui sont énoncées dans\nles activités précédentes. Laquelle ?\nRemarque\nOn utilise souvent la propriété 10 pour montrer que deux plans sont parallèles.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 15\nChacune des trois figures suivantes illustre une propriété parmi celles qui sont énoncées dans\nles activités précédentes. Laquelle ?\nRemarque\nOn utilise souvent la propriété 10 pour montrer que deux plans sont parallèles.\n\nÀ calculer dans l'application : A(−4 ; 0), B(2 ; 8).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 15 (« Activité 15 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": -4,
+        "min": -6,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 0,
+        "min": -4,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 2,
+        "min": -2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 8,
+        "min": 0,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 15 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dist",
+        "label": "AB",
+        "unit": "—"
+      },
+      {
+        "key": "xI",
+        "label": "x_I",
+        "unit": "—"
+      },
+      {
+        "key": "yI",
+        "label": "y_I",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -395,24 +960,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 16,
-    "solver": "fixed",
+    "solver": "lineSlope",
     "title": "Activité 16",
     "difficulty": 2,
-    "statement": "Activité 16\nOn considère un tétraèdre ABCD et on désigne par I le point du segment [AD ] tel que\n1) Faire une figure .\n2) Le plan passant par I et parallèle au plan (ABC) coupe les droites (DB) et (DC)\nrespectivement en J et K.\na) Montrer que les droites (AB) et (JK) sont parallèles\nb) Placer les points J et K .\nc) Montrer que les droites (BC) et (JK) sont parallèles .\n3) Calculer",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 16\nOn considère un tétraèdre ABCD et on désigne par I le point du segment [AD ] tel que\n1) Faire une figure .\n2) Le plan passant par I et parallèle au plan (ABC) coupe les droites (DB) et (DC)\nrespectivement en J et K.\na) Montrer que les droites (AB) et (JK) sont parallèles\nb) Placer les points J et K .\nc) Montrer que les droites (BC) et (JK) sont parallèles .\n3) Calculer\n\nÀ calculer dans l'application : A(1 ; −2), B(5 ; 6).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 16 (« Activité 16 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 5,
+        "min": 1,
+        "max": 7,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 6,
+        "min": -1,
+        "max": 8,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 16 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "m",
+        "label": "m",
+        "unit": "—"
+      },
+      {
+        "key": "p",
+        "label": "p",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -421,24 +1021,64 @@
     "tome": 2,
     "kind": "activity",
     "activity": 17,
-    "solver": "fixed",
+    "solver": "distance2d",
     "title": "Activité 17",
     "difficulty": 2,
-    "statement": "Activité 17\nSoit ABCDEFGH un parallélépipède et I , J et K les milieux respectifs de [AB] ,[EF] et [GH].\n1) Montrer que les points B ,C ,K et J sont coplanaires .Soit P le plan qui les contient.\n2) Montrer que (IH) est parallèle au plan P\nIndication : Montrer que (IH) est contenue dans un plan parallèle à P .\nP\u0001\nQ\u0001\nD\u0001\nD’\u0001\nΔ\nΔ’\u0001\nDI DA4\n1=\nBC\nJK",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 17\nSoit ABCDEFGH un parallélépipède et I , J et K les milieux respectifs de [AB] ,[EF] et [GH].\n1) Montrer que les points B ,C ,K et J sont coplanaires .Soit P le plan qui les contient.\n2) Montrer que (IH) est parallèle au plan P\nIndication : Montrer que (IH) est contenue dans un plan parallèle à P .\nP\u0001\nQ\u0001\nD\u0001\nD’\u0001\nΔ\nΔ’\u0001\nDI DA4\n1=\nBC\nJK\n\nÀ calculer dans l'application : A(0 ; 1), B(4 ; 4). Distance AB et milieu I.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 17 (« Activité 17 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 0,
+        "min": -4,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 1,
+        "min": -4,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 4,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 4,
+        "min": -2,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 17 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dist",
+        "label": "AB",
+        "unit": "—"
+      },
+      {
+        "key": "xI",
+        "label": "x_I",
+        "unit": "—"
+      },
+      {
+        "key": "yI",
+        "label": "y_I",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -447,24 +1087,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 18,
-    "solver": "fixed",
+    "solver": "lineSlope",
     "title": "Activité 18",
     "difficulty": 2,
-    "statement": "Activité 18\nDans la pyramide SABCD, la base ABCD est un carré .\nLes points I, J et K sont les milieux respectifs des arêtes\n[SA] , [SB] et [SC] .\n1) Montrer que les plans (IJK) et (ABC) sont parallèles\n2) Justifier que la droite (SD) perce le plan (IJK) en un point L\n3) a) Montrer que les droites (IL) et ( AD) sont parallèles.\nb) n déduire que L est le milieu du segment [SD]\n4) Quelle est la nature du quadrilatère IJKL?",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 18\nDans la pyramide SABCD, la base ABCD est un carré .\nLes points I, J et K sont les milieux respectifs des arêtes\n[SA] , [SB] et [SC] .\n1) Montrer que les plans (IJK) et (ABC) sont parallèles\n2) Justifier que la droite (SD) perce le plan (IJK) en un point L\n3) a) Montrer que les droites (IL) et ( AD) sont parallèles.\nb) n déduire que L est le milieu du segment [SD]\n4) Quelle est la nature du quadrilatère IJKL?\n\nÀ calculer dans l'application : A(0 ; 1), B(4 ; 3). Pente m et ordonnée à l’origine p.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 18 (« Activité 18 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 1,
+        "min": -4,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 4,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 3,
+        "min": -3,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 18 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "m",
+        "label": "m",
+        "unit": "—"
+      },
+      {
+        "key": "p",
+        "label": "p",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -473,24 +1148,64 @@
     "tome": 2,
     "kind": "activity",
     "activity": 19,
-    "solver": "fixed",
+    "solver": "distance2d",
     "title": "Activité 19 Un problème de lieu",
     "difficulty": 2,
-    "statement": "Activité 19 Un problème de lieu\nSoient ABCD un tétraèdre , E un point variable de la droite (AB) et F un point variable de la\ndroite (CD) .On note G le milieu de [EF].\nOn se propose dans cette activité de chercher le lieu géométrique P des points G lorsque le\npoint E décrit la droite (AB) et le point F décrit la droite (CD) .\nOn note I,J,K et L les milieux respectifs des arêtes[AC] ,[BC] ,[BD] et[AD]\n1) Montrer que l’ensemble cherché P contient les points I , J ,K et L .\n2) On suppose que E est fixé en A .Quel est l’ensemble des points G\nlorsque le point F décrit (CD) ?\n3) Comment semble être cet ensemble lorsque E décrit (AB) ?\n4) Emettre une conjecture concernant le lieu géométrique des points G.\n5) a) Construire les points E’ et F’ tels que EBJE’ et FCJF’soient des parallélogrammes.\nb) Démontrer que les points E’ et F’ appartiennent au plan ( IJK).\nc) Préciser le milieu de [E’F’]\n6) Sur quel ensemble varie le point G lorsque le point E décrit la droite (AB) et le point F décrit\nla droite (CD) ? (V oir : Utiliser les TIC (2) )\nSections planes",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 19 Un problème de lieu\nSoient ABCD un tétraèdre , E un point variable de la droite (AB) et F un point variable de la\ndroite (CD) .On note G le milieu de [EF].\nOn se propose dans cette activité de chercher le lieu géométrique P des points G lorsque le\npoint E décrit la droite (AB) et le point F décrit la droite (CD) .\nOn note I,J,K et L les milieux respectifs des arêtes[AC] ,[BC] ,[BD] et[AD]\n1) Montrer que l’ensemble cherché P contient les points I , J ,K et L .\n2) On suppose que E est fixé en A .Quel est l’ensemble des points G\nlorsque le point F décrit (CD) ?\n3) Comment semble être cet ensemble lorsque E décrit (AB) ?\n4) Emettre une conjecture concernant le lieu géométrique des points G.\n5) a) Construire les points E’ et F’ tels que EBJE’ et FCJF’soient des parallélogrammes.\nb) Démontrer que les points E’ et F’ appartiennent au plan ( IJK).\nc) Préciser le milieu de [E’F’]\n6) Sur quel ensemble varie le point G lorsque le point E décrit la droite (AB) et le point F décrit\nla droite (CD) ? (V oir : Utiliser les TIC (2) )\nSections planes\n\nÀ calculer dans l'application : A(−2 ; 3), B(4 ; −1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 19 (« Activité 19 Un problème de lieu ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 3,
+        "min": -3,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 4,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 19 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dist",
+        "label": "AB",
+        "unit": "—"
+      },
+      {
+        "key": "xI",
+        "label": "x_I",
+        "unit": "—"
+      },
+      {
+        "key": "yI",
+        "label": "y_I",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -499,24 +1214,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 20,
-    "solver": "fixed",
+    "solver": "lineSlope",
     "title": "Activité 20",
     "difficulty": 2,
-    "statement": "Activité 20\nDans la figure ci-contre ABCDEFG est un cube, les points I,J et K\nappartiennent respectivement aux arêtes [EH] ,[EF] et [CG].\nOn se propose de représenter la section du cube par le plan (IJK) c-a-d l’intersection de ce\nplan avec les faces du cube.\n1) Reproduire la figure et construire le point M intersection des droites (IJ ) et (HG).\nD\u0001A\u0001\nB\u0001 C\u0001\nS\u0001\nK\u0001J\u0001 I\u0001\nK\u0001\nL\u0001\nI\u0001\nJ\u0001\nA\u0001\nB\u0001 D\u0001\n2) a) Justifier que le point M appartient au plan (IJK) et au plan\nde la face CDHG du cube.\nb) Construire l’intersection du plan (IJK) avec la face CDHG\ndu cube.\nc) Construire l’intersection du plan (IJK) avec la face ADEH.\nd) Construire les intersections du plan (IJK) avec la face BCGF\net avec la face ABFE. (on utilisera la propriété 12)\n3) Conclure.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 20\nDans la figure ci-contre ABCDEFG est un cube, les points I,J et K\nappartiennent respectivement aux arêtes [EH] ,[EF] et [CG].\nOn se propose de représenter la section du cube par le plan (IJK) c-a-d l’intersection de ce\nplan avec les faces du cube.\n1) Reproduire la figure et construire le point M intersection des droites (IJ ) et (HG).\nD\u0001A\u0001\nB\u0001 C\u0001\nS\u0001\nK\u0001J\u0001 I\u0001\nK\u0001\nL\u0001\nI\u0001\nJ\u0001\nA\u0001\nB\u0001 D\u0001\n2) a) Justifier que le point M appartient au plan (IJK) et au plan\nde la face CDHG du cube.\nb) Construire l’intersection du plan (IJK) avec la face CDHG\ndu cube.\nc) Construire l’intersection du plan (IJK) avec la face ADEH.\nd) Construire les intersections du plan (IJK) avec la face BCGF\net avec la face ABFE. (on utilisera la propriété 12)\n3) Conclure.\n\nÀ calculer dans l'application : A(−1 ; 0), B(3 ; 2).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 20 (« Activité 20 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": -1,
+        "min": -3,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 0,
+        "min": -4,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 2,
+        "min": -3,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 20 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "m",
+        "label": "m",
+        "unit": "—"
+      },
+      {
+        "key": "p",
+        "label": "p",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -525,24 +1275,64 @@
     "tome": 2,
     "kind": "activity",
     "activity": 21,
-    "solver": "fixed",
+    "solver": "distance2d",
     "title": "Activité 21",
     "difficulty": 2,
-    "statement": "Activité 21\nDans le prisme droit ABCDEF, les points I , J et K\nappartiennent respectivement aux arêtes [AC] , [BC]\net [DF] .\n1) Reproduire la figure et représenter la section du prisme\npar le plan (IJK).\n(c-à-d les droites d’intersection du plan (IJK)\navec les faces du prisme )\n2) Représenter la section du prisme par le plan passant\npar A et parallèle au plan (IJK).",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 21\nDans le prisme droit ABCDEF, les points I , J et K\nappartiennent respectivement aux arêtes [AC] , [BC]\net [DF] .\n1) Reproduire la figure et représenter la section du prisme\npar le plan (IJK).\n(c-à-d les droites d’intersection du plan (IJK)\navec les faces du prisme )\n2) Représenter la section du prisme par le plan passant\npar A et parallèle au plan (IJK).\n\nÀ calculer dans l'application : A(1 ; 1), B(5 ; 4).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 21 (« Activité 21 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 5,
+        "min": 1,
+        "max": 7,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 4,
+        "min": -2,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 21 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dist",
+        "label": "AB",
+        "unit": "—"
+      },
+      {
+        "key": "xI",
+        "label": "x_I",
+        "unit": "—"
+      },
+      {
+        "key": "yI",
+        "label": "y_I",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -551,24 +1341,59 @@
     "tome": 2,
     "kind": "activity",
     "activity": 22,
-    "solver": "fixed",
+    "solver": "lineSlope",
     "title": "Activité 22",
     "difficulty": 2,
-    "statement": "Activité 22\nDans la figure ci-contre ABCDEFGH est un cube,\nM est un point de l’arête [HG], les points I, J et K\nappartiennent respectivement aux arêtes [EF], [BF] et [FG] .\nReprésenter la section du cube par le pan P passant\npar M et parallèle au plan (IJK).",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 22\nDans la figure ci-contre ABCDEFGH est un cube,\nM est un point de l’arête [HG], les points I, J et K\nappartiennent respectivement aux arêtes [EF], [BF] et [FG] .\nReprésenter la section du cube par le pan P passant\npar M et parallèle au plan (IJK).\n\nÀ calculer dans l'application : A(0 ; 0), B(6 ; 3).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 22 (« Activité 22 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 6,
+        "min": 2,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 3,
+        "min": -2,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 22 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "m",
+        "label": "m",
+        "unit": "—"
+      },
+      {
+        "key": "p",
+        "label": "p",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -577,24 +1402,64 @@
     "tome": 2,
     "kind": "activity",
     "activity": 23,
-    "solver": "fixed",
+    "solver": "distance2d",
     "title": "Activité 23",
     "difficulty": 3,
-    "statement": "Activité 23\nSABCD est une pyramide de base un trapèze ABCD.\nM est un point de l’arête [SA].\nConstruire la section de cette pyramide par le plan P passant par M et parallèle au plan (ABC).\nD\u0001\nA\u0001\nB\u0001\nC\u0001\nE\u0001\nF\u0001\nG\u0001\nH\u0001I\u0001\nJ\u0001\nK\u0001\nA\u0001\nC\u0001\nB\u0001\nI\u0001\nJ\u0001\nK\u0001\nD\u0001\nE\u0001\nF\u0001\nD\u0001\nA\u0001\nB\u0001\nC\u0001\nE\u0001\nF\u0001\nG\u0001\nH\u0001 M\u0001\nI\u0001\nJ\u0001\nK\u0001\nPosition relatives de droites et de plans\n• Deux droites distinctes\nDeux droites distinctes de l’espace sont\n• Une droite et un plan\nUne droite et un plan de l’espace sont :\n•Deux plans\nDeux plans sont :\n• Soit coplanaires • Soit non coplanaires\nLes droites d1 et d2 sont\nsécantes en A\nd1 et d2 sont strictement\nparallèles\nAucun plan ne contient d1 et\nd2.\nP\u0001d\u00011\u0001 A\u0001 d\u00012\u0001 d\u00011\u0001\nd\u00012\u0001\nP\u0001 d\u00011\u0001\n2\u0001d\u0001\nP\u0001\n• soit sécants • soit parallèles\nd et P ont un point\nd’intersection\nd et P sont strictement\nparallèles\nd est contenu dans P\nd\u0001\nP\u0001 A\u0001\nD\nP P\u0001 d\u0001\n• soit sécants • soit parallèles\nP et Q ont une droite\nd’intersection D\nP et Q sont strictement\nparallèles\nP et Q sont confondus\nP\u0001\nQ\u0001\nD\u0001 P\u0001\nQ\u0001 P\u0001\nQ\u0001\nParallélisme de droites et de plans\nPar un point de l’espace,\npasse une unique droite\nparallèle à une droite donnée.\nPar un point donné de\nl’espace passe un unique plan\nparallèle à un plan donné.\nDeux droites strictement\nparallèles déterminent un\nunique plan.\nDeux droites parallèles à une même troisième\nsont parallèles\nDeux plans parallèles à un même troisième\nsont parallèles\nSi une droite est parallèle à\ndeux plans sécants alors elle\nest parallèle à leur droite d’in-\ntersection\nSi deux droites sont\nparallèles, alors tout plan qui\ncoupe l’une, coupe l’autre\nSi deux droites sont\nparallèles, alors tout plan\nparallèle à l’une est parallèle à\nl’autre.\nSi deux plans sont parallèles alors :\n• toute droite de l'un est parallèle à l'autre.\n• toute droite parallèle à l'un est parallèle à\nl'autre.\n• toute droite qui coupe l’un coupe l’autre. P\u0001\nD\u0001Δ\nD’\u0001 Q\u0001\nP\u0001\nQ\u0001\nD\u0001\nP\u0001\nΔD\u0001\nP\u0001\nΔ\nD\u0001\nd\u00011\u0001\nd\u00012\u0001\nd\u00013\u0001\nP\u0001\nQ\u0001\nR\u0001\nd\u00012\u0001\nd\u00011\u0001 A\u0001 P\u0001\nQ\u0001\nA\u0001\nd\u00012\u0001\nd\u00011\u0001\nDeux plans sont parallèles si et seulement si\ndeux droites sécantes de l’un des plans sont\nparallèles à deux droites sécantes de l’autre.\nSi deux plans sont parallèles alors tout plan\nqui coupe l’un coupe l’autre et les droites\nd’intersection sont parallèles\nP\u0001\nQ\u0001\nD\u0001\nD’\u0001\nΔ\nΔ’\u0001\nSi deux droites parallèles sont contenues\nrespectivement dans deux plans sécants,\nalors elles sont parallèles à la droite\nd’intersection de ces deux plans.\nDévelopper ses compéDévelopper ses compétences\nDans la figure ci-contre ABCD et BEDF sont deux parallélogrammes.\nMontrer que les droites (EC) et (AF) d’une part, et les\ndroites (AE) et (CF) d’autre part sont parallèles.\nIndication\nConsidérer le milieu du segment [BD].\nSoit ABCDEFGH un cube.\nI et J sont les milieux respectifs des segments [EG] et [AF].\na) Montrer que la droite (IJ) est parallèle au plan (ADE).\nb) Montrer que les plans (IJE) et (ADE) sont sécants suivant une droite L parallèle à la droite\n(IJ).\nc) Tracer L.\nIndications\na) Justifier que la droite (IJ) est parallèle à la droite (AH)\nConclure.\nb) Considérer la parallèle à (AH) passant par E.\nSoit ABCDEFGH un cube. Les points I, J et K sont les milieux respectifs des segments\n[AB], [AD] et [DH].\nOn se propose de représenter la section du cube par le plan (IJK) c’est à dire les droites\nd’intersection du plan (IJK) avec le cube.\n1) a) Faire une figure.\nb) Déterminer la droite d’intersection des plans (IJK) et (BDH). On désigne par Δ cette droite.\nc) Montrer que la droite Δ coupe le segment [BF] en son milieu qu’on notera M.\n2) Montrer de même que le plan (IJK) coupe le segment [GH] en son milieu qu’on notera L.\n3) Montrer de même que le plan (IJK) coupe le segment [FG] en son milieu qu’on notera N.\n4) Tracer la section du cube par le plan (IJK).\nIndications\n1) b) Considérer la droite parallèle à la droite (IJ) passant par K.\nc) Justifier que la droite coupe la droite (BF) en un point que l’on notera M.\nDéterminer la nature du quadrilatère KMBD.\nConclure.\n2) Considérer les plans (IJK)et (DHG).\n3) Considérer les plans (IJK) et (FGH).\nA\u0001 D\u0001\nC\u0001\nB\u0001\nE\u0001\nF\u0001\nDévelopper ses compéDévelopper ses compétences\nSur les arrêtes d’un cube ABCDEFGH on place les points I et J tels que :\nMontrer que la droite (HI) est parallèle au plan (EGJ).\nIndications\n• Déterminer la droite d’intersection des plans (EJG) et (ABC). On désigne parΔ cette droite.\n• Montrer que Δ coupe (AB) en un point K vérifiant\n•Appliquer Thalès au triangle ABC.\n• Justifier que AKID puis HIKE sont des parallélogrammes.\nOn a représenté ci-contre une pyramide dont la base est un carré\nde côté 6 m. De plus, les faces latérales de cette pyramide sont\nquatre triangles équilatéraux.\nEn se déplaçant à la surface de cette pyramide, une souris doit se\nrendre par le plus court chemin du point A au point J, milieu de\nl’arête [SC].\n1 ) Quel est le point T de l’arête [SB] qui rendrait le chemin de\ncette souris minimal ?\n2 ) Calculer alors la longueur de ce trajet.\nIndications\n1) Tracer un patron A'S'C'B' des deux faces ASB et SBC de la pyramide.\n2 ) Que représente T' pour le triangle S'A'C' ? T ' étant le point de [B'S'] pour lequel le chemin\nA'T'J' est minimum, avec J' le milieu du segment [S'C'].\n5 S\u0001\nA\u0001\nB\u0001\nC\u0001\nD\u0001\nT\u0001\nJ\u0001\n.DI DC et CJ CB4\n1==\n.AK AB4\n1=\nUtiliser les TIC\nUtiliser les TIC\n1) Section d'un cube par un plan\nA l'aide d'un logiciel de géométrie de l'espace\n• Créer un cube ABCDEFGH.\n• Créer P, Q et R points libres respectivement sur les cotés [EH], [EF]\net [CG].\n• Créer le polyèdre convexe section du cube par le plan (PQR).\n• Déplacer les points P,Q ou R et observer la section obtenue.\n• Observer la section obtenue en vrai grandeur en utilisant l'option plan isolé.\n• Justifier.(Introduire M intersection de (PQ) et (HG)).\n2) Recherche d'un lieu\nABCD est un tétraèdre. E est un point libre de la droite (AD) et F un point libre de la droite\n(BC). On note G,I,J,K et L les milieux respectifs de [EF],\n[AB],[AC] , [DC] et [DB]\nOn se propose de déterminer l'ensemble des points G\nlorsque E et F varient.\nA l'aide d'un logiciel de géométrie de l'espace\n• Créer un tétraèdre ABCD.\n• Créer les points I, J, K, L milieux respectifs de [AB],[AC] , [DC] et [DB].\n• Créer E, F points libres respectivement sur (AD) et (BC) .\n• Enfin créer le point G milieu de [EF].\n• Fixer E sur A et déplacer F sur [BC] , que semble être la trajectoire du point G ?\n• Fixer E sur D et déplacer F sur [BC] , que semble être la trajectoire du point G ?\n• Fixer F sur C et déplacer E sur [AD] , que semble être la trajectoire du point G ?\n• Fixer maintenant E n' importe où sur (AD) et déplacer F puis fixer F et déplacer E,\nobserver dans chaque cas la trajectoire du point G.\n• Déduire l'ensemble des points G.\nK\u0001\nL\u0001\nI\u0001\nJ\u0001\nA\u0001\nB\u0001 D\u0001\nA\u0001\nD\u0001\nB\u0001 C\u0001\nE\u0001\nF\u0001\nI\u0001\nK\u0001\nJ\u0001\nG\u0001\nL\u0001\nExercices et problèmesExercices et problèmes\nAppliquer\nDans la figure ci-dessous ABCD est un\ntétraèdre, I est un point de l’arête [BC] et J un\npoint de l’arête [CD].\nN est un point du segment [AJ] et M un point\nde la demi-droite [AI) extérieur au segment\n[AI].\n1 ) Quelle est l’intersection des plans (AIJ) et\n(BCD) ?\n2 ) a) Démontrer que les points M, N, I et J\nsont dans un même plan.\nb) On note P le point d’intersection de la\ndroite (MN) et du plan (BCD).\nProuver que P appartient à (IJ).\nDans la figure ci-dessous ABCD un\ntétraèdre.\na) Les droites (AB) et (CD) sont-elles\nsécantes?\nb ) Soit I un point de [AC] distinct de A et C,\net J un point de [BD] distinct de B et D.\nLes droites (IJ) et (AB) sont-elles copla-\nnaires ?\nRecopier la figure ci-dessous et placer le\npoint K intersection de la droite (IJ) avec le\nplan P.\nRecopier la figure ci-dessus puis construire\na) le point d’intersection de la droite (IJ)\navec le plan (BCD).\nb) l’intersection des plans (DIJ) et (BCD).\nSur la figure ci-dessous, les points I et J\nsont situés respectivement dans la face\n(ABC) et la face (ACD).\nRecopier la figure puis tracer la droite\nd’intersection de plans (AIJ) et (BCD).\nJ\u0001\nI\u0001\nA\u0001\nB\u0001 D\u0001\nC\u0001\nJ\u0001\nI\u0001\nA\u0001\nB\u0001 D\u0001\nC\u0001\nB\u0001C\u0001\nJ\u0001\nA\u0001\nP\u0001\nI\u0001\nA\u0001\nD\u0001J\u0001B\u0001\nI\u0001\nC\u0001\nExercices et problèmesExercices et problèmes\nSoit J le point de [BC] tel que\nLa droite passant par J et parallèle à (BD)\ncoupe le segment [CD] en K.\n1) Les plans (IJK) et (ABD) sont-ils\nparallèles.\n2) Montrer que (IK) est parallèle à (AD).\nP et Q sont deux plans parallèles. Une\ndroite Δ coupe P en A et Q en B.\nUne droite Δ’ parallèle à Δ coupe P en C et\nQ en D.\nQuelle est la nature du quadrilatère ABDC ?\nSoit un plan P et un triangle ABC tels que\n(AB) et (AC) soient parallèles à P.\na) Montrer que (BC) est parallèle à P.\nb) Montrer que la médiane du triangle ABC,\nissue de A, est parallèle à P.\nDans la figure ci-dessus, ABCD est un\ntétraèdre et les points I, J et K\nappartiennent respectivement aux arêtes\n[AC], [AB] et [AD] de sorte\nque les droites (KI), (KJ) et (IJ) coupent le\nplan (BCD).\n1) Montrer que les droites (KI) et (DC) sont\nsécantes.\n2) Représenter les points d’intersection des\ndroites (KI), (KJ) et (IJ) avec le plan\nABCD est un tétraèdre. On note I le milieu\nde [CD], J le milieu de [DB] et K le milieu de\n[BC].Démontrez que les plans (ABI), (ACJ)\net (ADK) ont une droite commune.\nMaîtriser\nI, K et L sont les milieux respectifs de [CG]\n, [AE] et [AB] du cube ci-dessus.\na) Les droites (EL) et (BF) sont elle sécantes ?\nb) Les droites (KL) et (EB) sont elles\nparallèles ?\nc) Les droites (HK) et (IA) sont elles sécantes ?\nd) Les droites (FL) et (HK) sont elles\nparallèles ?\nSoient, OABC est un tétraèdre,\nI le milieu de[OA], J le milieu de de [OB] et\nE un point de la demi-droite [CA) non situé\nsur le segment [AC].\n1) Construire le point M où (OC) perce le\nplan (IJE).\n2) Construire le point F où (BC) perce le plan\n(IJE).\n3) Montrer que (EF) // (AB).\nSoit un tétraèdre ABCD. On désigne par I\nle point de [AC] tel que\n.AI C A4\n1=\n.BJ BC4\n1=\nExercices et problèmesExercices et problèmes\n1) Démontrer que les droites (AD) et (MN)\nsont parallèles.\n2) Les droites (AN) et (DM) se coupent en un\npoint noté P.\na) Démontrer que le point P appartient à\nchacun des plans (SAB) et (SDC).\nb) Pourquoi la droite d’intersection des\nplans (SAB) et (SDC) est-elle la droite\n(SP) ?\nc) En déduire que (SP) est parallèle à\n(AB) et à (CD).\nABCDEFGH est un parallélépipède\nrectangle.\n1) Démontrer que les plans (AFC) et (DEG)\nsont parallèles.\n2) Soient I le milieu du segment [AB],\nJ le milieu du segment [BC] et K le milieu du\nsegment [BF].\nDémontrer que les plans (IJK) et (AFC) sont\nparallèles.\n3) Déduire que les plans (IJK) et (DEG) sont\nparallèles.\nDans la figure ci-dessous ABCDEFGH\nest un prisme droite de base un trapèze non\nparallélogramme.\nLes points S et K sont les milieux respectifs\ndes segments [EF] et [GH].\n(BCD),qu’on notera respectivement J’, I’\net K’.\n3) Montrer que les points J’, I’ et K’ sont\nalignés.\nSoient ABCD un tétraèdre, I le milieu de\n[BC] et J un point de la face ACD (autre que A).\n1) Construire l’intersection de (AJ) avec le\nplan (BCD).\nEn déduire l’intersection Δ des plans (AIJ) et\n(BCD)\n2) Le plan (AIJ) est-il toujours sécant au plan\n(ABD) ? Construire l’intersection des plans\n(AIJ) et (ABD).\nSoient ABCD un tétraèdre, I le milieu de\n[AB], J le milieu de [AC] et K le point du\nsegment [AD] tel que\n1) Faire une figure.\n2) Les droites (CI) et (BJ) se coupent en un\npoint S. Que représente le point S pour le\ntriangle ABC ?\n3) Construire l’intersection des plans (ASD)\net (BDC).\n4) Déterminer l’intersection de la droite (IK)\navec le plan (BCD).\nSABCD est une pyramide de sommet S ;\nla base ABCD est un parallélogramme.\nM est un point de l’arête [SC] et N un point\nde l’arête [SB] tels que (MN) est parallèle à\n(BC).\nD\u0001\nA\u0001\nB\u0001\nC\u0001\nE\u0001\nF\u0001\nG\u0001\nH\u0001\nS\u0001\nK\u0001\nExercices et problèmesExercices et problèmes\n2) Soit M un point de P . Montrer que les\nplans P et (MIJ) sont sécants\n3) Soit Δ l’intersection de P et de (MIJ)\nMontrer que Δ // (IJ)\n1) Indiquer la position relative des droites\nsuivantes :\na) (EF) et (HG) b) (CE) et (BD)\nc) (AF) et (DG) d) (EC) et (BH)\ne) (AS) et (DK) f) (BE) et (DK)\n2 ) Indiquer la position relative de la droite et\ndu plan suivants, dans le cas ou ils sont\nsécants construire leur point d'intersection.\na) (AF) et (GCD)\nb) (EA) et (GCD)\nc) (EG) et (ABC)\nd) (AS) et (GCD)\ne) (BE) et (GCD).\nSoit P un plan contenant un parallélo-\ngramme ABCD base d’une pyramide de\nsommet O, un plan P’ parallèle à P coupe les\narêtes [OA], [OB], [OC] et [OD] respectivement\nen I, J, K et L\n1) Faire une figure\n2) Que peut-on dire des droites (IJ) et (AB)?\nJustifier.\n3) La droite (IK) est-elle parallèle au plan\n(BCD) ?\n4) a) Montrer que les deux plans (OAB) et\n(OCD) se coupent selon une droite D\nparallèle à P\nb) Construire le point M intersection de\n(LC) avec le plan (OAB)\nSoient ABCD un parallélogramme et P un\nplan contenant (AB) et ne contenant pas C et\nD . Un plan P’ strictement parallèle à P coupe\n[AD] en I et [BC] en J\n1 ) Montrer que AIJB est un parallélogramme\nMath et cultureMath et culture\nDessiner en perspective cavalière\nReprésenter un objet de l'espace sur un plan en donnant l'illusion de la troisième dimension est\nun vrai défi !\nPour réaliser un dessin exploitable géométriquement, il faut respecter quelques règles\nélémentaires : conservation de l'alignement, du parallélisme et des milieux. Un tel dessin\npermet alors d'étudier des propriétés affines, mais pas métriques (les angles et les longueurs ne\nsont pas conservés). Pour étudier des propriétés métriques (angles, orthogonalité, longueurs) il\nfaut utiliser une perspective cavalière, et donc choisir ses différents paramètres :\n- un plan frontal (F) : un segment contenu dans ce plan ou dans un plan parallèle est\nreprésenté en vraie grandeur,\n- un angle de fuite (a=30° sur la figure) : les perpendiculaires à (F), les fuyantes, seront\nreprésentée dans la direction ainsi définie,\n- un coefficient de réduction (r = 0,5 sur la figure) : les longueurs représentées dans la\ndirection de fuite sont multipliées par r.\nEn général on choisit pour (F) un plan lié à l'objet que l'on désire représenter, a < 45° et r = 0,5\n(valeur simple qui donne un bel aspect).\nMaurice STARK\nLes parallèles contenues dans le plan frontal\nsont parallèles sur un dessin en perspective,\nmais les autres parallèles sont concourantes\nen un point de fuite F\nsur la ligne\nd'horizon h.\nDans une perspective cavalière, toutes\nles parallèles réelles sont aussi parallèles\nsur le dessin (point de fuite à l'infini).",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 23\nSABCD est une pyramide de base un trapèze ABCD.\nM est un point de l’arête [SA].\nConstruire la section de cette pyramide par le plan P passant par M et parallèle au plan (ABC).\nD\u0001\nA\u0001\nB\u0001\nC\u0001\nE\u0001\nF\u0001\nG\u0001\nH\u0001I\u0001\nJ\u0001\nK\u0001\nA\u0001\nC\u0001\nB\u0001\nI\u0001\nJ\u0001\nK\u0001\nD\u0001\nE\u0001\nF\u0001\nD\u0001\nA\u0001\nB\u0001\nC\u0001\nE\u0001\nF\u0001\nG\u0001\nH\u0001 M\u0001\nI\u0001\nJ\u0001\nK\u0001\nPosition relatives de droites et de plans\n• Deux droites distinctes\nDeux droites distinctes de l’espace sont\n• Une droite et un plan\nUne droite et un plan de l’espace sont :\n•Deux plans\nDeux plans sont :\n• Soit coplanaires • Soit non coplanaires\nLes droites d1 et d2 sont\nsécantes en A\nd1 et d2 sont strictement\nparallèles\nAucun plan ne contient d1 et\nd2.\nP\u0001d\u00011\u0001 A\u0001 d\u00012\u0001 d\u00011\u0001\nd\u00012\u0001\nP\u0001 d\u00011\u0001\n2\u0001d\u0001\nP\u0001\n• soit sécants • soit parallèles\nd et P ont un point\nd’intersection\nd et P sont strictement\nparallèles\nd est contenu dans P\nd\u0001\nP\u0001 A\u0001\nD\nP P\u0001 d\u0001\n• soit sécants • soit parallèles\nP et Q ont une droite\nd’intersection D\nP et Q sont strictement\nparallèles\nP et Q sont confondus\nP\u0001\nQ\u0001\nD\u0001 P\u0001\nQ\u0001 P\u0001\nQ\u0001\nParallélisme de droites et de plans\nPar un point de l’espace,\npasse une unique droite\nparallèle à une droite donnée.\nPar un point donné de\nl’espace passe un unique plan\nparallèle à un plan donné.\nDeux droites strictement\nparallèles déterminent un\nunique plan.\nDeux droites parallèles à une même troisième\nsont parallèles\nDeux plans parallèles à un même troisième\nsont parallèles\nSi une droite est parallèle à\ndeux plans sécants alors elle\nest parallèle à leur droite d’in-\ntersection\nSi deux droites sont\nparallèles, alors tout plan qui\ncoupe l’une, coupe l’autre\nSi deux droites sont\nparallèles, alors tout plan\nparallèle à l’une est parallèle à\nl’autre.\nSi deux plans sont parallèles alors :\n• toute droite de l'un est parallèle à l'autre.\n• toute droite parallèle à l'un est parallèle à\nl'autre.\n• toute droite qui coupe l’un coupe l’autre. P\u0001\nD\u0001Δ\nD’\u0001 Q\u0001\nP\u0001\nQ\u0001\nD\u0001\nP\u0001\nΔD\u0001\nP\u0001\nΔ\nD\u0001\nd\u00011\u0001\nd\u00012\u0001\nd\u00013\u0001\nP\u0001\nQ\u0001\nR\u0001\nd\u00012\u0001\nd\u00011\u0001 A\u0001 P\u0001\nQ\u0001\nA\u0001\nd\u00012\u0001\nd\u00011\u0001\nDeux plans sont parallèles si et seulement si\ndeux droites sécantes de l’un des plans sont\nparallèles à deux droites sécantes de l’autre.\nSi deux plans sont parallèles alors tout plan\nqui coupe l’un coupe l’autre et les droites\nd’intersection sont parallèles\nP\u0001\nQ\u0001\nD\u0001\nD’\u0001\nΔ\nΔ’\u0001\nSi deux droites parallèles sont contenues\nrespectivement dans deux plans sécants,\nalors elles sont parallèles à la droite\nd’intersection de ces deux plans.\nDévelopper ses compéDévelopper ses compétences\nDans la figure ci-contre ABCD et BEDF sont deux parallélogrammes.\nMontrer que les droites (EC) et (AF) d’une part, et les\ndroites (AE) et (CF) d’autre part sont parallèles.\nIndication\nConsidérer le milieu du segment [BD].\nSoit ABCDEFGH un cube.\nI et J sont les milieux respectifs des segments [EG] et [AF].\na) Montrer que la droite (IJ) est parallèle au plan (ADE).\nb) Montrer que les plans (IJE) et (ADE) sont sécants suivant une droite L parallèle à la droite\n(IJ).\nc) Tracer L.\nIndications\na) Justifier que la droite (IJ) est parallèle à la droite (AH)\nConclure.\nb) Considérer la parallèle à (AH) passant par E.\nSoit ABCDEFGH un cube. Les points I, J et K sont les milieux respectifs des segments\n[AB], [AD] et [DH].\nOn se propose de représenter la section du cube par le plan (IJK) c’est à dire les droites\nd’intersection du plan (IJK) avec le cube.\n1) a) Faire une figure.\nb) Déterminer la droite d’intersection des plans (IJK) et (BDH). On désigne par Δ cette droite.\nc) Montrer que la droite Δ coupe le segment [BF] en son milieu qu’on notera M.\n2) Montrer de même que le plan (IJK) coupe le segment [GH] en son milieu qu’on notera L.\n3) Montrer de même que le plan (IJK) coupe le segment [FG] en son milieu qu’on notera N.\n4) Tracer la section du cube par le plan (IJK).\nIndications\n1) b) Considérer la droite parallèle à la droite (IJ) passant par K.\nc) Justifier que la droite coupe la droite (BF) en un point que l’on notera M.\nDéterminer la nature du quadrilatère KMBD.\nConclure.\n2) Considérer les plans (IJK)et (DHG).\n3) Considérer les plans (IJK) et (FGH).\nA\u0001 D\u0001\nC\u0001\nB\u0001\nE\u0001\nF\u0001\nDévelopper ses compéDévelopper ses compétences\nSur les arrêtes d’un cube ABCDEFGH on place les points I et J tels que :\nMontrer que la droite (HI) est parallèle au plan (EGJ).\nIndications\n• Déterminer la droite d’intersection des plans (EJG) et (ABC). On désigne parΔ cette droite.\n• Montrer que Δ coupe (AB) en un point K vérifiant\n•Appliquer Thalès au triangle ABC.\n• Justifier que AKID puis HIKE sont des parallélogrammes.\nOn a représenté ci-contre une pyramide dont la base est un carré\nde côté 6 m. De plus, les faces latérales de cette pyramide sont\nquatre triangles équilatéraux.\nEn se déplaçant à la surface de cette pyramide, une souris doit se\nrendre par le plus court chemin du point A au point J, milieu de\nl’arête [SC].\n1 ) Quel est le point T de l’arête [SB] qui rendrait le chemin de\ncette souris minimal ?\n2 ) Calculer alors la longueur de ce trajet.\nIndications\n1) Tracer un patron A'S'C'B' des deux faces ASB et SBC de la pyramide.\n2 ) Que représente T' pour le triangle S'A'C' ? T ' étant le point de [B'S'] pour lequel le chemin\nA'T'J' est minimum, avec J' le milieu du segment [S'C'].\n5 S\u0001\nA\u0001\nB\u0001\nC\u0001\nD\u0001\nT\u0001\nJ\u0001\n.DI DC et CJ CB4\n1==\n.AK AB4\n1=\nUtiliser les TIC\nUtiliser les TIC\n1) Section d'un cube par un plan\nA l'aide d'un logiciel de géométrie de l'espace\n• Créer un cube ABCDEFGH.\n• Créer P, Q et R points libres respectivement sur les cotés [EH], [EF]\net [CG].\n• Créer le polyèdre convexe section du cube par le plan (PQR).\n• Déplacer les points P,Q ou R et observer la section obtenue.\n• Observer la section obtenue en vrai grandeur en utilisant l'option plan isolé.\n• Justifier.(Introduire M intersection de (PQ) et (HG)).\n2) Recherche d'un lieu\nABCD est un tétraèdre. E est un point libre de la droite (AD) et F un point libre de la droite\n(BC). On note G,I,J,K et L les milieux respectifs de [EF],\n[AB],[AC] , [DC] et [DB]\nOn se propose de déterminer l'ensemble des points G\nlorsque E et F varient.\nA l'aide d'un logiciel de géométrie de l'espace\n• Créer un tétraèdre ABCD.\n• Créer les points I, J, K, L milieux respectifs de [AB],[AC] , [DC] et [DB].\n• Créer E, F points libres respectivement sur (AD) et (BC) .\n• Enfin créer le point G milieu de [EF].\n• Fixer E sur A et déplacer F sur [BC] , que semble être la trajectoire du point G ?\n• Fixer E sur D et déplacer F sur [BC] , que semble être la trajectoire du point G ?\n• Fixer F sur C et déplacer E sur [AD] , que semble être la trajectoire du point G ?\n• Fixer maintenant E n' importe où sur (AD) et déplacer F puis fixer F et déplacer E,\nobserver dans chaque cas la trajectoire du point G.\n• Déduire l'ensemble des points G.\nK\u0001\nL\u0001\nI\u0001\nJ\u0001\nA\u0001\nB\u0001 D\u0001\nA\u0001\nD\u0001\nB\u0001 C\u0001\nE\u0001\nF\u0001\nI\u0001\nK\u0001\nJ\u0001\nG\u0001\nL\u0001\nExercices et problèmesExercices et problèmes\nAppliquer\nDans la figure ci-dessous ABCD est un\ntétraèdre, I est un point de l’arête [BC] et J un\npoint de l’arête [CD].\nN est un point du segment [AJ] et M un point\nde la demi-droite [AI) extérieur au segment\n[AI].\n1 ) Quelle est l’intersection des plans (AIJ) et\n(BCD) ?\n2 ) a) Démontrer que les points M, N, I et J\nsont dans un même plan.\nb) On note P le point d’intersection de la\ndroite (MN) et du plan (BCD).\nProuver que P appartient à (IJ).\nDans la figure ci-dessous ABCD un\ntétraèdre.\na) Les droites (AB) et (CD) sont-elles\nsécantes?\nb ) Soit I un point de [AC] distinct de A et C,\net J un point de [BD] distinct de B et D.\nLes droites (IJ) et (AB) sont-elles copla-\nnaires ?\nRecopier la figure ci-dessous et placer le\npoint K intersection de la droite (IJ) avec le\nplan P.\nRecopier la figure ci-dessus puis construire\na) le point d’intersection de la droite (IJ)\navec le plan (BCD).\nb) l’intersection des plans (DIJ) et (BCD).\nSur la figure ci-dessous, les points I et J\nsont situés respectivement dans la face\n(ABC) et la face (ACD).\nRecopier la figure puis tracer la droite\nd’intersection de plans (AIJ) et (BCD).\nJ\u0001\nI\u0001\nA\u0001\nB\u0001 D\u0001\nC\u0001\nJ\u0001\nI\u0001\nA\u0001\nB\u0001 D\u0001\nC\u0001\nB\u0001C\u0001\nJ\u0001\nA\u0001\nP\u0001\nI\u0001\nA\u0001\nD\u0001J\u0001B\u0001\nI\u0001\nC\u0001\nExercices et problèmesExercices et problèmes\nSoit J le point de [BC] tel que\nLa droite passant par J et parallèle à (BD)\ncoupe le segment [CD] en K.\n1) Les plans (IJK) et (ABD) sont-ils\nparallèles.\n2) Montrer que (IK) est parallèle à (AD).\nP et Q sont deux plans parallèles. Une\ndroite Δ coupe P en A et Q en B.\nUne droite Δ’ parallèle à Δ coupe P en C et\nQ en D.\nQuelle est la nature du quadrilatère ABDC ?\nSoit un plan P et un triangle ABC tels que\n(AB) et (AC) soient parallèles à P.\na) Montrer que (BC) est parallèle à P.\nb) Montrer que la médiane du triangle ABC,\nissue de A, est parallèle à P.\nDans la figure ci-dessus, ABCD est un\ntétraèdre et les points I, J et K\nappartiennent respectivement aux arêtes\n[AC], [AB] et [AD] de sorte\nque les droites (KI), (KJ) et (IJ) coupent le\nplan (BCD).\n1) Montrer que les droites (KI) et (DC) sont\nsécantes.\n2) Représenter les points d’intersection des\ndroites (KI), (KJ) et (IJ) avec le plan\nABCD est un tétraèdre. On note I le milieu\nde [CD], J le milieu de [DB] et K le milieu de\n[BC].Démontrez que les plans (ABI), (ACJ)\net (ADK) ont une droite commune.\nMaîtriser\nI, K et L sont les milieux respectifs de [CG]\n, [AE] et [AB] du cube ci-dessus.\na) Les droites (EL) et (BF) sont elle sécantes ?\nb) Les droites (KL) et (EB) sont elles\nparallèles ?\nc) Les droites (HK) et (IA) sont elles sécantes ?\nd) Les droites (FL) et (HK) sont elles\nparallèles ?\nSoient, OABC est un tétraèdre,\nI le milieu de[OA], J le milieu de de [OB] et\nE un point de la demi-droite [CA) non situé\nsur le segment [AC].\n1) Construire le point M où (OC) perce le\nplan (IJE).\n2) Construire le point F où (BC) perce le plan\n(IJE).\n3) Montrer que (EF) // (AB).\nSoit un tétraèdre ABCD. On désigne par I\nle point de [AC] tel que\n.AI C A4\n1=\n.BJ BC4\n1=\nExercices et problèmesExercices et problèmes\n1) Démontrer que les droites (AD) et (MN)\nsont parallèles.\n2) Les droites (AN) et (DM) se coupent en un\npoint noté P.\na) Démontrer que le point P appartient à\nchacun des plans (SAB) et (SDC).\nb) Pourquoi la droite d’intersection des\nplans (SAB) et (SDC) est-elle la droite\n(SP) ?\nc) En déduire que (SP) est parallèle à\n(AB) et à (CD).\nABCDEFGH est un parallélépipède\nrectangle.\n1) Démontrer que les plans (AFC) et (DEG)\nsont parallèles.\n2) Soient I le milieu du segment [AB],\nJ le milieu du segment [BC] et K le milieu du\nsegment [BF].\nDémontrer que les plans (IJK) et (AFC) sont\nparallèles.\n3) Déduire que les plans (IJK) et (DEG) sont\nparallèles.\nDans la figure ci-dessous ABCDEFGH\nest un prisme droite de base un trapèze non\nparallélogramme.\nLes points S et K sont les milieux respectifs\ndes segments [EF] et [GH].\n(BCD),qu’on notera respectivement J’, I’\net K’.\n3) Montrer que les points J’, I’ et K’ sont\nalignés.\nSoient ABCD un tétraèdre, I le milieu de\n[BC] et J un point de la face ACD (autre que A).\n1) Construire l’intersection de (AJ) avec le\nplan (BCD).\nEn déduire l’intersection Δ des plans (AIJ) et\n(BCD)\n2) Le plan (AIJ) est-il toujours sécant au plan\n(ABD) ? Construire l’intersection des plans\n(AIJ) et (ABD).\nSoient ABCD un tétraèdre, I le milieu de\n[AB], J le milieu de [AC] et K le point du\nsegment [AD] tel que\n1) Faire une figure.\n2) Les droites (CI) et (BJ) se coupent en un\npoint S. Que représente le point S pour le\ntriangle ABC ?\n3) Construire l’intersection des plans (ASD)\net (BDC).\n4) Déterminer l’intersection de la droite (IK)\navec le plan (BCD).\nSABCD est une pyramide de sommet S ;\nla base ABCD est un parallélogramme.\nM est un point de l’arête [SC] et N un point\nde l’arête [SB] tels que (MN) est parallèle à\n(BC).\nD\u0001\nA\u0001\nB\u0001\nC\u0001\nE\u0001\nF\u0001\nG\u0001\nH\u0001\nS\u0001\nK\u0001\nExercices et problèmesExercices et problèmes\n2) Soit M un point de P . Montrer que les\nplans P et (MIJ) sont sécants\n3) Soit Δ l’intersection de P et de (MIJ)\nMontrer que Δ // (IJ)\n1) Indiquer la position relative des droites\nsuivantes :\na) (EF) et (HG) b) (CE) et (BD)\nc) (AF) et (DG) d) (EC) et (BH)\ne) (AS) et (DK) f) (BE) et (DK)\n2 ) Indiquer la position relative de la droite et\ndu plan suivants, dans le cas ou ils sont\nsécants construire leur point d'intersection.\na) (AF) et (GCD)\nb) (EA) et (GCD)\nc) (EG) et (ABC)\nd) (AS) et (GCD)\ne) (BE) et (GCD).\nSoit P un plan contenant un parallélo-\ngramme ABCD base d’une pyramide de\nsommet O, un plan P’ parallèle à P coupe les\narêtes [OA], [OB], [OC] et [OD] respectivement\nen I, J, K et L\n1) Faire une figure\n2) Que peut-on dire des droites (IJ) et (AB)?\nJustifier.\n3) La droite (IK) est-elle parallèle au plan\n(BCD) ?\n4) a) Montrer que les deux plans (OAB) et\n(OCD) se coupent selon une droite D\nparallèle à P\nb) Construire le point M intersection de\n(LC) avec le plan (OAB)\nSoient ABCD un parallélogramme et P un\nplan contenant (AB) et ne contenant pas C et\nD . Un plan P’ strictement parallèle à P coupe\n[AD] en I et [BC] en J\n1 ) Montrer que AIJB est un parallélogramme\nMath et cultureMath et culture\nDessiner en perspective cavalière\nReprésenter un objet de l'espace sur un plan en donnant l'illusion de la troisième dimension est\nun vrai défi !\nPour réaliser un dessin exploitable géométriquement, il faut respecter quelques règles\nélémentaires : conservation de l'alignement, du parallélisme et des milieux. Un tel dessin\npermet alors d'étudier des propriétés affines, mais pas métriques (les angles et les longueurs ne\nsont pas conservés). Pour étudier des propriétés métriques (angles, orthogonalité, longueurs) il\nfaut utiliser une perspective cavalière, et donc choisir ses différents paramètres :\n- un plan frontal (F) : un segment contenu dans ce plan ou dans un plan parallèle est\nreprésenté en vraie grandeur,\n- un angle de fuite (a=30° sur la figure) : les perpendiculaires à (F), les fuyantes, seront\nreprésentée dans la direction ainsi définie,\n- un coefficient de réduction (r = 0,5 sur la figure) : les longueurs représentées dans la\ndirection de fuite sont multipliées par r.\nEn général on choisit pour (F) un plan lié à l'objet que l'on désire représenter, a < 45° et r = 0,5\n(valeur simple qui donne un bel aspect).\nMaurice STARK\nLes parallèles contenues dans le plan frontal\nsont parallèles sur un dessin en perspective,\nmais les autres parallèles sont concourantes\nen un point de fuite F\nsur la ligne\nd'horizon h.\nDans une perspective cavalière, toutes\nles parallèles réelles sont aussi parallèles\nsur le dessin (point de fuite à l'infini).\n\nÀ calculer dans l'application : A(−4 ; 0), B(2 ; 8).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 23 (« Activité 23 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": -4,
+        "min": -6,
+        "max": 1,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 0,
+        "min": -4,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 2,
+        "min": -2,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 8,
+        "min": 0,
+        "max": 10,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 23 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dist",
+        "label": "AB",
+        "unit": "—"
+      },
+      {
+        "key": "xI",
+        "label": "x_I",
+        "unit": "—"
+      },
+      {
+        "key": "yI",
+        "label": "y_I",
+        "unit": "—"
+      }
     ]
   }
 ]

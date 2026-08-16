@@ -5,24 +5,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 1,
-    "solver": "fixed",
+    "solver": "geoSeq",
     "title": "Activité 1",
     "difficulty": 1,
-    "statement": "Activité 1\nSoit ABC un triangle. On désigne par P0 son périmètre et par\nt1 le triangle dont les sommets sont les milieux des côtés du\ntriangle ABC. On dit que t1 est le triangle complémentaire de\nABC.\na) P\n1 étant le périmètre du triangle t1.\nExprimer P1 en fonction de P0.\nb) Soient t 2 le triangle complémentaire du triangle t 1 et t 3 le triangle complémentaire du\ntriangle t2. On désigne par P2 et P3 leurs périmètres respectifs.\nExprimer P2 en fonction de P1 et P3 en fonction de P2.\nc) n étant un entier naturel non nul, on désigne par t n le triangle complémentaire du triangle tn-1\net par Pn et Pn-1 leurs périmètres respectifs.\nd) Exprimer Pn en fonction de Pn-1.\ne) On donne P0 = 384, calculer P1, P2 et P5.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 1\nSoit ABC un triangle. On désigne par P0 son périmètre et par\nt1 le triangle dont les sommets sont les milieux des côtés du\ntriangle ABC. On dit que t1 est le triangle complémentaire de\nABC.\na) P\n1 étant le périmètre du triangle t1.\nExprimer P1 en fonction de P0.\nb) Soient t 2 le triangle complémentaire du triangle t 1 et t 3 le triangle complémentaire du\ntriangle t2. On désigne par P2 et P3 leurs périmètres respectifs.\nExprimer P2 en fonction de P1 et P3 en fonction de P2.\nc) n étant un entier naturel non nul, on désigne par t n le triangle complémentaire du triangle tn-1\net par Pn et Pn-1 leurs périmètres respectifs.\nd) Exprimer Pn en fonction de Pn-1.\ne) On donne P0 = 384, calculer P1, P2 et P5.\n\nÀ calculer dans l'application : Suite géométrique u₁ = 2, q = 3. u₅ et S₅.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 1 (« Activité 1 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 2,
+        "min": 1,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "q",
+        "label": "q",
+        "unit": "—",
+        "value": 3,
+        "min": 2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 5,
+        "min": 3,
+        "max": 7,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 1 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -31,24 +57,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 2,
-    "solver": "fixed",
+    "solver": "geoSeq",
     "title": "Activité 2",
     "difficulty": 1,
-    "statement": "Activité 2\nAu 1 er Janvier 2004, on a placé un capital de 10.000 dinars, dans une banque, au taux\nd’intérêts composés de 4% (chaque année les intérêts se calculent sur le dernier capital).\nOn note C\n0 le capital initial (C0 = 10.000 dinars)\nC1 le capital après une année\nC2 le capital après deux années\nC3 le capital après 3 années.\na) Calculer C1, C2 et C3.\nb) On désigne par Cn le capital après n années.\nTrouver une relation entre Cn+1 et Cn.\nDéfinition\nRemarque\nSi a, b, c, d,… sont des termes consécutifs d’une suite géométrique, on dit qu’ils sont en\nprogression géométrique.\nOn dit qu’une suite (Un) est géométrique, s’il existe un réel q tel que pour tout entier naturel n\non a U n+1 = q Un.\nLe nombre réel q est appelé raison de cette suite.\nTerme général d’une suite géométrique",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 2\nAu 1 er Janvier 2004, on a placé un capital de 10.000 dinars, dans une banque, au taux\nd’intérêts composés de 4% (chaque année les intérêts se calculent sur le dernier capital).\nOn note C\n0 le capital initial (C0 = 10.000 dinars)\nC1 le capital après une année\nC2 le capital après deux années\nC3 le capital après 3 années.\na) Calculer C1, C2 et C3.\nb) On désigne par Cn le capital après n années.\nTrouver une relation entre Cn+1 et Cn.\nDéfinition\nRemarque\nSi a, b, c, d,… sont des termes consécutifs d’une suite géométrique, on dit qu’ils sont en\nprogression géométrique.\nOn dit qu’une suite (Un) est géométrique, s’il existe un réel q tel que pour tout entier naturel n\non a U n+1 = q Un.\nLe nombre réel q est appelé raison de cette suite.\nTerme général d’une suite géométrique\n\nÀ calculer dans l'application : u₁ = 1, q = 2. u₆ et S₆.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 2 (« Activité 2 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 1,
+        "min": 1,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "q",
+        "label": "q",
+        "unit": "—",
+        "value": 2,
+        "min": 2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 6,
+        "min": 3,
+        "max": 7,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 2 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -57,24 +109,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 3,
-    "solver": "fixed",
+    "solver": "geoSeq",
     "title": "Activité 3 Pression atmosphérique",
     "difficulty": 1,
-    "statement": "Activité 3 Pression atmosphérique\nLa pression atmosphérique diminue, approximativement, de 1% à chaque fois que l’altitude\nde l’observateur augmente de 100 mètres.\nOn note p\n0 la pression, en millibars, au niveau de la mer (niveau zéro) .\np1 la pression, en millibars à l’altitude 100 mètres\np2 la pression ,en millibars à l’altitude 200 mètres\np3 la pression ,en millibars à l’altitude 300 mètres\n1) a) Exprimer p 1, p 2 et p 3 en fonction de p 0.\nb) pn étant la pression en millibars à l’altitude (n x 100) mètres\nConjecturer l’expression de pn en fonction de p0.\n2) Un jour, la pression atmosphérique au niveau de la mer était 1000 millibars.\na) Calculer la pression à 400 mètres au dessus du niveau de la mer.\nb) Le même jour le baromètre d’un observateur indique 950 millibars.\nA quelle altitude était cet observateur ?",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 3 Pression atmosphérique\nLa pression atmosphérique diminue, approximativement, de 1% à chaque fois que l’altitude\nde l’observateur augmente de 100 mètres.\nOn note p\n0 la pression, en millibars, au niveau de la mer (niveau zéro) .\np1 la pression, en millibars à l’altitude 100 mètres\np2 la pression ,en millibars à l’altitude 200 mètres\np3 la pression ,en millibars à l’altitude 300 mètres\n1) a) Exprimer p 1, p 2 et p 3 en fonction de p 0.\nb) pn étant la pression en millibars à l’altitude (n x 100) mètres\nConjecturer l’expression de pn en fonction de p0.\n2) Un jour, la pression atmosphérique au niveau de la mer était 1000 millibars.\na) Calculer la pression à 400 mètres au dessus du niveau de la mer.\nb) Le même jour le baromètre d’un observateur indique 950 millibars.\nA quelle altitude était cet observateur ?\n\nÀ calculer dans l'application : u₁ = 3, q = 2. u₅ et S₅.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 3 (« Activité 3 Pression atmosphérique ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "q",
+        "label": "q",
+        "unit": "—",
+        "value": 2,
+        "min": 2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 5,
+        "min": 3,
+        "max": 7,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 3 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -83,24 +161,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 4,
-    "solver": "fixed",
+    "solver": "geoSeq",
     "title": "Activité 4",
     "difficulty": 1,
-    "statement": "Activité 4\nOn considère la suite (C n) définie par C 0 = 10000 et C n+1 = (1,04) C n, n ∈ IN.\na) Exprimer C1, C 2 , C 3 et C4 en fonction de C 0.\nb) Conjecturer l’expression de Cn en fonction de C 0 et n.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 4\nOn considère la suite (C n) définie par C 0 = 10000 et C n+1 = (1,04) C n, n ∈ IN.\na) Exprimer C1, C 2 , C 3 et C4 en fonction de C 0.\nb) Conjecturer l’expression de Cn en fonction de C 0 et n.\n\nÀ calculer dans l'application : u₁ = 1, q = 3. u₄ et S₄.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 4 (« Activité 4 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 1,
+        "min": 1,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "q",
+        "label": "q",
+        "unit": "—",
+        "value": 3,
+        "min": 2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 4,
+        "min": 3,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 4 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -109,24 +213,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 5,
-    "solver": "fixed",
+    "solver": "geoSeq",
     "title": "Activité 5",
     "difficulty": 1,
-    "statement": "Activité 5\nSoit (Un) une suite géométrique de premier terme U 0 et de raison q.\n1) Déterminer Un dans chacun des cas suivants :\na) q = 1 b) U 0 = 0 c) q = 0\n2) On suppose que U0 ≠ 0, q ≠ 1 et q ≠ 0.\na) Calculer U1, U2, U3 et U4 en fonction de U0 et de q.\nb) Conjecturer pour Un.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 5\nSoit (Un) une suite géométrique de premier terme U 0 et de raison q.\n1) Déterminer Un dans chacun des cas suivants :\na) q = 1 b) U 0 = 0 c) q = 0\n2) On suppose que U0 ≠ 0, q ≠ 1 et q ≠ 0.\na) Calculer U1, U2, U3 et U4 en fonction de U0 et de q.\nb) Conjecturer pour Un.\n\nÀ calculer dans l'application : u₁ = 2, q = 2. u₇ et S₇.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 5 (« Activité 5 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 2,
+        "min": 1,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "q",
+        "label": "q",
+        "unit": "—",
+        "value": 2,
+        "min": 2,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 7,
+        "min": 4,
+        "max": 8,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 5 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -135,24 +265,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 6,
-    "solver": "fixed",
+    "solver": "geoSeq",
     "title": "Activité 6",
     "difficulty": 1,
-    "statement": "Activité 6\n1) Soit (V n) une suite géométrique de raison q = et telle que V9 = 16 .Déterminer V 43.\n2) Soit (V n) une suite géométrique de premier terme V 0 et de raison q, et soit n et p deux\nentiers naturels tels que n ≥ p.\nExprimer V\nn en fonction de Vp.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 6\n1) Soit (V n) une suite géométrique de raison q = et telle que V9 = 16 .Déterminer V 43.\n2) Soit (V n) une suite géométrique de premier terme V 0 et de raison q, et soit n et p deux\nentiers naturels tels que n ≥ p.\nExprimer V\nn en fonction de Vp.\n\nÀ calculer dans l'application : u₁ = 5, q = 2. u₄ et S₄.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 6 (« Activité 6 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 5,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "q",
+        "label": "q",
+        "unit": "—",
+        "value": 2,
+        "min": 2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 4,
+        "min": 3,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 6 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -161,24 +317,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 7,
-    "solver": "fixed",
+    "solver": "geoSeq",
     "title": "Activité 7 Représentation graphique",
     "difficulty": 1,
-    "statement": "Activité 7 Représentation graphique\nDans chacune des figures suivantes, les ordonnées des points A0 , A1 , A2 , A3 et A4 sont les\ncinq premiers termes consécutifs d’une suite géométrique (Un).\n2 2\nDéterminer dans chacun des cas, le premier terme et la raison de la suite.\nSomme des termes consécutifs\nd’une suite géométrique",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 7 Représentation graphique\nDans chacune des figures suivantes, les ordonnées des points A0 , A1 , A2 , A3 et A4 sont les\ncinq premiers termes consécutifs d’une suite géométrique (Un).\n2 2\nDéterminer dans chacun des cas, le premier terme et la raison de la suite.\nSomme des termes consécutifs\nd’une suite géométrique\n\nÀ calculer dans l'application : u₁ = 1, q = 4. u₄ et S₄.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 7 (« Activité 7 Représentation graphique ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 1,
+        "min": 1,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "q",
+        "label": "q",
+        "unit": "—",
+        "value": 4,
+        "min": 2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 4,
+        "min": 3,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 7 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -187,24 +369,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 8,
-    "solver": "fixed",
+    "solver": "geoSeq",
     "title": "Activité 8 Quitte ou double !",
     "difficulty": 1,
-    "statement": "Activité 8 Quitte ou double !\nDans un jeu entre deux personnes A et B, A propose à B de lui donner 100 dinars par jour et\npendant 10 jours. En contre partie B donne à A, 1dinar le premier jour, deux dinars le deuxième\njour, quatre dinars le troisième jour et ainsi de suite jusqu’au dixième, en doublant chaque jour\nle montant du jour qui précède.\nLa personne B a-t-elle intérêt à accepter cette proposition ?",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 8 Quitte ou double !\nDans un jeu entre deux personnes A et B, A propose à B de lui donner 100 dinars par jour et\npendant 10 jours. En contre partie B donne à A, 1dinar le premier jour, deux dinars le deuxième\njour, quatre dinars le troisième jour et ainsi de suite jusqu’au dixième, en doublant chaque jour\nle montant du jour qui précède.\nLa personne B a-t-elle intérêt à accepter cette proposition ?\n\nÀ calculer dans l'application : u₁ = 3, q = 3. u₄ et S₄.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 8 (« Activité 8 Quitte ou double ! ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "q",
+        "label": "q",
+        "unit": "—",
+        "value": 3,
+        "min": 2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 4,
+        "min": 3,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 8 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -213,24 +421,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 9,
-    "solver": "fixed",
+    "solver": "geoSeq",
     "title": "Activité 9",
     "difficulty": 1,
-    "statement": "Activité 9\nDans cette activité, on se propose de déterminer la somme de n termes consécutifs d’une suite\ngéométrique de raison q.\n1) On considère la somme S\n1 = 1+ q + q2 + …+ q n-2 + qn-1.\na) Déterminer q S1 puis S1 – q S1.\nb) Déduire une écriture plus simple de S 1, dans le cas où q ≠1.\nc) Calculer S1 si q = 1.\n2) Calculer alors, la somme de n termes consécutifs d’une suite géométrique de raison q,\nsachant que le premier terme de cette somme est a.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 9\nDans cette activité, on se propose de déterminer la somme de n termes consécutifs d’une suite\ngéométrique de raison q.\n1) On considère la somme S\n1 = 1+ q + q2 + …+ q n-2 + qn-1.\na) Déterminer q S1 puis S1 – q S1.\nb) Déduire une écriture plus simple de S 1, dans le cas où q ≠1.\nc) Calculer S1 si q = 1.\n2) Calculer alors, la somme de n termes consécutifs d’une suite géométrique de raison q,\nsachant que le premier terme de cette somme est a.\n\nÀ calculer dans l'application : Suite géométrique u₁ = 2, q = 3. u₅ et S₅.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 9 (« Activité 9 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 2,
+        "min": 1,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "q",
+        "label": "q",
+        "unit": "—",
+        "value": 3,
+        "min": 2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 5,
+        "min": 3,
+        "max": 7,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 9 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -239,24 +473,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 10,
-    "solver": "fixed",
+    "solver": "geoSeq",
     "title": "Activité 10",
     "difficulty": 1,
-    "statement": "Activité 10\nCalculer les sommes suivantes :\nA = 27 + 81 + 243 + …+ 19683.\nB = .\nC =",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 10\nCalculer les sommes suivantes :\nA = 27 + 81 + 243 + …+ 19683.\nB = .\nC =\n\nÀ calculer dans l'application : u₁ = 1, q = 2. u₆ et S₆.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 10 (« Activité 10 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 1,
+        "min": 1,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "q",
+        "label": "q",
+        "unit": "—",
+        "value": 2,
+        "min": 2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 6,
+        "min": 3,
+        "max": 7,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 10 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -265,24 +525,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 11,
-    "solver": "fixed",
+    "solver": "geoSeq",
     "title": "Activité 11",
     "difficulty": 2,
-    "statement": "Activité 11\nSoit A 0B0C0D0 un carré de centre O et de 6 cm de côté. On définit la ligne polygonale\nA0A1A2A3A4 de la figure ci-dessous de la façon suivante :\nLes points A1, A2, A3 et A4 sont respectivement sur les segments [OB0], [OC0], [OD0], [OA0]\net tels que : OA1 = OB0 , OA2 = OC 0 , OA3 = OD 0 et OA4 = OA 0.\nOn reconduit le même procédé de sorte que les points A5, A6, … soient respectivement sur les\nsegments [OB0], [OC0],…et tels que OA 5 = OB 0 , OA6 = OC 0 …\n1) a) Sur quel segment parmi [OA 0], [OB0], [OC0], [OD0] se trouvent les points A 17, A23,\nA2006 et A4000 ?\nb) Soit p un multiple de 4. Où se trouve le point A p ?\nc) Pour n inférieur ou égal à 1000, quel est le nombre de points A n sur le segment [OA0] ?\nd) Préciser suivant les valeurs de n, sur quel segment, parmi les quatre précédents, se\ntrouve le point An.\n2) On considère la suite (Un) définie pour tout entier naturel n par Un = OAn.\na) Calculer U0, U1 et U2.\nb) Quelle est la nature de la suite (U n) ? Exprimer Un en\nfonction de n.\nc) A partir de quelle valeur de n, a-t-on U\nn < 10 -2 ?\n3) Soit (Ln) la suite définie par Ln = An An+1.\na) Calculer L 0, L1 et L2.\nb) Montrer que Ln = .\n4) Soit pn la longueur de la ligne polygonale\nA0A1A2A3…A n. Exprimer pn en fonction de n.\n5) Montrer qu’il existe une homothétie qui transforme la ligne A0A1A2A3A4 en A4A5A6A7A8\net préciser le centre et le rapport de cette homothétie.\n1 - 22\n1 + 23\n1 + 24\n1 + ... + 29\n1 + 210\n...333 33 3 9 9 81 81-+ -+ - - +\n31 0\nn1+\nSuites géométriques\nParmi les suites (Un) définies ci-dessous préciser celles qui sont géométriques et déterminer\ndans ce cas, le premier terme et la raison.\na) Un = 2 x 3n, n ∈ I N . b)\nc) d)\nMontrer que la suite (U n), définie par U n = , n ∈ IN est une suite géométrique et\npréciser son premier terme et sa raison.\nTerme général\nSoit (Un) une suite de nombres réels non nuls, telle que U 0 = 1 et pour tout n ∈ IN,\n. Donner le terme général de la suite (U n).\nDéterminer la raison q d’une suite géométrique (Vn) sachant que V0 = – 6 et V8 = –1536.\n(Un) est une suite géométrique de premier terme U 0 = 5 et de raison q = .\nDéterminer n sachant que Un = .\n(Un) est une suite géométrique de raison q = 4 , et telle que U 9 = . Calculer U 17.\nDéterminer la raison q d’une suite géométrique (Un) sachant que U4 = 25 et U11 = 1953125.\nSomme des termes consécutifs d’une suite géométrique\nSoit (Vn) une suite géométrique de premier terme V 0 = 5 et de raison q = .\nOn pose S = V0 + V1 + … + V 6 et S’ = V11 + V12 + … + V 20.\nCalculer S et S’.\nCalculer les deux sommes suivantes :\nA = 1 – + – + … – .\nB = 32 + 64 + 128 + …+ 2048.\nU0 = 6\nUn+1 = , n ∈ IN\nU0 = 5\nUn+1 = n Un , n ∈ IN\nU0 = – 1\n3Un+1 –2 Un = 0 , n ∈ IN\nUn\n7n\nUn\nUn+1\n=3\n59049\n32768\n-1\n- 2\n2187\nSoit (Vn) une suite géométrique de premier terme V 0 et de raison q ≠ 0.\nOn a : Vn = V0 qn, pour tout n ∈ IN.\nVn = Vp qn – p, pour tout entiers n et p.\nEn particulier Vn = V1 qn – 1 , pour tout n ∈ IN.\n♦ La somme S de n termes consécutifs d’une suite géométrique de raison q (q ≠ 1) est\nS = a × , où a est le premier terme de cette somme\nS = le premier terme de la somme × .\nSi q = 1 alors S = n a.\n♦ 1 + q + q 2 + q 3 + …+ q n = ,où q est un réel différent de 1 et n est un entier naturel.\nSi q = 1, on a 1 + q + q 2 + q3 + …+ q n = n + 1.\nTerme général\n1-q\n1-q n\n1-q\n1-q n+1\nSomme de termes consécutifs\n1 - la raison\n1 - (la raison) Le nombre de termes\nDans la figure ci-contre on a :\nOAB un triangle rectangle en B tel que OA = 5 ; OB = 4 et AB = 3.\nH\n1 le projeté orthogonal de B sur (OA)\nH2 le projeté orthogonal de H1 sur (OB)\nH3 le projeté orthogonal de H2 sur (OA)\n1) a) Calculer et en déduire OH 1.\nb) Montrer que .\nc) En déduire OH\n2 et OH3\n2) Soit H4 le projeté orthogonal de H3 sur (OB). H5 est le projeté orthogonal de H4 sur (OA)\net ainsi de suite.\na) Sur quel côté du triangle OAB se trouvent chacun des points H 6, H7, H15 et H38 ?\nb) Soit n un entier naturel non nul. Sur quel côté du triangle OAB se trouve le point H n ?\nc) Calculer OHn+1 en fonction de OHn. En déduire l’expression de OHn en fonction de n.\n3) a) Vérifier que BH1 = OB, H 1H2 = OH1 et H2H3 = OH2.\nb) Soit S = BH1 + H1H2 + H2H3 +…+ H nHn+1. Donner l’expression de S en fonction de n.\nIndication\nPenser aux rapports trigonométriques dans un triangle rectangle.\nLes nombres parfaits\nUn entier naturel est parfait s’il est égal à la somme de ses diviseurs propres (autres que lui\nmême).\nExemples : 6 = 1 + 2 + 3 ; 28 = 1+ 2 + 4 + 7 + 14.\n6 et 28 sont deux nombres parfaits.\n1) Vérifier que 496 est un nombre parfait.\n2) Soit p un nombre premier différent de 2, et soit N = p x 2\nn, où n est un entier naturel.\nOn désigne par S la somme des diviseurs propres de N.\na) Donner la forme des diviseurs de N.\nb) Exprimer S en fonction de p et n.\n3) a) Montrer que N est un nombre parfait si et seulement si p = 2\nn+1 – 1.\nb) Déterminer N pour p = 3 ; p = 7 et p = 31.\nc) Vérifier que 8128 est un nombre parfait.\nIndication\nPour calculer S, on pourra faire la somme des diviseurs de N qui sont de la forme 2\nk, puis la\nsomme des diviseurs de N qui sont de la forme p 2 k.\nDévelopper ses compéDévelopper ses compétences\nOB\nOH1\nOB\nOH1\n= OH1\nOH2\n= OH2\nOH3\n= 5\nUtiliser les TICUtiliser les TIC\nAvec un tableur\nOn considère les suites géométriques (Un), (Vn) et (Wn) de raisons respectives 0,5 , et – 2\net telles que U 0 = V0 = W0 = 1 .\na) Reproduire sur Excel la feuille de calcul suivante,\nLa colonne A, affiche les valeurs prises par l’entier n : 0, 1, 2, 3, …\nLa colonne B, affiche les valeurs prises par U n.\nLa colonne C, affiche les valeurs prises par V n.\nLa colonne D, affiche les valeurs prises par W n.\nCliquer sur la cellule A3, une croix noire s’affiche au coin inférieur droit de cette cellule.\nPositionner le curseur sur cette croix et tirer vers le bas, jusqu’à atteindre la valeur désirée de n.\nProcéder de la même façon avec B 3, C 3 et D 3.\nb) Quelles remarques peut-on faire pour les valeurs des termes de chacune des trois suites,\nlorsque n devient de plus en plus grand ?\nA B C D\n1 n Un Vn Wn\n2 = 0 = 1 = 1 = 1\n3 = A2 + 1 = B2 * 0,5 = C2 * 1,5 = D2 * – 2\nAppliquer\nIndiquer parmi les suites définies ci-après\ncelles qui sont des suites géométriques.\na) U\nn = 2n , n ∈ IN.\nb) U0 = 3 et Un+1 = (Un)2 , n ∈ IN.\nc)\nd) U\nn = – 4 si n est pair et U n = 4 si n est\nimpair, n ∈ IN.\ne) Un = nn , n ∈ IN *.\nf)\nSoit (Un) une suite géométrique de raison\nq = –7 et telle que U4 = 2401. Calculer U10.\nSoit (Vn) une suite géométrique telle que\nV3 = 12 et V 5 = 36. Quelles sont les valeurs\npossibles de la raison ?\nCalculer V\n9 pour chaque cas.\nSoit (Un) une suite géométrique de premier\nterme U1 = – 5 et de raison q = .\na) Calculer U8 et U10.\nb) Calculer la somme S = U 1 + U2 +…+ U 8.\nSoit (Vn) une suite géométrique de raison 2.\na) Sachant que V 0 + V1+ …+ V 14 = 98301,\nexprimer Vn en fonction de n.\nb) On prend dans cette question V 0 = 3.\nDéterminer n, pour que la somme des n\npremiers termes de cette suite soit 3145725.\nLes nombres 428442, 4242 et 42\nsont-ils les termes consécutifs d’une\nsuite géométriques ?\nCalculer chacune des sommes :\nA = 3 + 8 + 13 + 18 + …+ 103 + 108\nB = 2 – 4 + 8 – 16 + 32 – … + 33554432.\nMaîtriser\nMoyenne géométrique\na) Soient a, b et c trois réels positifs.\nMontrer que si a, b et c sont trois termes\nconsécutifs d’une suite géométrique alors\n.\n(On dit que b est la moyenne géométrique de\na et c).\nb) Soient a, b et c trois réels positifs tels\nque . a, b et c sont-ils trois termes\nconsécutifs d’une suite géométrique ?\nSoient ABC un triangle rectangle en A,\nO le milieu de [BC] et H le pied de la\nhauteur issue de A.\na) Montrer que BH, AH et HC sont, dans cet\nordre, en progression géométrique, et que\npour tout point M de [BC] les réels MB, OA\net MC sont, dans cet ordre, en progression\narithmétique.\nb) x et z sont les longueurs de deux segments\ndonnés.\nConstruire un segment de longueur y tel que\nx, y et z soient, dans cet ordre, en\nprogression géométrique.\nSoit (U\nn) une suite arithmétique de\npremier terme U 0 et de raison r.\nMontrer que la suite (Vn) définie par\nVn = 2 Un, n ∈ IN, est une suite géométrique\ndont on précisera le premier terme V 0 et la\nraison q en fonction de U0 et r.\nUn épargnant doit choisir entre deux for-\nmules pour placer un capital de 8000 dinars\npendant six ans, à intérêts composées.\nFormule 1 : taux annuel de 4%\nFormule 2 : taux semestriel de 2%\nQuelle formule lui conseiller ?\nU\n0 = 1\nUn= 3 Un+1 , n ∈ IN\nU0 = -2\nUn+1= 3 Un + 5, n ∈ IN\n1 8\nb= a c\nb= a c\nExercices et problèmesExercices et problèmes\nLe roi et l’inventeur du jeu d’échecs\nUn auteur arabe, Al-Sephadi, raconte que\nl’inventeur du jeu d’échecs, fut présenté à\nson maître roi de Perse. Pour le récompen-\nser, celui-ci promit de lui accorder ce qu’il\ndésirerait. L’inventeur, qui devait être un\nmathématicien de talent, demanda un grain\nde blé pour la première case de l’échiquier,\n2 pour la seconde, 4 pour la troisième, 8\npour la quatrième et ainsi de suite, jusqu’à la\ndernière case (un échiquier comporte 64\ncases).\nLe roi pensa que c’était une bien faible\nrécompense, mais ces conseillers firent le\ncalcul. Et ils trouvèrent que le nombre de\ngrain de blé est de 2\n64 – 1. Un nombre qui\ndépasse de beaucoup de fois la récolte de\nnos jours, chaque année, dans le monde\nentier !\nUn grain de blé pèse en moyenne 0,05 g.\nCombien faut-il de bateaux de 10000 tonnes\npour transporter ce blé ?\nDevinette\nSur un lac pousse un nénuphar (une\nplante aquatique), qui double de taille\nchaque jour.\nAu bout de dix jours, il recouvre exacte-\nment la surface du lac tout entier.\nCombien a-t-il fallu au nénuphar pour\nrecouvrir la moitié du lac ?\nMath et cultureMath et culture",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 11\nSoit A 0B0C0D0 un carré de centre O et de 6 cm de côté. On définit la ligne polygonale\nA0A1A2A3A4 de la figure ci-dessous de la façon suivante :\nLes points A1, A2, A3 et A4 sont respectivement sur les segments [OB0], [OC0], [OD0], [OA0]\net tels que : OA1 = OB0 , OA2 = OC 0 , OA3 = OD 0 et OA4 = OA 0.\nOn reconduit le même procédé de sorte que les points A5, A6, … soient respectivement sur les\nsegments [OB0], [OC0],…et tels que OA 5 = OB 0 , OA6 = OC 0 …\n1) a) Sur quel segment parmi [OA 0], [OB0], [OC0], [OD0] se trouvent les points A 17, A23,\nA2006 et A4000 ?\nb) Soit p un multiple de 4. Où se trouve le point A p ?\nc) Pour n inférieur ou égal à 1000, quel est le nombre de points A n sur le segment [OA0] ?\nd) Préciser suivant les valeurs de n, sur quel segment, parmi les quatre précédents, se\ntrouve le point An.\n2) On considère la suite (Un) définie pour tout entier naturel n par Un = OAn.\na) Calculer U0, U1 et U2.\nb) Quelle est la nature de la suite (U n) ? Exprimer Un en\nfonction de n.\nc) A partir de quelle valeur de n, a-t-on U\nn < 10 -2 ?\n3) Soit (Ln) la suite définie par Ln = An An+1.\na) Calculer L 0, L1 et L2.\nb) Montrer que Ln = .\n4) Soit pn la longueur de la ligne polygonale\nA0A1A2A3…A n. Exprimer pn en fonction de n.\n5) Montrer qu’il existe une homothétie qui transforme la ligne A0A1A2A3A4 en A4A5A6A7A8\net préciser le centre et le rapport de cette homothétie.\n1 - 22\n1 + 23\n1 + 24\n1 + ... + 29\n1 + 210\n...333 33 3 9 9 81 81-+ -+ - - +\n31 0\nn1+\nSuites géométriques\nParmi les suites (Un) définies ci-dessous préciser celles qui sont géométriques et déterminer\ndans ce cas, le premier terme et la raison.\na) Un = 2 x 3n, n ∈ I N . b)\nc) d)\nMontrer que la suite (U n), définie par U n = , n ∈ IN est une suite géométrique et\npréciser son premier terme et sa raison.\nTerme général\nSoit (Un) une suite de nombres réels non nuls, telle que U 0 = 1 et pour tout n ∈ IN,\n. Donner le terme général de la suite (U n).\nDéterminer la raison q d’une suite géométrique (Vn) sachant que V0 = – 6 et V8 = –1536.\n(Un) est une suite géométrique de premier terme U 0 = 5 et de raison q = .\nDéterminer n sachant que Un = .\n(Un) est une suite géométrique de raison q = 4 , et telle que U 9 = . Calculer U 17.\nDéterminer la raison q d’une suite géométrique (Un) sachant que U4 = 25 et U11 = 1953125.\nSomme des termes consécutifs d’une suite géométrique\nSoit (Vn) une suite géométrique de premier terme V 0 = 5 et de raison q = .\nOn pose S = V0 + V1 + … + V 6 et S’ = V11 + V12 + … + V 20.\nCalculer S et S’.\nCalculer les deux sommes suivantes :\nA = 1 – + – + … – .\nB = 32 + 64 + 128 + …+ 2048.\nU0 = 6\nUn+1 = , n ∈ IN\nU0 = 5\nUn+1 = n Un , n ∈ IN\nU0 = – 1\n3Un+1 –2 Un = 0 , n ∈ IN\nUn\n7n\nUn\nUn+1\n=3\n59049\n32768\n-1\n- 2\n2187\nSoit (Vn) une suite géométrique de premier terme V 0 et de raison q ≠ 0.\nOn a : Vn = V0 qn, pour tout n ∈ IN.\nVn = Vp qn – p, pour tout entiers n et p.\nEn particulier Vn = V1 qn – 1 , pour tout n ∈ IN.\n♦ La somme S de n termes consécutifs d’une suite géométrique de raison q (q ≠ 1) est\nS = a × , où a est le premier terme de cette somme\nS = le premier terme de la somme × .\nSi q = 1 alors S = n a.\n♦ 1 + q + q 2 + q 3 + …+ q n = ,où q est un réel différent de 1 et n est un entier naturel.\nSi q = 1, on a 1 + q + q 2 + q3 + …+ q n = n + 1.\nTerme général\n1-q\n1-q n\n1-q\n1-q n+1\nSomme de termes consécutifs\n1 - la raison\n1 - (la raison) Le nombre de termes\nDans la figure ci-contre on a :\nOAB un triangle rectangle en B tel que OA = 5 ; OB = 4 et AB = 3.\nH\n1 le projeté orthogonal de B sur (OA)\nH2 le projeté orthogonal de H1 sur (OB)\nH3 le projeté orthogonal de H2 sur (OA)\n1) a) Calculer et en déduire OH 1.\nb) Montrer que .\nc) En déduire OH\n2 et OH3\n2) Soit H4 le projeté orthogonal de H3 sur (OB). H5 est le projeté orthogonal de H4 sur (OA)\net ainsi de suite.\na) Sur quel côté du triangle OAB se trouvent chacun des points H 6, H7, H15 et H38 ?\nb) Soit n un entier naturel non nul. Sur quel côté du triangle OAB se trouve le point H n ?\nc) Calculer OHn+1 en fonction de OHn. En déduire l’expression de OHn en fonction de n.\n3) a) Vérifier que BH1 = OB, H 1H2 = OH1 et H2H3 = OH2.\nb) Soit S = BH1 + H1H2 + H2H3 +…+ H nHn+1. Donner l’expression de S en fonction de n.\nIndication\nPenser aux rapports trigonométriques dans un triangle rectangle.\nLes nombres parfaits\nUn entier naturel est parfait s’il est égal à la somme de ses diviseurs propres (autres que lui\nmême).\nExemples : 6 = 1 + 2 + 3 ; 28 = 1+ 2 + 4 + 7 + 14.\n6 et 28 sont deux nombres parfaits.\n1) Vérifier que 496 est un nombre parfait.\n2) Soit p un nombre premier différent de 2, et soit N = p x 2\nn, où n est un entier naturel.\nOn désigne par S la somme des diviseurs propres de N.\na) Donner la forme des diviseurs de N.\nb) Exprimer S en fonction de p et n.\n3) a) Montrer que N est un nombre parfait si et seulement si p = 2\nn+1 – 1.\nb) Déterminer N pour p = 3 ; p = 7 et p = 31.\nc) Vérifier que 8128 est un nombre parfait.\nIndication\nPour calculer S, on pourra faire la somme des diviseurs de N qui sont de la forme 2\nk, puis la\nsomme des diviseurs de N qui sont de la forme p 2 k.\nDévelopper ses compéDévelopper ses compétences\nOB\nOH1\nOB\nOH1\n= OH1\nOH2\n= OH2\nOH3\n= 5\nUtiliser les TICUtiliser les TIC\nAvec un tableur\nOn considère les suites géométriques (Un), (Vn) et (Wn) de raisons respectives 0,5 , et – 2\net telles que U 0 = V0 = W0 = 1 .\na) Reproduire sur Excel la feuille de calcul suivante,\nLa colonne A, affiche les valeurs prises par l’entier n : 0, 1, 2, 3, …\nLa colonne B, affiche les valeurs prises par U n.\nLa colonne C, affiche les valeurs prises par V n.\nLa colonne D, affiche les valeurs prises par W n.\nCliquer sur la cellule A3, une croix noire s’affiche au coin inférieur droit de cette cellule.\nPositionner le curseur sur cette croix et tirer vers le bas, jusqu’à atteindre la valeur désirée de n.\nProcéder de la même façon avec B 3, C 3 et D 3.\nb) Quelles remarques peut-on faire pour les valeurs des termes de chacune des trois suites,\nlorsque n devient de plus en plus grand ?\nA B C D\n1 n Un Vn Wn\n2 = 0 = 1 = 1 = 1\n3 = A2 + 1 = B2 * 0,5 = C2 * 1,5 = D2 * – 2\nAppliquer\nIndiquer parmi les suites définies ci-après\ncelles qui sont des suites géométriques.\na) U\nn = 2n , n ∈ IN.\nb) U0 = 3 et Un+1 = (Un)2 , n ∈ IN.\nc)\nd) U\nn = – 4 si n est pair et U n = 4 si n est\nimpair, n ∈ IN.\ne) Un = nn , n ∈ IN *.\nf)\nSoit (Un) une suite géométrique de raison\nq = –7 et telle que U4 = 2401. Calculer U10.\nSoit (Vn) une suite géométrique telle que\nV3 = 12 et V 5 = 36. Quelles sont les valeurs\npossibles de la raison ?\nCalculer V\n9 pour chaque cas.\nSoit (Un) une suite géométrique de premier\nterme U1 = – 5 et de raison q = .\na) Calculer U8 et U10.\nb) Calculer la somme S = U 1 + U2 +…+ U 8.\nSoit (Vn) une suite géométrique de raison 2.\na) Sachant que V 0 + V1+ …+ V 14 = 98301,\nexprimer Vn en fonction de n.\nb) On prend dans cette question V 0 = 3.\nDéterminer n, pour que la somme des n\npremiers termes de cette suite soit 3145725.\nLes nombres 428442, 4242 et 42\nsont-ils les termes consécutifs d’une\nsuite géométriques ?\nCalculer chacune des sommes :\nA = 3 + 8 + 13 + 18 + …+ 103 + 108\nB = 2 – 4 + 8 – 16 + 32 – … + 33554432.\nMaîtriser\nMoyenne géométrique\na) Soient a, b et c trois réels positifs.\nMontrer que si a, b et c sont trois termes\nconsécutifs d’une suite géométrique alors\n.\n(On dit que b est la moyenne géométrique de\na et c).\nb) Soient a, b et c trois réels positifs tels\nque . a, b et c sont-ils trois termes\nconsécutifs d’une suite géométrique ?\nSoient ABC un triangle rectangle en A,\nO le milieu de [BC] et H le pied de la\nhauteur issue de A.\na) Montrer que BH, AH et HC sont, dans cet\nordre, en progression géométrique, et que\npour tout point M de [BC] les réels MB, OA\net MC sont, dans cet ordre, en progression\narithmétique.\nb) x et z sont les longueurs de deux segments\ndonnés.\nConstruire un segment de longueur y tel que\nx, y et z soient, dans cet ordre, en\nprogression géométrique.\nSoit (U\nn) une suite arithmétique de\npremier terme U 0 et de raison r.\nMontrer que la suite (Vn) définie par\nVn = 2 Un, n ∈ IN, est une suite géométrique\ndont on précisera le premier terme V 0 et la\nraison q en fonction de U0 et r.\nUn épargnant doit choisir entre deux for-\nmules pour placer un capital de 8000 dinars\npendant six ans, à intérêts composées.\nFormule 1 : taux annuel de 4%\nFormule 2 : taux semestriel de 2%\nQuelle formule lui conseiller ?\nU\n0 = 1\nUn= 3 Un+1 , n ∈ IN\nU0 = -2\nUn+1= 3 Un + 5, n ∈ IN\n1 8\nb= a c\nb= a c\nExercices et problèmesExercices et problèmes\nLe roi et l’inventeur du jeu d’échecs\nUn auteur arabe, Al-Sephadi, raconte que\nl’inventeur du jeu d’échecs, fut présenté à\nson maître roi de Perse. Pour le récompen-\nser, celui-ci promit de lui accorder ce qu’il\ndésirerait. L’inventeur, qui devait être un\nmathématicien de talent, demanda un grain\nde blé pour la première case de l’échiquier,\n2 pour la seconde, 4 pour la troisième, 8\npour la quatrième et ainsi de suite, jusqu’à la\ndernière case (un échiquier comporte 64\ncases).\nLe roi pensa que c’était une bien faible\nrécompense, mais ces conseillers firent le\ncalcul. Et ils trouvèrent que le nombre de\ngrain de blé est de 2\n64 – 1. Un nombre qui\ndépasse de beaucoup de fois la récolte de\nnos jours, chaque année, dans le monde\nentier !\nUn grain de blé pèse en moyenne 0,05 g.\nCombien faut-il de bateaux de 10000 tonnes\npour transporter ce blé ?\nDevinette\nSur un lac pousse un nénuphar (une\nplante aquatique), qui double de taille\nchaque jour.\nAu bout de dix jours, il recouvre exacte-\nment la surface du lac tout entier.\nCombien a-t-il fallu au nénuphar pour\nrecouvrir la moitié du lac ?\nMath et cultureMath et culture\n\nÀ calculer dans l'application : u₁ = 3, q = 2. u₅ et S₅.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 11 (« Activité 11 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "q",
+        "label": "q",
+        "unit": "—",
+        "value": 2,
+        "min": 2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 5,
+        "min": 3,
+        "max": 7,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 11 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   }
 ]

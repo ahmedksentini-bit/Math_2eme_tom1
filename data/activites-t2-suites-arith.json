@@ -8,20 +8,36 @@
     "solver": "fixed",
     "title": "Activité 1 Les nombres triangulaires",
     "difficulty": 1,
-    "statement": "Activité 1 Les nombres triangulaires\nLes figures suivantes représentent les quatre premiers nombres triangulaires 1, 3, 6 et 10, notés\nrespectivement T1, T2, T3 et T4.\nT1 se lit T indice 1 ou T, 1.\nT2 se lit T indice 2 ou T, 2.\nEt plus généralement Tn se lit T indice n ou T, n.\n1) a) Représenter le 5ème nombre triangulaire noté T5 et donner sa valeur.\nb) Même question pour T6.\n2) Les Pythagoriciens utilisaient des diagrammes rectangulaires pour calculer les nombres\ntriangulaires.\na) Le diagramme rectangulaire ci-dessous permet de calculer T 12. Expliquer comment.\nb) Donner les valeurs de T20 , T125 et T2006.\nc) Donner l’expression du nième nombre triangulaire Tn en fonction de n.\nEExplorerExplorer\nNotion de suites\nT1 = 1 T2 = 3 T3 = 6 T4 = 10",
+    "statement": "Activité 1 Les nombres triangulaires\nLes figures suivantes représentent les quatre premiers nombres triangulaires 1, 3, 6 et 10, notés\nrespectivement T1, T2, T3 et T4.\nT1 se lit T indice 1 ou T, 1.\nT2 se lit T indice 2 ou T, 2.\nEt plus généralement Tn se lit T indice n ou T, n.\n1) a) Représenter le 5ème nombre triangulaire noté T5 et donner sa valeur.\nb) Même question pour T6.\n2) Les Pythagoriciens utilisaient des diagrammes rectangulaires pour calculer les nombres\ntriangulaires.\na) Le diagramme rectangulaire ci-dessous permet de calculer T 12. Expliquer comment.\nb) Donner les valeurs de T20 , T125 et T2006.\nc) Donner l’expression du nième nombre triangulaire Tn en fonction de n.\nEExplorerExplorer\nNotion de suites\nT1 = 1 T2 = 3 T3 = 6 T4 = 10\n\nÀ calculer dans l'application : Les nombres triangulaires : Tₙ = n(n+1)/2. Calculer T₅, T₆ et T₂₀.",
     "variables": [],
     "questions": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 1 (« Activité 1 Les nombres triangulaires ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "t5",
+        "type": "number",
+        "label": "T₅",
+        "answer": 15
+      },
+      {
+        "key": "t6",
+        "type": "number",
+        "label": "T₆",
+        "answer": 21
+      },
+      {
+        "key": "t20",
+        "type": "number",
+        "label": "T₂₀",
+        "answer": 210
       }
     ],
     "steps": [
       [
-        "Manuel",
-        "Relire l’activité 1 dans le tome 2 et la synthèse du chapitre."
+        "Formule",
+        "Tₙ = 1+2+…+n = n(n+1)/2."
+      ],
+      [
+        "Valeurs",
+        "T₅ = 15, T₆ = 21, T₂₀ = 210."
       ]
     ]
   },
@@ -31,24 +47,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 2,
-    "solver": "fixed",
+    "solver": "arithSeq",
     "title": "Activité 2 : Une spirale quadratique",
     "difficulty": 1,
-    "statement": "Activité 2 : Une spirale quadratique\nDans la figure ci-contre on a :\n• Le triangle OA1A2 rectangle en A1\net tel que OA1 = A1A2 =1 ;\n• Le triangle OA2A3 rectangle en A2\net tel que A2A3 =1 ;\n• Etc…\nOn pose :\na1 = aire(OA1A2), a2 = aire(OA2A3), …,\nan = aire(OAnAn+1).\na) Calculer a2 , a3 , a4 et a5 .\nb) Conjecturer l’expression de an en fonction de n.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 2 : Une spirale quadratique\nDans la figure ci-contre on a :\n• Le triangle OA1A2 rectangle en A1\net tel que OA1 = A1A2 =1 ;\n• Le triangle OA2A3 rectangle en A2\net tel que A2A3 =1 ;\n• Etc…\nOn pose :\na1 = aire(OA1A2), a2 = aire(OA2A3), …,\nan = aire(OAnAn+1).\na) Calculer a2 , a3 , a4 et a5 .\nb) Conjecturer l’expression de an en fonction de n.\n\nÀ calculer dans l'application : u₁ = 1, r = 1 (entiers). u₂₀ et S₂₀.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 2 (« Activité 2 : Une spirale quadratique ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "r",
+        "label": "r",
+        "unit": "—",
+        "value": 1,
+        "min": -4,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 20,
+        "min": 8,
+        "max": 20,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 2 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -57,24 +99,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 3,
-    "solver": "fixed",
+    "solver": "arithSeq",
     "title": "Activité 3",
     "difficulty": 1,
-    "statement": "Activité 3\nPour chacune des suites suivantes, déterminer les cinq premiers termes et le terme général.\n• La suite des entiers naturels pairs.\n• La suite des multiples de 3.\n• La suite qui à tout entier naturel non nul associe son inverse.\n• La suite qui à tout entier naturel associe sa racine carrée.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 3\nPour chacune des suites suivantes, déterminer les cinq premiers termes et le terme général.\n• La suite des entiers naturels pairs.\n• La suite des multiples de 3.\n• La suite qui à tout entier naturel non nul associe son inverse.\n• La suite qui à tout entier naturel associe sa racine carrée.\n\nÀ calculer dans l'application : Suite des entiers pairs : u₁ = 2, r = 2. Calculer u₁₀ et S₁₀.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 3 (« Activité 3 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 2,
+        "min": 0,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "r",
+        "label": "r",
+        "unit": "—",
+        "value": 2,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 10,
+        "min": 4,
+        "max": 16,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 3 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -83,24 +151,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 4,
-    "solver": "fixed",
+    "solver": "arithSeq",
     "title": "Activité 4",
     "difficulty": 1,
-    "statement": "Activité 4\nSoit la suite (Un) définie pour tout entier naturel n par : .\na) Calculer U0, U1, U5 et U100.\nb) Déterminer le premier terme, le 5 ème terme et le 100 ème terme de cette suite.\nc) Déterminer l’expression de Up+1, U2n et U3k+2.\nDéfinition d’une suite\nAAssimilerAssimiler : 1-2-3-4\nSoit n0 un entier naturel.\nLorsqu’à tout entier naturel n supérieur ou égal à n0 on associe un réel unique U(n) on dit\nque l’on a défini une suite de nombres réels.\nLe réel U(n) s’appelle le terme général de la suite et se note U\nn.\nLa suite se note (Un)n ≥ n0\nou (Un).\nUn = 4\n3n + 1\nSuites arithmétiques",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 4\nSoit la suite (Un) définie pour tout entier naturel n par : .\na) Calculer U0, U1, U5 et U100.\nb) Déterminer le premier terme, le 5 ème terme et le 100 ème terme de cette suite.\nc) Déterminer l’expression de Up+1, U2n et U3k+2.\nDéfinition d’une suite\nAAssimilerAssimiler : 1-2-3-4\nSoit n0 un entier naturel.\nLorsqu’à tout entier naturel n supérieur ou égal à n0 on associe un réel unique U(n) on dit\nque l’on a défini une suite de nombres réels.\nLe réel U(n) s’appelle le terme général de la suite et se note U\nn.\nLa suite se note (Un)n ≥ n0\nou (Un).\nUn = 4\n3n + 1\nSuites arithmétiques\n\nÀ calculer dans l'application : u₁ = 2, r = 3. u₁₂ et S₁₂.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 4 (« Activité 4 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 2,
+        "min": -4,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "r",
+        "label": "r",
+        "unit": "—",
+        "value": 3,
+        "min": -3,
+        "max": 7,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 12,
+        "min": 5,
+        "max": 18,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 4 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -109,24 +203,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 5,
-    "solver": "fixed",
+    "solver": "arithSeq",
     "title": "Activité 5",
     "difficulty": 1,
-    "statement": "Activité 5\nOn désigne par a n l’aire du domaine représenté\ndans la figure ci-contre.\na) Calculer a\n0.\nb) Donner l’expression de an en fonction de n.\nc) Calculer a n+1 – a n.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 5\nOn désigne par a n l’aire du domaine représenté\ndans la figure ci-contre.\na) Calculer a\n0.\nb) Donner l’expression de an en fonction de n.\nc) Calculer a n+1 – a n.\n\nÀ calculer dans l'application : u₁ = 0, r = 5. u₇ et S₇.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 5 (« Activité 5 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 0,
+        "min": -5,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "r",
+        "label": "r",
+        "unit": "—",
+        "value": 5,
+        "min": -3,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 7,
+        "min": 4,
+        "max": 14,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 5 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -135,24 +255,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 6,
-    "solver": "fixed",
+    "solver": "arithSeq",
     "title": "Activité 6",
     "difficulty": 1,
-    "statement": "Activité 6\nOn considère la suite (U n) des entiers naturels dont\nle reste de la division euclidienne par 5 est 3, rangés par ordre croissant.\na) Déterminer U\n0 , U1 , U2 , U3 et U4 .\nb) Exprimer le terme général Un en fonction de n.\nc) Calculer Un+1 – Un, pour tout n ∈ IN.\nRemarque\nSi a, b, c, d,… sont des termes consécutifs d’une suite arithmétique, on dit qu’ils sont en\nprogression arithmétique.\nTerme général d’une suite arithmétique",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 6\nOn considère la suite (U n) des entiers naturels dont\nle reste de la division euclidienne par 5 est 3, rangés par ordre croissant.\na) Déterminer U\n0 , U1 , U2 , U3 et U4 .\nb) Exprimer le terme général Un en fonction de n.\nc) Calculer Un+1 – Un, pour tout n ∈ IN.\nRemarque\nSi a, b, c, d,… sont des termes consécutifs d’une suite arithmétique, on dit qu’ils sont en\nprogression arithmétique.\nTerme général d’une suite arithmétique\n\nÀ calculer dans l'application : u₁ = −4, r = 3. u₉ et S₉.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 6 (« Activité 6 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": -4,
+        "min": -8,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "r",
+        "label": "r",
+        "unit": "—",
+        "value": 3,
+        "min": -4,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 9,
+        "min": 4,
+        "max": 16,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 6 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -161,24 +307,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 7,
-    "solver": "fixed",
+    "solver": "arithSeq",
     "title": "Activité 7",
     "difficulty": 1,
-    "statement": "Activité 7\n1) Soit (Un) la suite arithmétique définie par\na) Calculer U1, U2, U3, U4 et U5.\nb) Calculer U1000.\n2) Soit (U n) une suite arithmétique de premier terme U 0 et de raison r.\na) Exprimer U1, U2, U3, U4 et U5 en fonction de U0 et r.\nb) Conjecturer l’expression de Un en fonction de U0 et r.\nc) Soit n un entier naturel. En additionnant\nmembre à membre les égalités suivantes, justifier votre conjecture.\nOn dit qu’une suite (U n) est arithmétique s’il existe un réel r tel que, pour tout entier\nnaturel n on a\nUn+1 = Un + r.\nLe nombre réel r est appelé raison de cette suite.\nDéfinition\nAAssimilerAssimiler : 5-6\nU0 =\nUn+1 = Un + , n ∈ IN5\nU1 = U0 + r\nU2 = U1 + r\nU3 = U2 + r\n..................\nU\nn-1 = Un-2 + r\nUn = Un-1 + r\n3) On considère la suite (U n) définie pour tout entier naturel n par U n = an + b, où a et b sont\ndeux réels donnés. Montrer que (Un) est une suite arithmétique.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 7\n1) Soit (Un) la suite arithmétique définie par\na) Calculer U1, U2, U3, U4 et U5.\nb) Calculer U1000.\n2) Soit (U n) une suite arithmétique de premier terme U 0 et de raison r.\na) Exprimer U1, U2, U3, U4 et U5 en fonction de U0 et r.\nb) Conjecturer l’expression de Un en fonction de U0 et r.\nc) Soit n un entier naturel. En additionnant\nmembre à membre les égalités suivantes, justifier votre conjecture.\nOn dit qu’une suite (U n) est arithmétique s’il existe un réel r tel que, pour tout entier\nnaturel n on a\nUn+1 = Un + r.\nLe nombre réel r est appelé raison de cette suite.\nDéfinition\nAAssimilerAssimiler : 5-6\nU0 =\nUn+1 = Un + , n ∈ IN5\nU1 = U0 + r\nU2 = U1 + r\nU3 = U2 + r\n..................\nU\nn-1 = Un-2 + r\nUn = Un-1 + r\n3) On considère la suite (U n) définie pour tout entier naturel n par U n = an + b, où a et b sont\ndeux réels donnés. Montrer que (Un) est une suite arithmétique.\n\nÀ calculer dans l'application : u₁ = 7, r = −1. u₁₁ et S₁₁.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 7 (« Activité 7 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 7,
+        "min": -2,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "key": "r",
+        "label": "r",
+        "unit": "—",
+        "value": -1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 11,
+        "min": 5,
+        "max": 16,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 7 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -187,24 +359,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 8,
-    "solver": "fixed",
+    "solver": "arithSeq",
     "title": "Activité 8",
     "difficulty": 1,
-    "statement": "Activité 8\na) On considère la suite (Un) définie par U0 = – 4 et Un+1 = Un + , n ∈ IN.\nCalculer U1, U2, U3 et donner le terme général Un.\nb) Soit (Vn) la suite définie par V0 = et V n+1 = Vn + , n ∈ IN.\nCalculer V1, V2, V3 et donner le terme général Vn.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 8\na) On considère la suite (Un) définie par U0 = – 4 et Un+1 = Un + , n ∈ IN.\nCalculer U1, U2, U3 et donner le terme général Un.\nb) Soit (Vn) la suite définie par V0 = et V n+1 = Vn + , n ∈ IN.\nCalculer V1, V2, V3 et donner le terme général Vn.\n\nÀ calculer dans l'application : u₁ = 5, r = 5. u₆ et S₆.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 8 (« Activité 8 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 5,
+        "min": -2,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "key": "r",
+        "label": "r",
+        "unit": "—",
+        "value": 5,
+        "min": -3,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 6,
+        "min": 4,
+        "max": 14,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 8 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -213,24 +411,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 9,
-    "solver": "fixed",
+    "solver": "arithSeq",
     "title": "Activité 9 Représentation graphique",
     "difficulty": 1,
-    "statement": "Activité 9 Représentation graphique\nLe plan est rapporté à un repère orthonormé\nSoit (Vn) la suite arithmétique de premier terme V 0 = 1 et de raison r = 2.\na) Placer les points A0 (0 ,V0), A1 (1 ,V1), A2 (2 ,V2) et A3 (3 ,V3).\nb) Vérifier que les points A0, A1, A2 et A3 sont sur une même droite D, que l’on précisera.\nc) Montrer que, pour tout entier n, le point A n (n , Vn ) appartient à D.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 9 Représentation graphique\nLe plan est rapporté à un repère orthonormé\nSoit (Vn) la suite arithmétique de premier terme V 0 = 1 et de raison r = 2.\na) Placer les points A0 (0 ,V0), A1 (1 ,V1), A2 (2 ,V2) et A3 (3 ,V3).\nb) Vérifier que les points A0, A1, A2 et A3 sont sur une même droite D, que l’on précisera.\nc) Montrer que, pour tout entier n, le point A n (n , Vn ) appartient à D.\n\nÀ calculer dans l'application : Suite arithmétique u₁ = 3, r = 4. Calculer u₁₀ et S₁₀.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 9 (« Activité 9 Représentation graphique ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 3,
+        "min": -4,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "key": "r",
+        "label": "r",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 10,
+        "min": 4,
+        "max": 16,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 9 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -239,24 +463,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 10,
-    "solver": "fixed",
+    "solver": "arithSeq",
     "title": "Activité 10",
     "difficulty": 1,
-    "statement": "Activité 10\nDans le graphique ci-contre, D est la droite qui\ncontient les points A\nn (n , U n ), où (U n) est une\nsuite. Montrer que (Un) est une suite arithmétique\ndont on déterminera le premier terme U 0 et la\nraison r.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 10\nDans le graphique ci-contre, D est la droite qui\ncontient les points A\nn (n , U n ), où (U n) est une\nsuite. Montrer que (Un) est une suite arithmétique\ndont on déterminera le premier terme U 0 et la\nraison r.\n\nÀ calculer dans l'application : u₁ = 1, r = 1 (entiers). u₂₀ et S₂₀.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 10 (« Activité 10 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "r",
+        "label": "r",
+        "unit": "—",
+        "value": 1,
+        "min": -4,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 20,
+        "min": 8,
+        "max": 20,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 10 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -265,24 +515,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 11,
-    "solver": "fixed",
+    "solver": "arithSeq",
     "title": "Activité 11",
     "difficulty": 2,
-    "statement": "Activité 11\n1) Soit (Un) la suite arithmétique de raison et telle que U 100 = 74. Déterminer U248.\n2) U0 et r étant deux réels donnés, soit (U n) la suite arithmétique de premier terme U 0\net de raison r. Soient n et p deux entiers naturels.\na) Exprimer Un et Up en fonction de U0.\nb) Exprimer Un en fonction de Up.\nSomme des termes consécutifs d’une suite arithmétique",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 11\n1) Soit (Un) la suite arithmétique de raison et telle que U 100 = 74. Déterminer U248.\n2) U0 et r étant deux réels donnés, soit (U n) la suite arithmétique de premier terme U 0\net de raison r. Soient n et p deux entiers naturels.\na) Exprimer Un et Up en fonction de U0.\nb) Exprimer Un en fonction de Up.\nSomme des termes consécutifs d’une suite arithmétique\n\nÀ calculer dans l'application : u₁ = 10, r = −2. u₈ et S₈.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 11 (« Activité 11 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 10,
+        "min": 0,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "key": "r",
+        "label": "r",
+        "unit": "—",
+        "value": -2,
+        "min": -6,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 8,
+        "min": 4,
+        "max": 16,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 11 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -291,24 +567,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 12,
-    "solver": "fixed",
+    "solver": "arithSeq",
     "title": "Activité 12",
     "difficulty": 2,
-    "statement": "Activité 12\nUn cycliste a parcouru 180 km en huit heures et il a parcouru chaque heure 3 km de moins\nque l’heure précédente. Combien de kilomètres a-t-il parcouru chaque heure ?\nO,O I ,O J_i .\nr= 4",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 12\nUn cycliste a parcouru 180 km en huit heures et il a parcouru chaque heure 3 km de moins\nque l’heure précédente. Combien de kilomètres a-t-il parcouru chaque heure ?\nO,O I ,O J_i .\nr= 4\n\nÀ calculer dans l'application : u₁ = 2, r = 3. u₁₂ et S₁₂.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 12 (« Activité 12 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 2,
+        "min": -4,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "r",
+        "label": "r",
+        "unit": "—",
+        "value": 3,
+        "min": -3,
+        "max": 7,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 12,
+        "min": 5,
+        "max": 18,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 12 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -317,24 +619,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 13,
-    "solver": "fixed",
+    "solver": "arithSeq",
     "title": "Activité 13",
     "difficulty": 2,
-    "statement": "Activité 13\nOn veut creuser un puits. Le premier mètre coûte 50 dinars, le deuxième mètre coûte 60 dinars,\nle troisième mètre coûte 70 dinars et ainsi de suite, en augmentant de 10 dinars à chaque mètre.\na) Combien coûtera le puits si l’on creuse 15 mètres ?\nb) Quelle profondeur (en nombre entier de mètres) pourrait-on atteindre si l’on disposait d’un\nbudget de 1000 dinars ?",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 13\nOn veut creuser un puits. Le premier mètre coûte 50 dinars, le deuxième mètre coûte 60 dinars,\nle troisième mètre coûte 70 dinars et ainsi de suite, en augmentant de 10 dinars à chaque mètre.\na) Combien coûtera le puits si l’on creuse 15 mètres ?\nb) Quelle profondeur (en nombre entier de mètres) pourrait-on atteindre si l’on disposait d’un\nbudget de 1000 dinars ?\n\nÀ calculer dans l'application : u₁ = 0, r = 5. u₇ et S₇.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 13 (« Activité 13 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 0,
+        "min": -5,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "r",
+        "label": "r",
+        "unit": "—",
+        "value": 5,
+        "min": -3,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 7,
+        "min": 4,
+        "max": 14,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 13 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -343,24 +671,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 14,
-    "solver": "fixed",
+    "solver": "arithSeq",
     "title": "Activité 14",
     "difficulty": 2,
-    "statement": "Activité 14\nDéterminer le nombre de termes de chacune des sommes suivantes :",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 14\nDéterminer le nombre de termes de chacune des sommes suivantes :\n\nÀ calculer dans l'application : u₁ = −4, r = 3. u₉ et S₉.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 14 (« Activité 14 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": -4,
+        "min": -8,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "r",
+        "label": "r",
+        "unit": "—",
+        "value": 3,
+        "min": -4,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 9,
+        "min": 4,
+        "max": 16,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 14 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -369,24 +723,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 15,
-    "solver": "fixed",
+    "solver": "arithSeq",
     "title": "Activité 15",
     "difficulty": 2,
-    "statement": "Activité 15\n1) a) Soit S = 1 + 2 + …+ 99 + 100.\nEn écrivant S = 100 + 99 + …+ 2 + 1, calculer 2S et en déduire S.\nb) Calculer 500 + 501 +…+ 1999 + 2000.\n2) Soit S la somme de n termes consécutifs d’une suite arithmétique de raison r.\nSoit a le premier terme et b le dernier terme, de cette somme.\nEn rangeant les termes de cette somme de deux manières :\n• du premier au dernier on aura, S = a + (a + r) + (a + 2 r) +…+ [ a + (n – 1) r]\n• du dernier au premier on aura, S = b + (b – r) + (b – 2 r) +…+ [ b – (n – 1) r].\nEn ajoutant membre à membre, déterminer 2 S puis S en fonction de a, b et n.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 15\n1) a) Soit S = 1 + 2 + …+ 99 + 100.\nEn écrivant S = 100 + 99 + …+ 2 + 1, calculer 2S et en déduire S.\nb) Calculer 500 + 501 +…+ 1999 + 2000.\n2) Soit S la somme de n termes consécutifs d’une suite arithmétique de raison r.\nSoit a le premier terme et b le dernier terme, de cette somme.\nEn rangeant les termes de cette somme de deux manières :\n• du premier au dernier on aura, S = a + (a + r) + (a + 2 r) +…+ [ a + (n – 1) r]\n• du dernier au premier on aura, S = b + (b – r) + (b – 2 r) +…+ [ b – (n – 1) r].\nEn ajoutant membre à membre, déterminer 2 S puis S en fonction de a, b et n.\n\nÀ calculer dans l'application : u₁ = 7, r = −1. u₁₁ et S₁₁.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 15 (« Activité 15 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 7,
+        "min": -2,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "key": "r",
+        "label": "r",
+        "unit": "—",
+        "value": -1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 11,
+        "min": 5,
+        "max": 16,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 15 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -395,24 +775,50 @@
     "tome": 2,
     "kind": "activity",
     "activity": 16,
-    "solver": "fixed",
+    "solver": "arithSeq",
     "title": "Activité 16",
     "difficulty": 2,
-    "statement": "Activité 16\nLa figure ci-contre représente des cercles C0, C1, C2,…tangents\nen O. Les diamètres de ces cercles sont respectivement égaux à\n1 cm, 2 cm, 3 cm, … On désigne par :\n• a\n0 l’aire du disque de frontière C0,\n• a1 l’aire de la portion du plan comprise entre C0 et C1,\n• a2 l’aire de la portion du plan comprise entre C1 et C2,\n• et pour tout entier naturel n supérieur ou égal à 1, a n désigne\nl’aire de la portion du plan comprise entre C n-1 et Cn.\n1) a) Calculer a n en fonction de n.\nb) Montrer que (an) est une suite arithmétique dont on précisera le premier terme et la raison.\nc) Déterminer n pour l’on ait an ≥1 0 7.\n2) Soit S = a 0 + a1 + a2 + … + a n. Calculer S de deux manières différentes.\nA = 1 + 2 + 3 +…+ 99 + 100 ; D = 1 + 2 + 4 + …+ 2 n-1 + 2n.\nB = ; E = U 0 + U1 + … + U n.\nC = 1 + 3 + 5 + 7 +…+ 73 + 75 ; F = U 45 + U46 + … + U 381.\n1 + 13\n1 + 14\n1 + ... +121\n1 + 122\no\nAAssimilerAssimiler : 14-15-16\nV0 = – 1\n– Vn+1 + Vn + 3 = 0, n ∈ IN\nn+3\nn+2 1\nW1 n+\n-2n + 1\nn\nn+1\n2n2 +4 n+2\n- 6\n1 3\nGénéralités sur les suites\nSoit (Un), la suite définie par : U n = 2n + n, n ∈ IN.\nCalculer U1, U5 et U10.\nSoit (Vn), la suite définie par : V n = , n ∈ IN.\na) Calculer V0, V8 et V1000.\nb) Déterminer n pour que Vn = 2.\nOn considère la suite (t n) définie par : t0 = 2 et tn+1 = t n – 3 , n ∈ IN.\nCalculer t1, t2, t3, t4 et t5.\nSoit (Wn) la suite définie par : W 0 = 0 et Wn+1 = , n ∈ IN.\nCalculer W1, W2, W3 et W4.\nUtiliser votre calculatrice pour déterminer l’arrondi au millième de W2, W3 et W4.\nSuites arithmétiques\nMontrer que chacune des suites suivantes est arithmétique, et préciser dans chacun des cas\nle premier terme et la raison.\na) La suite (U\nn) définie par Un = , n ∈ IN.\nb) La suite (Un) définie par Un = – 4, n ∈ IN.\nIndiquer parmi les suites définies ci-après celles qui sont des suites arithmétiques.\na) La suite (Un) définie par U0 = 0 et Un+1 = Un + n, n ∈ IN.\nb) La suite (Vn) définie par\nc) La suite (a n) définie par a n =\nd) La suite (b n) définie par b 0 = 2 et b n+1 = 3 b n + 7, n ∈ IN\nTerme général\n(Un) est une suite arithmétique de premier terme U 0 et de raison r.\nDéterminer, dans chacun des cas suivants Un.\na) U0 = – 1, r = – 3 et n = 23.\nb) U0 = π, r = et n = 100.\nc) U0 = , r = 2 et n = 23 .\n(Un) est une suite arithmétique de premier terme U 0 = – 2 et de raison r = .\nDéterminer n sachant que Un = 24.\nCalculer la raison d’une suite arithmétique sachant que U15 = – 12 et U24 = 15.\n(Un) est une suite arithmétique de raison r = 0,5 et telle que U 30 = .\nDéterminer U20 et U50.\nReprésenter graphiquement la suite arithmétique de premier terme U0 = – 2 et de raison 3.\nDans le graphique ci-dessous, D est la droite qui contient les points A n (n , Un), où (U n)\nest une suite arithmétique. Utiliser ce graphique pour déterminer le premier terme U0 et la rai-\nson r de cette suite.\nSomme des termes consécutifs d’une suite arithmétique\nCalculer chacune des sommes suivantes:\nS = 1 + 2 + 3+ … + n\nS = 1 + 3 + 5 + 7 + … + (2n – 1)\nS = 1 + 2,01 + 3,02 + 4,03 + … + 24,23 + 25,24.\nSoit (U\nn) la suite arithmétique définie par\nCalculer S = U5 + U6 + … + U 50.\nSoit (Un) une suite arithmétique de premier terme U 0 et de raison r.\nOn donne U5 = 6 et S = 48, où S = U 0 + U1 + … + U 11.\nDéterminer le premier terme U0 et la raison r de la suite (U n).\nU0 = 2\nUn+1 = Un + 5, n ∈ IN\nDéterminer la raison r d’une suite arithmétique sachant que U0 = 8 et U7 = – 13.8\nModes de présentation d’une suite\nUne suite peut être définie par :\n• son terme général.\nou\n• son premier terme et une relation permettant de calculer un terme à l’aide\ndu terme précédent. Cette relation est appelée relation de récurrence.\nSuites arithmétiques\nTerme général\nSoit (Un) une suite arithmétique de premier terme U 0 et de raison r.\nOn a : • Un = U0 + n r, pour tout n ∈ IN.\n• Un = Up + (n – p) r, où n et p sont deux entiers naturels.\nEn particulier Un = U1 + (n – 1) r, pour tout n ∈ IN.\nReprésentation graphique\nSoit (Un) une suite arithmétique de premier terme U 0 et de raison r.\nLes points An de coordonnées (n, Un), sont sur la droite de pente r et d’ordonnée à l’origine\nle premier terme U0.\nSomme de n termes consécutifs\nLa somme S de n termes consécutifs d’une suite arithmétique est , où a est le\npremier terme de cette somme et b est le dernier terme.\nS = nombre de termes x ( )\n1 + 2 + 3 + ... + n =\nLe premier terme de la somme + le dernier terme\nn( n + 1 )\nS=n # 2\na+b\nL’arroseur des peupliers\nLa saison est sèche et le fermier décide de verser un seau d’eau au pied de chacun des jeunes\npeupliers qui bordent son champ. Il y a cent peupliers, en ligne droite, espacées de deux\nmètres, et le puits d’eau est au pied du premier. Le fermier ne porte qu’un seau à la fois. Il a\ncommencé le travail. Son voisin l’instituteur le regarde, accoudé au mur mitoyen.\n\" – Sacré travail !\n– Oh, dit le fermier, j’en ai pour une heure !\n– Une heure ! J’aurais le temps d’aller à pied en ville et d’en revenir avant que tu n’aies\nfini. \"\nLe fermier lève ses yeux au ciel ! la ville est à 9 Km, l’instituteur a de l’instruction, d’accord,\nmais il y a des fois où…je vous jure… !\nPour trancher le débat, calculez le chemin que le fermier aura à parcourir pour arroser tous ses\npeupliers.\n(D’après Jeux Mathématiques)\nIndication\nPenser à la somme des termes d’une suite arithmétique.\nPair ou impair ?\na) Un sac contient 20 jetons numérotes de 1 à 20. A chaque fois on tire deux jetons du sac et\non les remplace par un seul ayant pour numéro la somme des numéros des deux jetons tirés.\nQuel est le numéro inscrit sur le dernier jeton qui reste dans le sac ?\nb) Un sac contient 20 jetons numérotes de 1 à 20. A chaque fois on tire deux jetons du sac et\non les remplace par un seul ayant pour numéro la différence positive, des numéros des deux\njetons tirés.\nMontrer que le nombre inscrit sur le dernier jeton qui reste dans le sac, est pair.\n( D’après Championnat des jeux Mathématiques et logiques )\nIndications\na) Penser à la somme des termes d’une suite arithmétique.\nb) Remarquer que, si x et y sont deux entiers naturels, alors x + y et x – y sont de même parité.\n(U\nn) est une suite arithmétique de premier terme 6 et de raison 11.\n(Vn ) est une suite arithmétique de premier terme (– 8) et de raison 13.\n(Wn) est une suite arithmétique de premier terme (29) et de raison 17.\nQuel est le plus petit entier naturel qui est à la fois un terme de (U n ) de(Vn) et de (Wn).\nIndication\nVérifier que Un + 5 est un multiple de 11.\nDévelopper ses compéDévelopper ses compétences\nUtiliser les TIC\nUtiliser les TIC\nAvec un tableur\nSoit n un entier naturel non nul.\nOn désigne par U\nn la somme des n premiers entiers naturels non nuls, U n = 1 + 2 + …+ n.\nSoit Vn = 13 + 23 + …+ n 3.\n1) Reproduire sur Excel cette feuille de calcul :\nLa colonne A affiche les valeurs prises par l’entier n : 1, 2, 3, …\nLa colonne B affiche les valeurs prises par U n.\nLa colonne C affiche les valeurs prises par V n.\nCliquer sur la cellule A3, une croix noire s’affiche au coin inférieur droit de cette cellule.\nPositionner le curseur sur cette croix et tirer vers le bas, jusqu’à atteindre la valeur désirée de n.\nProcéder de la même façon avec B3 et C3.\nConjecturer pour tout n, le lien entre U\nn et Vn.\n2) Le but de cette question est de justifier la conjecture.\na) Montrer que, pour tout entier naturel n > 1, l’aire de la bande délimitée par les carrés de\ncôtés U\nn - 1 et Un est égale à n 3 (voir figure ci-dessous).\nb) Conclure.\nA B C\n1 n Un Vn\n2 = 1 = 1 = 1\n3 = A2 + 1 = B2 + A3 = C2 + A3^3\nUn - 1\nUn\nExercices et problèmesExercices et problèmes\nSoit (Un) la suite définie par son terme\ngénéral , n ∈ IN.\nCalculer U0, U1, U2, U9, U20 et U2005.\nCalculer les cinq premiers termes de cha-\ncune des suites suivantes :\na) (U\nn) définie par Un = 3n – 2n, n ∈ IN.\nb) (tn) définie par tn = , n ∈ IN \\{0,1,2}.\nc) (an) définie par\nd) (bn) définie par\nSoit (Un) la suite définie par :\nUn = n2 – 3 n, n ∈ IN.\na) Calculer U0, U10 et U100.\nb) Exprimer en fonction de n, Un-1, Un+1 et U2n.\nIndiquer parmi les suites définies ci-après\ncelles qui sont des suites arithmétiques.\na) U\nn = 3 n + 1, n ∈ IN.\nb) U0 = 2 et Un+1 = 1 – Un , n ∈ IN.\nc) U0 = 5 et Un+1 – Un = 3, n ∈ IN.\nLes nombres 3529461 ; 4539562 et\n5549663 sont-ils trois termes consécutifs\nd’une suite arithmétique ?\n(U\nn) est une suite arithmétique de raison\n– 4 et telle que U8 = – 31. Calculer U57.\n(Un) est une suite arithmétique telle que\nU3 = 2 et U11 = 26.\nOn pose S = U0 + U1 +…+ U 15.\nCalculer S.\n(Vn) est une suite arithmétique de premier\nterme V0 = et de raison r = -1.\na) Donner le terme général de la suite (V n).\nb) Calculer V23 , V76 et V100.\nc) Calculer chacune des sommes\nsuivantes :\nS = V\n0 + V1 + … + V 15\nS’ = V9 + V10 + … + V 15.\nMaîtriser\nUne mère de famille a économisé 10\ndinars au premiers mois, puis 15 dinars le\nmois suivant et ainsi de suites en économi-\nsant 5 dinars de plus que le mois précédent\na) combien a-t-elle économisé au bout de\nhuit mois ?\nb) A la fin de quel mois ses économies suffi-\nront pour acheter un aspirateur qui côute 205\ndinars.\nLa somme des 20 premiers termes d’une\nsuite arithmétique est 610.\na) Déterminer le premier terme de cette suite\nsachant que sa raison est 3.\nb) Calculer la somme des 100 premiers\ntermes de cette suite.\na0 = 2\nan+1 = an+ ,n ∈ IN\nb0 = 2\nbn+1 = 1 + bn2 ,n ∈ IN\nn-3\nU n1\nn = +\n- n] g\n(Un) est une suite arithmétique telle que\nU20 = 1926 et U57 = 1606.\nDéterminer la raison de cette suite ainsi que\nson premier terme U\n7Appliquer\nExercices et problèmesExercices et problèmes\nCalculer chacune des sommes :\nA = 3 + 8 + 13 + 18 + …+ 103 + 108\nB = 2,9 + 3,8 + 4,7 + 5,6 +…+ 92,9.\nLequel des deux nombres suivants est le\nplus grand : 2005 x (1 + 2 +…+ 2006)\nou 2006 x (1 + 2 +…+ 2005) ?\nMoyenne arithmétique\na) Montrer que si a, b et c sont trois termes\nconsécutifs d’une suite arithmétique, alors\nb = . (On dit que b est la moyenne\narithmétique de a et c).\nb) Soient a,b et c trois réels tels que b =\na, b et c sont-ils trois termes consécutifs d’une\nsuite arithmétique ?\na) Combien y a t il de multiples de 7 entre\n100 et 1000 ?\nb) Calculer la somme des multiples de 7\ncompris entre 100 et 1000.\nRepérage particulier\na)Dans quelle ligne se trouve le nombre 2005?\nb) On considère le repérage suivant :\n•Une ligne est désignée par le nombre situé à\nson extrémité gauche.\n• Une colonne est désignée par le nombre\nsitué le plus haut dans la colonne.\n• Un nombre est repéré par la ligne et la\ncolonne dans lesqu elles il se trouve.\nPar exemple : 11 est repéré par (10, 5) et 7 est\nrepéré par (5, 1).\nPar quel couple est repéré 2005 ?\nRencontrant un mendiant, un homme lui\ndonne une pièce ; il en rencontre un deuxième\net lui donne deux pièces. Il rencontre d’autres\nmendiants encore, à qui il donne une pièce de\nplus que précédemment, à chaque fois… jus-\nqu’à ce qu’il n’ait plus rien en poche.\nIl réfléchit alors et se dit : \" Si j’avais donné\nautant de pièces à chacun d’entre eux, cela\naurait été plus équitable et chaque mendiant\naurait reçu 8 pièces \".\nCombien a-t-il rencontré de mendiants ?\n(D’après Jeux et Stratégies n° 15 )\nLa table de Pythagore\nCalculer la somme des termes du tableau ci-\ndessous. (Ce tableau rassemble toutes les\ntables de multiplication de 1 à n)\nDéterminer n pour que la somme soit égale à :\na)100 ; b) 2025\nOn désigne par U\nn la somme des\nn premiers entiers naturels non nuls :\nUn = 1 + 2 + …+ n.\n1) Montrer que, pour tout entier naturel n > 1,\nl’aire de la bande délimitée par les carrés de\ncôtés U\nn-1 et Un est égale à n3 (voir figure).\n2) En déduire l’égalité :\n13 + 23 + … + n 3 = (1 + 2 + …+ n) 2.\n(Cette démonstration a été proposée par Al Karagi ).\n17 ... ... ... ... ... ... ...\n1610 11 12 13 14 15\n5 6 7 8\n2 3\n1 2 3 4 … n-1 n\n2 4 68… 2 n\n36 9 1 2 … 3 n\n4 8 12 16 … 4n\n. . ..… .\nn-1. . . … .\nn 2 n 3 n4 n… n\nUn - 1\nUn\na+c\na+c\nMath et cultureMath et culture\nLa suite de Syracuse\n(Du nom de l’université de Syracuse aux Etats-\nUnis)\nOn définit une suite de Syracuse de la manière\nsuivante :\nOn choisit un entier N (c’est le premier terme\nde la suite) ;\n- si N est pair le terme suivant est ;\n- si N est impair le terme suivant est 3 N + 1.\nOn continue de la même façon avec le nouveau\nterme. On s’arrête lorsqu’on obtient 1.\nExemples :\nPour N = 5 : 5, 16, 8, 4, 2, 1.\nPour N = 24 : 24, 12, 6, 3, 10, 5, 16, 8, 4, 2, 1.\nLe problème posé par les mathématiciens est\n\" Quel que soit l’entier N choisit au départ, la\nsuite obtenue est elle finie ? \"\nLes mathématiciens pensent \" oui \", mais ne\nl’ont pas démontré, le problème résiste depuis\nplus que 50 ans.\nDéterminer les termes de la suite de Syracuse\npour N = 28 et pour N = 30.\n1 1\n2 1\n1 2 1 1\n1 1 1 2 2 1\n……………….\nEcrire la ligne qui suit.\nAl Karagi (fin du Xème siècle – début du XIème siècle)\nOriginaire de la ville de Karaj, située entre Téhéran et Kaswin, est l’auteur de plusieurs\nouvrages très importants, notamment le livre EL KAFI sur la science de l’arithmétique,\nAl Fakhri, vaste traité d’algèbre et Al Badi, livre d’analyse.\nAl Karagi procède à l’addition de plusieurs séries arithmétiques finis, comme\n3 + 23 + … + n 3 = (1 + 2 + …+ n) 2, dont il fournit une jolie démonstration à la fois\nalgébrique et géométrique (voir exercices et problèmes).\nUne histoire des mathématiques, routes et dédales\nA.Dahan – Dalmedico / J. Peiffer\nSeuil\nSuite de Robinson\nN\nPour démarrerPour démarrerPour démarrerPour démarrer\nPlus on sait plus on est capable d’apprendre\nALAIN",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 16\nLa figure ci-contre représente des cercles C0, C1, C2,…tangents\nen O. Les diamètres de ces cercles sont respectivement égaux à\n1 cm, 2 cm, 3 cm, … On désigne par :\n• a\n0 l’aire du disque de frontière C0,\n• a1 l’aire de la portion du plan comprise entre C0 et C1,\n• a2 l’aire de la portion du plan comprise entre C1 et C2,\n• et pour tout entier naturel n supérieur ou égal à 1, a n désigne\nl’aire de la portion du plan comprise entre C n-1 et Cn.\n1) a) Calculer a n en fonction de n.\nb) Montrer que (an) est une suite arithmétique dont on précisera le premier terme et la raison.\nc) Déterminer n pour l’on ait an ≥1 0 7.\n2) Soit S = a 0 + a1 + a2 + … + a n. Calculer S de deux manières différentes.\nA = 1 + 2 + 3 +…+ 99 + 100 ; D = 1 + 2 + 4 + …+ 2 n-1 + 2n.\nB = ; E = U 0 + U1 + … + U n.\nC = 1 + 3 + 5 + 7 +…+ 73 + 75 ; F = U 45 + U46 + … + U 381.\n1 + 13\n1 + 14\n1 + ... +121\n1 + 122\no\nAAssimilerAssimiler : 14-15-16\nV0 = – 1\n– Vn+1 + Vn + 3 = 0, n ∈ IN\nn+3\nn+2 1\nW1 n+\n-2n + 1\nn\nn+1\n2n2 +4 n+2\n- 6\n1 3\nGénéralités sur les suites\nSoit (Un), la suite définie par : U n = 2n + n, n ∈ IN.\nCalculer U1, U5 et U10.\nSoit (Vn), la suite définie par : V n = , n ∈ IN.\na) Calculer V0, V8 et V1000.\nb) Déterminer n pour que Vn = 2.\nOn considère la suite (t n) définie par : t0 = 2 et tn+1 = t n – 3 , n ∈ IN.\nCalculer t1, t2, t3, t4 et t5.\nSoit (Wn) la suite définie par : W 0 = 0 et Wn+1 = , n ∈ IN.\nCalculer W1, W2, W3 et W4.\nUtiliser votre calculatrice pour déterminer l’arrondi au millième de W2, W3 et W4.\nSuites arithmétiques\nMontrer que chacune des suites suivantes est arithmétique, et préciser dans chacun des cas\nle premier terme et la raison.\na) La suite (U\nn) définie par Un = , n ∈ IN.\nb) La suite (Un) définie par Un = – 4, n ∈ IN.\nIndiquer parmi les suites définies ci-après celles qui sont des suites arithmétiques.\na) La suite (Un) définie par U0 = 0 et Un+1 = Un + n, n ∈ IN.\nb) La suite (Vn) définie par\nc) La suite (a n) définie par a n =\nd) La suite (b n) définie par b 0 = 2 et b n+1 = 3 b n + 7, n ∈ IN\nTerme général\n(Un) est une suite arithmétique de premier terme U 0 et de raison r.\nDéterminer, dans chacun des cas suivants Un.\na) U0 = – 1, r = – 3 et n = 23.\nb) U0 = π, r = et n = 100.\nc) U0 = , r = 2 et n = 23 .\n(Un) est une suite arithmétique de premier terme U 0 = – 2 et de raison r = .\nDéterminer n sachant que Un = 24.\nCalculer la raison d’une suite arithmétique sachant que U15 = – 12 et U24 = 15.\n(Un) est une suite arithmétique de raison r = 0,5 et telle que U 30 = .\nDéterminer U20 et U50.\nReprésenter graphiquement la suite arithmétique de premier terme U0 = – 2 et de raison 3.\nDans le graphique ci-dessous, D est la droite qui contient les points A n (n , Un), où (U n)\nest une suite arithmétique. Utiliser ce graphique pour déterminer le premier terme U0 et la rai-\nson r de cette suite.\nSomme des termes consécutifs d’une suite arithmétique\nCalculer chacune des sommes suivantes:\nS = 1 + 2 + 3+ … + n\nS = 1 + 3 + 5 + 7 + … + (2n – 1)\nS = 1 + 2,01 + 3,02 + 4,03 + … + 24,23 + 25,24.\nSoit (U\nn) la suite arithmétique définie par\nCalculer S = U5 + U6 + … + U 50.\nSoit (Un) une suite arithmétique de premier terme U 0 et de raison r.\nOn donne U5 = 6 et S = 48, où S = U 0 + U1 + … + U 11.\nDéterminer le premier terme U0 et la raison r de la suite (U n).\nU0 = 2\nUn+1 = Un + 5, n ∈ IN\nDéterminer la raison r d’une suite arithmétique sachant que U0 = 8 et U7 = – 13.8\nModes de présentation d’une suite\nUne suite peut être définie par :\n• son terme général.\nou\n• son premier terme et une relation permettant de calculer un terme à l’aide\ndu terme précédent. Cette relation est appelée relation de récurrence.\nSuites arithmétiques\nTerme général\nSoit (Un) une suite arithmétique de premier terme U 0 et de raison r.\nOn a : • Un = U0 + n r, pour tout n ∈ IN.\n• Un = Up + (n – p) r, où n et p sont deux entiers naturels.\nEn particulier Un = U1 + (n – 1) r, pour tout n ∈ IN.\nReprésentation graphique\nSoit (Un) une suite arithmétique de premier terme U 0 et de raison r.\nLes points An de coordonnées (n, Un), sont sur la droite de pente r et d’ordonnée à l’origine\nle premier terme U0.\nSomme de n termes consécutifs\nLa somme S de n termes consécutifs d’une suite arithmétique est , où a est le\npremier terme de cette somme et b est le dernier terme.\nS = nombre de termes x ( )\n1 + 2 + 3 + ... + n =\nLe premier terme de la somme + le dernier terme\nn( n + 1 )\nS=n # 2\na+b\nL’arroseur des peupliers\nLa saison est sèche et le fermier décide de verser un seau d’eau au pied de chacun des jeunes\npeupliers qui bordent son champ. Il y a cent peupliers, en ligne droite, espacées de deux\nmètres, et le puits d’eau est au pied du premier. Le fermier ne porte qu’un seau à la fois. Il a\ncommencé le travail. Son voisin l’instituteur le regarde, accoudé au mur mitoyen.\n\" – Sacré travail !\n– Oh, dit le fermier, j’en ai pour une heure !\n– Une heure ! J’aurais le temps d’aller à pied en ville et d’en revenir avant que tu n’aies\nfini. \"\nLe fermier lève ses yeux au ciel ! la ville est à 9 Km, l’instituteur a de l’instruction, d’accord,\nmais il y a des fois où…je vous jure… !\nPour trancher le débat, calculez le chemin que le fermier aura à parcourir pour arroser tous ses\npeupliers.\n(D’après Jeux Mathématiques)\nIndication\nPenser à la somme des termes d’une suite arithmétique.\nPair ou impair ?\na) Un sac contient 20 jetons numérotes de 1 à 20. A chaque fois on tire deux jetons du sac et\non les remplace par un seul ayant pour numéro la somme des numéros des deux jetons tirés.\nQuel est le numéro inscrit sur le dernier jeton qui reste dans le sac ?\nb) Un sac contient 20 jetons numérotes de 1 à 20. A chaque fois on tire deux jetons du sac et\non les remplace par un seul ayant pour numéro la différence positive, des numéros des deux\njetons tirés.\nMontrer que le nombre inscrit sur le dernier jeton qui reste dans le sac, est pair.\n( D’après Championnat des jeux Mathématiques et logiques )\nIndications\na) Penser à la somme des termes d’une suite arithmétique.\nb) Remarquer que, si x et y sont deux entiers naturels, alors x + y et x – y sont de même parité.\n(U\nn) est une suite arithmétique de premier terme 6 et de raison 11.\n(Vn ) est une suite arithmétique de premier terme (– 8) et de raison 13.\n(Wn) est une suite arithmétique de premier terme (29) et de raison 17.\nQuel est le plus petit entier naturel qui est à la fois un terme de (U n ) de(Vn) et de (Wn).\nIndication\nVérifier que Un + 5 est un multiple de 11.\nDévelopper ses compéDévelopper ses compétences\nUtiliser les TIC\nUtiliser les TIC\nAvec un tableur\nSoit n un entier naturel non nul.\nOn désigne par U\nn la somme des n premiers entiers naturels non nuls, U n = 1 + 2 + …+ n.\nSoit Vn = 13 + 23 + …+ n 3.\n1) Reproduire sur Excel cette feuille de calcul :\nLa colonne A affiche les valeurs prises par l’entier n : 1, 2, 3, …\nLa colonne B affiche les valeurs prises par U n.\nLa colonne C affiche les valeurs prises par V n.\nCliquer sur la cellule A3, une croix noire s’affiche au coin inférieur droit de cette cellule.\nPositionner le curseur sur cette croix et tirer vers le bas, jusqu’à atteindre la valeur désirée de n.\nProcéder de la même façon avec B3 et C3.\nConjecturer pour tout n, le lien entre U\nn et Vn.\n2) Le but de cette question est de justifier la conjecture.\na) Montrer que, pour tout entier naturel n > 1, l’aire de la bande délimitée par les carrés de\ncôtés U\nn - 1 et Un est égale à n 3 (voir figure ci-dessous).\nb) Conclure.\nA B C\n1 n Un Vn\n2 = 1 = 1 = 1\n3 = A2 + 1 = B2 + A3 = C2 + A3^3\nUn - 1\nUn\nExercices et problèmesExercices et problèmes\nSoit (Un) la suite définie par son terme\ngénéral , n ∈ IN.\nCalculer U0, U1, U2, U9, U20 et U2005.\nCalculer les cinq premiers termes de cha-\ncune des suites suivantes :\na) (U\nn) définie par Un = 3n – 2n, n ∈ IN.\nb) (tn) définie par tn = , n ∈ IN \\{0,1,2}.\nc) (an) définie par\nd) (bn) définie par\nSoit (Un) la suite définie par :\nUn = n2 – 3 n, n ∈ IN.\na) Calculer U0, U10 et U100.\nb) Exprimer en fonction de n, Un-1, Un+1 et U2n.\nIndiquer parmi les suites définies ci-après\ncelles qui sont des suites arithmétiques.\na) U\nn = 3 n + 1, n ∈ IN.\nb) U0 = 2 et Un+1 = 1 – Un , n ∈ IN.\nc) U0 = 5 et Un+1 – Un = 3, n ∈ IN.\nLes nombres 3529461 ; 4539562 et\n5549663 sont-ils trois termes consécutifs\nd’une suite arithmétique ?\n(U\nn) est une suite arithmétique de raison\n– 4 et telle que U8 = – 31. Calculer U57.\n(Un) est une suite arithmétique telle que\nU3 = 2 et U11 = 26.\nOn pose S = U0 + U1 +…+ U 15.\nCalculer S.\n(Vn) est une suite arithmétique de premier\nterme V0 = et de raison r = -1.\na) Donner le terme général de la suite (V n).\nb) Calculer V23 , V76 et V100.\nc) Calculer chacune des sommes\nsuivantes :\nS = V\n0 + V1 + … + V 15\nS’ = V9 + V10 + … + V 15.\nMaîtriser\nUne mère de famille a économisé 10\ndinars au premiers mois, puis 15 dinars le\nmois suivant et ainsi de suites en économi-\nsant 5 dinars de plus que le mois précédent\na) combien a-t-elle économisé au bout de\nhuit mois ?\nb) A la fin de quel mois ses économies suffi-\nront pour acheter un aspirateur qui côute 205\ndinars.\nLa somme des 20 premiers termes d’une\nsuite arithmétique est 610.\na) Déterminer le premier terme de cette suite\nsachant que sa raison est 3.\nb) Calculer la somme des 100 premiers\ntermes de cette suite.\na0 = 2\nan+1 = an+ ,n ∈ IN\nb0 = 2\nbn+1 = 1 + bn2 ,n ∈ IN\nn-3\nU n1\nn = +\n- n] g\n(Un) est une suite arithmétique telle que\nU20 = 1926 et U57 = 1606.\nDéterminer la raison de cette suite ainsi que\nson premier terme U\n7Appliquer\nExercices et problèmesExercices et problèmes\nCalculer chacune des sommes :\nA = 3 + 8 + 13 + 18 + …+ 103 + 108\nB = 2,9 + 3,8 + 4,7 + 5,6 +…+ 92,9.\nLequel des deux nombres suivants est le\nplus grand : 2005 x (1 + 2 +…+ 2006)\nou 2006 x (1 + 2 +…+ 2005) ?\nMoyenne arithmétique\na) Montrer que si a, b et c sont trois termes\nconsécutifs d’une suite arithmétique, alors\nb = . (On dit que b est la moyenne\narithmétique de a et c).\nb) Soient a,b et c trois réels tels que b =\na, b et c sont-ils trois termes consécutifs d’une\nsuite arithmétique ?\na) Combien y a t il de multiples de 7 entre\n100 et 1000 ?\nb) Calculer la somme des multiples de 7\ncompris entre 100 et 1000.\nRepérage particulier\na)Dans quelle ligne se trouve le nombre 2005?\nb) On considère le repérage suivant :\n•Une ligne est désignée par le nombre situé à\nson extrémité gauche.\n• Une colonne est désignée par le nombre\nsitué le plus haut dans la colonne.\n• Un nombre est repéré par la ligne et la\ncolonne dans lesqu elles il se trouve.\nPar exemple : 11 est repéré par (10, 5) et 7 est\nrepéré par (5, 1).\nPar quel couple est repéré 2005 ?\nRencontrant un mendiant, un homme lui\ndonne une pièce ; il en rencontre un deuxième\net lui donne deux pièces. Il rencontre d’autres\nmendiants encore, à qui il donne une pièce de\nplus que précédemment, à chaque fois… jus-\nqu’à ce qu’il n’ait plus rien en poche.\nIl réfléchit alors et se dit : \" Si j’avais donné\nautant de pièces à chacun d’entre eux, cela\naurait été plus équitable et chaque mendiant\naurait reçu 8 pièces \".\nCombien a-t-il rencontré de mendiants ?\n(D’après Jeux et Stratégies n° 15 )\nLa table de Pythagore\nCalculer la somme des termes du tableau ci-\ndessous. (Ce tableau rassemble toutes les\ntables de multiplication de 1 à n)\nDéterminer n pour que la somme soit égale à :\na)100 ; b) 2025\nOn désigne par U\nn la somme des\nn premiers entiers naturels non nuls :\nUn = 1 + 2 + …+ n.\n1) Montrer que, pour tout entier naturel n > 1,\nl’aire de la bande délimitée par les carrés de\ncôtés U\nn-1 et Un est égale à n3 (voir figure).\n2) En déduire l’égalité :\n13 + 23 + … + n 3 = (1 + 2 + …+ n) 2.\n(Cette démonstration a été proposée par Al Karagi ).\n17 ... ... ... ... ... ... ...\n1610 11 12 13 14 15\n5 6 7 8\n2 3\n1 2 3 4 … n-1 n\n2 4 68… 2 n\n36 9 1 2 … 3 n\n4 8 12 16 … 4n\n. . ..… .\nn-1. . . … .\nn 2 n 3 n4 n… n\nUn - 1\nUn\na+c\na+c\nMath et cultureMath et culture\nLa suite de Syracuse\n(Du nom de l’université de Syracuse aux Etats-\nUnis)\nOn définit une suite de Syracuse de la manière\nsuivante :\nOn choisit un entier N (c’est le premier terme\nde la suite) ;\n- si N est pair le terme suivant est ;\n- si N est impair le terme suivant est 3 N + 1.\nOn continue de la même façon avec le nouveau\nterme. On s’arrête lorsqu’on obtient 1.\nExemples :\nPour N = 5 : 5, 16, 8, 4, 2, 1.\nPour N = 24 : 24, 12, 6, 3, 10, 5, 16, 8, 4, 2, 1.\nLe problème posé par les mathématiciens est\n\" Quel que soit l’entier N choisit au départ, la\nsuite obtenue est elle finie ? \"\nLes mathématiciens pensent \" oui \", mais ne\nl’ont pas démontré, le problème résiste depuis\nplus que 50 ans.\nDéterminer les termes de la suite de Syracuse\npour N = 28 et pour N = 30.\n1 1\n2 1\n1 2 1 1\n1 1 1 2 2 1\n……………….\nEcrire la ligne qui suit.\nAl Karagi (fin du Xème siècle – début du XIème siècle)\nOriginaire de la ville de Karaj, située entre Téhéran et Kaswin, est l’auteur de plusieurs\nouvrages très importants, notamment le livre EL KAFI sur la science de l’arithmétique,\nAl Fakhri, vaste traité d’algèbre et Al Badi, livre d’analyse.\nAl Karagi procède à l’addition de plusieurs séries arithmétiques finis, comme\n3 + 23 + … + n 3 = (1 + 2 + …+ n) 2, dont il fournit une jolie démonstration à la fois\nalgébrique et géométrique (voir exercices et problèmes).\nUne histoire des mathématiques, routes et dédales\nA.Dahan – Dalmedico / J. Peiffer\nSeuil\nSuite de Robinson\nN\nPour démarrerPour démarrerPour démarrerPour démarrer\nPlus on sait plus on est capable d’apprendre\nALAIN\n\nÀ calculer dans l'application : u₁ = 5, r = 5. u₆ et S₆.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 16 (« Activité 16 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "u1",
+        "label": "u₁",
+        "unit": "—",
+        "value": 5,
+        "min": -2,
+        "max": 12,
+        "step": 1
+      },
+      {
+        "key": "r",
+        "label": "r",
+        "unit": "—",
+        "value": 5,
+        "min": -3,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "n",
+        "label": "n",
+        "unit": "—",
+        "value": 6,
+        "min": 4,
+        "max": 14,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 16 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "un",
+        "label": "uₙ",
+        "unit": "—"
+      },
+      {
+        "key": "sn",
+        "label": "Sₙ",
+        "unit": "—"
+      }
     ]
   }
 ]

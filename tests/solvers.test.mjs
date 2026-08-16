@@ -245,6 +245,14 @@ for (const item of all2) {
   assert.ok(!ids.has(item.id), `id dupliqué T2 : ${item.id}`);
   ids.add(item.id);
 }
+for (const item of all2) {
+  assert.ok(!item.questions.some(q => q.key === "lu" || /polycopi/i.test(q.label || "")), `question livre : ${item.id}`);
+  assert.ok(!JSON.stringify(item.steps || []).includes("Relire l’activité"), `invitation livre : ${item.id}`);
+}
+for (const item of activities) {
+  assert.ok(!item.questions.some(q => q.key === "lu" || /polycopi/i.test(q.label || "")), `question livre : ${item.id}`);
+  assert.ok(!JSON.stringify(item.steps || []).includes("Relire l’activité"), `invitation livre : ${item.id}`);
+}
 const EXPECTED_T2 = { "suites-arith": 16, "suites-geo": 11, fonctions: 16, ref: 30, trigo: 36, analytique: 39, "espace-droites": 26, parallelisme: 23, orthogonalite: 18, stats: 27 };
 for (const [id, n] of Object.entries(EXPECTED_T2)) {
   const acts = activities2.filter(e => e.chapter === id);

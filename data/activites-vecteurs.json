@@ -4,24 +4,64 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 1,
-    "solver": "fixed",
+    "solver": "vectorAB",
     "title": "Activité 1",
     "difficulty": 1,
-    "statement": "Activité 1\nSoit A un point du plan et soient u et deux vecteurs.\n1) Combien existe-t-il de points M tels que AM = u ?\n2) a) Construire les points B et C tel que u = AB et v = AC\nb) Construire le point D tel que [BC] et [AD] aient le même milieu.\n3) a) Montrer que AC = BD .\nb) En déduire que AB + AC = AD .\nDéfinition\nSoit A un point du plan et soient u et deux vecteurs.\nOn désigne par B et C les points tels que u = AB et v = AC .\nSoit D le point tel que [BC] et [AD] aient le même milieu.\nOn appelle vecteur somme de u et , le vecteur w tel que\nw = AD .\nLe vecteur w est noté u + v .\nPropriétés de l’addition des vecteurs",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 1\nSoit A un point du plan et soient u et deux vecteurs.\n1) Combien existe-t-il de points M tels que AM = u ?\n2) a) Construire les points B et C tel que u = AB et v = AC\nb) Construire le point D tel que [BC] et [AD] aient le même milieu.\n3) a) Montrer que AC = BD .\nb) En déduire que AB + AC = AD .\nDéfinition\nSoit A un point du plan et soient u et deux vecteurs.\nOn désigne par B et C les points tels que u = AB et v = AC .\nSoit D le point tel que [BC] et [AD] aient le même milieu.\nOn appelle vecteur somme de u et , le vecteur w tel que\nw = AD .\nLe vecteur w est noté u + v .\nPropriétés de l’addition des vecteurs\n\nÀ calculer dans l'application : A(−2 ; 0,75), B(0 ; −1). Composantes et norme de AB⃗.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 1 (« Activité 1 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 0.75,
+        "min": -3,
+        "max": 4,
+        "step": 0.25
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 1 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x",
+        "label": "x de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "y",
+        "label": "y de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "nrm",
+        "label": "|AB⃗|",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -29,24 +69,54 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 2,
-    "solver": "fixed",
+    "solver": "detColinear",
     "title": "Activité 2",
     "difficulty": 1,
-    "statement": "Activité 2\nSoit A un point du plan et soient u et deux vecteurs.\nSoient B et C les points tels que u = AB et v = AC\n1) Construire le point D tel que u + v = AD\n2) Montrer que v + u = u + v .",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 2\nSoit A un point du plan et soient u et deux vecteurs.\nSoient B et C les points tels que u = AB et v = AC\n1) Construire le point D tel que u + v = AD\n2) Montrer que v + u = u + v .\n\nÀ calculer dans l'application : u⃗(2 ; 3) et v⃗(4 ; 6). Déterminant (colinéarité).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 2 (« Activité 2 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 4,
+        "min": -6,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 6,
+        "min": -6,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 2 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "det",
+        "label": "déterminant",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -54,24 +124,54 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 3,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 3",
     "difficulty": 1,
-    "statement": "Activité 3\nSoient A un point du plan et u, v et w trois vecteurs.\nSoient B, C et D les points tels que u = AB, v = AC et w = AD .\n1) Construire le point E tel que u + v = AE .\n2) Construire le point F tel que ]u + v g + w = AF .\n3) Montrer que AC = BE et AD = EF .\n4) En déduire que u + ]v + wg = AF .\nE x p l o r e r",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 3\nSoient A un point du plan et u, v et w trois vecteurs.\nSoient B, C et D les points tels que u = AB, v = AC et w = AD .\n1) Construire le point E tel que u + v = AE .\n2) Construire le point F tel que ]u + v g + w = AF .\n3) Montrer que AC = BE et AD = EF .\n4) En déduire que u + ]v + wg = AF .\nE x p l o r e r\n\nÀ calculer dans l'application : u⃗(3 ; 4) et v⃗(4 ; −3). Produit scalaire.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 3 (« Activité 3 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": -3,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 3 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -79,24 +179,77 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 4,
-    "solver": "fixed",
+    "solver": "parallelogramD",
     "title": "Activité 4",
     "difficulty": 1,
-    "statement": "Activité 4\nSoient A un point du plan, u un vecteur et B le point tel que u = AB .\n1) Montrer que 0 + u = u .\n2) a) Déterminer le point C tel que AB + AC = 0 .\nb) En déduire qu’il existe un seul vecteur v tel que u + v = 0 .\nDéfinition\nSoit u un vecteur du plan, l’unique vecteur v tel que u + v = 0, s’appelle l’opposé de u.\nIl est noté – u . Ainsi on a u + ]- u g = ]- u g + u = 0 .\nNotation\nLa somme u + ]- v g est noté u - v .\nRemarque\nSoient A et B deux points du plan. On a AB + BA = AA = 0 .\nAinsi l’opposé du vecteur AB est le vecteur BA , on écrit BA = - AB .",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 4\nSoient A un point du plan, u un vecteur et B le point tel que u = AB .\n1) Montrer que 0 + u = u .\n2) a) Déterminer le point C tel que AB + AC = 0 .\nb) En déduire qu’il existe un seul vecteur v tel que u + v = 0 .\nDéfinition\nSoit u un vecteur du plan, l’unique vecteur v tel que u + v = 0, s’appelle l’opposé de u.\nIl est noté – u . Ainsi on a u + ]- u g = ]- u g + u = 0 .\nNotation\nLa somme u + ]- v g est noté u - v .\nRemarque\nSoient A et B deux points du plan. On a AB + BA = AA = 0 .\nAinsi l’opposé du vecteur AB est le vecteur BA , on écrit BA = - AB .\n\nÀ calculer dans l'application : Parallélogramme ABCD : A(−2 ; 1), B(0 ; −1), C(3 ; 4). Coordonnées de D.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 4 (« Activité 4 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": -2,
+        "min": -4,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "xC",
+        "label": "x_C",
+        "unit": "—",
+        "value": 3,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yC",
+        "label": "y_C",
+        "unit": "—",
+        "value": 4,
+        "min": -2,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 4 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xD",
+        "label": "x_D",
+        "unit": "—"
+      },
+      {
+        "key": "yD",
+        "label": "y_D",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -104,24 +257,64 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 5,
-    "solver": "fixed",
+    "solver": "vectorAB",
     "title": "Activité 5",
     "difficulty": 1,
-    "statement": "Activité 5\nSoient u et v deux vecteurs.\n1)Calculer la somme ]u + v g + 6]- u g - v @ .\n2) Quel est l’opposé du vecteur u + v ?",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 5\nSoient u et v deux vecteurs.\n1)Calculer la somme ]u + v g + 6]- u g - v @ .\n2) Quel est l’opposé du vecteur u + v ?\n\nÀ calculer dans l'application : A(0 ; 0), B(3 ; 4).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 5 (« Activité 5 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 4,
+        "min": 1,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 5 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x",
+        "label": "x de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "y",
+        "label": "y de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "nrm",
+        "label": "|AB⃗|",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -129,24 +322,54 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 6,
-    "solver": "fixed",
+    "solver": "detColinear",
     "title": "Activité 6",
     "difficulty": 1,
-    "statement": "Activité 6\nSoient u, v et w trois vecteurs du plan.\n1) a) Déterminer le vecteur – (– u ).\nb) Vérifier que l’opposé du vecteur u - v est le vecteur\n2) Ecrire chacune des sommes suivantes sans parenthèses v - u\na) u - ] v + w g ; b) u - ] v - w g .\nMultiplication d’un vecteur par un réel",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 6\nSoient u, v et w trois vecteurs du plan.\n1) a) Déterminer le vecteur – (– u ).\nb) Vérifier que l’opposé du vecteur u - v est le vecteur\n2) Ecrire chacune des sommes suivantes sans parenthèses v - u\na) u - ] v + w g ; b) u - ] v - w g .\nMultiplication d’un vecteur par un réel\n\nÀ calculer dans l'application : u⃗(1 ; −2) et v⃗(3 ; 1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 6 (« Activité 6 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 6 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "det",
+        "label": "déterminant",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -154,24 +377,54 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 7,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 7",
     "difficulty": 1,
-    "statement": "Activité 7\nSoient A un point du plan, u un vecteur non nul et B le point tel que\nu = AB . On munit la droite (AB) du repère (A, B).\nExplorer Explorer\n1) Placer les points M, N et P d’abscisses respectives – 2 , 3 et .\n→ → –→ 2\n2) a) Construire le point C tel que u + u = AC\nb) Quelle est l’abscisse du point C ?\nc) En déduire l’abscisse du point D tel que - u - u = AD .\nDéfinition\n• Soient A un point du plan, u un vecteur non nul et B le point tel que u = AB .\nSoit α un réel et M le point de (AB) d’abscisse α dans le repère (A, B).\nOn appelle vecteur produit de u par α , le vecteur v tel que v = AM .\nLe vecteur v est noté α . u ou α u .\n• Le produit du vecteur nul par le réel α est le vecteur nul : α. 0 = 0 .\nRemarque\nPour tout vecteur u , on a 1.u = u .\nPropriétés de la multiplication d’un vecteur par un réel",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 7\nSoient A un point du plan, u un vecteur non nul et B le point tel que\nu = AB . On munit la droite (AB) du repère (A, B).\nExplorer Explorer\n1) Placer les points M, N et P d’abscisses respectives – 2 , 3 et .\n→ → –→ 2\n2) a) Construire le point C tel que u + u = AC\nb) Quelle est l’abscisse du point C ?\nc) En déduire l’abscisse du point D tel que - u - u = AD .\nDéfinition\n• Soient A un point du plan, u un vecteur non nul et B le point tel que u = AB .\nSoit α un réel et M le point de (AB) d’abscisse α dans le repère (A, B).\nOn appelle vecteur produit de u par α , le vecteur v tel que v = AM .\nLe vecteur v est noté α . u ou α u .\n• Le produit du vecteur nul par le réel α est le vecteur nul : α. 0 = 0 .\nRemarque\nPour tout vecteur u , on a 1.u = u .\nPropriétés de la multiplication d’un vecteur par un réel\n\nÀ calculer dans l'application : u⃗(1 ; 2) et v⃗(−2 ; 1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 7 (« Activité 7 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 7 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -179,24 +432,64 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 8,
-    "solver": "fixed",
+    "solver": "vectorAB",
     "title": "Activité 8",
     "difficulty": 1,
-    "statement": "Activité 8\nSoient A un point du plan, u un vecteur non nul et B le point tel que u = AB .\n1) Placer le point C tel que AC = ]- 1g u .\n2) Déterminer le milieu de [BC].\n3) En déduire que (–1) u = – u .",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 8\nSoient A un point du plan, u un vecteur non nul et B le point tel que u = AB .\n1) Placer le point C tel que AC = ]- 1g u .\n2) Déterminer le milieu de [BC].\n3) En déduire que (–1) u = – u .\n\nÀ calculer dans l'application : A(1 ; −1), B(4 ; 3).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 8 (« Activité 8 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 4,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 3,
+        "min": -2,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 8 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x",
+        "label": "x de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "y",
+        "label": "y de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "nrm",
+        "label": "|AB⃗|",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -204,24 +497,64 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 9,
-    "solver": "fixed",
+    "solver": "vectorAB",
     "title": "Activité 9",
     "difficulty": 1,
-    "statement": "Activité 9\nSoient A un point du plan, u un vecteur non nul et B le point tel que u = AB .\nE x p l o r e r\n1) Placer les points C, D et E tels que AC = 2u, AD = 3u et AE = 5u .\n2) Montrer que [AE] et [CD] ont le même milieu.\n3) En déduire que 2u + 3u = 5u .\n4) Soient α et β deux réels.\n→ → → → → →\nOn désigne par M, N et P les points tels que AM = α u , AN = β u et AP = (α + β) u .\na) Montrer que [MN] et [AP] ont le même milieu.\nb) En déduire que α →\nu + β→\nu = (α + β) →\nu.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 9\nSoient A un point du plan, u un vecteur non nul et B le point tel que u = AB .\nE x p l o r e r\n1) Placer les points C, D et E tels que AC = 2u, AD = 3u et AE = 5u .\n2) Montrer que [AE] et [CD] ont le même milieu.\n3) En déduire que 2u + 3u = 5u .\n4) Soient α et β deux réels.\n→ → → → → →\nOn désigne par M, N et P les points tels que AM = α u , AN = β u et AP = (α + β) u .\na) Montrer que [MN] et [AP] ont le même milieu.\nb) En déduire que α →\nu + β→\nu = (α + β) →\nu.\n\nÀ calculer dans l'application : A(−2 ; 0,75), B(0 ; −1). Composantes et norme de AB⃗.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 9 (« Activité 9 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 0.75,
+        "min": -3,
+        "max": 4,
+        "step": 0.25
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 9 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x",
+        "label": "x de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "y",
+        "label": "y de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "nrm",
+        "label": "|AB⃗|",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -229,24 +562,54 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 10,
-    "solver": "fixed",
+    "solver": "detColinear",
     "title": "Activité 10",
     "difficulty": 1,
-    "statement": "Activité 10\nSoit u un vecteur. Ecrire plus simplement chacun des vecteurs suivants.\n5 2\n2u + 7 u , u + 3u , u - 2u , - 8u + 6u .\n4 3\nA s s iAssimiler",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 10\nSoit u un vecteur. Ecrire plus simplement chacun des vecteurs suivants.\n5 2\n2u + 7 u , u + 3u , u - 2u , - 8u + 6u .\n4 3\nA s s iAssimiler\n\nÀ calculer dans l'application : u⃗(2 ; 3) et v⃗(4 ; 6). Déterminant (colinéarité).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 10 (« Activité 10 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 4,
+        "min": -6,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 6,
+        "min": -6,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 10 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "det",
+        "label": "déterminant",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -254,24 +617,54 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 11,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 11",
     "difficulty": 1,
-    "statement": "Activité 11\nSoient A un point du plan et u un vecteur non nul et B le point tel que u = AB .\n1) Construire le point C tel que AC = 3u .\n2) On considère le point D tel que AD = ]- 2gAC .\na) Construire D et déterminer graphiquement son abscisse dans le repère (A , B).\nb) En déduire que (-2)( 3 u ) = [(-2) × 3] u .",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 11\nSoient A un point du plan et u un vecteur non nul et B le point tel que u = AB .\n1) Construire le point C tel que AC = 3u .\n2) On considère le point D tel que AD = ]- 2gAC .\na) Construire D et déterminer graphiquement son abscisse dans le repère (A , B).\nb) En déduire que (-2)( 3 u ) = [(-2) × 3] u .\n\nÀ calculer dans l'application : u⃗(3 ; 4) et v⃗(4 ; −3). Produit scalaire.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 11 (« Activité 11 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": -3,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 11 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -279,24 +672,77 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 12,
-    "solver": "fixed",
+    "solver": "parallelogramD",
     "title": "Activité 12",
     "difficulty": 1,
-    "statement": "Activité 12\nSoit u un vecteur. Ecrire plus simplement chacun des vecteurs suivants.\n3 1\n3]4u g , 5]- 2u g , ]6u g , 6 ^ 6 uh , 4 c u m , 7]- ug .\n2 4\nA s s iAssimiler",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 12\nSoit u un vecteur. Ecrire plus simplement chacun des vecteurs suivants.\n3 1\n3]4u g , 5]- 2u g , ]6u g , 6 ^ 6 uh , 4 c u m , 7]- ug .\n2 4\nA s s iAssimiler\n\nÀ calculer dans l'application : Parallélogramme ABCD : A(−2 ; 1), B(0 ; −1), C(3 ; 4). Coordonnées de D.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 12 (« Activité 12 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": -2,
+        "min": -4,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "xC",
+        "label": "x_C",
+        "unit": "—",
+        "value": 3,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yC",
+        "label": "y_C",
+        "unit": "—",
+        "value": 4,
+        "min": -2,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 12 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xD",
+        "label": "x_D",
+        "unit": "—"
+      },
+      {
+        "key": "yD",
+        "label": "y_D",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -304,24 +750,64 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 13,
-    "solver": "fixed",
+    "solver": "vectorAB",
     "title": "Activité 13",
     "difficulty": 1,
-    "statement": "Activité 13\nSoient A un point du plan, u et v deux vecteurs du plan.\nSoient B, C et D les points tels que u = AB , v = AC , u + v = AD .\n1) Construire les points B’, C’ et D’ tels que AB' = 2u , AC' = 2 v et AD' = 2]u + v g .\n2) En déduire que 2]u + v g = 2u + 2 v .\nExplorer Explorer",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 13\nSoient A un point du plan, u et v deux vecteurs du plan.\nSoient B, C et D les points tels que u = AB , v = AC , u + v = AD .\n1) Construire les points B’, C’ et D’ tels que AB' = 2u , AC' = 2 v et AD' = 2]u + v g .\n2) En déduire que 2]u + v g = 2u + 2 v .\nExplorer Explorer\n\nÀ calculer dans l'application : A(0 ; 0), B(3 ; 4).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 13 (« Activité 13 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 4,
+        "min": 1,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 13 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x",
+        "label": "x de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "y",
+        "label": "y de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "nrm",
+        "label": "|AB⃗|",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -329,24 +815,54 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 14,
-    "solver": "fixed",
+    "solver": "detColinear",
     "title": "Activité 14",
     "difficulty": 1,
-    "statement": "Activité 14\nSoient u et v deux vecteurs. Ecrire sans utiliser de parenthèses.\n3 → → → → → → 2 → →\n( u + v ) ; -2( u + v ) ; 7( u - v ) ; - (u-v)\n4 5",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 14\nSoient u et v deux vecteurs. Ecrire sans utiliser de parenthèses.\n3 → → → → → → 2 → →\n( u + v ) ; -2( u + v ) ; 7( u - v ) ; - (u-v)\n4 5\n\nÀ calculer dans l'application : u⃗(1 ; −2) et v⃗(3 ; 1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 14 (« Activité 14 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 14 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "det",
+        "label": "déterminant",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -354,24 +870,54 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 15,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 15",
     "difficulty": 1,
-    "statement": "Activité 15\nSoient u et v deux vecteurs. Simplifier les écritures suivantes.\n2 1\na) 3u + 2]5ug ; b) 9 c- u m + 6u ; c) ] u + v g - u ;\n3 2\n3 2\nd) 3] u + 2 v g - 5 v ; e) - ] u + v g + ] u - vg ; f) 3] u - vg - ]3u - 4vg .\n5 5\nA s s iAssimiler",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 15\nSoient u et v deux vecteurs. Simplifier les écritures suivantes.\n2 1\na) 3u + 2]5ug ; b) 9 c- u m + 6u ; c) ] u + v g - u ;\n3 2\n3 2\nd) 3] u + 2 v g - 5 v ; e) - ] u + v g + ] u - vg ; f) 3] u - vg - ]3u - 4vg .\n5 5\nA s s iAssimiler\n\nÀ calculer dans l'application : u⃗(1 ; 2) et v⃗(−2 ; 1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 15 (« Activité 15 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 15 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -379,24 +925,64 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 16,
-    "solver": "fixed",
+    "solver": "vectorAB",
     "title": "Activité 16",
     "difficulty": 2,
-    "statement": "Activité 16\nSoient a un réel et u un vecteur.\n1) Montrer que si a . u = 0 et a ≠ 0 , alors u = 0\n2) Montrer que ( a . u = 0 ) équivaut à ( a = 0 ou u = 0 )\nBases de l’ensemble des vecteurs du plan",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 16\nSoient a un réel et u un vecteur.\n1) Montrer que si a . u = 0 et a ≠ 0 , alors u = 0\n2) Montrer que ( a . u = 0 ) équivaut à ( a = 0 ou u = 0 )\nBases de l’ensemble des vecteurs du plan\n\nÀ calculer dans l'application : A(1 ; −1), B(4 ; 3).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 16 (« Activité 16 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 4,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 3,
+        "min": -2,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 16 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x",
+        "label": "x de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "y",
+        "label": "y de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "nrm",
+        "label": "|AB⃗|",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -404,24 +990,64 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 17,
-    "solver": "fixed",
+    "solver": "vectorAB",
     "title": "Activité 17 Vecteurs colinéaires",
     "difficulty": 2,
-    "statement": "Activité 17 Vecteurs colinéaires\nSoient u et v deux vecteurs et a , b les vecteurs tels que\na = 2]u + v g - 3 v et b = 3] v - 4ug + 6u\na) Simplifier l’écriture de chacun des vecteurs a et b .\nb) Exprimer a en fonction de b .\nDéfinition\nDeux vecteurs sont dits colinéaires lorsque l’un est le produit de l’autre par un réel.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 17 Vecteurs colinéaires\nSoient u et v deux vecteurs et a , b les vecteurs tels que\na = 2]u + v g - 3 v et b = 3] v - 4ug + 6u\na) Simplifier l’écriture de chacun des vecteurs a et b .\nb) Exprimer a en fonction de b .\nDéfinition\nDeux vecteurs sont dits colinéaires lorsque l’un est le produit de l’autre par un réel.\n\nÀ calculer dans l'application : A(−2 ; 0,75), B(0 ; −1). Composantes et norme de AB⃗.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 17 (« Activité 17 Vecteurs colinéaires ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 0.75,
+        "min": -3,
+        "max": 4,
+        "step": 0.25
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 17 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x",
+        "label": "x de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "y",
+        "label": "y de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "nrm",
+        "label": "|AB⃗|",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -429,24 +1055,54 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 18,
-    "solver": "fixed",
+    "solver": "detColinear",
     "title": "Activité 18",
     "difficulty": 2,
-    "statement": "Activité 18\nSoit A un point du plan et soient u et v deux vecteurs du plan.\nSoient B et C les points tels que u = AB et v = AC .\nMontrer que\n(Les vecteurs u et v sont colinéaires) équivaut à (Les points A, B et C sont alignés).\nE x p l o r e r",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 18\nSoit A un point du plan et soient u et v deux vecteurs du plan.\nSoient B et C les points tels que u = AB et v = AC .\nMontrer que\n(Les vecteurs u et v sont colinéaires) équivaut à (Les points A, B et C sont alignés).\nE x p l o r e r\n\nÀ calculer dans l'application : u⃗(2 ; 3) et v⃗(4 ; 6). Déterminant (colinéarité).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 18 (« Activité 18 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 4,
+        "min": -6,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 6,
+        "min": -6,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 18 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "det",
+        "label": "déterminant",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -454,24 +1110,54 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 19,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 19",
     "difficulty": 2,
-    "statement": "Activité 19\nSoient i et j deux vecteurs non colinéaires.\nC\nSoit A un point du plan. On désigne par B et C les\npoints tels que i = AB et j = AC . u\n→\nSoit u un vecteur du plan.\n1) Placer le point M tel que AM = u .\nA B\n2) Montrer qu’il existe un unique couple de réels (x ,y)\ntel que u = x i + y j .\nDéfinition\n• On appelle base de l’ensemble des vecteurs du plan, tout couple _ i , j i de vecteurs non colinéaires.\n• Soit _ i , j i une base de l’ensemble des vecteurs du plan et u un vecteur.\nLe couple (x , y) de réels tels que u = x i + y j est appelé couple de composantes du vecteur u\ndans la base _ i , j i .\nNotation\nx\nSi x et y sont les composantes d’un vecteur u dans la base B = _ i , j i , on note u e o .\ny",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 19\nSoient i et j deux vecteurs non colinéaires.\nC\nSoit A un point du plan. On désigne par B et C les\npoints tels que i = AB et j = AC . u\n→\nSoit u un vecteur du plan.\n1) Placer le point M tel que AM = u .\nA B\n2) Montrer qu’il existe un unique couple de réels (x ,y)\ntel que u = x i + y j .\nDéfinition\n• On appelle base de l’ensemble des vecteurs du plan, tout couple _ i , j i de vecteurs non colinéaires.\n• Soit _ i , j i une base de l’ensemble des vecteurs du plan et u un vecteur.\nLe couple (x , y) de réels tels que u = x i + y j est appelé couple de composantes du vecteur u\ndans la base _ i , j i .\nNotation\nx\nSi x et y sont les composantes d’un vecteur u dans la base B = _ i , j i , on note u e o .\ny\n\nÀ calculer dans l'application : u⃗(3 ; 4) et v⃗(4 ; −3). Produit scalaire.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 19 (« Activité 19 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": -3,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 19 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -479,24 +1165,77 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 20,
-    "solver": "fixed",
+    "solver": "parallelogramD",
     "title": "Activité 20",
     "difficulty": 2,
-    "statement": "Activité 20\nSoit B = _ i , j i une base de l’ensemble des vecteurs du plan.\n1) a) Déterminer les composantes du vecteur nul dans la base B.\nb) Déterminer les composantes de chacun des vecteurs i et j dans la base B.\n→ → → → →\n2) Soit u = x i + y j et v = x’ i + y’ j.\nMontrer que ]u = v g équivaut à (x = x’ et y = y’).\nA s s iAssimiler",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 20\nSoit B = _ i , j i une base de l’ensemble des vecteurs du plan.\n1) a) Déterminer les composantes du vecteur nul dans la base B.\nb) Déterminer les composantes de chacun des vecteurs i et j dans la base B.\n→ → → → →\n2) Soit u = x i + y j et v = x’ i + y’ j.\nMontrer que ]u = v g équivaut à (x = x’ et y = y’).\nA s s iAssimiler\n\nÀ calculer dans l'application : Parallélogramme ABCD : A(−2 ; 1), B(0 ; −1), C(3 ; 4). Coordonnées de D.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 20 (« Activité 20 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": -2,
+        "min": -4,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "xC",
+        "label": "x_C",
+        "unit": "—",
+        "value": 3,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yC",
+        "label": "y_C",
+        "unit": "—",
+        "value": 4,
+        "min": -2,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 20 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xD",
+        "label": "x_D",
+        "unit": "—"
+      },
+      {
+        "key": "yD",
+        "label": "y_D",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -504,24 +1243,64 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 21,
-    "solver": "fixed",
+    "solver": "vectorAB",
     "title": "Activité 21",
     "difficulty": 2,
-    "statement": "Activité 21\nSoit _ i , j i une base de l’ensemble des vecteurs du plan.\nx x'\na) Soient u e o et v e o dans la base _ i , j i .\ny y'\nDéterminer les composantes des vecteurs u + v et α u , où α est un réel.\nExplorer Explorer\n-3 1\nb) On considère les vecteurs u e o et v e o .\n2 4\nDéterminer les composantes du vecteur w = 2u - 5 v .\nA s s iAssimiler\nCondition analytique de colinéarité de deux vecteurs",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 21\nSoit _ i , j i une base de l’ensemble des vecteurs du plan.\nx x'\na) Soient u e o et v e o dans la base _ i , j i .\ny y'\nDéterminer les composantes des vecteurs u + v et α u , où α est un réel.\nExplorer Explorer\n-3 1\nb) On considère les vecteurs u e o et v e o .\n2 4\nDéterminer les composantes du vecteur w = 2u - 5 v .\nA s s iAssimiler\nCondition analytique de colinéarité de deux vecteurs\n\nÀ calculer dans l'application : A(0 ; 0), B(3 ; 4).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 21 (« Activité 21 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 4,
+        "min": 1,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 21 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x",
+        "label": "x de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "y",
+        "label": "y de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "nrm",
+        "label": "|AB⃗|",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -529,24 +1308,54 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 22,
-    "solver": "fixed",
+    "solver": "detColinear",
     "title": "Activité 22",
     "difficulty": 2,
-    "statement": "Activité 22\nSoit _ i , j i une base de l’ensemble des vecteurs du plan.\n1) On considère les vecteurs u = - 3 i + 6 j et v = i - 2 j .\nLes vecteurs u et sont-ils colinéaires ?\nDonner les composantes de chacun des deux vecteurs u et .\n2) Dans chacun des cas suivants préciser si les vecteurs u et sont colinéaires ou non.\n-2 1 3 -6 0 1\na) u e o et v e o ; b) u e o et v e o ; c) u e o et v e o .\n5 1 2 -4 -1 2",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 22\nSoit _ i , j i une base de l’ensemble des vecteurs du plan.\n1) On considère les vecteurs u = - 3 i + 6 j et v = i - 2 j .\nLes vecteurs u et sont-ils colinéaires ?\nDonner les composantes de chacun des deux vecteurs u et .\n2) Dans chacun des cas suivants préciser si les vecteurs u et sont colinéaires ou non.\n-2 1 3 -6 0 1\na) u e o et v e o ; b) u e o et v e o ; c) u e o et v e o .\n5 1 2 -4 -1 2\n\nÀ calculer dans l'application : u⃗(1 ; −2) et v⃗(3 ; 1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 22 (« Activité 22 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 22 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "det",
+        "label": "déterminant",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -554,24 +1363,54 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 23,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 23",
     "difficulty": 2,
-    "statement": "Activité 23\nSoit _ i , j i une base de l’ensemble des vecteurs du plan.\nx x'\n1) Soient u e o et v e o dans cette base.\ny y'\na) Montrer que si les vecteurs u et sont colinéaires, alors xy’ – x’y = 0.\nb) Montrer que si xy’ – x’y = 0, alors les vecteurs u et sont colinéaires.\nc) Conclure.\n2 5+ 1\n2) Les vecteurs u f p et v e o sont –ils colinéaires ?\n1- 5 -2\nVocabulaire et notation\nx x'\nLe réel xy’ – x’y est appelé le déterminent des vecteurs u e o et v e o dans la base _ i , j i\ny y'\nx x'\net on le note .\ny y'\nA s s iAssimiler\nE x p l o r e r\nRepère cartésien du plan",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 23\nSoit _ i , j i une base de l’ensemble des vecteurs du plan.\nx x'\n1) Soient u e o et v e o dans cette base.\ny y'\na) Montrer que si les vecteurs u et sont colinéaires, alors xy’ – x’y = 0.\nb) Montrer que si xy’ – x’y = 0, alors les vecteurs u et sont colinéaires.\nc) Conclure.\n2 5+ 1\n2) Les vecteurs u f p et v e o sont –ils colinéaires ?\n1- 5 -2\nVocabulaire et notation\nx x'\nLe réel xy’ – x’y est appelé le déterminent des vecteurs u e o et v e o dans la base _ i , j i\ny y'\nx x'\net on le note .\ny y'\nA s s iAssimiler\nE x p l o r e r\nRepère cartésien du plan\n\nÀ calculer dans l'application : u⃗(1 ; 2) et v⃗(−2 ; 1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 23 (« Activité 23 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 23 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -579,24 +1418,64 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 24,
-    "solver": "fixed",
+    "solver": "vectorAB",
     "title": "Activité 24",
     "difficulty": 2,
-    "statement": "Activité 24\nSoit O un point du plan et B = _ i , j i une base de l’ensemble des vecteurs du plan.\nOn désigne par I et J les points tels que OI = i et OJ = j .\nSoit M un point du plan. Justifier l’existence d’un unique couple de réels (x , y) tel que\nOM = x i + y j .\nDéfinition\nSoit O un point du plan et B = _ i , j i une base de\nl’ensemble des vecteurs du plan.\n• _O , i , j i est appelé repère cartésien du plan.\n• Soit M un point du plan.\nLe couple de coordonnées du point M dans le repère\ncartésien _O , i , j i est l’unique couple\n(x , y) de réels tel que OM = x i + y j .\nLe réel x est l’abscisse du point M et le réel y est l’ordonnée du point M, dans le repère\ncartésien _O , i , j i . On note M(x , y).\nVocabulaire\n• Le point O est appelé l’origine du repère.\n• _O , i i est appelé l’axe des abscisses.\n• _O , j i est appelé l’axe des ordonnées.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 24\nSoit O un point du plan et B = _ i , j i une base de l’ensemble des vecteurs du plan.\nOn désigne par I et J les points tels que OI = i et OJ = j .\nSoit M un point du plan. Justifier l’existence d’un unique couple de réels (x , y) tel que\nOM = x i + y j .\nDéfinition\nSoit O un point du plan et B = _ i , j i une base de\nl’ensemble des vecteurs du plan.\n• _O , i , j i est appelé repère cartésien du plan.\n• Soit M un point du plan.\nLe couple de coordonnées du point M dans le repère\ncartésien _O , i , j i est l’unique couple\n(x , y) de réels tel que OM = x i + y j .\nLe réel x est l’abscisse du point M et le réel y est l’ordonnée du point M, dans le repère\ncartésien _O , i , j i . On note M(x , y).\nVocabulaire\n• Le point O est appelé l’origine du repère.\n• _O , i i est appelé l’axe des abscisses.\n• _O , j i est appelé l’axe des ordonnées.\n\nÀ calculer dans l'application : A(1 ; −1), B(4 ; 3).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 24 (« Activité 24 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 4,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 3,
+        "min": -2,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 24 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x",
+        "label": "x de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "y",
+        "label": "y de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "nrm",
+        "label": "|AB⃗|",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -604,24 +1483,64 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 25,
-    "solver": "fixed",
+    "solver": "vectorAB",
     "title": "Activité 25",
     "difficulty": 2,
-    "statement": "Activité 25\nLe plan est muni d’un repère cartésien _O , i , j i .\n1) Soient A et B deux points de coordonnées respectives (xA , yA) et (xB , yB).\na) Exprimer le vecteur AB en fonction des vecteurs i et j .\nb) Déterminer les composantes du vecteur AB dans la base _ i , j i .\n2) Dans chacun des cas suivants déterminer les composantes du vecteur AB .\na) A( –1, 2) ; B(3 , 4) b) A_2 , 3 i ; Bc , 0m c) A(–5 , 3) ; B(–2 , 3).\nm i l e r : 7-8\nA s s iAssimiler\nExplorer Explorer",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 25\nLe plan est muni d’un repère cartésien _O , i , j i .\n1) Soient A et B deux points de coordonnées respectives (xA , yA) et (xB , yB).\na) Exprimer le vecteur AB en fonction des vecteurs i et j .\nb) Déterminer les composantes du vecteur AB dans la base _ i , j i .\n2) Dans chacun des cas suivants déterminer les composantes du vecteur AB .\na) A( –1, 2) ; B(3 , 4) b) A_2 , 3 i ; Bc , 0m c) A(–5 , 3) ; B(–2 , 3).\nm i l e r : 7-8\nA s s iAssimiler\nExplorer Explorer\n\nÀ calculer dans l'application : A(−2 ; 0,75), B(0 ; −1). Composantes et norme de AB⃗.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 25 (« Activité 25 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 0.75,
+        "min": -3,
+        "max": 4,
+        "step": 0.25
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 25 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x",
+        "label": "x de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "y",
+        "label": "y de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "nrm",
+        "label": "|AB⃗|",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -629,24 +1548,54 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 26,
-    "solver": "fixed",
+    "solver": "detColinear",
     "title": "Activité 26",
     "difficulty": 2,
-    "statement": "Activité 26\nLe plan est muni d’un repère cartésien _O , i , j i.\nSoit les points A(5 , 4) ; B(–6 , 1) ; C(2 , 2).\nCalculer les coordonnées du point D pour que ABCD soit un parallélogramme.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 26\nLe plan est muni d’un repère cartésien _O , i , j i.\nSoit les points A(5 , 4) ; B(–6 , 1) ; C(2 , 2).\nCalculer les coordonnées du point D pour que ABCD soit un parallélogramme.\n\nÀ calculer dans l'application : u⃗(2 ; 3) et v⃗(4 ; 6). Déterminant (colinéarité).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 26 (« Activité 26 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 4,
+        "min": -6,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 6,
+        "min": -6,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 26 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "det",
+        "label": "déterminant",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -654,24 +1603,54 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 27,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 27",
     "difficulty": 2,
-    "statement": "Activité 27\nSoit ABCD un trapèze tel que DC = 3 AB . On désigne par I et J les milieux respectifs des\ncôtés [AB] et [CD]. Soit O le point défini par DO = DA .\nOn considère le repère _D , DC , DAi .\na) Déterminer les coordonnées des points D, C, A, B, O, J et I.\nb) Montrer que les points O, B et C d’une part et les points O, I et J d’autre part, sont alignés.\nNorme d’un vecteur - Vecteurs orthogonaux\nDéfinition\nSoient A un point du plan, u un vecteur et soit B le point tel que u = AB .\nOn appelle norme du vecteur u le réel noté ⎜⎜→\nu ⎜⎜ et qui est égal à AB.\n→\nLorsque ⎜⎜u ⎜⎜= 1, on dit que u est un vecteur unitaire ou normé.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 27\nSoit ABCD un trapèze tel que DC = 3 AB . On désigne par I et J les milieux respectifs des\ncôtés [AB] et [CD]. Soit O le point défini par DO = DA .\nOn considère le repère _D , DC , DAi .\na) Déterminer les coordonnées des points D, C, A, B, O, J et I.\nb) Montrer que les points O, B et C d’une part et les points O, I et J d’autre part, sont alignés.\nNorme d’un vecteur - Vecteurs orthogonaux\nDéfinition\nSoient A un point du plan, u un vecteur et soit B le point tel que u = AB .\nOn appelle norme du vecteur u le réel noté ⎜⎜→\nu ⎜⎜ et qui est égal à AB.\n→\nLorsque ⎜⎜u ⎜⎜= 1, on dit que u est un vecteur unitaire ou normé.\n\nÀ calculer dans l'application : u⃗(3 ; 4) et v⃗(4 ; −3). Produit scalaire.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 27 (« Activité 27 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": -3,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 27 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -679,24 +1658,77 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 28,
-    "solver": "fixed",
+    "solver": "parallelogramD",
     "title": "Activité 28",
     "difficulty": 2,
-    "statement": "Activité 28\n1) Soit →\nu un vecteur.\nMontrer que ⎜⎜→\nu ⎜⎜ = 0 équivaut à u = 0 .\n→\n2) Soit u un vecteur tel que ⎜⎜→\nu ⎜⎜ = 3.\na) Calculer la norme de chacun des vecteurs - u , 2u , - 3u .\nb) Exprimer, en fonction du réel α, la norme du vecteur α u .",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 28\n1) Soit →\nu un vecteur.\nMontrer que ⎜⎜→\nu ⎜⎜ = 0 équivaut à u = 0 .\n→\n2) Soit u un vecteur tel que ⎜⎜→\nu ⎜⎜ = 3.\na) Calculer la norme de chacun des vecteurs - u , 2u , - 3u .\nb) Exprimer, en fonction du réel α, la norme du vecteur α u .\n\nÀ calculer dans l'application : Parallélogramme ABCD : A(−2 ; 1), B(0 ; −1), C(3 ; 4). Coordonnées de D.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 28 (« Activité 28 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": -2,
+        "min": -4,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "xC",
+        "label": "x_C",
+        "unit": "—",
+        "value": 3,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yC",
+        "label": "y_C",
+        "unit": "—",
+        "value": 4,
+        "min": -2,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 28 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xD",
+        "label": "x_D",
+        "unit": "—"
+      },
+      {
+        "key": "yD",
+        "label": "y_D",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -704,24 +1736,64 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 29,
-    "solver": "fixed",
+    "solver": "vectorAB",
     "title": "Activité 29",
     "difficulty": 2,
-    "statement": "Activité 29\n→ → → →\nSoient u et v deux vecteurs. Comparer ⎜⎜u + v ⎜⎜ et ⎜⎜u ⎜⎜ + ⎜⎜v⎜⎜\nA s s iAssimiler\nE x p l o r e r\nDéfinition\nSoit A un point du plan et soient u et deux vecteurs non nuls du plan.\nSoient B et C les points tels que u = AB et v = AC .\n• On dit que les vecteurs u et sont orthogonaux si les droites (AB) et (AC) sont perpendiculaires.\n• Par convention le vecteur nul est orthogonal à tout vecteur du plan.\nNotation et vocabulaire\nSi les vecteurs u et sont orthogonaux, on écrit u = v et on lit le vecteur u est orthogonal\nau vecteur v .",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 29\n→ → → →\nSoient u et v deux vecteurs. Comparer ⎜⎜u + v ⎜⎜ et ⎜⎜u ⎜⎜ + ⎜⎜v⎜⎜\nA s s iAssimiler\nE x p l o r e r\nDéfinition\nSoit A un point du plan et soient u et deux vecteurs non nuls du plan.\nSoient B et C les points tels que u = AB et v = AC .\n• On dit que les vecteurs u et sont orthogonaux si les droites (AB) et (AC) sont perpendiculaires.\n• Par convention le vecteur nul est orthogonal à tout vecteur du plan.\nNotation et vocabulaire\nSi les vecteurs u et sont orthogonaux, on écrit u = v et on lit le vecteur u est orthogonal\nau vecteur v .\n\nÀ calculer dans l'application : A(0 ; 0), B(3 ; 4).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 29 (« Activité 29 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 4,
+        "min": 1,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 29 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x",
+        "label": "x de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "y",
+        "label": "y de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "nrm",
+        "label": "|AB⃗|",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -729,24 +1801,54 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 30,
-    "solver": "fixed",
+    "solver": "detColinear",
     "title": "Activité 30",
     "difficulty": 2,
-    "statement": "Activité 30\n1) Soient u et deux vecteurs non nuls et de même norme.\nMontrer que les vecteurs u + v et u - v sont orthogonaux.\n2) Soient u et deux vecteurs orthogonaux et soient a et b deux réels.\nMontrer que le vecteur au est orthogonal au vecteur bv .\nDéfinition\n• On dit qu’une base B = _ i , j i est une base orthonormée, si les vecteurs i et j sont\northogonaux et sont normés.\nAinsi (B = _ i , j i est une base orthonormée) si et seulement si ` i = j et i = j = 1j .\n• On dit que le repère _O , i , j i est un repère orthonormé du plan si la base B = _ i , j i est\nune base orthonormée de l’ensemble des vecteurs du plan.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 30\n1) Soient u et deux vecteurs non nuls et de même norme.\nMontrer que les vecteurs u + v et u - v sont orthogonaux.\n2) Soient u et deux vecteurs orthogonaux et soient a et b deux réels.\nMontrer que le vecteur au est orthogonal au vecteur bv .\nDéfinition\n• On dit qu’une base B = _ i , j i est une base orthonormée, si les vecteurs i et j sont\northogonaux et sont normés.\nAinsi (B = _ i , j i est une base orthonormée) si et seulement si ` i = j et i = j = 1j .\n• On dit que le repère _O , i , j i est un repère orthonormé du plan si la base B = _ i , j i est\nune base orthonormée de l’ensemble des vecteurs du plan.\n\nÀ calculer dans l'application : u⃗(1 ; −2) et v⃗(3 ; 1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 30 (« Activité 30 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 30 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "det",
+        "label": "déterminant",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -754,24 +1856,54 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 31,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 31",
     "difficulty": 2,
-    "statement": "Activité 31\nDans la figure ci-contre, ABCD est un rectangle tel que\nAB = 2 AD, I et J sont les milieux respectifs de [AB] et [CD],\nF est le point d’intersection des segments [JB] et [AC].\nOn considère le repère _A , AI , ADi .\n1) Déterminer les coordonnées des points A, B, C, D, I et J.\n2) a) Calculer les coordonnées du point E défini par DE = DI .\nb) Montrer que les points A, E et C sont alignés.\nConstruire alors, le point E.\nExplorer Explorer\n3) a) Montrer que CF = CE .\nb) Déterminer les coordonnées de F.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 31\nDans la figure ci-contre, ABCD est un rectangle tel que\nAB = 2 AD, I et J sont les milieux respectifs de [AB] et [CD],\nF est le point d’intersection des segments [JB] et [AC].\nOn considère le repère _A , AI , ADi .\n1) Déterminer les coordonnées des points A, B, C, D, I et J.\n2) a) Calculer les coordonnées du point E défini par DE = DI .\nb) Montrer que les points A, E et C sont alignés.\nConstruire alors, le point E.\nExplorer Explorer\n3) a) Montrer que CF = CE .\nb) Déterminer les coordonnées de F.\n\nÀ calculer dans l'application : u⃗(1 ; 2) et v⃗(−2 ; 1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 31 (« Activité 31 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 31 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -779,24 +1911,64 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 32,
-    "solver": "fixed",
+    "solver": "vectorAB",
     "title": "Activité 32 Distance de deux points - Expression de la norme d’un vecteur",
     "difficulty": 2,
-    "statement": "Activité 32 Distance de deux points - Expression de la norme d’un\nvecteur\nLe plan est muni d’un repère orthonormé _O , i , j i .\n1) a) Soit M(x , y) un point du plan et H son projeté orthogonal sur l’axe des abscisses.\nCalculer OH 2 + HM 2 et en déduire la distance OM.\nb) Soient A(xA , yA), B(xB , yB) deux points du plan et N le point tel que ON = AB .\nDéterminer les coordonnées du point N en fonction de celles de A et B.\nEn déduire la distance AB.\na\n2) Soit u un vecteur de composantes e o dans la base _ i , j i .\nb\nDéterminer la norme du vecteur u en fonction de a et b.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 32 Distance de deux points - Expression de la norme d’un\nvecteur\nLe plan est muni d’un repère orthonormé _O , i , j i .\n1) a) Soit M(x , y) un point du plan et H son projeté orthogonal sur l’axe des abscisses.\nCalculer OH 2 + HM 2 et en déduire la distance OM.\nb) Soient A(xA , yA), B(xB , yB) deux points du plan et N le point tel que ON = AB .\nDéterminer les coordonnées du point N en fonction de celles de A et B.\nEn déduire la distance AB.\na\n2) Soit u un vecteur de composantes e o dans la base _ i , j i .\nb\nDéterminer la norme du vecteur u en fonction de a et b.\n\nÀ calculer dans l'application : A(1 ; −1), B(4 ; 3).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 32 (« Activité 32 Distance de deux points - Expression de la norme d’un vecteur ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 4,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 3,
+        "min": -2,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 32 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x",
+        "label": "x de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "y",
+        "label": "y de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "nrm",
+        "label": "|AB⃗|",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -804,24 +1976,64 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 33,
-    "solver": "fixed",
+    "solver": "vectorAB",
     "title": "Activité 33",
     "difficulty": 2,
-    "statement": "Activité 33\nCalculer dans chacun des cas la norme du vecteur u .\nJ 3N\nJ 1 N K O\n3 K O K 2 O.\na ) u e o ; b ) u K 2 O ; c) u\n-4 K O K 1 O\nL 1 P K O\nL 2 P\nm i l e r : 10-11\nA s s iAssimiler\nCondition analytique d’orthogonalité de deux vecteurs",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 33\nCalculer dans chacun des cas la norme du vecteur u .\nJ 3N\nJ 1 N K O\n3 K O K 2 O.\na ) u e o ; b ) u K 2 O ; c) u\n-4 K O K 1 O\nL 1 P K O\nL 2 P\nm i l e r : 10-11\nA s s iAssimiler\nCondition analytique d’orthogonalité de deux vecteurs\n\nÀ calculer dans l'application : A(−2 ; 0,75), B(0 ; −1). Composantes et norme de AB⃗.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 33 (« Activité 33 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 0.75,
+        "min": -3,
+        "max": 4,
+        "step": 0.25
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 33 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x",
+        "label": "x de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "y",
+        "label": "y de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "nrm",
+        "label": "|AB⃗|",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -829,24 +2041,54 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 34,
-    "solver": "fixed",
+    "solver": "detColinear",
     "title": "Activité 34",
     "difficulty": 2,
-    "statement": "Activité 34\nLe plan est muni d’un repère orthonormé _O , i , j i .\nx x'\nSoient u e o et v e o dans la base _ i , j i .\ny y'\n1) Vérifier que si →\nu = 0 ou →\nv = 0 alors x x’ + y y’ = 0.\n2) a) On désigne par A et B les points tels que OA = u et OB = v .\nCalculer OA, OB et AB.\nb) Montrer que ]u = v g équivaut à (x x’ + y y’ = 0).",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 34\nLe plan est muni d’un repère orthonormé _O , i , j i .\nx x'\nSoient u e o et v e o dans la base _ i , j i .\ny y'\n1) Vérifier que si →\nu = 0 ou →\nv = 0 alors x x’ + y y’ = 0.\n2) a) On désigne par A et B les points tels que OA = u et OB = v .\nCalculer OA, OB et AB.\nb) Montrer que ]u = v g équivaut à (x x’ + y y’ = 0).\n\nÀ calculer dans l'application : u⃗(2 ; 3) et v⃗(4 ; 6). Déterminant (colinéarité).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 34 (« Activité 34 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 4,
+        "min": -6,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 6,
+        "min": -6,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 34 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "det",
+        "label": "déterminant",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -854,24 +2096,54 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 35,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 35",
     "difficulty": 2,
-    "statement": "Activité 35\nSoit B = _ i , j i une base orthonormée de l’ensemble des vecteurs du plan.\n1) Vérifier dans chaque cas, si les vecteurs u et v sont orthogonaux ou non.\nJ5 N\n3 K O -1 8 4 2\nu e o et v K O ; b) u f p et v e o ; c) u e o et v e o .\n-4 K5O 3 0 -2 4\nK O\nL P\n2) Déterminer le réel m pour que les vecteurs u et v soient orthogonaux.\nm -6 m+ 2 m\na) u e o et v e o ; b) u e o et v e o .\n9 m+ 1 m- 2 3\nm i l e r : 12\nA s s iAssimiler",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 35\nSoit B = _ i , j i une base orthonormée de l’ensemble des vecteurs du plan.\n1) Vérifier dans chaque cas, si les vecteurs u et v sont orthogonaux ou non.\nJ5 N\n3 K O -1 8 4 2\nu e o et v K O ; b) u f p et v e o ; c) u e o et v e o .\n-4 K5O 3 0 -2 4\nK O\nL P\n2) Déterminer le réel m pour que les vecteurs u et v soient orthogonaux.\nm -6 m+ 2 m\na) u e o et v e o ; b) u e o et v e o .\n9 m+ 1 m- 2 3\nm i l e r : 12\nA s s iAssimiler\n\nÀ calculer dans l'application : u⃗(3 ; 4) et v⃗(4 ; −3). Produit scalaire.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 35 (« Activité 35 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": -3,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 35 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -879,24 +2151,77 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 36,
-    "solver": "fixed",
+    "solver": "parallelogramD",
     "title": "Activité 36",
     "difficulty": 3,
-    "statement": "Activité 36\nDans la figure ci-contre, ABCD est un carré de côté 1,\nAPQR est un rectangle tel que P et R sont sur les côtés\n[AB] et [AD] du carré et AP = DR.\nOn se propose de montrer que les droites (PR) et (CQ)\nsont perpendiculaires.\nOn choisit le repère _A , AB , ADi et on pose x = AP.\na) Déterminer les coordonnées des points A, B, C, D,\nP, Q et R.\nb) Calculer les composantes des vecteurs PR et CQ .\nc) Montrer que les vecteurs PR et CQ sont orthogonaux.\nConclure.\nVecteurs et configurations géométriques",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 36\nDans la figure ci-contre, ABCD est un carré de côté 1,\nAPQR est un rectangle tel que P et R sont sur les côtés\n[AB] et [AD] du carré et AP = DR.\nOn se propose de montrer que les droites (PR) et (CQ)\nsont perpendiculaires.\nOn choisit le repère _A , AB , ADi et on pose x = AP.\na) Déterminer les coordonnées des points A, B, C, D,\nP, Q et R.\nb) Calculer les composantes des vecteurs PR et CQ .\nc) Montrer que les vecteurs PR et CQ sont orthogonaux.\nConclure.\nVecteurs et configurations géométriques\n\nÀ calculer dans l'application : Parallélogramme ABCD : A(−2 ; 1), B(0 ; −1), C(3 ; 4). Coordonnées de D.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 36 (« Activité 36 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": -2,
+        "min": -4,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "xC",
+        "label": "x_C",
+        "unit": "—",
+        "value": 3,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yC",
+        "label": "y_C",
+        "unit": "—",
+        "value": 4,
+        "min": -2,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 36 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xD",
+        "label": "x_D",
+        "unit": "—"
+      },
+      {
+        "key": "yD",
+        "label": "y_D",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -904,24 +2229,64 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 37,
-    "solver": "fixed",
+    "solver": "vectorAB",
     "title": "Activité 37",
     "difficulty": 3,
-    "statement": "Activité 37\nDans la figure ci-contre, ABCD est un parallélogramme,\n(EF) est parallèle à (AD) et (HG) est parallèle à (AB).\nMontrer que EG + HF = AC .\nm i l e r : 13-14-15\nA s s iAssimiler",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 37\nDans la figure ci-contre, ABCD est un parallélogramme,\n(EF) est parallèle à (AD) et (HG) est parallèle à (AB).\nMontrer que EG + HF = AC .\nm i l e r : 13-14-15\nA s s iAssimiler\n\nÀ calculer dans l'application : A(0 ; 0), B(3 ; 4).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 37 (« Activité 37 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 4,
+        "min": 1,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 37 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x",
+        "label": "x de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "y",
+        "label": "y de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "nrm",
+        "label": "|AB⃗|",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -929,24 +2294,54 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 38,
-    "solver": "fixed",
+    "solver": "detColinear",
     "title": "Activité 38",
     "difficulty": 3,
-    "statement": "Activité 38\nSoit ABC un triangle.\na) Construire les points M et N tels que AM = AB - 2AC et AN = AC - 2AB .\nE x p l o r e r\nb) Exprimer MN en fonction de BC .\nc) Que peut-on en déduire pour les droites (MN) et (BC) ?",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 38\nSoit ABC un triangle.\na) Construire les points M et N tels que AM = AB - 2AC et AN = AC - 2AB .\nE x p l o r e r\nb) Exprimer MN en fonction de BC .\nc) Que peut-on en déduire pour les droites (MN) et (BC) ?\n\nÀ calculer dans l'application : u⃗(1 ; −2) et v⃗(3 ; 1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 38 (« Activité 38 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 38 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "det",
+        "label": "déterminant",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -954,24 +2349,54 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 39,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 39",
     "difficulty": 3,
-    "statement": "Activité 39\nSoit OAB un triangle et I le milieu de [AB].\n1) Montrer que pour tout point M du plan on a MA + MB = 2MI .\n2) Construire les points C et D tels que OC = - 3OA et OD = 3OB .\n3) Montrer que les droites (CD) et (OI) sont parallèles.\nRemarque\nSoit A, B, C et D quatre points alignés du plan.\nOn a les vecteurs AB et CD colinéaires, il existe donc, un réel α tel que AB = a CD .\n• Si α > 0, on dit que les vecteurs AB et CD sont colinéaires et de même sens.\n• Si α < 0, on dit que les vecteurs AB et CD sont colinéaires et de sens contraires.\nm i l e r : 16\nA s s iAssimiler",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 39\nSoit OAB un triangle et I le milieu de [AB].\n1) Montrer que pour tout point M du plan on a MA + MB = 2MI .\n2) Construire les points C et D tels que OC = - 3OA et OD = 3OB .\n3) Montrer que les droites (CD) et (OI) sont parallèles.\nRemarque\nSoit A, B, C et D quatre points alignés du plan.\nOn a les vecteurs AB et CD colinéaires, il existe donc, un réel α tel que AB = a CD .\n• Si α > 0, on dit que les vecteurs AB et CD sont colinéaires et de même sens.\n• Si α < 0, on dit que les vecteurs AB et CD sont colinéaires et de sens contraires.\nm i l e r : 16\nA s s iAssimiler\n\nÀ calculer dans l'application : u⃗(1 ; 2) et v⃗(−2 ; 1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 39 (« Activité 39 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 39 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -979,24 +2404,64 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 40,
-    "solver": "fixed",
+    "solver": "vectorAB",
     "title": "Activité 40 Centre de gravité d’un triangle",
     "difficulty": 3,
-    "statement": "Activité 40 Centre de gravité d’un triangle\nSoit ABC un triangle, G son centre de gravité et I le milieu de [BC].\n1) a) Exprimer GA en fonction de GI\nb) En déduire que GA + GB + GC = 0 .\n2) Soit M un point du plan tel que MA + MB + MC = 0 .\nMontrer que M est confondu avec G.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 40 Centre de gravité d’un triangle\nSoit ABC un triangle, G son centre de gravité et I le milieu de [BC].\n1) a) Exprimer GA en fonction de GI\nb) En déduire que GA + GB + GC = 0 .\n2) Soit M un point du plan tel que MA + MB + MC = 0 .\nMontrer que M est confondu avec G.\n\nÀ calculer dans l'application : A(1 ; −1), B(4 ; 3).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 40 (« Activité 40 Centre de gravité d’un triangle ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 4,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 3,
+        "min": -2,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 40 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x",
+        "label": "x de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "y",
+        "label": "y de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "nrm",
+        "label": "|AB⃗|",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -1004,24 +2469,64 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 41,
-    "solver": "fixed",
+    "solver": "vectorAB",
     "title": "Activité 41",
     "difficulty": 3,
-    "statement": "Activité 41\nSoit OABC un quadrilatère.\nConstruire les points I, J et K tel que OABI, OBCJ et OCAK soient des parallélogrammes.\nMontrer que O est le centre de gravité du triangle IJK.\nm i l e r : 17\nA s s iAssimiler",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 41\nSoit OABC un quadrilatère.\nConstruire les points I, J et K tel que OABI, OBCJ et OCAK soient des parallélogrammes.\nMontrer que O est le centre de gravité du triangle IJK.\nm i l e r : 17\nA s s iAssimiler\n\nÀ calculer dans l'application : A(−2 ; 0,75), B(0 ; −1). Composantes et norme de AB⃗.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 41 (« Activité 41 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 0.75,
+        "min": -3,
+        "max": 4,
+        "step": 0.25
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 41 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x",
+        "label": "x de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "y",
+        "label": "y de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "nrm",
+        "label": "|AB⃗|",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -1029,24 +2534,54 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 42,
-    "solver": "fixed",
+    "solver": "detColinear",
     "title": "Activité 42",
     "difficulty": 3,
-    "statement": "Explorer Explorer\nOn pose AM = x AB .\n1) Soit P le point tel que AP = x AC .\nMontrer que (MP) est parallèle à (BC). En déduire que AN = x AC .\n2) On suppose, dans cette question, que M est le milieu de [AB].\nExprimer AN en fonction de AC et MN en fonction de BC .",
-    "variables": [],
-    "questions": [
+    "statement": "Explorer Explorer\nOn pose AM = x AB .\n1) Soit P le point tel que AP = x AC .\nMontrer que (MP) est parallèle à (BC). En déduire que AN = x AC .\n2) On suppose, dans cette question, que M est le milieu de [AB].\nExprimer AN en fonction de AC et MN en fonction de BC .\n\nÀ calculer dans l'application : u⃗(2 ; 3) et v⃗(4 ; 6). Déterminant (colinéarité).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 42 (« Activité 42 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 4,
+        "min": -6,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 6,
+        "min": -6,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 42 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "det",
+        "label": "déterminant",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -1054,24 +2589,54 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 43,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 43 Théorème de la projection",
     "difficulty": 3,
-    "statement": "Activité 43 Théorème de la projection\nDans la figure ci-contre, les droites (AA’) , (BB’) et (CC’)\nsont parallèles.\nLa parallèle à D passant par A coupe (BB’) en M et (CC’) en N.\nOn pose AB = x AC .\nExprimer AM en fonction de AN puis montrer que\nA'B' = x A'C'.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 43 Théorème de la projection\nDans la figure ci-contre, les droites (AA’) , (BB’) et (CC’)\nsont parallèles.\nLa parallèle à D passant par A coupe (BB’) en M et (CC’) en N.\nOn pose AB = x AC .\nExprimer AM en fonction de AN puis montrer que\nA'B' = x A'C'.\n\nÀ calculer dans l'application : u⃗(3 ; 4) et v⃗(4 ; −3). Produit scalaire.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 43 (« Activité 43 Théorème de la projection ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": -3,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 43 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -1079,24 +2644,77 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 44,
-    "solver": "fixed",
+    "solver": "parallelogramD",
     "title": "Activité 44",
     "difficulty": 3,
-    "statement": "Activité 44\nSoit ABCD un parallélogramme.\n1) Placer le point E tel que BE = BC .\n2) Les droites (AE) et (DC) se coupent en F.\nExprimer AE en fonction de AF puis DC en fonction de DF .",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 44\nSoit ABCD un parallélogramme.\n1) Placer le point E tel que BE = BC .\n2) Les droites (AE) et (DC) se coupent en F.\nExprimer AE en fonction de AF puis DC en fonction de DF .\n\nÀ calculer dans l'application : Parallélogramme ABCD : A(−2 ; 1), B(0 ; −1), C(3 ; 4). Coordonnées de D.",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 44 (« Activité 44 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": -2,
+        "min": -4,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "xC",
+        "label": "x_C",
+        "unit": "—",
+        "value": 3,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yC",
+        "label": "y_C",
+        "unit": "—",
+        "value": 4,
+        "min": -2,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 44 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xD",
+        "label": "x_D",
+        "unit": "—"
+      },
+      {
+        "key": "yD",
+        "label": "y_D",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -1104,24 +2722,64 @@
     "chapter": "vecteurs",
     "kind": "activity",
     "activity": 45,
-    "solver": "fixed",
+    "solver": "vectorAB",
     "title": "Activité 45",
     "difficulty": 3,
-    "statement": "Activité 45\nSoit ABC un triangle inscrit dans un cercle C de centre I.\n1) Construire les points D, E tels que ID = IA + IB et IE = IB + IC .\n2) Montrer que les quadrilatères IADB et IBEC sont des losanges.\n3) a) Construire le point F défini par IF = IC + ID .\nb) Montrer que (CF) est perpendiculaire à (AB).\nc) Montrer que F est l’orthocentre du triangle ABC.\nler\nA s s i m iAssimiler\n1 Soit u un vecteur. Simplifier les écritures suivantes.\n1 2\nu + 5u ; - 2u + 4u ; ^1 - 2 h u + u ; 6u - u ; u + 3u.\n2 5\n2 Soit u un vecteur non nul. Simplifier les écritures suivantes.\n3 5\n5 ]2u g ; - 4 c u m ; - 7 ]- 6u g ; 3 c u m .\n2 6\n3 Soient u et v deux vecteurs. Simplifier l’écriture de chacun des vecteurs a et b.\na = 2 ]u - 3 v g - ]5u - 6 v g ; b = 3u + v - ;7u - ]8u + 2vgE .\n4 Soit B = _ i , j i une base de l’ensemble des vecteurs du plan.\nDonner les composantes des vecteurs suivants.\n1 3 1\n2i + 3j ; - i + j ; - 4i ; i - 3 2 j ; - j ; j+ i .\n2 5 2\n5 Soit B = _ i , j i une base de l’ensemble des vecteurs du plan.\n3 1 -1\nOn considère les vecteurs u e o ; v e o et w e o .\n0 -2 1\nDéterminer les composantes des vecteurs suivants, dans la base B.\n2u ; - 3 v ; 4w ; u - 5 v ; - 3 u + 2 v ; 5 v + w ; 2u - 3v + 4w .\n6 Soit B = _ i , j i une base de l’ensemble des vecteurs du plan.\n1) Dans chacun des cas suivants, préciser, si les deux vecteurs sont colinéaires ou non.\n2 3 6 14 1 -9 15\na) u e o et v f p ; b) u e o et v e o ; c) u e o et v e o.\n3 3 3 -8 -2 12 - 20\n2) Dans chacun des cas suivants, déterminer le réel m pour que les deux vecteurs\nu et v soient colinéaires.\nm 5 m 6\na) u e o et v e o ; b) u e o et v e o .\n2 -3 m- 1 1\n7 Le plan est muni d’un repère cartésien _O , i , j i .\nDans chacun des cas suivants, déterminer les composantes des vecteurs AB et CD et préciser\nsi les deux vecteurs sont colinéaires ou non.\na) A(1 , 2) ; B(-3 , 4) ; C(0 , 1) et D(2 , -2).\nb) A(0 , -2) ; B( 2, 4) ; C( , -5) et D(-1 , 0).\nc) A(8 , -5) ; B(2 , -1) ; C(-19 , 8) et D(-1 , -4).\nAssimiler Assimiler\n8 Le plan est muni d’un repère cartésien _O , i , j i .\nDans chacun des cas suivants, déterminer si les points A, B et C sont alignés ou non.\na) A(-4 , 2) ; B(-3 , 5) et C(-2 , 8).\nb) A(0 , 1) ; B(-1 , 3) et C( 2 , 0).\n3 8\nc) A c , - 2m ; B(2 , 0) et C c1, - m .\n4 5\n9 Soient u et v deux vecteurs tels que u = 2 , v = 3 et u + v = 5.\nMontrer que u et v sont colinéaires.\n10 Dans chacun des cas suivants, calculer la distance AB.\na) A(-2 , -4) ; B(3 , 5) ; b) A c2 , m ; B(1 , 0) ; c) A(- 3 , 2) ; B(0 , 6).\n11 Dans chacun des cas suivants, calculer la norme du vecteur u .\nJ 3N\nK O\n-3 1 K 2 O ; d) u e 0 o .\na) u e o ; b) u e o ; c) u K\n2 1 1 O -4\nK O\nL 2 P\n12 Dans chacun des cas suivants, déterminer si les vecteurs u et v sont orthogonaux ou non.\n2 -3\n3 2 0 4\na) u e o et v e o ; b) u f p et v e o ; c) u f 3 p et v f 1 p .\n-1 6 2 5 -2 2\n13 Soit ABC un triangle. Construire les points M, N et E tels que AM = AB + AC ;\nAN = AB - AC et BE = AB . Quelle est la nature du quadrilatère AMEN ?\n14 Soient ABC un triangle, I le milieu de [AB] et M le point tel que\nMA + MB + 2MC = 0 . Montrer que M est le milieu de [IC].\n15 Soit ABC un triangle, I, J et K les milieux respectifs de côtés [BC], [AC] et [AB].\na) Montrer que AK + BI + CJ = 0 .\nb) Montrer que AI + BJ + CK = 0 .\nler\nA s s i m iAssimiler\n16 Soient O un point du plan, u et v deux vecteurs.\nOn pose OA = u + v , OB = 2u - v et OC = 4u - 5v .\nMontrer que les points A, B et C sont alignés.\n17 Dans la figure ci-contre, ABC est un triangle,\nI est le symétrique de A par rapport à B, J est le\nsymétrique de B par rapport à C et K est le\nsymétrique de C par rapport à A.\nMontrer que les triangles ABC et IJK ont le\nmême centre de gravité.\nèse\nS y n t hSynthèse\nAddition des vecteurs\n♦ Pour tous vecteurs u , v et w, on a :\nu+ v = v+ u\nu ] v + wg = ] u + v g + w = u + v + w\nu+ 0 = u.\n→ → → →\n♦ Pour tout vecteur u , il existe un seul vecteur x tel que u + x = 0\n→\nCe vecteur est appelé l’opposé de u , il est noté –u .\nMultiplication d’un vecteur par un réel\n♦ Pour tout vecteur u et pour tout réels a et b, on a :\n1.u = u\na.]b.u g = ab.u\na.u + b.u = ]a + bg.u .\n♦ Pour tout réel a et pour tous vecteurs u et v , on a :\na. ]u + v g = a.u + a.v\n♦ Pour tout vecteur u et pour tout réel α , on a :\n→ → → →\nα u = 0 équivaut à (α = 0 ou u = 0 )\nComposantes d’un vecteur\n♦ Soit _ i , j i une base de l’ensemble des vecteurs du plan.\nx x'\nSoient u e o et v e o dans la base _ i , j i. et soit α un réel.\ny y'\nx + x' αax\nOn a u + v f p ; a.u f p\nα\ny + y' αay\n♦ Soit _O , i , j i un repère cartésien du plan.\nSynthèse Synthèse\nSoient A(xA , yA) et B(xB , yB) deux points du plan. Les composantes du vecteur AB , dans\nx AB - x BA\nla base _ i , j i sont f p p.\ny AB - y BA\nCondition analytique de colinéarité de deux vecteurs\nx x'\n♦ Soient u e o et v e o dans une base _ i , j i de l’ensemble des vecteurs du plan.\ny y'\nx x'\n• Le déterminant des vecteurs u et v est le réel noté = x y’ – x’ y.\ny y'\nx x'\n• Les vecteurs u et v sont colinéaires équivaut à =0\ny y'\néquivaut à x y’ – x’ y = 0.\nVecteurs orthogonaux\n♦ Soit A un point du plan et u et v deux vecteurs non nuls du plan.\nSoient B et C les points tels que u = AB et v = AC .\nLes vecteurs u et v sont orthogonaux si et seulement si les droites (AB) et (AC)\nsont perpendiculaires.\nPar convention le vecteur nul est orthogonal à tout vecteur du plan.\nNorme d’un vecteur\n→ → →\n♦ Etant donné un vecteur u et un réel α , on a : ⎜⎜ α u ⎜⎜ = ⎜ a ⎜ . ⎜⎜ u ⎜⎜\n♦ ⎜⎜ →\nu ⎜⎜ = 0 équivaut à u = 0 .\n♦ Si ⎜⎜ →\nu ⎜⎜ = 1, on dit que le vecteur est unitaire ou normé.\nx\n♦ Soit u e o dans une base orthonormée _ i , j i .\ny\n→\n⎜⎜ u ⎜⎜ = x2 + y2 .\nèse\nS y n t hSynthèse\nCondition analytique d’orthogonalité de deux vecteurs\nx x'\n♦ Soient u e o et v e o dans une base orthonormée _ i , j i de l’ensemble des vecteurs\ny y'\ndu plan.\nu = v équivaut à x x’ + y y’ = 0.\nDistance de deux points\n♦ Le plan est muni d’un repère orthonormé _O , i , j i .\nSoient A(xA , yA), B(xB , yB) deux points du plan.\nAB = ^x B - x Ah2 + ^ y B - y Ah2\nVecteurs et configurations géométriques\n♦ Soient A, B, C et D quatre points du plan.\nSi AB + AC = AD , alors AB = CD et AC = BD .\n♦ Deux droites (AB) et (CD) sont parallèles si et seulement si les vecteurs AB et CD\nsont colinéaires.\n♦ Deux droites (AB) et (CD) sont perpendiculaires si et seulement si les vecteurs AB et CD\nsont orthogonaux.\n♦ Un point M appartient à une droite (AB) si et seulement si, il existe un réel x tel que\nAM = x AB.\n♦ Si I est le milieu de [AB], alors pour tout point M du plan MA + MB = 2MI\n♦ G est le centre de gravité du triangle ABC si et seulement si GA + GB + GC = 0 .\n♦ (Les points A, B et C sont alignés) équivaut à (Les vecteurs AB et AC sont colinéaires).\n♦ Forme vectorielle du théorème de Thalès\nSoit ABC un triangle et M un point de (AB), distinct de A.\nLa parallèle à (BC) passant par M coupe (AC) en N.\nSi AM = xAB alors AN = xAC et MN = xBC .\nDévelopper ses compé\nDévelopper ses compétences\n1 Problème de concours\nDans la figure ci-contre, les points A 1, A 2, B 1,\nB 2, C 1 et C 2 partagent, en trois segments isomé-\ntriques, chacun des côtés du triangle ABC.\nMontrer que les droites (A 1B 2), (B 1C 2) et (C 1A 2) se\ncoupent en G centre de gravité du triangle ABC.\nStratégie de résolution\n- Montrer, tout d’abord que\n(A 1B 2) // (AB), (B 1C 2) // (BC) et (C 1A 2) // (AC).\n- On pourra soit calculer AG + BG + CG , soit exprimer AG en fonction de AI , où I est le\n2 Problème d’alignement\nDans la figure ci-contre, ABC est un triangle, I est\nle milieu du segment [AC], D et E sont les points tels\nque 3DB = DC et EA + 3EB = 0 .\nMontrer que les points I, D et E sont alignés.\nStratégie de résolution\n1) Première méthode\n- Etablir une relation vectorielle faisant intervenir,\nseulement, les points I, D et E.\n2) Deuxième méthode\n- On pourra considérer le repère cartésien _ A, AB, AC i .\n3 Le plan est rapporté à un repère orthonormé _O, I, J i.\nDans la figure ci-contre, OAB est un triangle rectangle en A et tel que OA = 3 et AB = 4.\nDéterminer les coordonnées du point A.\nStratégie de résolution\n_ Déterminer les coordonnées de B.\n_ Exprimer les composantes des vecteurs OA et AB en\nfonction des coordonnées (x , y) du point A.\nUtiliser les TIC Utiliser les TI\nC\n1) A l’aide d’un logiciel de géométrie.\n- Construire deux vecteurs BA ET BC (vecteur).\n- Construire le point D tel que BA + BC = BD (somme de deux vecteurs).\n- Tracer le parallélogramme ABCD.\n- Marquer un point M à l’intérieur du parallélogramme.\n- Construire la droite passant par M et parallèle à (AD). Nommer respectivement I et J les\npoints d’intersection de cette droite avec les droites (AB) et (CD).\n- Construire la droite passant par M et parallèle à (AB). Nommer respectivement K et L les\npoints d’intersection de cette droite avec les droites (BC) et (AD).\n- Construire les vecteurs IK et LJ , puis leur somme IK + LJ en prenant le point A comme\norigine.\n- Déplacer le point M à l’intérieur du parallélogramme ABCD et observer ce qui se passe\npour les vecteurs IK, LJ et IK + LJ.\nQuelle conjecture peut-on émettre ?\n2) Montrer que quelle que soit la position du point M à l’intérieur du parallélogramme,\nle vecteur IK + LJ = AC .\nExercices etExercices lèmes\nproetbproblèmes\nAppliquer 1) Placer les points E et F tels que\n1 4 AE = 3AB + AC et AF = AB + 3AC .\nSoient a = a - 2v et b = u+ v.\n2) Montrer que (BC) et (EF) sont parallèles.\nExprimer en fonction de u et v chacun des\nvecteurs a + b , a - b et 2a + 5b . 7 Soient ABCD un quadrilatère, I le milieu\nde [AD] et J celui de [BC].\n2 Trois vecteurs u , v et w sont tels que\nMontrer que AB + DC = 2IJ .\nZ\n]] 2u + v - w = 0\n[ Soit B = _ i , j i une base de l’ensemble des\n]\nvecteurs du plan.\n\\ u - v + 3w = 0\nDans chacun des cas ci-dessous, déterminer,\nMontrer que u , v et w sont deux à deux quand cela est possible, un réel m pour que les\ncolinéaires. deux vecteurs et soient colinéaires.\n3 Soient A et B deux points.\n2m\na) u f 4 p et v e o .\nSoient M et N les points tels que 10\n5 2 m+ 1 -3\nAM = AB et AN = - AB\n3 3 b) u e o et v e o .\n-1 0\nMontrer que [AB] et [MN] ont le même 1 m- 2\nm+ 2 -1 .\n4 Soit ABC un triangle et E le point défini\n9 Le plan est muni d’un repère cartésien\npar 3EA + EB = 0 3\n1 _O , i , j i. On considère les points A c- 2 , m ;\na) Montrer que EA = AB , puis 4\n4 B(0 , -1) et C(3, 4).\nconstruire E. Déterminer les coordonnées du point D tel\nb) Construire F tel que EF = BC\n4 que ABCD soit un parallélogramme.\nc) Montrer que A, C, et F sont alignés.\n5 Quatre points A, B, C et D sont tels que\n10 Le plan est muni d’un repère cartésien\n_O , i , j i.\n5AD = 3AB + 2AC\nDans chacun des cas ci-dessous, déterminer\nMontrer que B, C et D sont alignés. un réel a, pour que les points A, B et C soient\nalignés.\n6 Soit ABC un triangle. a) A(– 4 , 2) ; B(–3 , 5) et C(0 , a ).\nb) A(2a + 1 , 1) ; B(1 , 6) et C (–1, 2).\nExercices et problèmes\nExercices et problèmes\nMaîtriser\n2) Montrer que pour tout réel x, les vecteurs\n11 Soit ABCD un parallélogramme.\nMN et BC sont colinéaires\n3) Déterminer la valeur de x pour laquelle\n1) Placer les points E et F tels que\na) M = N.\n1 1\nAE = AC et CF = CA b) BCMN est un parallélogramme.\n3 3\n2) Montrer que (DE) et (BF) sont parallèles.\nDéterminer le sens de variations de h. 16 Soit ABC un triangle inscrit dans un cercle\nde centre O. On désigne par I et J les milieux\n12 Soit ABC un triangle.\nrespectifs de [AB] et [AC].\na) Construire les points M, N et I définis 1) Soit H le point tel que\npar : AM = AB + AC ; OH = OA + OB + OC .\na) Montrer que CH = 2OI et que\nAN = 2AC - AB et NI = 3AC .\nBH = 2OJ .\nb) Quelle est la nature du quadrilatère AMIN?\nb) Montrer alors que H est l’orthocentre du\ntriangle ABC.\n2) Soit G le centre de gravité du triangle ABC.\n13 Soient ABCD un parallélogramme et M\nun point du plan qui n’appartient ni à (AC) ni a) Montrer que 3OG = OA + OB + OC .\nà (AD). b) Déduire que O, G et H sont alignés.\nMontrer que les triangles ACM et BDM ont le\nmême centre de gravité. 17 Soient ABC un triangle, I le milieu de\n[AB] et J celui de [AC].\n14 Soient ABC un triangle et α un réel. Déterminer l’ensemble des points M du plan\nSoient I, J et K les points tels que : dans chacun des cas suivants :\n→ → → → → →\nAI = αAB , BJ = αBC et CK = αCA.\na) MA + MB = MA + MC .\nMontrer que les triangles ABC et IJK ont le b) MA + MC = BC\nmême centre de gravité.\n18 Soit ABC un triangle. On considère les\n15 Soit ABC un triangle, à tout réel x on\nvecteurs u et v définis par 2AB + AC\nassocie les points M et N tels que → →\net v = - AB + 3 AC\nAM = AB + xAC\nMontrer que (u , v) est une base de l’ensemble\net AN = xAB + AC .\ndes vecteurs du plan.\n1) Faire une figure lorsque x = – 1.\nM a t h e t cMath ure\nu lettculture\nLes poètes chantent la beauté mathématique\nNombre d’écrivains ont écrit sur les mathématiques, de la loi sur la gravitation d’Edgar\nPoe au calcul des probabilités chez Dostoïevski. Certains se sont servis d’outils mathématiques\npour étayer des résolutions d’énigmes comme Conan Doyle ou Ellery Queen, se fixer des\ncontraintes poétiques comme Raymond Queneau ( Cent mille milliards de poèmes) ou même\nfaire reposer entièrement la composition d’un livre dessus, comme Georges Perec qui utilise\nun carré gréco latin d’ordre 10 pour construire sa Vie mode d’emploi (Prix Médicis 1978).\nD’autres enfin ont véritablement chanté, de diverses façons, la gloire des mathématiques.\nEugène Guillevic (1907-1997) dans ses Euclidiennes (Gallimard, 1967) joue avec un\nlangage poétique lié aux nombres, à la forme ou à l’humain, à tel point que l’on a pu parler à\npropos du poète de géométrie obsessionnelle tel ce monologue de triangle\nJe suis ce qu’il y a\nDe plus élémentaire\nEt malgré ce côté\nDe hasard qui m’affecte,\nDe plus indispensable\nÀ l’organisation.\nOu encore ce parallélogramme qui révèle l’anxiété latente du poète\nOn pourrait m’aplatir,\nAussi me redresser.\nJe n’ai pas d’idées fixes.\nQue de viennent aigus\nMes deux angles obtus\nJe ne tremblerai pas\nMais s’ il faut me passer,\nUn instant de raison,\nEn forme de rectangle,\nAlors, j’ai peur,\nCar un rectangle c’est autre chose...\nD’après le magazine « Tangente n° 92 »",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 45\nSoit ABC un triangle inscrit dans un cercle C de centre I.\n1) Construire les points D, E tels que ID = IA + IB et IE = IB + IC .\n2) Montrer que les quadrilatères IADB et IBEC sont des losanges.\n3) a) Construire le point F défini par IF = IC + ID .\nb) Montrer que (CF) est perpendiculaire à (AB).\nc) Montrer que F est l’orthocentre du triangle ABC.\nler\nA s s i m iAssimiler\n1 Soit u un vecteur. Simplifier les écritures suivantes.\n1 2\nu + 5u ; - 2u + 4u ; ^1 - 2 h u + u ; 6u - u ; u + 3u.\n2 5\n2 Soit u un vecteur non nul. Simplifier les écritures suivantes.\n3 5\n5 ]2u g ; - 4 c u m ; - 7 ]- 6u g ; 3 c u m .\n2 6\n3 Soient u et v deux vecteurs. Simplifier l’écriture de chacun des vecteurs a et b.\na = 2 ]u - 3 v g - ]5u - 6 v g ; b = 3u + v - ;7u - ]8u + 2vgE .\n4 Soit B = _ i , j i une base de l’ensemble des vecteurs du plan.\nDonner les composantes des vecteurs suivants.\n1 3 1\n2i + 3j ; - i + j ; - 4i ; i - 3 2 j ; - j ; j+ i .\n2 5 2\n5 Soit B = _ i , j i une base de l’ensemble des vecteurs du plan.\n3 1 -1\nOn considère les vecteurs u e o ; v e o et w e o .\n0 -2 1\nDéterminer les composantes des vecteurs suivants, dans la base B.\n2u ; - 3 v ; 4w ; u - 5 v ; - 3 u + 2 v ; 5 v + w ; 2u - 3v + 4w .\n6 Soit B = _ i , j i une base de l’ensemble des vecteurs du plan.\n1) Dans chacun des cas suivants, préciser, si les deux vecteurs sont colinéaires ou non.\n2 3 6 14 1 -9 15\na) u e o et v f p ; b) u e o et v e o ; c) u e o et v e o.\n3 3 3 -8 -2 12 - 20\n2) Dans chacun des cas suivants, déterminer le réel m pour que les deux vecteurs\nu et v soient colinéaires.\nm 5 m 6\na) u e o et v e o ; b) u e o et v e o .\n2 -3 m- 1 1\n7 Le plan est muni d’un repère cartésien _O , i , j i .\nDans chacun des cas suivants, déterminer les composantes des vecteurs AB et CD et préciser\nsi les deux vecteurs sont colinéaires ou non.\na) A(1 , 2) ; B(-3 , 4) ; C(0 , 1) et D(2 , -2).\nb) A(0 , -2) ; B( 2, 4) ; C( , -5) et D(-1 , 0).\nc) A(8 , -5) ; B(2 , -1) ; C(-19 , 8) et D(-1 , -4).\nAssimiler Assimiler\n8 Le plan est muni d’un repère cartésien _O , i , j i .\nDans chacun des cas suivants, déterminer si les points A, B et C sont alignés ou non.\na) A(-4 , 2) ; B(-3 , 5) et C(-2 , 8).\nb) A(0 , 1) ; B(-1 , 3) et C( 2 , 0).\n3 8\nc) A c , - 2m ; B(2 , 0) et C c1, - m .\n4 5\n9 Soient u et v deux vecteurs tels que u = 2 , v = 3 et u + v = 5.\nMontrer que u et v sont colinéaires.\n10 Dans chacun des cas suivants, calculer la distance AB.\na) A(-2 , -4) ; B(3 , 5) ; b) A c2 , m ; B(1 , 0) ; c) A(- 3 , 2) ; B(0 , 6).\n11 Dans chacun des cas suivants, calculer la norme du vecteur u .\nJ 3N\nK O\n-3 1 K 2 O ; d) u e 0 o .\na) u e o ; b) u e o ; c) u K\n2 1 1 O -4\nK O\nL 2 P\n12 Dans chacun des cas suivants, déterminer si les vecteurs u et v sont orthogonaux ou non.\n2 -3\n3 2 0 4\na) u e o et v e o ; b) u f p et v e o ; c) u f 3 p et v f 1 p .\n-1 6 2 5 -2 2\n13 Soit ABC un triangle. Construire les points M, N et E tels que AM = AB + AC ;\nAN = AB - AC et BE = AB . Quelle est la nature du quadrilatère AMEN ?\n14 Soient ABC un triangle, I le milieu de [AB] et M le point tel que\nMA + MB + 2MC = 0 . Montrer que M est le milieu de [IC].\n15 Soit ABC un triangle, I, J et K les milieux respectifs de côtés [BC], [AC] et [AB].\na) Montrer que AK + BI + CJ = 0 .\nb) Montrer que AI + BJ + CK = 0 .\nler\nA s s i m iAssimiler\n16 Soient O un point du plan, u et v deux vecteurs.\nOn pose OA = u + v , OB = 2u - v et OC = 4u - 5v .\nMontrer que les points A, B et C sont alignés.\n17 Dans la figure ci-contre, ABC est un triangle,\nI est le symétrique de A par rapport à B, J est le\nsymétrique de B par rapport à C et K est le\nsymétrique de C par rapport à A.\nMontrer que les triangles ABC et IJK ont le\nmême centre de gravité.\nèse\nS y n t hSynthèse\nAddition des vecteurs\n♦ Pour tous vecteurs u , v et w, on a :\nu+ v = v+ u\nu ] v + wg = ] u + v g + w = u + v + w\nu+ 0 = u.\n→ → → →\n♦ Pour tout vecteur u , il existe un seul vecteur x tel que u + x = 0\n→\nCe vecteur est appelé l’opposé de u , il est noté –u .\nMultiplication d’un vecteur par un réel\n♦ Pour tout vecteur u et pour tout réels a et b, on a :\n1.u = u\na.]b.u g = ab.u\na.u + b.u = ]a + bg.u .\n♦ Pour tout réel a et pour tous vecteurs u et v , on a :\na. ]u + v g = a.u + a.v\n♦ Pour tout vecteur u et pour tout réel α , on a :\n→ → → →\nα u = 0 équivaut à (α = 0 ou u = 0 )\nComposantes d’un vecteur\n♦ Soit _ i , j i une base de l’ensemble des vecteurs du plan.\nx x'\nSoient u e o et v e o dans la base _ i , j i. et soit α un réel.\ny y'\nx + x' αax\nOn a u + v f p ; a.u f p\nα\ny + y' αay\n♦ Soit _O , i , j i un repère cartésien du plan.\nSynthèse Synthèse\nSoient A(xA , yA) et B(xB , yB) deux points du plan. Les composantes du vecteur AB , dans\nx AB - x BA\nla base _ i , j i sont f p p.\ny AB - y BA\nCondition analytique de colinéarité de deux vecteurs\nx x'\n♦ Soient u e o et v e o dans une base _ i , j i de l’ensemble des vecteurs du plan.\ny y'\nx x'\n• Le déterminant des vecteurs u et v est le réel noté = x y’ – x’ y.\ny y'\nx x'\n• Les vecteurs u et v sont colinéaires équivaut à =0\ny y'\néquivaut à x y’ – x’ y = 0.\nVecteurs orthogonaux\n♦ Soit A un point du plan et u et v deux vecteurs non nuls du plan.\nSoient B et C les points tels que u = AB et v = AC .\nLes vecteurs u et v sont orthogonaux si et seulement si les droites (AB) et (AC)\nsont perpendiculaires.\nPar convention le vecteur nul est orthogonal à tout vecteur du plan.\nNorme d’un vecteur\n→ → →\n♦ Etant donné un vecteur u et un réel α , on a : ⎜⎜ α u ⎜⎜ = ⎜ a ⎜ . ⎜⎜ u ⎜⎜\n♦ ⎜⎜ →\nu ⎜⎜ = 0 équivaut à u = 0 .\n♦ Si ⎜⎜ →\nu ⎜⎜ = 1, on dit que le vecteur est unitaire ou normé.\nx\n♦ Soit u e o dans une base orthonormée _ i , j i .\ny\n→\n⎜⎜ u ⎜⎜ = x2 + y2 .\nèse\nS y n t hSynthèse\nCondition analytique d’orthogonalité de deux vecteurs\nx x'\n♦ Soient u e o et v e o dans une base orthonormée _ i , j i de l’ensemble des vecteurs\ny y'\ndu plan.\nu = v équivaut à x x’ + y y’ = 0.\nDistance de deux points\n♦ Le plan est muni d’un repère orthonormé _O , i , j i .\nSoient A(xA , yA), B(xB , yB) deux points du plan.\nAB = ^x B - x Ah2 + ^ y B - y Ah2\nVecteurs et configurations géométriques\n♦ Soient A, B, C et D quatre points du plan.\nSi AB + AC = AD , alors AB = CD et AC = BD .\n♦ Deux droites (AB) et (CD) sont parallèles si et seulement si les vecteurs AB et CD\nsont colinéaires.\n♦ Deux droites (AB) et (CD) sont perpendiculaires si et seulement si les vecteurs AB et CD\nsont orthogonaux.\n♦ Un point M appartient à une droite (AB) si et seulement si, il existe un réel x tel que\nAM = x AB.\n♦ Si I est le milieu de [AB], alors pour tout point M du plan MA + MB = 2MI\n♦ G est le centre de gravité du triangle ABC si et seulement si GA + GB + GC = 0 .\n♦ (Les points A, B et C sont alignés) équivaut à (Les vecteurs AB et AC sont colinéaires).\n♦ Forme vectorielle du théorème de Thalès\nSoit ABC un triangle et M un point de (AB), distinct de A.\nLa parallèle à (BC) passant par M coupe (AC) en N.\nSi AM = xAB alors AN = xAC et MN = xBC .\nDévelopper ses compé\nDévelopper ses compétences\n1 Problème de concours\nDans la figure ci-contre, les points A 1, A 2, B 1,\nB 2, C 1 et C 2 partagent, en trois segments isomé-\ntriques, chacun des côtés du triangle ABC.\nMontrer que les droites (A 1B 2), (B 1C 2) et (C 1A 2) se\ncoupent en G centre de gravité du triangle ABC.\nStratégie de résolution\n- Montrer, tout d’abord que\n(A 1B 2) // (AB), (B 1C 2) // (BC) et (C 1A 2) // (AC).\n- On pourra soit calculer AG + BG + CG , soit exprimer AG en fonction de AI , où I est le\n2 Problème d’alignement\nDans la figure ci-contre, ABC est un triangle, I est\nle milieu du segment [AC], D et E sont les points tels\nque 3DB = DC et EA + 3EB = 0 .\nMontrer que les points I, D et E sont alignés.\nStratégie de résolution\n1) Première méthode\n- Etablir une relation vectorielle faisant intervenir,\nseulement, les points I, D et E.\n2) Deuxième méthode\n- On pourra considérer le repère cartésien _ A, AB, AC i .\n3 Le plan est rapporté à un repère orthonormé _O, I, J i.\nDans la figure ci-contre, OAB est un triangle rectangle en A et tel que OA = 3 et AB = 4.\nDéterminer les coordonnées du point A.\nStratégie de résolution\n_ Déterminer les coordonnées de B.\n_ Exprimer les composantes des vecteurs OA et AB en\nfonction des coordonnées (x , y) du point A.\nUtiliser les TIC Utiliser les TI\nC\n1) A l’aide d’un logiciel de géométrie.\n- Construire deux vecteurs BA ET BC (vecteur).\n- Construire le point D tel que BA + BC = BD (somme de deux vecteurs).\n- Tracer le parallélogramme ABCD.\n- Marquer un point M à l’intérieur du parallélogramme.\n- Construire la droite passant par M et parallèle à (AD). Nommer respectivement I et J les\npoints d’intersection de cette droite avec les droites (AB) et (CD).\n- Construire la droite passant par M et parallèle à (AB). Nommer respectivement K et L les\npoints d’intersection de cette droite avec les droites (BC) et (AD).\n- Construire les vecteurs IK et LJ , puis leur somme IK + LJ en prenant le point A comme\norigine.\n- Déplacer le point M à l’intérieur du parallélogramme ABCD et observer ce qui se passe\npour les vecteurs IK, LJ et IK + LJ.\nQuelle conjecture peut-on émettre ?\n2) Montrer que quelle que soit la position du point M à l’intérieur du parallélogramme,\nle vecteur IK + LJ = AC .\nExercices etExercices lèmes\nproetbproblèmes\nAppliquer 1) Placer les points E et F tels que\n1 4 AE = 3AB + AC et AF = AB + 3AC .\nSoient a = a - 2v et b = u+ v.\n2) Montrer que (BC) et (EF) sont parallèles.\nExprimer en fonction de u et v chacun des\nvecteurs a + b , a - b et 2a + 5b . 7 Soient ABCD un quadrilatère, I le milieu\nde [AD] et J celui de [BC].\n2 Trois vecteurs u , v et w sont tels que\nMontrer que AB + DC = 2IJ .\nZ\n]] 2u + v - w = 0\n[ Soit B = _ i , j i une base de l’ensemble des\n]\nvecteurs du plan.\n\\ u - v + 3w = 0\nDans chacun des cas ci-dessous, déterminer,\nMontrer que u , v et w sont deux à deux quand cela est possible, un réel m pour que les\ncolinéaires. deux vecteurs et soient colinéaires.\n3 Soient A et B deux points.\n2m\na) u f 4 p et v e o .\nSoient M et N les points tels que 10\n5 2 m+ 1 -3\nAM = AB et AN = - AB\n3 3 b) u e o et v e o .\n-1 0\nMontrer que [AB] et [MN] ont le même 1 m- 2\nm+ 2 -1 .\n4 Soit ABC un triangle et E le point défini\n9 Le plan est muni d’un repère cartésien\npar 3EA + EB = 0 3\n1 _O , i , j i. On considère les points A c- 2 , m ;\na) Montrer que EA = AB , puis 4\n4 B(0 , -1) et C(3, 4).\nconstruire E. Déterminer les coordonnées du point D tel\nb) Construire F tel que EF = BC\n4 que ABCD soit un parallélogramme.\nc) Montrer que A, C, et F sont alignés.\n5 Quatre points A, B, C et D sont tels que\n10 Le plan est muni d’un repère cartésien\n_O , i , j i.\n5AD = 3AB + 2AC\nDans chacun des cas ci-dessous, déterminer\nMontrer que B, C et D sont alignés. un réel a, pour que les points A, B et C soient\nalignés.\n6 Soit ABC un triangle. a) A(– 4 , 2) ; B(–3 , 5) et C(0 , a ).\nb) A(2a + 1 , 1) ; B(1 , 6) et C (–1, 2).\nExercices et problèmes\nExercices et problèmes\nMaîtriser\n2) Montrer que pour tout réel x, les vecteurs\n11 Soit ABCD un parallélogramme.\nMN et BC sont colinéaires\n3) Déterminer la valeur de x pour laquelle\n1) Placer les points E et F tels que\na) M = N.\n1 1\nAE = AC et CF = CA b) BCMN est un parallélogramme.\n3 3\n2) Montrer que (DE) et (BF) sont parallèles.\nDéterminer le sens de variations de h. 16 Soit ABC un triangle inscrit dans un cercle\nde centre O. On désigne par I et J les milieux\n12 Soit ABC un triangle.\nrespectifs de [AB] et [AC].\na) Construire les points M, N et I définis 1) Soit H le point tel que\npar : AM = AB + AC ; OH = OA + OB + OC .\na) Montrer que CH = 2OI et que\nAN = 2AC - AB et NI = 3AC .\nBH = 2OJ .\nb) Quelle est la nature du quadrilatère AMIN?\nb) Montrer alors que H est l’orthocentre du\ntriangle ABC.\n2) Soit G le centre de gravité du triangle ABC.\n13 Soient ABCD un parallélogramme et M\nun point du plan qui n’appartient ni à (AC) ni a) Montrer que 3OG = OA + OB + OC .\nà (AD). b) Déduire que O, G et H sont alignés.\nMontrer que les triangles ACM et BDM ont le\nmême centre de gravité. 17 Soient ABC un triangle, I le milieu de\n[AB] et J celui de [AC].\n14 Soient ABC un triangle et α un réel. Déterminer l’ensemble des points M du plan\nSoient I, J et K les points tels que : dans chacun des cas suivants :\n→ → → → → →\nAI = αAB , BJ = αBC et CK = αCA.\na) MA + MB = MA + MC .\nMontrer que les triangles ABC et IJK ont le b) MA + MC = BC\nmême centre de gravité.\n18 Soit ABC un triangle. On considère les\n15 Soit ABC un triangle, à tout réel x on\nvecteurs u et v définis par 2AB + AC\nassocie les points M et N tels que → →\net v = - AB + 3 AC\nAM = AB + xAC\nMontrer que (u , v) est une base de l’ensemble\net AN = xAB + AC .\ndes vecteurs du plan.\n1) Faire une figure lorsque x = – 1.\nM a t h e t cMath ure\nu lettculture\nLes poètes chantent la beauté mathématique\nNombre d’écrivains ont écrit sur les mathématiques, de la loi sur la gravitation d’Edgar\nPoe au calcul des probabilités chez Dostoïevski. Certains se sont servis d’outils mathématiques\npour étayer des résolutions d’énigmes comme Conan Doyle ou Ellery Queen, se fixer des\ncontraintes poétiques comme Raymond Queneau ( Cent mille milliards de poèmes) ou même\nfaire reposer entièrement la composition d’un livre dessus, comme Georges Perec qui utilise\nun carré gréco latin d’ordre 10 pour construire sa Vie mode d’emploi (Prix Médicis 1978).\nD’autres enfin ont véritablement chanté, de diverses façons, la gloire des mathématiques.\nEugène Guillevic (1907-1997) dans ses Euclidiennes (Gallimard, 1967) joue avec un\nlangage poétique lié aux nombres, à la forme ou à l’humain, à tel point que l’on a pu parler à\npropos du poète de géométrie obsessionnelle tel ce monologue de triangle\nJe suis ce qu’il y a\nDe plus élémentaire\nEt malgré ce côté\nDe hasard qui m’affecte,\nDe plus indispensable\nÀ l’organisation.\nOu encore ce parallélogramme qui révèle l’anxiété latente du poète\nOn pourrait m’aplatir,\nAussi me redresser.\nJe n’ai pas d’idées fixes.\nQue de viennent aigus\nMes deux angles obtus\nJe ne tremblerai pas\nMais s’ il faut me passer,\nUn instant de raison,\nEn forme de rectangle,\nAlors, j’ai peur,\nCar un rectangle c’est autre chose...\nD’après le magazine « Tangente n° 92 »\n\nÀ calculer dans l'application : A(0 ; 0), B(3 ; 4).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 45 (« Activité 45 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xA",
+        "label": "x_A",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yA",
+        "label": "y_A",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "xB",
+        "label": "x_B",
+        "unit": "—",
+        "value": 3,
+        "min": 1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yB",
+        "label": "y_B",
+        "unit": "—",
+        "value": 4,
+        "min": 1,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 45 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "x",
+        "label": "x de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "y",
+        "label": "y de AB⃗",
+        "unit": "—"
+      },
+      {
+        "key": "nrm",
+        "label": "|AB⃗|",
+        "unit": "—"
+      }
     ]
   }
 ]

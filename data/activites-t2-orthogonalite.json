@@ -5,24 +5,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 1,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 1",
     "difficulty": 1,
-    "statement": "Activité 1\nDans la figure suivante ABCDEFGH est un cube .\n1 a) Nommer deux droites du plan (ABC) qui sont perpendiculaires.\nb) Nommer deux droites du plan (ADE) qui sont perpendiculaires.\n2) a) Quelle est la droite passant par C et parallèle à la droite (AE) ?\nb) Quelle est la droite passant par C et parallèle à la droite (GH) ?\nc) Quelle est la droite passant par H et parallèle à la droite (AE) ?\n3) a) Justifier que les droites (CG) et (CD) sont perpendiculaires.\nb) Justifier que les droites (HG) et (HD) sont perpendiculaires.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 1\nDans la figure suivante ABCDEFGH est un cube .\n1 a) Nommer deux droites du plan (ABC) qui sont perpendiculaires.\nb) Nommer deux droites du plan (ADE) qui sont perpendiculaires.\n2) a) Quelle est la droite passant par C et parallèle à la droite (AE) ?\nb) Quelle est la droite passant par C et parallèle à la droite (GH) ?\nc) Quelle est la droite passant par H et parallèle à la droite (AE) ?\n3) a) Justifier que les droites (CG) et (CD) sont perpendiculaires.\nb) Justifier que les droites (HG) et (HD) sont perpendiculaires.\n\nÀ calculer dans l'application : u⃗(3 ; 4) et v⃗(4 ; −3).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 1 (« Activité 1 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": -3,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 1 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -31,24 +61,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 2,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 2",
     "difficulty": 1,
-    "statement": "Activité 2\nDéduire de la définition précédente les propriétés suivantes\nPr\nopriété 13 : Si deux droites de l’espace sont orthogonales alors toute\ndroite parallèle à l’une est orthogonale à l’autre.\nPr\nopriété 14 :Si deux droites de l’espace sont parallèles toute droite\northogonale à l’une est orthogonale à l’autre.\nPropriété 15 : Si D et Δ sont deux droites orthogonales et si D’\net Δ’ sont deux droites parallèles respectivement à D et Δ ,\nalors D’ et Δ’ sont orthogonales .",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 2\nDéduire de la définition précédente les propriétés suivantes\nPr\nopriété 13 : Si deux droites de l’espace sont orthogonales alors toute\ndroite parallèle à l’une est orthogonale à l’autre.\nPr\nopriété 14 :Si deux droites de l’espace sont parallèles toute droite\northogonale à l’une est orthogonale à l’autre.\nPropriété 15 : Si D et Δ sont deux droites orthogonales et si D’\net Δ’ sont deux droites parallèles respectivement à D et Δ ,\nalors D’ et Δ’ sont orthogonales .\n\nÀ calculer dans l'application : u⃗(1 ; 2) et v⃗(−2 ; 1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 2 (« Activité 2 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 2 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -57,24 +117,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 3,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 3",
     "difficulty": 1,
-    "statement": "Activité 3\nDans la figure ci-contre ABCDEFG est un parallélépipède rectangle.\n1) Montrer que les droites (EA) et (BC) sont orthogonales.\n2) Montrer que les droites (HA) et (FC) sont orthogonales\n3) Nommer deux droites orthogonales à (AC).\n4) Nommer deux droites sécantes orthogonales à la droite (EF).",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 3\nDans la figure ci-contre ABCDEFG est un parallélépipède rectangle.\n1) Montrer que les droites (EA) et (BC) sont orthogonales.\n2) Montrer que les droites (HA) et (FC) sont orthogonales\n3) Nommer deux droites orthogonales à (AC).\n4) Nommer deux droites sécantes orthogonales à la droite (EF).\n\nÀ calculer dans l'application : u⃗(5 ; 0) et v⃗(0 ; 3).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 3 (« Activité 3 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 5,
+        "min": -5,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 0,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 0,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 3 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -83,24 +173,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 4,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 4",
     "difficulty": 1,
-    "statement": "Activité 4\nSoit OAB un triangle rectangle en O et M un point n’appartenant pas au plan (OAB).\nOn dit que deux droites de l’espace sont orthogonales si leurs parallèles menées par un même\npoint sont deux droites perpendiculaires.\nDéfinition\nD\nΔ\nD’\nΔ’\nA B\nC D\nE F\nG H\nSoit A’ le point tel que OAA’M soit un parallélogramme\net B’ le point tel que OBB’M soit un parallélogramme.\n1) Montrer que les plans (OAB) et ( M A’B’) sont parallèles.\n2) Montrer que ABB’A’ est un parallélogramme.\n3) Montrer que le triangle A’MB’ est un triangle rectangle.\n4) Déduire de ce qui précède que\na) les droites (OA) et (MB’) sont orthogonales.\nb) les droites (OB) et (MA’) sont orthogonales.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 4\nSoit OAB un triangle rectangle en O et M un point n’appartenant pas au plan (OAB).\nOn dit que deux droites de l’espace sont orthogonales si leurs parallèles menées par un même\npoint sont deux droites perpendiculaires.\nDéfinition\nD\nΔ\nD’\nΔ’\nA B\nC D\nE F\nG H\nSoit A’ le point tel que OAA’M soit un parallélogramme\net B’ le point tel que OBB’M soit un parallélogramme.\n1) Montrer que les plans (OAB) et ( M A’B’) sont parallèles.\n2) Montrer que ABB’A’ est un parallélogramme.\n3) Montrer que le triangle A’MB’ est un triangle rectangle.\n4) Déduire de ce qui précède que\na) les droites (OA) et (MB’) sont orthogonales.\nb) les droites (OB) et (MA’) sont orthogonales.\n\nÀ calculer dans l'application : u⃗(2 ; −1) et v⃗(3 ; 6).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 4 (« Activité 4 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": -1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 6,
+        "min": -5,
+        "max": 8,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 4 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -109,24 +229,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 5,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 5",
     "difficulty": 1,
-    "statement": "Activité 5\nSoit ABCD un tétraèdre tel que les droites (AB) et (CD) soient orthogonales et soit M un point\nde l’arête [BC].\nLe plan contenant le point M et parallèle aux droites (AB) et (CD) coupe [BD] en N ,[AD] en\nP et [AC] en Q .\n1) Faire une figure\n2) a) Montrer que les droites (MQ) et (AB) sont parallèles\nb)Que peut-on dire des droites ( MN) et (CD) ?\n3) Montrer que le triangle QMN est rectangle en M.\n4) Montrer que le quadrilatère MNPQ est un rectangle.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 5\nSoit ABCD un tétraèdre tel que les droites (AB) et (CD) soient orthogonales et soit M un point\nde l’arête [BC].\nLe plan contenant le point M et parallèle aux droites (AB) et (CD) coupe [BD] en N ,[AD] en\nP et [AC] en Q .\n1) Faire une figure\n2) a) Montrer que les droites (MQ) et (AB) sont parallèles\nb)Que peut-on dire des droites ( MN) et (CD) ?\n3) Montrer que le triangle QMN est rectangle en M.\n4) Montrer que le quadrilatère MNPQ est un rectangle.\n\nÀ calculer dans l'application : u⃗(1 ; 1) et v⃗(1 ; −1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 5 (« Activité 5 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": -1,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 5 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -135,24 +285,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 6,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 6",
     "difficulty": 1,
-    "statement": "Activité 6\nOn considère un cube ABCDEFGH d’arête a et on désigne par I et J les milieux respectifs de\n[FB] et [CD].\nOn se propose de démontrer que les droites (BE) et (IJ) sont orthogonales.\n1) Faire une figure\n2) Soit K le milieu de [BE].\na) Prouver que les droites (KI) et (DJ) sont parallèles et que KI = DJ.\nb) En déduire que les droites (KD) et (IJ) sont parallèles.\n3) a) Montrer que le triangle EDB est équilatéral.\nb) En déduire que (DK) et (EB) sont perpendiculaires..\n4) Montrer que les droites (IJ) et (BE) sont orthogonales.\nDroites et plans orthogonaux",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 6\nOn considère un cube ABCDEFGH d’arête a et on désigne par I et J les milieux respectifs de\n[FB] et [CD].\nOn se propose de démontrer que les droites (BE) et (IJ) sont orthogonales.\n1) Faire une figure\n2) Soit K le milieu de [BE].\na) Prouver que les droites (KI) et (DJ) sont parallèles et que KI = DJ.\nb) En déduire que les droites (KD) et (IJ) sont parallèles.\n3) a) Montrer que le triangle EDB est équilatéral.\nb) En déduire que (DK) et (EB) sont perpendiculaires..\n4) Montrer que les droites (IJ) et (BE) sont orthogonales.\nDroites et plans orthogonaux\n\nÀ calculer dans l'application : u⃗(6 ; 8) et v⃗(4 ; −3).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 6 (« Activité 6 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 6,
+        "min": -5,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 8,
+        "min": -5,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": -3,
+        "min": -6,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 6 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -161,24 +341,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 7,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 7",
     "difficulty": 1,
-    "statement": "Activité 7\nDans la figure ci-contre ABCDEFGH est un cube d’arête 8.\n'\n'\n1) Justifier que la droite (HD) est orthogonale à la droite ( AD) et à la droite (CD)\nDans ce qui suit on se propose de démontrer que la droite (HD) est\northogonale à toute droite du plan (ABC)\n2) Soit L le milieu de [AC].\na) Calculer DL.\nb) Montrer que le triangle AHC est équilatéral .Calculer HL.\nc) Montrer que la droite (HD) est orthogonale à la droite (DL)\n[On pourra montrer que le triangle HDL est rectangle en D].\n3)En procédant comme à la 2\nème question on montre de même que la droite (CG) est\northogonale à la droite (AC).\nDéduire alors que\na) les droites (HD) et (AC) sont orthogonales.\nb) les droites (CG) et (DB) sont orthogonales.\n(on pourra utiliser la définition de deux droites orthogonales )\nRemarque\nOn admet la propriété suivante.\nPr\nopriété 16 : Si une droite est perpendiculaire à un plan , alors elle est orthogonale à toute\ndroite de ce plan",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 7\nDans la figure ci-contre ABCDEFGH est un cube d’arête 8.\n'\n'\n1) Justifier que la droite (HD) est orthogonale à la droite ( AD) et à la droite (CD)\nDans ce qui suit on se propose de démontrer que la droite (HD) est\northogonale à toute droite du plan (ABC)\n2) Soit L le milieu de [AC].\na) Calculer DL.\nb) Montrer que le triangle AHC est équilatéral .Calculer HL.\nc) Montrer que la droite (HD) est orthogonale à la droite (DL)\n[On pourra montrer que le triangle HDL est rectangle en D].\n3)En procédant comme à la 2\nème question on montre de même que la droite (CG) est\northogonale à la droite (AC).\nDéduire alors que\na) les droites (HD) et (AC) sont orthogonales.\nb) les droites (CG) et (DB) sont orthogonales.\n(on pourra utiliser la définition de deux droites orthogonales )\nRemarque\nOn admet la propriété suivante.\nPr\nopriété 16 : Si une droite est perpendiculaire à un plan , alors elle est orthogonale à toute\ndroite de ce plan\n\nÀ calculer dans l'application : u⃗(−3 ; 4) et v⃗(4 ; 3).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 7 (« Activité 7 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": -3,
+        "min": -6,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 7 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -187,24 +397,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 8,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 8",
     "difficulty": 1,
-    "statement": "Activité 8\nDans cette activité On se propose de montrer que deux arêtes opposées d’un tétraèdre régulier\nsont orthogonales .\nSoit ABCD un tétraèdre régulier (toutes les arêtes ont la même longueur). On désigne par I le\n1) a) Montrer que la droite (CD)est orthogonale à un plan contenant la droite (AB) que l’on\ndéterminera.\nb) En déduire que les droites (CD) et (AB ) sont orthogonales.\n2) Montrer que (AD) est orthogonale à (BC) et que (AC) est orthogonale à (BD).\nOn dit qu’une droite est perpendiculaire à un plan\nsi et seulement si elle est orthogonale à deux droites sécantes\nde ce plan.\nDéfinition\nActivité9\nDémontrer la propriété suivante\nPropriété 17 : a) Si deux droites sont parallèles tout plan\nperpendiculaire à l’une est perpendiculaire à l’autre.\nb) Si deux plans sont parallèles toute droite\nperpendiculaire à l’un est perpendiculaire à l’autre.\nActivité10 Tétraèdre trirectangle\nOn considère un tétraèdre ABCD tels que les trois faces ABC, ABD et ACD soit des triangles\nrectangles en A .On donne AB =3, AD = 4 et AC = 6.\n1) Calculer le volume de ce tétraèdre.\n2) Calculer BC et en déduire sin\n3) Dans le triangle ABC on désigne par H le pied de la hauteur issue de A .\na) Calculer AH et CH.\nb) Quelle est la nature du triangle DAH ?\nc) Calculer DH\n4) Montrer que HDC est un triangle rectangle en H\n5) Calculer l’aire du triangle BDC.\n6) Déduire de ce qui précède la longueur de la hauteur du tétraèdre issue de A.\nRemarque\nOn admet la propriété suivante\nPropriété 18 :a) Par un point donné il passe une droite et une seule perpendiculaire à un plan\ndonné.\nb) Par un point donné il passe un plan et un seul perpendiculaire à une droite\ndonnée.\nc) Si une droite D est orthogonale à un plan P\nalors toute droite orthogonale à la droite D et\npassant par un point du plan P est contenue dans\nce plan.\nActivité11\nSoit ABC un triangle et soit H son orthocentre.\nOn désigne par Δ la droite passant par H et perpendiculaire\nD\nP\n.ABC%\nau plan (ABC) et par M un point de Δ distinct de H.\nMontrer que\na) la droite (AB) est perpendiculaire au plan (MCH).\nb) la droite (CB) est perpendiculaire au plan (MAH).\nc) la droite (AC) est perpendiculaire au plan (MBH).\nEn déduire que les arêtes opposées du tétraèdre MABC sont\ndeux à deux orthogonales\nActivité12\nMontrer la propriété suivante .\nPr\nopriété 19 : a) Deux droites perpendiculaires à un même plan\nsont parallèles.\nb) Deux plans perpendiculaires à une même droite\nsont parallèles\nIndication : Ces résultats découlent immédiatement de la propriété 18\nActivité13 Théorème des trois perpendiculaires\nSoit Δ une droite perpendiculaire à un plan P.\nOn note A le point commun à Δ et à P.\nSoit D une droite du plan P ne passant pas par A.\nOn désigne par H le projeté le projeté orthogonal du\npoint A sur la droite D.\nSoit M un point de Δ. Distinct de A\na) Montrer que la droite D est perpendiculaire\nau plan (AHM).\nb) En déduire que les droites (MH) et D sont orthogonales.\nActivité14\nOn considère une pyramide SABCD de sommet S et de base un carrée ABCD de centre O\nToutes les arêtes ont pour longueur 6.\n1) Démontrer que les triangles SBD et SAC sont isocèles et rectangles.\n2) Montrer que la droite (SO) est orthogonale au plan (ABC).\n3)Soit S’ le symétrique de S par rapport à O.\nM Δ\nA\nH\nD\nP\nA\nB\nC\nΔ\nΜ\nΗ\na) Calculer le volume de la pyramide SABCD.\nb) En déduire le volume de SABCDS’.\nPlan médiateur d’un segment\nActivité15\nSoit [AB] un segment .On se propose dans cette activité de déterminer l’ensemble E des points\nM de l’espace équidistants de A et B .\nSoit I le milieu de [AB] .\n1) Justifier que I est un point de l’ensemble E.\n2) Soit M un point de l’ensemble E distinct du point I.\na) Dans le plan (MAB) ,que représente la droite (MI) pour le segment [AB] ?\nb) Soit P le plan perpendiculaire à la droite (AB) en I .\nMontrer que tout point de l’ensemble E appartient au plan P\n3) Soit N un point du plan P distinct de I\na) Que représente, dans le plan (NAB) , la droite (NI) pour le segment [AB] ?\nb) En déduire que tout point du plan P appartient à l’ensemble E .\nActivité16\nSoit un tétraèdre ABCD tel que la droite (AB) est orthogonale au plan (BCD).\nOn désigne par I, J et K les milieux respectifs des arêtes [AB] ,[AC] et [AD].\na) Faire une figure\nb) Démontrer que le plan médiateur du segment [AB] est le plan (IJK).\nOn appelle plan médiateur d’un segment le plan perpendiculaire\nà ce segment en son milieu..\nDéfinition\nΑ\nΒ\nΙ\nL’ensemble des points équidistants des extrémités d’un segment est le plan médiateur de ce\nsegment.\nThéorème:\nActivité17\nSoit ABCD un tétraèdre régulier.\na) Déterminer le plan médiateur de l’arête [BC] .\nb) Déterminer le plan médiateur de chacune des autres arêtes .\nActivité18\nOn considère un cube ABCDEFGH d’arête a.\n1) Quelle est la nature du triangle BDG ? Placer le centre de gravité I de ce triangle.\n2) Justifier que les points E, C et I appartiennent au plan médiateur du segment [BG]\n3) Justifier que les points E, C et I appartiennent au plan médiateur du segment [DG]\n4) Déduire des questions précédentes que les points E, C et I sont alignés et que la\ndroite (EC) est orthogonale au plan (BDG) .\nAxe d’un cercle\nActivité19\nSoit C un cercle de centre O et de rayon r.\nOn se propose de déterminer l’ensemble E des points de l’espace\nqui sont équidistants de tous les points du cercle C.\n1)Justifier que le centre O du cercle appartient à l’ensemble E.\n2)Soit M un point de l’ensemble E distinct de O et soit I, J et K\ntrois points distincts du cercle C\na) Justifier que M appartient au plan médiateur P du segment [IJ].\nb) Justifier que M appartient au plan médiateur Q du segment [JK].\nc) On désigne par D la droite passant par O et perpendiculaire au plan (IJK).\nMontrer que P ∩ Q = D et que le point M appartient à la droite D\n3) Soit N un point de la droite D distinct de O. et soit A un point\nquelconque du cercle C.\nOn pose ON = d\na) Exprimer AN en fonction de r et d .\nb) En déduire que pour tout point A du cercle C la distance AN est\nconstante\nc) Conclure.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 8\nDans cette activité On se propose de montrer que deux arêtes opposées d’un tétraèdre régulier\nsont orthogonales .\nSoit ABCD un tétraèdre régulier (toutes les arêtes ont la même longueur). On désigne par I le\n1) a) Montrer que la droite (CD)est orthogonale à un plan contenant la droite (AB) que l’on\ndéterminera.\nb) En déduire que les droites (CD) et (AB ) sont orthogonales.\n2) Montrer que (AD) est orthogonale à (BC) et que (AC) est orthogonale à (BD).\nOn dit qu’une droite est perpendiculaire à un plan\nsi et seulement si elle est orthogonale à deux droites sécantes\nde ce plan.\nDéfinition\nActivité9\nDémontrer la propriété suivante\nPropriété 17 : a) Si deux droites sont parallèles tout plan\nperpendiculaire à l’une est perpendiculaire à l’autre.\nb) Si deux plans sont parallèles toute droite\nperpendiculaire à l’un est perpendiculaire à l’autre.\nActivité10 Tétraèdre trirectangle\nOn considère un tétraèdre ABCD tels que les trois faces ABC, ABD et ACD soit des triangles\nrectangles en A .On donne AB =3, AD = 4 et AC = 6.\n1) Calculer le volume de ce tétraèdre.\n2) Calculer BC et en déduire sin\n3) Dans le triangle ABC on désigne par H le pied de la hauteur issue de A .\na) Calculer AH et CH.\nb) Quelle est la nature du triangle DAH ?\nc) Calculer DH\n4) Montrer que HDC est un triangle rectangle en H\n5) Calculer l’aire du triangle BDC.\n6) Déduire de ce qui précède la longueur de la hauteur du tétraèdre issue de A.\nRemarque\nOn admet la propriété suivante\nPropriété 18 :a) Par un point donné il passe une droite et une seule perpendiculaire à un plan\ndonné.\nb) Par un point donné il passe un plan et un seul perpendiculaire à une droite\ndonnée.\nc) Si une droite D est orthogonale à un plan P\nalors toute droite orthogonale à la droite D et\npassant par un point du plan P est contenue dans\nce plan.\nActivité11\nSoit ABC un triangle et soit H son orthocentre.\nOn désigne par Δ la droite passant par H et perpendiculaire\nD\nP\n.ABC%\nau plan (ABC) et par M un point de Δ distinct de H.\nMontrer que\na) la droite (AB) est perpendiculaire au plan (MCH).\nb) la droite (CB) est perpendiculaire au plan (MAH).\nc) la droite (AC) est perpendiculaire au plan (MBH).\nEn déduire que les arêtes opposées du tétraèdre MABC sont\ndeux à deux orthogonales\nActivité12\nMontrer la propriété suivante .\nPr\nopriété 19 : a) Deux droites perpendiculaires à un même plan\nsont parallèles.\nb) Deux plans perpendiculaires à une même droite\nsont parallèles\nIndication : Ces résultats découlent immédiatement de la propriété 18\nActivité13 Théorème des trois perpendiculaires\nSoit Δ une droite perpendiculaire à un plan P.\nOn note A le point commun à Δ et à P.\nSoit D une droite du plan P ne passant pas par A.\nOn désigne par H le projeté le projeté orthogonal du\npoint A sur la droite D.\nSoit M un point de Δ. Distinct de A\na) Montrer que la droite D est perpendiculaire\nau plan (AHM).\nb) En déduire que les droites (MH) et D sont orthogonales.\nActivité14\nOn considère une pyramide SABCD de sommet S et de base un carrée ABCD de centre O\nToutes les arêtes ont pour longueur 6.\n1) Démontrer que les triangles SBD et SAC sont isocèles et rectangles.\n2) Montrer que la droite (SO) est orthogonale au plan (ABC).\n3)Soit S’ le symétrique de S par rapport à O.\nM Δ\nA\nH\nD\nP\nA\nB\nC\nΔ\nΜ\nΗ\na) Calculer le volume de la pyramide SABCD.\nb) En déduire le volume de SABCDS’.\nPlan médiateur d’un segment\nActivité15\nSoit [AB] un segment .On se propose dans cette activité de déterminer l’ensemble E des points\nM de l’espace équidistants de A et B .\nSoit I le milieu de [AB] .\n1) Justifier que I est un point de l’ensemble E.\n2) Soit M un point de l’ensemble E distinct du point I.\na) Dans le plan (MAB) ,que représente la droite (MI) pour le segment [AB] ?\nb) Soit P le plan perpendiculaire à la droite (AB) en I .\nMontrer que tout point de l’ensemble E appartient au plan P\n3) Soit N un point du plan P distinct de I\na) Que représente, dans le plan (NAB) , la droite (NI) pour le segment [AB] ?\nb) En déduire que tout point du plan P appartient à l’ensemble E .\nActivité16\nSoit un tétraèdre ABCD tel que la droite (AB) est orthogonale au plan (BCD).\nOn désigne par I, J et K les milieux respectifs des arêtes [AB] ,[AC] et [AD].\na) Faire une figure\nb) Démontrer que le plan médiateur du segment [AB] est le plan (IJK).\nOn appelle plan médiateur d’un segment le plan perpendiculaire\nà ce segment en son milieu..\nDéfinition\nΑ\nΒ\nΙ\nL’ensemble des points équidistants des extrémités d’un segment est le plan médiateur de ce\nsegment.\nThéorème:\nActivité17\nSoit ABCD un tétraèdre régulier.\na) Déterminer le plan médiateur de l’arête [BC] .\nb) Déterminer le plan médiateur de chacune des autres arêtes .\nActivité18\nOn considère un cube ABCDEFGH d’arête a.\n1) Quelle est la nature du triangle BDG ? Placer le centre de gravité I de ce triangle.\n2) Justifier que les points E, C et I appartiennent au plan médiateur du segment [BG]\n3) Justifier que les points E, C et I appartiennent au plan médiateur du segment [DG]\n4) Déduire des questions précédentes que les points E, C et I sont alignés et que la\ndroite (EC) est orthogonale au plan (BDG) .\nAxe d’un cercle\nActivité19\nSoit C un cercle de centre O et de rayon r.\nOn se propose de déterminer l’ensemble E des points de l’espace\nqui sont équidistants de tous les points du cercle C.\n1)Justifier que le centre O du cercle appartient à l’ensemble E.\n2)Soit M un point de l’ensemble E distinct de O et soit I, J et K\ntrois points distincts du cercle C\na) Justifier que M appartient au plan médiateur P du segment [IJ].\nb) Justifier que M appartient au plan médiateur Q du segment [JK].\nc) On désigne par D la droite passant par O et perpendiculaire au plan (IJK).\nMontrer que P ∩ Q = D et que le point M appartient à la droite D\n3) Soit N un point de la droite D distinct de O. et soit A un point\nquelconque du cercle C.\nOn pose ON = d\na) Exprimer AN en fonction de r et d .\nb) En déduire que pour tout point A du cercle C la distance AN est\nconstante\nc) Conclure.\n\nÀ calculer dans l'application : u⃗(2 ; 2) et v⃗(−1 ; 1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 8 (« Activité 8 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": -1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 8 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -213,24 +453,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 20,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 20 Sphère circonscrite à un tétraèdre",
     "difficulty": 2,
-    "statement": "Activité 20 Sphère circonscrite à un tétraèdre\nSoit ABCD un tétraèdre.\n1) a) Démontrer que les plans médiateurs de [BC] et [CD] sont sécants suivant une droite Δ\northogonale au plan (BCD).\nb) Soit I le point d’intersection de la droite Δ et du plan (BCD).\nMontrer que I est le centre du cercle circonscrit au triangle BCD.\n2) a) Démontrer que les plans médiateurs de [BC] et [AD] sont sécants suivant une droite Δ’\northogonale au plan (ABC).\nb) Montrer que les droites Δ et Δ’ sont sécantes. Soit O leur point d’intersection.\nc) Prouver que O est équidistant de A ,B ,C et D. En déduire que O appartient au plan\nmédiateur de chaque arête du tétraèdre.\nAinsi O est le centre d’une sphère contenant les 4 sommets A ,B ,C et D.\nCette sphère est appelée sphère circonscrite au tétraèdre ABCD.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 20 Sphère circonscrite à un tétraèdre\nSoit ABCD un tétraèdre.\n1) a) Démontrer que les plans médiateurs de [BC] et [CD] sont sécants suivant une droite Δ\northogonale au plan (BCD).\nb) Soit I le point d’intersection de la droite Δ et du plan (BCD).\nMontrer que I est le centre du cercle circonscrit au triangle BCD.\n2) a) Démontrer que les plans médiateurs de [BC] et [AD] sont sécants suivant une droite Δ’\northogonale au plan (ABC).\nb) Montrer que les droites Δ et Δ’ sont sécantes. Soit O leur point d’intersection.\nc) Prouver que O est équidistant de A ,B ,C et D. En déduire que O appartient au plan\nmédiateur de chaque arête du tétraèdre.\nAinsi O est le centre d’une sphère contenant les 4 sommets A ,B ,C et D.\nCette sphère est appelée sphère circonscrite au tétraèdre ABCD.\n\nÀ calculer dans l'application : u⃗(2 ; −1) et v⃗(3 ; 6).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 20 (« Activité 20 Sphère circonscrite à un tétraèdre ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": -1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 6,
+        "min": -5,
+        "max": 8,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 20 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -239,24 +509,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 21,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 21",
     "difficulty": 2,
-    "statement": "Activité 21\nSoit ABCD un tétraèdre tels que les droites (AB) et (CD) d’une part et les droites (BC) et (AD)\nd’autre part soient orthogonales.\nLa droite passant par A et perpendiculaire au plan (BCD) perce ce dernier en un point qu’on\nnote K. (Le point K est appelé projeté orthogonal du point A sur le plan (BCD) )\n1) Démontrer que la droite (CD) est orthogonale au plan (ABK). En déduire que (BK) est une\nhauteur du triangle BCD.\n2) Démontrer que (DK) est une hauteur de BCD. Que représente K pour le triangle BCD?\n3) Démontrer que (BD) est orthogonale au plan (ACK). En déduire que les droites ( AC) et\n(BD) sont orthogonales.\nOn appelle axe d’un cercle la droite passant par le centre de ce cercle et perpendiculaire à son\nplan.\nDéfinition\nL’ensemble des points équidistants de tous les points d’un cercle est l’axe de ce cercle .\nThéoréme\nPlans perpendiculaires",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 21\nSoit ABCD un tétraèdre tels que les droites (AB) et (CD) d’une part et les droites (BC) et (AD)\nd’autre part soient orthogonales.\nLa droite passant par A et perpendiculaire au plan (BCD) perce ce dernier en un point qu’on\nnote K. (Le point K est appelé projeté orthogonal du point A sur le plan (BCD) )\n1) Démontrer que la droite (CD) est orthogonale au plan (ABK). En déduire que (BK) est une\nhauteur du triangle BCD.\n2) Démontrer que (DK) est une hauteur de BCD. Que représente K pour le triangle BCD?\n3) Démontrer que (BD) est orthogonale au plan (ACK). En déduire que les droites ( AC) et\n(BD) sont orthogonales.\nOn appelle axe d’un cercle la droite passant par le centre de ce cercle et perpendiculaire à son\nplan.\nDéfinition\nL’ensemble des points équidistants de tous les points d’un cercle est l’axe de ce cercle .\nThéoréme\nPlans perpendiculaires\n\nÀ calculer dans l'application : u⃗(1 ; 1) et v⃗(1 ; −1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 21 (« Activité 21 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": -1,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 21 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -265,24 +565,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 22,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 22",
     "difficulty": 2,
-    "statement": "Activité 22\nDans la figure ci-contre ABCDEFGH est un parallélépipède rectangle.\na) Nommer une droite du plan (ABC) qui est orthogonale\nau plan (BCG). Justifier\nb) Nommer une droite du plan (BCG) qui est orthogonale\nau plan (ABC). Justifier\nc) Existe-t-il une droite du plan (ACGE) qui est orthogonale\nau plan (ADHE). Justifier\nd) Existe-t-il une droite du plan (BDHF) qui est orthogonale\nau plan (ACGE). Justifier",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 22\nDans la figure ci-contre ABCDEFGH est un parallélépipède rectangle.\na) Nommer une droite du plan (ABC) qui est orthogonale\nau plan (BCG). Justifier\nb) Nommer une droite du plan (BCG) qui est orthogonale\nau plan (ABC). Justifier\nc) Existe-t-il une droite du plan (ACGE) qui est orthogonale\nau plan (ADHE). Justifier\nd) Existe-t-il une droite du plan (BDHF) qui est orthogonale\nau plan (ACGE). Justifier\n\nÀ calculer dans l'application : u⃗(6 ; 8) et v⃗(4 ; −3).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 22 (« Activité 22 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 6,
+        "min": -5,
+        "max": 8,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 8,
+        "min": -5,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": -3,
+        "min": -6,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 22 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -291,24 +621,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 23,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 23",
     "difficulty": 3,
-    "statement": "Activité 23\nDémontrer les trois propriétés suivantes\nPr\noriéte 20 : Si D est la droite d’intersection de deux plans perpendiculaires, alors toute\ndroite D’contenue dans l’un de ces deux plans et perpendiculaire à la droite d’intersection D\nest orthogonale à l’autre ( Fig1)\nPr\nopriété 21 :Si deux plans sont parallèles, alors tout plan perpendiculaire à l’un est\nperpendiculaire à l’autre ( Fig2)\nPr\nopriété 22 : Si deux plans sécants P et Q sont perpendiculaires à un même plan R alors\nleur droite d’intersection D est orthogonale au plan R (fig3)\nOn dit que deux plans sont perpendiculaires lorsque l’un contient une droite orthogonale à\nl’autre.\nDéfinition\nA B\nC D\nE F\nG H\nFig1 Fig2 Fig3\nD\nP Q\nR\nD\nD’",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 23\nDémontrer les trois propriétés suivantes\nPr\noriéte 20 : Si D est la droite d’intersection de deux plans perpendiculaires, alors toute\ndroite D’contenue dans l’un de ces deux plans et perpendiculaire à la droite d’intersection D\nest orthogonale à l’autre ( Fig1)\nPr\nopriété 21 :Si deux plans sont parallèles, alors tout plan perpendiculaire à l’un est\nperpendiculaire à l’autre ( Fig2)\nPr\nopriété 22 : Si deux plans sécants P et Q sont perpendiculaires à un même plan R alors\nleur droite d’intersection D est orthogonale au plan R (fig3)\nOn dit que deux plans sont perpendiculaires lorsque l’un contient une droite orthogonale à\nl’autre.\nDéfinition\nA B\nC D\nE F\nG H\nFig1 Fig2 Fig3\nD\nP Q\nR\nD\nD’\n\nÀ calculer dans l'application : u⃗(−3 ; 4) et v⃗(4 ; 3).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 23 (« Activité 23 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": -3,
+        "min": -6,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 6,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 23 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -317,24 +677,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 24,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 24",
     "difficulty": 3,
-    "statement": "Activité 24\nSoit ABCDEFGH un cube .\n1) Nommer des plans perpendiculaires au plan (ABC). Justifier.\n2) Montrer que le plan (BDHF) est perpendiculaire au plan (ACGE).\n3 )Soit P un point de la face BCGF.\nOn suppose que les plans (ADHE) et (AHP) sont perpendiculaires.\nMontrer que les points P, B et G sont alignés.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 24\nSoit ABCDEFGH un cube .\n1) Nommer des plans perpendiculaires au plan (ABC). Justifier.\n2) Montrer que le plan (BDHF) est perpendiculaire au plan (ACGE).\n3 )Soit P un point de la face BCGF.\nOn suppose que les plans (ADHE) et (AHP) sont perpendiculaires.\nMontrer que les points P, B et G sont alignés.\n\nÀ calculer dans l'application : u⃗(2 ; 2) et v⃗(−1 ; 1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 24 (« Activité 24 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": -1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 24 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -343,24 +733,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 25,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 25",
     "difficulty": 3,
-    "statement": "Activité 25\nOn donne dans un plan P un cercle C de centre O et une droite D tangente à ce cercle en un\npoint A.\nOn désigne par D’ l’axe du cercle C et par B un point de D’ distinct de O.\n1) Faire une figure .\n2) Montrer que le plan passant par A et contenant la droite D’est perpendiculaire au plan\npassant par B et contenant la droite D.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 25\nOn donne dans un plan P un cercle C de centre O et une droite D tangente à ce cercle en un\npoint A.\nOn désigne par D’ l’axe du cercle C et par B un point de D’ distinct de O.\n1) Faire une figure .\n2) Montrer que le plan passant par A et contenant la droite D’est perpendiculaire au plan\npassant par B et contenant la droite D.\n\nÀ calculer dans l'application : u⃗(3 ; 4) et v⃗(4 ; −3).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 25 (« Activité 25 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 4,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": -3,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 25 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -369,24 +789,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 26,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 26",
     "difficulty": 3,
-    "statement": "Activité 26\nOn considère une pyramide SABCD dont la base ABCD est un carré de centre O et telle que\n(SO) soit l’axe du cercle circonscrit au carré ABCD.\n1) Faire une figure.\n2) Montrer que les plans (SAC) et (SBD) sont perpendiculaires.\n3) Soient I, J, K et L les milieux respectifs des côtés [AB], [BC], [CD] et [AD].\na) Montrer que les plans (SIK) et (SJL) sont perpendiculaires et préciser leur intersection\nb) Montrer que le plan (SIK) est perpendiculaire aux plans ( SAB) et (SDC).",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 26\nOn considère une pyramide SABCD dont la base ABCD est un carré de centre O et telle que\n(SO) soit l’axe du cercle circonscrit au carré ABCD.\n1) Faire une figure.\n2) Montrer que les plans (SAC) et (SBD) sont perpendiculaires.\n3) Soient I, J, K et L les milieux respectifs des côtés [AB], [BC], [CD] et [AD].\na) Montrer que les plans (SIK) et (SJL) sont perpendiculaires et préciser leur intersection\nb) Montrer que le plan (SIK) est perpendiculaire aux plans ( SAB) et (SDC).\n\nÀ calculer dans l'application : u⃗(1 ; 2) et v⃗(−2 ; 1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 26 (« Activité 26 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": -2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 26 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -395,24 +845,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 27,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 27",
     "difficulty": 3,
-    "statement": "Activité 27\nSoit ABCD un tétraèdre régulier (toutes les arêtes ont même longueur) d’arête 4. On désigne\npar I et J les milieux respectifs de[BC]et[AD] et par G le centre de gravité du triangle DBC.\n1) Montrer que le triangle DIA est isocèle .Calculer son périmètre.\n2) Calculer cos( ). En déduire, à l’aide de la calculatrice , une mesure de l’angle\narrondi au degré.\n3) a) Calculer sin et en déduire IJ .\nb) Calculer l’aire du triangle ABC.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 27\nSoit ABCD un tétraèdre régulier (toutes les arêtes ont même longueur) d’arête 4. On désigne\npar I et J les milieux respectifs de[BC]et[AD] et par G le centre de gravité du triangle DBC.\n1) Montrer que le triangle DIA est isocèle .Calculer son périmètre.\n2) Calculer cos( ). En déduire, à l’aide de la calculatrice , une mesure de l’angle\narrondi au degré.\n3) a) Calculer sin et en déduire IJ .\nb) Calculer l’aire du triangle ABC.\n\nÀ calculer dans l'application : u⃗(5 ; 0) et v⃗(0 ; 3).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 27 (« Activité 27 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 5,
+        "min": -5,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 0,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 0,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 27 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -421,24 +901,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 28,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 28",
     "difficulty": 3,
-    "statement": "Activité 28\nSoit SABC un tétraèdre tel que SA=12 et 60°.\nOn pose SB = x et SC = y\n1) Déterminer x et y pour que le tétraèdre SABC soit régulier.\n2) On suppose que x et y sont quelconques.\na)Montrer, en utilisant la formule d’El Kashi, que\nAB\n2 = x2 – 12 x + 144 et AC2 = y 2 – 12 y + 144 .\nb)En déduire que le triangle ABC est isocèle de sommet principal A si et seulement si\nx = y ou x + y = 12\n3) a) Montrer que BC 2 = x 2 + y 2 – x y.\nb) En déduire que le triangle ABC est rectangle en A si et seulement si\nx y – 12 (x + y) + 288 = 0\n4) On suppose que le triangle ABC est rectangle en A et que SB = 30. Calculer SC.\n5) On suppose que le triangle ABC est rectangle en B et que SC = 2.\na) Montrer que x\n2 – 7 x + 12 = 0.\nb) En déduire les valeurs de SB pour lesquelles le triangle ABC est rectangle en B.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 28\nSoit SABC un tétraèdre tel que SA=12 et 60°.\nOn pose SB = x et SC = y\n1) Déterminer x et y pour que le tétraèdre SABC soit régulier.\n2) On suppose que x et y sont quelconques.\na)Montrer, en utilisant la formule d’El Kashi, que\nAB\n2 = x2 – 12 x + 144 et AC2 = y 2 – 12 y + 144 .\nb)En déduire que le triangle ABC est isocèle de sommet principal A si et seulement si\nx = y ou x + y = 12\n3) a) Montrer que BC 2 = x 2 + y 2 – x y.\nb) En déduire que le triangle ABC est rectangle en A si et seulement si\nx y – 12 (x + y) + 288 = 0\n4) On suppose que le triangle ABC est rectangle en A et que SB = 30. Calculer SC.\n5) On suppose que le triangle ABC est rectangle en B et que SC = 2.\na) Montrer que x\n2 – 7 x + 12 = 0.\nb) En déduire les valeurs de SB pour lesquelles le triangle ABC est rectangle en B.\n\nÀ calculer dans l'application : u⃗(2 ; −1) et v⃗(3 ; 6).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 28 (« Activité 28 ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 2,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": -1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 3,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": 6,
+        "min": -5,
+        "max": 8,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 28 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -447,24 +957,54 @@
     "tome": 2,
     "kind": "activity",
     "activity": 29,
-    "solver": "fixed",
+    "solver": "dotOrtho",
     "title": "Activité 29 tétraèdre trirectangle",
     "difficulty": 3,
-    "statement": "Activité 29 tétraèdre trirectangle\n1)Soit OAB un triangle rectangle en O et soit H le pied de la hauteur issue de du point O.\nMontrer que\n2) Dans la figure ci-contre OABC est un tétraèdre trirectangle\n( Les triangles OAB, OAC et OBC sont rectangles en O )\nSoit H le projeté orthogonal du point O sur le plan (ABC)\na) Montrer que H est l’orthocentre du triangle ABC\nb) En déduire que\nIDA%IDA%\nIDA%\nASB ASC BSC===%%%\nOH OA OB\n11 1\n22 2=+\nOH OA OB OC\n11 1 1\n22 2 2=+ +\nPlan médiateur d'un segment\nOrthogonalité\n•Si deux droites sont orthogonales, alors toute\ndroite parallèle à l’une est orthogonale à\nl’autre.\n• Si deux droites sont parallèles, alors toute\ndroite orthogonale à l’une est orthogonale à\nl’autre.\n•Une droite est perpendiculaire à un plan si et\nseulement si elle est orthogonale à deux\ndroites sécantes de ce plan.\n• Si deux droites sont perpendiculaires à un\nmême plan alors elles sont parallèles.\n•Si deux droites sont parallèles alors tout plan\nperpendiculaire à l’une est perpendiculaire à\nl’autre.\n• Si deux plans sont parallèles alors toute\ndroite perpendiculaire à l’un est perpendiculaire\nà l’autre.\n• Si deux plans sont perpendiculaires à une\nmême droite alors ils sont parallèles.\n• Par un point A de l’espace passe un unique\nplan perpendiculaire à une droite donnée.\n• Par un point E de l’espace passe une seule\ndroite perpendiculaire à un plan donné.\n• Si deux droites sont orthogonales, alors tout\nplan perpendiculaire à l’une est parallèle à\nl’autre.\nP\nD\nA\nE\nL'ensemble des points équidistants des points\nA et B est le plan médiateur du segment [AB].\nPlans perpendiculaires\nAxe d'un cercle\nL'ensemble des points équidistants de tous les points d'un\ncercle est l'axe de ce cercle.\n• Si deux plans P et Q sont perpendiculaires,\nalors toute droite D perpendiculaire à Q menée\npar un point A de P est contenue dans P.\n• Si deux plans P et Q sont perpendiculaires\nsuivant une droite D, alors toute droite L de P\nperpendiculaire à D, est perpendiculaire Q.\n• Si deux plans sont perpendiculaires, toute\ndroite D’, perpendiculaire à l’un, est parallèle à\nl’autre.\nD’\nP\nQ\nD\nA\nΔ L\n•Si deux plans sont parallèles, alors tout plan\nperpendiculaire à l’un est perpendiculaire à\nl’autre.\n• Si un plan est perpendiculaire à deux plans\nsécants alors il est perpendiculaire à leur\ndroite d’intersection.\nP Q\nR\nD\nDévelopper ses compéDévelopper ses compétences\nABCDEFGH est un cube. Soit I le pied de la hauteur\nissue de A dans le triangle ABH.\n1) Montrer que (BH) est perpendiculaire au plan (AIC).\n2) a) Montrer que\nb) Déduire la nature du triangle AIC.\n3) On suppose que AB = a.\na) Calculer en fonction de a, AH, BH et AI.\nb) Donner la mesure en radian de l’angle\nIndications\n1) Il s’agit de montrer que (BH) est perpendiculaire à deux droites sécantes du plan (AIC).\n2) Remarquer que CI est une hauteur du triangle CBH.\n3) a) Faire intervenir des triangles rectangles.\nb) Faire intervenir K le milieu de [AC] et déterminer sin\nSection d’une sphère par un plan\nDans la figure ci contre, D est une droite du plan P, Δ est perpendiculaire à P en A, H est le\nprojeté orthogonal de A sur D.\nM et N sont deux points respectivement de D et Δ , et I est le milieu de [MN].\n1 ) Montrer que I appartient au plan médiateur de [AH].\n2 ) On suppose que M et N varient et que MN = 8.\nMontrer que I se déplace sur un cercle fixe.\nIndications\n1) Exploiter les triangles rectangles de la figure.\n2) Penser à la section d'une sphère de centre A par un plan.\nSABC est un tétraèdre régulier d'arête a. On note H le projeté orthogonale de S sur (ABC).\n1) Calculer en fonction de a :\na) la hauteur SH.\nb) l'aire du triangle ABC et l'aire totale du tétraèdre.\nc) le volume du tétraèdre.\n2) Un cube d'arête x a une aire égale à celle du tétraèdre, quel est le rapport des volumes du\ncube et du tétraèdre.\nIndications\n1) Que représente H pour le triangle ABC ?\n2) Commencer d’abord par traduire mathématiquement le fait que le cube d'arête x , a une aire\négale à celle du tétraèdre d’arête a puis déduire le rapport\nAI BH\nAB AH#=\n.AIC%\n.AIK_i%\n.x\na\nUtiliser les TIC\nUtiliser les TIC\nVolume d'une pyramide\nA l'aide d'un logiciel de géométrie de l'espace :\n• Créer un cube ABCDEFGH de coté a .\n• Créer un point libre S dans le plan (HEF).\n• Créer la pyramide SABCD.\n• Créer le volume Vp de SABCD et Vc le volume du cube.\n• Créer le réel\n•Afficher r\n• Faire varier S dans le plan et observer r.\n• Faire varier l'arête du cube et observer r.\n• Conclure.\nProblème de lieu\nSoit ABC un triangle rectangle en A . P est le plan passant par A, et perpendiculaire à la\ndroite (AC), C est le cercle de diamètre [AB] contenue dans P. M est un point variable sur le\ncercle C.\nH est le projeté orthogonal de A sur (CM).\nOn se propose de trouver sur quel ligne varie H\nlorsque M varie sur C.\n1) En utilisant un logiciel de géométrie de l'espace,\na) Réaliser la figure ci contre.\nb) Déplacer M et observer la trajectoire du point H.\nc) Emettre une conjecture sur la nature du lieu\nde H.\n2) Démontrer la conjecture\nSoient deux points distincts A et B. On désigne par P\nle plan médiateur du segment [AB].\nSoit C un point de l’espace tel que le segment [AC] ne\ncoupe pas P.\nDéterminer le point M du plan tel que la distance\nMA + MC soit minimal.\n* A l’aide d’un logiciel de géométrie de l’espace réaliser\nla figure ci contre :\nA\nB\nOM\nC\nH\n.r V\nV\np\nc\n=\nUtiliser les TIC\nUtiliser les TIC\nA et B sont deux points distincts fixés\n• P est le plan médiateur du segment [AB].\n• C est un point fixé, situé de même côté que A par rapport au plan P.\n• M est un point variable du plan P.\n• Afficher la somme MA + MB.\n* Déplacer le point M de façon à obtenir une valeur minimale de MA + MB, observer alors la\ndisposition des points A, B, C et M.\n* Démontrer.\nExercices et problèmesExercices et problèmes\nAppliquer\nSoit ABCDA’B’C’D’ un cube, répondre\npar vrais ou faux\na) La droite (DD’) est orthogonale à la droite\n(A’B’).\nb) La droite (AB’) est orthogonale à la droite\n(CD).\nc) La droite (AB’) est orthogonale à la droite\n(CD’).\nDans la figure ci-dessous M, A et B sont\ntrois points du plan P tels que M soit un point\ndu cercle de diamètre [AB], distinct de A et de\nB. La droite (SB) est perpendiculaire au plan P.\n1) Montrer que les droites (SB) et (AM) sont\northogonales.\n2) Montrer que la droite (AM) est perpendicu-\nlaire au plan (SBM).\n3 ) Déduire la nature du triangle AMS.\nSoient ABC un triangle et S un point de la\nperpendiculaire Δ à (ABC) en A , distinct de A.\nOn note I le milieu de [SA].\nP est le plan perpendiculaire à Δ en I.\n1) Justifier que les droites (SB) et (SC) percent\nle plan P en deux points qu’on note\nrespectivement J et K.\n2) Montrer que J et K sont les milieux\nrespectifs de [SB] et [SC]\nSoient ABC un triangle isocèle en A, I le\nau plan (ABC) en A et D un point de Δ distinct\nde A.\nMontrer que (ADI) est le plan médiateur de\n[BC]\nSoit ABCD un tétraèdre régulier (toutes les\nfaces sont des triangles équilatéraux). On note\nM le milieu de [CD].\n1) Déterminer le plan médiateur de [CD].\n2) Soit H le pied de la hauteur issue de A du tri-\nangle ABM.\nMontrer que (AH) est perpendiculaire au plan\n(BCD).\nSoit SABCD une pyramide régulière\n(toutes les arêtes ont la même longueur) de\nsomment S et de base carré.\n1) Déterminer le plan médiateur de [AC].\n2) Montrer que les droites (AC) et (SB) sont\northogonales.\nSoit ABCD un tétraèdre régulier et H le\nprojeté orthogonal de A sur (BCD).\nMontrer que H est le centre du cercle circons-\ncrit au triangle BCD.\nSoient ABC un triangle contenu dans un\nplan P, I le milieu de [BC], C son cercle\ncirconscrit et O le centre de C. Soit Δ l’axe de C\net D un point de Δ distinct de O.\n1) Montrer que (ODI) est le plan médiateur de\n[BC].\nExercices et problèmesExercices et problèmes\n2) Soit T la tengente à C en B, M un point de\nT et N son symétrie par rapport à B.\nMontrer que (OBD) est le plan médiateur de\n[MN].\nOn considère un cercle C, d’un plan P, de\ncentre O et de rayon R d’un plan P, une corde\n[AB] de C tel que AB = R et un point S de\nl’axe de C.\nSoit I le milieu de [AB] .\n1) Montrer que le plan (SOI) et (SAB) sont\nperpendiculaires.\n2) Montrer que (SOA) et (SOB) sont perpen-\ndiculaires.\nMaitriser\nSoit un tétraèdre ABCD tel que les arêtes\n[AB] et [CD] sont orthogonales. Soit H le\nprojeté orthogonal du point A sur le plan\n(BCD) et K le projeté orthogonal de B sur le\nplan (ACD).\n1 ) Démontrer que la droite (CD) est orthogo-\nnale aux plans (ABH) et (ABK).\n2) a) Justifier que les droites (AH) et (BK)\nsont coplanaires.\nb) Le plan (ABH) coupe la droite (CD) en un\npoint noté I. Que représentent les droites (BK)\net (AH) pour le triangle ABI?\nSoit ABCDEFGH un cube, AB = 4.\nO est le centre du carré EFGH.\n1) Prouver que la droite (OD) est l’intersection\ndes plans (EDG) et (HDBF).\n2) a) Dessiner en vraie grandeur le rectangle\nHFBD, placer O.\nb) En calculant\nprouver que (HB) et (OD) sont\nperpendiculaires.\n3) a) Démontrer que (HD) est orthogonale à\n(EG).\nb) En déduire que (EG) est perpendiculaire\nau plan (HFBD), et qu’elle est orthogonale à\n(HB).\n4) Démontrer que (HB) est perpendiculaire au\nplan (DEG).\nDans la figure ci-dessous\nABDA’B’C’D’ est un cube de centre O et\nd’arête a. Les points I, J, K, L, M\net N sont les respectifs des segments [AB],\n[AD], [DD’], [C’D’], [B C’] et [BB’]\n1) Montrer que les points I, J, K, L, M et N\nsont coplanaires.\n2) Déterminer l’intersection des plans (IJK) et\n(BDD').\n3) En déduire que O appartient au plan (IJK).\n4) Montrer que le triangle OIJ est équilatéral.\n5) Montrer que IJKLMN est un hexagone\nrégulier.\n,tan tanHDO et DHB%%\nD\nD’\nN O\nB’\nB\nJ\nK\nA\nC\nA’\nC’\nI\nM\nL\nExercices et problèmesExercices et problèmes\n6) Montrer que les points I, J, K, L, M et N\nsont équidistants de A’.\n7) Montrer que la droite (A’O) est perpendicu-\nlaire au plan (IJK).\n8) Calculer en fonction de a le volume de la\npyramide A’IJKLMN de base l’hexagone\nIJKLMN.\nSoit ABCD un tétraèdre régulier tel que les\ntriangles ABD et ABC sont rectangles en B et le\ntriangle BCD est rectangle en D.\n1) Montrer que (CD) est orthogonale à (AB).\n2) a) Montrer que les plans (ABD) et (ACD)\nsont perpendiculaires.\nb) Déterminer la nature du triangle ADC.\n3 ) Soit I et M les milieux respectifs de [BC] et [AC].\na) Montrer que (IM) est l’axe du cercle cir\nconscrit au triangle BCD.\nb) Soit K le symétrique de D par rapport à\nI et J le projeté orthogonal de I sur (BK).\nQuel est le plan médiateur de [BK] ? Justifier.\nMath et cultureMath et culture\nAnamorphose\nUne anamorphose est une déformation réversible d'une image à l'aide d'un système optique -\ntel un miroir courbe - ou un procédé mathématique.\nImage virtuelle d'un quadrillage à l'aide d'un miroir cylindrique\nCertains artistes ont produit des œuvres par ce procédé. Historiquement, l'anamorphose est\nl'une des applications des travaux de Piero della Francesca sur la perspective. En effet, c'est la\nrationalisation de la vision qui a conduit à systématiser les techniques de projection, dont les\nanamorphoses sont l'un des résultats. Les anamorphoses ont, dans les siècles qui suivirent, sou-\nvent été associées aux trompe-l'œil.\nDe nos jours, les utilisations artistiques des anamorphoses sont devenues beaucoup plus rares.\nEn revanche, les anamorphoses ont des applications utilitaires, par exemple pour la signalisa-\ntion routière peinte directement sur le sol, afin que les usagers de la route aient une vue non\ndéformée d'une image ou d'un texte lorsqu'il se situe à une certaine distance.\nA partir de cette vue la hauteur de la flèche En réalité la hauteur de la flèche\net la hauteur du mot CAR semble les mêmes est deux fois celle de mot CAR .\nPhilippe Kent Robert Feneol\nPour démarrerPour démarrerPour démarrerPour démarrer\n« Les statistiques c’est l’art de préciser les choses que l’on ignore »\nA. THIERS",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 29 tétraèdre trirectangle\n1)Soit OAB un triangle rectangle en O et soit H le pied de la hauteur issue de du point O.\nMontrer que\n2) Dans la figure ci-contre OABC est un tétraèdre trirectangle\n( Les triangles OAB, OAC et OBC sont rectangles en O )\nSoit H le projeté orthogonal du point O sur le plan (ABC)\na) Montrer que H est l’orthocentre du triangle ABC\nb) En déduire que\nIDA%IDA%\nIDA%\nASB ASC BSC===%%%\nOH OA OB\n11 1\n22 2=+\nOH OA OB OC\n11 1 1\n22 2 2=+ +\nPlan médiateur d'un segment\nOrthogonalité\n•Si deux droites sont orthogonales, alors toute\ndroite parallèle à l’une est orthogonale à\nl’autre.\n• Si deux droites sont parallèles, alors toute\ndroite orthogonale à l’une est orthogonale à\nl’autre.\n•Une droite est perpendiculaire à un plan si et\nseulement si elle est orthogonale à deux\ndroites sécantes de ce plan.\n• Si deux droites sont perpendiculaires à un\nmême plan alors elles sont parallèles.\n•Si deux droites sont parallèles alors tout plan\nperpendiculaire à l’une est perpendiculaire à\nl’autre.\n• Si deux plans sont parallèles alors toute\ndroite perpendiculaire à l’un est perpendiculaire\nà l’autre.\n• Si deux plans sont perpendiculaires à une\nmême droite alors ils sont parallèles.\n• Par un point A de l’espace passe un unique\nplan perpendiculaire à une droite donnée.\n• Par un point E de l’espace passe une seule\ndroite perpendiculaire à un plan donné.\n• Si deux droites sont orthogonales, alors tout\nplan perpendiculaire à l’une est parallèle à\nl’autre.\nP\nD\nA\nE\nL'ensemble des points équidistants des points\nA et B est le plan médiateur du segment [AB].\nPlans perpendiculaires\nAxe d'un cercle\nL'ensemble des points équidistants de tous les points d'un\ncercle est l'axe de ce cercle.\n• Si deux plans P et Q sont perpendiculaires,\nalors toute droite D perpendiculaire à Q menée\npar un point A de P est contenue dans P.\n• Si deux plans P et Q sont perpendiculaires\nsuivant une droite D, alors toute droite L de P\nperpendiculaire à D, est perpendiculaire Q.\n• Si deux plans sont perpendiculaires, toute\ndroite D’, perpendiculaire à l’un, est parallèle à\nl’autre.\nD’\nP\nQ\nD\nA\nΔ L\n•Si deux plans sont parallèles, alors tout plan\nperpendiculaire à l’un est perpendiculaire à\nl’autre.\n• Si un plan est perpendiculaire à deux plans\nsécants alors il est perpendiculaire à leur\ndroite d’intersection.\nP Q\nR\nD\nDévelopper ses compéDévelopper ses compétences\nABCDEFGH est un cube. Soit I le pied de la hauteur\nissue de A dans le triangle ABH.\n1) Montrer que (BH) est perpendiculaire au plan (AIC).\n2) a) Montrer que\nb) Déduire la nature du triangle AIC.\n3) On suppose que AB = a.\na) Calculer en fonction de a, AH, BH et AI.\nb) Donner la mesure en radian de l’angle\nIndications\n1) Il s’agit de montrer que (BH) est perpendiculaire à deux droites sécantes du plan (AIC).\n2) Remarquer que CI est une hauteur du triangle CBH.\n3) a) Faire intervenir des triangles rectangles.\nb) Faire intervenir K le milieu de [AC] et déterminer sin\nSection d’une sphère par un plan\nDans la figure ci contre, D est une droite du plan P, Δ est perpendiculaire à P en A, H est le\nprojeté orthogonal de A sur D.\nM et N sont deux points respectivement de D et Δ , et I est le milieu de [MN].\n1 ) Montrer que I appartient au plan médiateur de [AH].\n2 ) On suppose que M et N varient et que MN = 8.\nMontrer que I se déplace sur un cercle fixe.\nIndications\n1) Exploiter les triangles rectangles de la figure.\n2) Penser à la section d'une sphère de centre A par un plan.\nSABC est un tétraèdre régulier d'arête a. On note H le projeté orthogonale de S sur (ABC).\n1) Calculer en fonction de a :\na) la hauteur SH.\nb) l'aire du triangle ABC et l'aire totale du tétraèdre.\nc) le volume du tétraèdre.\n2) Un cube d'arête x a une aire égale à celle du tétraèdre, quel est le rapport des volumes du\ncube et du tétraèdre.\nIndications\n1) Que représente H pour le triangle ABC ?\n2) Commencer d’abord par traduire mathématiquement le fait que le cube d'arête x , a une aire\négale à celle du tétraèdre d’arête a puis déduire le rapport\nAI BH\nAB AH#=\n.AIC%\n.AIK_i%\n.x\na\nUtiliser les TIC\nUtiliser les TIC\nVolume d'une pyramide\nA l'aide d'un logiciel de géométrie de l'espace :\n• Créer un cube ABCDEFGH de coté a .\n• Créer un point libre S dans le plan (HEF).\n• Créer la pyramide SABCD.\n• Créer le volume Vp de SABCD et Vc le volume du cube.\n• Créer le réel\n•Afficher r\n• Faire varier S dans le plan et observer r.\n• Faire varier l'arête du cube et observer r.\n• Conclure.\nProblème de lieu\nSoit ABC un triangle rectangle en A . P est le plan passant par A, et perpendiculaire à la\ndroite (AC), C est le cercle de diamètre [AB] contenue dans P. M est un point variable sur le\ncercle C.\nH est le projeté orthogonal de A sur (CM).\nOn se propose de trouver sur quel ligne varie H\nlorsque M varie sur C.\n1) En utilisant un logiciel de géométrie de l'espace,\na) Réaliser la figure ci contre.\nb) Déplacer M et observer la trajectoire du point H.\nc) Emettre une conjecture sur la nature du lieu\nde H.\n2) Démontrer la conjecture\nSoient deux points distincts A et B. On désigne par P\nle plan médiateur du segment [AB].\nSoit C un point de l’espace tel que le segment [AC] ne\ncoupe pas P.\nDéterminer le point M du plan tel que la distance\nMA + MC soit minimal.\n* A l’aide d’un logiciel de géométrie de l’espace réaliser\nla figure ci contre :\nA\nB\nOM\nC\nH\n.r V\nV\np\nc\n=\nUtiliser les TIC\nUtiliser les TIC\nA et B sont deux points distincts fixés\n• P est le plan médiateur du segment [AB].\n• C est un point fixé, situé de même côté que A par rapport au plan P.\n• M est un point variable du plan P.\n• Afficher la somme MA + MB.\n* Déplacer le point M de façon à obtenir une valeur minimale de MA + MB, observer alors la\ndisposition des points A, B, C et M.\n* Démontrer.\nExercices et problèmesExercices et problèmes\nAppliquer\nSoit ABCDA’B’C’D’ un cube, répondre\npar vrais ou faux\na) La droite (DD’) est orthogonale à la droite\n(A’B’).\nb) La droite (AB’) est orthogonale à la droite\n(CD).\nc) La droite (AB’) est orthogonale à la droite\n(CD’).\nDans la figure ci-dessous M, A et B sont\ntrois points du plan P tels que M soit un point\ndu cercle de diamètre [AB], distinct de A et de\nB. La droite (SB) est perpendiculaire au plan P.\n1) Montrer que les droites (SB) et (AM) sont\northogonales.\n2) Montrer que la droite (AM) est perpendicu-\nlaire au plan (SBM).\n3 ) Déduire la nature du triangle AMS.\nSoient ABC un triangle et S un point de la\nperpendiculaire Δ à (ABC) en A , distinct de A.\nOn note I le milieu de [SA].\nP est le plan perpendiculaire à Δ en I.\n1) Justifier que les droites (SB) et (SC) percent\nle plan P en deux points qu’on note\nrespectivement J et K.\n2) Montrer que J et K sont les milieux\nrespectifs de [SB] et [SC]\nSoient ABC un triangle isocèle en A, I le\nau plan (ABC) en A et D un point de Δ distinct\nde A.\nMontrer que (ADI) est le plan médiateur de\n[BC]\nSoit ABCD un tétraèdre régulier (toutes les\nfaces sont des triangles équilatéraux). On note\nM le milieu de [CD].\n1) Déterminer le plan médiateur de [CD].\n2) Soit H le pied de la hauteur issue de A du tri-\nangle ABM.\nMontrer que (AH) est perpendiculaire au plan\n(BCD).\nSoit SABCD une pyramide régulière\n(toutes les arêtes ont la même longueur) de\nsomment S et de base carré.\n1) Déterminer le plan médiateur de [AC].\n2) Montrer que les droites (AC) et (SB) sont\northogonales.\nSoit ABCD un tétraèdre régulier et H le\nprojeté orthogonal de A sur (BCD).\nMontrer que H est le centre du cercle circons-\ncrit au triangle BCD.\nSoient ABC un triangle contenu dans un\nplan P, I le milieu de [BC], C son cercle\ncirconscrit et O le centre de C. Soit Δ l’axe de C\net D un point de Δ distinct de O.\n1) Montrer que (ODI) est le plan médiateur de\n[BC].\nExercices et problèmesExercices et problèmes\n2) Soit T la tengente à C en B, M un point de\nT et N son symétrie par rapport à B.\nMontrer que (OBD) est le plan médiateur de\n[MN].\nOn considère un cercle C, d’un plan P, de\ncentre O et de rayon R d’un plan P, une corde\n[AB] de C tel que AB = R et un point S de\nl’axe de C.\nSoit I le milieu de [AB] .\n1) Montrer que le plan (SOI) et (SAB) sont\nperpendiculaires.\n2) Montrer que (SOA) et (SOB) sont perpen-\ndiculaires.\nMaitriser\nSoit un tétraèdre ABCD tel que les arêtes\n[AB] et [CD] sont orthogonales. Soit H le\nprojeté orthogonal du point A sur le plan\n(BCD) et K le projeté orthogonal de B sur le\nplan (ACD).\n1 ) Démontrer que la droite (CD) est orthogo-\nnale aux plans (ABH) et (ABK).\n2) a) Justifier que les droites (AH) et (BK)\nsont coplanaires.\nb) Le plan (ABH) coupe la droite (CD) en un\npoint noté I. Que représentent les droites (BK)\net (AH) pour le triangle ABI?\nSoit ABCDEFGH un cube, AB = 4.\nO est le centre du carré EFGH.\n1) Prouver que la droite (OD) est l’intersection\ndes plans (EDG) et (HDBF).\n2) a) Dessiner en vraie grandeur le rectangle\nHFBD, placer O.\nb) En calculant\nprouver que (HB) et (OD) sont\nperpendiculaires.\n3) a) Démontrer que (HD) est orthogonale à\n(EG).\nb) En déduire que (EG) est perpendiculaire\nau plan (HFBD), et qu’elle est orthogonale à\n(HB).\n4) Démontrer que (HB) est perpendiculaire au\nplan (DEG).\nDans la figure ci-dessous\nABDA’B’C’D’ est un cube de centre O et\nd’arête a. Les points I, J, K, L, M\net N sont les respectifs des segments [AB],\n[AD], [DD’], [C’D’], [B C’] et [BB’]\n1) Montrer que les points I, J, K, L, M et N\nsont coplanaires.\n2) Déterminer l’intersection des plans (IJK) et\n(BDD').\n3) En déduire que O appartient au plan (IJK).\n4) Montrer que le triangle OIJ est équilatéral.\n5) Montrer que IJKLMN est un hexagone\nrégulier.\n,tan tanHDO et DHB%%\nD\nD’\nN O\nB’\nB\nJ\nK\nA\nC\nA’\nC’\nI\nM\nL\nExercices et problèmesExercices et problèmes\n6) Montrer que les points I, J, K, L, M et N\nsont équidistants de A’.\n7) Montrer que la droite (A’O) est perpendicu-\nlaire au plan (IJK).\n8) Calculer en fonction de a le volume de la\npyramide A’IJKLMN de base l’hexagone\nIJKLMN.\nSoit ABCD un tétraèdre régulier tel que les\ntriangles ABD et ABC sont rectangles en B et le\ntriangle BCD est rectangle en D.\n1) Montrer que (CD) est orthogonale à (AB).\n2) a) Montrer que les plans (ABD) et (ACD)\nsont perpendiculaires.\nb) Déterminer la nature du triangle ADC.\n3 ) Soit I et M les milieux respectifs de [BC] et [AC].\na) Montrer que (IM) est l’axe du cercle cir\nconscrit au triangle BCD.\nb) Soit K le symétrique de D par rapport à\nI et J le projeté orthogonal de I sur (BK).\nQuel est le plan médiateur de [BK] ? Justifier.\nMath et cultureMath et culture\nAnamorphose\nUne anamorphose est une déformation réversible d'une image à l'aide d'un système optique -\ntel un miroir courbe - ou un procédé mathématique.\nImage virtuelle d'un quadrillage à l'aide d'un miroir cylindrique\nCertains artistes ont produit des œuvres par ce procédé. Historiquement, l'anamorphose est\nl'une des applications des travaux de Piero della Francesca sur la perspective. En effet, c'est la\nrationalisation de la vision qui a conduit à systématiser les techniques de projection, dont les\nanamorphoses sont l'un des résultats. Les anamorphoses ont, dans les siècles qui suivirent, sou-\nvent été associées aux trompe-l'œil.\nDe nos jours, les utilisations artistiques des anamorphoses sont devenues beaucoup plus rares.\nEn revanche, les anamorphoses ont des applications utilitaires, par exemple pour la signalisa-\ntion routière peinte directement sur le sol, afin que les usagers de la route aient une vue non\ndéformée d'une image ou d'un texte lorsqu'il se situe à une certaine distance.\nA partir de cette vue la hauteur de la flèche En réalité la hauteur de la flèche\net la hauteur du mot CAR semble les mêmes est deux fois celle de mot CAR .\nPhilippe Kent Robert Feneol\nPour démarrerPour démarrerPour démarrerPour démarrer\n« Les statistiques c’est l’art de préciser les choses que l’on ignore »\nA. THIERS\n\nÀ calculer dans l'application : u⃗(1 ; 1) et v⃗(1 ; −1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 29 (« Activité 29 tétraèdre trirectangle ») est bien celle du polycopié, tome 2",
-        "answer": "vrai"
+        "key": "x",
+        "label": "x",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "xp",
+        "label": "x'",
+        "unit": "—",
+        "value": 1,
+        "min": -5,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "yp",
+        "label": "y'",
+        "unit": "—",
+        "value": -1,
+        "min": -5,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 29 dans le tome 2 et la synthèse du chapitre."
-      ]
+    "questions": [
+      {
+        "key": "dot",
+        "label": "u⃗ · v⃗",
+        "unit": "—"
+      }
     ]
   }
 ]

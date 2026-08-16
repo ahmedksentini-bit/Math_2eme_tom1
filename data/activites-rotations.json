@@ -4,24 +4,73 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 1,
-    "solver": "fixed",
+    "solver": "rotationAngle",
     "title": "Activité 1",
     "difficulty": 1,
-    "statement": "Activité 1\n%\nSoient xOy un angle de mesure 30° et C un cercle de centre O et de rayon r.\nLe cercle C coupe la demi droite [Ox) en A et la demi droite [Oy) en B.\n1) Soit D le symétrique de A par rapport à O.\n%\na) Donner la valeur de l’angle AOD .\n%\nb) Exprimer en fonction de r la longueur de l’arc 7 ADA du cercle C.\n2) On admet que la longueur d’un arc d’un cercle varie proportionnellement à la mesure de\nl’angle qui l’intercepte.\n% %\na) Calculer en fonction de r la longueur L de l’arc 7 ABA intercepté par l’angle xOy .\nL\nb) Déterminer la valeur du rapport .\nr\n3) Soit C’ un cercle de centre O et de rayon r’, r’≠ r.\nLe cercle C’ coupe la demi droite [Ox) en A’ et la demi droite [Oy) en B’.\n'\na) Calculer en fonction de r’ la longueur L’ de l’arc 7 A'B'A intercepté par l’angle %\nxOy .\nb) Comparer L et L' .\nr r' B",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 1\n%\nSoient xOy un angle de mesure 30° et C un cercle de centre O et de rayon r.\nLe cercle C coupe la demi droite [Ox) en A et la demi droite [Oy) en B.\n1) Soit D le symétrique de A par rapport à O.\n%\na) Donner la valeur de l’angle AOD .\n%\nb) Exprimer en fonction de r la longueur de l’arc 7 ADA du cercle C.\n2) On admet que la longueur d’un arc d’un cercle varie proportionnellement à la mesure de\nl’angle qui l’intercepte.\n% %\na) Calculer en fonction de r la longueur L de l’arc 7 ABA intercepté par l’angle xOy .\nL\nb) Déterminer la valeur du rapport .\nr\n3) Soit C’ un cercle de centre O et de rayon r’, r’≠ r.\nLe cercle C’ coupe la demi droite [Ox) en A’ et la demi droite [Oy) en B’.\n'\na) Calculer en fonction de r’ la longueur L’ de l’arc 7 A'B'A intercepté par l’angle %\nxOy .\nb) Comparer L et L' .\nr r' B\n\nÀ calculer dans l'application : Rotation de centre O(0;0), angle 90°, M(2 ; 0).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 1 (« Activité 1 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": 2,
+        "min": -3,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "angle",
+        "label": "α",
+        "unit": "°",
+        "value": 90,
+        "min": 90,
+        "max": 180,
+        "step": 90
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 1 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "om",
+        "label": "OM",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -29,24 +78,59 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 2,
-    "solver": "fixed",
+    "solver": "rotation90",
     "title": "Activité 2",
     "difficulty": 1,
-    "statement": "Activité 2 C\nL\nDans la figure ci-contre C est un demi-cercle de centre O et\n%\na\nde rayon r. A et B deux points de C. On note α = AOB . A\n%\nA’ O\nSoit L la longueur de l’arc 7 ABA . Recopier et compléter le\ntableau suivant :\nα 180° 90° 60° 45° 30° 0°\nL\nL\nr\nVocabulaire\n%\nLe rapport L est une mesure en radians de l’angle AOB .\nr\nExemples\n• π radians (π rad) est la mesure en radians de l’angle plat.\nr r\nOn écrit souvent π, ,… au lieu de π rad, rad,…\n2 2\nr\n• est la mesure en radians de l’angle droit.\nm i l e r : 1-2-3\nA s s iAssimiler\nExplorer Explorer\nRotation",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 2 C\nL\nDans la figure ci-contre C est un demi-cercle de centre O et\n%\na\nde rayon r. A et B deux points de C. On note α = AOB . A\n%\nA’ O\nSoit L la longueur de l’arc 7 ABA . Recopier et compléter le\ntableau suivant :\nα 180° 90° 60° 45° 30° 0°\nL\nL\nr\nVocabulaire\n%\nLe rapport L est une mesure en radians de l’angle AOB .\nr\nExemples\n• π radians (π rad) est la mesure en radians de l’angle plat.\nr r\nOn écrit souvent π, ,… au lieu de π rad, rad,…\n2 2\nr\n• est la mesure en radians de l’angle droit.\nm i l e r : 1-2-3\nA s s iAssimiler\nExplorer Explorer\nRotation\n\nÀ calculer dans l'application : Quart de tour direct de centre O(0;0), M(1 ; 0).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 2 (« Activité 2 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 2 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -54,24 +138,73 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 3,
-    "solver": "fixed",
+    "solver": "rotationAngle",
     "title": "Activité 3",
     "difficulty": 1,
-    "statement": "Activité 3\nDans la figure ci-contre ABC est un triangle équilatéral A\net O est le centre de son cercle circonscrit. N\n1) Recopier et décalquer la figure.\n2) Fixer le point O (à l’aide de la pointe d’un stylo, par\nM\nexemple). Faire tourner le papier calque au tour de O,\nO\ndans le sens direct (qui est par convention le sens\ncontraire du mouvement des aiguilles d’une montre), de B C\nsorte que le point A coïncide avec B.\na) Préciser les nouvelles positions des points B et C.\nb) Que se passe t-il pour le point O ?\nc) Marquer les points N’ et M’, nouvelles positions de N et M.\nd) Comparer ON et ON’, OM et OM’.\n% % %\ne) Que vaut AOB , NON' et MOM' ?",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 3\nDans la figure ci-contre ABC est un triangle équilatéral A\net O est le centre de son cercle circonscrit. N\n1) Recopier et décalquer la figure.\n2) Fixer le point O (à l’aide de la pointe d’un stylo, par\nM\nexemple). Faire tourner le papier calque au tour de O,\nO\ndans le sens direct (qui est par convention le sens\ncontraire du mouvement des aiguilles d’une montre), de B C\nsorte que le point A coïncide avec B.\na) Préciser les nouvelles positions des points B et C.\nb) Que se passe t-il pour le point O ?\nc) Marquer les points N’ et M’, nouvelles positions de N et M.\nd) Comparer ON et ON’, OM et OM’.\n% % %\ne) Que vaut AOB , NON' et MOM' ?\n\nÀ calculer dans l'application : Demi-tour (180°) de centre O(1;1), M(3 ; 1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 3 (« Activité 3 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 1,
+        "min": -2,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 1,
+        "min": -2,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": 3,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": 1,
+        "min": -2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "angle",
+        "label": "α",
+        "unit": "°",
+        "value": 180,
+        "min": 90,
+        "max": 180,
+        "step": 90
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 3 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "om",
+        "label": "OM",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -79,24 +212,73 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 4,
-    "solver": "fixed",
+    "solver": "rotationAngle",
     "title": "Activité 4",
     "difficulty": 1,
-    "statement": "Activité 4\nSoient O et M deux points distincts.\n1) Construire le cercle C de centre O et de rayon OM.\n% = π\n2) Combien y a-t-il de points M’ sur le cercle C tel que MOM'\n3) a) Reprendre la question 2) en remplaçant π par α, où α est un réel appartenant à ]0 , π[.\nb) Reprendre la question 2) en remplaçant π par 0 puis par π.\nDéfinition\n• Soient O un point du plan et α un réel appartenant à ]0 , π[.\nL’application du plan dans le plan, qui laisse invariant le point O\net qui à tout point M distinct de O, associe le point M’\nOM’ = OM\ntel que % (Voir figure 1) ;\nMOM' = a M’ est l’image de M par la\nest appelée la rotation directe de centre O et d’angle α. rotation directe de centre O\net d’angle α\n• Soient O un point du plan et α un réel appartenant à ]0 , π[.\nL’application du plan dans le plan, qui laisse invariant le point O\net qui à tout point M distinct de O, associe le point M’ Fig 2\nFig 2\nOM’ = OM\ntel que % (Voir figure 2) ; M’\nMOM' = a M’ est l’image de M par la\nest appelée la rotation indirecte de centre O et d’angle α. rotation indirecte de centre O\net d’angle α\nRemarques\n• La rotation directe ou indirecte de centre O et d’angle π est la symétrie centrale de centre O.\n• La rotation directe ou indirecte d’angle nul est l’identité du plan.\n• Soit r une rotation directe ou indirecte.\nEtant donné un point M’ du plan , il existe un seul point M tel que r(M) = M’.\nM est l’antécédent de M’ par r.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 4\nSoient O et M deux points distincts.\n1) Construire le cercle C de centre O et de rayon OM.\n% = π\n2) Combien y a-t-il de points M’ sur le cercle C tel que MOM'\n3) a) Reprendre la question 2) en remplaçant π par α, où α est un réel appartenant à ]0 , π[.\nb) Reprendre la question 2) en remplaçant π par 0 puis par π.\nDéfinition\n• Soient O un point du plan et α un réel appartenant à ]0 , π[.\nL’application du plan dans le plan, qui laisse invariant le point O\net qui à tout point M distinct de O, associe le point M’\nOM’ = OM\ntel que % (Voir figure 1) ;\nMOM' = a M’ est l’image de M par la\nest appelée la rotation directe de centre O et d’angle α. rotation directe de centre O\net d’angle α\n• Soient O un point du plan et α un réel appartenant à ]0 , π[.\nL’application du plan dans le plan, qui laisse invariant le point O\net qui à tout point M distinct de O, associe le point M’ Fig 2\nFig 2\nOM’ = OM\ntel que % (Voir figure 2) ; M’\nMOM' = a M’ est l’image de M par la\nest appelée la rotation indirecte de centre O et d’angle α. rotation indirecte de centre O\net d’angle α\nRemarques\n• La rotation directe ou indirecte de centre O et d’angle π est la symétrie centrale de centre O.\n• La rotation directe ou indirecte d’angle nul est l’identité du plan.\n• Soit r une rotation directe ou indirecte.\nEtant donné un point M’ du plan , il existe un seul point M tel que r(M) = M’.\nM est l’antécédent de M’ par r.\n\nÀ calculer dans l'application : 90°, O(0;0), M(0 ; 2).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 4 (« Activité 4 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": 2,
+        "min": -2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "angle",
+        "label": "α",
+        "unit": "°",
+        "value": 90,
+        "min": 90,
+        "max": 180,
+        "step": 90
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 4 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "om",
+        "label": "OM",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -104,24 +286,59 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 5,
-    "solver": "fixed",
+    "solver": "rotation90",
     "title": "Activité 5",
     "difficulty": 1,
-    "statement": "Activité 5\nObserver la figure puis recopier et compléter le tableau suivant :\nL’image par de et est\ndu point la rotation centre d’angle le point\nr\nB directe A C\nr /4\nC indirecte B\nr\nindirecte C B\nD indirecte A B\nr\nC directe D",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 5\nObserver la figure puis recopier et compléter le tableau suivant :\nL’image par de et est\ndu point la rotation centre d’angle le point\nr\nB directe A C\nr /4\nC indirecte B\nr\nindirecte C B\nD indirecte A B\nr\nC directe D\n\nÀ calculer dans l'application : Quart de tour, O(0;0), M(3 ; 1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 5 (« Activité 5 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": 3,
+        "min": -2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 5 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -129,24 +346,73 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 6,
-    "solver": "fixed",
+    "solver": "rotationAngle",
     "title": "Activité 6",
     "difficulty": 1,
-    "statement": "Activité 6\nSoient A et B deux points distincts du plan.\n1) a) Construire le point E, image du point B par la rotation directe de centre A et d’angle r .\nr\nb) Construire le point F, image du point A par la rotation directe de centre B et d’angle .\n2) a) Quelle est la position relative des droites (AE) et (BF) ?\nb) Quelle est la nature du quadrilatère AEBF ?",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 6\nSoient A et B deux points distincts du plan.\n1) a) Construire le point E, image du point B par la rotation directe de centre A et d’angle r .\nr\nb) Construire le point F, image du point A par la rotation directe de centre B et d’angle .\n2) a) Quelle est la position relative des droites (AE) et (BF) ?\nb) Quelle est la nature du quadrilatère AEBF ?\n\nÀ calculer dans l'application : 180°, O(0;0), M(4 ; −2).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 6 (« Activité 6 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": 4,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": -2,
+        "min": -4,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "angle",
+        "label": "α",
+        "unit": "°",
+        "value": 180,
+        "min": 90,
+        "max": 180,
+        "step": 90
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 6 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "om",
+        "label": "OM",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -154,24 +420,73 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 7,
-    "solver": "fixed",
+    "solver": "rotationAngle",
     "title": "Activité 7",
     "difficulty": 1,
-    "statement": "Activité 7\nDans la figure ci-contre, ABCD est un rectangle et la\ndroite (IJ) est la médiatrice de [BC].\nObserver la figure et nommer\n1) a) une translation qui transforme M en M’ ?\nb) Une symétrie axiale qui transforme M en M’ ?\nc) Une symétrie centrale qui transforme M en M’ ?\n2) des rotations qui transforment M en M’.\n(On donnera les angles de ces rotations en radians)\nm i l e r : 4-5-6-7\nA s s iAssimiler\nExplorer Explorer",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 7\nDans la figure ci-contre, ABCD est un rectangle et la\ndroite (IJ) est la médiatrice de [BC].\nObserver la figure et nommer\n1) a) une translation qui transforme M en M’ ?\nb) Une symétrie axiale qui transforme M en M’ ?\nc) Une symétrie centrale qui transforme M en M’ ?\n2) des rotations qui transforment M en M’.\n(On donnera les angles de ces rotations en radians)\nm i l e r : 4-5-6-7\nA s s iAssimiler\nExplorer Explorer\n\nÀ calculer dans l'application : 90°, O(1;0), M(1 ; 3).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 7 (« Activité 7 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 1,
+        "min": -2,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": 1,
+        "min": -2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": 3,
+        "min": -1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "angle",
+        "label": "α",
+        "unit": "°",
+        "value": 90,
+        "min": 90,
+        "max": 180,
+        "step": 90
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 7 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "om",
+        "label": "OM",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -179,24 +494,59 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 8,
-    "solver": "fixed",
+    "solver": "rotation90",
     "title": "Activité 8 Conservation des angles et des distances",
     "difficulty": 1,
-    "statement": "Activité 8 Conservation des angles et des distances\nSoit r une rotation directe ou indirecte de centre O et d’angle α appartenant à ]0 , π[.\nSoient M et N deux points distincts et non alignés avec O et soient M’ et N’ leurs images\nrespectives par r.\n% % %\na) Comparer MON et M'ON' dans le cas où MON 1 α .\n% % %\nb) Comparer MON et M'ON' dans le cas où MON $ α .\nc) Comparer MN et M’N’.\nd) Soient A, B et C trois points non alignés. On désigne par A’, B’ et C’ leurs images\nrespectives par r.\n% %\nMontrer que ABC = A'B'C' .\nA s s iAssimiler",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 8 Conservation des angles et des distances\nSoit r une rotation directe ou indirecte de centre O et d’angle α appartenant à ]0 , π[.\nSoient M et N deux points distincts et non alignés avec O et soient M’ et N’ leurs images\nrespectives par r.\n% % %\na) Comparer MON et M'ON' dans le cas où MON 1 α .\n% % %\nb) Comparer MON et M'ON' dans le cas où MON $ α .\nc) Comparer MN et M’N’.\nd) Soient A, B et C trois points non alignés. On désigne par A’, B’ et C’ leurs images\nrespectives par r.\n% %\nMontrer que ABC = A'B'C' .\nA s s iAssimiler\n\nÀ calculer dans l'application : Quart de tour, O(0;0), M(−1 ; 2).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 8 (« Activité 8 Conservation des angles et des distances ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": 2,
+        "min": -3,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 8 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -204,24 +554,73 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 9,
-    "solver": "fixed",
+    "solver": "rotationAngle",
     "title": "Activité 9 Image d’un segment - Image d’une droite",
     "difficulty": 1,
-    "statement": "Activité 9 Image d’un segment - Image d’une droite\nSoit r une rotation directe de centre O et d’angle α.\nSoient A et B deux points distincts du plan. On pose A’= r(A) et B’ = r(B).\n1) Soit M un point du segment [AB] et M’ l’image de M par r.\na) Montrer que M’∈ [A’B’].\nb) Soit N’ un point du segment [A’B’] et soit N son antécédent par la rotation r.\nMontrer que N appartient au segment [AB].\nc) Conclure.\nCe résultat reste t-il vrai si r est une rotation indirecte ?\n2) Montrer que l’image de la droite (AB) par la rotation r est la droite (A’B’).",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 9 Image d’un segment - Image d’une droite\nSoit r une rotation directe de centre O et d’angle α.\nSoient A et B deux points distincts du plan. On pose A’= r(A) et B’ = r(B).\n1) Soit M un point du segment [AB] et M’ l’image de M par r.\na) Montrer que M’∈ [A’B’].\nb) Soit N’ un point du segment [A’B’] et soit N son antécédent par la rotation r.\nMontrer que N appartient au segment [AB].\nc) Conclure.\nCe résultat reste t-il vrai si r est une rotation indirecte ?\n2) Montrer que l’image de la droite (AB) par la rotation r est la droite (A’B’).\n\nÀ calculer dans l'application : Rotation de centre O(0;0), angle 90°, M(2 ; 0).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 9 (« Activité 9 Image d’un segment - Image d’une droite ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": 2,
+        "min": -3,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "angle",
+        "label": "α",
+        "unit": "°",
+        "value": 90,
+        "min": 90,
+        "max": 180,
+        "step": 90
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 9 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "om",
+        "label": "OM",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -229,24 +628,59 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 10,
-    "solver": "fixed",
+    "solver": "rotation90",
     "title": "Activité 10",
     "difficulty": 1,
-    "statement": "Activité 10\nDans la figure ci-contre, ABC est un triangle équilatéral\nR\nde centre O, les points P, Q et R sont tels que\nA\nBP = CQ = AR.\n2π\nSoit f la rotation directe de centre O et d’angle .\n1) a) Déterminer l’image par f de la droite (AB)\nb) Montrer que f(P) = R. O\n2) a) Déterminer les images par f des points Q et R.\n% % % B\nb) Comparer les angles POR , ROQ et QOP . Q C\nc) Quelle est la nature du triangle PQR ?\nP\n3) Comparer les aires des triangles APR, BPQ et CQR.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 10\nDans la figure ci-contre, ABC est un triangle équilatéral\nR\nde centre O, les points P, Q et R sont tels que\nA\nBP = CQ = AR.\n2π\nSoit f la rotation directe de centre O et d’angle .\n1) a) Déterminer l’image par f de la droite (AB)\nb) Montrer que f(P) = R. O\n2) a) Déterminer les images par f des points Q et R.\n% % % B\nb) Comparer les angles POR , ROQ et QOP . Q C\nc) Quelle est la nature du triangle PQR ?\nP\n3) Comparer les aires des triangles APR, BPQ et CQR.\n\nÀ calculer dans l'application : Quart de tour direct de centre O(0;0), M(1 ; 0).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 10 (« Activité 10 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 10 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -254,24 +688,73 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 11,
-    "solver": "fixed",
+    "solver": "rotationAngle",
     "title": "Activité 11 Problème d’alignement",
     "difficulty": 1,
-    "statement": "Activité 11 Problème d’alignement\nDans la figure ci-contre, ABCD est un carré, ABI et BCJ sont deux triangles équilatéraux.\n1) a) Construire le point E de sorte que, E et A soient du même côté par rapport à la droite\n(BD) et le triangle DBE soit équilatéral.\nb) Montrer que les points E, A et C sont alignés.\n2) Soit r la rotation directe de centre B et d’angle π .\na) Déterminer r(E).\nb) Montrer que les points D, I et J sont alignés.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 11 Problème d’alignement\nDans la figure ci-contre, ABCD est un carré, ABI et BCJ sont deux triangles équilatéraux.\n1) a) Construire le point E de sorte que, E et A soient du même côté par rapport à la droite\n(BD) et le triangle DBE soit équilatéral.\nb) Montrer que les points E, A et C sont alignés.\n2) Soit r la rotation directe de centre B et d’angle π .\na) Déterminer r(E).\nb) Montrer que les points D, I et J sont alignés.\n\nÀ calculer dans l'application : Demi-tour (180°) de centre O(1;1), M(3 ; 1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 11 (« Activité 11 Problème d’alignement ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 1,
+        "min": -2,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 1,
+        "min": -2,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": 3,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": 1,
+        "min": -2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "angle",
+        "label": "α",
+        "unit": "°",
+        "value": 180,
+        "min": 90,
+        "max": 180,
+        "step": 90
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 11 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "om",
+        "label": "OM",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -279,24 +762,73 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 12,
-    "solver": "fixed",
+    "solver": "rotationAngle",
     "title": "Activité 12",
     "difficulty": 1,
-    "statement": "Activité 12\nDans la figure ci-contre, OAB et OCD sont deux triangles isocèles\nrectangles en O.\nSoient I le milieu de [BD] et r la rotation directe de centre O\net d’angle π .\na) Déterminer les images par r des points A et D.\nb) On pose r (C) = C’.\nMontrer que les droites (AC) et (BC’) sont perpendiculaires.\nc) Montrer que O est le milieu de [DC’].\nEn déduire que les droites (OI) et (AC) sont perpendiculaires.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 12\nDans la figure ci-contre, OAB et OCD sont deux triangles isocèles\nrectangles en O.\nSoient I le milieu de [BD] et r la rotation directe de centre O\net d’angle π .\na) Déterminer les images par r des points A et D.\nb) On pose r (C) = C’.\nMontrer que les droites (AC) et (BC’) sont perpendiculaires.\nc) Montrer que O est le milieu de [DC’].\nEn déduire que les droites (OI) et (AC) sont perpendiculaires.\n\nÀ calculer dans l'application : 90°, O(0;0), M(0 ; 2).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 12 (« Activité 12 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": 2,
+        "min": -2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "angle",
+        "label": "α",
+        "unit": "°",
+        "value": 90,
+        "min": 90,
+        "max": 180,
+        "step": 90
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 12 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "om",
+        "label": "OM",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -304,24 +836,59 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 13,
-    "solver": "fixed",
+    "solver": "rotation90",
     "title": "Activité 13 Conservation du milieu - Conservation du barycentre",
     "difficulty": 1,
-    "statement": "Activité 13 Conservation du milieu - Conservation du barycentre\nSoit r une rotation directe ou indirecte de centre O et d’angle α.\n1) Soient A et B deux points distincts du plan et I le milieu du\nsegment [AB].\nA’, B’ et I’, désignent les images respectives par r des points A, B et I.\nMontrer que I’ est le milieu du segment [A’B’].\n2) Soit J le barycentre de (A , 1) et (B , 2) et soit J’ son image par r.\na) Montrer que J’ appartient au segment [A’B’]\nb) Montrer que J’ est le barycentre de (A’ , 1) et (B’, 2).\n3) Soit C un point du plan distinct des points A et B, et soit C’ son image par r.\nOn désigne par G le barycentre de (A , 1) , (B, 2) et (C , 3), et par G’ son image par r.\na) Montrer que G est le milieu de [JC].\nb) Montrer que G’ est le barycentre de (A’, 1) , (B’, 2) et (C’, 3).\nA s s iAssimiler",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 13 Conservation du milieu - Conservation du barycentre\nSoit r une rotation directe ou indirecte de centre O et d’angle α.\n1) Soient A et B deux points distincts du plan et I le milieu du\nsegment [AB].\nA’, B’ et I’, désignent les images respectives par r des points A, B et I.\nMontrer que I’ est le milieu du segment [A’B’].\n2) Soit J le barycentre de (A , 1) et (B , 2) et soit J’ son image par r.\na) Montrer que J’ appartient au segment [A’B’]\nb) Montrer que J’ est le barycentre de (A’ , 1) et (B’, 2).\n3) Soit C un point du plan distinct des points A et B, et soit C’ son image par r.\nOn désigne par G le barycentre de (A , 1) , (B, 2) et (C , 3), et par G’ son image par r.\na) Montrer que G est le milieu de [JC].\nb) Montrer que G’ est le barycentre de (A’, 1) , (B’, 2) et (C’, 3).\nA s s iAssimiler\n\nÀ calculer dans l'application : Quart de tour, O(0;0), M(3 ; 1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 13 (« Activité 13 Conservation du milieu - Conservation du barycentre ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": 3,
+        "min": -2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 13 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -329,24 +896,73 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 14,
-    "solver": "fixed",
+    "solver": "rotationAngle",
     "title": "Activité 14 Problème d’optimisation",
     "difficulty": 1,
-    "statement": "Activité 14 Problème d’optimisation\nSoient O et A deux points distincts du plan.\n2π\nOn considère la rotation directe r de centre O et d’angle .\n1) a) Construire le point B, image du point A par r.\nExplorer Explorer\nConstruire le point C, image du point B par r.\nb) Montrer que ABC est un triangle équilatéral.\n2) Soit M un point variable du segment [AB] et soit P le point de [BC] tel que BP = AM.\na) Prouver que r(M) = P. En déduire que OM = OP.\nb) Soit I le milieu de [MP]. Calculer IM puis MP en fonction de OM.\nc) Où doit-on placer M sur le segment [AB] pour que la distance MP soit minimale ?",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 14 Problème d’optimisation\nSoient O et A deux points distincts du plan.\n2π\nOn considère la rotation directe r de centre O et d’angle .\n1) a) Construire le point B, image du point A par r.\nExplorer Explorer\nConstruire le point C, image du point B par r.\nb) Montrer que ABC est un triangle équilatéral.\n2) Soit M un point variable du segment [AB] et soit P le point de [BC] tel que BP = AM.\na) Prouver que r(M) = P. En déduire que OM = OP.\nb) Soit I le milieu de [MP]. Calculer IM puis MP en fonction de OM.\nc) Où doit-on placer M sur le segment [AB] pour que la distance MP soit minimale ?\n\nÀ calculer dans l'application : 180°, O(0;0), M(4 ; −2).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 14 (« Activité 14 Problème d’optimisation ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": 4,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": -2,
+        "min": -4,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "angle",
+        "label": "α",
+        "unit": "°",
+        "value": 180,
+        "min": 90,
+        "max": 180,
+        "step": 90
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 14 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "om",
+        "label": "OM",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -354,24 +970,73 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 15,
-    "solver": "fixed",
+    "solver": "rotationAngle",
     "title": "Activité 15 Image d’un cercle",
     "difficulty": 1,
-    "statement": "Activité 15 Image d’un cercle\nSoit r une rotation directe de centre O et d’angle α. Soit C le cercle de centre I et de rayon R.\na) Soit M ∈ C et M’ = r (M).\nMontrer que M’ appartient au cercle C’ de centre I’ = r(I) et de rayon R.\nb) Soit N’∈ C’ et soit N son antécédent par r. Montrer que N ∈ C.\nc) Conclure.\nCe résultat reste t-il valable si r est une rotation indirecte ?\nm i l e r : 10\nA s s iAssimiler",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 15 Image d’un cercle\nSoit r une rotation directe de centre O et d’angle α. Soit C le cercle de centre I et de rayon R.\na) Soit M ∈ C et M’ = r (M).\nMontrer que M’ appartient au cercle C’ de centre I’ = r(I) et de rayon R.\nb) Soit N’∈ C’ et soit N son antécédent par r. Montrer que N ∈ C.\nc) Conclure.\nCe résultat reste t-il valable si r est une rotation indirecte ?\nm i l e r : 10\nA s s iAssimiler\n\nÀ calculer dans l'application : 90°, O(1;0), M(1 ; 3).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 15 (« Activité 15 Image d’un cercle ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 1,
+        "min": -2,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": 1,
+        "min": -2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": 3,
+        "min": -1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "angle",
+        "label": "α",
+        "unit": "°",
+        "value": 90,
+        "min": 90,
+        "max": 180,
+        "step": 90
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 15 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "om",
+        "label": "OM",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -379,24 +1044,59 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 16,
-    "solver": "fixed",
+    "solver": "rotation90",
     "title": "Activité 16 Problème de lieu",
     "difficulty": 2,
-    "statement": "Activité 16 Problème de lieu\nSoit IJK un triangle isocèle rectangle en I.\nOn suppose que le sommet I est fixe et que le sommet J décrit un cercle C.\nDéterminer le lieu du point K.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 16 Problème de lieu\nSoit IJK un triangle isocèle rectangle en I.\nOn suppose que le sommet I est fixe et que le sommet J décrit un cercle C.\nDéterminer le lieu du point K.\n\nÀ calculer dans l'application : Quart de tour, O(0;0), M(−1 ; 2).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 16 (« Activité 16 Problème de lieu ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": -1,
+        "min": -4,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": 2,
+        "min": -3,
+        "max": 5,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 16 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -404,24 +1104,73 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 17,
-    "solver": "fixed",
+    "solver": "rotationAngle",
     "title": "Activité 17 Conservation du contact",
     "difficulty": 2,
-    "statement": "Activité 17 Conservation du contact\nSoit r une rotation directe de centre O et d’angle α.\nSoient C un cercle de centre I et T une tangente à ce cercle en un point A.\na) Construire les images C’ et T’ de C et T par la rotation r.\nb) Déterminer l’image du point A par r.\nc) Déterminer la position relative de C’ et T’.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 17 Conservation du contact\nSoit r une rotation directe de centre O et d’angle α.\nSoient C un cercle de centre I et T une tangente à ce cercle en un point A.\na) Construire les images C’ et T’ de C et T par la rotation r.\nb) Déterminer l’image du point A par r.\nc) Déterminer la position relative de C’ et T’.\n\nÀ calculer dans l'application : Rotation de centre O(0;0), angle 90°, M(2 ; 0).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 17 (« Activité 17 Conservation du contact ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": 2,
+        "min": -3,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "angle",
+        "label": "α",
+        "unit": "°",
+        "value": 90,
+        "min": 90,
+        "max": 180,
+        "step": 90
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 17 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "om",
+        "label": "OM",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -429,24 +1178,59 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 18,
-    "solver": "fixed",
+    "solver": "rotation90",
     "title": "Activité 18 Conservation des aires",
     "difficulty": 2,
-    "statement": "Activité 18 Conservation des aires\nSoit ABC un triangle équilatéral de centre O.\nSoient I un point du segment [BC], distinct de B et de C, et J le point du\n% 2r\nsegment [AC] tel que IOJ = .\n1) a) Montrer que J est l’image de I par la rotation directe r de centre O\n2r\net d’angle .\nb) Montrer que les triangles OIC et OJA sont isométriques.\nc) En déduire que l’aire du quadrilatère OICJ est le tiers de l’aire du\ntriangle ABC.\n2) Soit K l’image de J par la rotation r. Montrer que les quadrilatères OICJ et OJAK ont la\nmême aire.\nE x p l o r e r",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 18 Conservation des aires\nSoit ABC un triangle équilatéral de centre O.\nSoient I un point du segment [BC], distinct de B et de C, et J le point du\n% 2r\nsegment [AC] tel que IOJ = .\n1) a) Montrer que J est l’image de I par la rotation directe r de centre O\n2r\net d’angle .\nb) Montrer que les triangles OIC et OJA sont isométriques.\nc) En déduire que l’aire du quadrilatère OICJ est le tiers de l’aire du\ntriangle ABC.\n2) Soit K l’image de J par la rotation r. Montrer que les quadrilatères OICJ et OJAK ont la\nmême aire.\nE x p l o r e r\n\nÀ calculer dans l'application : Quart de tour direct de centre O(0;0), M(1 ; 0).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 18 (« Activité 18 Conservation des aires ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 18 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -454,24 +1238,73 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 19,
-    "solver": "fixed",
+    "solver": "rotationAngle",
     "title": "Activité 19 Problème de construction",
     "difficulty": 2,
-    "statement": "Activité 19 Problème de construction\nOn donne deux points distincts A et M, une droite Δ et un cercle Γ, comme indiqués sur la\nfigure ci-contre.\n1) a) Reproduire la figure.\nb) Construire la droite Δ’ image de la droite Δ par le\nquart de tour direct de centre A.\n2) La droite Δ’ coupe le cercle Γ en deux points,\non note D l’un de ces deux points.\na) Construire le point B image de D par le quart de tour\nindirect de centre A.\nb) Construire le point C tel que ABCD soit un carré.\n3) Construire un carré MNPQ tel que N appartienne à la\ndroite Δ et Q appartienne au cercle Γ.\nFigures globalement invariantes -\nEléments de symétrie d’une figure",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 19 Problème de construction\nOn donne deux points distincts A et M, une droite Δ et un cercle Γ, comme indiqués sur la\nfigure ci-contre.\n1) a) Reproduire la figure.\nb) Construire la droite Δ’ image de la droite Δ par le\nquart de tour direct de centre A.\n2) La droite Δ’ coupe le cercle Γ en deux points,\non note D l’un de ces deux points.\na) Construire le point B image de D par le quart de tour\nindirect de centre A.\nb) Construire le point C tel que ABCD soit un carré.\n3) Construire un carré MNPQ tel que N appartienne à la\ndroite Δ et Q appartienne au cercle Γ.\nFigures globalement invariantes -\nEléments de symétrie d’une figure\n\nÀ calculer dans l'application : Demi-tour (180°) de centre O(1;1), M(3 ; 1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 19 (« Activité 19 Problème de construction ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 1,
+        "min": -2,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 1,
+        "min": -2,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": 3,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": 1,
+        "min": -2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "angle",
+        "label": "α",
+        "unit": "°",
+        "value": 180,
+        "min": 90,
+        "max": 180,
+        "step": 90
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 19 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "om",
+        "label": "OM",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -479,24 +1312,73 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 20,
-    "solver": "fixed",
+    "solver": "rotationAngle",
     "title": "Activité 20",
     "difficulty": 2,
-    "statement": "Activité 20\nSoient D et D’ deux droites perpendiculaires en O, et soit A un point de D’, distinct de O.\nDéterminer l’image de la droite D par :\n• La symétrie axiale d’axe D’.\n• La symétrie centrale de centre O.\n• La translation de vecteur OA .\n• Le quart de tour direct de centre O.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 20\nSoient D et D’ deux droites perpendiculaires en O, et soit A un point de D’, distinct de O.\nDéterminer l’image de la droite D par :\n• La symétrie axiale d’axe D’.\n• La symétrie centrale de centre O.\n• La translation de vecteur OA .\n• Le quart de tour direct de centre O.\n\nÀ calculer dans l'application : 90°, O(0;0), M(0 ; 2).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 20 (« Activité 20 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": 0,
+        "min": -3,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": 2,
+        "min": -2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "angle",
+        "label": "α",
+        "unit": "°",
+        "value": 90,
+        "min": 90,
+        "max": 180,
+        "step": 90
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 20 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "om",
+        "label": "OM",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -504,24 +1386,59 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 21,
-    "solver": "fixed",
+    "solver": "rotation90",
     "title": "Activité 21",
     "difficulty": 2,
-    "statement": "Activité 21\nSoit C un cercle de centre O et D une droite passant par O.\nDéterminer l’image du cercle C par :\n• La symétrie axiale d’axe D.\n• La symétrie centrale de centre O.\n• L’homothétie de centre O et de rapport .\n• Une rotation directe ou indirecte de centre O et d’angle α\nExplorer 156\nDéfinitions\n– On dit qu’une figure est globalement invariante par une application du plan si son image\npar cette application est elle même.\n– On dit qu’un point I est un centre de symétrie d’une figure si cette figure est globalement\ninvariante par la symétrie centrale de centre I.\n– On dit qu’une droite D est un axe de symétrie d’une figure si cette figure est globalement\ninvariante par la symétrie axiale d’axe D.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 21\nSoit C un cercle de centre O et D une droite passant par O.\nDéterminer l’image du cercle C par :\n• La symétrie axiale d’axe D.\n• La symétrie centrale de centre O.\n• L’homothétie de centre O et de rapport .\n• Une rotation directe ou indirecte de centre O et d’angle α\nExplorer 156\nDéfinitions\n– On dit qu’une figure est globalement invariante par une application du plan si son image\npar cette application est elle même.\n– On dit qu’un point I est un centre de symétrie d’une figure si cette figure est globalement\ninvariante par la symétrie centrale de centre I.\n– On dit qu’une droite D est un axe de symétrie d’une figure si cette figure est globalement\ninvariante par la symétrie axiale d’axe D.\n\nÀ calculer dans l'application : Quart de tour, O(0;0), M(3 ; 1).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 21 (« Activité 21 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": 3,
+        "min": -2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": 1,
+        "min": -3,
+        "max": 4,
+        "step": 1
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 21 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -529,24 +1446,73 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 22,
-    "solver": "fixed",
+    "solver": "rotationAngle",
     "title": "Activité 22",
     "difficulty": 2,
-    "statement": "Activité 22\nSoit ABC un triangle équilatéral et soit A’ le milieu de [BC].\na) Montrer que le triangle ABC est globalement invariant par la symétrie axiale d’axe (AA’).\nb) Déterminer les axes de symétrie de ce triangle.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 22\nSoit ABC un triangle équilatéral et soit A’ le milieu de [BC].\na) Montrer que le triangle ABC est globalement invariant par la symétrie axiale d’axe (AA’).\nb) Déterminer les axes de symétrie de ce triangle.\n\nÀ calculer dans l'application : 180°, O(0;0), M(4 ; −2).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 22 (« Activité 22 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": 4,
+        "min": 0,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": -2,
+        "min": -4,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "angle",
+        "label": "α",
+        "unit": "°",
+        "value": 180,
+        "min": 90,
+        "max": 180,
+        "step": 90
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 22 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "om",
+        "label": "OM",
+        "unit": "—"
+      }
     ]
   },
   {
@@ -554,24 +1520,73 @@
     "chapter": "rotations",
     "kind": "activity",
     "activity": 23,
-    "solver": "fixed",
+    "solver": "rotationAngle",
     "title": "Activité 23",
     "difficulty": 2,
-    "statement": "Activité 23\nDéterminer les éléments de symétrie d’un droite, d’un cercle et d’un carré.\nm i l e r : 11-12\nA s s iAssimiler\nler\nA s s i m iAssimiler\nLe radian\n1 Reproduire et compléter le tableau suivant :\nMesure en degré 120° 20°\n3r r\nMesure en radian 0\n4 5\n2 Convertir en radian 18°, 72° et 150°.\nr 3r 4r 5r\n3 Convertir en degré , , , et 1 rad .\n8 10 5 6\nImage d’un point par une rotation\n4 O et A étant deux points distincts donnés. Construire l’image de A par la rotation indirecte\nde centre O et d’angle r .\n5 Dans la figure ci-contre ABC est un triangle rectangle isocèle en A.\nI est le milieu du segment [BC].\n1) Construire :\nr\na) L’image de C par la rotation directe de centre B et d’angle .\nr\nb) L’image de B par la rotation indirecte de centre C et d’angle .\n2) Quelle est l’image de A par le quart de tour direct de centre I ?\n6 Soient O et M deux points distincts du plan.\nr\n1) a) Construire le point M’ image de M par la rotation directe de centre O et d’angle .\nb) Construire le point M’’ image de M par la rotation indirecte de centre O et d’angle / .\n2) Quelle est la nature du triangle OM’M’’ ?\n7 Dans la figure ci-contre ABC est un triangle rectangle en A tel que\n% /\nCBA = et I est le milieu du côté [BC].\na) Déterminer l’image de A par la rotation indirecte de centre B et\nd’angle /\nb) Déterminer l’image de C par la rotation directe de centre I et //3\n2/\nd’angle .\nAssimiler Assimiler\nConservation de la distance\n8 Soit ABC un triangle.\n1) Construire à l’extérieur de ce triangle les points E et F tels que ABE et ACF soient deux\ntriangles équilatéraux.\n2) Montrer que EC = BF.\n/\n(On pourra considérer la rotation directe de centre A et d’angle ).\nConservation du barycentre\n9 Soit ABC un triangle et soit G son centre de gravité.\nOn désigne par A’, B’, C’ et G’ les images respectives de A, B, C et G par une rotation\ndirecte ou indirecte.\nMontrer que G’ est le centre de gravité du triangle A’ B’ C’.\n10 Pour chacune des figures suivantes, dire s’il existe une rotation qui transforme le cercle C\nen C’.\nFigures globalement invariantes – Eléments de symétrie d’une figure\n11 Soit ABC un triangle équilatéral de centre O.\nTrouver deux rotations directes ou indirectes d’angles différents qui laissent globalement\ninvariant ce triangle.\n12 Déterminer les éléments de symétrie des figures ci-dessous.\nèse\nS y n t hSynthèse\nRotation directe - rotation indirecte\n♦ r est une rotation directe de centre O et d’angle α. M’\nOn a : r(O) = O et pour tout M ≠ O\nOM' = OM\nSi r(M) = M’ alors *\n%\nMOM' = a\n♦ r est une rotation indirecte de centre O et d’angle α.\nOn a : r(O) = O et pour tout M ≠ O,\nOM' = OM\nSi r(M) = M’ alors * %\nMOM' = a\n♦ Etant donné trois points distincts O, A et B tels que OA = OB. Il existe une unique\nrotation r de centre O telle que r(A) = B.\nConservation de l’alignement, du milieu et du barycentre\n♦ Une rotation conserve l’alignement.\n♦ Une rotation conserve le milieu.\n♦ On admet qu’une rotation conserve le barycentre.\n♦ Une rotation conserve le parallélisme.\nConservation des angles, des distances et du contact\n♦ Une rotation conserve les angles.\nEn particulier une rotation conserve l’orthogonalité.\n♦ Une rotation conserve les distances.\n♦ Une rotation conserve le contact.\nImage d’une figure usuelle\n♦ L’image d’un segment par une rotation est un segment qui lui est isométrique.\n♦ L’image d’une droite par une rotation est une droite.\n♦ L’image d’une droite par un quart de tour est une droite qui lui est perpendiculaire.\n♦ L’image d’un cercle de centre I par une rotation r est un cercle de même rayon et de\ncentre I’ = r (I).\n♦ L’image d’un triangle par une rotation est un triangle qui lui est isométrique.\n♦ On admet que : Une figure et son image par une rotation sont superposables.\nEn particulier, un polygone et son image par une rotation sont superposables\nIls ont donc même périmètre, même aire et les angles homologues sont isométriques.\nDévelopper ses compé\nDévelopper ses compétences\n1 Soit ABC un triangle.\nOn construit à l’extérieur de ce triangle les carrés ABDE et BCFG et on désigne par I, J, K et\nL les milieux respectifs de [AD], [DG], [GC] et [CA].\na) Montrer que les droites (AG) et (CD) sont perpendiculaires et que AG = CD.\nb) En déduire que IJKL est un carré.\nIndication\na) Considérer un quart de tour de centre B.\nb) Penser à la droite des milieux.\nConstructions géométriques\n2 Soient D une droite, A un point de D et O un n’appartenant pas à D.\nSoit D’ l’image de la droite D par une rotation r de centre O.\nConstruire D’ sachant qu’elle passe par A.\nIndication\nSoit H le projeté orthogonal de O sur D. Le cercle de centre O et passant par H est tangent à\nla droite D et il est globalement invariant par r.\nConstruire D’ sachant qu’une rotation conserve le contact.\nRotations, arithmétique et suites\n3 Dans la figure ci-dessous :\n- Les points O, A, B, …, M, N sont les sommets d’un polygone régulier à 15 côtés et de centre ω.\n- Les points O, P, Q, …, V, W sont les sommets d’un polygone régulier à 9 côtés et de\ncentre ω’.\nOn désigne par : R la rotation directe de centre ω et d’angle 2/ .\n2/\nR’ la rotation directe de centre ω’ et d’angle .\nOn définit la suite (Mn) de points par : M0 = O et pour tout entier naturel n, Mn+1 = R(Mn).\nOn définit la suite (Pn) de points par : P0 = O et pour tout entier naturel n, Pn+1 = R’(Pn).\nIndiquer la position de : M5, P5, M20, P20, M2006 et P2006.\na) Déterminer le plus petit entier naturel n non nul tel que Mn = Pn = O.\nb) En déduire l’ensemble E des entiers naturels n tels que Mn = Pn = O.\nUtiliser les TIC Utiliser les TI\nC\n1 A l’aide d’un logiciel de géométrie :\n- Construire un triangle équilatéral ABC (utiliser polygone régulier du menu du logiciel),\nnommer O son centre.\n- Tracer les droites (AB), (BC) et (AC).\nSoit M un point variable (point sur objet) de la droite (AB).\n- Construire :\n• Le point I, intersection de la droite (AC) et la parallèle à (BC), passant par M.\n• Le point J, intersection de la droite (BC) et la parallèle à (AC), passant par M.\n• La médiatrice du segment [IJ].\n- Déplacer le point M sur la droite (AB) et observer la médiatrice de [IJ].\n- Conjecturer\n- Justifier votre conjecture.\n2 Point de Toricilli\nDans la figure ci-contre ABC est un triangle équilatéral de centre O,\net P un point variable à l’intérieur du triangle.\n1) A l’aide d’un logiciel de géométrie :\na) Reproduire la figure\nb) Mesurer la longueur de chacun des segments [PA], [PB] et [PC].\nc) Utiliser la calculatrice du logiciel pour calculer PA + PB + PC.\nd) Faite varier le point P à l’intérieur du triangle et observer la variation de PA + PB + PC.\nPlacer P de façon que PA + PB + PC soit minimum.\nConjecturer sur la position du point P.\n2) On se propose de justifier la conjecture précédente.\nP étant un point quelconque à l’intérieur du triangle ABC.\nSoit r la rotation directe de centre B et d’angle / On pose r(P) = Q et r(A) = C’.\na) Quelle est la nature des triangles PQB et BAC’ ?\nb) Prouver que PA + PB + PC = C’Q + QP + PC.\nc) Montrer que si les points C’, Q, P et C sont alignés dans cet ordre,\nalors PA + PB + PC est minimum.\nd) Prouver que si les points C’, Q, P et C sont alignés dans cet ordre, alors\n% % % 2/\nAPB = APC = BPC = .\ne) Déterminer alors le point P, pour lequel PA + PB + PC est minimum.\n( P s’appelle le point de Toricelli ).\nExercices etExercices lèmes\nproetbproblèmes\nAppliquer\n- une translation - une symétrie centrale - une\n1 La figure ci-dessous représente un pavage symétrie axiale qui font passer du carré 1 au\nd’un triangle équilatéral en 16 triangles carré 2.\néquilatéraux numérotés de 1 à 16. b) Trouver une rotation qui fait passer le carré\n1 au carré 2.\n2) Pour la figure (fig2), trouver :\n- une symétrie centrale - une symétrie axiale\n- une translation - deux rotations qui font\npasser du carré 1 au carré 2.\n3) Pour la figure (fig3), trouver :\n- une symétrie centrale - une symétrie axiale\n- deux rotations qui font passer le triangle 1\na) Quelle est l’image du triangle 2 par la au triangle 2.\nrotation directe de centre E et d’angle / ? Maîtriser\nb) Quelle est l’image du triangle 5 par la 4 Soit ABC un triangle équilatéral inscrit\nrotation indirecte de centre A et d’angle 2/ ? dans un cercle C et tel que C est l’image de\n3 B par la/ rotation directe r de centre A et\nc) Quelle est l’image du triangle 10 par le\nd’angle 3 .\ndemi tour de centre A? % 2/\nd) Quelle est l’image du triangle 4 par la 1 ) Montrer que AMB = .\ntranslation de vecteur 2 BA ? 2 ) Soient M un point de C situé sur l’arc\n%A\n7 AB qui ne contient pas le point C et I = r (M).\n2 1) Construire un carré ABCD telque D soit % 2/\na ) Montrer que AIC = .\nl’image de B par le quart de tour direct de 3\ncentre A. b ) Montrer que I ∈ [CM].\n2) Construire les images de ce carré par : c ) Montrer que MA + MB = MC.\na) La symétrie axiale S(AB)\n5 Soient C et C’ deux cercles sécants en I et\nb) La symétrie axiale S(BC)\nc) Le quart de tour direct de centre D J. Une droite D passant par J, coupe C en A et\nd) La translation de vecteur 2 BC C’ en B. Une droite D’ passant par J, coupe C\ne) Le quart de tour direct de centre A en M et C’ en N (voir figure).\nLa figure obtenue, qui est formée de six car-\nrés juxtaposés est elle un patron d’un cube ?\n1)\na) Montrer que % % % %\nIAJ = IMJ et IBJ = INJ .\n1) Pour la figure (fig1)\na) Déterminer :\nExercices et problèmes\nExercices et problèmes\nb) En déduire que % %\nAIB = MIN . 10 Dans la figure ci-contre,\n2) Soit r la rotation directe de centre I et ABCD est un carré de\n%\nd’angle AIB . centre O, les points P et Q\nConstruire l’image du cercle C par r. sont respectivement sur les\ncôtés [BC] et [CD] du\n6 Etant donnés deux droites parallèles D1 et\ncarré et tels que BP = CQ.\nD2 et un point I, construire les points A de D1\nMontrer que le point d’intersection H des\net B de D2 tels que le triangle IAB soit\ndroites (BQ) et (DP), est l’orthocentre du\néquilatéral.\ntriangle APQ.\n7 Soient ABCD est un carré telque D est 11 Soit un carré ABCD de centre O. E, F, G\nl’image de B par le quart de tour direct de et H sont les milieux respectifs de [AB], [BC],\ncentre A et M un point de la droite (BC). La [CD] et [DA].\nperpendiculaire en A à (AM) coupe (CD) en Les droites (AF), (BG), (CH) et (DE) se\nM’. On désigne par r le quart de tour direct de coupent à l’intérieur du carré en formant un\ncentre A. quadrilatère IJKL.\na) Déterminer les images des droites (AM) et\n(BC) par r.\nb) Quelle est la nature du triangle AMM’ ?\n8 Reproduire la figure ci-dessous et\nconstruire un triangle équilatéral ABC tel\nque B ∈ D et C ∈ Γ.\nMontrer que ce quadrilatère est un carré dont\nl’aire est le cinquième de celle du carré initial.\n9 Dans la figure ci-\ncontre, ABC est un\ntriangle, M est un point\nvariable sur le côté [BC]\net AMNP est un carré.\nQuel est l’ensemble des\npoints P lorsque M varie ?\nM a t h e t cMath ure\nu lettculture\nLes carrés magiques\nDepuis l’antiquité, les nombres ont été à la fois un outil puissant pour la vie quotidienne et la\nsource de jeux fascinants sans aucun souci d’utilité immédiate. On retrouve les carrés\nmagiques dans de nombreuses civilisations, de la Chine antique aux artistes de la\nRenaissance, en passant notamment par les Arabes.\nPlusieurs mathématiciens Arabes ont étudié les carrés magiques et certains d’entre eux ont\nproposé des méthodes pour les construire. C’est le cas d’Ibn AL Haythem, Abul Wafa\nBusjani, AL Kharagi et le mathématicien Tunisien Ibn AL Khatib, qui a exposé dans son\nlivre « Hatt an niqab » des méthodes de constructions de différents carrés magiques.\nPour faire un carré magique, il suffit d’inscrire des entiers naturels dans une grille carrée de\ntelle sorte que la somme de chaque ligne, chaque colonne et chaque diagonale soit toujours\nla même.\nCi-contre un carré magique 3 × 3. La somme de chaque ligne, 4 9 2\nchaque colonne et chaque diagonale est 15 (On utilise les\nentiers de 1 à 9).\nVous pouvez trouver 7 autres carrés magiques 3 × 3, il suffit 3 5 7\nd’utiliser les applications du plan dans lui-même qui laissent\nglobalement invariant le carré. 8 1 6\nA vous de jouer !\n• Trouver les 7 autres carrés magiques 3 × 3.\n• Montrer que la somme de chaque ligne, chaque colonne et chaque diagonale d’un carré\nmagique 3 × 3 est nécessairement 15.\n• Montrer que le nombre central est obligatoirement 5.",
-    "variables": [],
-    "questions": [
+    "statement": "Activité 23\nDéterminer les éléments de symétrie d’un droite, d’un cercle et d’un carré.\nm i l e r : 11-12\nA s s iAssimiler\nler\nA s s i m iAssimiler\nLe radian\n1 Reproduire et compléter le tableau suivant :\nMesure en degré 120° 20°\n3r r\nMesure en radian 0\n4 5\n2 Convertir en radian 18°, 72° et 150°.\nr 3r 4r 5r\n3 Convertir en degré , , , et 1 rad .\n8 10 5 6\nImage d’un point par une rotation\n4 O et A étant deux points distincts donnés. Construire l’image de A par la rotation indirecte\nde centre O et d’angle r .\n5 Dans la figure ci-contre ABC est un triangle rectangle isocèle en A.\nI est le milieu du segment [BC].\n1) Construire :\nr\na) L’image de C par la rotation directe de centre B et d’angle .\nr\nb) L’image de B par la rotation indirecte de centre C et d’angle .\n2) Quelle est l’image de A par le quart de tour direct de centre I ?\n6 Soient O et M deux points distincts du plan.\nr\n1) a) Construire le point M’ image de M par la rotation directe de centre O et d’angle .\nb) Construire le point M’’ image de M par la rotation indirecte de centre O et d’angle / .\n2) Quelle est la nature du triangle OM’M’’ ?\n7 Dans la figure ci-contre ABC est un triangle rectangle en A tel que\n% /\nCBA = et I est le milieu du côté [BC].\na) Déterminer l’image de A par la rotation indirecte de centre B et\nd’angle /\nb) Déterminer l’image de C par la rotation directe de centre I et //3\n2/\nd’angle .\nAssimiler Assimiler\nConservation de la distance\n8 Soit ABC un triangle.\n1) Construire à l’extérieur de ce triangle les points E et F tels que ABE et ACF soient deux\ntriangles équilatéraux.\n2) Montrer que EC = BF.\n/\n(On pourra considérer la rotation directe de centre A et d’angle ).\nConservation du barycentre\n9 Soit ABC un triangle et soit G son centre de gravité.\nOn désigne par A’, B’, C’ et G’ les images respectives de A, B, C et G par une rotation\ndirecte ou indirecte.\nMontrer que G’ est le centre de gravité du triangle A’ B’ C’.\n10 Pour chacune des figures suivantes, dire s’il existe une rotation qui transforme le cercle C\nen C’.\nFigures globalement invariantes – Eléments de symétrie d’une figure\n11 Soit ABC un triangle équilatéral de centre O.\nTrouver deux rotations directes ou indirectes d’angles différents qui laissent globalement\ninvariant ce triangle.\n12 Déterminer les éléments de symétrie des figures ci-dessous.\nèse\nS y n t hSynthèse\nRotation directe - rotation indirecte\n♦ r est une rotation directe de centre O et d’angle α. M’\nOn a : r(O) = O et pour tout M ≠ O\nOM' = OM\nSi r(M) = M’ alors *\n%\nMOM' = a\n♦ r est une rotation indirecte de centre O et d’angle α.\nOn a : r(O) = O et pour tout M ≠ O,\nOM' = OM\nSi r(M) = M’ alors * %\nMOM' = a\n♦ Etant donné trois points distincts O, A et B tels que OA = OB. Il existe une unique\nrotation r de centre O telle que r(A) = B.\nConservation de l’alignement, du milieu et du barycentre\n♦ Une rotation conserve l’alignement.\n♦ Une rotation conserve le milieu.\n♦ On admet qu’une rotation conserve le barycentre.\n♦ Une rotation conserve le parallélisme.\nConservation des angles, des distances et du contact\n♦ Une rotation conserve les angles.\nEn particulier une rotation conserve l’orthogonalité.\n♦ Une rotation conserve les distances.\n♦ Une rotation conserve le contact.\nImage d’une figure usuelle\n♦ L’image d’un segment par une rotation est un segment qui lui est isométrique.\n♦ L’image d’une droite par une rotation est une droite.\n♦ L’image d’une droite par un quart de tour est une droite qui lui est perpendiculaire.\n♦ L’image d’un cercle de centre I par une rotation r est un cercle de même rayon et de\ncentre I’ = r (I).\n♦ L’image d’un triangle par une rotation est un triangle qui lui est isométrique.\n♦ On admet que : Une figure et son image par une rotation sont superposables.\nEn particulier, un polygone et son image par une rotation sont superposables\nIls ont donc même périmètre, même aire et les angles homologues sont isométriques.\nDévelopper ses compé\nDévelopper ses compétences\n1 Soit ABC un triangle.\nOn construit à l’extérieur de ce triangle les carrés ABDE et BCFG et on désigne par I, J, K et\nL les milieux respectifs de [AD], [DG], [GC] et [CA].\na) Montrer que les droites (AG) et (CD) sont perpendiculaires et que AG = CD.\nb) En déduire que IJKL est un carré.\nIndication\na) Considérer un quart de tour de centre B.\nb) Penser à la droite des milieux.\nConstructions géométriques\n2 Soient D une droite, A un point de D et O un n’appartenant pas à D.\nSoit D’ l’image de la droite D par une rotation r de centre O.\nConstruire D’ sachant qu’elle passe par A.\nIndication\nSoit H le projeté orthogonal de O sur D. Le cercle de centre O et passant par H est tangent à\nla droite D et il est globalement invariant par r.\nConstruire D’ sachant qu’une rotation conserve le contact.\nRotations, arithmétique et suites\n3 Dans la figure ci-dessous :\n- Les points O, A, B, …, M, N sont les sommets d’un polygone régulier à 15 côtés et de centre ω.\n- Les points O, P, Q, …, V, W sont les sommets d’un polygone régulier à 9 côtés et de\ncentre ω’.\nOn désigne par : R la rotation directe de centre ω et d’angle 2/ .\n2/\nR’ la rotation directe de centre ω’ et d’angle .\nOn définit la suite (Mn) de points par : M0 = O et pour tout entier naturel n, Mn+1 = R(Mn).\nOn définit la suite (Pn) de points par : P0 = O et pour tout entier naturel n, Pn+1 = R’(Pn).\nIndiquer la position de : M5, P5, M20, P20, M2006 et P2006.\na) Déterminer le plus petit entier naturel n non nul tel que Mn = Pn = O.\nb) En déduire l’ensemble E des entiers naturels n tels que Mn = Pn = O.\nUtiliser les TIC Utiliser les TI\nC\n1 A l’aide d’un logiciel de géométrie :\n- Construire un triangle équilatéral ABC (utiliser polygone régulier du menu du logiciel),\nnommer O son centre.\n- Tracer les droites (AB), (BC) et (AC).\nSoit M un point variable (point sur objet) de la droite (AB).\n- Construire :\n• Le point I, intersection de la droite (AC) et la parallèle à (BC), passant par M.\n• Le point J, intersection de la droite (BC) et la parallèle à (AC), passant par M.\n• La médiatrice du segment [IJ].\n- Déplacer le point M sur la droite (AB) et observer la médiatrice de [IJ].\n- Conjecturer\n- Justifier votre conjecture.\n2 Point de Toricilli\nDans la figure ci-contre ABC est un triangle équilatéral de centre O,\net P un point variable à l’intérieur du triangle.\n1) A l’aide d’un logiciel de géométrie :\na) Reproduire la figure\nb) Mesurer la longueur de chacun des segments [PA], [PB] et [PC].\nc) Utiliser la calculatrice du logiciel pour calculer PA + PB + PC.\nd) Faite varier le point P à l’intérieur du triangle et observer la variation de PA + PB + PC.\nPlacer P de façon que PA + PB + PC soit minimum.\nConjecturer sur la position du point P.\n2) On se propose de justifier la conjecture précédente.\nP étant un point quelconque à l’intérieur du triangle ABC.\nSoit r la rotation directe de centre B et d’angle / On pose r(P) = Q et r(A) = C’.\na) Quelle est la nature des triangles PQB et BAC’ ?\nb) Prouver que PA + PB + PC = C’Q + QP + PC.\nc) Montrer que si les points C’, Q, P et C sont alignés dans cet ordre,\nalors PA + PB + PC est minimum.\nd) Prouver que si les points C’, Q, P et C sont alignés dans cet ordre, alors\n% % % 2/\nAPB = APC = BPC = .\ne) Déterminer alors le point P, pour lequel PA + PB + PC est minimum.\n( P s’appelle le point de Toricelli ).\nExercices etExercices lèmes\nproetbproblèmes\nAppliquer\n- une translation - une symétrie centrale - une\n1 La figure ci-dessous représente un pavage symétrie axiale qui font passer du carré 1 au\nd’un triangle équilatéral en 16 triangles carré 2.\néquilatéraux numérotés de 1 à 16. b) Trouver une rotation qui fait passer le carré\n1 au carré 2.\n2) Pour la figure (fig2), trouver :\n- une symétrie centrale - une symétrie axiale\n- une translation - deux rotations qui font\npasser du carré 1 au carré 2.\n3) Pour la figure (fig3), trouver :\n- une symétrie centrale - une symétrie axiale\n- deux rotations qui font passer le triangle 1\na) Quelle est l’image du triangle 2 par la au triangle 2.\nrotation directe de centre E et d’angle / ? Maîtriser\nb) Quelle est l’image du triangle 5 par la 4 Soit ABC un triangle équilatéral inscrit\nrotation indirecte de centre A et d’angle 2/ ? dans un cercle C et tel que C est l’image de\n3 B par la/ rotation directe r de centre A et\nc) Quelle est l’image du triangle 10 par le\nd’angle 3 .\ndemi tour de centre A? % 2/\nd) Quelle est l’image du triangle 4 par la 1 ) Montrer que AMB = .\ntranslation de vecteur 2 BA ? 2 ) Soient M un point de C situé sur l’arc\n%A\n7 AB qui ne contient pas le point C et I = r (M).\n2 1) Construire un carré ABCD telque D soit % 2/\na ) Montrer que AIC = .\nl’image de B par le quart de tour direct de 3\ncentre A. b ) Montrer que I ∈ [CM].\n2) Construire les images de ce carré par : c ) Montrer que MA + MB = MC.\na) La symétrie axiale S(AB)\n5 Soient C et C’ deux cercles sécants en I et\nb) La symétrie axiale S(BC)\nc) Le quart de tour direct de centre D J. Une droite D passant par J, coupe C en A et\nd) La translation de vecteur 2 BC C’ en B. Une droite D’ passant par J, coupe C\ne) Le quart de tour direct de centre A en M et C’ en N (voir figure).\nLa figure obtenue, qui est formée de six car-\nrés juxtaposés est elle un patron d’un cube ?\n1)\na) Montrer que % % % %\nIAJ = IMJ et IBJ = INJ .\n1) Pour la figure (fig1)\na) Déterminer :\nExercices et problèmes\nExercices et problèmes\nb) En déduire que % %\nAIB = MIN . 10 Dans la figure ci-contre,\n2) Soit r la rotation directe de centre I et ABCD est un carré de\n%\nd’angle AIB . centre O, les points P et Q\nConstruire l’image du cercle C par r. sont respectivement sur les\ncôtés [BC] et [CD] du\n6 Etant donnés deux droites parallèles D1 et\ncarré et tels que BP = CQ.\nD2 et un point I, construire les points A de D1\nMontrer que le point d’intersection H des\net B de D2 tels que le triangle IAB soit\ndroites (BQ) et (DP), est l’orthocentre du\néquilatéral.\ntriangle APQ.\n7 Soient ABCD est un carré telque D est 11 Soit un carré ABCD de centre O. E, F, G\nl’image de B par le quart de tour direct de et H sont les milieux respectifs de [AB], [BC],\ncentre A et M un point de la droite (BC). La [CD] et [DA].\nperpendiculaire en A à (AM) coupe (CD) en Les droites (AF), (BG), (CH) et (DE) se\nM’. On désigne par r le quart de tour direct de coupent à l’intérieur du carré en formant un\ncentre A. quadrilatère IJKL.\na) Déterminer les images des droites (AM) et\n(BC) par r.\nb) Quelle est la nature du triangle AMM’ ?\n8 Reproduire la figure ci-dessous et\nconstruire un triangle équilatéral ABC tel\nque B ∈ D et C ∈ Γ.\nMontrer que ce quadrilatère est un carré dont\nl’aire est le cinquième de celle du carré initial.\n9 Dans la figure ci-\ncontre, ABC est un\ntriangle, M est un point\nvariable sur le côté [BC]\net AMNP est un carré.\nQuel est l’ensemble des\npoints P lorsque M varie ?\nM a t h e t cMath ure\nu lettculture\nLes carrés magiques\nDepuis l’antiquité, les nombres ont été à la fois un outil puissant pour la vie quotidienne et la\nsource de jeux fascinants sans aucun souci d’utilité immédiate. On retrouve les carrés\nmagiques dans de nombreuses civilisations, de la Chine antique aux artistes de la\nRenaissance, en passant notamment par les Arabes.\nPlusieurs mathématiciens Arabes ont étudié les carrés magiques et certains d’entre eux ont\nproposé des méthodes pour les construire. C’est le cas d’Ibn AL Haythem, Abul Wafa\nBusjani, AL Kharagi et le mathématicien Tunisien Ibn AL Khatib, qui a exposé dans son\nlivre « Hatt an niqab » des méthodes de constructions de différents carrés magiques.\nPour faire un carré magique, il suffit d’inscrire des entiers naturels dans une grille carrée de\ntelle sorte que la somme de chaque ligne, chaque colonne et chaque diagonale soit toujours\nla même.\nCi-contre un carré magique 3 × 3. La somme de chaque ligne, 4 9 2\nchaque colonne et chaque diagonale est 15 (On utilise les\nentiers de 1 à 9).\nVous pouvez trouver 7 autres carrés magiques 3 × 3, il suffit 3 5 7\nd’utiliser les applications du plan dans lui-même qui laissent\nglobalement invariant le carré. 8 1 6\nA vous de jouer !\n• Trouver les 7 autres carrés magiques 3 × 3.\n• Montrer que la somme de chaque ligne, chaque colonne et chaque diagonale d’un carré\nmagique 3 × 3 est nécessairement 15.\n• Montrer que le nombre central est obligatoirement 5.\n\nÀ calculer dans l'application : 90°, O(1;0), M(1 ; 3).",
+    "variables": [
       {
-        "key": "lu",
-        "type": "tf",
-        "label": "L’activité 23 (« Activité 23 ») est bien celle du polycopié, chapitre en cours",
-        "answer": "vrai"
+        "key": "xO",
+        "label": "x_O",
+        "unit": "—",
+        "value": 1,
+        "min": -2,
+        "max": 3,
+        "step": 1
+      },
+      {
+        "key": "yO",
+        "label": "y_O",
+        "unit": "—",
+        "value": 0,
+        "min": -2,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "x",
+        "label": "x_M",
+        "unit": "—",
+        "value": 1,
+        "min": -2,
+        "max": 4,
+        "step": 1
+      },
+      {
+        "key": "y",
+        "label": "y_M",
+        "unit": "—",
+        "value": 3,
+        "min": -1,
+        "max": 6,
+        "step": 1
+      },
+      {
+        "key": "angle",
+        "label": "α",
+        "unit": "°",
+        "value": 90,
+        "min": 90,
+        "max": 180,
+        "step": 90
       }
     ],
-    "steps": [
-      [
-        "Manuel",
-        "Relire l’activité 23 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
-      ]
+    "questions": [
+      {
+        "key": "xM",
+        "label": "x_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "yM",
+        "label": "y_{M'}",
+        "unit": "—"
+      },
+      {
+        "key": "om",
+        "label": "OM",
+        "unit": "—"
+      }
     ]
   }
 ]

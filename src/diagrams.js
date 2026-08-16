@@ -338,7 +338,7 @@ const figures = {
     if (ch === "arithmetique") return figures.euclidDiv({ a: 47, b: 8 });
     if (["vecteurs", "barycentre", "translations", "homotheties", "rotations"].includes(ch)) return figures.vectorAB({ xA: 0, yA: 0, xB: 3, yB: 2 });
     return {
-      caption: "Activité du polycopié CNP. Lire l’énoncé, répondre, puis vérifier.",
+      caption: "Schéma de l’activité. Calculer les questions, puis vérifier la correction.",
       svg: svg("Activité du manuel", `${axes()}${plotCurve(x => 0.15 * x * x - 2, { xmin: -6, xmax: 6, ymin: -6, ymax: 6 })}${t(70, 230, "Courbe de travail")}`)
     };
   }
