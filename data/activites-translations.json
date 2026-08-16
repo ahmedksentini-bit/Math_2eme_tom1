@@ -1,0 +1,677 @@
+[
+  {
+    "id": "TRANSLATIONS_A01",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 1,
+    "solver": "fixed",
+    "title": "Activité 1",
+    "difficulty": 1,
+    "statement": "Activité 1\nSoit A et B deux points distincts donnés et M un point du plan.\n1) a) Construire le point N symétrique du point M par rapport à A.\nb) Construire le point P symétrique du point M par rapport à la droite (AB).\nc) Construire le point Q tel que MQ = AB .\n2) Soit C un point distinct de A.\nConstruire un point C’ tel que ACC’ soit un triangle équilatéral.\nCombien y a-t-il de points C’ répondant à la question ?\n3) Soit D un point distinct de B\nConstruire un point B’ tel que le triangle DBB’ soit rectangle en B’.\nCombien y a-t-il de points B’ répondant à la question ?\nDéfinition\nLorsqu’on associe à tout point M du plan un seul point M’, on définit une application du plan\ndans lui même.\nSi on désigne par f cette application, alors on écrit\nf :P $ P\nM 7 M'\nM’ s’appelle l’image du point M par l’application f.\nM s’appelle antécédent du point M’ par l’application f.\nExemples\n• Soit I un point du plan.\nLa symétrie centrale S I : P $ P\nM 7 M' tel que I est le milieu de [MM’],\nest une application du plan dans lui-même.\n• Soit D une droite.\nLa symétrie orthogonale S D : P $ P\nM 7 M'\ntel que D soit la médiatrice du segment [MM’],\nest une application du plan dans lui même.\nE x p l o r e r\n• Un quart de tour direct, un quart de tour indirect sont des applications du plan.\nA s s iAssimiler\nTranslations",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 1 (« Activité 1 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 1 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A02",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 2,
+    "solver": "fixed",
+    "title": "Activité 2",
+    "difficulty": 1,
+    "statement": "Activité 2\nSoient I et J deux points distincts du plan.\nSoit M un point du plan, on désigne par M1 son image par la symétrie centrale SI et par M’\nl’image de M1 par la symétrie centrale SJ .\nSoit t : P $ P\nM 7 M'\n1) Soit C un point distinct de I et de J .\na) Construire le point C’ image du point C par l’application t.\nb) Exprimer CC' en fonction IJ .\n2) a) Construire l’image M’ d’un point M par l’application t.\nb) Montrer que MM' = CC' .\nDéfinition\nSoit u un vecteur. L’application du plan dans lui même qui à tout point M associe l’unique\npoint M’ tel que MM' = u est appelée translation de vecteur u . Elle est notée t u .\nOn écrit t u : P $ P\nM 7 t u ]Mg = M'\nM’ est l’image de M par t u .\nt u ]Mg = M' équivaut à MM' = u .\nExplorer Explorer\nRemarque\nEtant donné un point M’, il existe un seul point M du plan tel que t u ]Mg = M' .\nM est l’antécédent de M’ par t u .",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 2 (« Activité 2 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 2 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A03",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 3,
+    "solver": "fixed",
+    "title": "Activité 3",
+    "difficulty": 1,
+    "statement": "Activité 3\nDans la figure ci-contre, ABCD et AIBJ sont deux\nparallélogrammes.\n1) Déterminer l’image par t de chacun des points A,\nAI\nI et J.\n2) Déterminer l’image par t JI de chacun des points\nA, B et J.\n3) Déterminer l’antécédent par t AJ de chacun des points B, I et J.\nA s s iAssimiler",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 3 (« Activité 3 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 3 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A04",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 4,
+    "solver": "fixed",
+    "title": "Activité 4 Propriété caractéristique",
+    "difficulty": 1,
+    "statement": "Activité 4 Propriété caractéristique\n1) Soient M et N deux points du plan d’images respectives M’ et N’ par une translation de\nvecteur u . Montrer que M'N' = MN\n2) Soit f une application du plan dans le plan, M et N deux points quelconques et M’ et N’ leurs\nimages respectives par f.\nMontrer que si M'N' = MN alors f est une translation.\nConséquence\n• Pour tout points M et N d’images respectives M’ et N’\npar une translation on a MN = M’N’.\nOn dit qu’une translation conserve les distances.\n• Pour tout points M et N distincts, d’images respectives\nM’ et N’ par une translation les droites (MN) et (M’N’)\nsont parallèles.\nE x p l o r e r",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 4 (« Activité 4 Propriété caractéristique ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 4 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A05",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 5,
+    "solver": "fixed",
+    "title": "Activité 5",
+    "difficulty": 1,
+    "statement": "Activité 5\nSoit A, B et C trois points du plan et soit\nf : P I→ P\nM 7 M' tel que MM' = MA + MB - 2MC\nMontrer que f est une translation dont on déterminera le vecteur.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 5 (« Activité 5 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 5 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A06",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 6,
+    "solver": "fixed",
+    "title": "Activité 6 Conservation de l’alignement",
+    "difficulty": 1,
+    "statement": "Activité 6 Conservation de l’alignement\n1) Soient M, N et P trois points alignés et soient M’ , N’ et P’ leurs images respectives par une\ntranslation t de vecteur u . Montrer que M’, N’ et P’ sont alignés.\n2) Soient A, B et C trois points d’une droite Δ .\nSoient I et J deux points non situés sur Δ .\na) Construire les points H, K et L tels que AIJH, BIJK et CIJL soient des parallélogrammes.\nb) Montrer que les points H, K et L sont alignés.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 6 (« Activité 6 Conservation de l’alignement ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 6 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A07",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 7,
+    "solver": "fixed",
+    "title": "Activité 7",
+    "difficulty": 1,
+    "statement": "Activité 7\nSoient ABC un triangle et I, J et K les milieux respectifs des segments [BC], [AC]et [AB].\nOn désigne par u le vecteur BA et par v le vecteur BC .\n1) Exprimer les vecteurs BI , BK et BJ en fonction de u et v .\n2) On désigne par t1 et t 2 les translations de vecteurs respectifs u et v et on considère\nles points L et M tels que L = t1(C) et M = t2 (C ).\na) Construire L et M.\nb) Montrer que les points J, K, L et M sont alignés et que J est le milieu de [ KM].\nc) Montrer que L est l’image de M par la translation de vecteur v .",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 7 (« Activité 7 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 7 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A08",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 8,
+    "solver": "fixed",
+    "title": "Activité 8 Image d’une droite, d’un segment et d’une demi- droite",
+    "difficulty": 1,
+    "statement": "Activité 8 Image d’une droite, d’un segment et d’une demi- droite\nSoient A et B deux points distincts et soient A’ et B’ leurs images respectives par une translation t\nde vecteur u .\n1) Soit M un point de (AB) et M’ son image par t.\na) Traduire par une relation vectorielle l’énoncé « M ∈ (AB) ».\nb) En déduire que M’∈ (A’B’).\n2) Soit N’ un point de (A’B’) et N son antécédent par t. Montrer que N ∈ (AB).\n3) Que peut-on conclure ?\n4) Quelle est l’image du segment [AB] par t ?\n5) Quelle est l’image de la demi- droite [AB) par t ?\nExplorer Explorer",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 8 (« Activité 8 Image d’une droite, d’un segment et d’une demi- droite ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 8 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A09",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 9,
+    "solver": "fixed",
+    "title": "Activité 9",
+    "difficulty": 1,
+    "statement": "Activité 9\nSoient ABCD un parallélogramme et Δ la parallèle\nà la droite (AC) passant par B.\n1) Déterminer l’image de chacune des droites (AB),\n(AD) et Δ par la translation t de vecteur AC .\n2) Construire l’image de la droite (DB) et l’image de\nla droite (BC) par la translation t.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 9 (« Activité 9 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 9 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A10",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 10,
+    "solver": "fixed",
+    "title": "Activité 10 Conservation du milieu",
+    "difficulty": 1,
+    "statement": "Activité 10 Conservation du milieu\n1) Soient ABC un triangle et M, N et P les milieux respectifs des segments [BC], [AC]\net [AB].\nOn note t la translation de vecteur MC\na) Déterminer t(B) et t(P).\nb) Soit Q l’image de A par t.\nMontrer que les points M , N et Q sont alignés.\nPréciser la position du point N sur le segment [MQ].\n2) Soient I et J deux points distincts et O le milieu de [IJ]. On désigne par I’, J’ et O’ leurs\nimages respectives par une translation t .\nMontrer que O’ est le milieu de [I’J’].",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 10 (« Activité 10 Conservation du milieu ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 10 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A11",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 11,
+    "solver": "fixed",
+    "title": "Activité 11 Conservation du barycentre",
+    "difficulty": 1,
+    "statement": "Activité 11 Conservation du barycentre\nSoit ABC un triangle, O le milieu de [BC] et t la translation de vecteur BC\n1) Construire les points A’, C’ et O’ images respectives de A, C et O par t.\n2) On désigne par M le point d’intersection des droites (BA’) et (AO).\nMontrer que M est le centre de gravité du triangle ABC.\n3) Soit N le point d’intersection de (AC’) et (A’O’).\na) Que représente N pour le triangle A’CC’ ?\nb) Montrer que N est l’image du point M par la translation t.\n4) Soient I et J deux points du plan et a et b deux réels tels que a + b ≠ 0. On désigne par G\nle barycentre de (I , a) et (J , b) et par I’, J’ et G’ les images respectives de I, J et G par une\ntranslation.\nMontrer que G’ est le barycentre de (I’, a) et (J’, b).\nE x p l o r e r",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 11 (« Activité 11 Conservation du barycentre ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 11 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A12",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 12,
+    "solver": "fixed",
+    "title": "Activité 12",
+    "difficulty": 1,
+    "statement": "Activité 12\nDans la figure ci-contre, ABC est un rectangle, M est un point à\nl’intérieur de ce rectangle tel que le triangle ABM est non rectangle\nen M et H est l’orthocentre du triangle ABM.\nSoit E le projeté orthogonal de C sur la droite (AM) et F le projeté\northogonal de D sur la droite (BM). On note I le point d’intersection\ndes droites (CE) et (DF).\nOn considère la translation t de vecteur BC .\n1) a) Quelle est l’image de la droite (BH) par la translation t ?\nb) Quelle est l’image de la droite (MH) par la translation t ?\n2) Montrer que les points I, M et H sont alignés.\nm i l e r : 3-4\nA s s iAssimiler",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 12 (« Activité 12 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 12 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A13",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 13,
+    "solver": "fixed",
+    "title": "Activité 13 Conservation du parallélisme et de l’orthogonalité",
+    "difficulty": 1,
+    "statement": "Activité 13 Conservation du parallélisme et de l’orthogonalité\nSoient D et Δ deux droites et D’ et Δ ’ leurs images respectives par une translation t.\nQue peut-on dire des droites D’ et Δ’ dans chacun des cas suivants :\na) D et Δ sont parallèles.\nb) D et Δ sont perpendiculaires.\nA s s iAssimiler",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 13 (« Activité 13 Conservation du parallélisme et de l’orthogonalité ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 13 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A14",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 14,
+    "solver": "fixed",
+    "title": "Activité 14",
+    "difficulty": 1,
+    "statement": "Activité 14\n1) Soit MNP un triangle et M’N’P’ son image par une translation.\nMontrer que les triangles MNP et M’N’P’ sont isométriques.\n2) Soit ABCD un quadrilatère et A’B’C’D’ son image par une translation.\nDéterminer la nature du quadrilatère A’B’C’D’ dans chacun des cas suivants :\na) ABCD est un rectangle.\nb) ABCD est un losange.\n3) Que peut-on dire de l’image d’un polygone par une translation ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 14 (« Activité 14 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 14 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A15",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 15,
+    "solver": "fixed",
+    "title": "Activité 15 Conservation des angles",
+    "difficulty": 1,
+    "statement": "Activité 15 Conservation des angles\nSoit t une translation de vecteur u et [Ox , Oy] un secteur.\nOn désigne par [O’ x’) et [O’ y’) les images respectives des demi-droites [Ox) et [Oy) par la\ntranslation t.\n% %\nMontrer que xOy = x'O'y' .\nExplorer Explorer\n→",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 15 (« Activité 15 Conservation des angles ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 15 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A16",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 16,
+    "solver": "fixed",
+    "title": "Activité 16 Image d’un cercle",
+    "difficulty": 2,
+    "statement": "Activité 16 Image d’un cercle\nSoient t une translation de vecteur u , C un cercle de centre O et de rayon R et O’ l’image de O\npar t. On désigne par C ’ le cercle de centre O’ et de même rayon que C .\n1) Soit M un point de C et M’ = t(M). Montrer que M’ ∈ C ’.\n2) Soit N’ un point de C ’ et N l’antécédent de M par t . Montrer que N ∈ C .\n3) Que peut-on conclure ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 16 (« Activité 16 Image d’un cercle ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 16 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A17",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 17,
+    "solver": "fixed",
+    "title": "Activité 17",
+    "difficulty": 2,
+    "statement": "Activité 17\nSoient C 1 et C 2 deux cercles de même rayon,\nsécants en A et B, de centres respectifs I et J. La\ndroite Δ passant par A et parallèle à (IJ) recoupe\nC 1 en M et C 2 en N.\nSoit t la translation de vecteur IJ .\n1) Déterminer les images respectives de Δ\net de C1 par t. C2\nC1\n2) En déduire t(A) puis t(M).\n3) Soit P un point quelconque du cercle C1 et\nsoit P’ son image par t.\nMontrer que A est l’orthocentre du triangle BPP’.\nA s s iAssimiler",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 17 (« Activité 17 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 17 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A18",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 18,
+    "solver": "fixed",
+    "title": "Activité 18 Conservation du contact",
+    "difficulty": 2,
+    "statement": "Activité 18 Conservation du contact\nSoit C un cercle et Δ une droite tangent à C en un point M. On désigne par\nC ’, Δ ’ et M’ les images respectives de C , Δ et M par une translation t.\nMontrer que Δ ’ est tangent à C ’ en M’.\nA s s iAssimiler",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 18 (« Activité 18 Conservation du contact ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 18 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A19",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 19,
+    "solver": "fixed",
+    "title": "Activité 19",
+    "difficulty": 2,
+    "statement": "Activité 19\nDans la figure ci-contre, D et D’ sont deux droites parallèles, A est un point de la droite D, B\nest le projeté orthogonal du point A sur la droite D’ et M un point quelconque du plan.\nE x p l o r e r\nOn désigne par M1 l’image du point M par la symétrie\naxiale SD et par M’ l’image du point M1 par la symétrie\naxiale SD’.\nOn considère l’application t : P $ P\nM 7 M'.\n1) a) Reproduire la figure et construire le point A’ image du point A par l’application t.\nb) Exprimer AA' en fonction AB .\n2) a) Construire l’image M’ d’un point M, par l’application t.\nb) Montrer que MM' = 2AB . En déduire la nature\nde l’application t.\n3) Soient C et C’ deux cercles sécants en I et J.\nUne droite D passant par I recoupe les cercles\nC et C’ respectivement en P et P’.\nLa droite D’ passant par J et parallèle à la droite D\nrecoupe les cercles C et C’ respectivement en Q et Q’.\nMontrer que le quadrilatère P P’Q’Q est un parallélogramme.\n(On pourra considérer deux droites passant respectivement par le centre du cercle (C) et par\nle centre du cercle C’ et telle que chacune d’elles est perpendiculaire à la droite D).\nProblème de lieux\nProblèmes de lieux faisant intervenir les propriétés des configurations",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 19 (« Activité 19 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 19 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A20",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 20,
+    "solver": "fixed",
+    "title": "Activité 20",
+    "difficulty": 2,
+    "statement": "Activité 20\nOn considère deux droites D et D’ perpendiculaires en un point O et un point A n’appartenant\nni à la droite D ni à la droite D’.\nSoit M un point variable sur la droite D.\nLa perpendiculaire à la droite (AM) et en A coupe la droite D’ en N.\nSoit I le milieu du segment [MN].\nOn se propose de déterminer, sur quel ensemble varie le point I lorsque le point M varie sur\nla droite D.\n1ère étape : Phase expérimentale\na) Faire une figure.\nb) Quels sont les éléments fixes et les éléments variables de la figure ?\nc) Placer quelques points I correspondants à différentes positions du point M.\nExplorer Explorer\n2ème étape : Conjecture\nEmettre une conjecture sur l’ensemble des points I lorsque le point M décrit la droite D.\n3ème étape : Démonstration de la conjecture\nMontrer que I varie sur une ligne que l’on précisera.\nVocabulaire\nLa ligne que décrit le point I est aussi appelée l’ensemble des points I ou le lieu géométrique\ndes points I ou tout simplement le lieu des points I.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 20 (« Activité 20 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 20 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A21",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 21,
+    "solver": "fixed",
+    "title": "Activité 21",
+    "difficulty": 2,
+    "statement": "Activité 21\nSoient A et B deux points distincts donnés et D une droite variable passant par A. Soit H le\nprojeté orthogonal de B sur la droite D.\nEn utilisant un procédé analogue à celui décrit dans l’activité précédente, montrer que, lorsque\nD pivote autour du point A, le point H varie sur une ligne qu’on précisera.\nProblèmes de lieux faisant intervenir les applications du plan dans le plan",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 21 (« Activité 21 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 21 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A22",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 22,
+    "solver": "fixed",
+    "title": "Activité 22",
+    "difficulty": 2,
+    "statement": "Activité 22\nSoient D une droite, O et O’ deux points distincts n’appartenant pas à D et M un point variable\nde la droite D.\nLe cercle de centre O et passant par M et le cercle de centre O’ et passant par M se coupent en\nun deuxième point N.\na) Faire une figure.\nb) Trouver une application qui transforme le point M en N.\nc) En déduire le lieu des points N lorsque M décrit la droite D ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 22 (« Activité 22 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 22 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A23",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 23,
+    "solver": "fixed",
+    "title": "Activité 23",
+    "difficulty": 2,
+    "statement": "Activité 23\nSoient A et B deux points donnés et D un droite passant par A et ne passant pas par B.\nSoit M un point variable sur la droite D et distinct de A. On désigne par N le point tel que\nABNM soit un parallélogramme.\na) Prouver que le point N est l’image du point M par une application qu’on précisera.\nb) Quel est le lieu géométrique des points N lorsque le point M varie sur D ?\nConstruire ce lieu.\nc) Quel est le lieu géométrique des points N lorsque le point M varie sur un cercle fixe C de\ncentre A et de rayon 3 ? Construire ce lieu.\nE x p l o r e r",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 23 (« Activité 23 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 23 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A24",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 24,
+    "solver": "fixed",
+    "title": "Activité 24",
+    "difficulty": 2,
+    "statement": "Activité 24\nSoient A et B deux points fixes d’un cercle C et M un point du cercle C, distinct de A et B.\nSoit H l’orthocentre du triangle AMB.\n1) Soit D le point du cercle C diamétralement opposée à A.\nQuelle est la nature du quadrilatère MHBD ?\n2) Quel est le lieu des point H lorsque M varie sur le cercle C privé de A et B ?\nProblèmes de construction\nProblèmes de construction faisant intervenir les propriétés des configurations",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 24 (« Activité 24 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 24 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A25",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 25,
+    "solver": "fixed",
+    "title": "Activité 25",
+    "difficulty": 2,
+    "statement": "Activité 25\nSoient I, J et K trois points non alignés.\nOn se propose de construire un triangle ABC dont les milieux des côtés sont les points I, J et K.\n1ère étape : Analyse à partir d’une figure d’étude\nOn suppose le problème résolu c’est à dire que la construction est effectivement réalisée.\na) Faire une figure « à l’envers » correspondant à une solution du problème.\nc’est à dire construire d’abord un triangle ABC puis placer les points I , J et K milieux\nrespectifs de [BC], [AC] et [AB].\nb) Observer la figure et prouver que\n• la droite (AB) est parallèle à la droite (IJ).\n• droite (AC) est parallèle à la droite (IK).\n• droite (BC) est parallèle à la droite (JK).\n2ème étape : Synthèse et retour aux données initiales\na) Placer trois points non alignés I, J et K.\nb) Construire la parallèle à (IJ) passant par K et la parallèle à (IK) passant par J.\nCes droites sont-elles toujours sécantes ? Si oui soit A leur intersection.\nc) Achever la construction du triangle ABC.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 25 (« Activité 25 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 25 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A26",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 26,
+    "solver": "fixed",
+    "title": "Activité 26",
+    "difficulty": 2,
+    "statement": "Activité 26\n1) Soit M et N deux points distincts donnés et C le cercle de diamètre [MN].\nConstruire un point P tel que le centre de gravité G du triangle MNP soit un point du cercle Γ.\n2) Construire un triangle ABC dont les médianes issues de B et de C sont perpendiculaires.\nExplorer Explorer\nProblèmes de construction faisant intervenir les applications du plan dans le plan",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 26 (« Activité 26 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 26 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "TRANSLATIONS_A27",
+    "chapter": "translations",
+    "kind": "activity",
+    "activity": 27,
+    "solver": "fixed",
+    "title": "Activité 27",
+    "difficulty": 2,
+    "statement": "Activité 27\nSoient D et Δ deux droites concourantes et A et B deux points distincts n’appartenant ni à la\ndroite D ni à la droite Δ.\nOn se propose de construire un point M de D et un point N de Δ tels que le quadrilatère ABMN\nsoit un parallélogramme.\n1èreétape Analyse à partir d’une figure d’étude\nOn suppose le problème résolu c’est à dire que la construction est effectivement réalisée.\na) Construire un parallélogramme ABMN puis une droite D et une droite Δ sécantes et pas-\nsant respectivement par M et N.\nb) Trouver une application t qui envoie le point M en N.\nc) Soit D’ l’image de la droite D par l’application t .\nDéterminer l’intersection des droites D’ et Δ .\n2ème étape : Synthèse et retour aux données initiales\na) Construire deux droites concourantes D et Δ et deux points distincts A et B n’appartenant ni\nà D ni à Δ.\nb) Construire la droite D’ image de la droite D par l’application t.\nc) Montrer que D’ et Δ sont sécantes .On désigne par N leur point d’intersection.\nd) Construire le point M de la droite D tel que ABMN soit un parallélogramme.\nler\nA s s i m iAssimiler\n1 Soient A, B, C et D quatre points distincts du plan.\n1) a) Construire le point C’ isobarycentre des points A, B et C.\nb) Construire le point D’ isobarycentre des points A, B et D.\n2) A tout point M on associe le point M’ tel que M'A + M'B + M'M = 0 .\na) Justifier l’existence et l’unicité de M’.\nb) Construire M’.\n2 Soient A et B deux points du plan. On considère l’application f du plan dans lui même, qui\nà tout point M associe le point N tel que AN = 3AM - 2BM .\nExprimer MN en fonction de AB\nEn déduire que f est une translation dont on précisera le vecteur.\n3 Soit ABC un triangle et M un point de (AB).\na) Construire les points D et N images respectives de B et M par la translation de vecteur AC .\nb) Montrer que C, D et N sont alignés.\n4 Soit ABCD un parallélogramme et t une translation qui transforme (AB) en (CD)\net (AD) en (BC).\nMontrer que t a pour vecteur AC.\n5 Soient [AB] un segment de milieu O, D la médiatrice de [OA] et Δ celle de [OB].\nMontrer que la translation t de vecteur AO transforme D en Δ.\n6 Soient A et B deux points d’un cercle C.\na) Construire l’image C ’ de C par la translation de vecteur AB\nb) Pour tout point M de C on associe le point N tel que MN = MA - MB .\nMontrer que N est un point de C ’.\n7 Soient A et B deux points distincts d’une droite Δ , et C un cercle tangent à Δ en A.\na) Construire le cercle C ’ image de C par la translation de vecteur AB .\nb) Montrer que C ’ est tangent à Δ .\nPropriété caractéristique\n♦ Soit t une application du plan dans le plan et M et N deux points quelconques du plan\nd’images respectives M’ et N’ par t.\n( t est une translation) équivaut à ^M'N' = MNh .\nConservation de l’alignement\nLes images, par une translation, de points alignés sont des points alignés\nImages d’une droite, d’un segment, d’une demi-droite et d’un\ncercle par une translation.\n♦ L’image d’une droite par une translation est une droite qui lui est parallèle.\n♦ L’image d’un segment par une translation est un segment qui lui est isométrique.\n♦ L’image d’une demi - droite par une translation est une demi- droite.\n♦ L’image d’un cercle par une translation est un cercle de même rayon.\nConservation du barycentre\n♦ La translation conserve le milieu.\n♦ La translation conserve le barycentre.\nConservation du parallélisme, de l’orthogonalité et du contact\n♦ Les images par une translation de deux droites parallèles sont deux droites parallèles.\n♦ Les images par une translation de deux droites perpendiculaires sont deux droites\nperpendiculaires.\n♦ Si une droite et un cercle sont tangents, alors leurs images par une translation sont\ntangents.\nConservation des grandeurs\n♦ Une translation conserve les distances.\n♦ Une translation conserve les angles.\n♦ L’image d’un polygone par une translation est un polygone qui lui est superposable.\nDéveloppe r s eses\nDévelopper compé\ns compétences\nProblèmes de construction\n1 Trajet minimal\nDans la figure ci-contre, D et D’ sont deux droites et\nA et B deux points du plan n’appartenant ni à D ni à\nD’. Construire un point M de D et un point M’ de D’\nde sorte que le trajet AMM’B soit minimal.\nIndication\nUtiliser les points A’ et B’ tels que A’ = SD(A) et B’ = SD’(B).\n2 Dans la figure ci-contre, C et C’ sont deux cercles sécants en A\net B.\nConstruire un point M sur C et un point M’ sur C’ tels que A soit le\nIndication\nUtiliser l’image de C par SA.\n3 Un problème de pont\nDans la figure ci-contre, les droites D et D’\nreprésentent les berges (parallèles) d’une rivière.\nOù faut-il construire le pont [MN] (perpendiculaire\naux berges de la rivière) pour que le trajet du village\nA au village B soit le plus court possible ?\nIndications\nRemarquer que :\n• MN et un vecteur constant.\n• AM = A’N, où A’ est l’image de A par la translation de vecteur MN .\nDéveloppe r s eses\nDévelopper compé\ns compétences\n4 Soient D une droite, A un point du plan et l un réel strictement positif.\nConstruire un cercle passant par A et qui coupe la droite D en deux points, extrémités d’un\nsegment de longueur l.\nIndications\n• Commencer par construire un cercle C qui découpe sur D un segment de longueur l (ce qui\nrevient à abandonner provisoirement la condition « C passe par A »).\n• Trouver une translation qui transforme C en un cercle passant par A et qui découpe sur D\nun segment de longueur l.\nUtiliser les TICUtiliser les TI\nC\nA l’aide d’un logiciel de géométrie.\nConstruire deux cercles C et C’ de centres respectifs O et O’ et de même rayon (utiliser\ncompas du menu du logiciel), se coupant en A et B. La droite passant par A et parallèle à la\ndroite (OO’) recoupe C en M et C’ en N.\n1) Vérifier par les outils du logiciel que les deux quadrilatères MAO’O et ANO’O sont des\nparallélogrammes.\nMontrer que MAO’O et ANO’O sont deux parallélogrammes. (Utiliser une translation).\n1) Ces parallélogrammes peuvent-ils être des losanges (déplacer O ou O’) ? Des rectangles ?\nDes carrés ?\nFaire des essais avec le logiciel, conjecturer et justifier la conjecture.\nExercices etExercices lèmes\nproetbproblèmes\n.Appliquer c) En déduire la nature de l’application f.\n1 Soit D une droite et M un point du plan.\nOn désigne par M1 le projeté orthogonal de M 3 Soit ABCD un parallélogramme. Une\nsur la droite D. droite Δ parallèle à (AC) coupe\n1) Soit f : P $ P (AB), (AD), (CB) et (CD) respectivement en\nM 7 M1 . M, N, H et K.\na) Prouver que f est une application.\nOn désigne par t la translation de vecteur AC .\nb) Quelle est l’image d’un point I de D ?\n1) Déterminer l’image de M par t.\nc) Soit J’ un point de D. Déterminer un\n2) Montrer que MN = HK.\nantécédent J du point J’.\nQuel est l’ensemble des antécédent J’ ? 4 Soit ABCD un parallélogramme et E un\n2) Soit g : P $ P\npoint n’appartenait pas a (BC) La parallèle à\nM 7 M' où M’ est le milieu du\nla droite (BE) passant par A et la parallèle à\nsegment [MM1].\nla droite (CE) passant par D se coupent en\na) Construire l’image d’un point M du plan\npar l’application g. un point F. Montrer que EF = BA .\nb) Quelle est l’image d’un point E de\n5 Soit ABCD un parallélogramme qui n’est\nla droite D ?\nc) Soit N’ un point du plan Construire son pas un rectangle.\nantécédent N par l’application g. 1) Construire le point E symétrique de A par\nrapport à D.\n2 Soient A et B deux points distincts. 2) Soit H le projeté orthogonal de D sur (AB)\nOn désigne par f l’application du plan qui à et K le projeté orthogonal de E sur (CD).\ntout point M associe le point M’ barycentre de Quelle est la nature du quadrilatère DEKH ?\n(A , 1) , (B , –1) et (M , 1).\n1) a ) Construire les points A’ et B’ images Maîtriser\nrespectives des points A et B par f\nSoit ABCD un parallélogramme inscrit\nb) Vérifier que AA' = BB' dans un cercle C de centre O.\n2) Soit M un point distinct de A et de B On désigne par O’ et C ’ les images\na) Construire l’image M’ du point M, par respectives de O et C par la translation\nl’application f.\nde vecteur AB .\nb) Exprimer MM' en fonction de AB\n: .\nExercices et problèmes\nExercices et problèmes\n1) Montrer que C ’ passe par B et C. La droite (OM) recoupe le cercle C en I.\n2) En déduire que (OO’) est perpendiculaire à La parallèle à (OA) passant par M coupe\n(BC). la droite ( AI ) en N.\nQuel est l’ensemble des points N lorsque le\n3) Que peut – on conclure pour le parallélo-\npoint M décrit le cercle C ?\ngramme ABCD ?\n10 Soit C un cercle de centre O et de rayon R\n7 Soient C et C ’ deux cercles\net soit D une droite.\nisométriques de centres respectifs O et O’.\nPour tout point M de C, on trace le cercle CM\n1)a) Trouver la symétrie centrale qui\nde centre M et de rayon R, puis on trace les\ntransforme C en C ’.\ntangentes à CM parallèles à D.\nb) Trouver la symétrie axiale qui transforme\nQuel est l’ensemble décrit par les points de\nC en C ’.\ncontact de ces tangentes avec les cercles CM?\nc) Trouver la translation qui transforme\nC en C ’\n11 Soient A et B deux points d’un cercle C.\n2) On suppose que C et C ’ sont tangeants\nConstruire deux points M et N de C tels que\nen I. On désigne par A et B deux points du\nABMN soit un trapèze de bases [AB] et [MN]\ncercle C et par M et N les points\net que AB = 2MN.\ndiamétralement opposés à A et à B sur\nle cercle C .\nLa droite (MI) coupe le cercle C ’ en A’ et la\ndroite (NI) coupe le cercle C ’ en B’.\nQuelle est la nature du quadrilatère A A’B’B?\n8 Soient D et Δ deux droites sécantes en un\npoint O et soit A un point de D distinct de O.\nSoient M un point variable sur Δ et N le point\ndéfini par AN = OM\nDéterminer et construire l’ensemble des\npoints N lorsque M varie sur Δ.\n9 Soit O et A deux points distincts donnés et\nC le cercle de centre O et de rayon OA.\nSoit M un point variable sur le cercle C .\nM a t h e t cMath ure\nu lettculture\nPavage du plan\nPaver le plan c’est le couvrir par des formes, sans\nespace (trou) et sans chevauchement. C’est ce que\nfait un carreleur.\nOn peut commencer par paver le plan avec des\npolygones réguliers : le pavage régulier.\nOn peut paver le plan à l’aide d’un carré, d’un\ntriangle équilatéral, d’un hexagone régulier,…\nDans la figure ci-contre un pavage du plan à\nl’aide d’un hexagone régulier.\nRemarquer que l’angle au sommet des polygones\nest à chaque fois 360°.\nPeut-on paver le plan à l’aide d’un pentagone ?\nMosaïques et pavages\nL’art de paver une surface plane, comme le sol ou les murs d’un palais, est très ancien et se\npratiquait à Rome, Byzance, Grenade ou Séville. Selon la nature du support, on distingue les\nmosaïques de pavement et les mosaïques murales. Les motifs représentés peuvent être\nfiguratifs mais aussi purement géométriques.\nNé en Grèce, l’art de la mosaïque s’est répandu sur tout le pourtour de la méditerranée par\nl’intermédiaire des romains. Repris par les civilisations byzantine et arabo-musulmane, il a\nconnu son apogée dans le sud de l’Espagne et le Maroc.\nCi-dessous, une mosaïque basée sur des pavements utilisant des quarts de cercles, et une\nmosaïque murale basée sur un pavage hexagonal.\nD’après Tangente N° 99",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 27 (« Activité 27 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 27 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  }
+]

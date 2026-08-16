@@ -1,0 +1,602 @@
+[
+  {
+    "id": "BARYCENTRE_A01",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 1,
+    "solver": "fixed",
+    "title": "Activité 1",
+    "difficulty": 1,
+    "statement": "Activité 1\nUne tige AB rigide et homogène est suspendue en un point G par un anneau, dans lequel elle\npeut coulisser. Aux extrémités A et B de cette tige on a accroché deux masses m 1 et m 2.\nEn physique et d’après le principe d’Archimède le système S est en équilibre (la tige est\nhorizontale) lorsque m 1 GA = m 2 GB. On dit que le point G est le point d’équilibre des points\nA et B affectés respectivement des masses m 1 et m 2.\nDans toute la suite, le système S est en équilibre et les masses sont exprimées en Kg.\n1) On prend m 1 = 1 et m 2 = 2\nPréciser la position du point G sur le segment [AB] et justifier l’égalité GA + 2GB = 0.\n2) Dans chacun des cas ci-dessous, placer le point G puis traduire l’équilibre du système S par\nune relation vectorielle.\na) m 1 = 3 et m 2 = 1 ; b) m 1 = 10 et m 2 = 20 ; c) m 1 = m 2 = 5\n3) Déterminer m 2 pour le système S suivant",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 1 (« Activité 1 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 1 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A02",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 2,
+    "solver": "fixed",
+    "title": "Activité 2",
+    "difficulty": 1,
+    "statement": "Activité 2\nSoient A et B deux points distincts du plan et α et β deux réels tels que α + β ≠ 0.\n→ β →\nOn désigne par G le point défini par AG = AB.\nα+β\n→ → →\na) Montrer que α GA + β GB = 0\n→ → →\nb) Soit G’ un point du plan tel que α G’A + β G’B = 0 . Montrer que G’ = G.\nc) Conclure.\nDéfinition\nSoient A et B deux points distincts du plan et soient α et β deux réels tels que α + β ≠ 0.\n→ → →\nLe point G qui vérifie la relation α GA + β GB = 0 est appelé le barycentre des points\npondérés (A, α) et (B, β).\nOn dit aussi que G est le barycentre des points A et B affectés des coefficients α et β.\nRemarques\n• Le barycentre G des points pondérés (A , α) et (B , β) est le point défini par l’une des relations\n→ → → β → → β →\nsuivantes α GA + β GB = 0 ; AG = α + β AB ; BG = BA .\nα+β\n• Le barycentre G des points pondérés (A,α) et (B,β) appartient à la droite (AB).",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 2 (« Activité 2 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 2 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A03",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 3,
+    "solver": "fixed",
+    "title": "Activité 3",
+    "difficulty": 1,
+    "statement": "Activité 3\nSoient A et B deux points distincts.\n1) Construire\na) le point M barycentre de (Α , 2) et (B , 1).\nb) le point N barycentre de (A , 3) et (B , –1).\nc) le point P barycentre de (A , –1) et (B , 2).\n2) Soient α et β deux réels tels que α + β ≠ 0 et soit G le barycentre de (A, α) et (B, β).\nMontrer que (G ∈ [AB]) si et seulement si (α et β sont de même signe).",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 3 (« Activité 3 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 3 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A04",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 4,
+    "solver": "fixed",
+    "title": "Activité 4",
+    "difficulty": 1,
+    "statement": "Activité 4\nSoit ABC un triangle.\nOn considère les points M et N tels MA + 3MB = 0 et NA + 3NC = 0 . .\na) Faire une figure.\nb) Montrer que les droites (MN) et (BC) sont parallèles.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 4 (« Activité 4 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 4 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A05",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 5,
+    "solver": "fixed",
+    "title": "Activité 5",
+    "difficulty": 1,
+    "statement": "Activité 5\n1) Soient A, B et C trois points du plan.\nMontrer que le vecteur MA + 2MB - 3MC ne dépend pas du point M.\n2) Dans cette question on suppose que les points A, B et C ne sont pas alignés.\nOn désigne par A’ le barycentre de (B , 2) et (C , –3) ;\nB’ le barycentre de (A , 1) et (C , –3) ;\nC’ le barycentre de (A , 1) et (B , 2).\nDéduire de la première question que les droites (AA’), (BB’) et (CC’) sont parallèles.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 5 (« Activité 5 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 5 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A06",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 6,
+    "solver": "fixed",
+    "title": "Activité 6 Construction du barycentre : Méthode des parallèles",
+    "difficulty": 1,
+    "statement": "Activité 6 Construction du barycentre : Méthode des parallèles\nSoient (A , 3) et (B , 4) deux points pondérés et soit G leur barycentre.\nOn considère une droite D A passant par A et ne contenant pas B.\nSoit D B la droite passant par B et parallèle à D A.\nSoit _ A , i i un repère de D A et soit _B, i i un repère de D B.\na) Faire une figure.\nExplorer Explorer\nb) Construire les points A’ et B’ tels que AA' = 4 i et BB' =-3 i .\nc) Montrer que G est aussi le barycentre des points (A’, 3) et (B’, 4).\nd) Construire alors G.\nm i l e r : 1-2\nA s s iAssimiler",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 6 (« Activité 6 Construction du barycentre : Méthode des parallèles ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 6 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A07",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 7,
+    "solver": "fixed",
+    "title": "Activité 7",
+    "difficulty": 1,
+    "statement": "Activité 7\nSoient α et β deux réels tels que α + β ≠ 0 et soit G le barycentre de (A , α) et (B , β).\nMontrer que, pour tout réel non nul k, G est le barycentre de (A , kα) et (B , kβ).",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 7 (« Activité 7 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 7 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A08",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 8,
+    "solver": "fixed",
+    "title": "Activité 8",
+    "difficulty": 1,
+    "statement": "Activité 8\n1) Soit G le barycentre de (A , 2) et (B , 1) et G’ le barycentre de (C , 5) et (D , –2)\na) Montrer que pour tout point M du plan on a\n2MA + MB = 3MG et 5MC - 2MD = 3MG'\nb) Soit I le milieu de [GG’].\nMontrer que pour tout point M du plan on a 2MA + MB + 5MC - 2MD = 6MI .\n2) Soient α et β deux réels tels que α + β ≠ 0 et soit G le barycentre de (A , α) et (B , β).\n→ → →\nMontrer que pour tout point M du plan on a αMA + βMB = (α + β)MG.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 8 (« Activité 8 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 8 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A09",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 9,
+    "solver": "fixed",
+    "title": "Activité 9 Construction du barycentre : Méthode du parallélogramme",
+    "difficulty": 1,
+    "statement": "Activité 9 Construction du barycentre : Méthode du parallélogramme\nSoit G le barycentre des points pondérés (A , 2) et (B , 3), et soit M un point du plan\nn’appartenant pas à (AB).\n1) a) Construire le point A' tel que MA' = 2MA.\nb) Construire le point B' tel que MB' = 3MB.\n2) Soit M’ le point tel que MA’M’B’ soit un parallélogramme.\nMontrer que G ∈ (MM’).\nConstruire alors G.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 9 (« Activité 9 Construction du barycentre : Méthode du parallélogramme ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 9 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A10",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 10,
+    "solver": "fixed",
+    "title": "Activité 10",
+    "difficulty": 1,
+    "statement": "Activité 10\nSoient A, B, C et D quatre points distincts du plan.\nSoit I le barycentre de (A , 1) et (B , 2) et soit J le barycentre de (C , 1) et (D , –2).\n1) Construire les points I et J.\n2) On considère le point K tel que 3KA + 6KB - KC + 2KD = 0.\nMontrer que les points I, J et K sont alignés.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 10 (« Activité 10 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 10 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A11",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 11,
+    "solver": "fixed",
+    "title": "Activité 11 Recherche d’un ensemble de points",
+    "difficulty": 1,
+    "statement": "Activité 11 Recherche d’un ensemble de points\nSoit ABCD un rectangle tel que AB = 6 et BC = 2.\n1) a) Construire le point G barycentre de (A , 2) et (B , 1).\nE x p l o r e r\nb) Construire le point G’ barycentre de (C , 5) et (D , –2).\n2) a) Déterminer et construire l’ensemble des points M tels que\n2MA + MB = 5MC - 2MD\nb) Déterminer et construire l’ensemble des points M tels que 5MC - 2MD = 9 .\nA s s iAssimiler\nBarycentre de 3 points",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 11 (« Activité 11 Recherche d’un ensemble de points ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 11 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A12",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 12,
+    "solver": "fixed",
+    "title": "Activité 12",
+    "difficulty": 1,
+    "statement": "Activité 12\nLes moyennes trimestrielles d’un élève sont : au 1er trimestre 12,75 (coefficient 1) ;\nau 2 ème trimestre 12,25 (coefficient 2) et au 3 ème trimestre 11,50 (coefficient 2).\n1) Quelle est sa moyenne annuelle m ?\n2) A, B, C et G désignent les points d’une droite graduée _O , i i d’abscisses respectives 12,75 ;\n12,25 ; 11,50 et m. Vérifier que OG = ^OA + 2OB + 2OCh .",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 12 (« Activité 12 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 12 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A13",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 13,
+    "solver": "fixed",
+    "title": "Activité 13",
+    "difficulty": 1,
+    "statement": "Activité 13\n1) Observer la figure ci-contre et\na) Déterminer deux réels b et c de sorte que M soit le barycentre\ndes points (B , b) et (C , c).\nb) Déterminer deux réels m et a de sorte que G soit le barycentre\ndes points (M , m) et (A , a).\n2) Montrer que 2GA + 2GB + GC = 0 .",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 13 (« Activité 13 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 13 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A14",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 14,
+    "solver": "fixed",
+    "title": "Activité 14",
+    "difficulty": 1,
+    "statement": "Activité 14\nSoient A, B et C trois points du plan et α, β, γ trois réels tels que α + β + γ ≠ 0\n–→ β → γ →\nSoit G le point du plan défini par AG = AB + AC\nα+β+γ α+β+γ\n→ → → →\na) Montrer que αGA + βGB + γGC = 0\n→ → → →\nb) Soit G’ un point du plan tel que αG’A + βG’B + γG’C = 0.\nExplorer Explorer\nDéfinition\nSoient A, B et C trois points du plan et α, β, γ trois réels tels que α + β + γ ≠ 0.\n→ → → →\nLe point G du plan qui vérifie αGA + βGB + γGC = 0 est appelé le barycentre des\npoints pondérés (A , α), (B , β) et (C , γ).\nOn dit aussi que G est le barycentre des points A, B et C affectés respectivement des coeffi-\ncients α, β et γ.\nSi α = β = γ , G est appelé l’isobarycentre des points A , B et C.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 14 (« Activité 14 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 14 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A15",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 15,
+    "solver": "fixed",
+    "title": "Activité 15",
+    "difficulty": 1,
+    "statement": "Activité 15\nSoit G le barycentre des points pondérés (A , α), (B , β) et (C , γ),\n→ → → →\nMontrer que pour tout point M du plan on a αMA + βMB + γMC = (α + β + γ)MG",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 15 (« Activité 15 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 15 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A16",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 16,
+    "solver": "fixed",
+    "title": "Activité 16",
+    "difficulty": 2,
+    "statement": "Activité 16\nSoit ABC un triangle.\nOn désigne par I, J et K les milieux respectifs des côtés\n[AB], [BC] et [AC].\na) Montrer que pour tout point M du plan on a\nMA + MB + MC = MI + MJ + MK .\nb) En déduire que les triangles ABC et IJK ont le même centre de gravité.\nc) Soient P, Q et R les milieux respectifs des côtés [IJ], [JK] et [KI].\nMontrer que les triangles ABC et PQR ont le même centre de gravité.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 16 (« Activité 16 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 16 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A17",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 17,
+    "solver": "fixed",
+    "title": "Activité 17",
+    "difficulty": 2,
+    "statement": "Activité 17\n1)Soient ABC et A’B’C’ deux triangles de centres de gravités respectifs G et G’ .\nMontrer que AA' + BB' + CC' = 3GG' .\nEn déduire une condition nécessaire et suffisante pour que deux triangles aient même centre\nde gravité.\n2) Soit ABC un triangle et soient A’, B’, C’ les points tels que :\nBA' = kBC , CB' = kCA et AC' = kAB ; où k et un réel.\nLes triangles ABC et A’B’C’ ont-ils le même centre de gravité ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 17 (« Activité 17 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 17 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A18",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 18,
+    "solver": "fixed",
+    "title": "Activité 18",
+    "difficulty": 2,
+    "statement": "Activité 18\nLes données étant celles de l’activité 12.\na) Pour calculer sa moyenne annuelle, l’élève a calculé, tout d’abord, la moyenne m1 des deux\npremières moyennes trimestrielles (affectées respectivement des coefficients 1 et 2).\nComment peut-il calculer sa moyenne annuelle à partir de m 1 et de la moyenne du 3 ème\ntrimestre ?\nE x p l o r e r\nb) Calculer la moyenne m 2 des moyennes du 2 ème et du 3ème trimestre et dire comment\npeut-il obtenir sa moyenne annuelle m à partir de m 2 et de la moyenne du 1er trimestre ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 18 (« Activité 18 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 18 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A19",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 19,
+    "solver": "fixed",
+    "title": "Activité 19 Barycentre partiel",
+    "difficulty": 2,
+    "statement": "Activité 19 Barycentre partiel\n1) Soit G le barycentre de (A , 2), (B , 1) et (C , –1), et soit I le barycentre de (A , 2) et (B , 1).\na) Montrer que G est le barycentre de (I , 3) et (C , –1).\nb) Construire I puis G.\n2) Soient α, β, γ trois réels tels que α + β + γ ≠ 0 et G le barycentre de (A,α), (B,β) et (C,γ).\na) Montrer que l’un au moins des trois réels α + β, β + γ et α + γ est non nul.\nb) On suppose, par exemple, que α + β ≠ 0.\nOn désigne par I le barycentre de (A , α) et (B , β).\nMontrer que G est le barycentre de (I , α + β) et (C , γ).",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 19 (« Activité 19 Barycentre partiel ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 19 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A20",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 20,
+    "solver": "fixed",
+    "title": "Activité 20",
+    "difficulty": 2,
+    "statement": "Activité 20\nObserver la figure ci-contre et exprimer G comme\nbarycentre des points (A , a) , (B , b) et (C , c),\noù a, b et c sont des réels que l’on déterminera.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 20 (« Activité 20 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 20 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A21",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 21,
+    "solver": "fixed",
+    "title": "Activité 21 Problème de concours",
+    "difficulty": 2,
+    "statement": "Activité 21 Problème de concours\nSoit ABC un triangle. On désigne par A’, B’ et C’ les\nSoit D le point tel que AD = AB .\n1) a) Soit E le barycentre des points (A , 2) , (B , 1) et (C , 1).\nMontrer que le point E est le milieu du segment [AA’].\nb) Montrer que le point E appartient au segment [CD].\n2) Montrer que les droites (AA’), (B’C’) et (CD) sont concourantes.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 21 (« Activité 21 Problème de concours ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 21 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A22",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 22,
+    "solver": "fixed",
+    "title": "Activité 22 Problème d’alignement",
+    "difficulty": 2,
+    "statement": "Activité 22 Problème d’alignement\nDans la figure ci-contre ABC est un triangle, A’, B’ et C’ sont les\nP est le symétrique de C’ par rapport à B.\na) Ecrire P comme barycentre de A et B , et Q comme barycentre de\nA et C.\nb) Calculer A'P + 2A'Q et en déduire que A’ , P et Q sont alignés.\nExplorer Explorer",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 22 (« Activité 22 Problème d’alignement ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 22 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A23",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 23,
+    "solver": "fixed",
+    "title": "Activité 23 Recherche d’un ensemble de points",
+    "difficulty": 2,
+    "statement": "Activité 23 Recherche d’un ensemble de points\nSoit ABC un triangle équilatéral de côté a.\na) Déterminer l’ensemble des points M du plan qui vérifient MA + MB + MC = a 3 .\nQue représente cet ensemble pour le triangle ABC ?\nb) Déterminer l’ensemble des points M du plan qui vérifient MA + MB + MC = a .\nQue représente cet ensemble pour le triangle ABC ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 23 (« Activité 23 Recherche d’un ensemble de points ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 23 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "BARYCENTRE_A24",
+    "chapter": "barycentre",
+    "kind": "activity",
+    "activity": 24,
+    "solver": "fixed",
+    "title": "Activité 24 Cercle inscrit",
+    "difficulty": 2,
+    "statement": "Activité 24 Cercle inscrit\nSoit ABC un triangle. On pose a = BC, b = AC et c = AB.\n%\nLa bissectrice de l’angle BAC coupe le côté [BC] en M.\nLa parallèle à la droite (AC) menée par B coupe la droite (AM) en A’\n(voir figure).\n1) a) Montrer que le triangle ABA’ est isocèle en B.\nMB c\nb) En déduire que = , puis que le point M est\nMC b\nbarycentre des points (B , b) et (C , c).\n2) Soit G le barycentre des points (A , a) , (B , b) et (C , c).\nMontrer que G appartient à la droite (AM).\n3) Montrer que G est le centre du cercle inscrit dans le triangle ABC.\nA s s iAssimiler\nAssimiler Assimiler\n1 Ecrire, dans chacun des cas suivants, une relation vectorielle qui définie le barycentre, puis\nconstruire ce point.\na) G est le barycentre de (A , 2) et (B , –1)\nb) I le barycentre de (J , 1) et (K , 3).\n2 Soient A et B deux points distincts.\nConstruire par la méthode des parallèles\na) Le barycentre G des points (A , 3) et (B , –2)\nb) Le barycentre G des points (A , 4) et (B , 3).\n3 Construire par la méthode du parallélogramme\na) Le barycentre G des points (A , 2) et (B , 1).\nb) Le barycentre H des points (I , -2) et (J , 3).\n2 1\nc) Le barycentre O des points cM, m et c N, m .\n3 2\n4 Soient A, B et C trois points non alignés.\nConstruire le barycentre de (A , α), (B , β) et (C , γ) dans chacun des cas suivants :\na) α = 4 , β = 1 et γ = – 3.\n1 1 2\nb) a = , = b - et c = .\n2 3 3\nèse\nS y n t hSynthèse\nBarycentre de deux points\nSoient A et B deux points du plan et α , β deux réels tels que α + β ≠ 0\n→ → →\n♦ G est le barycentre de (A , α) et (B , β) signifie αGA + βGB = 0\n→ β →\n♦ G est le barycentre de (A , α) et (B , β) signifie AG = AB .\nα+β\n♦ Si G est le barycentre de (A , α) et (B , β) alors, pour tout point M du plan,\n♦ Soit G le barycentre de (A , α) et (B , β). On a :\n• G ∈ (AB) ;\n• G ∈ [AB] signifie α et β sont de même signe.\n♦ Le barycentre de deux points (A , 1) et (B , 1) est le milieu du segment [AB].\n♦ Le barycentre de (A , kα) et (B , kβ) est le barycentre de (A , α) et (B , β), où k est un réel\nnon nul.\nBarycentre de trois points\nSoient A, B et C trois points du plan et α , β , γ trois réels tels que α + β + γ ≠ 0.\n→ → → →\n♦ G est le barycentre de (A , α) , (B , β) et (C , γ) signifie aGA + bGB + γGA = 0\n♦ Si G est le barycentre de (A , α) , (B , β) et (C , γ) , alors pour tout point M du plan,\n→ → → →\nαMA + βMB + γMC = (α + β + γ)MG\n♦Le barycentre de (A , kα) , (B , kβ) et (C , kγ) est le barycentre\nde (A , α) , (B , β) et (C , γ), où k est un réel non nul.\n♦ L’isobarycentre de 3 points non alignés est le centre de gravité du triangle ABC.\nBarycentre partiel\nSi G est le barycentre de (A , α) , (B , β) et (C , γ) et si β + γ ≠ 0, alors G est aussi le bary-\ncentre de (A , α) et (G’ , β + γ) où G’ est le barycentre de (B , β) et (C , γ).\nDévelopper ses compé\nDévelopper ses compétences\n1 Problème d’alignement\nSoit ABC un triangle et soit G son centre de gravité. On désigne par A 1 , B 1 et C 1 les milieux\nrespectifs des côtés [BC], [AC] et [AB].\nSoit M un point quelconque du plan distinct de A, B et C, et soient P, Q et R les symétriques\nde M par rapport à A 1, B 1 et C 1. On désigne par G’ le centre du gravité du triangle PQR.\na) Montrer que [AP], [BQ] et [CR] ont le même milieu I.\nb) Montrer que I est aussi le milieu de [GG’].\nc) Montrer que les points M, G, G’ et I sont alignés.\nIndications\na) AB = 2A 1 B 1 = PQ donc [AP] et [BQ] ont même milieu.\nTrouver d’autres vecteurs égaux et conclure.\nb) Montrer que IA + IB + IC = 3IG et que IP + IQ + IR = 3IG' .\nConclure (on pourra ajouter les égalités membre à membre).\nc) Montrer que :\n• G est aussi le centre de gravité de A 1B 1C 1.\n→ → → → → →\n• Montrer que 3MG’ = 6MG (on pourra utiliser MP + MQ + MR = 3 MG’).\nConclure.\n2 Problème de concours\nSoit ABCD un parallélogramme et soient K et L les milieux respectifs de [AD] et [BC].\nOn désigne par I et J les points de [AB] tels que AI = IJ = JB.\nMontrer que les droites (AL), (BK), (CI) et (DJ) sont concourantes.\nIndications\n• Montrer que [AL] et [BK] se coupent en leur milieu qu’on note G.\n• Il suffit de montrer que G ∈ (CI) et G ∈ (DJ) :\n– Vérifier que G est le barycentre de (A , 2) et (L , 2) et que L est barycentre de (B,1) et (C ,1).\n– En déduire que G est le barycentre de (A , 2) , (B , 1) et (C , 1).\n– Quel est le barycentre de (A , 2) et (B , 1) ? Conclure que G ∈ (CI),\n– Montrer de la même façon que G ∈ (DJ).\n3 Problème d’optimisation\nSoit ABC un triangle et soit M un point intérieur à ce triangle. Les droites (MA), (MB) et (MC)\ncoupent respectivement [BC], [CA] et [AB] en A’ , B’ et C’.\nOn désigne par : a l’aire du triangle MBC\nb l’aire du triangle MAC\nc l’aire du triangle MAB\nDéveloppe r s eses\nDévelopper compé\ns compétences\n1) Montrer que : A’ est le barycentre de (B , b) et (C , c)\nB’ est le barycentre de (A , a) et (C , c)\nC’ est le barycentre de (A , a) et (B , b)\n2) Montrer que M est le barycentre de (A , a) , (B , b) et (C , c).\nMA MB MC\n3) Soit S = + + .\nMA' MB' MC'\nOn se propose de déterminer la position du point M pour laquelle la somme S est minimale.\na) Montrer que MA = b + c , MB = a + c , MC = a + b .\nMA' a MB' b MC' c\nb) Montrer que pour tout réel x strictement positif, on a x + ≥2\nx\nPour quelle valeur de x a-t-on l’égalité ?\nc) Déterminer la position du point M pour laquelle la somme S est minimale.\nIndications\n1) Dans le triangle MAB, on désigne par H le pied de la hauteur issue de B.\nDans le triangle MAC, on désigne par H’ le pied de la hauteur issue de C.\nAire ]MABg BH A'B\nMontrer que = = .\nAire ]MACg CH' A'C\n(Pour la deuxième égalité, penser au théorème de Thalès).\nConclure.\n2) Soit G le barycentre de (A , a) , (B , b) et (C , c).\nMontrer que G ∈ (AA’), G ∈ (BB’), G ∈ (CC’).\nEn déduire que G = M.\n3) a) Utiliser la propriété : M étant le barycentre de (A , a) , (B , b) et (C , c), il est aussi le\nbarycentre de (A , a) et (A’, b + c).\nEn déduire que MA = b + c .\nMA' a\nb) Faire apparaître dans la somme S des expressions du type x + x .\nConclure.\nUtiliser les TICUtiliser les TI\nC\nCentre de gravité d’un triangle\nSoient [AB] un segment et M un point en dehors de ce segment. Construire un point C tel que\nM soit le centre de gravité du triangle ABC.\nA l’aide d’un logiciel de géométrie\n- Construire un segment [AB] et un point M, en dehors de ce segment.\n- Déterminer le milieu I du segment [AM].\n- Déterminer le symétrique de I par rapport à M.\n- Que représente ce point ?\n- Construire le point C.\n- Déplacer le point M et observer.\n- Est-ce que toutes les positions de M correspondent à des triangles ?\nExercices et problèmes\nExercices et problèmes\nAppliquer a) x = 1 , y = 1 et z = 2 .\n1 A et B étant deux points distincts du plan b) x =-1 , y = 2 et z = 3 .\net G le barycentre de (A, x) et (B, y).\n1 1 1\nConstruire G dans chacun des cas suivants : c) x = , y =- et z = .\n2 2 4\n3 2 d) x =-2 , y = 1 et z = 2 .\na) x = 3 et y =-4 ; b) x = et y = .\n5 5\n2 Dans chacun des cas suivants, trouver 5 Soit ABC un triangle et soit O un point tel\ntrois réels a, b et c pour que G soit que OA + OB + OC = O et OA = OB = OC\nle barycentre de (A , a) , (B , b) et (C , c).\nMontrer que ABC est un triangle équilatéral.\na) AB = GC .\n6 Soit ABCD un quadrilatère. On désigne\nb) 2AB + AC = AG .\npar G l’isobarycentre des points A , B et C et\nc) 2BA + 3BC = GC .\npar G’ le barycentre de (C , 2) et (D , 1).\n3 Dans la figure ci-dessous, ABCD est un Soit M un point variable du plan.\nparallélogramme de centre O. I et J sont les 1) Montrer que 2MA - MB - MC est un\n2) Déterminer l’ensemble des points M du\nplan qui vérifient :\n→ → → → → →\na) ⎜⎜ MA + MB + MC ⎜⎜= ⎜⎜2MA - MB - MC ⎜⎜\n→ → → → →\nb) ⎜⎜ MA + MB + MC ⎜⎜= ⎜⎜ 2MC + MD ⎜⎜\nMaîtriser\nSoient ABC un triangle et G le barycentre\nSoit M un point quelconque du plan. de (A , α) , (B , β) et (C , γ)\nRéduire les sommes suivantes 1) Montrer que si (AG) coupe (BC) alors\na) MA + MB β + γ ≠ 0.\n2) On suppose que (AG) coupe (BC) en un\nb) MA + MB + MC\npoint A’, et on désigne par I le barycentre de\nc) MA + MC + MD\n(B , β) et (C , γ).\nd) MA + MB + MC + MD a) Montrer que I appartient à la droite (AG).\ne) ME + MF b) En déduire que I = A’.\n→ → 8\nf) MA + MF\n→ → → Soit ABC un triangle et soit I le milieu de\ng) ME + MF - 3MH [BC]. H est un point de (AI) tel que H ≠ A et\nH ≠ I. (BH) coupe (AC) en J et (CH) coupe\n4 Construire le barycentre de (A , x) ,\n(AB) en K. Montrer que (JK) est parallèle à\n(B , y) et (C , z) dans chacun des cas suivants:\n(BC).\nExercices etExercices lèmes\nproetbproblèmes\nIndication : On pourra démontrer que H est a) Montrer que O est le milieu de [EF].\nle barycentre de (A , 2α) , (B , 1) et (C , 1) et b) Etablir que E et F partagent [MN] en trois\nutiliser le résultat de l’exercice précédent. segments de même longueur.\nc) Montrer que le triangle DBN est rectangle,\n9 Les bissectrices intérieures d’un triangle et que F est son centre de gravité.\nABC coupent les côtés 5BC ? , 5CA ? et 5 AB? en\n12 Soient ABCD un quadrilatère, I le milieu\nI , J et K respectivement.\nOn pose : BC = a ; AC = b ; AB = c de [AC] et J le milieu de [BD].\nSoit K le barycentre de (A , 1) et (B , 2) et\n1) Montrer que : Aire (AIB) = IB = c .\nAire (AIC) IC b soit L le point défini par 3DL = DC .\nEn déduire que I est le barycentre de On désigne par M le milieu de [KL] .\n(B , b) et (C , c). Montrer que I, J et M sont alignés.\n2) Montrer que J est le barycentre 13 Soit ABC un triangle et soient :\nde (A , a) et (C , c) et que K est le barycentre I le barycentre de (B , 1) et (C , 2)\nde (A , a) et (B , b). J le barycentre de (A , 3) et (C , 2)\n3) Soit D le centre du cercle inscrit dans ABC. K le barycentre de(B , 4) et (A , 3).\nMontrer que D est le barycentre de (A , a), Montrer que les droites (AI), (BJ) et (CK)\n(B , b) et (C , c). sont concourantes.\n10 Centre de gravité d’un quadrilatère\nSoit ABCD un quadrilatère et soient I, J, K et\nL les milieux respectifs des côtés [AB], [BC],\n[CD] et [DA]. On désigne par M et N les\n1)Montrer qu’il existe un seul point G tel que:\nGA + GB + GC + GD = 0 .\nCe point G est appelé isobarycentre des\npoints A , B , C et D ou centre de gravité du\nquadrilatère ABCD.\n2) Montrer que les segments [IK], [LJ], [MN]\nsont concourants en leur milieu G.\n3) Donner une méthode de construction du\ncentre de gravité d’un quadrilatère.\n11 Soit ABCD un losange de centre O.\nOn place E et F tels que :\n1 1\nAE = AB et CF = CD .\n3 3\nLa droite (EF) coupe la droite (AD) en M et\nla droite (BC) en N.\nM a t h e t cMath ure\nu lettculture\nArchimède\nNé à Syracuse vers 287 avant J-C. Inventeur génial et populaire, il était réputé dans tout\nle monde grec par la construction de mécaniques subtiles et précises : leviers, pompes à eau;\nmachines de guerre, etc... On raconte qu’il utilisa les propriétés des miroirs paraboliques pour\nfaire converger les rayons de soleil sur les navires romains assiégeant Syracuse et mettre le\nfeu à la flotte.\nSes travaux sur le calcul des aires et des volumes constituent l’apogée de la géométrie\nalexandrine (Alexandrie).\nTout triangle est isocele !\nNous allons vous prouver que tout triangle que vous pouvez tracer sur une feuille\na nécessairement deux côtés d’égale longueur.\nPrenons donc un triangle ABC. Traçons la médiatrice\n% . Si le\nde [BC], et la bissectrice de l’angle BAC\ntriangle n’est pas isocèle, ces deux droites sont\ndistinctes et se coupent en un unique point O.\nProjetons orthogonalement O sur la droite (AB) en I\net sur (AC) en J. Tout est prêt.\nLes triangles AlO et AJO sont rectangles\nrespectivement en I et J.\nIls ont l’hypoténuse [AO] en commun. De plus, les\n% %\nangles IAO et JAO sont égaux (car O est sur la\n%\nbissectrice de l’angle IAJ ).\nConclusion :\nCes deux triangles sont superposables, et on a OI = OJ et AI = AJ.\nConsidérons maintenant les triangles rectangles OBI et OJC.\nEn appliquant le théorème de Pythagore à chacun des triangles, on obtient\nOB 2 = IB 2 + OI 2\nOC 2 = JC 2 + OJ 2\nOr on a vu que OB = OC et OI = OJ, donc il vient lB = JC.\nPar suite, AB = AI + lB = AJ + JC = AC. Le triangle est isocèle en A!\nLes points A, B, C peuvent être permutés dans cette démonstration ; on en déduit que le tri-\nangle est également isocèle en B.\nLe résultat final dépasse nos espérances : tout triangle est en réalité équilatéral\nIl y a bien sûr, quelque part, une erreur dans cette démonstration. A vous de la découvrir.\nJean-Yves Sirean (Tangente n°14)",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 24 (« Activité 24 Cercle inscrit ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 24 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  }
+]

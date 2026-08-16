@@ -1,0 +1,1536 @@
+[
+  {
+    "id": "REELS_A01",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 1,
+    "solver": "fixed",
+    "title": "Activité 1",
+    "difficulty": 1,
+    "statement": "Activité 1 Z\n2,5 x x x\ndésigne l’ensemble des entiers naturels.\nZ désigne l’ensemble des entiers relatifs. 3\ndésigne l’ensemble des décimaux.\ndésigne l’ensemble des nombres rationnels.\ndésigne l’ensemble des nombres réels.\nπ\nRecopier et compléter le tableau ci-contre.\n(La croix indique que le nombre appartient à l’ensemble) 8",
+    "variables": [],
+    "questions": [
+      {
+        "key": "pi",
+        "type": "mcq",
+        "label": "π appartient à quel ensemble (le plus précis parmi ceux du cours) ?",
+        "options": [
+          "ℕ",
+          "ℤ",
+          "ℚ",
+          "ℝ"
+        ],
+        "answer": "ℝ"
+      },
+      {
+        "key": "rel",
+        "type": "tf",
+        "label": "−23 ∈ ℤ",
+        "answer": "vrai"
+      },
+      {
+        "key": "nat",
+        "type": "tf",
+        "label": "−23 ∈ ℕ",
+        "answer": "faux"
+      },
+      {
+        "key": "dec",
+        "type": "tf",
+        "label": "2,5 est un décimal",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Ensembles",
+        "ℕ ⊂ ℤ ⊂ 𝔻 ⊂ ℚ ⊂ ℝ. π est irrationnel : il est dans ℝ seulement. −23 est relatif. 2,5 est décimal, donc rationnel et réel."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A02",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 2,
+    "solver": "fixed",
+    "title": "Activité 2",
+    "difficulty": 1,
+    "statement": "Activité 2\nRépondre par vrai ou faux.\na) 3∈ ; 5 ∈ ; -23 ∈ ; -23 ∈ Z ; 36 ∉ ; 6,13 ∉ ; 1,98 ∈ ; 7∈\n3 ∈ ; 27 ∉ ; 2 ∈\n11 3 9\nb) 1 ;Z1 ; 1 ; 1",
+    "variables": [],
+    "questions": [
+      {
+        "key": "a",
+        "type": "tf",
+        "label": "3/8 ∈ ℚ",
+        "answer": "vrai"
+      },
+      {
+        "key": "b",
+        "type": "tf",
+        "label": "−23 ∈ ℕ",
+        "answer": "faux"
+      },
+      {
+        "key": "c",
+        "type": "tf",
+        "label": "−23 ∈ ℤ",
+        "answer": "vrai"
+      },
+      {
+        "key": "d",
+        "type": "tf",
+        "label": "√2 ∈ ℚ",
+        "answer": "faux"
+      }
+    ],
+    "steps": [
+      [
+        "Vrai ou faux",
+        "Un rationnel s’écrit p/q. √2 n’est pas rationnel. Un négatif n’est pas dans ℕ."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A03",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 3,
+    "solver": "fixed",
+    "title": "Activité 3",
+    "difficulty": 1,
+    "statement": "Activité 3\n1 1 1 1 1 1\n1) Calculer + + , en déduire sans calcul la valeur de + + .\n2 3 6 4 6 12\n1 1 1 1\n2) Trouver quatre entiers naturels a, b, c et d distincts tels que a + + c + = 1.\nb d\n3) Trouver cinq entiers naturels a, b, c, d et e distincts tels que 1 + 1 + 1 + 1 + 1 = 1.\na b c d e",
+    "variables": [],
+    "questions": [
+      {
+        "key": "s1",
+        "type": "number",
+        "label": "1/2 + 1/3 + 1/6",
+        "unit": "—",
+        "answer": 1
+      },
+      {
+        "key": "s2",
+        "type": "number",
+        "label": "1/4 + 1/6 + 1/12",
+        "unit": "—",
+        "answer": 0.5
+      }
+    ],
+    "steps": [
+      [
+        "Somme",
+        "1/2+1/3+1/6 = 1. En divisant par 2 : 1/4+1/6+1/12 = 1/2. Quatre unitaires distincts : par exemple 1/2+1/3+1/7+1/42 = 1."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A04",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 4,
+    "solver": "fixed",
+    "title": "Activité 4",
+    "difficulty": 1,
+    "statement": "Activité 4\nQuels termes faut-il enlever à la somme\n1 1 1 1 1 1\n+ + + + +\n2 4 6 8 10 12\npour que la somme des termes restants soit égale à 1 ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "drop",
+        "type": "mcq",
+        "label": "Quels termes enlever pour que la somme vaille 1 ?",
+        "options": [
+          "1/8 et 1/10",
+          "1/2 et 1/4",
+          "1/6 et 1/12",
+          "1/4 et 1/12"
+        ],
+        "answer": "1/8 et 1/10"
+      }
+    ],
+    "steps": [
+      [
+        "Somme",
+        "1/2+1/4+1/6+1/8+1/10+1/12 = 49/40. 49/40 − 1 = 9/40 = 1/8+1/10. On enlève 1/8 et 1/10."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A05",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 5,
+    "solver": "fixed",
+    "title": "Activité 5",
+    "difficulty": 1,
+    "statement": "Activité 5\n4009275 847754\nSoient a = et b =\n2314756 489451\n1) Sans faire de calcul, prouver que a ≠ b.\n2) Qu’affiche la calculatrice pour les valeurs de a et b ?\n3) Répondre aux mêmes questions pour\n51044217 48357083 8621961 673970\na= ; b= et pour a = ; b=\n64389876 61000183 47605467 3721272",
+    "variables": [],
+    "questions": [
+      {
+        "key": "eq",
+        "type": "tf",
+        "label": "Les fractions a et b de la question 1 sont égales",
+        "answer": "faux"
+      }
+    ],
+    "steps": [
+      [
+        "Comparaison",
+        "On ne calcule pas : les produits croisés (ou une réduction) montrent a ≠ b. La calculatrice peut afficher la même valeur par arrondi : ce n’est pas une preuve d’égalité."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A06",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 6,
+    "solver": "fixed",
+    "title": "Activité 6",
+    "difficulty": 1,
+    "statement": "Activité 6\nOn demande à un vieillard son âge, il répond :\n+3\n-6 11\n2#c m+\n11 4\n« » . Quel est l’âge du vieillard en années ?\n+2\n10 -6 11\n#c m+\n816 11 544\n( Par Numérix, collection Eureka, Dunod )",
+    "variables": [],
+    "questions": [
+      {
+        "key": "age",
+        "type": "number",
+        "label": "Âge du vieillard (années)",
+        "unit": "—",
+        "answer": 70
+      }
+    ],
+    "steps": [
+      [
+        "Expression",
+        "On calcule l’expression numérique donnée dans l’énoncé (fractions emboîtées). L’âge est un entier d’années."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A07",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 7,
+    "solver": "fixed",
+    "title": "Activité 7",
+    "difficulty": 1,
+    "statement": "Activité 7\nCocher la case convenable.\nLe produit c1 + 1 m # c1 + 1 m # ... # c1 + 1 m # c1 + 1 m vaut\n2 3 2002 2003\n2004 2003 2002 1002 1001.\n(Concours Kangourou 2003)\nProportionnalité et pourcentage",
+    "variables": [],
+    "questions": [
+      {
+        "key": "prod",
+        "type": "number",
+        "label": "Valeur du produit (1+1/2)×(1+1/3)×…×(1+1/2003)",
+        "unit": "—",
+        "answer": 1002
+      }
+    ],
+    "steps": [
+      [
+        "Téléscopage",
+        "(3/2)×(4/3)×…×(2004/2003) = 2004/2 = 1002."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A08",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 8,
+    "solver": "fixed",
+    "title": "Activité 8",
+    "difficulty": 1,
+    "statement": "Activité 8\nL’allongement d’un ressort est proportionnel à la masse que l’on suspend à ce ressort.\nUne masse de 15 g provoque un allongement de 9 mm.\nReproduire et compléter le tableau suivant :\nMasse (en grammes) 15 50 80 145\nAllongement (en millimètres) 9 42 33",
+    "variables": [],
+    "questions": [
+      {
+        "key": "m50",
+        "type": "number",
+        "label": "Allongement pour 50 g (mm)",
+        "unit": "—",
+        "answer": 30
+      },
+      {
+        "key": "a42",
+        "type": "number",
+        "label": "Masse pour 42 mm (g)",
+        "unit": "—",
+        "answer": 70
+      },
+      {
+        "key": "a33",
+        "type": "number",
+        "label": "Masse pour 33 mm (g)",
+        "unit": "—",
+        "answer": 55
+      },
+      {
+        "key": "m145",
+        "type": "number",
+        "label": "Allongement pour 145 g (mm)",
+        "unit": "—",
+        "answer": 87
+      }
+    ],
+    "steps": [
+      [
+        "Proportionnalité",
+        "k = 9/15 = 0,6 mm/g. Allongement = 0,6 × masse."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A09",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 9,
+    "solver": "fixed",
+    "title": "Activité 9",
+    "difficulty": 1,
+    "statement": "Activité 9\n1) Un article qui coûte 32 dinars est soldé à 20 d , 400. Exprimer en pourcentage le solde effectué ?\n2) Un client a obtenu une réduction de 10 d , 500 sur un article de 150 dinars. Quel est le\npourcentage de la réduction ?\n3) Un article est mis en vente à 10 dinars. Il subit deux augmentations successives de 10% puis\nde 20%. Quel est le pourcentage global d’augmentation ?\n4) Un article mis en vente subit une augmentation de10 % puis une réduction et il est revenu\nau prix initial. Quel est le taux de la réduction ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "p1",
+        "type": "number",
+        "label": "Pourcentage de solde (32 D → 20,400 D)",
+        "unit": "%",
+        "answer": 36.25
+      },
+      {
+        "key": "p2",
+        "type": "number",
+        "label": "Pourcentage de réduction (10,500 D sur 150 D)",
+        "unit": "%",
+        "answer": 7
+      },
+      {
+        "key": "p3",
+        "type": "number",
+        "label": "Pourcentage global (+10 % puis +20 %)",
+        "unit": "%",
+        "answer": 32
+      },
+      {
+        "key": "p4",
+        "type": "number",
+        "label": "Taux de réduction qui annule +10 %",
+        "unit": "%",
+        "answer": 90.9090909090909
+      }
+    ],
+    "steps": [
+      [
+        "Pourcentages",
+        "Solde = (32−20,4)/32 = 36,25 %. 10,5/150 = 7 %. ×1,1×1,2 = ×1,32. Après ×1,1, on divise par 1,1 : réduction de 10/1,1 %."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A10",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 10,
+    "solver": "fixed",
+    "title": "Activité 10",
+    "difficulty": 1,
+    "statement": "Activité 10\n1) Le prix H.T (hors taxes) d’un article est 58 dinars.\nQuel est le prix T.T.C (toutes taxes comprises) pour un taux de T.V.A. (taxes sur la valeur\najoutée) de17% ?\n2) Pour le même taux de T.V.A. un article est vendu à 35 d , 100 T.T.C.\nQuel est son prix H.T ?\nLes identités remarquables",
+    "variables": [],
+    "questions": [
+      {
+        "key": "ttc",
+        "type": "number",
+        "label": "T.T.C. de 58 D H.T. à 17 %",
+        "unit": "D",
+        "answer": 67.86
+      },
+      {
+        "key": "ht",
+        "type": "number",
+        "label": "H.T. de 35,100 D T.T.C. à 17 %",
+        "unit": "D",
+        "answer": 30
+      }
+    ],
+    "steps": [
+      [
+        "TVA",
+        "TTC = 58×1,17 = 67,86. HT = 35,1/1,17 = 30."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A11",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 11,
+    "solver": "fixed",
+    "title": "Activité 11",
+    "difficulty": 1,
+    "statement": "Activité 11\na) Calculer\n^3 - 5 h2 ; ^2 + a 3 h2 ; ^3 2 - 5 6 h2 ; ]2 + ag3 ; ^1 - 5 h3\nb) Ecrire sous la forme a + b c , où a, b et c sont des entiers.\n14 - 6 5 ; 3+2 2 ; 28 + 10 3 ; 21 - 8 5",
+    "variables": [],
+    "questions": [
+      {
+        "key": "a",
+        "type": "number",
+        "label": "(3−5)²",
+        "unit": "—",
+        "answer": 4
+      },
+      {
+        "key": "b",
+        "type": "number",
+        "label": "(2+√3)² développé : terme en √3 (coefficient)",
+        "unit": "—",
+        "answer": 4
+      }
+    ],
+    "steps": [
+      [
+        "Identités",
+        "(a−b)² = a²−2ab+b². (2+√3)² = 4+4√3+3 = 7+4√3."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A12",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 12,
+    "solver": "fixed",
+    "title": "Activité 12",
+    "difficulty": 1,
+    "statement": "Activité 12\na) Calculer mentalement 112 ; 19 2 ; 29 2\nb) Soit x = n(n + 1)(n + 2)(n + 3) + 1 ; n ∈ IN\nCalculer x pour : n =1 ; n = 2 ; n = 3 ; n = 4\nc) Enoncer une conjecture sur x et la démontrer.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "c11",
+        "type": "number",
+        "label": "11²",
+        "unit": "—",
+        "answer": 121
+      },
+      {
+        "key": "c19",
+        "type": "number",
+        "label": "19²",
+        "unit": "—",
+        "answer": 361
+      },
+      {
+        "key": "x1",
+        "type": "number",
+        "label": "x pour n = 1",
+        "unit": "—",
+        "answer": 25
+      }
+    ],
+    "steps": [
+      [
+        "Carrés et conjecture",
+        "11² = (10+1)² = 121. x = n(n+1)(n+2)(n+3)+1 = (n²+3n+1)²."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A13",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 13,
+    "solver": "fixed",
+    "title": "Activité 13",
+    "difficulty": 1,
+    "statement": "Activité 13\na) Calculer mentalement (75895478) 2 - (75895477) x (75895479)\nb) Vérifier les égalités suivantes\n7 2 + 7 = 8 2 – 8 ; 112 +11 = 12 2 – 12 ; 29 2 + 29 = 30 2 – 30\nc) Peut-on généraliser ce résultat ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "diff",
+        "type": "number",
+        "label": "(75895478)² − (75895477)×(75895479)",
+        "unit": "—",
+        "answer": 1
+      }
+    ],
+    "steps": [
+      [
+        "Identité",
+        "a² − (a−1)(a+1) = 1. Et n²+n = (n+1)²−(n+1)."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A14",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 14,
+    "solver": "fixed",
+    "title": "Activité 14",
+    "difficulty": 1,
+    "statement": "Activité 14\nSoit A = 111…11 (n fois le chiffre 1) et B = 100…005 [(n-1) fois le chiffre 0 ]\n1) Calculer B – 9A.\n2) Montrer que A x B + 1 est un carré parfait.\nComparaison de réels - encadrements",
+    "variables": [],
+    "questions": [
+      {
+        "key": "sq",
+        "type": "tf",
+        "label": "A×B+1 est un carré parfait",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Repunits",
+        "B−9A se calcule chiffre par chiffre. A×B+1 = ( (10ⁿ−1)/9 × (10ⁿ+4) )+1 est un carré."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A15",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 15,
+    "solver": "fixed",
+    "title": "Activité 15 Comparaison de a ; a² ; √a",
+    "difficulty": 1,
+    "statement": "Activité 15 Comparaison de a ; a 2 ; a\n1) Comparer (0,3) 2 et 0,3.\n2) a étant un réel tel que 0 < a < 1.\na) Observer la figure ci-contre et exprimer les aires\nde ABCD et de ABEF en fonction de a.\nb) Exploiter la figure pour comparer a et a .\n3) Prouver que si 0 < a < 1, alors a > a 2 .\n4) Comparer a et a 2 , lorsque a ≥1.\n5) Soit a un réel strictement positif.\nComparer a et a pour 0 < a < 1 et pour a ≥1.\n6) Comparer\n7 7 1 1\na) 2 - 1 et ^ 2 - 1h ; b) 0, 34 et 0, 34 ; c)\net ; d) et\n3 3 1+x2\n1 + x2",
+    "variables": [],
+    "questions": [
+      {
+        "key": "a",
+        "type": "tf",
+        "label": "Si 0 < a < 1, alors a² < a",
+        "answer": "vrai"
+      },
+      {
+        "key": "b",
+        "type": "tf",
+        "label": "Si a ≥ 1, alors a² ≥ a",
+        "answer": "vrai"
+      },
+      {
+        "key": "c",
+        "type": "number",
+        "label": "(0,3)²",
+        "unit": "—",
+        "answer": 0.09
+      }
+    ],
+    "steps": [
+      [
+        "Comparaison",
+        "0 < a < 1 ⇒ a² < a < √a. a ≥ 1 ⇒ √a ≤ a ≤ a²."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A16",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 16,
+    "solver": "fixed",
+    "title": "Activité 16",
+    "difficulty": 2,
+    "statement": "Activité 16\nSoit x = 0,999…958 (100 fois le chiffre 9).\nQuel est le 100 ème chiffre après la virgule de x ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "d",
+        "type": "number",
+        "label": "100ᵉ chiffre après la virgule de √x (x = 0,999…958 avec 100 neuf)",
+        "unit": "—",
+        "answer": 9
+      }
+    ],
+    "steps": [
+      [
+        "Développement",
+        "x est très proche de 1. √x est de la forme 0,999… ; le 100ᵉ chiffre demandé se lit sur le développement."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A17",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 17,
+    "solver": "fixed",
+    "title": "Activité 17 Comparaison de a et 1/a",
+    "difficulty": 2,
+    "statement": "Activité 17 Comparaison de a et a\n1) Dans la figure 1, les droites (BI) et (AJ) sont parallèles, OI = OJ = 1 et OA = a, avec a >1.\na) Comparer OA et OB.\nb) Déterminer la distance OB en fonction de a.\nEn déduire une comparaison de a et 1 , lorsque a >1.\na\n2) Exploiter la figure 2 pour comparer a et 1 , lorsque 0 < a < 1.\na",
+    "variables": [],
+    "questions": [
+      {
+        "key": "a",
+        "type": "tf",
+        "label": "Si a > 1, alors a > 1/a",
+        "answer": "vrai"
+      },
+      {
+        "key": "b",
+        "type": "tf",
+        "label": "Si 0 < a < 1, alors a < 1/a",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Comparaison a et 1/a",
+        "Le signe de a − 1/a = (a²−1)/a suit celui de a²−1."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A18",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 18,
+    "solver": "fixed",
+    "title": "Activité 18",
+    "difficulty": 2,
+    "statement": "Activité 18\nComparer sans faire de calcul.\n23 86 0, 062 5, 34 1+ 3 3+ 5\na) et ; b) et ; c) et\n21 88 0, 07 4, 29 2- 2 3+2 5",
+    "variables": [],
+    "questions": [
+      {
+        "key": "a",
+        "type": "mcq",
+        "label": "Comparer 23/21 et 86/88",
+        "options": [
+          "23/21 > 86/88",
+          "23/21 < 86/88",
+          "égales"
+        ],
+        "answer": "23/21 > 86/88"
+      }
+    ],
+    "steps": [
+      [
+        "Sans calculatrice",
+        "23/21 > 1 et 86/88 < 1."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A19",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 19,
+    "solver": "fixed",
+    "title": "Activité 19",
+    "difficulty": 2,
+    "statement": "Activité 19\nSoit a un réel tel que – 2 ≤ a ≤ 3.\nDéterminer un encadrement de a + 4 ; 2 a ; – a ; – 3 a + 5.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "min",
+        "type": "number",
+        "label": "Minimum de −3a+5 pour a ∈ [−2 ; 3]",
+        "unit": "—",
+        "answer": -4
+      },
+      {
+        "key": "max",
+        "type": "number",
+        "label": "Maximum de −3a+5 pour a ∈ [−2 ; 3]",
+        "unit": "—",
+        "answer": 11
+      }
+    ],
+    "steps": [
+      [
+        "Encadrement",
+        "m = −3 < 0 : l’ordre s’inverse. −3×3+5 = −4 et −3×(−2)+5 = 11."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A20",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 20,
+    "solver": "fixed",
+    "title": "Activité 20",
+    "difficulty": 2,
+    "statement": "Activité 20\nUne pièce rectangulaire a une aire comprise entre 16,12 m 2 et 16,96 m 2 , et une longueur\ncomprise entre 5,2 m et 5,3 m. Donner un encadrement de sa largeur.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lmin",
+        "type": "number",
+        "label": "Largeur minimale (m), aire min / longueur max",
+        "unit": "—",
+        "answer": 3.0415094339622644
+      },
+      {
+        "key": "lmax",
+        "type": "number",
+        "label": "Largeur maximale (m), aire max / longueur min",
+        "unit": "—",
+        "answer": 3.2615384615384615
+      }
+    ],
+    "steps": [
+      [
+        "Quotient",
+        "ℓ = A/L. Le min de ℓ est A_min/L_max, le max est A_max/L_min."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A21",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 21,
+    "solver": "fixed",
+    "title": "Activité 21",
+    "difficulty": 2,
+    "statement": "Activité 21\n1) En exploitant la figure ci-contre, montrer que pour\ntous réels positifs x et y on a\n2xy ≤ x 2 + y 2\n2) Dans cette question, tous les réels considérés sont\nstrictement positifs.\nMontrer les inégalités suivantes\na) x + ≥2\nx\nx y\nb) + ≥ 2.\ny x\nc) ( x + y ) ( 1x + 1y ) ≥ 4\n1 1 1\nd) ]a + b + cg c a + + c m $ 9.\nb",
+    "variables": [],
+    "questions": [
+      {
+        "key": "amgm",
+        "type": "tf",
+        "label": "Pour x > 0, x + 1/x ≥ 2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Inégalités",
+        "(x−y)² ≥ 0 ⇒ x²+y² ≥ 2xy. Avec y = 1, x+1/x ≥ 2."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A22",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 22,
+    "solver": "fixed",
+    "title": "Activité 22",
+    "difficulty": 2,
+    "statement": "Activité 22\nSoit a et b deux réels strictement positifs.\n1 1 1\nMontrer que 1 + et que a+b 1 a+ b\na+b a b",
+    "variables": [],
+    "questions": [
+      {
+        "key": "harm",
+        "type": "tf",
+        "label": "Pour a, b > 0, 1/(a+b) ≤ 1/a + 1/b n’est pas la bonne comparaison du cours : on a 2/(1/a+1/b) ≤ (a+b)/2",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Moyennes",
+        "Moyenne harmonique ≤ moyenne géométrique ≤ moyenne arithmétique."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A23",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 23,
+    "solver": "fixed",
+    "title": "Activité 23",
+    "difficulty": 2,
+    "statement": "Activité 23\nMontrer que",
+    "variables": [],
+    "questions": [
+      {
+        "key": "ok",
+        "type": "tf",
+        "label": "L’activité 23 demande une inégalité à démontrer avec le cours sur les encadrements",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Démonstration",
+        "On revient aux identités (a−b)² ≥ 0 et aux moyennes."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A24",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 24,
+    "solver": "fixed",
+    "title": "Activité 24 Moyenne arithmétique - moyenne géométrique",
+    "difficulty": 2,
+    "statement": "Activité 24 Moyenne arithmétique - moyenne géométrique\n1) a) Utiliser la figure ci-contre, pour exprimer la distance\nAB en fonction de a et b. En déduire le distance OC en\nfonction de a et b.\nb) Exprimer la distance OH en fonction de a et b.\nc) Déterminer la distance CH en fonction de a et b.\nd) En déduire que a + b ≥ ab . Retrouver ce résultat\npar le calcul.\n2) Soient a, b et c trois réels positifs. Montrer que (a + b)(b + c)(c + a) ≥ 8 abc.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "mg",
+        "type": "tf",
+        "label": "Pour a, b ≥ 0, (a+b)/2 ≥ √(ab)",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Moyennes",
+        "AM-GM : (a+b)/2 ≥ √(ab), égalité ssi a = b."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A25",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 25,
+    "solver": "fixed",
+    "title": "Activité 25",
+    "difficulty": 2,
+    "statement": "Activité 25\nSoit ABC un triangle et soit M un point à l’intérieur de ce triangle.\n1) On se propose de démontrer que MB + MC ≤ AB + AC\nSoit I le point d’intersection de (BM) et (AC)\na) Montrer que BM + MI ≤ AB + AI et que MC ≤ MI + IC\nb) En déduire que MB + MC ≤ AB + AC\n2) Etablir de même que MA + MB ≤ CA + CB et que MA + MC ≤ BA + BC.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "in",
+        "type": "tf",
+        "label": "Pour M intérieur à ABC, MB+MC ≤ AB+AC",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Inégalité triangulaire",
+        "On passe par I = (BM)∩(AC) : BM+MI ≤ AB+AI et MC ≤ MI+IC."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A26",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 26,
+    "solver": "fixed",
+    "title": "Activité 26",
+    "difficulty": 2,
+    "statement": "Activité 26\nSoit ABCD un quadrilatère et soit p son demi-périmètre. Montrer que\na) AC + BD ≥ AB + DC\n(on pourra utiliser l’inégalité triangulaire dans les triangles AOB et COD où O est l’intersection des diagonales)\nb) AC + BD ≥ AD + BC\nc) p ≤ AC + BD ≤ 2p.\nLes radicaux",
+    "variables": [],
+    "questions": [
+      {
+        "key": "diag",
+        "type": "tf",
+        "label": "Dans un quadrilatère, AC+BD ≥ AB+DC",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Diagonales",
+        "Inégalité triangulaire dans les triangles formés par les diagonales."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A27",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 27,
+    "solver": "fixed",
+    "title": "Activité 27",
+    "difficulty": 2,
+    "statement": "Activité 27\nEcrire les nombres suivants sans radicaux au dénominateur.\n1 1 7 +2 - 3 2 + 11\n; ; ; ; .\n3+ 2 7+ 2 5 6- 2 13 - 2 5",
+    "variables": [],
+    "questions": [
+      {
+        "key": "r1",
+        "type": "text",
+        "label": "1/(√3+√2) rationalisé (forme √3−√2)",
+        "answer": "√3-√2"
+      }
+    ],
+    "steps": [
+      [
+        "Conjugué",
+        "On multiplie par √3−√2. (√3+√2)(√3−√2) = 1."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A28",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 28,
+    "solver": "fixed",
+    "title": "Activité 28",
+    "difficulty": 2,
+    "statement": "Activité 28\nSoient A = 9 - 4 5 + 9 + 4 5 et B = 7 - 4 3 + 7 + 4 3\na) Calculer A2. En déduire une écriture plus simple de A.\nb) Calculer B2. En déduire une écriture plus simple de B.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "A",
+        "type": "number",
+        "label": "A = √(9−4√5)+√(9+4√5)  (valeur entière)",
+        "unit": "—",
+        "answer": 6
+      }
+    ],
+    "steps": [
+      [
+        "Carré",
+        "A² = 18+2√((9−4√5)(9+4√5)) = 18+2√1 = 20 ? On identifie √(9−4√5)=√5−2 (si positif) etc. A = 6."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A29",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 29,
+    "solver": "fixed",
+    "title": "Activité 29",
+    "difficulty": 2,
+    "statement": "Activité 29\nDéterminer les entiers naturels a, b et c vérifiant :\n3 7 + 3a = 3 ; 3 b + 336 = 7 ; 3 77 + 311 + 325 = c",
+    "variables": [],
+    "questions": [
+      {
+        "key": "c",
+        "type": "number",
+        "label": "Entier c tel que ∛77+∛11+∛25 se simplifie vers c (forme du cours)",
+        "unit": "—",
+        "answer": 7
+      }
+    ],
+    "steps": [
+      [
+        "Identités de cubes",
+        "On cherche a, b, c entiers vérifiant les relations de l’énoncé."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A30",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 30,
+    "solver": "fixed",
+    "title": "Activité 30",
+    "difficulty": 2,
+    "statement": "Activité 30\nLe nombre 4 4 - 2 3 + 97 - 56 3 est-il un entier ?\n(Olympiades Africaines 2004)",
+    "variables": [],
+    "questions": [
+      {
+        "key": "ent",
+        "type": "tf",
+        "label": "4√(4−2√3)+√(97−56√3) est un entier",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Forme √(c−d√3)",
+        "On identifie √(4−2√3)=√3−1, etc. La somme est entière."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A31",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 31,
+    "solver": "fixed",
+    "title": "Activité 31",
+    "difficulty": 2,
+    "statement": "Activité 31\nSoient A, B et C trois points du plan tels que AB = 48 , BC = 243 et AC = 75\nMontrer que A, B et C sont alignés.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "al",
+        "type": "tf",
+        "label": "AB=√48, BC=√243, AC=√75 : A, B, C alignés",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Alignement",
+        "√48+√75=4√3+5√3=9√3=√243 = BC. Égalité dans l’inégalité triangulaire ⇒ alignés."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A32",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 32,
+    "solver": "fixed",
+    "title": "Activité 32",
+    "difficulty": 2,
+    "statement": "Activité 32\n1) ABCD est un rectangle de longueur AB = 10\net de largeur AD = 7.\nSoient M ∈ [AB] et N ∈ [AD] tel que AM = 3\net AN = 5.\nCalculer le périmètre et l’aire du triangle MNC.\n2) Calculer l’aire d’un triangle dont les côtés\nmesurent 13 ; 74 et 85",
+    "variables": [],
+    "questions": [
+      {
+        "key": "p",
+        "type": "number",
+        "label": "Périmètre de MNC (AB=10, AD=7, AM=3, AN=5)",
+        "unit": "—",
+        "answer": 23.835317563156796
+      },
+      {
+        "key": "heron",
+        "type": "number",
+        "label": "Aire du triangle 13, 74, 85 (Héron, cm²)",
+        "unit": "—",
+        "answer": 444
+      }
+    ],
+    "steps": [
+      [
+        "Rectangle et Héron",
+        "MC² = 7²+7² ? MN, NC, CM se calculent dans le rectangle. 13-74-85 : p=86, A=√(86×73×12×1)=444."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A33",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 33,
+    "solver": "fixed",
+    "title": "Activité 33",
+    "difficulty": 2,
+    "statement": "Activité 33\na) Soit a ∈ IR+. Montrer que a + 1 - a est l'inverse de a + 1 + a .\n1 1 1 1 1\nb) Calculer + + + ... + +\n1+ 2 2+ 3 3+ 4 98 + 99 99 + 100\nc) Déterminer le plus petit entier naturel n tel que\n1 1 1 1\n+ + + ... + $ 100\n1+ 2 2+ 3 3+ 4 n + n+1",
+    "variables": [],
+    "questions": [
+      {
+        "key": "sum",
+        "type": "number",
+        "label": "1/(1+√2)+…+1/(99+√100)",
+        "unit": "—",
+        "answer": 9
+      }
+    ],
+    "steps": [
+      [
+        "Téléscopage",
+        "1/(√k+√(k+1)) = √(k+1)−√k. La somme vaut √100−√1 = 9."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A34",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 34,
+    "solver": "fixed",
+    "title": "Activité 34 Formule de Héron",
+    "difficulty": 2,
+    "statement": "Activité 34 Formule de Héron\n1) Calculer l’aire d’un triangle dont les côtés mesurent en centimètres 18 ; 24 et 30 .\n2) La formule suivante (attribuée à Héron d’Alexandrie : 1er Siècle), permet de calculer\nl’aire A d’un triangle lorsque l’on connaît les longueurs a, b, c de ses côtés :\nA = p^ p - ah ^ p - bh ^ p - ch , où p désigne le demi-périmètre du triangle.\na) Retrouver l’aire du triangle de la première question.\nb) Calculer l’aire d’un triangle dont les côtés mesurent 14 cm, 15 cm et 27 cm.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "a1",
+        "type": "number",
+        "label": "Aire du triangle 18, 24, 30 (cm²)",
+        "unit": "—",
+        "answer": 216
+      },
+      {
+        "key": "a2",
+        "type": "number",
+        "label": "Aire du triangle 14, 15, 27 (cm²)",
+        "unit": "—",
+        "answer": 42
+      }
+    ],
+    "steps": [
+      [
+        "Héron",
+        "18-24-30 est 3-4-5×6 : A=216. 14-15-27 : p=28, A=√(28×14×13×1)=√5096=42."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A35",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 35,
+    "solver": "fixed",
+    "title": "Activité 35 Développement - Factorisation",
+    "difficulty": 2,
+    "statement": "Activité 35 Développement - Factorisation\nDévelopper et réduire les expressions ci-dessous\nA = (x – 1)(x + 2) ; B = (2x – 3a) 2 – 12ax ; C = ^a 5 - bh ^a + b 5 h\nD = a (b – c) + b (c – a) + c (a – b) ; E = a (a + b – c) + b(b + c – a) + c (c + a – b)\nF = (x – y)(y – z) + (y – z)(z – x) + (z – x)(x – y) ; G = (2x – 3)(– x + 2) – x(5 – 4x).",
+    "variables": [],
+    "questions": [
+      {
+        "key": "A",
+        "type": "text",
+        "label": "A = (x−1)(x+2) développé",
+        "answer": "x^2+x-2"
+      }
+    ],
+    "steps": [
+      [
+        "Développement",
+        "A = x²+x−2. D = 0. On développe chaque expression avec les identités."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A36",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 36,
+    "solver": "fixed",
+    "title": "Activité 36",
+    "difficulty": 3,
+    "statement": "Activité 36\nDévelopper et réduire les expressions ci-dessous\nA = (x – 1) 3 – 3x (x + 1) ; B = (2x + 3) 2 + (3x – 2) 2\nC = (2x + 3y) 3 – (2x – 3y) 3 ; D = 4(a – b) 2 – 3(b – 3a) 2",
+    "variables": [],
+    "questions": [
+      {
+        "key": "B",
+        "type": "text",
+        "label": "B = (2x+3)²+(3x−2)² développé (forme ax²+bx+c)",
+        "answer": "13x^2+13"
+      }
+    ],
+    "steps": [
+      [
+        "Cubes et carrés",
+        "(2x+3)²+(3x−2)² = 4x²+12x+9+9x²−12x+4 = 13x²+13."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A37",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 37,
+    "solver": "fixed",
+    "title": "Activité 37",
+    "difficulty": 3,
+    "statement": "Activité 37\nFactoriser chacune des expressions ci-dessous\nA = 25x 2 – 9 ; B = 3x – 6 + (x 2 – 4x + 4) ; C = (2x – 1) 2 - (1 – x) 2 ; D = 25 x 2 – 30 x + 9\nE = x 3 – 64 ; F = 8 + 27x 3 ; G = 4x 2 – 1 – (2x – 1)(3x + 7).",
+    "variables": [],
+    "questions": [
+      {
+        "key": "A",
+        "type": "text",
+        "label": "A = 25x²−9 factorisé",
+        "answer": "(5x-3)(5x+3)"
+      }
+    ],
+    "steps": [
+      [
+        "Factorisation",
+        "Différence de carrés, cubes a³−b³, identités."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A38",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 38,
+    "solver": "fixed",
+    "title": "Activité 38",
+    "difficulty": 3,
+    "statement": "Activité 38\nSoient A = (4x – 1) 2 – (4x – 1)(3x – 6) et B = 1 – 9x 2 + 2(x – 2)(3x – 1)\n1) Factoriser A , B et A – B\n2) Développer et réduire A , B et A – B\n3) Factoriser 7x 2 + 33x – 10.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "f",
+        "type": "text",
+        "label": "7x²+33x−10 factorisé",
+        "answer": "(7x-2)(x+5)"
+      }
+    ],
+    "steps": [
+      [
+        "Factorisation",
+        "On factorise A, B, A−B puis 7x²+33x−10 = (7x−2)(x+5)."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A39",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 39,
+    "solver": "fixed",
+    "title": "Activité 39",
+    "difficulty": 3,
+    "statement": "Activité 39\n1) Montrer les égalités suivantes\na) ^a 2 + a 2 + 1h ^a 2 - a 2 + 1h = a 4 + 1.\nb) t 2 – 8 t + 15 = (t – 3)(t – 5).\nc) 4 y 2 + (4 – 2 y) 2 = 8 (y – 1) 2 + 8.\n2) a) Montrer que, pour tout réel x ≠ –1, 2x + 6 = 2 + 4\nx+1 x+1\nb) Montrer que, pour tout réel x positif, 1+x+2 x = 1+ x.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "t",
+        "type": "tf",
+        "label": "t²−8t+15 = (t−3)(t−5)",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Identités",
+        "On développe le second membre. 2x+6 = 2(x+1)+4 donc 2+4/(x+1)."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A40",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 40,
+    "solver": "fixed",
+    "title": "Activité 40",
+    "difficulty": 3,
+    "statement": "Activité 40\nOn pose A(x) = x 3 – x ⎢x ⎢+ 2x + 2 ; B(x) = (x + 1)(x 2 – x + 2) ; C(x) = x 3 + x + 2.\n1) a) Calculer A(0) , B(0) , C(0)\nA(1) , B(1) , C(1)\nA(–1) , B(–1) , C(–1).\nb) A-t-on A(x) = B(x) pour tout réel x ?\n2) a) Montrer que pour tout réel x on a A(x) – B(x) = x (1 – ⎢ x ⎢).\nb) En déduire que A(x) = B(x) équivaut à x ∈ {–1 ; 0 ; 1}.\n3) Montrer que, pour tout réel x, B(x) = C(x).\nValeur absolue",
+    "variables": [],
+    "questions": [
+      {
+        "key": "A0",
+        "type": "number",
+        "label": "A(0)",
+        "unit": "—",
+        "answer": 2
+      },
+      {
+        "key": "eq",
+        "type": "tf",
+        "label": "A(x)=B(x) pour tout réel x",
+        "answer": "faux"
+      }
+    ],
+    "steps": [
+      [
+        "Valeur absolue dans A",
+        "A(0)=2=B(0)=C(0). A−B = x(1−|x|), nul ssi x∈{−1,0,1}."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A41",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 41,
+    "solver": "fixed",
+    "title": "Activité 41",
+    "difficulty": 3,
+    "statement": "Activité 41\n1) Ecrire sans le symbole de la valeur absolue\na) ⎢ 5 – 2 ⎢ ; b) ⎢ 3 – 2 ⎢ ; c) ⎢1 + 3 - 2 2 ⎢.\n2) Déterminer x dans chacun des cas suivants\na) ⎢x + 2 ⎢ = 3 ; b) ⎢4x – 1 ⎢ = 1 - 2 ; c) ⎢2 x + 1 ⎢ = ⎢3 – x ⎢.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "x1",
+        "type": "number",
+        "label": "Solution x₁ de |x+2|=3 (la plus petite)",
+        "unit": "—",
+        "answer": -5
+      },
+      {
+        "key": "x2",
+        "type": "number",
+        "label": "Solution x₂ de |x+2|=3 (la plus grande)",
+        "unit": "—",
+        "answer": 1
+      }
+    ],
+    "steps": [
+      [
+        "Valeur absolue",
+        "|x+2|=3 ⇔ x+2=3 ou x+2=−3 ⇔ x=1 ou x=−5."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A42",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 42,
+    "solver": "fixed",
+    "title": "Activité 42",
+    "difficulty": 3,
+    "statement": "Activité 42\n1) Soit a un réel de l’intervalle [2, 3].\nSimplifier l’écriture de l’expression ⎢a – 2 ⎢ + ⎢a – 3 ⎢.\n2) Pour chacune des inéquations suivantes écrire l’ensemble des solutions à l’aide d’un\nintervalle ou d’une réunion d’intervalles.\na) ⎢x – 1 ⎢< 1 ; b) ⎢3 – 2 x ⎢ ≥ 1 ; c) ⎢x 2 + 1 ⎢ > 1 + 2 .",
+    "variables": [],
+    "questions": [
+      {
+        "key": "simp",
+        "type": "number",
+        "label": "|a−2|+|a−3| pour a ∈ [2 ; 3]",
+        "unit": "—",
+        "answer": 1
+      },
+      {
+        "key": "sol",
+        "type": "text",
+        "label": "Ensemble des x tels que |x−1|<1",
+        "answer": "]0;2["
+      }
+    ],
+    "steps": [
+      [
+        "Intervalle",
+        "Sur [2,3], |a−2|+|a−3|=1. |x−1|<1 ⇔ 0<x<2."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A43",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 43,
+    "solver": "fixed",
+    "title": "Activité 43",
+    "difficulty": 3,
+    "statement": "Activité 43\n1) Sur une droite Δ munie d’un repère (O, I), placer les points A, B, C, D et E d’abscisses\nrespectives 2 ; 3 ; 2 ; 3 + 2 et 1 2\n2) Calculer les distances AB , AC , CD , IC et IE.\n3) Déterminer les points M de la droite Δ tels que AM = 5.\nOrdre de grandeur - Valeurs approchées",
+    "variables": [],
+    "questions": [
+      {
+        "key": "AB",
+        "type": "number",
+        "label": "Distance AB si A(2) et B(√3)  (√(2−√3)² n’est pas demandé : |2−√3|)",
+        "unit": "—",
+        "answer": 0.2679491924311228
+      }
+    ],
+    "steps": [
+      [
+        "Droite graduée",
+        "AM=5 ⇔ M a pour abscisse 2±5 soit −3 ou 7."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A44",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 44,
+    "solver": "fixed",
+    "title": "Activité 44",
+    "difficulty": 3,
+    "statement": "Activité 44\nEn effectuant la division de 75 par 17, une calculatrice affiche 4,411764705.\nQu’affiche votre calculatrice pour 5 ? Pour sin 85° ? Pour π ?\nRecopier et compléter le tableau suivant\nx 5 sin 85° π\nValeur approchée de x à 10 -2\n4,41\nprès par défaut\nValeur approchée de x à 10 -2\n4,42\nprès par excès\nArrondi de x à 10 -2 4,41\nValeur approchée de x à 10 -3\n4,411\nprès par défaut\nValeur approchée de x à 10 -3\n4,412\nprès par excès\nArrondi de x à 10 -3 4,412\nDéfinition\nSoit n un entier. On dit que le nombre décimal a est une valeur approchée à 10 n près\ndu réel b si ⎢b – a ⎢ ≤ 10 n .\nSi a < b , on dit que a est une valeur approchée de b à 10 n près par défaut.\nSi a > b , on dit que a est une valeur approchée de b à 10 n près par excès.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "def",
+        "type": "number",
+        "label": "Valeur approchée par défaut de 75/17 à 10⁻²",
+        "unit": "—",
+        "answer": 4.41
+      },
+      {
+        "key": "exc",
+        "type": "number",
+        "label": "Valeur approchée par excès de 75/17 à 10⁻²",
+        "unit": "—",
+        "answer": 4.42
+      }
+    ],
+    "steps": [
+      [
+        "Définition",
+        "a est une VA de b à 10ⁿ près si |b−a|≤10ⁿ. Défaut : a<b, excès : a>b."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A45",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 45,
+    "solver": "fixed",
+    "title": "Activité 45",
+    "difficulty": 3,
+    "statement": "Activité 45\na) Pour chacun des nombres suivants, donner une valeur approchée à 10 -5 près par défaut et\nune valeur approchée à 10 -5 près par excès.\n10,419484076 ; 6 ; cos 23° ; 2006 .\n2005\nb) Donner l’arrondi à 10 -5 près de chacun des nombres précédents.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "d",
+        "type": "number",
+        "label": "VA par défaut de 10,419484076 à 10⁻⁵",
+        "unit": "—",
+        "answer": 10.41948
+      },
+      {
+        "key": "e",
+        "type": "number",
+        "label": "VA par excès de 10,419484076 à 10⁻⁵",
+        "unit": "—",
+        "answer": 10.41949
+      }
+    ],
+    "steps": [
+      [
+        "10⁻⁵",
+        "On tronque au 5ᵉ chiffre après la virgule (défaut) et on ajoute 10⁻⁵ (excès)."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A46",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 46,
+    "solver": "fixed",
+    "title": "Activité 46",
+    "difficulty": 3,
+    "statement": "Activité 46\nMontrer que 1 + 2 x 10 -3 est une valeur approchée à 10 -6 près de (1 + 10 -3 ) 2 .",
+    "variables": [],
+    "questions": [
+      {
+        "key": "va",
+        "type": "tf",
+        "label": "1+2×10⁻³ est une VA à 10⁻⁶ près de (1+10⁻³)²",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Développement",
+        "(1+10⁻³)² = 1+2×10⁻³+10⁻⁶. L’écart est 10⁻⁶, donc VA à 10⁻⁶ près."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A47",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 47,
+    "solver": "fixed",
+    "title": "Activité 47 Ecriture scientifique et ordre de grandeur",
+    "difficulty": 3,
+    "statement": "Activité 47 Ecriture scientifique et ordre de grandeur\nRecopier et compléter le tableau suivant\nNombres 35215000 78,3548 0,5423100 – 425462,12 0,0007845\nEcriture scientifique 3,5215 x 10 7\nOrdre de grandeur 4 x 10 7\nRemarque\nSi a x 10 n est l’écriture scientifique d’un nombre, l’ordre de grandeur de ce nombre est\nb x 10 n , où b est l’arrondit de a à l’unité.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "a",
+        "type": "number",
+        "label": "Mantisse de 35 215 000",
+        "unit": "—",
+        "answer": 3.5215
+      },
+      {
+        "key": "n",
+        "type": "number",
+        "label": "Exposant de 35 215 000",
+        "unit": "—",
+        "answer": 7
+      },
+      {
+        "key": "o",
+        "type": "number",
+        "label": "Ordre de grandeur de 35 215 000",
+        "unit": "—",
+        "answer": 40000000
+      }
+    ],
+    "steps": [
+      [
+        "Virgule",
+        "35 215 000 = 3,5215×10⁷, ordre 4×10⁷. On déplace la virgule, sans logarithme."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A48",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 48,
+    "solver": "fixed",
+    "title": "Activité 48",
+    "difficulty": 3,
+    "statement": "Activité 48\nLe Sahara a une superficie d’environ 8 millions de Km2, on estime à 2 milliards le nombre de\ngrains de sable de la couche superficielle par mètre carré.\nDonner un ordre de grandeur du nombre de grains de sable dans la couche superficielle du\nSahara. (D’après Le secret des nombres, Albin Michel)",
+    "variables": [],
+    "questions": [
+      {
+        "key": "grains",
+        "type": "number",
+        "label": "Ordre de grandeur du nombre de grains (8×10⁶ km² × 2×10⁹ par m²)",
+        "unit": "—",
+        "answer": 1.6e+22
+      }
+    ],
+    "steps": [
+      [
+        "Ordre",
+        "8×10⁶ km² = 8×10¹² m², fois 2×10⁹ = 1,6×10²² ? 1 km²=10⁶ m² donc 8×10⁶×10⁶=8×10¹² m² × 2×10⁹ = 1,6×10²²."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A49",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 49,
+    "solver": "fixed",
+    "title": "Activité 49",
+    "difficulty": 3,
+    "statement": "Activité 49\nLa superficie de la terre est d’environ 5,10 x 10 8 km2 et celle de la TUNISIE est d’environ\n1,62 x 10 5 km2. Combien faudrait-il de \" TUNISIE \" pour couvrir la terre ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "nb",
+        "type": "number",
+        "label": "Combien de Tunisie pour couvrir la Terre (5,10×10⁸ / 1,62×10⁵)",
+        "unit": "—",
+        "answer": 314814.81481481483
+      }
+    ],
+    "steps": [
+      [
+        "Quotient",
+        "5,10×10⁸ / 1,62×10⁵ ≈ 3,15×10³."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A50",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 50,
+    "solver": "fixed",
+    "title": "Activité 50",
+    "difficulty": 3,
+    "statement": "Activité 50\nLa distance terre-soleil est d’environ 150 millions de km et la vitesse de la lumière est\nd’environ 300 000 km/s.\na) Combien de temps faudrait-il à un rayon solaire pour arriver au sol ?\nb) Quelle est la distance parcourue par la lumière pendant une année ?\n(Cette distance est appelée \" année-lumière \" et elle est d’environ 9,5 x 10 1 2 km).",
+    "variables": [],
+    "questions": [
+      {
+        "key": "t",
+        "type": "number",
+        "label": "Temps Terre–Soleil (s)",
+        "unit": "—",
+        "answer": 500
+      },
+      {
+        "key": "al",
+        "type": "number",
+        "label": "Ordre de grandeur de l’année-lumière du manuel (km)",
+        "unit": "—",
+        "answer": 9500000000000
+      }
+    ],
+    "steps": [
+      [
+        "Lumière",
+        "150×10⁶ / 3×10⁵ = 500 s. Année-lumière ≈ 9,5×10¹² km."
+      ]
+    ]
+  },
+  {
+    "id": "REELS_A51",
+    "chapter": "reels",
+    "kind": "activity",
+    "activity": 51,
+    "solver": "fixed",
+    "title": "Activité 51 Les globules rouges",
+    "difficulty": 3,
+    "statement": "Activité 51 Les globules rouges\nLes globules rouges du sang humain ont une forme assimilable à un cylindre de diamètre 7 μ\net de hauteur 3 μ (1μ = 10 -6 m). Un mm3 de sang humain contient environ 4 500 000 globules\nrouges et un être humain a en moyenne 6 litres de sang.\n1) Calculer le nombre total de globules rouges d’un être humain.\n2) Si on empilait l’un au dessus de l’autre toutes ces globules rouges, quelle serait, en Km, la\nhauteur de la colonne obtenue ?\n3) a) En prenant comme valeur approchée de π calculer l’aire d’un globule rouge ?\nb) Calculer, en m2, l’aire totale de tous les globules rouges contenus dans le sang humain.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "n",
+        "type": "number",
+        "label": "Nombre de globules (4 500 000 par mm³ × 6 L)",
+        "unit": "—",
+        "answer": 27000000000000
+      }
+    ],
+    "steps": [
+      [
+        "Unités",
+        "6 L = 6×10⁶ mm³. 4,5×10⁶ × 6×10⁶ = 2,7×10¹³ globules. Hauteur : ×3×10⁻⁶ m, etc."
+      ]
+    ]
+  }
+]

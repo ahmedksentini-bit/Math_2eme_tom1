@@ -1,0 +1,827 @@
+[
+  {
+    "id": "HOMOTHETIES_A01",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 1,
+    "solver": "fixed",
+    "title": "Activité 1",
+    "difficulty": 1,
+    "statement": "Activité 1\nDans la figure ci-dessous, ABCD est un trapèze rectangle en A, I est un point du plan et u est\nun vecteur.\n1) a) Recopier la figure.\nb) Construire les points A1, B1, C1 et D1 images respectives des sommets A, B, C et D du\ntrapèze par la translation de vecteur u .\nc) Construire les points A’, B’, C’ et D’ tels que :\n:IA' = 2IA ; : IB' = 2IB ; : IC' = 2IC ; : ID' = 2ID .\n2) Observer la figure et répondre aux questions ci-dessous.\na) Comparer les longueurs des côtés de\n• ABCD et A1 B1 C1 D1 ;\n• ABCD et A’B’C’D’.\nb) Comparer le périmètre de ABCD et ceux de A’B’C’D’ et A1B1C1D1.\nc) Comparer l'aire de ABCD et celles de A’B’C’D’ et A1B1C1D1.\nd) Que peut-on dire\n• des droites (AB), (A’B’) et (A1B1) ?\n• des droites (AD), (A’D’) et (A1D1) ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 1 (« Activité 1 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 1 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A02",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 2,
+    "solver": "fixed",
+    "title": "Activité 2",
+    "difficulty": 1,
+    "statement": "Activité 2\nSoient O, A, B et C quatre points distincts du plan.\na) Construire les points A’, B’ et C’ tels que :\n1 1 1\n:OA' =- OA ; : OB' =- OB ; : OC' =- OC .\n2 2 2\nExplorer Explorer\nb) Justifier chacune des affirmations suivantes\n• Les points O, A et A’ sont alignés.\n• Les points O, B et B’ sont alignés.\n• Les points O, C et C’ sont alignés.\n• Les droites (BC) et (B’C’) sont parallèles.\n• A’C’ = 1 AC\nDéfinition\nSoit I un point et k un réel non nul. L'application qui à tout point M du plan associe\nl'unique point M’ tel que IM' = kIM , est appelée homothétie de centre I et de\nrapport k. Elle est notée h(I, k).\nOn a ainsi h(I, k) (M) = M’ équivaut à IM' = kIM .\nM’ est appelé l'image du point M par l'homothétie h(I, k).\nM est appelé antécédent de M’ par l'homothétie h(I, k).\nConséquences\n• Un point et son image sont alignés avec le centre de l'homothétie.\n• h (I, k) (I) = I. On dit que I est un point invariant par h.\n• h (I, k) (M) = M' équivaut à IM' = kIM\néquivaut à IM = IM'\nk\nTout point du plan admet un unique antécédent par une homothétie.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 2 (« Activité 2 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 2 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A03",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 3,
+    "solver": "fixed",
+    "title": "Activité 3 Construction de l’image d’un point par une homothétie",
+    "difficulty": 1,
+    "statement": "Activité 3 Construction de l’image d’un point par une homothétie\nSoient I et A deux points distincts.\nConstruire dans chacun des cas suivants le point A’ tel que\na) A’= h(I , 3) (A). b) A’ = h fI , 1 p (A) c) A’ = h(I,-2)(A).",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 3 (« Activité 3 Construction de l’image d’un point par une homothétie ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 3 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A04",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 4,
+    "solver": "fixed",
+    "title": "Activité 4",
+    "difficulty": 1,
+    "statement": "Activité 4\nDans cette activité, on se propose de construire le centre d’une homothétie connaissant son\nrapport, un point et son image.\nSoit A un point du plan et soit B son image par l’homothétie h de centre I et de rapport 2 .\na) Montrer que I est le barycentre des points A et B affectés de cœfficients – 2 et 3. 3\nb) Construire le centre I.\nE x p l o r e r",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 4 (« Activité 4 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 4 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A05",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 5,
+    "solver": "fixed",
+    "title": "Activité 5",
+    "difficulty": 1,
+    "statement": "Activité 5\nSoient A et B deux points distincts du plan et soit I le barycentre de (A, 1) et (B, 4).\nSoit M un point du plan et M’ le point défini par MM' = MA + 4MB .\nReconnaître l’application f du plan qui associe au point M le point M’.\nm i l e r : 1-2-3-4\nA s s iAssimiler",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 5 (« Activité 5 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 5 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A06",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 6,
+    "solver": "fixed",
+    "title": "Activité 6 Propriété caractéristique",
+    "difficulty": 1,
+    "statement": "Activité 6 Propriété caractéristique\nSoit h une homothétie de centre I et de rapport k et soient M et N deux points du plan.\nOn note M' = h(M) et N' = h(N).\nExprimer M'N' en fonction de MN .\nConséquences\nSi A' et B' sont les images respectives de deux points distincts A et B par une homothétie de\nrapport k alors :\n• La droite (AB) est parallèle à la droite (A'B') ;\n• A'B' = | k | AB.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 6 (« Activité 6 Propriété caractéristique ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 6 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A07",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 7,
+    "solver": "fixed",
+    "title": "Activité 7",
+    "difficulty": 1,
+    "statement": "Activité 7\nDans la figure ci-contre, ID = 2 IA et (AB) // (CD).\na) Montrer que D et C sont les images respectives des points A et B par\nune homothétie dont on précisera le centre et le rapport.\nb) Montrer que C et D sont les images respectives des points A et B par\nune homothétie dont on précisera le centre et le rapport.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 7 (« Activité 7 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 7 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A08",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 8,
+    "solver": "fixed",
+    "title": "Activité 8 Conservation de l’alignement",
+    "difficulty": 1,
+    "statement": "Activité 8 Conservation de l’alignement\nSoit h une homothétie de centre I et de rapport k.\nSoient A, B et C trois points alignés et A’, B’ et C’ leurs images respectives par h.\nMontrer que les points A’, B’ et C’ sont alignés.\nm i l e r : 5-6\nA s s iAssimiler",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 8 (« Activité 8 Conservation de l’alignement ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 8 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A09",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 9,
+    "solver": "fixed",
+    "title": "Activité 9",
+    "difficulty": 1,
+    "statement": "Activité 9\nDans la figure ci-contre, AMN, BMN et CMN sont des triangles\ntels que A, B et C soient alignés. On note I le milieu de [MN].\nOn désigne par A’, B’ et C’ les centres de gravité respectifs de ces\ntriangles.\na) Reproduire la figure et construire les points A’, B’ et C’.\nb) Montrer que A’ est l’image de A par l’homothétie de centre I\net de rapport 1 .\nc) Montrer que A’, B’ et C’ sont alignés.\nExplorer Explorer",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 9 (« Activité 9 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 9 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A10",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 10,
+    "solver": "fixed",
+    "title": "Activité 10 Image d'une droite - Image d'un segment",
+    "difficulty": 1,
+    "statement": "Activité 10 Image d'une droite - Image d'un segment\nSoit h une homothétie de centre I et de rapport k.\nSoient A et B deux points distincts du plan. On désigne par A’ et B’ leurs images respectives\npar h.\n1) a) Soit M un point du plan et M’ son image par h.\nTraduire par une égalité vectorielle l'affirmation : \" M appartient à la droite (AB) \".\nMontrer que si M appartient à la droite (AB) alors M' appartient à la droite (A'B').\nb) Soit N' un point de (A'B') et N son antécédent par h.\nMontrer que N appartient à la droite (AB).\nc) Que peut-on conclure?\nd) Quelle est la position relative des droites (AB) et (A’B’) ?\n2) Montrer que l'image du segment [AB] par h est le segment [A'B'].",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 10 (« Activité 10 Image d'une droite - Image d'un segment ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 10 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A11",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 11,
+    "solver": "fixed",
+    "title": "Activité 11",
+    "difficulty": 1,
+    "statement": "Activité 11\nSoit (D) une droite et I un point.\nConstruire l’image de la droite (D) par l’homothétie de centre I et de rapport 2.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 11 (« Activité 11 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 11 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A12",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 12,
+    "solver": "fixed",
+    "title": "Activité 12",
+    "difficulty": 1,
+    "statement": "Activité 12\n1) Soient O, A et A’ trois points alignés.\nJustifier l’existence d'une seule homothétie h de centre O\nqui transforme A en A’.\n2) Dans la figure ci-contre, A’ est l’image de A par une\nhomothétie h de centre O.\nSoit M un point du plan et soit M’ son image par h.\na) Construire M’ lorsque le point M n’appartenant\npas à la droite (OA).\nb) Construire M’ lorsque le point M appartient à la\ndroite (OA).",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 12 (« Activité 12 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 12 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A13",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 13,
+    "solver": "fixed",
+    "title": "Activité 13",
+    "difficulty": 1,
+    "statement": "Activité 13\nDans la figure ci-contre, ABC et A’B’C’ sont deux\ntriangles équilatéraux tels que A’ et B’ soient les images\nrespectives de A et B par une homothétie h.\na) Reproduire la figure.\nMontrer que la droite (AC) est parallèle à la droite\n(A’C’).\nb) Prouver alors que h(C) = C’.\nc) Construire le centre Ω de l’homothétie h.\nm i l e r : 7-8\nA s s iAssimiler\nE x p l o r e r",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 13 (« Activité 13 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 13 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A14",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 14,
+    "solver": "fixed",
+    "title": "Activité 14 Conservation du milieu",
+    "difficulty": 1,
+    "statement": "Activité 14 Conservation du milieu\n1) Dans la figure ci contre, I est le milieu du segment [AB], A' est l'image de A par une\nhomothétie de centre O.\na) Recopier la figure et construire les points I’ et B’ images respectives de I et B par cette\nhomothétie.\nb) Que représente I' pour le segment [A'B'] ?\n2) Soit h une homothétie de rapport k.\nSoit [MN] un segment et P son milieu.\nOn désigne par M’, N’ et P’les images respectives de M,\nN et P par h.\nMontrer que P’ est le milieu de [M’N’].\nA s s iAssimiler",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 14 (« Activité 14 Conservation du milieu ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 14 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A15",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 15,
+    "solver": "fixed",
+    "title": "Activité 15 Conservation du barycentre",
+    "difficulty": 1,
+    "statement": "Activité 15 Conservation du barycentre\nSoit h une homothétie de rapport k.\n1) Soient α et β deux réels tels que α + β ≠ 0.\nSoient M et N deux points du plan. On désigne par M’ et N’ leurs images respectives par h.\nSoit P le barycentre des points (M’, α) et (N, β) et P’ l’image de P par h.\nMontrer que P’ est le barycentre des points (M , α) et (N’, β).\n2) Soient A, B et C trois points du plan et G le barycentre des points (A, 2) ; (B, – 1) et (C, 3).\nOn désigne par A’, B’, C’ et G’ les images respectives de A, B, C et G par h.\nMontrer que G’ est le barycentre des points (A’, 2) ; (B’, – 1) et (C’, 3).",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 15 (« Activité 15 Conservation du barycentre ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 15 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A16",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 16,
+    "solver": "fixed",
+    "title": "Activité 16",
+    "difficulty": 2,
+    "statement": "Activité 16\nSoit ABC un triangle et G son centre de gravité.\nMontrer que les triangles ABC et IJK ont le même centre de gravité.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 16 (« Activité 16 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 16 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A17",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 17,
+    "solver": "fixed",
+    "title": "Activité 17 Configuration du trapèze",
+    "difficulty": 2,
+    "statement": "Activité 17 Configuration du trapèze\nDans la figure ci-contre,\nABCD est un trapèze de bases [AB] et [CD],\nI est le milieu de [AB] et J est le milieu de [CD],\nO est le point d’intersection des droites (AD) et (BC)\net O’est le point d’intersection des droites (AC) et (BD).\n1) On note h1 l’homothétie de centre O et qui transforme A en D.\na) Montrer que h1 transforme B en C.\nb) En déduire que les points O, I et J sont alignés.\n2) On note h2 l’homothétie de centre O’ et qui transforme A en C.\na) Montrer que h2 transforme B en D\nb) Montrer que les points O, I, O' et J sont alignés.\n3) Dans la figure ci-contre, les droites D1, D2 et D3 sont parallèles.\nMontrer que les points P, Q et R sont alignés.\nExplorer Explorer",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 17 (« Activité 17 Configuration du trapèze ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 17 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A18",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 18,
+    "solver": "fixed",
+    "title": "Activité 18 Problème de construction",
+    "difficulty": 2,
+    "statement": "Activité 18 Problème de construction\nSoient D et Δ deux droites sécantes.\n1) Soit I un point n’appartenant ni à D ni à Δ.\na) Construire la droite D’ image de D par l’homothétie h de centre I et de rapport 2.\nOn désigne par M’ le point d’intersection des droites D’ et Δ.\nb) Construire le point M antécédent du point M’ par h.\n2) Construire un point A de D et un point B de Δ tels que IB = 3IA .",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 18 (« Activité 18 Problème de construction ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 18 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A19",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 19,
+    "solver": "fixed",
+    "title": "Activité 19",
+    "difficulty": 2,
+    "statement": "Activité 19\n1) Soient D et Δ deux droites strictement parallèles et I un point n’appartenant ni à D ni à Δ.\nUne droite D' passant par I, coupe D et Δ respectivement en M et M’.\nSoit h l’homothétie de centre I et telle que h(M) = M’. Déterminer hD.\n2) Soit ABCD un parallélogramme et soit O un point de la droite (AC), distinct de A et de C.\nMontrer qu’il existe une seule homothétie de centre O qui transforme la droite (AB) en (CD)\net la droite (AD) en (BC).",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 19 (« Activité 19 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 19 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A20",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 20,
+    "solver": "fixed",
+    "title": "Activité 20 Problème d’alignement",
+    "difficulty": 2,
+    "statement": "Activité 20 Problème d’alignement\nSoient C et C’ deux cercles de centres respectifs O et O’, sécants en A et B. Soit I le point\nd’intersection de (AB) et (OO’).\n1) Montrer que le point I est le milieu du segment [OO’].\n2) La droite (AO) recoupe le cercle C en E et la droite (AO’) recoupe le cercle C’ en F.\nMontrer que les points E, B et F sont alignés\n3) La droite (BO) recoupe le cercle C en G et la droite (BO’) recoupe le cercle C’ en H.\nMontrer que le quadrilatère EFGH est un rectangle.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 20 (« Activité 20 Problème d’alignement ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 20 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A21",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 21,
+    "solver": "fixed",
+    "title": "Activité 21",
+    "difficulty": 2,
+    "statement": "Activité 21\nDans la figure ci-contre, (AB) // (A'B') et (BC) // (B'C').\nQuelles sont les positions relatives des droites (AC) et (A’C’) ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 21 (« Activité 21 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 21 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A22",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 22,
+    "solver": "fixed",
+    "title": "Activité 22 Agrandissement – réduction – figures homothétiques",
+    "difficulty": 2,
+    "statement": "Activité 22 Agrandissement – réduction – figures homothétiques\nChacune des figures F1 , F2 , F3 et F4 est un F4\nagrandissement ou une réduction de la figure F.\nDire pour chacune d’elles, si elle est ou non F3\nl’image de F par une homothétie.\nF2\nF1\nE x p l o r e r\nDéfinition\nDeux figures sont dites homothétiques, si l’une est l’image de l’autre par une homothétie.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 22 (« Activité 22 Agrandissement – réduction – figures homothétiques ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 22 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A23",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 23,
+    "solver": "fixed",
+    "title": "Activité 23 Conservation des angles",
+    "difficulty": 2,
+    "statement": "Activité 23 Conservation des angles\nSoit h une homothétie de centre O et de rapport k.\nSoit ABC un triangle.\n1) Construire le triangle A’B’C’, image de ABC par h.\n2) a) Construire le triangle A’ B’’ C’’, image de ABC par la translation de vecteur AA' .\nb) Montrer que les triangle ABC et A’B’’C’’ sont isométriques.\n% %\n3) Déduire que BAC = B'A'C' .\nQue peut on conclure ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 23 (« Activité 23 Conservation des angles ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 23 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A24",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 24,
+    "solver": "fixed",
+    "title": "Activité 24 Conservation du parallélisme et de l'orthogonalité",
+    "difficulty": 2,
+    "statement": "Activité 24 Conservation du parallélisme et de l'orthogonalité\nSoit h une homothétie de centre I et de rapport k.\nSoient D et Δ deux droites et soient D' et Δ' leurs images respectives par h.\nQue peut-on dire de D' et Δ' dans chacun des cas suivants\na) D et Δ sont parallèles ?\nb) D et Δ sont perpendiculaires ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 24 (« Activité 24 Conservation du parallélisme et de l'orthogonalité ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 24 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A25",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 25,
+    "solver": "fixed",
+    "title": "Activité 25 Image d'un cercle",
+    "difficulty": 2,
+    "statement": "Activité 25 Image d'un cercle\n1) Soit ω et I deux points distincts du plan et soit f l’homothétie de centre I et de rapport - 1 .\na) Tracer un cercle Γ de centre ω. On note r son rayon.\nb) Placer trois points A, B et C sur le cercle Γ.\nc) Construire les points A’ , B’ , C’ et ω’ images respectives des points A, B, C et ω par f.\nd) Vérifier que les points A', B' et C’ sont situés sur un même cercle Γ’ de centre ω'.\nExprimer le rayon de Γ’ en fonction de r.\n2) Soit h une homothétie de rapport k et C un cercle de centre O et de rayon R.\nSoit M un point de C.\nOn désigne par M' et O' les images respectives de M et O par h et par C’ le cercle de centre\nO' et de rayon R' = | k | R.\na) Montrer que M' ∈ C’.\nb) Soit N' ∈ C’ et soit N son antécédent par h. Montrer que N appartient à C.\nc) Que peut on conclure ?\nExplorer Explorer",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 25 (« Activité 25 Image d'un cercle ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 25 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A26",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 26,
+    "solver": "fixed",
+    "title": "Activité 26 Conservation du contact",
+    "difficulty": 2,
+    "statement": "Activité 26 Conservation du contact\nSoit h une homothétie de centre I et de rapport k.\nSoit C un cercle de centre O et de rayon r et D une tangente à ce cercle en un point A.\nOn désigne par A’, C’ et D’ les images respectives du point A, du cercle C et de la droite D\npar h.\nMontrer que la droite D’ est tangente au cercle C’ au point A’.\nm i l e r : 10-11-12\nA s s iAssimiler",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 26 (« Activité 26 Conservation du contact ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 26 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A27",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 27,
+    "solver": "fixed",
+    "title": "Activité 27 Cercles homothétiques – Tangentes communes à deux cercles",
+    "difficulty": 2,
+    "statement": "Activité 27 Cercles homothétiques – Tangentes communes à\ndeux cercles\n1) Soient C et C’ deux cercles de centres respectifs O et O’ et de rayons respectifs R et R’ tels\nque R ≠ R’.\na) Montrer qu’il existe une seule homothétie de rapport positif qui transforme C en C’.\nPréciser le rapport de cette homothétie et construire son centre I.\nb) Montrer qu’il existe une seule homothétie de rapport négatif qui transforme C en C’.\nPréciser le rapport de cette homothétie et construire son centre J.\n2) Soient C et C’ deux cercles extérieurs et non isométriques.\nConstruire les tangentes communes à ces deux cercles.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 27 (« Activité 27 Cercles homothétiques – Tangentes communes à deux cercles ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 27 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A28",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 28,
+    "solver": "fixed",
+    "title": "Activité 28",
+    "difficulty": 2,
+    "statement": "Activité 28\nLa droite D est-elle tangente au cercle C dont on n’aperçoit\nqu’un arc dans la figure ci-contre?\nTous les tracés doivent être à l’intérieur du rectangle.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 28 (« Activité 28 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 28 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A29",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 29,
+    "solver": "fixed",
+    "title": "Activité 29 Cercles tangents à un cercle et à une droite donnés",
+    "difficulty": 2,
+    "statement": "Activité 29 Cercles tangents à un cercle et à une droite donnés\nSoient Γ un cercle, D une droite et A un point de D n’appartenant pas à Γ.\nOn désigne par [BC] un diamètre du cercle Γ tel que (BC) soit perpendiculaire à la droite (D)\net par D’ la tangente au cercle Γ en B.\nLa droite (AB) recoupe le cercle Γ en I.\na) Soit h l’homothétie de centre I et qui transforme B en A.\nOn désigne par Γ’ l’image du cercle Γ par l’homothétie h.\nMontrer que Γ’ est tangent à Γ en I et à la droite D en A.\nb) Soit M un point quelconque de D n’appartenant pas à Γ et distinct de A.\nConstruire tous les cercles tangents à Γ et à D en M.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 29 (« Activité 29 Cercles tangents à un cercle et à une droite donnés ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 29 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A30",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 30,
+    "solver": "fixed",
+    "title": "Activité 30 Homothétie et mesure de grandeurs géométriques",
+    "difficulty": 2,
+    "statement": "Activité 30 Homothétie et mesure de grandeurs géométriques\nSoit h une l'homothétie de rapport k.\nSoit ABC un triangle et soient A’= h(A), B’= h(B) et C’= h(C).\n1) a) Faire une figure\nb) Comparer le périmètre du triangle A'B'C' à celui de ABC.\nE x p l o r e r\n2) On note H le pied de la hauteur du triangle ABC issue de A et H' le pied de la hauteur du\ntriangle A'B'C' issue de A'.\na) Montrer que H' est l'image de H par f.\nb) Soient a et a' les aires respectives des triangles ABC et A’B’C’. Montrer que a' = k2 a.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 30 (« Activité 30 Homothétie et mesure de grandeurs géométriques ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 30 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A31",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 31,
+    "solver": "fixed",
+    "title": "Activité 31",
+    "difficulty": 2,
+    "statement": "Activité 31\nSoit C un cercle de centre I et de rayon R.\nSoit h une homothétie de rapport k.\nOn note C’ l'image de C par h.\na) Comparer le périmètre de C et le périmètre de C’ .\nb) Comparer l'aire de C et l'aire de C’.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 31 (« Activité 31 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 31 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A32",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 32,
+    "solver": "fixed",
+    "title": "Activité 32",
+    "difficulty": 2,
+    "statement": "Activité 32\n1) a) Reproduire la figure ci-contre.\nb) Construire F’, image de la figure F par\nl’homothétie de centre I et de rapport –1,5.\n2) a) Calculer les périmètres p et p’ de F et F’.\np'\nb) Calculer .\np\n3) a) Calculer les aires s et s’ de F et F’.\nb) Calculer s' .\ns",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 32 (« Activité 32 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 32 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "HOMOTHETIES_A33",
+    "chapter": "homotheties",
+    "kind": "activity",
+    "activity": 33,
+    "solver": "fixed",
+    "title": "Activité 33 Droite d’Euler – Cercle d’Euler",
+    "difficulty": 2,
+    "statement": "Activité 33 Droite d’Euler – Cercle d’Euler\nOn donne un triangle ABC et on désigne par O le centre du cercle circonscrit, G le centre de\ngravité et H l’orthocentre du triangle ABC.\nSoient A’, B’et C’ les milieux respectifs de [BC], [AC] et [AB].\nOn désigne par h l’homothétie de centre G et de rapport - .\n1) a) Faire une figure.\nb) Montrer que l’image de la hauteur (AH) par l’homothétie h est la médiatrice de [BC].\nc) Préciser les images par h des hauteurs (BH) et (CH).\n2) Montrer que les points O, G et H sont alignés et que OH = 3OG\n(La droite qui contient les points O, G et H s’appelle la droite d’Euler du triangle ABC)\n3) Soit Ω le centre du cercle circonscrit à A’B’C’. Montrer que Ω appartient à la droite (OG)\net qu’il est le milieu de [OH]. Calculer le rayon r de ce cercle en fonction du rayon R du cercle\ncirconscrit à ABC.\n(Le cercle circonscrit à A’B’C’ est appelé cercle d’Euler du triangle ABC).\nExplorer Explorer\nProblème de lieu\nSoit C un cercle de centre O et A un point n’appartenant pas à C.\nSoit M un point du cercle C, et soit I le barycentre des points (A, 2) et (M, 3).\nDéterminer le lieu du point I lorsque le point M décrit le cercle C.\nProblème de lieu\nSoit C un cercle de diamètre [AB] et S un point de (AB). M étant un point de C, on trace le\ndiamètre [PM], puis le point M’ intersection des droites (SM) et (AP).\n1) Soit h l’homothétie de centre S qui transforme B en A.\nDéterminer l’image par h de la droite (BM).\n2) Déterminer et construire le lieu du point M’ lorsque M décrit le cercle C ?\nProblème de lieu\nSoit C un cercle de centre O et [AB] une corde de ce cercle.\nSoit M un point variable sur le cercle C et N le point défini par MN = AB .\n1) Déterminer le lieu du point N lorsque M décrit le cercle C.\n2) Soit I le milieu de [AN]. Quel est le lieu du point I lorsque M décrit le cercle C ?\n3) Soit G le centre de gravité du triangle BMN.\nDéterminer le lieu du point G lorsque M décrit le cercle C.\nler\nA s s i m iAssimiler\n1 Traduire par une égalité vectorielle chacun des énoncés suivants\na) h (I,-2)(A) = B\nb) Le point C est l'image du point D par l'homothétie de centre A et de rapport 3\nc) L'image de E par l'homothétie de centre A et de rapport - 1 est F\nd) Le point Q est l'antécédent du point P par l’homothétie h^I , 2 h .\n2 Donner une interprétation des égalités vectorielles suivantes au moyen d'une homothétie.\n5 7\na) MD =- MN ; b) PQ = PR .\n2 4\n3 Dans les deux figures ci-dessous, les droites (AB) et (CD) sont parallèles et CD = 3 AB.\nTrouver dans chaque cas le centre et le rapport de l'homothétie qui transforme A en C et B en D.\n4 Soient A et B deux points du plan.\nConstruire le centre I de l'homothétie qui transforme A en B et qui a pour rapport\na) k = 2 b) k = – 4.\nPropriété caractéristique\n5 Soit ABC un triangle. On désigne par h l’homothétie de centre A et de rapport 1 .\nOn note I = h(B) et J le point vérifiant AJ = 3AC .\nMontrer que les droites (IC) et (BJ) sont parallèles et que IC = BJ.\n6 Dans la figure ci-contre, les triangles ABC et IJB sont rectangles et isocèles.\nDéterminer les images de J et de B par l’homothétie de centre O qui transforme I en B.\nAssimiler Assimiler\nImage d'une droite\n7 Préciser dans chaque cas l'image de la droite (D) par l'homothétie h.\n1er cas 2ème cas 3ème cas\nh (A) = A' et h (B) = B' h (A) = A' h(I) = I\nD\n• • D\nA B •\nA D\n•\n• I\n• • A’\nA’ B’\n8 Soit ABCD un parallélogramme et h est une homothétie qui transforme la droite (AB) en\n(CD) et (AD) en (BC).Quelle est l'image de A par h ?\nConservation du milieu\n9 Soit ABCD un parallélogramme de centre O. On désigne par A', B', C', D' et O' les images\nrespectives de A, B, C, D et O par une homothétie h.\nQuelle est la nature du quadrilatère A' B' C' D' ?\nImage d'un cercle\n10 Pour chacune des situations ci-dessous, recopier la figure et construire l'image du cercle\ndonné par l’homothétie indiquée.\nSituation\nSituation 11 Situation\nSituation 22 Situation\nSituation 33\nf est l’homothétie de rapport – 0,5 g est l’homothétie telle que h est l’homothétie telle que\net telle\net telle que\nque f(O)\nf(O) =\n= O'\nO' g(I) =\ng(I) = I'\nI' et\net g(A)\ng(A) =\n= A'\nA' h(A) =\nh(A) = A'\nA' et\net h(B)\nh(B) =\n= B'\nB'\nConstruire l'image du cercle C par l'homothétie de centre A et qui transforme O en B.\n11 Soient C et C deux cercles de centres respectifs I et J tangents en un point T.\n1 2\nSoit h l’homothétie de centre T qui transforme I en J.\nMontrer que h transforme C1 en C2.\n12 Soit C un cercle et O son centre.\nTracer un diamètre [AB] de ce cercle.\nConstruire l'image du cercle C par l'homothétie de centre A et qui transforme O en B.\nHomothétie\n♦ Soit h une homothétie de centre O et de rapport k.\nSoient M et M’ deux points du plan.\nM' est l'image de M par h équivaut à OM' = kOM .\nPropriété caractéristique\n♦ Soit h une homothétie de centre O et de rapport k.\nSoient M et N deux points du plan et M' et N' leurs images respectives par h, on a\nM'N' = kMN .\nConséquence\n♦ (MN) // (M'N') et M'N' = | k | MN\nImage de figures usuelles\n♦ L'image d'une droite par une homothétie est une droite qui lui est parallèle.\n♦ L'image d’un segment par une homothétie est un segment.\n♦ L'image d'un cercle de centre I et de rayon R par une homothétie h de rapport k, est le\ncercle de centre I' = h(I) et de rayon R' = | k | R.\n♦ L'image d'un polygone de périmètre p et d'aire a par une homothétie est un polygone de\npérimètre | k | p et d'aire k2 a.\nUne homothétie conserve :\n♦ l’alignement\n♦ le milieu\n♦ le barycentre\n♦ les angles\n♦ le parallélisme\n♦ l’orthogonalité\n♦ le contact\nDévelopper ses compé\nDévelopper ses compétences\nProblème de lieu\n1 Soit C un cercle de centre O et de diamètre [AB].\nSoit G le barycentre des points (A, 3) et (B, -2).\n1) Construire le point G.\n2) Soit M un point de C, distinct de A et de B, et N le point diamétralement opposé à M.\na) Quelle est la nature du quadrilatère AMBN ?\nb) Les droites (BN) et (GM) se coupent en un point M’.\nDéterminer et construire le lieu du point M’ lorsque M décrit le cercle C privé des points\nA et B.\nIndication\nPenser à une homothétie de centre G.\nProblèmes de construction\n2 Soient D et D’ deux droites sécantes et I leur\npoint d’intersection.\nA un point n’appartenant ni à D ni à D’.\nConstruire un cercle passant par A et tangent à D\net à D’.\nIndication\nCommencer par construire un cercle C tangent\nà D et à D’.\nPenser à une homothétie qui transforme le cercle C en un cercle passant par A et tangent aux\ndeux droites.\nCombien y a t-il de cercles solutions?\n3 1) Dans la figure ci-contre, ABC est un triangle et\nMPQR est un carré tel que le point M soit sur le côté [AC]\net les points P et Q sur le côté [AB].\nLes droites (AR) et (BC) se coupent au point R’.\nSoit h l'homothétie de centre A qui transforme R en R’.\na) Construire l'image M'P’Q’R’ de MPQR par h.\nb) Montrer que M'P’Q’R’ est un carré.\n2) Soit IJK un triangle.\nConstruire un carré inscrit dans ce triangle.\nIndications\nCommencer par construire un carré dont trois sommets sont sur les côtés du triangle IJK.\nS’inspirer de la première question.\nUtiliser les TIC Utiliser les TI\nC\n1 Problème de construction\nSoient D et D’ deux droites sécantes, A et G deux points distincts qui n'appartiennent ni à D ni\nà D’.\nIl s'agit de construire un triangle de sommet A et de centre de gravité G et dont les deux autres\nsommets B et C appartiennent respectivement à D et à D’.\nA l’aide d’un logiciel de géométrie\n- Tracer deux droites sécantes D et D’ et placer deux points A et G n’appartenant ni à D ni à D’.\n- Construire le point A’ milieu du côté [BC], du triangle cherché (utiliser une homothétie de\ncentre G).\n- Soit B un point de la droite D (point sur objet). Construire le point C, dans ce cas.\n- Quel est le lieu du point C lorsque B varie sur la droite D ?\n- Construire alors, un triangle ABC tel que les sommets B et C soient respectivement sur D et\nsur D’.\nJustifier la construction.\n2 Problème de lieu\nSoient A et C deux points distincts et B le milieu de [AC]. On construit les cercles CA et CB de\ncentre C, passant respectivement par A et B.\nSoit M un point du cercle CB. La tangente au cercle CB en M coupe le cercle CA en deux points\nN et P.\nLes tangentes au cercle CA en N et P sont sécantes au point Q.\nOn se propose de déterminer, à l’aide d’un logiciel de géométrie, le lieu du point Q lorsque M\nvarie sur C.\n1) Pour réaliser la figure ci contre, construire\n- Un segment [AC].\n- Le milieu B du segment [AC].\n- Les cercles CA et CB.\n- Un point M sur le cercle CB.\n- Le segment [CM].\n- La perpendiculaire à [CM] en M.\n- Les points d’intersections N et P de CA et la\ntangente à CA en M.\n- Les segment [CP] et [CN].\n- La perpendiculaire à [CP] en P.\n- La perpendiculaire à [CN] en N.\n- Le point Q.\n2) Déplacer M sur CB\na) Observer la position des points C, M et Q. Démontrer.\nb) Mesurer les distances CQ et CM. À l'aide de la calculatrice du logiciel, évaluer CQ/CM.\nDémontrer.\nc) Observer la trace du point Q. Démontrer.\nExercices etExercices lèmes\nproetbproblèmes\nAppliquer\n6 Soient ABC est un triangle et I un point du\n1 Soit A un point du plan. segment [BC].\nDans chacun des cas suivants, montrer que soit h l’homothétie de centre I et de rapport 2\nl'application qui à tout point M du plan 3\na) Construire P = h(B)\nassocie le point M', est une homothétie dont b) La parallèle à (AB) issue de P coupe [AI]\non précisera le centre et le rapport : en Q.\na)M’ est le barycentre des points pondérés La parallèle à (AC) issue de Q coupe [BC] en R.\n(A, 2) et (M, 3). Montrer que h(C ) = R.\n1 c) Lorsque I est le milieu du segment [BC],\nb) MM' =- AM .\n3 quel est le milieu du segment [PR] ?\n2 Soient ABC est un triangle, E est l’image de A Soit ABC un triangle. On considère\n1 1'application h, qui à tout point M associe le\npar la translation de vecteur BC et F est le\n4 point M’, barycentre des points pondérés\nbarycentre des points pondérés (A, 4) et (C,1).(A,1), (B,–2) et (M,3).\na) Faire une figure. a) Construire les points A', B’ et C’ images\nb) Montrer que F est l’image de E par une respectives des points A, B et C par cette\nhomothétie de centre B et dont on précisera le application.\nrapport. b) Montrer que h est une homothétie dont\n3 Soient D et D’ deux droites parallèles. Une on déterminera le centre et le rapport.\ndroite Δ coupe D en A et D’ en A’. c) Retrouver le centre et le rapport de cette\na) Déterminer et construire le centre O de homothétie a partir de la construction faite en a).\nl’homothétie h de rapport 5 qui transforme 8 Dans la figure ci-dessous, BILO et ABCD\n3 sont deux parallélogrammes.\nA en A’.\nb) Une droite Δ’ passe par O et coupe D en B\net D’ en B’, démontrer que h(B) = B’.\n4 On considère une homothétie h de centre\nO et rapport 3. Soit M un point du plan et soit\nM’ son image par h.\nMontrer que les droites (AC) et (OI) sont\na) Exprimer MM' en fonction de OM . parallèles.\nb) Déterminer l’ensemble des points M tels 9 Soit ABC un triangle. La parallèle à (BC)\nque MM' = 8. passant par un point M de [AB] coupe [AC]\n5 Soient ABC un triangle et G son centre de en N.\ngravité. On considère l’application f du plan a) Comment faut-il choisir M pour que le\nqui à tout point M on associe le point M’ périmètre du triangle AMN soit le tiers de\ncelui de ABC ?\ndéfini par 4MM' = MA + MB + MC\nb) Comment faut-il choisir M pour que l’aire\na) Construire f (A) et f (B).\ndu triangle AMN soit le quart de celle de\nb) Montrer que f admet un seul point invariant.\nABC ?\nc) Déduire la nature de f.\nExercices et problèmes\nExercices et problèmes\n10 Soient D une droite et A un point 14 Soit C un cercle de diamètre [AB] et de\nn’appartenant pas à D. centre O. Soit I un point de (AB) et M un\nSoit M un point de D. On désigne par M’ le point de C privé de A et B. On note N le\nsymétrique de A par rapport à M. symétrique de M par rapport à O et M'\nDéterminer le lieu des points M’ lorsque le l'intersection des droites (IM) et (NB).\npoint M varie sur D. Construire le lieu des points M' lorsque M\nvarie sur C.\nMaîtriser\n15 ABCD est un trapèze de bases [AB] et\n11 Soit AIJ un triangle inscrit dans un cercle [DC]. Les droites (AD) et (BC) se coupent en\nC de centre O. un point E.\nSoient B et C les symétriques de A par rapport Soit F un point intérieur au triangle ABE.\nà I et J respectivement. On désigne par M le La parallèle à (AF) passant par D et la\nopposé à A et par N le projeté orthogonal de un point G.\nD sur (BC). On considère l’homothétie h de centre E qui\nSoit h l’homothétie de centre A et de rapport 2. transforme A en D.\n1) Déterminer les images par h des points a) Quelle est l’image de la droite (AF) ?\nI,J et O. b) Montrer que h(B) = C.\n2) Quelle est l’image par h de (IJ)? De (OM)? En déduire l’image de la droite (BF).\n3) Montrer que A, M et N sont alignés. c) Quelle est l’image de F par h ? En déduire\nque E, F et G sont alignés.\n12 Soient C1 et C2 deux cercles non\nisométriques de centres respectifs I et J.\nSoient [IM] et [JN] deux rayons parallèles de\nC1 et C2 respectivement. La droite (MN)\ncoupe (IJ) en O.\nSoit h l’homothétie de centre O qui\ntransforme I en J\n1) Montrer que h transforme M en N.\n2) Montrer que h transforme (C1) en (C2).\n13 Les sommets B et D du quadrilatère\nABCD sont situés en dehors de la feuille.\nTrouver un procédé pour construire la\ndiagonale [BD].\nM a t h e t cMath ure\nu lettculture\nLe pantographe :\nLe pantographe est un instrument comportant un parallélogramme articulé et permettant\nde reproduire mécaniquement un dessin en agrandissant ou en réduisant les dimensions du\nmodèle.\nIl fut employé pour la première fois vers la fin du XVI siècle par le peintre Georges\nDiIlingen.\nEn 1743 Langlois lui donna à peu près sa forme actuelle.\nOn a AC = CN, fixé ,\nAB = CD = BM,\nND = MD = BC\nSoit k = AB\nAC\ndonc k dépend de la position\nde B sur [AC]\nLe pantographe est utilisé en laissant fixe le point A alors que le point N décrit n'importe\nquel courbe C (pourvue qu'elle ne soit pas trop loin de A) et on observe la courbe décrite par\nle point M, on obtient alors une réduction de C .\nSi M décrit une courbe C’ alors N décrit une courbe C” qui est un agrandissement de C’.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 33 (« Activité 33 Droite d’Euler – Cercle d’Euler ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 33 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  }
+]

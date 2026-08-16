@@ -327,6 +327,16 @@ const recaps = {
       "Un demi-tour est la rotation d’angle 180°, identique à la symétrie centrale."
     ],
     watch: "Le centre O est le seul point invariant (si α n’est pas un multiple de 360°)."
+  },
+  fixed: {
+    title: "Activité du manuel",
+    lead: "Cette activité est celle du polycopié CNP (tome 1). On répond avec le cours du chapitre, sans notion hors programme.",
+    points: [
+      "Lire tout l’énoncé avant de calculer.",
+      "Écrire la relation du cours, puis substituer.",
+      "Contrôler l’ordre de grandeur et les unités."
+    ],
+    watch: "Les numéros d’activité sont ceux du manuel. La correction suit la synthèse du chapitre."
   }
 };
 

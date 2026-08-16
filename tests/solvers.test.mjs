@@ -141,21 +141,39 @@ assert.equal(rot.om, 2);
 const catalog = JSON.parse(readFileSync(new URL("../data/exercises.json", import.meta.url)));
 const batch14 = JSON.parse(readFileSync(new URL("../data/exercises-ch1-ch4.json", import.meta.url)));
 const batch59 = JSON.parse(readFileSync(new URL("../data/exercises-ch5-ch9.json", import.meta.url)));
-const all = [...catalog.exercises, ...batch14, ...batch59];
+const actIndex = JSON.parse(readFileSync(new URL("../data/activites-index.json", import.meta.url)));
+const activities = actIndex.flatMap(item => JSON.parse(readFileSync(new URL(`../data/${item.file}`, import.meta.url))));
+const all = [...catalog.exercises, ...batch14, ...batch59, ...activities];
 const ids = new Set();
 for (const item of all) {
   assert.ok(solvers[item.solver], `solveur manquant : ${item.solver} (${item.id})`);
   assert.notEqual(courseRecap(item.solver).title, "Rappel de cours", `rappel fallback : ${item.id}`);
-  const figure = drawFigure(item.solver, Object.fromEntries(item.variables.map(v => [v.key, v.value])));
+  const vars = item.variables || [];
+  const figure = drawFigure(item.solver, Object.fromEntries(vars.map(v => [v.key, v.value])));
   assert.ok(figure.svg.includes("<svg") && !figure.svg.includes("non disponible"), `schéma manquant : ${item.id}`);
   assert.ok(!ids.has(item.id), `id dupliqué : ${item.id}`);
   ids.add(item.id);
-  const result = solve(item, Object.fromEntries(item.variables.map(v => [v.key, v.value])));
+  const result = solve(item, Object.fromEntries(vars.map(v => [v.key, v.value])));
   for (const q of item.questions) {
-    assert.ok(Number.isFinite(result.values[q.key]), `réponse non finie : ${item.id}.${q.key}`);
+    const value = result.values[q.key];
+    if ((q.type || "number") === "number") {
+      assert.ok(Number.isFinite(value), `réponse non finie : ${item.id}.${q.key}`);
+    } else {
+      assert.ok(value !== undefined && value !== "", `réponse vide : ${item.id}.${q.key}`);
+    }
   }
 }
 assert.equal(catalog.chapters.length, 9);
+
+const EXPECTED_ACTIVITIES = { reels: 51, degres: 37, polynomes: 25, arithmetique: 13, vecteurs: 45, barycentre: 24, translations: 27, homotheties: 33, rotations: 23 };
+for (const [id, n] of Object.entries(EXPECTED_ACTIVITIES)) {
+  const acts = activities.filter(e => e.chapter === id).sort((a, b) => a.activity - b.activity);
+  assert.equal(acts.length, n, `nombre d’activités : ${id}`);
+  for (let i = 0; i < n; i++) {
+    assert.equal(acts[i].activity, i + 1, `${id} : trou à l’activité ${i + 1}`);
+    assert.ok(acts[i].title.startsWith(`Activité ${i + 1}`), `titre hors livre : ${id} ${acts[i].title}`);
+  }
+}
 
 for (const chapter of catalog.chapters) {
   const course = chapterCourse(chapter.id);

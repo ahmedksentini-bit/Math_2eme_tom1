@@ -335,12 +335,20 @@ export const solvers = {
             ["Contrôle", `OM' = OM = ${n(om)}`]
           ];
     return steps({ xM, yM, om }, stepsText);
+  },
+  fixed(exercise) {
+    const values = {};
+    for (const q of exercise.questions || []) values[q.key] = q.answer;
+    const raw = exercise.steps || [["Correction", "Relire l’énoncé du manuel et la synthèse du chapitre."]];
+    const list = raw.map(s => Array.isArray(s) ? s : ["Étape", String(s)]);
+    return { values, steps: list };
   }
 };
 
 export function solve(exercise, data) {
   const solver = solvers[exercise.solver];
   if (!solver) throw new Error(`Solveur inconnu : ${exercise.solver}`);
+  if (exercise.solver === "fixed") return solvers.fixed(exercise);
   return solver(data);
 }
 

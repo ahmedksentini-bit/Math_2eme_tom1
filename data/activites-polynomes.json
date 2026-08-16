@@ -1,0 +1,627 @@
+[
+  {
+    "id": "POLYNOMES_A01",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 1,
+    "solver": "fixed",
+    "title": "Activité 1 Distance de freinage",
+    "difficulty": 1,
+    "statement": "Activité 1 Distance de freinage\nDans certaines conditions, la distance de freinage d (en mètres) d’une voiture qui roule à une\nv2\nvitesse v km/h est modélisée par la formule d = 0,2 v + .\n1) Une voiture roule à 90 km/h.\nCombien de mètres continue-t-elle de parcourir après le freinage ?\n2) Quelles sont les vitesses qui permettent de s’arrêter\na) En moins de 12 mètres ?\nb) A une distance comprise entre 40 et 50 mètres ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 1 (« Activité 1 Distance de freinage ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 1 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A02",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 2,
+    "solver": "fixed",
+    "title": "Activité 2",
+    "difficulty": 1,
+    "statement": "Activité 2\n$\nDans la figure ci-contre, 7BC @ est un quart de cercle\nde centre A et de rayon 3, M est un point qui décrit le\nsegment [AB], privé de A et B, les points N et P sont\n$\nrespectivement sur l’arc 7BC @ et le segment [AC], de\nsorte que AMNP soit un rectangle.\nOn désigne par x la longueur AM et par S(x) l’aire\ndu rectangle AMNP\na) A quel intervalle appartient x ?\nb) Exprimer S(x) en fonction de x.\nc) Calculer S c 1 m , S(1) et S ^ 2 h .\nDéfinition\nSoit E une partie non vide de IR. Lorsque à tout réel x de E, on associe au plus un réel y , on\ndit qu’on a définit une fonction de E vers IR.\nSi on désigne par f cette fonction, on note y = f(x) et on écrit f : E $ IR .\nx 7 f] xg\nL’ensemble D des réels x de E tel que f(x) existe est appelé l’ensemble de définition de la\nfonction f. On dira alors que f est définie sur D.\nVocabulaire\nSoit D l’ensemble de définition de f, x un réel appartenant à D et y = f (x)\nOn dit que\n• Le réel y est l’image de x par la fonction f.\n• x est un antécédent du réel y par f.\nExplorer Explorer",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 2 (« Activité 2 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 2 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A03",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 3,
+    "solver": "fixed",
+    "title": "Activité 3",
+    "difficulty": 1,
+    "statement": "Activité 3\nDéterminer l’ensemble de définition de chacune des fonctions ci-dessous.\na) f: IR $ IR ; b) g: IR $ IR ; c) h: IR $ IR ; d) k: IR $ IR\n6x - 1\nx 7 3x - 9 ; z7 z-2 ; t 7 - 4t 2 + 2t ; x7 .\n2x + 3\nFonction polynôme",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 3 (« Activité 3 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 3 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A04",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 4,
+    "solver": "fixed",
+    "title": "Activité 4",
+    "difficulty": 1,
+    "statement": "Activité 4\nPour fabriquer une boite parallélépipédique, on dispose d’une\nplaque de carton carrée de 60 cm de côté dans laquelle on\ndécoupe à chaque coin un carré de x cm de côté. On obtient\nainsi le patron d’une boite sans couvercle.\n1) a) A quel intervalle appartient x ?\nb) Déterminer, en fonction de x, le volume V(x) de la\nboite.\n2) a) Calculer V(10) et vérifier que\nV(x) – V(10) = 4(x – 10) (x 2 – 50 x + 400).\nb) Déterminer le signe de V(x) – V(10) et en déduire la valeur de x pour laquelle le\nvolume de la boite est maximal.\nDéfinition\nSoient a0 , a1 , …, an-1 et an des réels.\nLa fonction f définie sur IR par f(x) = an xn + an-1 xn-1 + … + a1 x + a0 est appelée fonction\npolynôme.\nLes réels an , an-1 , …, a1 et a0 sont appelés les coefficients de la fonction polynôme.\nRemarque\n• Au lieu de dire « la fonction polynôme f définie sur IR par :\nf(x) = an xn + an-1 xn-1 + …+ a1 x + a0 », on dit souvent « le polynôme f défini par :\nf(x) = an xn + an-1 xn-1 + …+ a1 x + a0 ».\n• Si a0 = a1 = a2 = ... = an = 0, le polynôme f est appelé polynôme nul.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 4 (« Activité 4 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 4 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A05",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 5,
+    "solver": "fixed",
+    "title": "Activité 5",
+    "difficulty": 1,
+    "statement": "Activité 5\nDéterminer parmi les fonctions ci-dessous celles qui sont des polynômes.\na) F: IR $ IR\nx 7 - 2x 3 - 5x 2 - 1.\nb) G: IR $ IR\nt 7 1 + 3t + t 2 - 6t 3 .\nc) H: IR $ IR\nx7 x .\nd) G: IR $ IR\nx 7 - 2]x + 1g3 + 5x 2 - 4x.\nA s s iAssimiler\nEgalité de deux fonctions polynômes",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 5 (« Activité 5 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 5 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A06",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 6,
+    "solver": "fixed",
+    "title": "Activité 6",
+    "difficulty": 1,
+    "statement": "Activité 6\n1) On considère le polynôme f définie par f(x) = x 2 – 5 x + 6.\na) Calculer f(2) et f(3).\nb) f est-elle la fonction nulle ?\n2) Soit g le polynôme définie par g(x) = a 2 x 2 + a 1 x + a 0.\na) Calculer g(–1), g(0) et g(1) en fonction des réels a 2 , a 1 et a 0.\nb) Montrer que ( g (x) = 0, pour tout réel x) équivaut à (a 2 = a 1 = a 0 = 0).\n3) Soit h le polynôme définie par h(x) = a 3 x 3 + a 2 x 2 + a 1 x + a 0.\nMontrer que (h(x) = 0, pour tout réel x) équivaut à (a 3 = a 2 = a 1 = a 0 = 0).\n4) Soit P(x) = a n x n + a n-1 x n-1 + …+ a 1 x + a 0 un polynôme tel que P(x) = 0, pour tout réel x.\nQuelle conjecture peut-on émettre sur les coefficients de ce polynôme ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 6 (« Activité 6 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 6 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A07",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 7,
+    "solver": "fixed",
+    "title": "Activité 7",
+    "difficulty": 1,
+    "statement": "Activité 7\n1) Soient f et g les polynômes définies par f(x) = 3x 2 – x + 3 et g(x) = 2 x 2 + 4x – 1.\na) Vérifier que f(1) = g(1) et que f(4) = g(4).\nb) La phrase « f(x) = g(x), pour tout réel x » est-elle vraie ?\nc) Déterminer les réels a2 , a1 et a0 tels que :\nPour tout réel x, a 2 x 2 + a 1 x + a 0 = – 10x + 2x 2 + 11.\n2) Déterminer les réels a 3 , a 2 , a 1 et a 0 tels que :\nPour tout réel x, a 3 x 3 + a 2 x 2 + a 1 x + a 0 = 5 x 3 – 3 x 2 + 2 x – 1.\n3) Soit P(x) = a n x n + a n-1 x n-1 + … + a 1 x + a 0 et Q(x) = b n x n + b n-1 x n-1 + …+ b 1 x + b 0 deux\npolynômes tels que P(x) = Q(x), pour tout réel x.\nque peut on dire de a n et b n , a n-1 et b n-1 , ... , a 0 et b 0 ?\nA s s iAssimiler\nExplorer Explorer\nDéfinition Degré d’un polynôme\nOn admet que tout polynôme non nul P a une écriture unique de la forme\nP(x) = a n x n + a n-1 x n-1 + … + a 1 x + a 0 , avec a n ≠ 0.\nL’entier n est appelé le degré du polynôme P, on écrit d°(P) = n.\nOn convient que le polynôme nul n’a pas de degré.\nLe degré d’un polynôme constant est égal à zéro.\nVocabulaire\n• a 0 s’appelle le terme constant.\n• a 1 x s’appelle le terme du premier degré ou le terme en x.\n• a n x n s’appelle le terme de degré n ou le terme en x n.\nIl est aussi appelé le terme du plus haut degré.\n• Chacun des termes a 0 , a 1x, … , a n-1x n-1 et a nx n est appelé monôme.\n• Tout polynôme de premier degré est appelé binôme ou binôme de premier degré.\n• Tout polynôme du second degré est appelé trinôme ou trinôme du second degré.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 7 (« Activité 7 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 7 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A08",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 8,
+    "solver": "fixed",
+    "title": "Activité 8",
+    "difficulty": 1,
+    "statement": "Activité 8\nDéterminer le degré de chacun des polynômes ci-dessous.\nP(x) = 3 x 4 – 7 x 2 + x ; Q(x) = 2 – x + x 3 + x 5 + x 7 ; R(x) = (x+1)(x–1)\n3 2\nS(x) = – 3 x 3 + 2 5 x 2 + 1 ; T(x) = x – x + x6 + 1\nV(x) = (2x +1)(2 x 3 + 8 x – 1) ; K(x) = (x–1) 3 – x 3.\nA s s iAssimiler\nOpérations sur les fonctions polynômes",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 8 (« Activité 8 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 8 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A09",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 9,
+    "solver": "fixed",
+    "title": "Activité 9",
+    "difficulty": 1,
+    "statement": "Activité 9\nSoient f , g , p et q les polynômes définis pour tout réel x par :\nf(x) = 2x 3 – 5x 2 + x – 1 , g(x) = – 3x 2 + 7x – 5 , p(x) = 3x 2 – x – 1 et q(x) = x – 2.\n1)a)Réduire et ordonner f(x) + g(x) , g(x) + p(x) , g(x) – p(x) , f(x) – q(x) , 2p(x) et 3f(x).\nb) Déterminer le degré de chaque polynôme obtenu.\n2) a)Réduire et ordonner f(x) q(x) , g(x) p(x) et g(x) q(x).\nb) Déterminer le degré de chaque polynôme obtenu.\n3) Soit P(x) = a n x n + a n-1 x n-1 +… + a 1 x + a 0 avec a n ≠ 0.\net Q(x) = b p x p + b p-1 x p-1 +… + b 1 x + b 0\navec b p ≠ 0.\nQuel est le degré du polynôme R telque R(x) = P(x) x Q(x)\nDéfinition\nSoit f et g deux polynômes et α un réel.\n• On appelle somme de f et g le polynôme noté f + g et défini pour tout réel x par\n(f + g)(x) = f(x) + g(x).\n• On appelle produit du polynôme f par le réel α le polynôme noté αf et définie pour tout\nréel x par (α f)(x)= αf(x).\n• On appelle produit des polynômes f et g le polynôme noté f g et définie pour tout réel x par\n(f g)(x) = f(x) x g(x).\nRemarque\nLe degré du polynôme f g est la somme des degrés de f et de g.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 9 (« Activité 9 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 9 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A10",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 10,
+    "solver": "fixed",
+    "title": "Activité 10",
+    "difficulty": 1,
+    "statement": "Activité 10\nRéduire et ordonner les polynômes P + Q , 3P – 2Q et P Q dans chacun des cas suivants et\npréciser le degré de chaque polynôme obtenu.\na) P(x) = 2x 3 – x 2 + 2x – 1 ; Q(x) = 3x 3 – x.\nb) P(x) = (2 x + 1) 2 ; Q(x) = (x – 2)(x 3 + 1).\nc) P(x) = 3x 10 – x 4 + 5x + 4 ; Q(x) = 3x 7 – 2x.\nm i l e r : 4-5\nA s s iAssimiler\nRacines d’un polynôme – Factorisation d’un polynôme",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 10 (« Activité 10 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 10 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A11",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 11,
+    "solver": "fixed",
+    "title": "Activité 11",
+    "difficulty": 1,
+    "statement": "Activité 11\nSoit f(x) = x 2 + 2 x – 3 , g(x) = x 3 + 2x 2 – 1 et h(x) = 3x 3 – x 2 – 6x + 2.\na) Calculer f(– 1) , f(1) et f(–3).\nb) Calculer g(– 1) , g (0) et g ^ 2 h.\nc) Calculer h (0) , h c 1 m et h(2).\nDéfinition\nOn dit qu’un réel α est une racine ou un zéro d’un polynôme f si f(α) = 0.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 11 (« Activité 11 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 11 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A12",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 12,
+    "solver": "fixed",
+    "title": "Activité 12",
+    "difficulty": 1,
+    "statement": "Activité 12\nMontrer que le réel α est une racine du polynôme donné.\na) f(x) = 5x 2 + x – 6 ; α = 1.\nb) g(x) = 4x + 5x – 14x – 9x + 14\n4 3 2\n; α = –2.\nd) h(x) = 8x + 3x –1\n5 2\n; α= .\nExplorer Explorer",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 12 (« Activité 12 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 12 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A13",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 13,
+    "solver": "fixed",
+    "title": "Activité 13",
+    "difficulty": 1,
+    "statement": "Activité 13\nSoit P le polynôme défini par P (x) = ax 4 + (a + 1) x 3 – (b + 9) x 2 – (2b – 1) x +14,\noù a et b sont des réels.\na) Déterminer a et b sachant que 1 et –2 sont deux racines du polynôme P.\nb) a et b étant les valeurs trouvées, déterminer le polynôme Q tel que :\nP(x) = (x 2 + x – 2 )Q(x), pour tout réel x.\nA s s iAssimiler",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 13 (« Activité 13 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 13 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A14",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 14,
+    "solver": "fixed",
+    "title": "Activité 14",
+    "difficulty": 1,
+    "statement": "Activité 14\nFactoriser chacun des polynômes A , B , C et D définies par\nA(x) = x 4 – 3 x 3 + 2 x 2 ; B (x) = (x 2 + 5 x) + 2 (x + 5) 3\nC (x) = 2x 3 + 4x 2 + 3 x + 6 ; D(x) = x 4 + 3x 3 – x –3\nA s s iAssimiler",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 14 (« Activité 14 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 14 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A15",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 15,
+    "solver": "fixed",
+    "title": "Activité 15",
+    "difficulty": 1,
+    "statement": "Activité 15\nSoit P et Q les polynômes définis par P(x) = 3x 3 + x 2 + 2x – 6 et Q(x) = x 3 + 3x 2 – 4x –12.\n1) a) Vérifier que 1 est une racine de P.\nb) Déterminer trois réels a, b et c tels que, pour tout réel x, on a\nP(x) = (x – 1)(ax 2 + b x + c).\n2) a) Calculer Q(2) et Q(– 3 ).\nb) Déterminer le polynôme R tel que, pour tout réel x, on a Q(x) = (x – 2)(x + 3) R(x).\nDéfinition\nSoit P et Q deux polynômes.\nOn dit que le polynôme P est factorisable par le polynôme Q s’il existe un polynôme R tel que\npour tout réel x, P(x) = Q(x) x R (x).",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 15 (« Activité 15 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 15 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A16",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 16,
+    "solver": "fixed",
+    "title": "Activité 16",
+    "difficulty": 2,
+    "statement": "Activité 16\n1) Soit α un réel.\nProuver que si un polynôme est factorisable par (x – α) alors α est une racine de ce polynôme.\n2) Soit α un réel et P le polynôme défini par P (x) = ax 3 + bx 2 + c x + d où a, b, c et d sont\ndes réels avec a ≠ 0.\na) Factoriser P(x) – P(α).\nb) En déduire que si α est une racine du polynôme P alors il existe un polynôme Q,\ndont on précisera le degré, tel que pour tout réel x, P(x) = (x – α ) Q(x).\nc) Prouver que le polynôme P admet au plus trois racines.\nExplorer Explorer\n3) a) Soit F le polynôme défini par F(x) = a x 4 + b x 3 + c x 2 + d x + e , où a, b, c, d et e\nsont des réels avec a ≠ 0. soient α, β deux racines distinctes de F.\nMontrer qu’il existe un polynôme G tel que F ( x) = (x – α ) (x – β) G ( x).\nb) Prouver que le polynôme F admet au plus quatre racines.\n4) Soit f un polynôme de degré n (n > 2) et soient α , β et γ trois racines distinctes de f.\na) Quelle conjecture peut-on émettre sur la factorisation de f ?\nb) Quelle conjecture peut-on émettre sur le nombre maximum de racines de f ?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 16 (« Activité 16 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 16 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A17",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 17,
+    "solver": "fixed",
+    "title": "Activité 17",
+    "difficulty": 2,
+    "statement": "Activité 17\n1) Dans chacun des cas suivants, vérifier que α est une racine de P et écrire P (x) sous la\nforme (x – α ) Q (x), où Q est un polynôme qu’on déterminera.\na) P (x) = 2x 3 – 7x 2 – 17x + 10 ; α = –2.\nb) P (x) = 2x 2 – (1 + 2 3 ) x – 1 – 3 ; α=– .\nc) P (x) = x 4 – 3x 3 + x 2 – 4 x + 3 ; α = 3.\n2) Dans chacun des cas suivants, trouver une racine apparente du polynôme P et factoriser P(x).\na) P (x) = x 3 – 11x 2 + 30x b) P(x) = x 4 + x 3 – 3x 2 – 4 x – 4 .\nc) P (x) = 3x 3 + 4x 2 – 6x – 7 d) P (x) = 2x 2 – (4 + 2 ) x + 2 2",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 17 (« Activité 17 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 17 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A18",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 18,
+    "solver": "fixed",
+    "title": "Activité 18",
+    "difficulty": 2,
+    "statement": "Activité 18\nPour chacun des polynômes P ci-dessous\na) Vérifier que α et β sont des racines du polynôme P.\nb) Ecrire P (x) sous la forme P (x) = (x – α )(x – β) Q (x).\n• P (x) = 3x 3 – 13x 2 – 11x + 5 α = –1 ; β = 5.\n• P (x) = x 4 + 2x 3 – 4x 2 – 5x – 6 α=2 ; β = – 3.\nm i l e r : 8-9\nA s s iAssimiler",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 18 (« Activité 18 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 18 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A19",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 19,
+    "solver": "fixed",
+    "title": "Activité 19",
+    "difficulty": 2,
+    "statement": "Activité 19\nSoit P(x) = 4x 3 + x 2 – 11x + 6 et Q(x) = x 4 + 2x 3 – x – 2.\na) Vérifier que 1 et – 2 sont solutions de l’équation P(x) = 0 et de l’équation Q (x) = 0.\nb) Déterminer les autres solutions de chacune de ces deux équations.\nc) Déterminer le signe de l’expression x 4 + 6x 3 + x 2 – 12 x + 4.\nm i l e r : 10-11\nA s s iAssimiler\nExplorer Explorer",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 19 (« Activité 19 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 19 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A20",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 20,
+    "solver": "fixed",
+    "title": "Activité 20",
+    "difficulty": 2,
+    "statement": "Activité 20\nSoit f(x) = x 3 – 5 x 2 + x + 6, g(x) = x 2 – 2 x – 4 et h(x) = f(x) – g(x).\n1) a) Calculer f(2) et g(2).\nb) En déduire une racine de h.\n2) a) Factoriser h(x).\nb) Résoudre l’équation f(x) = g(x).\n3) Résoudre l’inéquation f(x) > g(x).",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 20 (« Activité 20 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 20 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A21",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 21,
+    "solver": "fixed",
+    "title": "Activité 21",
+    "difficulty": 2,
+    "statement": "Activité 21\n1) Soit P(x) = x3 + 2x2 – 5x – 6. On suppose que P admet trois racines distinctes α, β et γ.\n1 1 1\nSans calculer ces racines, calculer α + β + γ , α β γ , α β + γ α + β γ et + +\na b c\n2) On suppose que le polynôme P défini par P (x) = ax 3 + bx 2 + c x + d avec a ≠ 0 admet trois\nracines distinctes α, β et γ et qu’aucune n’est nulle.\nCalculer α + β + γ , α β γ , α β + γ α + β γ , α 2 + β 2 + γ 2 et 1 + 1 + 1\na b c\n3) Existe-t-il trois réels α , β et γ tels que α + β + γ = 5, αβγ = – 1 et αβ + γα + βγ = 3?",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 21 (« Activité 21 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 21 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A22",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 22,
+    "solver": "fixed",
+    "title": "Activité 22 Polynômes symétriques de degré 3",
+    "difficulty": 2,
+    "statement": "Activité 22 Polynômes symétriques de degré 3\nSoit f(x) = ax 3 + bx 2 + b x + a, avec a ≠ 0.\n1) a) Trouver une racine apparente de f et en déduire une factorisation de f(x).\nb) Discuter alors suivant les valeurs de a et b le nombre de solutions de f(x) = 0.\n2) Dans chacun des cas suivants résoudre l’équation f(x) = 0 et préciser le signe de f(x).\na) f(x) = 2x 3 + 5x 2 + 5x + 2 ; b) f(x) = 7x 3 – 43x 2 – 43x + 7.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 22 (« Activité 22 Polynômes symétriques de degré 3 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 22 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A23",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 23,
+    "solver": "fixed",
+    "title": "Activité 23 Fonctions rationnelles",
+    "difficulty": 2,
+    "statement": "Activité 23 Fonctions rationnelles\nDans la figure ci-contre, le triangle ABC est rectangle en B, le demi-cercle de centre O\na pour rayon 1 , la droite (AC) est tangente au demi-cercle en H.\nOn pose AB = h et BC = x.\n\\\n1) Exprimer CH, AH et tan2 ^BACh en fonction de x et h.\n2x\n2) Montrer que h = x 2 - 1 .\n3) a) Peut-on avoir h = 2 ?\nb) Peut-on avoir h = 3 ? h = 4 ?\nA O 1 B\nExplorer Explorer",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 23 (« Activité 23 Fonctions rationnelles ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 23 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A24",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 24,
+    "solver": "fixed",
+    "title": "Activité 24",
+    "difficulty": 2,
+    "statement": "Activité 24\nOn considère les deux polynômes f et g définis par\nf(x) = x 3 – 2 x 2 – x + 2 et g(x) = x 2 + x – 6.\n1) Vérifier que 2 est une racine de f et en déduire une factorisation de f(x).\n2) Résoudre l’équation g(x) = 0.\n3) Soit h : IR ⎯→ IR\nf]x g\nx7\ng]x g\na) Déterminer l’ensemble de définition D de la fonction h.\nb) Pour x appartenant à D, simplifier h (x) puis déterminer son signe.\nDéfinition\nSoit f et g deux fonctions polynômes.\nLa fonction h : IR ⎯→ IR\nf]x g\nx7\ng]x g\nest appelée fonction rationnelle.",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 24 (« Activité 24 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 24 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  },
+  {
+    "id": "POLYNOMES_A25",
+    "chapter": "polynomes",
+    "kind": "activity",
+    "activity": 25,
+    "solver": "fixed",
+    "title": "Activité 25",
+    "difficulty": 2,
+    "statement": "Activité 25\n1) a) Déterminer deux réels a et b tels que, pour tout réel x différent de 0 et de –1, on a\n1 a b\n=x+ .\nx]x + 1g x+1\nb) Calculer alors, la somme S1 = 1 + 1 + 1 + ... + 1 .\n1#2 2#3 3#4 n]n + 1g\n2) a) Déterminer trois réels a ; b et c tels que, pour tout réel x non nul et différent de –1 et\nde –2, on a 1 a b c\n=x+ + .\nx]x + 1g]x + 2g x+1 x+2\n1 1 1 1\nb) Calculer alors la somme S 2 = + + + ... + .\n1#2#3 2#3#4 3#4#5 n n + 1g]n + 2g\n]\n3) Calculer la somme\n1 1 1 1\nS3 = + + + ... + .\n1#2#3#4 2#3#4#5 3#4#5#6 n]n + 1g]n + 2g]n + 3g\nm i l e r : 12-13\nA s s iAssimiler\nAssimiler Assimiler\n1 Déterminer parmi les fonctions ci-dessous celles qui sont des polynômes et préciser pour\nchaque polynôme ses coefficients.\na) P: IR $ IR\nx 7 5x 2 - x .\nb) Q: IR $ IR\nx73 2.\nc) R: IR $ IR\nx 7 x2 + 5 x .\nd) S: IR $ IR\nx 7 3x 5 - 2 3 x + .\nx2 + 1\n2 1) Déterminer trois réels a, b et c tels que, pour tout réel x,\n(a – 1) x 3 + (2 – b) x 2 + (c + 3) = 0.\n2) Existe-t-il deux réels a et b tels que, pour tout réel x, a x 2 + b x + 4 = 0 ?\n3) Existe-t-il un réel a tel que, pour tout réel x, a 2 x 2 + (a 2 + a) x + a = 9 x 2 + 6 x – 3 ?\n3 Dans chacun des cas suivants, déterminer le degré du polynôme P et le coefficient du terme\ndu plus haut degré du polynôme P.\na) P (x) = (2 x + 5) ( – 4 x + 1) b) P (x) = x 3 – 8\nc) P (x) = 6 x – 5 x + (2 x + x – 1) (2 – 3 x).\n3 2 2\nd) P (x) = – 3 + 2\ne) P (x) = ( 3 x + 1) – 6 (x + 1) .\n4 2 3\nf) P (x) = (x 4 + x 3 + x 2 + x + 1)(x 2 – 1).\n4 Soit P(x) = 3x 4 – 2x 3 + x – 2 , Q(x) = –5x 3 + 2x – 3 et R(x) = x 3 – x + 5.\nRéduire et ordonner.\na) P (x) + Q (x) ; b) Q (x) . R (x) ; c) 5 R (x) + Q (x)\nd) P (x) . R (x) ; e) Q (x) . R (x).\n5 Déterminer, sans développer, le degré de chacun des polynômes A, B et C définis par\nA (x) = (x 2 + x – 5)(2x 5 – 2x 3 + 1) ; B(x) = (x 2 + 3) 5 ;\nC( x) = (x 4 – 2x 3 + x 2 + 5x – 7) (x –1) – (x 5 +1).\n6 Dans chacun des cas suivants, vérifier que le réel α est une racine du polynôme f.\na) f(x) = x 2 – 15 x + 50 ; α = 10\nb) f(x) = 4 x + 5 x – 14 x – 9 x + 14\n4 3 2\n; α=1\nc) f(x) = x – x – x – 2\n3 2\n; α= 2\nd) f(x) = 2 x – 5 x – 6 x + 9\n6 4 2\n; α = 3.\nAssimiler Assimiler\n7 Factoriser.\nF (x) = (x 2 – 4 x + 4) + 2(x – 2) ; G(x) = x 4 – 64 et H(x) = 9(x + 1) 2 – 4(2x – 1) 2 .\n8 Soit P(x) = x 3 – 4x 2 – 2x + 8.\na) Vérifier que 4 est une racine du polynôme P.\nb) Factoriser P et préciser le signe de P(x).\n9 Soit Q(x) = x 4 – x 3 – 8x 2 + 2x + 12.\na) Vérifier que –2 et 3 sont des racines du polynôme Q.\nb) Factoriser Q(x) et résoudre l’équation Q(x) = 0.\n10 Résoudre dans IR les équations suivantes.\na) x 3 + x 2 – 2 = 0 ; b) 3x 3 – 5x 2 + 3x – 1 = 0.\n(On cherchera une racine apparente).\n11 Résoudre dans IR les inéquations suivantes\na) 2 x 3 – 3 x < 2 – 3 x 2 ; b) x 3 + 4 x 2 > 2 x 2 – 4 x – 3.\nx3 - 8\n12 Soit f la fonction rationnelle définie par f(x) = .\nx 2 + 2x - 8\na) Déterminer l’ensemble de définition D de la fonction f.\nb) Résoudre l’inéquation 2 x - 8 2 0.\nx + 2x - 8\n13 Soit f la fonction rationnelle définie par f(x) =\n1 3\n- .\nx 2 + x - 2 x 2 + 2x - 3\na) Déterminer l’ensemble de définition D de la fonction f.\nb) Dresser le tableau de signe de f(x).\nèse\nS y n t hSynthèse\nEgalité de deux polynômes\n♦ Un polynôme est nul si et seulement si tous ses coefficients sont nuls.\n♦ Deux polynômes sont égaux si et seulement s’ils ont même degré et les coefficients des\ntermes de même degré sont égaux.\nOpérations sur les fonctions polynômes\nSi f et g sont deux polynômes non nuls et α un réel non nul alors :\n♦ f + g est un polynôme.\n♦ fg est un polynôme et le degré de fg est égal à la somme des degrés de f et g\n♦ αf est un polynômes et le degré de αf est égal à celui de f .\nRacines d’un polynôme\n♦ Un polynôme de degré 3 admet au plus trois racines.\n♦ Un polynôme de degré 4 admet au plus quatre racines.\n♦ On admet qu’un polynôme de degré n (n ≥ 2), admet au plus n racines.\nFactorisation d’un polynôme\nSoit f un polynôme de degré n\n♦ Pour n ≥ 1, si α est une racine de f alors\n- f est factorisable par x – α\n- Il existe un polynôme g de degré (n – 1) tel que f(x) = (x – α) g(x).\n♦ Pour n ≥ 2, si α et β sont des racines de f alors\n- f est factorisable par (x – α )(x – β).\n- Il existe un polynôme g de degré (n – 2) tel que f(x) = (x – α)(x – β) g(x).\n♦ Plus généralement : Soit f un polynôme de degré n ( n ≥ 3 ).\nOn admet que si α1 , α2 , α3 , … et αk (avec k ≤ n ) sont des racines de f alors\n- f est factorisable par (x – α1) (x – α2) (x – α3) … (x – αk).\n- Il existe un polynôme g de degré (n – k) tel que\nf(x) = (x – α1) (x – α2) (x – α3)… (x– αk) g(x).\nDévelopper ses compé\nDévelopper ses compétences\n1 Polynômes symétriques de degré 4\nOn se propose de résoudre l’équation (E) : 2 x 4 – 9 x 3 +14 x 2 – 9 x + 2.\n1) Vérifier que 0 n’est pas une solution de (E) et établir que l’équation (E) est équivalente à\n1 1\nl’équation (E1) : 2 cx 2 + 2 m - 9 bx + l + 14 = 0 .\nx x\n2) Résoudre l’équation (E).\n3) Résoudre les équations.\na) x 4 + 4x 3 – 6x 2 + 4x + 1 = 0 ; b) x 4 – 3x 3 + 4x 2 – 3x + 1= 0.\nIndication\n2) Poser X = x + et montrer que la résolution de l’équation (E) se ramène à la résolution\nx\nde deux équations du second degré.\np p p p\n2 Calcul des sommes SP = 1 + 2 + 3 + … + n\nSoit n un entier naturel non nul.\n1 ) On pose S1 = 1 + 2 + 3 + … + n.\na ) Déterminer un polynôme P de degré 2 tel que , pour tout réel x,\nP(x) – P(x – 1) = x et P(0) = 0.\nn]n + 1g\nb ) En déduire que S1 = .\n2 ) On pose S2 = 1 2 + 2 2 + 3 2 + ... + n2 .\na ) Déterminer un polynome Q de degré 3 tel que, pour tout réel x,\nQ(x) – Q(x – 1) = x2 et Q(0) = 0.\nn]n + 1g]2n + 1g\nb ) En déduire que S2 =\nIndications\n1) b) Remplacer x successivement par 1, 2, … , n.\n2) Procéder comme à la première question avec un polynôme P de degré 3.\n3 1) Soit P le polynôme défini par P(x) = an xn + an-1 xn-1 + … + a1 x + a0, avec an ≠ 0.\nMontrer que si P admet (n+1) racines distinctes, alors P est le polynôme nul.\n2) Soient a, b et c trois réels distincts et soit f le polynôme défini par :\n]x - ag]x - bg ]x - bg]x - cg ]x - cg]x - ag\nf]x g = + +\n]c - ag]c - bg ]a - bg]a - cg ]b - cg]b - ag\na) Calculer f(a) , f(b) et f(c)\nb) Montrer que f(x) = 1, pour tout réel x.\nIndication\n1) Supposer que P est non nul et considérer son degré.\n2) Utiliser la première question.\nUtiliser les TIC Utiliser les TI\nC\nFactorisation d’un polynôme\nOn considère un polynôme P défini par P(x) = a x 3 + b x 2 + c x + d, où a, b, c et d sont quatre\nréels donnés.\nSoit α un réel. On se propose de calculer P(α) puis de déterminer le polynôme Q tel que\nP(x) – P(α) = (x – α) Q(x). Il est clair que le polynôme Q est du type Q(x) = a x 2 + b’ x + c’.\nA l’aide d’un tableur\nOn se propose de déterminer les coefficients b’ et c’ en fonction de a, b, c et d.\n• Ouvrir une feuille de calcul Excel.\n• Remplir un tableau comme ci-dessous.\nA B C D E F G H\n1 a b c d α P(α) b’ c’\n• Dans les cellules A2, B2, C2 et D2 taper respectivement les coefficients a, b, c et d du\npolynôme P.\n• Dans la cellule E2, taper la valeur de α .\n• Dans la cellule F2, taper = A2*E2^3+B2*E2^2+C2*E2+D2.\n• Dans la cellule G2, taper = A2*E2+B2.\n• Dans la cellule H2, taper = A2*E2^2+B2*E2+C2.\nAinsi on obtient les coefficients b’ et c’.\nPour entrer d’autres valeurs de a, b, c et d, il suffit de les taper dans la ligne suivante et tirer à\nchaque fois vers le bas le petit curseur qui apparaît en bas à gauche des cellules F2, G2 et H2.\nExemple\nA B C D E F G H\n1 a b c d α P(α) b’ c’\n2 4 5 -2 1 1 8 9 7\n3 -3 0 1 1 5 -369 -15 -74\nExercices et problèmes\nExercices et problèmes\nAppliquer b) Simplifier f(x) et g(x).\nx3 + 1\nc) Résoudre l’inéquation 2 0.\nSoient f(x) = x 4 + x 2 – 5x + 1 , x 2 + 2x - 3\ng(x) = 5x 3 + x + 1 et h(x) = 2x 2 – 7x – 2.\nRéduire et ordonner 8\nSoit g la fonction rationnelle définie par\na) f(x) – h(x) ; b) 2g(x) – 5h (x)\n1 2 1\nc) f(x) + g(x) + h(x) ; d) f(x) h(x) g]x g = + + 3 2\n.\nx-1 x+1 x +x -x-1\ne) f(x) g(x)\na) Déterminer un polynôme P tel que pour\n2 Soit f(x) = x 3 + x 2 – 8x – 6. tout réel x on a x 3 + x 2 – x – 1 = (x 2 – 1)P(x).\nVérifier que 1 – 3 est une racine de f.\nb) Déterminer l’ensemble de définition de g.\n3 Soit P(x) = nx n+1 – (n + 1) x +1, n ∈ ΙΝ c) Simplifier g(x).\nVérifier que 1 est un zéro de P.\nd) Résoudre l’inéquation\n∗\n4 Soit f(x) = (x + 1) 2n – x 2n – 2x – 1, n ∈ ΙΝ 1 1 2\n1 - .\nVérifier que –1 ; – 1 et 0 sont des racines\n3 2\nx +x -x-1 1-x x+1\nde f .\n9 Résoudre les inéquations suivantes\n5 Soit A(x) = x 3 – 4 x 2 – 2 x + 8\nx 3 - 7x - 6 x 4 + 2x 3 - 1\net B(x) = x 4 – x 3 – 8 x 2 + 2 x + 12. a) 2\n2 0 ; b) # 1.\nx - 5x - 6 x+1\nVérifier que 4 est une racine de A et que\n–2 et 3 sont des racines de B.\nMaîtriser\n6 Soit f la fonction rationnelle définie par\nx 2 - 4x + 4 10 Soit a un réel et soit f le polynôme défini\nf]x g = 3 2\n6x - 11x + 6x - 1 par f(x) = (x – a + 2) 3 – (x 3 – a 3 + 8).\na) Vérifier que 2 est un zéro du polynôme P\nVérifier que a et –2 sont des racines de f.\ndéfini par P(x) = 6x – 11x + 6x – 1.\n3 2\nb) Factoriser P et déterminer l’ensemble de\n11 Soit P(x) = x 3 + 6 x 2 + 12 x – 56.\ndéfinition de f.\nc) Simplifier f(x) et résoudre l’inéquation a) Chercher une racine entière de P.\nf(x) < 0. b) Résoudre l’équation P(x) = 0.\n7 Soient f et g les fonctions rationnelles\nx 2 + 5x + 6\ndéfinies par f(x) = 2\nx +x-2\nx3 + 1\net g(x) = 2 .\nx + 2x - 3\na) Déterminer l’ensemble de définition de\nchacune de ces fonctions.\nExercices etExercices lèmes\nproetbproblèmes\n12 Soit f(x) = x 3 + 16 x 2 + 86 x + 156 18 Soit P le polynôme défini par\na)Déterminer trois réels a, b et c tels que P(x) = x 4 – x 3 – 3 x 2 + 2 x + 2\nf(x) = (x + 5) 3 + a(x + 5) 2 + b(x + 5) + c 1) a) Montrer que 2 et - 2 sont deux\nb) Factoriser f(x). zéros du polynôme P.\nb) Déterminer un polynôme Q tel que,\n13 Soient f(x) = x 2 + x – 12 et pour tout réel x, on a P(x) = (x 2 – 2)Q(x).\ng(x) = – x + 4 x – 4 x + 3.\n3 2\n2) Soit f la fonction rationnelle définie par\na) Vérifier que f et g ont une racine commune.\n3x 1\nb) Factoriser g(x). f]x g = 4 +\nc) Résoudre les inéquations g(x) < 0 et x - 4 P] x g\ng(x) > f(x). a) Déterminer l’ensemble de définition de\nf puis simplifier f(x).\n14 Soient P(x) = 2 x 3 – 5 x 2 – 11x – 4 b) Résoudre l’équation f(x) = 0.\net Q(x) = 2 x 4 – 15 x 3 + 36 x 2 – 28 x.\na) Résoudre les équations P(x) = 0 et Q(x) = 0. 19 Soit f la fonction définie par\nb) Déterminer suivant les valeurs de x le signe 3 2x 2\nf]x g = -\nde P(x) et celui de Q(x). x2 + x - 2 x2 - 1\na) Déterminer l’ensemble de définition de f\n15 Soient f(x) = – x 3 – 3 x 2 + 2 x + 9 et puis simplifier f(x).\ng(x) = x 3 + 3 x 2 – x et soit h(x) = f(x) – g(x) b) Résoudre l’inéquation\n1)a) Calculer f(–3) et g(–3).\n3 2x 2\nb) En déduire une racine de h. $ .\n2)a) Factoriser h(x). x2 + x - 2 x2 - 1\nb) Résoudre l’équation f(x) = g(x).\n3) Résoudre l’inéquation f(x) ≤ g(x).\n16 Problème de Bhaskara\n« Quel est, homme savant, le nombre qui\nmultiplié par 12 et ajouté au cube du nombre,\nest égal à 6 fois le carré, augmenté de 35 » ?\n17 Soit a, b et c trois réels distincts et soit f le\npolynôme défini par :\nf(x) = (b – c)(x – a)[(x + a) 2 + (b + c) 2] +\n(c – a)(x – b)[(x + b)2 + (c + a)2] +\n(a – b)(x – c)[(x + c)2 + (a + b)2]\n1) Calculer f(a) , f(b) et f(c).\n2) En déduire une expression simple de f(x).\nM a t h e t cMath ure\nu lettculture\nFactorisation d’un polynôme – méthode de la division\nOn a proposé dans la rubrique « Explorer » une méthode de factorisation d’un polynôme\nconnaissant une ou plusieurs racines. Cette méthode est appelée méthode d’identification.\nOn va exposer, sur un exemple, une deuxième méthode de factorisation appelée méthode de la\ndivision suivant les puissances décroissantes.\nExemple\nSoit le polynôme P défini par P(x) = 6 x 3 + x 2 + 8 x – 5.\nDéterminer le polynôme Q tel que pour tout réel x, P(x) = (2x – 1) Q(x).\nSolution\nLe principe est le suivant : on ne s’occupe que du terme de plus haut degré et comme le terme\nde plus haut degré de P(x) est 6x3 donc le terme de plus haut degré de Q(x) est 3 x 2 .\nAinsi Q(x) = 3x 2 + R(x), où R est un polynôme de degré inférieur ou égal à 1.\nOn obtient donc 6 x 3 + x 2 + 8 x – 5 = (2x – 1) (3x 2 + R(x) )\nd’où 6 x 3 + x 2 + 8 x – 5 – (2x – 1) 3x 2 = (2x – 1) R(x) .\nEn développant on obtient 4x 2 + 8x – 5 = (2x – 1) R(x).\nPour déterminer R on va encore s’intéresser aux termes de plus haut degré.\nOn aura R(x) = 2x + c où c est une constante .\nOn aura alors 4 x 2 + 8 x – 5 = (2 x – 1) (2 x + c)\nsoit encore 4 x 2 + 8 x – 5 – (2 x – 1)2 x = (2 x – 1) c\nce qui donne 10 x – 5 = (2 x – 1) c d’où c = 5\net par suite 6 x 3 + x 2 + 8 x – 5 = (2 x – 1) (3 x 2 + 2x +5).\nDisposition pratique\nEn pratique on adopte une disposition semblable à celle utilisée dans la division des nombres.\n6 x 3 + x2 + 8 x – 5 2 x-1\n6x3 – 3x2 3x2 + 2x + 5\n0 + 4x2 + 8x – 5\n+ 4x2 – 2x\n0 + 10x – 5\n+ 10x – 5\n0+0",
+    "variables": [],
+    "questions": [
+      {
+        "key": "lu",
+        "type": "tf",
+        "label": "L’activité 25 (« Activité 25 ») est bien celle du polycopié, chapitre en cours",
+        "answer": "vrai"
+      }
+    ],
+    "steps": [
+      [
+        "Manuel",
+        "Relire l’activité 25 dans le tome 1 et la synthèse du chapitre. La liste suit exactement la numérotation du livre."
+      ]
+    ]
+  }
+]

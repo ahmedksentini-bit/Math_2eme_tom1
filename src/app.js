@@ -43,7 +43,8 @@ const pedagogy = {
   homothety: { hypotheses: "Centre O, rapport k ≠ 0. OM'⃗ = k OM⃗.", why: ["M' = O + k(M − O).", "On calcule les deux coordonnées.", "MM' = |k − 1| · OM."], check: "Si k = 1, M' = M. Si k = −1, O est le milieu de [MM']." },
   homothetyScale: { hypotheses: "L’homothétie multiplie les longueurs par |k| et les aires par k².", why: ["Le périmètre est une somme de longueurs, donc il est multiplié par |k|.", "L’aire est multipliée par k² (le cours du chapitre 8)."], check: "k = 1/2  ⇔  aire divisée par 4, périmètre par 2." },
   rotation90: { hypotheses: "Repère orthonormé direct. Quart de tour de centre O.", why: ["Le vecteur OM⃗ tourne de +90°.", " (x, y) ↦ (−y, x) dans le repère d’origine O."], check: "OM' = OM et OM⃗ · OM'⃗ = 0." },
-  rotationAngle: { hypotheses: "Rotation directe de centre O et d’angle α. Définition du cours : OM' = OM et l’angle MOM' vaut α.", why: ["La distance au centre est conservée.", "Pour 90°, on utilise le quart de tour : (x ; y) ↦ (−y ; x) autour de l’origine.", "Pour 180°, M' = 2O − M (symétrie centrale)."], check: "OM' = OM. Pour 90°, OM⃗ · OM'⃗ = 0." }
+  rotationAngle: { hypotheses: "Rotation directe de centre O et d’angle α. Définition du cours : OM' = OM et l’angle MOM' vaut α.", why: ["La distance au centre est conservée.", "Pour 90°, on utilise le quart de tour : (x ; y) ↦ (−y ; x) autour de l’origine.", "Pour 180°, M' = 2O − M (symétrie centrale)."], check: "OM' = OM. Pour 90°, OM⃗ · OM'⃗ = 0." },
+  fixed: { hypotheses: "On travaille avec le cours du chapitre, tel qu’il est dans le manuel.", why: ["On relit la question.", "On applique le résultat de la synthèse."], check: "La réponse doit coller à l’énoncé du polycopié." }
 };
 
 const equationSheets = {
@@ -79,11 +80,41 @@ const equationSheets = {
   homothety: ["OM'⃗ = k OM⃗", "M'N'⃗ = k MN⃗", "MM' = |k−1| OM"],
   homothetyScale: ["p' = |k| p", "A' = k² A"],
   rotation90: ["(x, y) ↦ (−y, x) autour de O"],
-  rotationAngle: ["OM' = OM", "angle MOM' = α"]
+  rotationAngle: ["OM' = OM", "angle MOM' = α"],
+  fixed: ["Relire la synthèse du chapitre dans le polycopié."]
 };
 
 const esc = value => String(value).replace(/[&<>'"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[c]));
 const parse = value => Number(String(value).trim().replace(",", ".").replace(/\s/g, ""));
+const qType = q => q.type || "number";
+const varsOf = e => e.variables || [];
+const normAnswer = value => String(value ?? "").trim().toLowerCase().replace(/[ \u00a0]/g, "").replace(/,/g, ".").replace(/[−–]/g, "-").replace(/²/g, "2").replace(/³/g, "3");
+function readAnswer(q) {
+  if (qType(q) === "tf" || qType(q) === "mcq") {
+    return document.querySelector(`input[name="a_${q.key}"]:checked`)?.value ?? "";
+  }
+  return document.querySelector(`#a_${q.key}`)?.value ?? "";
+}
+function setAnswerValue(q, value) {
+  if (qType(q) === "tf" || qType(q) === "mcq") {
+    const wanted = String(value ?? "");
+    document.querySelectorAll(`input[name="a_${q.key}"]`).forEach(el => { el.checked = el.value === wanted; });
+    return;
+  }
+  const input = document.querySelector(`#a_${q.key}`);
+  if (input) input.value = value ?? "";
+}
+function answersMatch(q, given, target) {
+  if (qType(q) === "number") return isClose(parse(given), Number(target));
+  return normAnswer(given) === normAnswer(target);
+}
+function formatAnswer(q, value) {
+  if (qType(q) === "tf") return String(value).toLowerCase() === "vrai" ? "Vrai" : "Faux";
+  if (qType(q) === "mcq" || qType(q) === "text") return String(value ?? "—");
+  const num = Number(value);
+  const unit = q.unit && q.unit !== "—" ? ` ${q.unit}` : "";
+  return Number.isFinite(num) ? `${num.toLocaleString("fr-FR", { maximumSignificantDigits: 5 })}${unit}` : `${value ?? "—"}${unit}`;
+}
 const randomValue = v => Number((Math.round((v.min + Math.random() * (v.max - v.min)) / v.step) * v.step).toFixed(8));
 const formatTime = seconds => {
   const s = Math.max(0, Math.floor(seconds));
@@ -100,11 +131,12 @@ function home() {
   state.exercise = null;
   state.returnTo = null;
   state.paper = null;
-  const total = state.catalog.exercises.length;
-  app.innerHTML = `<section class="hero"><p class="eyebrow">Mathématiques · 2ème année secondaire</p><h1>Comprendre, calculer, vérifier.</h1><p>Des exercices paramétriques fidèles au manuel CNP (tome 1), avec correction raisonnée et trois modes de travail.</p><div class="signature">Lycée Pilote Sakiet Ezzit<br><strong>Mariam Ksentini</strong></div></section>
+  const nAct = state.catalog.exercises.filter(e => e.kind === "activity").length;
+  const nPar = state.catalog.exercises.filter(e => e.kind !== "activity").length;
+  app.innerHTML = `<section class="hero"><p class="eyebrow">Mathématiques · 2ème année secondaire</p><h1>Comprendre, calculer, vérifier.</h1><p>Toutes les activités du manuel CNP (tome 1), dans l’ordre du livre, avec correction et trois modes de travail.</p><div class="signature">Lycée Pilote Sakiet Ezzit<br><strong>Mariam Ksentini</strong></div></section>
   <div class="exam-launch"><button class="exam-launch-btn" id="makeControle"><strong>Devoirs surveillés</strong><span>Mi-trimestre · 1 h · 3 à 5 exercices</span></button><button class="exam-launch-btn" id="makeSynthese"><strong>Devoirs de synthèse</strong><span>Fin de trimestre · 2 h · 4 à 5 exercices</span></button></div>
-  <div class="section-title"><div><h2>Choisir un chapitre</h2><p>${total} exercices du manuel, plus 40 exercices générés par chapitre (faciles, moyens, difficiles, casse-tête).</p></div></div>
-  <section class="chapter-grid">${state.catalog.chapters.map(ch => { const count = state.catalog.exercises.filter(e => e.chapter === ch.id).length; return `<button class="chapter" data-chapter="${ch.id}"><span class="num">${ch.number}</span><h3>${esc(ch.title)}</h3><p>${esc(ch.description)}</p><span class="count">${count} exercice${count > 1 ? "s" : ""} du manuel →</span></button>`; }).join("")}</section>`;
+  <div class="section-title"><div><h2>Choisir un chapitre</h2><p>${nAct} activités du livre, ${nPar} exercices paramétriques, plus 40 exercices générés par chapitre (faciles, moyens, difficiles, casse-tête).</p></div></div>
+  <section class="chapter-grid">${state.catalog.chapters.map(ch => { const n = state.catalog.exercises.filter(e => e.chapter === ch.id && e.kind === "activity").length; return `<button class="chapter" data-chapter="${ch.id}"><span class="num">${ch.number}</span><h3>${esc(ch.title)}</h3><p>${esc(ch.description)}</p><span class="count">${n} activité${n > 1 ? "s" : ""} du livre →</span></button>`; }).join("")}</section>`;
   document.querySelectorAll("[data-chapter]").forEach(button => button.addEventListener("click", () => chapterPage(button.dataset.chapter)));
   document.querySelector("#makeControle").addEventListener("click", () => examSetup("controle"));
   document.querySelector("#makeSynthese").addEventListener("click", () => examSetup("synthese"));
@@ -119,12 +151,17 @@ function courseHtml(chapterId) {
 function chapterPage(chapterId) {
   const chapter = state.catalog.chapters.find(c => c.id === chapterId);
   const exercises = state.catalog.exercises.filter(e => e.chapter === chapterId);
+  const activities = exercises.filter(e => e.kind === "activity").sort((a, b) => a.activity - b.activity);
+  const parametric = exercises.filter(e => e.kind !== "activity");
+  const card = (e, i, tag) => `<button class="exercise-card" data-exercise="${e.id}"><span class="exercise-index">${e.kind === "activity" ? String(e.activity).padStart(2, "0") : String(i + 1).padStart(2, "0")}</span><span><strong>${esc(e.title)}</strong><small>${tag}</small></span><span class="arrow">→</span></button>`;
   app.innerHTML = `<button class="back" id="backHome">← Tous les chapitres</button>
     <section class="chapter-banner"><span class="num">${chapter.number}</span><div><h1>${esc(chapter.title)}</h1><p>${esc(chapter.description)}</p></div></section>
     ${courseHtml(chapterId)}
-    <div class="propose-cta"><button class="primary" id="propose">Proposer des exercices</button><p>10 faciles, 10 moyens, 10 difficiles et 10 casse-tête, avec le même schéma : rappel, équations, énoncé, réponses.</p></div>
-    <div class="section-title"><div><h2>Exercices du manuel</h2><p>Choisissez une situation puis un mode de travail.</p></div></div>
-    <section class="exercise-list">${exercises.map((e, i) => `<button class="exercise-card" data-exercise="${e.id}"><span class="exercise-index">${String(i + 1).padStart(2, "0")}</span><span><strong>${esc(e.title)}</strong><small>Niveau ${e.difficulty} · données paramétriques</small></span><span class="arrow">→</span></button>`).join("")}</section>`;
+    <div class="propose-cta"><button class="primary" id="propose">Proposer des exercices</button><p>10 faciles, 10 moyens, 10 difficiles et 10 casse-tête, générés en plus des activités du polycopié.</p></div>
+    <div class="section-title"><div><h2>Activités du polycopié</h2><p>${activities.length} activité${activities.length > 1 ? "s" : ""} du manuel, dans l’ordre du livre.</p></div></div>
+    <section class="exercise-list">${activities.map(e => card(e, 0, "Activité du tome 1")).join("")}</section>
+    <div class="section-title"><div><h2>Exercices paramétriques</h2><p>Mêmes types de calculs, données que l’on peut modifier.</p></div></div>
+    <section class="exercise-list">${parametric.map((e, i) => card(e, i, `Niveau ${e.difficulty} · données paramétriques`)).join("")}</section>`;
   document.querySelector("#backHome").addEventListener("click", home);
   document.querySelector("#propose").addEventListener("click", () => proposePage(chapterId, true));
   document.querySelectorAll("[data-exercise]").forEach(b => b.addEventListener("click", () => {
@@ -199,8 +236,9 @@ function openExercise(exercise, mode = state.mode, options = {}) {
   state.exercise = exercise;
   state.mode = inPaper() ? "exam" : mode;
   state.attempts = {};
-  const fixed = inPaper() || options.fixed || state.mode === "learn";
-  state.data = Object.fromEntries(exercise.variables.map(v => [v.key, fixed ? v.value : randomValue(v)]));
+  const vars = varsOf(exercise);
+  const fixed = inPaper() || options.fixed || state.mode === "learn" || !vars.length;
+  state.data = Object.fromEntries(vars.map(v => [v.key, fixed ? v.value : randomValue(v)]));
   renderExercise();
   if (inPaper()) {
     startCountdown(state.paper.remaining ?? state.paper.duration);
@@ -218,7 +256,7 @@ function recapHtml(e) {
 }
 
 function lectureHtml(e) {
-  if (state.mode === "exam") return "";
+  if (state.mode === "exam" || e.kind === "activity") return "";
   const recap = courseRecap(e.solver);
   if (!recap.details?.length) return "";
   return `<div class="statement-help"><p class="recap-kicker">Lecture détaillée de l’énoncé</p>${recap.details.map(d => `<p>${esc(d)}</p>`).join("")}</div>`;
@@ -234,11 +272,18 @@ function paperNavHtml() {
 
 function renderExercise() {
   const e = state.exercise, chapter = state.catalog.chapters.find(c => c.id === e.chapter);
+  const vars = varsOf(e);
   const backLabel = inPaper() ? "← Sujets" : state.returnTo === "propose" ? "← Exercices proposés" : "← Exercices du chapitre";
   const modeSwitch = inPaper() ? "" : `<div class="mode-switch" aria-label="Mode de travail">${Object.entries(modes).map(([key, label]) => `<button data-mode="${key}" class="${state.mode === key ? "active" : ""}">${label}</button>`).join("")}</div>`;
   const clockText = inPaper() ? `Reste ${formatTime(state.seconds)}` : state.mode === "exam" ? "Temps 00:00" : "";
-  app.innerHTML = `<section class="exercise-head"><div><button class="back" id="back">${backLabel}</button><h1>${esc(e.title)}</h1><p>Chapitre ${chapter.number} · Niveau ${e.difficulty}${e.band ? " · " + bandLabel(e.band) : ""}</p>${paperNavHtml()}</div><div>${modeSwitch}<div id="clock" class="exam-clock">${clockText}</div></div></section>
-    <section class="workspace"><div><article class="card"><h2>Schéma de l’exercice</h2><div class="diagram" id="diagram"></div><p class="diagram-note" id="diagramNote"></p></article>${recapHtml(e)}<article class="card"><h2>Énoncé</h2><p class="statement">${esc(e.statement)}</p>${lectureHtml(e)}<div class="data-grid">${e.variables.map(v => `<div class="field"><label for="v_${v.key}">${esc(v.label)}</label><div class="input-wrap"><input id="v_${v.key}" data-variable="${v.key}" type="number" step="any" value="${state.data[v.key]}" ${state.mode === "exam" ? "readonly" : ""}><span class="unit">${v.unit}</span></div></div>`).join("")}</div><div class="actions">${state.mode !== "learn" && !inPaper() ? `<button class="secondary" id="randomize">↻ Nouvelles données</button>` : ""}</div></article></div>
+  const dataBlock = vars.length
+    ? `<div class="data-grid">${vars.map(v => `<div class="field"><label for="v_${v.key}">${esc(v.label)}</label><div class="input-wrap"><input id="v_${v.key}" data-variable="${v.key}" type="number" step="any" value="${state.data[v.key]}" ${state.mode === "exam" ? "readonly" : ""}><span class="unit">${v.unit}</span></div></div>`).join("")}</div><div class="actions">${state.mode !== "learn" && !inPaper() ? `<button class="secondary" id="randomize">↻ Nouvelles données</button>` : ""}</div>`
+    : "";
+  const statement = e.kind === "activity"
+    ? `<pre class="statement">${esc(e.statement)}</pre>`
+    : `<p class="statement">${esc(e.statement)}</p>`;
+  app.innerHTML = `<section class="exercise-head"><div><button class="back" id="back">${backLabel}</button><h1>${esc(e.title)}</h1><p>Chapitre ${chapter.number} · ${e.kind === "activity" ? `Activité ${e.activity} du livre` : `Niveau ${e.difficulty}`}${e.band ? " · " + bandLabel(e.band) : ""}</p>${paperNavHtml()}</div><div>${modeSwitch}<div id="clock" class="exam-clock">${clockText}</div></div></section>
+    <section class="workspace"><div><article class="card"><h2>Schéma de l’exercice</h2><div class="diagram" id="diagram"></div><p class="diagram-note" id="diagramNote"></p></article>${recapHtml(e)}<article class="card"><h2>Énoncé</h2>${statement}${lectureHtml(e)}${dataBlock}</article></div>
     <div><article class="card"><h2>${state.mode === "exam" ? "Votre copie" : "Résolution guidée"}</h2><div id="questions">${e.questions.map((q, i) => question(q, i)).join("")}</div><div class="actions">${inPaper() ? "" : `<button class="primary" id="submitAll">${state.mode === "exam" ? "Rendre la copie" : "Tout vérifier"}</button>`}${state.mode !== "exam" ? `<button class="secondary" id="showCorrection">Voir la correction</button>` : ""}</div><div id="score"></div></article><article class="card correction" id="correction" hidden></article></div></section>`;
   const formulas = equationSheets[e.solver] || ["Consulter la synthèse du chapitre et écrire la relation littérale."];
   app.querySelector(".workspace > div:nth-child(2)").insertAdjacentHTML("afterbegin", `<article class="card equation-card"><h2>Équations utiles</h2><p class="equation-intro">Rappel littéral — identifiez chaque grandeur avant de remplacer les valeurs.</p>${formulas.map(f => `<div class="equation-line">${esc(f)}</div>`).join("")}</article>`);
@@ -246,14 +291,36 @@ function renderExercise() {
   refreshDiagram();
 }
 
-function question(q, i) { return `<div class="question"><div class="question-title">${i + 1}. ${esc(q.label)}</div><div class="answer-row"><div class="input-wrap"><input id="a_${q.key}" data-answer="${q.key}" inputmode="decimal" autocomplete="off" placeholder="Votre réponse"><span class="unit">${q.unit}</span></div>${state.mode !== "exam" ? `<button class="ghost" data-check="${q.key}">Vérifier</button>` : ""}</div><p class="feedback" id="f_${q.key}"></p></div>`; }
+function question(q, i) {
+  const checkBtn = state.mode !== "exam" ? `<button class="ghost" data-check="${q.key}">Vérifier</button>` : "";
+  const title = `<div class="question-title">${i + 1}. ${esc(q.label)}</div>`;
+  if (qType(q) === "tf") {
+    return `<div class="question">${title}<div class="answer-row"><div class="choice-row" role="radiogroup">${["vrai", "faux"].map(v => `<label class="choice"><input type="radio" name="a_${q.key}" value="${v}"> ${v === "vrai" ? "Vrai" : "Faux"}</label>`).join("")}</div>${checkBtn}</div><p class="feedback" id="f_${q.key}"></p></div>`;
+  }
+  if (qType(q) === "mcq") {
+    return `<div class="question">${title}<div class="answer-row"><div class="choice-row" role="radiogroup">${(q.options || []).map(o => `<label class="choice"><input type="radio" name="a_${q.key}" value="${esc(o)}"> ${esc(o)}</label>`).join("")}</div>${checkBtn}</div><p class="feedback" id="f_${q.key}"></p></div>`;
+  }
+  const unit = q.unit && q.unit !== "—" ? `<span class="unit">${esc(q.unit)}</span>` : "";
+  const mode = qType(q) === "text" ? "text" : "decimal";
+  return `<div class="question">${title}<div class="answer-row"><div class="input-wrap"><input id="a_${q.key}" data-answer="${q.key}" inputmode="${mode}" autocomplete="off" placeholder="Votre réponse">${unit}</div>${checkBtn}</div><p class="feedback" id="f_${q.key}"></p></div>`;
+}
 
-function readData() { state.exercise.variables.forEach(v => state.data[v.key] = parse(document.querySelector(`#v_${v.key}`).value)); }
+function readData() {
+  varsOf(state.exercise).forEach(v => {
+    const el = document.querySelector(`#v_${v.key}`);
+    if (el) state.data[v.key] = parse(el.value);
+  });
+}
 function check(key) {
-  readData(); const target = solve(state.exercise, state.data).values[key], input = document.querySelector(`#a_${key}`), value = parse(input.value), feedback = document.querySelector(`#f_${key}`);
+  readData();
+  const q = state.exercise.questions.find(item => item.key === key);
+  const target = solve(state.exercise, state.data).values[key];
+  const given = readAnswer(q);
+  const feedback = document.querySelector(`#f_${key}`);
   state.attempts[key] = (state.attempts[key] || 0) + 1;
-  const correct = isClose(value, target); feedback.className = `feedback ${correct ? "good" : "bad"}`;
-  feedback.innerHTML = correct ? "✓ Correct — ordre de grandeur cohérent." : `✕ À revoir.${state.mode === "learn" && state.attempts[key] > 1 ? `<span class="hint">Indice : écrivez d’abord la relation littérale du cours, puis substituez.</span>` : ""}`;
+  const correct = answersMatch(q, given, target);
+  feedback.className = `feedback ${correct ? "good" : "bad"}`;
+  feedback.innerHTML = correct ? "✓ Correct." : `✕ À revoir.${state.mode === "learn" && state.attempts[key] > 1 ? `<span class="hint">Indice : relire l’énoncé du manuel, puis la synthèse du chapitre.</span>` : ""}`;
   return correct;
 }
 function submitAll() {
@@ -264,7 +331,11 @@ function submitAll() {
 function showCorrection() {
   readData(); const result = solve(state.exercise, state.data), box = document.querySelector("#correction");
   const guide = pedagogy[state.exercise.solver] || { hypotheses: "On travaille dans IR, avec les notations du manuel.", why: [], check: "Vérifier les unités et l’ordre de grandeur." };
-  box.hidden = false; box.innerHTML = `<h2>Correction détaillée</h2><section class="reasoning"><h3>1. Hypothèses et modèle</h3><p>${esc(guide.hypotheses)}</p></section><section class="given-data"><h3>2. Données de l’énoncé</h3><div class="data-summary">${state.exercise.variables.map(v => `<span><small>${esc(v.label)}</small><strong>${esc(state.data[v.key])} ${v.unit}</strong></span>`).join("")}</div><p class="method-note">Avant tout calcul, on écrit la relation littérale du cours, on identifie chaque grandeur, puis on substitue.</p></section><h3>3. Résolution raisonnée</h3>${result.steps.map((s, i) => `<div class="solution-step" data-step="${i + 1}"><h3>${esc(s[0])}</h3>${guide.why[i] ? `<p class="explanation">${esc(guide.why[i])}</p>` : ""}<p class="formula">${esc(s[1]).replace(/\n/g, "<br>")}</p></div>`).join("")}<div class="final-result"><strong>4. Résultats numériques</strong><br>${state.exercise.questions.map(q => `${esc(q.label)} = <strong>${Number(result.values[q.key]).toLocaleString("fr-FR", { maximumSignificantDigits: 5 })} ${q.unit}</strong>`).join("<br>")}</div><section class="sanity-check"><h3>5. Interprétation et contrôle</h3><p>${esc(guide.check)}</p><p>Conserver davantage de chiffres pendant le calcul et n’arrondir qu’à la fin. La virgule décimale est acceptée à la saisie.</p></section>`; box.scrollIntoView({ behavior: "smooth", block: "start" });
+  const vars = varsOf(state.exercise);
+  const dataHtml = vars.length
+    ? `<div class="data-summary">${vars.map(v => `<span><small>${esc(v.label)}</small><strong>${esc(state.data[v.key])} ${v.unit}</strong></span>`).join("")}</div><p class="method-note">Avant tout calcul, on écrit la relation littérale du cours, on identifie chaque grandeur, puis on substitue.</p>`
+    : `<p class="method-note">Aucune donnée à saisir : on travaille directement sur l’énoncé du polycopié.</p>`;
+  box.hidden = false; box.innerHTML = `<h2>Correction détaillée</h2><section class="reasoning"><h3>1. Hypothèses et modèle</h3><p>${esc(guide.hypotheses)}</p></section><section class="given-data"><h3>2. Données de l’énoncé</h3>${dataHtml}</section><h3>3. Résolution raisonnée</h3>${result.steps.map((s, i) => `<div class="solution-step" data-step="${i + 1}"><h3>${esc(s[0])}</h3>${guide.why[i] ? `<p class="explanation">${esc(guide.why[i])}</p>` : ""}<p class="formula">${esc(s[1]).replace(/\n/g, "<br>")}</p></div>`).join("")}<div class="final-result"><strong>4. Réponses</strong><br>${state.exercise.questions.map(q => `${esc(q.label)} : <strong>${esc(formatAnswer(q, result.values[q.key]))}</strong>`).join("<br>")}</div><section class="sanity-check"><h3>5. Interprétation et contrôle</h3><p>${esc(guide.check)}</p></section>`; box.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 function bindExerciseEvents() {
   document.querySelector("#back").addEventListener("click", goBack);
@@ -305,10 +376,7 @@ function shiftPaper(delta) {
 function savePaperAnswers() {
   if (!inPaper() || !state.exercise) return;
   const answers = {};
-  state.exercise.questions.forEach(q => {
-    const input = document.querySelector(`#a_${q.key}`);
-    if (input) answers[q.key] = input.value;
-  });
+  state.exercise.questions.forEach(q => { answers[q.key] = readAnswer(q); });
   state.paper.answers[state.exercise.id] = answers;
 }
 
@@ -316,8 +384,8 @@ function restorePaperAnswers() {
   const saved = state.paper?.answers[state.exercise.id];
   if (!saved) return;
   Object.entries(saved).forEach(([key, value]) => {
-    const input = document.querySelector(`#a_${key}`);
-    if (input) input.value = value;
+    const q = state.exercise.questions.find(item => item.key === key);
+    if (q) setAnswerValue(q, value);
   });
 }
 
@@ -325,10 +393,10 @@ function gradePaper(auto) {
   savePaperAnswers();
   stopTimer();
   const results = state.paper.exercises.map(ex => {
-    const data = Object.fromEntries(ex.variables.map(v => [v.key, v.value]));
+    const data = Object.fromEntries(varsOf(ex).map(v => [v.key, v.value]));
     const solved = solve(ex, data);
     const saved = state.paper.answers[ex.id] || {};
-    const checks = ex.questions.map(q => ({ q, ok: isClose(parse(saved[q.key] ?? ""), solved.values[q.key]), target: solved.values[q.key], given: saved[q.key] ?? "" }));
+    const checks = ex.questions.map(q => ({ q, ok: answersMatch(q, saved[q.key] ?? "", solved.values[q.key]), target: solved.values[q.key], given: saved[q.key] ?? "" }));
     return { ex, checks, correct: checks.filter(c => c.ok).length, total: checks.length };
   });
   const correct = results.reduce((s, r) => s + r.correct, 0);
@@ -337,7 +405,7 @@ function gradePaper(auto) {
   const chapter = id => state.catalog.chapters.find(c => c.id === id)?.number ?? "";
   app.innerHTML = `<button class="back" id="backPapers">← Les 6 sujets</button>
     <section class="chapter-banner"><span class="num">${auto ? "⏱" : "✓"}</span><div><h1>${esc(state.paper.title)}</h1><p>${auto ? "Temps écoulé — copie rendue automatiquement." : "Devoir rendu."} Score ${correct}/${total} soit ${score.toLocaleString("fr-FR", { maximumFractionDigits: 1 })}/20.</p></div></section>
-    <section class="paper-results">${results.map((r, i) => `<article class="card"><h2>Exercice ${i + 1}. ${esc(r.ex.title)}</h2><p>Chapitre ${chapter(r.ex.chapter)} · ${r.correct}/${r.total}</p>${r.checks.map(c => `<p class="feedback ${c.ok ? "good" : "bad"}">${esc(c.q.label)} : ${c.ok ? "correct" : `votre réponse « ${esc(c.given) || "—"} » — attendu ${Number(c.target).toLocaleString("fr-FR", { maximumSignificantDigits: 5 })} ${c.q.unit}`}</p>`).join("")}</article>`).join("")}</section>
+    <section class="paper-results">${results.map((r, i) => `<article class="card"><h2>Exercice ${i + 1}. ${esc(r.ex.title)}</h2><p>Chapitre ${chapter(r.ex.chapter)} · ${r.correct}/${r.total}</p>${r.checks.map(c => `<p class="feedback ${c.ok ? "good" : "bad"}">${esc(c.q.label)} : ${c.ok ? "correct" : `votre réponse « ${esc(c.given) || "—"} » — attendu ${esc(formatAnswer(c.q, c.target))}`}</p>`).join("")}</article>`).join("")}</section>
     <div class="actions"><button class="primary" id="backPapers2">Retour aux sujets</button></div>`;
   const back = () => { state.paper = null; state.returnTo = null; paperList(); };
   document.querySelector("#backPapers").addEventListener("click", back);
@@ -402,12 +470,16 @@ if ("serviceWorker" in navigator) window.addEventListener("load", () => navigato
 
 const loadJson = url => fetch(url).then(r => r.ok ? r.json() : []);
 try {
-  const [catalog, batch14, batch59] = await Promise.all([
+  const [catalog, batch14, batch59, actIndex] = await Promise.all([
     fetch("./data/exercises.json").then(r => r.json()),
     loadJson("./data/exercises-ch1-ch4.json"),
-    loadJson("./data/exercises-ch5-ch9.json")
+    loadJson("./data/exercises-ch5-ch9.json"),
+    loadJson("./data/activites-index.json")
   ]);
-  state.catalog = { ...catalog, exercises: [...catalog.exercises, ...batch14, ...batch59] };
+  const actFiles = Array.isArray(actIndex) ? actIndex.map(item => loadJson(`./data/${item.file}`)) : [];
+  const actPacks = await Promise.all(actFiles);
+  const activities = actPacks.flat();
+  state.catalog = { ...catalog, exercises: [...catalog.exercises, ...batch14, ...batch59, ...activities] };
   const requested = state.catalog.exercises.find(e => `#${e.id}` === location.hash);
   requested ? openExercise(requested) : home();
 } catch {

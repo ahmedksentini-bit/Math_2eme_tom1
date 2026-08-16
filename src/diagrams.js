@@ -217,6 +217,12 @@ const figures = {
       caption: "Rotation de centre O : OM' = OM et l’angle MOM' vaut α.",
       svg: svg("Rotation", `${axes()}<circle cx="240" cy="160" r="6" fill="#5b21b6"/>${t(220, 150, "O")}${line(240, 160, 380, 160, "#6d28d9", 2.2, 'marker-end="url(#arb)"')}${line(240, 160, 330, 70, "#b91c1c", 2.2, 'marker-end="url(#arr)"')}${t(390, 165, "M")}${t(340, 65, "M'")}${t(300, 230, `α = ${num(d.angle)}°`)}`)
     };
+  },
+  fixed() {
+    return {
+      caption: "Activité du polycopié CNP, tome 1. Lire l’énoncé, répondre, puis vérifier.",
+      svg: svg("Activité du manuel", `${t(48, 70, "Polycopié CNP · Tome 1")}${t(48, 115, "Activité du chapitre")}${t(48, 160, "Même énoncé que le livre.")}${t(48, 205, "Répondre, puis afficher la correction.")}`)
+    };
   }
 };
 
