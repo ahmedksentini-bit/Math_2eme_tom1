@@ -3,6 +3,8 @@ import { readFileSync } from "node:fs";
 import { solve, isClose, solvers } from "../src/solvers.js";
 import { courseRecap } from "../src/recaps.js";
 import { drawFigure } from "../src/diagrams.js";
+import { generateChapterSet, generatePapers } from "../src/bank.js";
+import { chapterCourse } from "../src/courses.js";
 
 const exercise = solver => ({ solver });
 
@@ -154,3 +156,38 @@ for (const item of all) {
   }
 }
 assert.equal(catalog.chapters.length, 9);
+
+for (const chapter of catalog.chapters) {
+  const course = chapterCourse(chapter.id);
+  assert.ok(course.sections.length >= 6, `cours trop court : ${chapter.id}`);
+  const set = generateChapterSet(chapter.id, 42);
+  for (const band of ["easy", "medium", "hard", "puzzle"]) {
+    assert.equal(set[band].length, 10, `${chapter.id} ${band}`);
+    for (const item of set[band]) {
+      assert.ok(solvers[item.solver], `solveur manquant : ${item.id}`);
+      const result = solve(item, Object.fromEntries(item.variables.map(v => [v.key, v.value])));
+      for (const q of item.questions) {
+        assert.ok(Number.isFinite(result.values[q.key]), `réponse non finie : ${item.id}.${q.key}`);
+      }
+    }
+  }
+}
+
+const papers = generatePapers("controle", catalog.chapters.map(c => c.id), 7);
+assert.equal(papers.length, 6);
+assert.equal(papers[0].duration, 3600);
+for (const paper of papers) {
+  assert.ok(paper.exercises.length >= 3 && paper.exercises.length <= 5);
+  for (const item of paper.exercises) {
+    const result = solve(item, Object.fromEntries(item.variables.map(v => [v.key, v.value])));
+    for (const q of item.questions) {
+      assert.ok(Number.isFinite(result.values[q.key]), `copie ${paper.id} ${item.id}.${q.key}`);
+    }
+  }
+}
+
+const synthese = generatePapers("synthese", ["reels", "degres"], 11);
+assert.equal(synthese[0].duration, 7200);
+for (const paper of synthese) {
+  assert.ok(paper.exercises.length >= 4 && paper.exercises.length <= 5);
+}

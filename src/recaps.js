@@ -338,6 +338,43 @@ const fallback = {
   watch: "Un résultat sans unité, ou hors de l’ordre de grandeur attendu, signale souvent une formule mal choisie."
 };
 
+const details = {
+  tvaTtc: ["Le coefficient 1 + t/100 est le seul outil : 17 % ⇔ ×1,17. On peut contrôler avec un prix rond (100 D → 117 D).", "Dans un problème de facture, le H.T. est la base imposable ; les centimes viennent du produit, pas d’un arrondi prématuré."],
+  tvaHt: ["Inverser une hausse n’est pas retrancher le même pourcentage. 117 / 1,17 = 100, alors que 117 − 17 = 100 n’est qu’une coïncidence sur 100.", "Toujours diviser par 1 + t/100, jamais multiplier par 1 − t/100 (ce serait un rabais)."],
+  successivePercent: ["+10 % puis +20 % : ×1,1 × 1,2 = ×1,32, soit +32 %. +10 % puis −10 % : ×1,1 × 0,9 = ×0,99, soit −1 %, pas un retour au prix initial.", "On écrit les coefficients avant de parler de pourcentages globaux."],
+  heronArea: ["p doit être strictement plus grand que chaque côté (inégalité triangulaire). Sinon la quantité sous la racine est nulle ou négative.", "Sur un 3-4-5, A = 6 : Héron doit retrouver 6 (ou un multiple si on agrandit)."],
+  absEquation: ["|X| = b avec b ≥ 0 donne deux cas. Géométriquement, on trace le point −a puis on reporte ±b.", "Si l’équation est |x + a| = |x + c|, on obtient la médiatrice : x = −(a+c)/2, plus d’éventuels cas de signes."],
+  affineBounds: ["Une fonction affine est monotone. Le min et le max sur un segment sont atteints aux extrémités, jamais à l’intérieur.", "Le piège classique : m < 0. L’image de a_min est alors le maximum."],
+  lightTime: ["Cohérence des unités : millions de km → km, puis t = d/v en secondes. 500 s = 8 min 20 s.", "L’année-lumière est une distance (c × 1 an), pas un temps."],
+  scientificOrder: ["n = E(log₁₀|N|). Si N = 35215000, n = 7 et a = 3,5215. L’ordre de grandeur est 4×10⁷, pas 3×10⁷.", "Pour un nombre < 1, n est négatif : 0,0007845 = 7,845×10⁻⁴."],
+  quadraticSolve: ["Avant de lancer Δ, regarder a+b+c et a−b+c : une racine évidente économise le radical.", "Somme et produit se calculent sans √Δ et servent de contrôle : x₁ + x₂ et x₁x₂."],
+  resistors: ["1/r = 1/R₁ + 1/R₂ ⇔ r = R₁R₂/(R₁+R₂). D’où produit = rR et somme = R : trinôme t² − R t + rR.", "Le parallèle est plus petit que chaque branche. Si r ≥ R, les données sont incohérentes."],
+  cyclists: ["Vitesse de rapprochement = somme des vitesses. Un quart d’heure d’avance est 0,25 h, pas 15 km.", "À mi-chemin, les distances sont égales mais les temps ne le sont pas si l’un est parti plus tôt."],
+  squareDecrease: ["x² − (x−h)² = 2hx − h². Oublier −h² revient à linéariser à tort une aire.", "x > h, sinon le carré réduit n’existe pas."],
+  goldenRatio: ["φ = (1+√5)/2 ≈ 1,618. La racine négative est 1−φ = −1/φ. Identités : φ² = φ+1, 1/φ = φ−1.", "Le rectangle d’or vérifie L/ℓ = φ."],
+  polyEval: ["Horner réduit les puissances : P = ((a₃x+a₂)x+a₁)x+a₀. P(1) = somme des coeffs, P(0) = terme constant.", "Si P(α) = 0, on factorise tout de suite par x−α."],
+  polyIntegerRoot: ["Les racines entières divisent le terme constant. On teste ±1, ±2, ±4, ±7, ±8, ±14, ±28, ±56 pour −56.", "Horner donne le quotient en une ligne. On étudie ensuite le trinôme restant."],
+  polyKnownRoot: ["La vérification P(α) = 0 est obligatoire avant de factoriser : une erreur d’énoncé se voit tout de suite.", "Le coefficient dominant se conserve."],
+  sumIntegers: ["S₁ est un polynôme de degré 2, S₂ de degré 3. S₂ ≠ (S₁)² : (S₁)² est la somme des cubes.", "Pour n = 10 : 55 et 385. Un n pair rend S₁ entier, toujours en fait car n(n+1) est pair."],
+  euclidDiv: ["Unicité : si on a deux écritures, les restes diffèrent d’un multiple de b et restent dans [0, b[, donc ils coïncident.", "Contrôle : bq + r = a et r < b. Si r = b, augmenter q de 1."],
+  remainderLast3: ["1000 ≡ 0 (mod 8), donc n ≡ ses trois derniers chiffres (mod 8). Pour 25, deux chiffres suffisent car 100 ≡ 0 (mod 25).", "On réduit d’abord, on divise ensuite un entier à trois chiffres."],
+  remainderDigits: ["10 ≡ 1 (mod 9) donc 10^k ≡ 1, d’où n ≡ somme des chiffres. Le critère de 3 est le même modulo 3.", "Cela donne le reste, pas le quotient."],
+  barcodeCheck: ["EAN-13 : rangs depuis la gauche. Poids 1, 3, 1, 3, … La clé est le chiffre qui amène un multiple de 10.", "Le manuel a pour préfixe 619220260141 : la clé vaut 4."],
+  gcd3: ["Euclide itéré. PGCD(120,200) = 40, puis PGCD(40,180) = 20. Nombre de cubes = 6×10×9 = 540.", "Toute arête qui pave doit diviser les trois dimensions : le max est donc le PGCD."],
+  vectorAB: ["AB⃗ + BC⃗ = AC⃗ (Chasles). BA⃗ = −AB⃗. La norme est une longueur, toujours positive.", "En changeant de repère orthonormé, la norme ne change pas ; les composantes si."],
+  detColinear: ["det = 0 ⇔ il existe k tel que v⃗ = k u⃗ (si u⃗ ≠ 0). C’est le test de parallélisme des droites.", "Le signe du déterminant donne l’orientation (base directe ou non)."],
+  dotOrtho: ["Le produit scalaire xx'+yy' exige un repère orthonormé. Un déterminant nul n’a rien à voir avec l’angle droit.", "u⃗ · u⃗ = |u⃗|². Théorème de Pythagore : |u⃗+v⃗|² = |u⃗|² + |v⃗|² ⇔ u⃗ ⊥ v⃗."],
+  parallelogramD: ["D = A+C−B signifie AB⃗ = DC⃗. Le milieu de [AC] est aussi celui de [BD] : contrôle immédiat.", "Si on voulait ADCB, la formule changerait. Lire l’ordre des sommets."],
+  bary1d: ["Formule barycentrique : x_G = (αx_A + βx_B)/(α+β). k = β/(α+β) mesure AG en unités AB.", "Signes opposés : G est extérieur au segment. α+β = 0 : pas de barycentre."],
+  bary2d: ["Coordonnées : moyenne pondérée. Isobarycentre = centre de gravité = intersection des médianes.", "Barycentre partiel : on regroupe B et C, G est sur la médiane issue de A si β = γ."],
+  translation: ["Pas de point fixe si v⃗ ≠ 0. Toutes les figures glissent sans rotation ni retournement.", "Composer deux translations, c’est additionner les vecteurs."],
+  homothety: ["k = −1 : symétrie centrale. Le centre est le seul invariant si k ≠ 1. Les droites passant par O sont globalement stables.", "M'N'⃗ = k MN⃗ explique à la fois le parallélisme et le rapport des longueurs."],
+  homothetyScale: ["Les longueurs sont de degré 1, les aires de degré 2. Un volume (hors programme ici) serait en |k|³.", "k = 1/2 : périmètre moitié, aire quart. k = 2 : périmètre double, aire quadruple."],
+  rotation90: ["Direct : sens trigonométrique. (x ; y) ↦ (−y ; x) autour de l’origine. Autour de O quelconque, on retranche O, on tourne, on rajoute O.", "Deux quarts de tour = demi-tour. Quatre = identité."],
+  rotationAngle: ["Matrice : x' = x_O + (x−x_O)cosα − (y−y_O)sinα, y' = y_O + (x−x_O)sinα + (y−y_O)cosα, α en radians dans le calcul, en degrés dans l’énoncé.", "180° : M' = 2O − M. 0° : identité."]
+};
+
 export function courseRecap(solver) {
-  return recaps[solver] || fallback;
+  const recap = recaps[solver] || fallback;
+  return { ...recap, details: details[solver] || [] };
 }

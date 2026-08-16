@@ -1,4 +1,41 @@
 .header-actions{display:flex;align-items:center;gap:8px}.course-link{text-decoration:none}
+.exam-launch{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:8px 0 28px}
+.exam-launch-btn{display:flex;flex-direction:column;align-items:flex-start;gap:4px;padding:18px 20px;border:1px solid #ddd6fe;border-radius:18px;background:linear-gradient(180deg,#fff,#f5f3ff);color:var(--ink);text-align:left;cursor:pointer;box-shadow:var(--shadow)}
+.exam-launch-btn:hover{border-color:#7c3aed;transform:translateY(-2px)}
+.exam-launch-btn strong{font-size:17px}.exam-launch-btn span{color:var(--muted);font-size:13px}
+.course-block{margin:18px 0;border-top:4px solid #5b21b6}
+.course-block h2{margin:0 0 10px;font-size:22px}
+.course-section{margin:16px 0 0;padding-top:14px;border-top:1px solid #ede9fe}
+.course-section h3{margin:0 0 6px;font-size:16px;color:#5b21b6}
+.course-section p{margin:0;color:#334155}
+.propose-cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin:8px 0 22px}
+.propose-cta p{margin:0;color:var(--muted);max-width:42rem}
+.propose-tools{margin:12px 0}
+.band-grid{display:grid;gap:22px;margin-top:8px}
+.band-block{padding:18px;border-radius:18px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}
+.band-block h2{margin:0 0 12px;font-size:20px}.band-block h2 small{color:var(--muted);font-weight:600;font-size:13px}
+.band-block.easy{border-left:5px solid #15803d}
+.band-block.medium{border-left:5px solid #ca8a04}
+.band-block.hard{border-left:5px solid #c2410c}
+.band-block.puzzle{border-left:5px solid #6d28d9}
+.band-block .exercise-card small{display:block;margin-top:4px;color:var(--muted);font-weight:400}
+.chapter-picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;margin:16px 0}
+.chapter-picks label{display:flex;gap:10px;align-items:flex-start;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;cursor:pointer}
+.chapter-picks label:has(input:checked){border-color:#7c3aed;background:#f5f3ff}
+.paper-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.paper-card{display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding:18px;border:1px solid var(--line);border-radius:18px;background:#fff;color:var(--ink);text-align:left;cursor:pointer;box-shadow:var(--shadow)}
+.paper-card:hover{border-color:#7c3aed;transform:translateY(-2px)}
+.paper-card h3{margin:0;font-size:18px}.paper-card p{margin:0;color:var(--muted)}
+.paper-card small{color:#64748b;line-height:1.4}
+.paper-level{font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#6d28d9}
+.paper-card.easy .paper-level{color:#15803d}.paper-card.medium .paper-level{color:#a16207}.paper-card.hard .paper-level{color:#c2410c}
+.paper-nav{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
+.paper-nav span{font-size:13px;color:var(--muted);font-weight:600}
+.exam-clock.warn{color:#b91c1c;font-weight:800}
+.recap-details{margin:12px 0;padding:12px 14px;border-radius:12px;background:#f8fafc;border:1px solid #e2e8f0}
+.recap-details p{margin:0 0 8px;color:#334155;font-size:14px}.recap-details p:last-child{margin:0}
+.paper-results{display:grid;gap:14px;margin-top:16px}
+@media(max-width:700px){.exam-launch{grid-template-columns:1fr}}
 .equation-card{border-top:4px solid #7c3aed}.equation-intro{margin:-5px 0 12px;color:#64748b;font-size:13px}.equation-line{margin:7px 0;padding:10px 12px;border-radius:9px;background:linear-gradient(90deg,#f5f3ff,#f8fafc);font-family:"Cambria Math",Cambria,serif;font-size:18px;color:#4c1d95;text-align:center}
 .recap-card{border-top:4px solid #6d28d9;background:linear-gradient(180deg,#f5f3ff,#fff 42%)}.recap-kicker{margin:0 0 6px;color:#6d28d9;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.recap-card h2{margin:0 0 10px;font-size:19px}.recap-lead{margin:0 0 12px;color:#334155}.recap-points{margin:0;padding:0 0 0 18px}.recap-points li{margin:6px 0;color:#0f172a}.recap-watch{margin:14px 0 0;padding:11px 13px;border-radius:11px;background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;font-size:14px}.recap-watch strong{color:#c2410c}
 .diagram svg{width:100%;height:auto;display:block}.diagram svg.moody-chart{min-height:280px}

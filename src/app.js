@@ -1,9 +1,14 @@
 import { solve, isClose } from "./solvers.js";
 import { drawFigure } from "./diagrams.js";
 import { courseRecap } from "./recaps.js";
+import { chapterCourse } from "./courses.js";
+import { BANDS, generateChapterSet, generatePapers } from "./bank.js";
 
 const app = document.querySelector("#app");
-const state = { catalog: null, exercise: null, mode: "learn", data: {}, attempts: {}, timer: null, seconds: 0, installPrompt: null };
+const state = {
+  catalog: null, exercise: null, mode: "learn", data: {}, attempts: {}, timer: null, seconds: 0, installPrompt: null,
+  returnTo: null, proposed: null, paper: null, papers: null, examKind: "controle", examChapters: [], countdown: false
+};
 const modes = { learn: "Apprentissage", train: "Entraînement", exam: "Examen" };
 const pedagogy = {
   tvaTtc: { hypotheses: "Le taux de TVA t s’applique au prix hors taxes.", why: ["Le coefficient 1 + t/100 transforme le H.T. en T.T.C."], check: "Le T.T.C. doit être supérieur au H.T." },
@@ -80,38 +85,154 @@ const equationSheets = {
 const esc = value => String(value).replace(/[&<>'"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[c]));
 const parse = value => Number(String(value).trim().replace(",", ".").replace(/\s/g, ""));
 const randomValue = v => Number((Math.round((v.min + Math.random() * (v.max - v.min)) / v.step) * v.step).toFixed(8));
-const formatTime = seconds => `${String(Math.floor(seconds / 60)).padStart(2, "0")}:${String(seconds % 60).padStart(2, "0")}`;
+const formatTime = seconds => {
+  const s = Math.max(0, Math.floor(seconds));
+  const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), sec = s % 60;
+  return h > 0 ? `${h}:${String(m).padStart(2, "0")}:${String(sec).padStart(2, "0")}` : `${String(m).padStart(2, "0")}:${String(sec).padStart(2, "0")}`;
+};
 const toast = text => { const el = document.querySelector("#toast"); el.textContent = text; el.classList.add("show"); setTimeout(() => el.classList.remove("show"), 1800); };
+const bandLabel = id => BANDS.find(b => b.id === id)?.label || id;
+
+function inPaper() { return state.returnTo === "paper" && state.paper; }
 
 function home() {
-  stopTimer(); state.exercise = null;
+  stopTimer();
+  state.exercise = null;
+  state.returnTo = null;
+  state.paper = null;
   const total = state.catalog.exercises.length;
-  app.innerHTML = `<section class="hero"><p class="eyebrow">Mathématiques · 2ème année secondaire</p><h1>Comprendre, calculer, vérifier.</h1><p>Des exercices paramétriques fidèles au manuel CNP (tome 1), avec correction raisonnée et trois modes de travail.</p><div class="signature">École Nationale d’Ingénieurs de Sfax<br><strong>Dr Ahmed Ksentini</strong></div></section><div class="section-title"><div><h2>Choisir un chapitre</h2><p>${total} exercices paramétriques, alignés sur le tome 1 (Sciences et TI).</p></div></div><section class="chapter-grid">${state.catalog.chapters.map(ch => { const count = state.catalog.exercises.filter(e => e.chapter === ch.id).length; return `<button class="chapter" data-chapter="${ch.id}"><span class="num">${ch.number}</span><h3>${esc(ch.title)}</h3><p>${esc(ch.description)}</p><span class="count">${count} exercice${count > 1 ? "s" : ""} →</span></button>`; }).join("")}</section>`;
+  app.innerHTML = `<section class="hero"><p class="eyebrow">Mathématiques · 2ème année secondaire</p><h1>Comprendre, calculer, vérifier.</h1><p>Des exercices paramétriques fidèles au manuel CNP (tome 1), avec correction raisonnée et trois modes de travail.</p><div class="signature">École Nationale d’Ingénieurs de Sfax<br><strong>Dr Ahmed Ksentini</strong></div></section>
+  <div class="exam-launch"><button class="exam-launch-btn" id="makeControle"><strong>Devoirs surveillés</strong><span>Mi-trimestre · 1 h · 3 à 5 exercices</span></button><button class="exam-launch-btn" id="makeSynthese"><strong>Devoirs de synthèse</strong><span>Fin de trimestre · 2 h · 4 à 5 exercices</span></button></div>
+  <div class="section-title"><div><h2>Choisir un chapitre</h2><p>${total} exercices du manuel, plus 40 exercices générés par chapitre (faciles, moyens, difficiles, casse-tête).</p></div></div>
+  <section class="chapter-grid">${state.catalog.chapters.map(ch => { const count = state.catalog.exercises.filter(e => e.chapter === ch.id).length; return `<button class="chapter" data-chapter="${ch.id}"><span class="num">${ch.number}</span><h3>${esc(ch.title)}</h3><p>${esc(ch.description)}</p><span class="count">${count} exercice${count > 1 ? "s" : ""} du manuel →</span></button>`; }).join("")}</section>`;
   document.querySelectorAll("[data-chapter]").forEach(button => button.addEventListener("click", () => chapterPage(button.dataset.chapter)));
+  document.querySelector("#makeControle").addEventListener("click", () => examSetup("controle"));
+  document.querySelector("#makeSynthese").addEventListener("click", () => examSetup("synthese"));
   history.replaceState({}, "", location.pathname);
+}
+
+function courseHtml(chapterId) {
+  const course = chapterCourse(chapterId);
+  return `<article class="card course-block"><p class="recap-kicker">Cours détaillé</p><h2>${esc(course.title)}</h2><p class="recap-lead">${esc(course.lead)}</p>${course.sections.map(s => `<section class="course-section"><h3>${esc(s.title)}</h3><p>${esc(s.text)}</p></section>`).join("")}</article>`;
 }
 
 function chapterPage(chapterId) {
   const chapter = state.catalog.chapters.find(c => c.id === chapterId);
   const exercises = state.catalog.exercises.filter(e => e.chapter === chapterId);
-  app.innerHTML = `<button class="back" id="backHome">← Tous les chapitres</button><section class="chapter-banner"><span class="num">${chapter.number}</span><div><h1>${esc(chapter.title)}</h1><p>${esc(chapter.description)}</p></div></section><div class="section-title"><div><h2>Exercices</h2><p>Choisissez une situation puis un mode de travail.</p></div></div><section class="exercise-list">${exercises.map((e, i) => `<button class="exercise-card" data-exercise="${e.id}"><span class="exercise-index">${String(i + 1).padStart(2, "0")}</span><span><strong>${esc(e.title)}</strong><small>Niveau ${e.difficulty} · données paramétriques</small></span><span class="arrow">→</span></button>`).join("")}</section>`;
+  app.innerHTML = `<button class="back" id="backHome">← Tous les chapitres</button>
+    <section class="chapter-banner"><span class="num">${chapter.number}</span><div><h1>${esc(chapter.title)}</h1><p>${esc(chapter.description)}</p></div></section>
+    ${courseHtml(chapterId)}
+    <div class="propose-cta"><button class="primary" id="propose">Proposer des exercices</button><p>10 faciles, 10 moyens, 10 difficiles et 10 casse-tête, avec le même schéma : rappel, équations, énoncé, réponses.</p></div>
+    <div class="section-title"><div><h2>Exercices du manuel</h2><p>Choisissez une situation puis un mode de travail.</p></div></div>
+    <section class="exercise-list">${exercises.map((e, i) => `<button class="exercise-card" data-exercise="${e.id}"><span class="exercise-index">${String(i + 1).padStart(2, "0")}</span><span><strong>${esc(e.title)}</strong><small>Niveau ${e.difficulty} · données paramétriques</small></span><span class="arrow">→</span></button>`).join("")}</section>`;
   document.querySelector("#backHome").addEventListener("click", home);
-  document.querySelectorAll("[data-exercise]").forEach(b => b.addEventListener("click", () => openExercise(state.catalog.exercises.find(e => e.id === b.dataset.exercise))));
+  document.querySelector("#propose").addEventListener("click", () => proposePage(chapterId, true));
+  document.querySelectorAll("[data-exercise]").forEach(b => b.addEventListener("click", () => {
+    state.returnTo = "chapter";
+    openExercise(state.catalog.exercises.find(e => e.id === b.dataset.exercise));
+  }));
 }
 
-function openExercise(exercise, mode = state.mode) {
-  stopTimer(); state.exercise = exercise; state.mode = mode; state.attempts = {};
-  state.data = Object.fromEntries(exercise.variables.map(v => [v.key, mode === "learn" ? v.value : randomValue(v)]));
+function proposePage(chapterId, fresh = false) {
+  if (fresh || !state.proposed || state.proposed.chapterId !== chapterId) {
+    state.proposed = { chapterId, set: generateChapterSet(chapterId) };
+  }
+  const chapter = state.catalog.chapters.find(c => c.id === chapterId);
+  const set = state.proposed.set;
+  app.innerHTML = `<button class="back" id="backChapter">← Cours du chapitre</button>
+    <section class="chapter-banner"><span class="num">${chapter.number}</span><div><h1>Exercices proposés</h1><p>${esc(chapter.title)} — 40 situations générées, même schéma de travail que le manuel.</p></div></section>
+    <div class="actions propose-tools"><button class="secondary" id="refreshSet">↻ Nouveau tirage</button></div>
+    <div class="band-grid">${BANDS.map(band => `
+      <section class="band-block ${band.id}"><h2>${esc(band.label)} <small>10 exercices</small></h2>
+      <div class="exercise-list">${set[band.id].map((e, i) => `<button class="exercise-card" data-band="${band.id}" data-index="${i}"><span class="exercise-index">${String(i + 1).padStart(2, "0")}</span><span><strong>${esc(e.title)}</strong><small>${esc(e.statement)}</small></span><span class="arrow">→</span></button>`).join("")}</div></section>`).join("")}</div>`;
+  document.querySelector("#backChapter").addEventListener("click", () => chapterPage(chapterId));
+  document.querySelector("#refreshSet").addEventListener("click", () => proposePage(chapterId, true));
+  document.querySelectorAll("[data-band]").forEach(b => b.addEventListener("click", () => {
+    state.returnTo = "propose";
+    openExercise(set[b.dataset.band][Number(b.dataset.index)]);
+  }));
+}
+
+function examSetup(kind) {
+  state.examKind = kind;
+  const duration = kind === "synthese" ? "2 h" : "1 h";
+  const title = kind === "synthese" ? "Devoirs de synthèse" : "Devoirs surveillés";
+  const selected = new Set(state.examChapters.length ? state.examChapters : state.catalog.chapters.map(c => c.id));
+  app.innerHTML = `<button class="back" id="backHome">← Accueil</button>
+    <section class="chapter-banner"><span class="num">${kind === "synthese" ? "Σ" : "DS"}</span><div><h1>${title}</h1><p>L’élève connaît les chapitres au programme. Cochez-les, puis générez 2 sujets faciles, 2 moyens et 2 difficiles (${duration}, ${kind === "synthese" ? "4 à 5" : "3 à 5"} exercices chacun).</p></div></section>
+    <article class="card"><h2>Chapitres au programme</h2><div class="chapter-picks">${state.catalog.chapters.map(ch => `<label><input type="checkbox" data-ch="${ch.id}" ${selected.has(ch.id) ? "checked" : ""}><span><strong>${ch.number}. ${esc(ch.title)}</strong></span></label>`).join("")}</div>
+    <div class="actions"><button class="secondary" id="pickAll">Tout cocher</button><button class="secondary" id="pickNone">Tout décocher</button><button class="primary" id="buildPapers">Générer les 6 sujets</button></div></article>`;
+  document.querySelector("#backHome").addEventListener("click", home);
+  const boxes = () => [...document.querySelectorAll("[data-ch]")];
+  document.querySelector("#pickAll").addEventListener("click", () => boxes().forEach(b => { b.checked = true; }));
+  document.querySelector("#pickNone").addEventListener("click", () => boxes().forEach(b => { b.checked = false; }));
+  document.querySelector("#buildPapers").addEventListener("click", () => {
+    const ids = boxes().filter(b => b.checked).map(b => b.dataset.ch);
+    if (!ids.length) { toast("Cochez au moins un chapitre."); return; }
+    state.examChapters = ids;
+    state.papers = generatePapers(kind, ids);
+    paperList();
+  });
+}
+
+function paperList() {
+  const kind = state.examKind;
+  const title = kind === "synthese" ? "Devoirs de synthèse" : "Devoirs surveillés";
+  app.innerHTML = `<button class="back" id="backSetup">← Chapitres au programme</button>
+    <div class="section-title"><div><h2>${title}</h2><p>Deux sujets par niveau. Compte à rebours ${kind === "synthese" ? "2 h" : "1 h"} dès le début de l’épreuve. Le rappel de cours est masqué, les équations restent visibles.</p></div></div>
+    <section class="paper-grid">${state.papers.map((p, i) => `<button class="paper-card ${p.band}" data-paper="${i}"><span class="paper-level">${esc(bandLabel(p.band))}</span><h3>${esc(p.title)}</h3><p>${p.exercises.length} exercices · ${p.durationLabel}</p><small>${p.exercises.map(e => e.title).join(" · ")}</small></button>`).join("")}</section>`;
+  document.querySelector("#backSetup").addEventListener("click", () => examSetup(kind));
+  document.querySelectorAll("[data-paper]").forEach(b => b.addEventListener("click", () => startPaper(state.papers[Number(b.dataset.paper)])));
+}
+
+function startPaper(paper) {
+  stopTimer();
+  state.paper = { ...paper, index: 0, answers: {}, remaining: paper.duration };
+  state.seconds = paper.duration;
+  state.returnTo = "paper";
+  openExercise(paper.exercises[0], "exam", { fixed: true, keepTimer: false });
+}
+
+function openExercise(exercise, mode = state.mode, options = {}) {
+  if (inPaper() && state.exercise) savePaperAnswers();
+  if (!inPaper()) stopTimer();
+  state.exercise = exercise;
+  state.mode = inPaper() ? "exam" : mode;
+  state.attempts = {};
+  const fixed = inPaper() || options.fixed || state.mode === "learn";
+  state.data = Object.fromEntries(exercise.variables.map(v => [v.key, fixed ? v.value : randomValue(v)]));
   renderExercise();
-  if (mode === "exam") startTimer();
-  history.replaceState({}, "", `#${exercise.id}`);
+  if (inPaper()) {
+    startCountdown(state.paper.remaining ?? state.paper.duration);
+    restorePaperAnswers();
+  } else if (state.mode === "exam") startTimer();
+  if (exercise.generated) history.replaceState({}, "", location.pathname);
+  else history.replaceState({}, "", `#${exercise.id}`);
+}
+
+function recapHtml(e) {
+  if (state.mode === "exam") return "";
+  const recap = courseRecap(e.solver);
+  const details = recap.details?.length ? `<div class="recap-details">${recap.details.map(d => `<p>${esc(d)}</p>`).join("")}</div>` : "";
+  return `<article class="card recap-card"><p class="recap-kicker">Rappel de cours</p><h2>${esc(recap.title)}</h2><p class="recap-lead">${esc(recap.lead)}</p><ul class="recap-points">${recap.points.map(p => `<li>${esc(p)}</li>`).join("")}</ul>${details}<p class="recap-watch"><strong>Piège fréquent.</strong> ${esc(recap.watch)}</p></article>`;
+}
+
+function paperNavHtml() {
+  if (!inPaper()) return "";
+  const n = state.paper.exercises.length;
+  const i = state.paper.exercises.findIndex(e => e.id === state.exercise.id);
+  state.paper.index = i < 0 ? 0 : i;
+  return `<div class="paper-nav"><button class="secondary" id="prevEx" ${i <= 0 ? "disabled" : ""}>← Précédent</button><span>Exercice ${i + 1} / ${n} · ${esc(state.paper.title)}</span><button class="secondary" id="nextEx" ${i >= n - 1 ? "disabled" : ""}>Suivant →</button><button class="primary" id="renderPaper">Rendre le devoir</button></div>`;
 }
 
 function renderExercise() {
   const e = state.exercise, chapter = state.catalog.chapters.find(c => c.id === e.chapter);
-  const recap = courseRecap(e.solver);
-  const recapHtml = state.mode === "exam" ? "" : `<article class="card recap-card"><p class="recap-kicker">Rappel de cours</p><h2>${esc(recap.title)}</h2><p class="recap-lead">${esc(recap.lead)}</p><ul class="recap-points">${recap.points.map(p => `<li>${esc(p)}</li>`).join("")}</ul><p class="recap-watch"><strong>Piège fréquent.</strong> ${esc(recap.watch)}</p></article>`;
-  app.innerHTML = `<section class="exercise-head"><div><button class="back" id="back">← Exercices du chapitre</button><h1>${esc(e.title)}</h1><p>Chapitre ${chapter.number} · Niveau ${e.difficulty}</p></div><div><div class="mode-switch" aria-label="Mode de travail">${Object.entries(modes).map(([key, label]) => `<button data-mode="${key}" class="${state.mode === key ? "active" : ""}">${label}</button>`).join("")}</div><div id="clock" class="exam-clock">${state.mode === "exam" ? "Temps 00:00" : ""}</div></div></section><section class="workspace"><div><article class="card"><h2>Schéma de l’exercice</h2><div class="diagram" id="diagram"></div><p class="diagram-note" id="diagramNote"></p></article>${recapHtml}<article class="card"><h2>Énoncé</h2><p class="statement">${esc(e.statement)}</p><div class="data-grid">${e.variables.map(v => `<div class="field"><label for="v_${v.key}">${esc(v.label)}</label><div class="input-wrap"><input id="v_${v.key}" data-variable="${v.key}" type="number" step="any" value="${state.data[v.key]}" ${state.mode === "exam" ? "readonly" : ""}><span class="unit">${v.unit}</span></div></div>`).join("")}</div><div class="actions">${state.mode !== "learn" ? `<button class="secondary" id="randomize">↻ Nouvelles données</button>` : ""}</div></article></div><div><article class="card"><h2>${state.mode === "exam" ? "Votre copie" : "Résolution guidée"}</h2><div id="questions">${e.questions.map((q, i) => question(q, i)).join("")}</div><div class="actions"><button class="primary" id="submitAll">${state.mode === "exam" ? "Rendre la copie" : "Tout vérifier"}</button>${state.mode !== "exam" ? `<button class="secondary" id="showCorrection">Voir la correction</button>` : ""}</div><div id="score"></div></article><article class="card correction" id="correction" hidden></article></div></section>`;
+  const backLabel = inPaper() ? "← Sujets" : state.returnTo === "propose" ? "← Exercices proposés" : "← Exercices du chapitre";
+  const modeSwitch = inPaper() ? "" : `<div class="mode-switch" aria-label="Mode de travail">${Object.entries(modes).map(([key, label]) => `<button data-mode="${key}" class="${state.mode === key ? "active" : ""}">${label}</button>`).join("")}</div>`;
+  const clockText = inPaper() ? `Reste ${formatTime(state.seconds)}` : state.mode === "exam" ? "Temps 00:00" : "";
+  app.innerHTML = `<section class="exercise-head"><div><button class="back" id="back">${backLabel}</button><h1>${esc(e.title)}</h1><p>Chapitre ${chapter.number} · Niveau ${e.difficulty}${e.band ? " · " + bandLabel(e.band) : ""}</p>${paperNavHtml()}</div><div>${modeSwitch}<div id="clock" class="exam-clock">${clockText}</div></div></section>
+    <section class="workspace"><div><article class="card"><h2>Schéma de l’exercice</h2><div class="diagram" id="diagram"></div><p class="diagram-note" id="diagramNote"></p></article>${recapHtml(e)}<article class="card"><h2>Énoncé</h2><p class="statement">${esc(e.statement)}</p><div class="data-grid">${e.variables.map(v => `<div class="field"><label for="v_${v.key}">${esc(v.label)}</label><div class="input-wrap"><input id="v_${v.key}" data-variable="${v.key}" type="number" step="any" value="${state.data[v.key]}" ${state.mode === "exam" ? "readonly" : ""}><span class="unit">${v.unit}</span></div></div>`).join("")}</div><div class="actions">${state.mode !== "learn" && !inPaper() ? `<button class="secondary" id="randomize">↻ Nouvelles données</button>` : ""}</div></article></div>
+    <div><article class="card"><h2>${state.mode === "exam" ? "Votre copie" : "Résolution guidée"}</h2><div id="questions">${e.questions.map((q, i) => question(q, i)).join("")}</div><div class="actions">${inPaper() ? "" : `<button class="primary" id="submitAll">${state.mode === "exam" ? "Rendre la copie" : "Tout vérifier"}</button>`}${state.mode !== "exam" ? `<button class="secondary" id="showCorrection">Voir la correction</button>` : ""}</div><div id="score"></div></article><article class="card correction" id="correction" hidden></article></div></section>`;
   const formulas = equationSheets[e.solver] || ["Consulter la synthèse du chapitre et écrire la relation littérale."];
   app.querySelector(".workspace > div:nth-child(2)").insertAdjacentHTML("afterbegin", `<article class="card equation-card"><h2>Équations utiles</h2><p class="equation-intro">Rappel littéral — identifiez chaque grandeur avant de remplacer les valeurs.</p>${formulas.map(f => `<div class="equation-line">${esc(f)}</div>`).join("")}</article>`);
   bindExerciseEvents();
@@ -139,13 +260,81 @@ function showCorrection() {
   box.hidden = false; box.innerHTML = `<h2>Correction détaillée</h2><section class="reasoning"><h3>1. Hypothèses et modèle</h3><p>${esc(guide.hypotheses)}</p></section><section class="given-data"><h3>2. Données de l’énoncé</h3><div class="data-summary">${state.exercise.variables.map(v => `<span><small>${esc(v.label)}</small><strong>${esc(state.data[v.key])} ${v.unit}</strong></span>`).join("")}</div><p class="method-note">Avant tout calcul, on écrit la relation littérale du cours, on identifie chaque grandeur, puis on substitue.</p></section><h3>3. Résolution raisonnée</h3>${result.steps.map((s, i) => `<div class="solution-step" data-step="${i + 1}"><h3>${esc(s[0])}</h3>${guide.why[i] ? `<p class="explanation">${esc(guide.why[i])}</p>` : ""}<p class="formula">${esc(s[1]).replace(/\n/g, "<br>")}</p></div>`).join("")}<div class="final-result"><strong>4. Résultats numériques</strong><br>${state.exercise.questions.map(q => `${esc(q.label)} = <strong>${Number(result.values[q.key]).toLocaleString("fr-FR", { maximumSignificantDigits: 5 })} ${q.unit}</strong>`).join("<br>")}</div><section class="sanity-check"><h3>5. Interprétation et contrôle</h3><p>${esc(guide.check)}</p><p>Conserver davantage de chiffres pendant le calcul et n’arrondir qu’à la fin. La virgule décimale est acceptée à la saisie.</p></section>`; box.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 function bindExerciseEvents() {
-  document.querySelector("#back").addEventListener("click", () => chapterPage(state.exercise.chapter));
+  document.querySelector("#back").addEventListener("click", goBack);
   document.querySelectorAll("[data-mode]").forEach(b => b.addEventListener("click", () => openExercise(state.exercise, b.dataset.mode)));
   document.querySelectorAll("[data-variable]").forEach(input => input.addEventListener("input", () => { readData(); refreshDiagram(); document.querySelector("#correction").hidden = true; }));
   document.querySelectorAll("[data-check]").forEach(b => b.addEventListener("click", () => check(b.dataset.check)));
-  document.querySelector("#submitAll").addEventListener("click", submitAll);
+  document.querySelector("#submitAll")?.addEventListener("click", submitAll);
   document.querySelector("#showCorrection")?.addEventListener("click", showCorrection);
   document.querySelector("#randomize")?.addEventListener("click", () => openExercise(state.exercise, state.mode));
+  document.querySelector("#prevEx")?.addEventListener("click", () => shiftPaper(-1));
+  document.querySelector("#nextEx")?.addEventListener("click", () => shiftPaper(1));
+  document.querySelector("#renderPaper")?.addEventListener("click", () => gradePaper(false));
+}
+
+function goBack() {
+  if (inPaper()) {
+    savePaperAnswers();
+    stopTimer();
+    state.paper = null;
+    state.returnTo = "papers";
+    paperList();
+    return;
+  }
+  if (state.returnTo === "propose" && state.proposed) { proposePage(state.proposed.chapterId, false); return; }
+  if (state.exercise) chapterPage(state.exercise.chapter);
+  else home();
+}
+
+function shiftPaper(delta) {
+  if (!inPaper()) return;
+  savePaperAnswers();
+  const next = state.paper.index + delta;
+  if (next < 0 || next >= state.paper.exercises.length) return;
+  state.paper.index = next;
+  openExercise(state.paper.exercises[next], "exam", { fixed: true, keepTimer: true });
+}
+
+function savePaperAnswers() {
+  if (!inPaper() || !state.exercise) return;
+  const answers = {};
+  state.exercise.questions.forEach(q => {
+    const input = document.querySelector(`#a_${q.key}`);
+    if (input) answers[q.key] = input.value;
+  });
+  state.paper.answers[state.exercise.id] = answers;
+}
+
+function restorePaperAnswers() {
+  const saved = state.paper?.answers[state.exercise.id];
+  if (!saved) return;
+  Object.entries(saved).forEach(([key, value]) => {
+    const input = document.querySelector(`#a_${key}`);
+    if (input) input.value = value;
+  });
+}
+
+function gradePaper(auto) {
+  savePaperAnswers();
+  stopTimer();
+  const results = state.paper.exercises.map(ex => {
+    const data = Object.fromEntries(ex.variables.map(v => [v.key, v.value]));
+    const solved = solve(ex, data);
+    const saved = state.paper.answers[ex.id] || {};
+    const checks = ex.questions.map(q => ({ q, ok: isClose(parse(saved[q.key] ?? ""), solved.values[q.key]), target: solved.values[q.key], given: saved[q.key] ?? "" }));
+    return { ex, checks, correct: checks.filter(c => c.ok).length, total: checks.length };
+  });
+  const correct = results.reduce((s, r) => s + r.correct, 0);
+  const total = results.reduce((s, r) => s + r.total, 0);
+  const score = total ? 20 * correct / total : 0;
+  const chapter = id => state.catalog.chapters.find(c => c.id === id)?.number ?? "";
+  app.innerHTML = `<button class="back" id="backPapers">← Les 6 sujets</button>
+    <section class="chapter-banner"><span class="num">${auto ? "⏱" : "✓"}</span><div><h1>${esc(state.paper.title)}</h1><p>${auto ? "Temps écoulé — copie rendue automatiquement." : "Devoir rendu."} Score ${correct}/${total} soit ${score.toLocaleString("fr-FR", { maximumFractionDigits: 1 })}/20.</p></div></section>
+    <section class="paper-results">${results.map((r, i) => `<article class="card"><h2>Exercice ${i + 1}. ${esc(r.ex.title)}</h2><p>Chapitre ${chapter(r.ex.chapter)} · ${r.correct}/${r.total}</p>${r.checks.map(c => `<p class="feedback ${c.ok ? "good" : "bad"}">${esc(c.q.label)} : ${c.ok ? "correct" : `votre réponse « ${esc(c.given) || "—"} » — attendu ${Number(c.target).toLocaleString("fr-FR", { maximumSignificantDigits: 5 })} ${c.q.unit}`}</p>`).join("")}</article>`).join("")}</section>
+    <div class="actions"><button class="primary" id="backPapers2">Retour aux sujets</button></div>`;
+  const back = () => { state.paper = null; state.returnTo = null; paperList(); };
+  document.querySelector("#backPapers").addEventListener("click", back);
+  document.querySelector("#backPapers2").addEventListener("click", back);
 }
 
 function refreshDiagram() {
@@ -157,14 +346,48 @@ function refreshDiagram() {
   if (note) note.textContent = figure.caption;
 }
 
-function startTimer() { state.seconds = 0; state.timer = setInterval(() => { state.seconds++; const clock = document.querySelector("#clock"); if (clock) clock.textContent = `Temps ${formatTime(state.seconds)}`; }, 1000); }
+function paintClock() {
+  const clock = document.querySelector("#clock");
+  if (!clock) return;
+  if (inPaper()) {
+    clock.textContent = `Reste ${formatTime(state.seconds)}`;
+    clock.classList.toggle("warn", state.seconds < 300);
+  } else {
+    clock.textContent = `Temps ${formatTime(state.seconds)}`;
+  }
+}
+
+function startTimer() {
+  state.countdown = false;
+  state.seconds = 0;
+  paintClock();
+  state.timer = setInterval(() => { state.seconds++; paintClock(); }, 1000);
+}
+
+function startCountdown(limit) {
+  state.countdown = true;
+  if (!state.timer) state.seconds = Math.max(0, limit ?? state.paper?.remaining ?? 0);
+  paintClock();
+  if (state.timer) return;
+  state.timer = setInterval(() => {
+    state.seconds--;
+    if (state.paper) state.paper.remaining = state.seconds;
+    paintClock();
+    if (state.seconds <= 0) {
+      stopTimer();
+      toast("Temps écoulé — le devoir est rendu.");
+      gradePaper(true);
+    }
+  }, 1000);
+}
+
 function stopTimer() { clearInterval(state.timer); state.timer = null; }
 
 document.querySelector("#homeButton").addEventListener("click", home);
 window.addEventListener("hashchange", () => {
   if (!state.catalog) return;
   const requested = state.catalog.exercises.find(e => `#${e.id}` === location.hash);
-  if (requested) openExercise(requested);
+  if (requested) { state.returnTo = "chapter"; openExercise(requested); }
   else if (!location.hash) home();
 });
 window.addEventListener("beforeinstallprompt", event => { event.preventDefault(); state.installPrompt = event; const b = document.querySelector("#installButton"); b.hidden = false; b.onclick = async () => { await state.installPrompt.prompt(); b.hidden = true; }; });
@@ -183,5 +406,3 @@ try {
 } catch {
   app.innerHTML = `<section class="card"><h1>Chargement impossible</h1><p>Lancez l’application depuis un serveur web local ou depuis Cloudflare Pages.</p></section>`;
 }
-
-void toast;
