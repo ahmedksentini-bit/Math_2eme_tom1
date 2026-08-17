@@ -26,13 +26,25 @@ const PROPS = {
 function puppet({ fill, belly = "#fff7fb", inner = "#fecdd3", ear = "round", prop = "none", snout = false }) {
   const earFn = EARS[ear] || EARS.round;
   const ears = earFn.length > 1 ? earFn(fill, inner) : earFn(fill);
+  const restMouth = snout
+    ? `<ellipse cx="40" cy="56" rx="6" ry="4" fill="${inner}"/><circle cx="40" cy="55" r="1.6" fill="#3f1726"/><path d="M36 60q4 3 8 0" fill="none" stroke="#3f1726" stroke-width="1.4" stroke-linecap="round"/>`
+    : `<path d="M36 58q4 4.5 8 0" fill="none" stroke="#3f1726" stroke-width="1.7" stroke-linecap="round"/>`;
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 88" aria-hidden="true">${ears}
     <ellipse cx="40" cy="50" rx="26" ry="28" fill="${fill}"/>
     <ellipse cx="40" cy="58" rx="16" ry="14" fill="${belly}"/>
-    <circle cx="31" cy="46" r="6.2" fill="#fff"/><circle cx="49" cy="46" r="6.2" fill="#fff"/>
-    <circle cx="33" cy="47.2" r="2.7" fill="#3f1726"/><circle cx="51" cy="47.2" r="2.7" fill="#3f1726"/>
-    <ellipse cx="24" cy="54" rx="4.2" ry="2.3" fill="#fb7185" opacity=".55"/><ellipse cx="56" cy="54" rx="4.2" ry="2.3" fill="#fb7185" opacity=".55"/>
-    ${snout ? `<ellipse cx="40" cy="56" rx="6" ry="4" fill="${inner}"/><circle cx="40" cy="55" r="1.6" fill="#3f1726"/>` : `<path d="M36 58q4 4.5 8 0" fill="none" stroke="#3f1726" stroke-width="1.7" stroke-linecap="round"/>`}
+    <g class="face-rest">
+      <circle cx="31" cy="46" r="6.2" fill="#fff"/><circle cx="49" cy="46" r="6.2" fill="#fff"/>
+      <circle cx="33" cy="47.2" r="2.7" fill="#3f1726"/><circle cx="51" cy="47.2" r="2.7" fill="#3f1726"/>
+      <ellipse cx="24" cy="54" rx="4.2" ry="2.3" fill="#fb7185" opacity=".55"/><ellipse cx="56" cy="54" rx="4.2" ry="2.3" fill="#fb7185" opacity=".55"/>
+      ${restMouth}
+    </g>
+    <g class="face-happy">
+      <path d="M25 45q6 7 12 0" fill="none" stroke="#3f1726" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M43 45q6 7 12 0" fill="none" stroke="#3f1726" stroke-width="2.2" stroke-linecap="round"/>
+      <ellipse cx="22" cy="55" rx="5.2" ry="3" fill="#fb7185" opacity=".9"/><ellipse cx="58" cy="55" rx="5.2" ry="3" fill="#fb7185" opacity=".9"/>
+      <path d="M27 58q13 14 26 0" fill="none" stroke="#3f1726" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M32 61q8 8 16 0" fill="#ff8fab" opacity=".45"/>
+    </g>
     ${PROPS[prop] || ""}</svg>`;
 }
 
@@ -131,8 +143,10 @@ function uniqueFrom(list, seed, count) {
   return out;
 }
 
-function slot(html, cls, style) {
-  return `<div class="friend ${cls}" style="${style}">${html}</div>`;
+function slot(html, cls, style, smile = false) {
+  const tag = smile ? "button" : "div";
+  const extra = smile ? ` type="button" class="friend friend-hit ${cls}" aria-label="Mascotte, clique pour la faire sourire"` : ` class="friend ${cls}"`;
+  return `<${tag}${extra} style="${style}">${html}</${tag}>`;
 }
 
 function viewKey() {
@@ -154,18 +168,18 @@ function paint() {
   const delay = i => `${((seed >> (i % 8)) % 12) / 10}s`;
 
   bar.innerHTML = [
-    slot(mascots[0].html, `${m(0)} friend-inline`, `animation-delay:${delay(0)}`),
-    slot(mascots[1].html, `${m(1)} friend-inline`, `animation-delay:${delay(1)}`)
+    slot(mascots[0].html, `${m(0)} friend-inline`, `animation-delay:${delay(0)}`, true),
+    slot(mascots[1].html, `${m(1)} friend-inline`, `animation-delay:${delay(1)}`, true)
   ].join("");
 
   dock.innerHTML = [
-    slot(mascots[2].html, m(2), `left:10px;bottom:4px;animation-delay:${delay(2)}`),
-    slot(mascots[3].html, m(3), `right:10px;bottom:4px;animation-delay:${delay(3)}`)
+    slot(mascots[2].html, m(2), `left:10px;bottom:4px;animation-delay:${delay(2)}`, true),
+    slot(mascots[3].html, m(3), `right:10px;bottom:4px;animation-delay:${delay(3)}`, true)
   ].join("");
 
   pins.innerHTML = [
-    slot(mascots[4].html, m(4), `top:76px;left:8px;animation-delay:${delay(4)}`),
-    slot(mascots[5].html, m(5), `top:76px;right:8px;animation-delay:${delay(5)}`)
+    slot(mascots[4].html, m(4), `top:76px;left:8px;animation-delay:${delay(4)}`, true),
+    slot(mascots[5].html, m(5), `top:76px;right:8px;animation-delay:${delay(5)}`, true)
   ].join("");
 
   left.innerHTML = [
@@ -187,17 +201,25 @@ export function startFriends() {
   const actions = document.querySelector(".header-actions");
   const bar = document.createElement("div");
   bar.id = "friends-bar";
-  bar.setAttribute("aria-hidden", "true");
   if (header && actions) header.insertBefore(bar, actions);
   else document.body.appendChild(bar);
 
   const root = document.createElement("div");
   root.id = "friends-root";
-  root.setAttribute("aria-hidden", "true");
   root.innerHTML = `<div id="friends-pins"></div><div id="friends-gutter-l" class="friends-gutter"></div><div id="friends-gutter-r" class="friends-gutter"></div><div id="friends-dock"></div>`;
   document.body.appendChild(root);
   document.body.classList.add("has-friends");
   paint();
+  document.addEventListener("click", event => {
+    const hit = event.target.closest(".friend-hit");
+    if (!hit) return;
+    event.preventDefault();
+    hit.classList.remove("is-happy");
+    void hit.offsetWidth;
+    hit.classList.add("is-happy");
+    clearTimeout(hit._smile);
+    hit._smile = setTimeout(() => hit.classList.remove("is-happy"), 1600);
+  });
   const app = document.querySelector("#app");
   let t = 0;
   const schedule = () => {
