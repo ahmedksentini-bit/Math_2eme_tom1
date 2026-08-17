@@ -45,6 +45,27 @@ function puppet({ fill, belly = "#fff7fb", inner = "#fecdd3", ear = "round", pro
       <path d="M27 58q13 14 26 0" fill="none" stroke="#3f1726" stroke-width="2.4" stroke-linecap="round"/>
       <path d="M32 61q8 8 16 0" fill="#ff8fab" opacity=".45"/>
     </g>
+    <g class="face-wink">
+      <circle cx="31" cy="46" r="6.2" fill="#fff"/><circle cx="33" cy="47.2" r="2.7" fill="#3f1726"/>
+      <path d="M43 45q6 7 12 0" fill="none" stroke="#3f1726" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M28 58q12 10 24 0" fill="none" stroke="#3f1726" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <g class="face-wow">
+      <circle cx="31" cy="46" r="7" fill="#fff"/><circle cx="49" cy="46" r="7" fill="#fff"/>
+      <circle cx="31" cy="47" r="3.2" fill="#3f1726"/><circle cx="49" cy="47" r="3.2" fill="#3f1726"/>
+      <ellipse cx="40" cy="62" rx="5" ry="6" fill="none" stroke="#3f1726" stroke-width="2"/>
+    </g>
+    <g class="face-sleep">
+      <path d="M25 46q6 4 12 0" fill="none" stroke="#3f1726" stroke-width="2" stroke-linecap="round"/>
+      <path d="M43 46q6 4 12 0" fill="none" stroke="#3f1726" stroke-width="2" stroke-linecap="round"/>
+      <path d="M34 60q6 4 12 0" fill="none" stroke="#3f1726" stroke-width="1.6" stroke-linecap="round"/>
+    </g>
+    <g class="face-tongue">
+      <path d="M25 45q6 7 12 0" fill="none" stroke="#3f1726" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M43 45q6 7 12 0" fill="none" stroke="#3f1726" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M28 57q12 12 24 0" fill="none" stroke="#3f1726" stroke-width="2.2" stroke-linecap="round"/>
+      <ellipse cx="40" cy="66" rx="4.5" ry="5.5" fill="#fb7185"/>
+    </g>
     ${PROPS[prop] || ""}</svg>`;
 }
 
@@ -145,8 +166,101 @@ function uniqueFrom(list, seed, count) {
 
 function slot(html, cls, style, smile = false) {
   const tag = smile ? "button" : "div";
-  const extra = smile ? ` type="button" class="friend friend-hit ${cls}" aria-label="Mascotte, clique pour la faire sourire"` : ` class="friend ${cls}"`;
+  const extra = smile ? ` type="button" class="friend friend-hit ${cls}" aria-label="Mascotte, clique pour une animation"` : ` class="friend ${cls}"`;
   return `<${tag}${extra} style="${style}">${html}</${tag}>`;
+}
+
+const FACES = { happy: "is-happy", wink: "is-wink", wow: "is-wow", sleep: "is-sleep", tongue: "is-tongue" };
+const FACE_CLASSES = Object.values(FACES);
+const REACTIONS = [
+  { id: "smile", face: "happy", burst: "♥", particles: ["♥", "💕"], ms: 1500 },
+  { id: "kiss", face: "happy", burst: "💋", particles: ["♥", "💕", "♥"], ms: 1400 },
+  { id: "wink", face: "wink", burst: "😉", ms: 900 },
+  { id: "tongue", face: "tongue", burst: "😛", ms: 1000 },
+  { id: "surprise", face: "wow", burst: "❗", ms: 800 },
+  { id: "yawn", face: "sleep", burst: "💤", ms: 1400 },
+  { id: "jump", face: "happy", burst: "✦", ms: 900 },
+  { id: "hop", face: "happy", burst: "⬆", ms: 1000 },
+  { id: "bounce", face: "happy", burst: "•", ms: 900 },
+  { id: "spin", face: "wow", burst: "🌟", ms: 1000 },
+  { id: "flip", face: "wow", burst: "✨", ms: 1100 },
+  { id: "cartwheel", face: "wow", burst: "★", ms: 1200 },
+  { id: "roll", face: "sleep", burst: "🌀", ms: 1100 },
+  { id: "tada", face: "happy", burst: "🎉", particles: ["✦", "★", "✧"], ms: 1200 },
+  { id: "shake", face: "wow", burst: "!", ms: 800 },
+  { id: "wobble", face: "tongue", burst: "☺", ms: 1000 },
+  { id: "jello", face: "happy", burst: "◆", ms: 1100 },
+  { id: "rubber", face: "wow", burst: "◎", ms: 1000 },
+  { id: "pulse", face: "happy", burst: "💗", ms: 900 },
+  { id: "heartbeat", face: "happy", burst: "💓", ms: 1000 },
+  { id: "swing", face: "happy", burst: "♪", ms: 1100 },
+  { id: "wave", face: "wink", burst: "✿", ms: 1200 },
+  { id: "nod", face: "happy", burst: "✔", ms: 900 },
+  { id: "nope", face: "wow", burst: "✕", ms: 800 },
+  { id: "giggle", face: "tongue", burst: "😄", ms: 900 },
+  { id: "dance", face: "happy", burst: "🎵", particles: ["♪", "♫", "♬"], ms: 1400 },
+  { id: "inflate", face: "wow", burst: "🎈", ms: 1000 },
+  { id: "pop", face: "happy", burst: "💥", ms: 800 },
+  { id: "spring", face: "happy", burst: "✿", ms: 1000 },
+  { id: "float", face: "sleep", burst: "☁", ms: 1400 },
+  { id: "drop", face: "wow", burst: "⬇", ms: 900 },
+  { id: "zigzag", face: "wink", burst: "⚡", ms: 1000 },
+  { id: "moonwalk", face: "wink", burst: "🌙", ms: 1200 },
+  { id: "fly", face: "happy", burst: "🦋", ms: 1200 },
+  { id: "twist", face: "tongue", burst: "🎀", ms: 1000 },
+  { id: "teeter", face: "wow", burst: "•", ms: 1100 },
+  { id: "peek", face: "wink", burst: "✦", ms: 1000 },
+  { id: "sparkle", face: "happy", burst: "✨", particles: ["✦", "✧", "★", "✩"], ms: 1300 },
+  { id: "bloom", face: "happy", burst: "🌸", particles: ["✿", "❀", "❁"], ms: 1400 },
+  { id: "rainbow", face: "happy", burst: "🌈", particles: ["❤", "💛", "💚", "💙"], ms: 1400 },
+  { id: "stars", face: "wow", burst: "⭐", particles: ["★", "☆", "✮"], ms: 1300 },
+  { id: "notes", face: "happy", burst: "🎶", particles: ["♪", "♫", "♩"], ms: 1300 },
+  { id: "confetti", face: "happy", burst: "🎊", particles: ["◆", "●", "▲", "■"], ms: 1400 },
+  { id: "snow", face: "happy", burst: "❄", particles: ["❄", "❅", "❆"], ms: 1400 },
+  { id: "magic", face: "wink", burst: "✦", particles: ["✦", "✧", "✨"], ms: 1400 },
+  { id: "bow", face: "happy", burst: "🎀", ms: 1000 },
+  { id: "dizzy", face: "wow", burst: "💫", particles: ["★", "☆", "✦"], ms: 1300 },
+  { id: "shrink", face: "wow", burst: "◎", ms: 900 }
+];
+
+const recentReactions = [];
+function pickReaction() {
+  let r, n = 0;
+  do {
+    r = REACTIONS[Math.floor(Math.random() * REACTIONS.length)];
+    n++;
+  } while (recentReactions.includes(r.id) && n < 20);
+  recentReactions.push(r.id);
+  if (recentReactions.length > 10) recentReactions.shift();
+  return r;
+}
+
+function playReaction(hit) {
+  const r = pickReaction();
+  hit.classList.remove("is-reacting", ...FACE_CLASSES);
+  hit.removeAttribute("data-react");
+  hit.querySelectorAll(".react-particle").forEach(node => node.remove());
+  void hit.offsetWidth;
+  hit.dataset.react = r.id;
+  hit.style.setProperty("--burst", `"${r.burst}"`);
+  hit.classList.add("is-reacting");
+  if (r.face && FACES[r.face]) hit.classList.add(FACES[r.face]);
+  (r.particles || []).forEach((glyph, i) => {
+    const span = document.createElement("span");
+    span.className = "react-particle";
+    span.textContent = glyph;
+    const angle = (i / Math.max((r.particles || []).length, 1)) * Math.PI * 2 - Math.PI / 2;
+    span.style.setProperty("--dx", `${Math.round(Math.cos(angle) * 44)}px`);
+    span.style.setProperty("--dy", `${Math.round(Math.sin(angle) * 36 - 8)}px`);
+    span.style.setProperty("--delay", `${i * 40}ms`);
+    hit.appendChild(span);
+  });
+  clearTimeout(hit._reactTimer);
+  hit._reactTimer = setTimeout(() => {
+    hit.classList.remove("is-reacting", ...FACE_CLASSES);
+    hit.removeAttribute("data-react");
+    hit.querySelectorAll(".react-particle").forEach(node => node.remove());
+  }, r.ms);
 }
 
 function viewKey() {
@@ -214,11 +328,7 @@ export function startFriends() {
     const hit = event.target.closest(".friend-hit");
     if (!hit) return;
     event.preventDefault();
-    hit.classList.remove("is-happy");
-    void hit.offsetWidth;
-    hit.classList.add("is-happy");
-    clearTimeout(hit._smile);
-    hit._smile = setTimeout(() => hit.classList.remove("is-happy"), 1600);
+    playReaction(hit);
   });
   const app = document.querySelector("#app");
   let t = 0;
