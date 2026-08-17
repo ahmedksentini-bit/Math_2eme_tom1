@@ -3,6 +3,7 @@ import { drawFigure } from "./diagrams.js";
 import { courseRecap } from "./recaps.js";
 import { chapterCourse } from "./courses.js";
 import { BANDS, generateChapterSet, generatePapers } from "./bank.js";
+import { startFriends } from "./friends.js";
 
 const app = document.querySelector("#app");
 const state = {
@@ -648,3 +649,4 @@ try {
 } catch {
   app.innerHTML = `<section class="card"><h1>Chargement impossible</h1><p>Lancez l’application depuis un serveur web local ou depuis Cloudflare Pages.</p></section>`;
 }
+startFriends();
