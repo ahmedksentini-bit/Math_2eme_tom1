@@ -144,43 +144,57 @@ function paint() {
   const dock = document.getElementById("friends-dock");
   const left = document.getElementById("friends-gutter-l");
   const right = document.getElementById("friends-gutter-r");
-  if (!dock || !left || !right) return;
+  const bar = document.getElementById("friends-bar");
+  const pins = document.getElementById("friends-pins");
+  if (!dock || !left || !right || !bar || !pins) return;
   const seed = hashStr(viewKey());
   const mascots = uniqueFrom(CAST, seed, 8);
   const flies = uniqueFrom(FLUTTERS, seed + 91, 4);
   const m = i => MOTIONS[(seed + i) % MOTIONS.length];
   const delay = i => `${((seed >> (i % 8)) % 12) / 10}s`;
 
+  bar.innerHTML = [
+    slot(mascots[0].html, `${m(0)} friend-inline`, `animation-delay:${delay(0)}`),
+    slot(mascots[1].html, `${m(1)} friend-inline`, `animation-delay:${delay(1)}`)
+  ].join("");
+
   dock.innerHTML = [
-    slot(mascots[0].html, m(0), `left:8px;bottom:2px;animation-delay:${delay(0)}`),
-    slot(mascots[1].html, m(1), `left:90px;bottom:2px;animation-delay:${delay(1)}`),
-    slot(mascots[2].html, m(2), `right:90px;bottom:2px;animation-delay:${delay(2)}`),
-    slot(mascots[3].html, m(3), `right:8px;bottom:2px;animation-delay:${delay(3)}`)
+    slot(mascots[2].html, m(2), `left:10px;bottom:4px;animation-delay:${delay(2)}`),
+    slot(mascots[3].html, m(3), `right:10px;bottom:4px;animation-delay:${delay(3)}`)
+  ].join("");
+
+  pins.innerHTML = [
+    slot(mascots[4].html, m(4), `top:76px;left:8px;animation-delay:${delay(4)}`),
+    slot(mascots[5].html, m(5), `top:76px;right:8px;animation-delay:${delay(5)}`)
   ].join("");
 
   left.innerHTML = [
-    slot(cloudHeart(), "friend-cloud", "top:2%;left:12%;width:72px;height:44px"),
-    slot(flies[0].html, "friend-fly", `top:14%;left:18%;width:56px;animation-delay:${delay(4)}`),
-    slot(mascots[4].html, m(4), `top:28%;left:8%;animation-delay:${delay(5)}`),
-    slot(flies[1].html, "friend-fly-alt", `top:58%;left:22%;width:48px;animation-delay:${delay(6)}`),
-    slot(mascots[5].html, m(5), `bottom:4%;left:4%;animation-delay:${delay(7)}`)
+    slot(cloudHeart(), "friend-cloud", "top:8%;left:12%;width:72px;height:44px"),
+    slot(flies[0].html, "friend-fly", `top:22%;left:18%;width:56px;animation-delay:${delay(4)}`),
+    slot(flies[1].html, "friend-fly-alt", `top:58%;left:22%;width:48px;animation-delay:${delay(6)}`)
   ].join("");
 
   right.innerHTML = [
-    slot(rainbow(), "friend-rainbow", "top:4%;right:6%;width:88px"),
-    slot(mascots[6].html, m(6), `top:22%;right:4%;animation-delay:${delay(0)}`),
-    slot(flies[2].html, "friend-fly", `top:52%;right:10%;width:52px;animation-delay:${delay(2)}`),
-    slot(mascots[7].html, m(7), `bottom:6%;right:2%;animation-delay:${delay(3)}`),
-    slot(flies[3].html, "friend-fly-alt", `bottom:28%;right:18%;width:44px;animation-delay:${delay(1)}`)
+    slot(rainbow(), "friend-rainbow", "top:6%;right:6%;width:88px"),
+    slot(flies[2].html, "friend-fly", `top:40%;right:10%;width:52px;animation-delay:${delay(2)}`),
+    slot(flies[3].html, "friend-fly-alt", `bottom:18%;right:16%;width:44px;animation-delay:${delay(1)}`)
   ].join("");
 }
 
 export function startFriends() {
   if (document.getElementById("friends-root")) return;
+  const header = document.querySelector(".topbar");
+  const actions = document.querySelector(".header-actions");
+  const bar = document.createElement("div");
+  bar.id = "friends-bar";
+  bar.setAttribute("aria-hidden", "true");
+  if (header && actions) header.insertBefore(bar, actions);
+  else document.body.appendChild(bar);
+
   const root = document.createElement("div");
   root.id = "friends-root";
   root.setAttribute("aria-hidden", "true");
-  root.innerHTML = `<div id="friends-gutter-l" class="friends-gutter"></div><div id="friends-gutter-r" class="friends-gutter"></div><div id="friends-dock"></div>`;
+  root.innerHTML = `<div id="friends-pins"></div><div id="friends-gutter-l" class="friends-gutter"></div><div id="friends-gutter-r" class="friends-gutter"></div><div id="friends-dock"></div>`;
   document.body.appendChild(root);
   document.body.classList.add("has-friends");
   paint();
