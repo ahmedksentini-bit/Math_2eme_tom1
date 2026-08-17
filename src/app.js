@@ -2,6 +2,7 @@ import { solve, isClose } from "./solvers.js";
 import { drawFigure } from "./diagrams.js";
 import { courseRecap } from "./recaps.js";
 import { chapterCourse } from "./courses.js";
+import { chapterLesson } from "./lessons.js";
 import { BANDS, generateChapterSet, generatePapers } from "./bank.js";
 import { startFriends } from "./friends.js";
 
@@ -255,7 +256,9 @@ function openAnnale(id) {
 
 function courseHtml(chapterId) {
   const course = chapterCourse(chapterId);
-  return `<article class="card course-block"><p class="recap-kicker">Cours détaillé</p><h2>${esc(course.title)}</h2><p class="recap-lead">${esc(course.lead)}</p>${course.sections.map(s => `<section class="course-section"><h3>${esc(s.title)}</h3><p>${esc(s.text)}</p></section>`).join("")}</article>`;
+  const title = course.title.replace(" — cours détaillé", "");
+  return `<article class="card lesson-launch"><p class="recap-kicker">Pour tout comprendre</p><h2>Cours détaillé</h2><p>Le résumé plus bas est une fiche. Le cours détaillé reprend le chapitre depuis zéro : l’idée d’abord, puis la méthode, puis un exemple chiffré, une question flash et le piège à éviter. Conçu pour un élève qui n’a encore rien compris.</p><div class="actions"><button class="primary" id="openLesson">Ouvrir le cours détaillé</button></div></article>
+    <article class="card course-block"><p class="recap-kicker">Résumé du cours</p><h2>${esc(title)}</h2><p class="recap-lead">${esc(course.lead)}</p>${course.sections.map(s => `<section class="course-section"><h3>${esc(s.title)}</h3><p>${esc(s.text)}</p></section>`).join("")}</article>`;
 }
 
 function chapterPage(chapterId) {
@@ -273,11 +276,76 @@ function chapterPage(chapterId) {
     <div class="section-title"><div><h2>Exercices paramétriques</h2><p>Mêmes types de calculs, données que l’on peut modifier.</p></div></div>
     <section class="exercise-list">${parametric.map((e, i) => card(e, i, `Niveau ${e.difficulty} · données paramétriques`)).join("")}</section>`;
   document.querySelector("#backHome").addEventListener("click", home);
+  document.querySelector("#openLesson")?.addEventListener("click", () => lessonPage(chapterId));
   document.querySelector("#propose").addEventListener("click", () => proposePage(chapterId, true));
   document.querySelectorAll("[data-exercise]").forEach(b => b.addEventListener("click", () => {
     state.returnTo = "chapter";
     openExercise(state.catalog.exercises.find(e => e.id === b.dataset.exercise));
   }));
+}
+
+function findChapter(chapterId) {
+  for (const t of [1, 2]) {
+    const chapter = state.catalogs[t]?.chapters.find(c => c.id === chapterId);
+    if (chapter) return { chapter, tome: t };
+  }
+  return null;
+}
+
+function unitHtml(unit) {
+  const words = unit.words?.length
+    ? `<dl class="lesson-words">${unit.words.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("")}</dl>`
+    : "";
+  const method = unit.method?.length
+    ? `<div class="lesson-recipe"><p class="lesson-label">La méthode</p><ol class="lesson-method">${unit.method.map(step => `<li>${esc(step)}</li>`).join("")}</ol></div>`
+    : "";
+  const ex = unit.example
+    ? `<div class="lesson-example"><p class="lesson-label">Exemple guidé — ${esc(unit.example.title)}</p><p class="lesson-given">${esc(unit.example.given)}</p><ol>${unit.example.steps.map(s => `<li><strong>${esc(s.label)}.</strong> ${esc(s.text)}</li>`).join("")}</ol><p class="lesson-result"><strong>On retient.</strong> ${esc(unit.example.result)}</p></div>`
+    : "";
+  const check = unit.check
+    ? `<details class="lesson-check"><summary>Question flash — essaie avant d’ouvrir</summary><p class="lesson-q">${esc(unit.check.q)}</p><p class="lesson-a"><strong>Réponse.</strong> ${esc(unit.check.a)}</p></details>`
+    : "";
+  const keep = unit.keep?.length
+    ? `<div class="lesson-remember"><p class="lesson-label">À coller dans la tête</p><ul class="lesson-keep">${unit.keep.map(item => `<li>${esc(item)}</li>`).join("")}</ul></div>`
+    : "";
+  return `<article class="card lesson-unit" id="unit-${unit.n}">
+    <header class="lesson-unit-head"><span class="lesson-num">${esc(unit.n)}</span><div><h2>${esc(unit.title)}</h2><p class="lesson-why">${esc(unit.why)}</p></div></header>
+    <div class="lesson-idea"><p class="lesson-label">L’idée, sans formule d’abord</p><p>${esc(unit.idea)}</p></div>
+    ${words}${method}${ex}${check}${keep}
+    ${unit.trap ? `<p class="lesson-trap"><strong>Piège fréquent.</strong> ${esc(unit.trap)}</p>` : ""}
+  </article>`;
+}
+
+function lessonPage(chapterId) {
+  const found = findChapter(chapterId);
+  const lesson = chapterLesson(chapterId);
+  if (!found || !lesson) {
+    if (found) chapterPage(chapterId);
+    else home();
+    return;
+  }
+  if (state.tome !== found.tome) {
+    state.tome = found.tome;
+    state.catalog = state.catalogs[found.tome];
+    applyTomeChrome();
+  }
+  const { chapter } = found;
+  app.innerHTML = `<button class="back" id="backChapter">← Résumé du chapitre</button>
+    <section class="chapter-banner lesson-banner"><span class="num">${chapter.number}</span><div><p class="recap-kicker">Cours détaillé</p><h1>${esc(lesson.title)}</h1><p>${esc(lesson.intro)}</p></div></section>
+    <article class="card lesson-plan"><p class="recap-kicker">Plan</p><h2>Lis dans l’ordre</h2><ol>${lesson.map.map(item => `<li>${esc(item)}</li>`).join("")}</ol>
+    <nav class="lesson-toc">${lesson.units.map(unit => `<button type="button" class="ghost" data-unit="unit-${unit.n}">${esc(unit.n)}. ${esc(unit.title)}</button>`).join("")}</nav></article>
+    ${lesson.units.map(unitHtml).join("")}
+    <article class="card lesson-closing"><p class="recap-kicker">Fiche express</p><h2>Si tu ne retiens que ça</h2><p>${esc(lesson.closing)}</p><div class="actions"><button class="secondary" id="backToResume">Retour au résumé</button><button class="primary" id="goActivities">Passer aux activités</button></div></article>`;
+  document.querySelector("#backChapter").addEventListener("click", () => chapterPage(chapterId));
+  document.querySelector("#backToResume").addEventListener("click", () => chapterPage(chapterId));
+  document.querySelector("#goActivities").addEventListener("click", () => {
+    chapterPage(chapterId);
+    document.querySelector(".exercise-list")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  document.querySelectorAll("[data-unit]").forEach(b => b.addEventListener("click", () => {
+    document.getElementById(b.dataset.unit)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }));
+  history.replaceState({}, "", `#cours-${chapterId}`);
 }
 
 function proposePage(chapterId, fresh = false) {
@@ -586,6 +654,8 @@ document.querySelectorAll("[data-tome]").forEach(b => b.addEventListener("click"
 window.addEventListener("hashchange", () => {
   if (!state.catalog) return;
   if (location.hash === "#annales") { annalesPage(state.annaleFilter); return; }
+  const cours = location.hash.match(/^#cours-(.+)$/);
+  if (cours) { lessonPage(cours[1]); return; }
   const annale = state.annales.papers.find(p => `#${p.id}` === location.hash);
   if (annale) {
     if (inPaper() && state.paper.id === annale.id) return;
@@ -632,7 +702,9 @@ try {
   state.catalog = state.catalogs[tome];
   state.annales = { papers: Array.isArray(annales?.papers) ? annales.papers : [] };
   applyTomeChrome();
-  if (location.hash === "#annales") annalesPage();
+  const cours = location.hash.match(/^#cours-(.+)$/);
+  if (cours) lessonPage(cours[1]);
+  else if (location.hash === "#annales") annalesPage();
   else {
     const annale = state.annales.papers.find(p => `#${p.id}` === location.hash);
     let requested = null, requestedTome = tome;
